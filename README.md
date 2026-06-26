@@ -1,2 +1,2 @@
-# biacung.com
-biacung.com home page
+# khoai.xyz
+KHOAI Home page
