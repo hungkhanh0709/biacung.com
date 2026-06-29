@@ -1,0 +1,39 @@
+{
+    "id": "nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered",
+    "title": "Thép đã tôi thế đấy",
+    "title_original": "How the Steel Was Tempered",
+    "authors": [
+        "Nikolai Alekseyevich Ostrovsky"
+    ],
+    "awards": [],
+    "series": [],
+    "editions": [
+        {
+            "id": "nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered-2026-dong-a-bia-mem-190000d",
+            "isbn": "978-632-624-834-0",
+            "caption": "",
+            "pub_year": 2026,
+            "publisher": "NXB Văn Học",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [
+                "Thép Mới",
+                "Huy Vân"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa Mềm",
+            "cover_price": "190k",
+            "print_run": null,
+            "page_count": 532,
+            "copy_numbering": null,
+            "size_cm": "16 x 24 cm",
+            "weight_g": 900,
+            "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_e416eed37eb54926831a711391e69905_master.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-03"
+}

@@ -1,0 +1,63 @@
+{
+    "id": "percival-everett-james",
+    "title": "James",
+    "title_original": "James",
+    "authors": [
+        "Percival Everett"
+    ],
+    "awards": [
+        "Pulitzer"
+    ],
+    "series": [],
+    "editions": [
+        {
+            "id": "percival-everett-james-2025-rainbow-bia-mem-208k",
+            "isbn": null,
+            "caption": "Bản Dịch Tiếng Việt",
+            "pub_year": 2025,
+            "publisher": "NXB Lao Động",
+            "issuers": [
+                "Rainbow"
+            ],
+            "translators": [
+                "Trần Nguyên"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa Mềm",
+            "cover_price": "208k",
+            "print_run": null,
+            "page_count": 400,
+            "copy_numbering": null,
+            "size_cm": "",
+            "weight_g": 420,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/6/z6503173972316_6b80a8cc8db332d3650f8e45f2d368ec.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        },
+        {
+            "id": "percival-everett-james-penguin-books-bia-mem",
+            "isbn": null,
+            "caption": "Bản Gốc Tiếng Anh",
+            "pub_year": null,
+            "publisher": "NXB Vintage",
+            "issuers": [
+                "Penguin Books"
+            ],
+            "translators": [],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa Mềm",
+            "cover_price": "",
+            "print_run": null,
+            "page_count": 320,
+            "copy_numbering": null,
+            "size_cm": "20.3 x 13 x 1.7",
+            "weight_g": 215,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/9/7/9798217007394.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-02"
+}

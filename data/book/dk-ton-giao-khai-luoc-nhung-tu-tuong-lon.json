@@ -1,0 +1,38 @@
+{
+    "id": "dk-ton-giao-khai-luoc-nhung-tu-tuong-lon",
+    "title": "Tôn giáo - Khái lược những tư tưởng lớn",
+    "title_original": "The Religions Book",
+    "authors": [
+        "DK"
+    ],
+    "awards": [],
+    "series": [],
+    "editions": [
+        {
+            "id": "dk-ton-giao-khai-luoc-nhung-tu-tuong-lon-2019-dong-a-390k",
+            "isbn": "978-604-88-6431-6",
+            "caption": "",
+            "pub_year": 2019,
+            "publisher": "NXB Dân Trí",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [
+                "Nguyễn Minh"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa cứng",
+            "cover_price": "390k",
+            "print_run": null,
+            "page_count": 352,
+            "copy_numbering": null,
+            "size_cm": "19,3 x 23,5",
+            "weight_g": 700,
+            "thumbnail": "https://product.hstatic.net/1000328521/product/2_6194ee06a3434212bf6ff09d1f00f2ad_master.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-04"
+}

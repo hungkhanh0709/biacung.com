@@ -1,0 +1,74 @@
+[
+    {
+        "id": "nxb-tre",
+        "name": "NXB Trẻ"
+    },
+    {
+        "id": "nxb-kim-dong",
+        "name": "NXB Kim Đồng"
+    },
+    {
+        "id": "nxb-hoi-nha-van",
+        "name": "NXB Hội Nhà Văn"
+    },
+    {
+        "id": "nxb-van-hoc",
+        "name": "NXB Văn Học"
+    },
+    {
+        "id": "nxb-tong-hop-tp-hcm",
+        "name": "NXB Tổng Hợp TP.HCM"
+    },
+    {
+        "id": "nxb-cong-an-nhan-dan",
+        "name": "NXB Công An Nhân Dân"
+    },
+    {
+        "id": "nxb-thanh-nien",
+        "name": "NXB Thanh Niên"
+    },
+    {
+        "id": "nxb-van-hoa-thong-tin",
+        "name": "NXB Văn Hóa Thông Tin"
+    },
+    {
+        "id": "nxb-dai-hoc-su-pham",
+        "name": "NXB Đại Học Sư Phạm"
+    },
+    {
+        "id": "nxb-lao-dong",
+        "name": "NXB Lao Động"
+    },
+    {
+        "id": "dong-a",
+        "name": "Đông A"
+    },
+    {
+        "id": "dong-tay",
+        "name": "Đông Tây"
+    },
+    {
+        "id": "nha-nam",
+        "name": "Nhã Nam"
+    },
+    {
+        "id": "bach-viet",
+        "name": "Bách Việt"
+    },
+    {
+        "id": "huy-hoang",
+        "name": "Huy Hoàng"
+    },
+    {
+        "id": "az",
+        "name": "AZ"
+    },
+    {
+        "id": "phuc-minh",
+        "name": "Phúc Minh"
+    },
+    {
+        "id": "rainbow",
+        "name": "Rainbow"
+    }
+]

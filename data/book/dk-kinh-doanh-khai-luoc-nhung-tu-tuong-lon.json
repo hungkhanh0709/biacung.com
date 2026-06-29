@@ -1,0 +1,40 @@
+{
+    "id": "dk-kinh-doanh-khai-luoc-nhung-tu-tuong-lon",
+    "title": "Kinh doanh - Khái lược những tư tưởng lớn",
+    "title_original": "",
+    "authors": [
+        "DK"
+    ],
+    "awards": [],
+    "series": [
+        "Khái lược những tư tưởng lớn"
+    ],
+    "editions": [
+        {
+            "id": "dk-kinh-doanh-khai-luoc-nhung-tu-tuong-lon-2023-dong-a-bia-cung-450k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2023,
+            "publisher": "NXB Dân Trí",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [
+                "Kim Oanh"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa cứng",
+            "cover_price": "450k",
+            "print_run": null,
+            "page_count": 352,
+            "copy_numbering": null,
+            "size_cm": "19,3 x 23,5",
+            "weight_g": 700,
+            "thumbnail": "https://product.hstatic.net/1000328521/product/000_f0418e0498614905a83cbd8c91cfb9ee_master.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-04"
+}

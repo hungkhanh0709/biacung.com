@@ -1,0 +1,40 @@
+{
+    "id": "george-bernard-shaw-pygmalion",
+    "title": "Pygmalion",
+    "title_original": "Pygmalion",
+    "authors": [
+        "George Bernard Shaw"
+    ],
+    "awards": [],
+    "series": [],
+    "editions": [
+        {
+            "id": "george-bernard-shaw-pygmalion-2026-dong-a-bia-cung-boc-bang-buckram-co-hop-600k",
+            "isbn": "978-632-624-587-5",
+            "caption": "",
+            "pub_year": 2026,
+            "publisher": "NXB Văn Học",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [
+                "Trần Tiễn Cao Đăng"
+            ],
+            "illustrators": [
+                "Đông Phong"
+            ],
+            "proofreaders": [],
+            "format": "Bìa cứng bọc bằng buckram, có hộp",
+            "cover_price": "600k",
+            "print_run": null,
+            "page_count": 172,
+            "copy_numbering": null,
+            "size_cm": "16 x 24",
+            "weight_g": 800,
+            "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_63990fa0643041dd8de41865f1eeb570_master.jpg",
+            "gellery_imgs": [],
+            "detail": "- Bìa sách là bìa cứng với chất liệu bọc bìa là Heritage Library Buckram được nhập từ hãng Ratchford, Anh Quốc.\n- Sách in 2 màu trên giấy GV76-BB 100 gsm bằng công nghệ mực vi sinh.\n- Sách được mạ cạnh bằng nhũ vàng và in dấu Limited Edition của Đông A.\n- Hộp sách bằng carton."
+        }
+    ],
+    "updated_at": "2026-07-03"
+}
