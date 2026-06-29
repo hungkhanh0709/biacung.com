@@ -1,0 +1,22 @@
+[
+    {
+        "id": "dong-a-classic",
+        "name": "Đông A Classic",
+        "detail": "data/series/dong-a-classic.json"
+    },
+    {
+        "id": "canh-cua-mo-rong",
+        "name": "Cánh Cửa Mở Rộng",
+        "detail": "data/series/canh-cua-mo-rong.json"
+    },
+    {
+        "id": "viet-nam-danh-tac-nha-nam",
+        "name": "Việt Nam Danh Tác",
+        "detail": "data/series/viet-nam-danh-tac-nha-nam.json"
+    },
+    {
+        "id": "moi-nha-van-mot-tac-pham",
+        "name": "Mỗi Nhà Văn Một Tác Phẩm",
+        "detail": "data/series/moi-nha-van-mot-tac-pham.json"
+    }
+]

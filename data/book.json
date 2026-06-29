@@ -1,0 +1,26 @@
+[
+    {
+        "id": "mario-puzo-the-godfather",
+        "detail": "data/book/mario-puzo-the-godfather.json",
+        "keywords": [
+            "The Godfather",
+            "Bố Già",
+            "Mario Puzo",
+            "Ngọc Thứ Lan",
+            "Nguyễn Minh",
+            "NXB Văn Học"
+        ],
+        "updated_at": "2026-06-29"
+    },
+    {
+        "id": "percival-everett-james",
+        "detail": "data/book/percival-everett-james.json",
+        "keywords": [
+            "James",
+            "Percival Everett",
+            "Trần Nguyên",
+            "NXB Lao Động"
+        ],
+        "updated_at": "2026-06-29"
+    }
+]

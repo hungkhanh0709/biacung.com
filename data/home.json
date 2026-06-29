@@ -1,0 +1,19 @@
+[
+    {
+        "id": "series-focus",
+        "name": "Bộ Sưu Tập",
+        "limit": 4,
+        "item_ids": [
+            "dong-a-classic",
+            "canh-cua-mo-rong",
+            "viet-nam-danh-tac-nha-nam",
+            "moi-nha-van-mot-tac-pham"
+        ]
+    },
+    {
+        "id": "recently-archived",
+        "name": "Bìa Mới",
+        "limit": 16,
+        "item_ids": []
+    }
+]

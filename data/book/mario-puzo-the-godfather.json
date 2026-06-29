@@ -1,0 +1,78 @@
+{
+    "id": "mario-puzo-the-godfather",
+    "title": "Bố Già",
+    "title_original": "The Godfather",
+    "editions": [
+        {
+            "edition_id": "the-godfather-2026-fhs-50-nam",
+            "pub_year": 2026,
+            "publisher": "NXB Văn Học",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [
+                "Ngọc Thứ Lan"
+            ],
+            "format": "hardcover",
+            "cover_price": "990k",
+            "print_run": 1000,
+            "page_count": 320,
+            "copy_numbering": "",
+            "isbn": "",
+            "size_cm": "30 x 25 x 3.4",
+            "weight_g": 2000,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5193.jpg",
+            "gellery_imgs": [
+                "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5189.jpg",
+                "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5161.jpg",
+                "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5172.jpg"
+            ],
+            "note": "Phiên Bản Độc Quyền 50 Năm Fahasa"
+        },
+        {
+            "edition_id": "the-godfather-2026-hardcover",
+            "pub_year": 2024,
+            "publisher": "NXB Văn Học",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [
+                "Ngọc Thứ Lan"
+            ],
+            "format": "hardcover",
+            "cover_price": "250k",
+            "print_run": null,
+            "page_count": null,
+            "copy_numbering": "",
+            "isbn": "",
+            "size_cm": "24 x 16 x 2.8",
+            "weight_g": 890,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/2/z2611575615164_9f60c133cfed1c7bb3f59b247f-600.jpg",
+            "gellery_imgs": [],
+            "note": ""
+        },
+        {
+            "edition_id": "the-godfather-55-nam-xuat-ban-lan-dau",
+            "pub_year": 2024,
+            "publisher": "NXB Văn Học",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [
+                "Nguyễn Minh"
+            ],
+            "format": "paperback",
+            "cover_price": "200k",
+            "print_run": 2000,
+            "page_count": 652,
+            "copy_numbering": "",
+            "isbn": "",
+            "size_cm": "20.5 x 13.5 x 3.2",
+            "weight_g": 600,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/s/_/s_ch-_-bm.jpg",
+            "gellery_imgs": [],
+            "note": "Ấn Bản Kỉ Niệm 55 Năm Xuất Bản Lần Đầu"
+        }
+    ],
+    "updated_at": "2024-06-10"
+}
