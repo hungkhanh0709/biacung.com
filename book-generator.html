@@ -255,6 +255,25 @@
             font-size: 0.95rem;
         }
 
+        .status-message {
+            margin-top: 8px;
+            padding: 10px 12px;
+            border-radius: 10px;
+            background: #eff6ff;
+            color: #1d4ed8;
+            font-weight: 600;
+        }
+
+        .status-message.success {
+            background: #ecfdf5;
+            color: #047857;
+        }
+
+        .status-message.error {
+            background: #fef2f2;
+            color: #b91c1c;
+        }
+
         .section-title {
             margin: 0;
             width: 100%;
@@ -289,6 +308,17 @@
                         <input id="authors" name="authors" placeholder="Mario Puzo" required />
                     </label>
                 </div>
+
+                <label class="field-full-row">
+                    Slug tự động
+                    <div class="slug-input-row">
+                        <input id="book-id" name="bookId" placeholder="mario-puzo-the-godfather" />
+                        <span class="slug-preview" id="slug-preview">slug sẽ được tạo</span>
+                    </div>
+                    <span class="field-helper" id="slug-status">Slug sẽ được tạo từ Tựa đề gốc + Tác giả. Nếu khớp file
+                        đã có, dữ liệu sẽ được load tự động.</span>
+                    <div id="form-status" class="status-message">Sách mới. Bạn có thể nhập thông tin ngay.</div>
+                </label>
 
                 <div class="field-row-2 field-full-row">
                     <label>
@@ -340,7 +370,7 @@
         </section>
     </main>
 
-    <script src="./script/book-data-generator.js"></script>
+    <script src="./script/book-data-generator.js?v=20260701-1"></script>
 </body>
 
 </html>

@@ -1,12 +1,17 @@
 [
-    {
-        "detail": "data/book/mario-puzo-the-godfather.json",
-        "search_text": "mario puzo the godfather bo gia ngoc thu lan nguyen minh dong a nxb van hoc",
-        "updated_at": "2026-06-29"
-    },
-    {
-        "detail": "data/book/percival-everett-james.json",
-        "search_text": " percival everett james tran nguyen rainbow nxb lao dong",
-        "updated_at": "2026-06-29"
-    }
+  {
+    "detail": "data/book/mario-puzo-the-godfather.json",
+    "search_text": "mario puzo the godfather bo gia ngoc thu lan dong a nxb van hoc",
+    "updated_at": "2026-06-30"
+  },
+  {
+    "detail": "data/book/mario-puzo-fools-die.json",
+    "search_text": "fools die mario puzo nxb van hoc đong a nguyen minh",
+    "updated_at": "2026-06-30"
+  },
+  {
+    "detail": "data/book/mario-puzo-the-fourth-k.json",
+    "search_text": "tong thong k thu tu the fourth k mario puzo nxb van hoc đong a orkid",
+    "updated_at": "2026-06-30"
+  }
 ]

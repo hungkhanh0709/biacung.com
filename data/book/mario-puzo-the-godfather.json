@@ -1,89 +1,91 @@
 {
-    "id": "mario-puzo-the-godfather",
-    "title": "Bố Già",
-    "title_original": "The Godfather",
-    "authors": [
-        "Mario Puzo"
-    ],
-    "awards": [
-        "Giải thưởng Edgar năm 1969 cho tiểu thuyết hay nhất"
-    ],
-    "series": [
-        "The Godfather"
-    ],
-    "editions": [
-        {
-            "caption": "The Godfather - 50 năm xuất bản",
-            "pub_year": 2026,
-            "publisher": "NXB Văn Học",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [
-                "Ngọc Thứ Lan"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "hardcover",
-            "cover_price": "990k",
-            "print_run": 1000,
-            "page_count": 320,
-            "copy_numbering": "",
-            "isbn": "",
-            "size_cm": "30 x 25 x 3.4",
-            "weight_g": 2000,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5193.jpg",
-            "gellery_imgs": [
-                "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5189.jpg",
-                "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5161.jpg",
-                "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5172.jpg"
-            ],
-            "detail": "Phiên Bản Độc Quyền 50 Năm Fahasa"
-        },
-        {
-            "caption": "The Godfather - 2026 hardcover",
-            "pub_year": 2024,
-            "publisher": "NXB Văn Học",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [
-                "Ngọc Thứ Lan"
-            ],
-            "format": "hardcover",
-            "cover_price": "250k",
-            "print_run": null,
-            "page_count": null,
-            "copy_numbering": "",
-            "isbn": "",
-            "size_cm": "24 x 16 x 2.8",
-            "weight_g": 890,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/2/z2611575615164_9f60c133cfed1c7bb3f59b247f-600.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        },
-        {
-            "caption": "The Godfather - 2024 paperback",
-            "pub_year": 2024,
-            "publisher": "NXB Văn Học",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [
-                "Nguyễn Minh"
-            ],
-            "format": "paperback",
-            "cover_price": "200k",
-            "print_run": 2000,
-            "page_count": 652,
-            "copy_numbering": "",
-            "isbn": "",
-            "size_cm": "20.5 x 13.5 x 3.2",
-            "weight_g": 600,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/s/_/s_ch-_-bm.jpg",
-            "gellery_imgs": [],
-            "detail": "Ấn Bản Kỉ Niệm 55 Năm Xuất Bản Lần Đầu"
-        }
-    ],
-    "updated_at": "2024-06-10"
+  "id": "mario-puzo-the-godfather",
+  "title": "Bố Già",
+  "title_original": "The Godfather",
+  "authors": [
+    "Mario Puzo"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "isbn": null,
+      "caption": "Bố Già - Ấn Bản Cao Cấp - Bìa Cứng - Phiên Bản Độc Quyền 50 Năm Fahasa",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Ngọc Thứ Lan"
+      ],
+      "illustrators": [
+        "Art Werger"
+      ],
+      "proofreaders": [],
+      "format": "hardcover",
+      "cover_price": "990k",
+      "print_run": 1000,
+      "page_count": 320,
+      "copy_numbering": null,
+      "size_cm": "30 x 25 x 3.4",
+      "weight_g": 2000,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5193.jpg",
+      "gellery_imgs": [
+        "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5161.jpg"
+      ],
+      "detail": "Ấn bản cao cấp lần này được thực hiện với khổ lớn 25 x 30 cm, bìa cứng kèm bìa áo, ruột in bốn màu trên giấy Ford 150 gsm và bổ sung 15 minh họa của họa sĩ Art Werger. Tác phẩm sử dụng bản dịch nổi tiếng của Ngọc Thứ Lang, vốn đã gắn bó với nhiều thế hệ độc giả Việt Nam."
+    },
+    {
+      "isbn": null,
+      "caption": "Bố Già - Ấn Bản Kỉ Niệm 55 Năm Xuất Bản Lần Đầu",
+      "pub_year": 2024,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Minh"
+      ],
+      "illustrators": [
+        "Art Werger"
+      ],
+      "proofreaders": [],
+      "format": "Bìa Mềm",
+      "cover_price": "200",
+      "print_run": null,
+      "page_count": 652,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": 600,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/s/_/s_ch-_-bm.jpg",
+      "gellery_imgs": [],
+      "detail": "Để ghi dấu 55 năm từ khi tác phẩm ra mắt bạn đọc, và để đưa đến cho bạn đọc những trải nghiệm mới, lần này, chúng tôi giới thiệu bản dịch mới do dịch giả Nguyễn Minh chuyển ngữ. Bản dịch này được thực hiện với quan điểm: dịch thì phải phóng, song chỉ dừng ở mức phóng dịch, chứ không đến mức gần như phóng tác. Ngoài ra, các bản dịch Bố Già trước đây đều chưa đầy đủ, bị lược bớt nhiều đoạn. Bản dịch mới này chủ trương giữ đúng tinh thần tác phẩm nên không giảm nhẹ, không né tránh, cũng không cắt bỏ. Bởi xét cho cùng, một cuốn tiểu thuyết đặc tả về xã hội đen thì lẽ tất nhiên phải… đen."
+    },
+    {
+      "isbn": null,
+      "caption": "Bố Già - Bìa Cứng",
+      "pub_year": 2024,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Ngọc Thứ Lang"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "",
+      "cover_price": "250",
+      "print_run": null,
+      "page_count": 536,
+      "copy_numbering": null,
+      "size_cm": "24 x 16 x 2.8",
+      "weight_g": 890,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/2/z2611575615164_9f60c133cfed1c7bb3f59b247f-600.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ],
+  "updated_at": "2026-06-30"
 }

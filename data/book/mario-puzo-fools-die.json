@@ -1,0 +1,37 @@
+{
+  "id": "mario-puzo-fools-die",
+  "title": "",
+  "title_original": "Fools Die",
+  "authors": [
+    "Mario Puzo"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "isbn": null,
+      "caption": "Dại thì chết (Sách dành cho độc giả trên 18 tuổi)",
+      "pub_year": 2022,
+      "publisher": "NXB Văn học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Minh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "250",
+      "print_run": null,
+      "page_count": 780,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 900,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/thumb___logo_c2c2fc54d0bb4b6082b899af87dfeae5_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ],
+  "updated_at": "2026-06-30"
+}

@@ -2,6 +2,10 @@ const form = document.getElementById('book-form');
 const editionsContainer = document.getElementById('editions-container');
 const addEditionButton = document.getElementById('add-edition');
 const resetButton = document.getElementById('reset-form');
+const bookIdInput = document.getElementById('book-id');
+const slugPreview = document.getElementById('slug-preview');
+const slugStatus = document.getElementById('slug-status');
+const formStatus = document.getElementById('form-status');
 
 setNoHistoryBehavior(form);
 
@@ -11,6 +15,12 @@ const authorsOutput = document.getElementById('authors-output');
 const seriesOutput = document.getElementById('series-output');
 
 let editionCounter = 0;
+let pendingLookupTimer = null;
+let lookupVersion = 0;
+let existingBookIndexEntries = [];
+let existingAuthorEntries = [];
+let existingSeriesEntries = [];
+let existingIndexStatePromise = null;
 
 function setNoHistoryBehavior(element) {
     if (!element) {
@@ -102,7 +112,26 @@ function downloadJson(filename, payload) {
     URL.revokeObjectURL(url);
 }
 
-function buildSlugFromFormData(formData) {
+function setFormStatus(message, success = true) {
+    if (!formStatus) {
+        return;
+    }
+
+    formStatus.textContent = message;
+    formStatus.className = 'status-message';
+    if (success) {
+        formStatus.classList.add('success');
+    } else {
+        formStatus.classList.add('error');
+    }
+}
+
+function getBookSlugFromFormData(formData) {
+    const explicitSlug = normalizeText(formData.get('bookId'));
+    if (explicitSlug) {
+        return slugify(explicitSlug);
+    }
+
     const title = (formData.get('title') || '').trim();
     const titleOriginal = (formData.get('titleOriginal') || '').trim();
     const authors = parseLines(formData.get('authors') || '');
@@ -111,7 +140,20 @@ function buildSlugFromFormData(formData) {
     return slugify(baseText);
 }
 
-function createEditionCard(index = editionCounter) {
+function updateSlugPreview() {
+    const formData = new FormData(form);
+    const slug = getBookSlugFromFormData(formData);
+    if (slugPreview) {
+        slugPreview.textContent = slug || 'slug sẽ được tạo';
+    }
+    if (slugStatus) {
+        slugStatus.textContent = slug
+            ? `Slug hiện tại: ${slug}`
+            : 'Slug sẽ được tạo từ Tựa đề gốc + Tác giả.';
+    }
+}
+
+function createEditionCard(index = editionCounter, editionData = {}) {
     const card = document.createElement('div');
     card.className = 'edition-card';
     card.innerHTML = `
@@ -214,8 +256,51 @@ function createEditionCard(index = editionCounter) {
     const removeButton = card.querySelector('.remove-edition');
     removeButton.addEventListener('click', () => {
         card.remove();
+        if (!editionsContainer.querySelector('.edition-card')) {
+            addEdition();
+        }
         renderOutputs();
     });
+
+    if (editionData && typeof editionData === 'object') {
+        const setFieldValue = (fieldName, value) => {
+            const target = card.querySelector(`[name="${fieldName}"]`);
+            if (!target) {
+                return;
+            }
+
+            if (Array.isArray(value)) {
+                target.value = value.join('\n');
+                return;
+            }
+
+            if (value == null) {
+                target.value = '';
+                return;
+            }
+
+            target.value = String(value);
+        };
+
+        setFieldValue(`edition-caption-${index}`, editionData.caption || '');
+        setFieldValue(`edition-isbn-${index}`, editionData.isbn || '');
+        setFieldValue(`edition-pub-year-${index}`, editionData.pub_year ?? '');
+        setFieldValue(`edition-publisher-${index}`, editionData.publisher || '');
+        setFieldValue(`edition-issuers-${index}`, editionData.issuers || []);
+        setFieldValue(`edition-translators-${index}`, editionData.translators || []);
+        setFieldValue(`edition-illustrators-${index}`, editionData.illustrators || []);
+        setFieldValue(`edition-proofreaders-${index}`, editionData.proofreaders || []);
+        setFieldValue(`edition-format-${index}`, editionData.format || '');
+        setFieldValue(`edition-cover-price-${index}`, editionData.cover_price || '');
+        setFieldValue(`edition-print-run-${index}`, editionData.print_run ?? '');
+        setFieldValue(`edition-page-count-${index}`, editionData.page_count ?? '');
+        setFieldValue(`edition-copy-numbering-${index}`, editionData.copy_numbering || '');
+        setFieldValue(`edition-size-${index}`, editionData.size_cm || '');
+        setFieldValue(`edition-weight-${index}`, editionData.weight_g ?? '');
+        setFieldValue(`edition-thumbnail-${index}`, editionData.thumbnail || '');
+        setFieldValue(`edition-gallery-${index}`, editionData.gellery_imgs || []);
+        setFieldValue(`edition-detail-${index}`, editionData.detail || '');
+    }
 
     return card;
 }
@@ -229,6 +314,8 @@ function resetForm() {
     form.reset();
     editionsContainer.innerHTML = '';
     editionCounter = 0;
+    updateSlugPreview();
+    setFormStatus('Sách mới. Bạn có thể nhập thông tin ngay.', true);
     renderOutputs();
 }
 
@@ -252,7 +339,7 @@ function buildEditionFromFormData(formData, index) {
     const gallery = parseLines(formData.get(`edition-gallery-${index}`) || '');
     const detail = normalizeText(formData.get(`edition-detail-${index}`));
 
-    const edition = {
+    return {
         isbn: isbn || null,
         caption: caption || '',
         pub_year: pubYear ? Number(pubYear) : null,
@@ -272,19 +359,40 @@ function buildEditionFromFormData(formData, index) {
         gellery_imgs: gallery,
         detail: detail || ''
     };
+}
 
-    return edition;
+function sortEditionsByPubYear(editions = []) {
+    return [...(Array.isArray(editions) ? editions : [])].sort((left, right) => {
+        const leftYear = Number(left?.pub_year);
+        const rightYear = Number(right?.pub_year);
+        const leftValid = Number.isFinite(leftYear);
+        const rightValid = Number.isFinite(rightYear);
+
+        if (leftValid && rightValid) {
+            return rightYear - leftYear;
+        }
+
+        if (leftValid) {
+            return -1;
+        }
+
+        if (rightValid) {
+            return 1;
+        }
+
+        return String(left?.caption || '').localeCompare(String(right?.caption || ''), 'vi');
+    });
 }
 
 function buildBookDetailPayload(formData) {
-    const title = formData.get('title') || '';
-    const bookId = formData.get('bookId')?.trim() || buildSlugFromFormData(formData) || slugify(title);
+    const bookId = getBookSlugFromFormData(formData);
     const editions = [];
-    const inputs = Array.from(form.elements).filter((el) => el.name && el.name.startsWith('edition-caption-'));
+    const captionInputs = Array.from(form.elements).filter((el) => el.name && el.name.startsWith('edition-caption-'));
 
-    inputs.forEach((_, index) => {
+    captionInputs.forEach((field) => {
+        const index = field.name.replace('edition-caption-', '');
         const edition = buildEditionFromFormData(formData, index);
-        if (edition.caption || edition.publisher || edition.format) {
+        if (edition.caption || edition.publisher || edition.format || edition.isbn || edition.thumbnail || edition.detail || edition.issuers.length || edition.translators.length || edition.illustrators.length || edition.proofreaders.length || edition.gellery_imgs.length) {
             editions.push(edition);
         }
     });
@@ -296,63 +404,194 @@ function buildBookDetailPayload(formData) {
         authors: parseLines(formData.get('authors') || ''),
         awards: parseLines(formData.get('awards') || ''),
         series: parseLines(formData.get('series') || ''),
-        editions,
+        editions: sortEditionsByPubYear(editions),
         updated_at: new Date().toISOString().slice(0, 10)
     };
 }
 
-function buildBookIndexPayload(formData) {
-    const title = formData.get('title') || '';
-    const bookId = formData.get('bookId')?.trim() || buildSlugFromFormData(formData) || slugify(title);
-    const detailPath = `data/book/${bookId}.json`;
-    return [{
-        detail: detailPath,
-        search_text: `${formData.get('title') || ''} ${formData.get('titleOriginal') || ''} ${formData.get('authors') || ''}`.toLowerCase().normalize('NFD').replace(/[^\p{L}\p{N}\s]/gu, '').replace(/\s+/g, ' ').trim(),
-        updated_at: new Date().toISOString().slice(0, 10)
-    }];
+function normalizeSearchTextValue(value) {
+    return normalizeText(value)
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[^\p{L}\p{N}\s]/gu, '')
+        .replace(/\s+/g, ' ')
+        .trim();
 }
 
-function buildAuthorPayload(formData) {
-    const authors = parseLines(formData.get('authors') || '');
-    const title = formData.get('title') || '';
-    const bookId = formData.get('bookId')?.trim() || buildSlugFromFormData(formData) || slugify(title);
-    return authors.map((name) => ({
-        id: slugify(name),
-        name,
-        work_ids: [bookId]
-    }));
-}
+function collectSearchTextTerms(formData) {
+    const terms = [];
+    const seen = new Set();
 
-function buildSeriesPayload(formData) {
-    const seriesNames = parseLines(formData.get('series') || '');
-    const title = formData.get('title') || '';
-    const bookId = formData.get('bookId')?.trim() || buildSlugFromFormData(formData) || slugify(title);
-
-    if (seriesNames.length <= 1) {
-        const [name] = seriesNames;
-        if (!name) {
-            return {};
+    const addValues = (value) => {
+        if (value == null) {
+            return;
         }
-        return {
-            id: slugify(name),
+
+        const values = Array.isArray(value) ? value : [value];
+        values.forEach((entry) => {
+            const normalized = normalizeSearchTextValue(entry);
+            if (normalized && !seen.has(normalized)) {
+                seen.add(normalized);
+                terms.push(normalized);
+            }
+        });
+    };
+
+    addValues(formData.get('title') || '');
+    addValues(formData.get('titleOriginal') || '');
+    parseLines(formData.get('authors') || '').forEach((entry) => addValues(entry));
+    parseLines(formData.get('awards') || '').forEach((entry) => addValues(entry));
+    parseLines(formData.get('series') || '').forEach((entry) => addValues(entry));
+
+    Array.from(form?.elements || []).forEach((field) => {
+        const fieldName = field?.name || '';
+        if (!fieldName) {
+            return;
+        }
+
+        if (fieldName.startsWith('edition-publisher-')) {
+            addValues(normalizePublisher(field.value));
+            return;
+        }
+
+        if (fieldName.startsWith('edition-issuers-') || fieldName.startsWith('edition-translators-')) {
+            addValues(field.value);
+        }
+    });
+
+    return terms;
+}
+
+function buildBookIndexPayload(formData, existingBookIndex = existingBookIndexEntries) {
+    const bookId = getBookSlugFromFormData(formData);
+    const detailPath = `data/book/${bookId}.json`;
+    const searchText = collectSearchTextTerms(formData).join(' ');
+    const updatedAt = new Date().toISOString().slice(0, 10);
+    const mergedBookIndex = Array.isArray(existingBookIndex) ? existingBookIndex.filter((entry) => entry && entry.detail !== detailPath) : [];
+
+    mergedBookIndex.push({
+        detail: detailPath,
+        search_text: searchText,
+        updated_at: updatedAt
+    });
+
+    return mergedBookIndex.sort((left, right) => (right.updated_at || '').localeCompare(left.updated_at || '', 'en'));
+}
+
+function buildAuthorPayload(formData, existingAuthors = existingAuthorEntries) {
+    const authors = parseLines(formData.get('authors') || '');
+    const bookId = getBookSlugFromFormData(formData);
+    const mergedAuthors = Array.isArray(existingAuthors) ? existingAuthors.map((entry) => ({ ...entry })) : [];
+
+    authors.forEach((name) => {
+        const authorId = slugify(name);
+        const existingAuthor = mergedAuthors.find((entry) => slugify(entry.name || '') === authorId || entry.id === authorId);
+        if (existingAuthor) {
+            existingAuthor.work_ids = existingAuthor.work_ids || [];
+            if (!existingAuthor.work_ids.includes(bookId)) {
+                existingAuthor.work_ids.push(bookId);
+            }
+            existingAuthor.name = existingAuthor.name || name;
+            return;
+        }
+
+        mergedAuthors.push({
+            id: authorId,
+            name,
+            work_ids: [bookId]
+        });
+    });
+
+    return mergedAuthors.sort((left, right) => (left.name || '').localeCompare(right.name || '', 'vi'));
+}
+
+function buildSeriesPayload(formData, existingSeries = existingSeriesEntries) {
+    const seriesNames = parseLines(formData.get('series') || '');
+    const bookId = getBookSlugFromFormData(formData);
+    const mergedSeries = Array.isArray(existingSeries) ? existingSeries.map((entry) => ({ ...entry })) : [];
+
+    seriesNames.forEach((name) => {
+        const seriesId = slugify(name);
+        const existingSeriesEntry = mergedSeries.find((entry) => slugify(entry.name || '') === seriesId || entry.id === seriesId);
+        if (existingSeriesEntry) {
+            existingSeriesEntry.work_ids = existingSeriesEntry.work_ids || [];
+            if (!existingSeriesEntry.work_ids.includes(bookId)) {
+                existingSeriesEntry.work_ids.push(bookId);
+            }
+            existingSeriesEntry.name = existingSeriesEntry.name || name;
+            return;
+        }
+
+        mergedSeries.push({
+            id: seriesId,
             name,
             description: 'Collection introducing...',
             thumbnail: '',
             work_ids: [bookId]
-        };
+        });
+    });
+
+    return mergedSeries.sort((left, right) => (left.name || '').localeCompare(right.name || '', 'vi'));
+}
+
+function getDownloadFileName(formData, suffix = '') {
+    const slug = getBookSlugFromFormData(formData) || 'book';
+    const normalizedSuffix = normalizeText(suffix);
+    if (!normalizedSuffix) {
+        return `${slug}.json`;
     }
 
-    return seriesNames.map((name) => ({
-        id: slugify(name),
-        name,
-        description: 'Collection introducing...',
-        thumbnail: '',
-        work_ids: [bookId]
-    }));
+    return `${slug}.${normalizedSuffix}.json`;
+}
+
+async function refreshExistingIndexState(force = false) {
+    if (!force && existingIndexStatePromise) {
+        return existingIndexStatePromise;
+    }
+
+    existingIndexStatePromise = (async () => {
+        try {
+            const response = await fetch('/api/index-state', { cache: 'no-store' });
+            if (!response.ok) {
+                throw new Error('Unable to load index state');
+            }
+
+            const payload = await response.json();
+            existingBookIndexEntries = Array.isArray(payload?.bookIndex) ? payload.bookIndex : [];
+            existingAuthorEntries = Array.isArray(payload?.authors) ? payload.authors : [];
+            existingSeriesEntries = Array.isArray(payload?.series) ? payload.series : [];
+        } catch (error) {
+            try {
+                const [bookIndexResponse, authorResponse, seriesResponse] = await Promise.all([
+                    fetch('./data/book.json', { cache: 'no-store' }),
+                    fetch('./data/author.json', { cache: 'no-store' }),
+                    fetch('./data/series.json', { cache: 'no-store' })
+                ]);
+
+                existingBookIndexEntries = bookIndexResponse.ok ? await bookIndexResponse.json() : [];
+                existingAuthorEntries = authorResponse.ok ? await authorResponse.json() : [];
+                existingSeriesEntries = seriesResponse.ok ? await seriesResponse.json() : [];
+            } catch (fallbackError) {
+                existingBookIndexEntries = [];
+                existingAuthorEntries = [];
+                existingSeriesEntries = [];
+            }
+        }
+
+        renderOutputs();
+        return {
+            bookIndex: existingBookIndexEntries,
+            authors: existingAuthorEntries,
+            series: existingSeriesEntries
+        };
+    })();
+
+    return existingIndexStatePromise;
 }
 
 function renderOutputs() {
     sanitizeFormValues(form);
+    updateSlugPreview();
 
     const formData = new FormData(form);
     const bookDetailPayload = buildBookDetailPayload(formData);
@@ -366,6 +605,149 @@ function renderOutputs() {
     seriesOutput.textContent = JSON.stringify(seriesPayload, null, 2);
 }
 
+function populateEditionCards(editions = []) {
+    editionsContainer.innerHTML = '';
+    editionCounter = 0;
+
+    editionsContainer.appendChild(createEditionCard(editionCounter, {}));
+    editionCounter += 1;
+
+    sortEditionsByPubYear(editions).forEach((edition) => {
+        editionsContainer.appendChild(createEditionCard(editionCounter, edition));
+        editionCounter += 1;
+    });
+}
+
+function populateFormFromBookDetail(detail) {
+    if (!detail || typeof detail !== 'object') {
+        return;
+    }
+
+    if (bookIdInput) {
+        bookIdInput.value = detail.id || '';
+    }
+
+    const titleField = form.querySelector('[name="title"]');
+    const titleOriginalField = form.querySelector('[name="titleOriginal"]');
+    const authorsField = form.querySelector('[name="authors"]');
+    const awardsField = form.querySelector('[name="awards"]');
+    const seriesField = form.querySelector('[name="series"]');
+
+    if (titleField) {
+        titleField.value = detail.title || '';
+    }
+    if (titleOriginalField) {
+        titleOriginalField.value = detail.title_original || '';
+    }
+    if (authorsField) {
+        authorsField.value = Array.isArray(detail.authors) ? detail.authors.join('\n') : '';
+    }
+    if (awardsField) {
+        awardsField.value = Array.isArray(detail.awards) ? detail.awards.join('\n') : '';
+    }
+    if (seriesField) {
+        seriesField.value = Array.isArray(detail.series) ? detail.series.join('\n') : '';
+    }
+
+    populateEditionCards(detail.editions || []);
+    setFormStatus(`Đã load dữ liệu cho ${detail.id || 'sách hiện có'}. Bạn có thể chỉnh sửa hoặc thêm bản phát hành mới.`, true);
+    renderOutputs();
+}
+
+async function loadExistingBookBySlug(slug) {
+    if (!slug) {
+        return null;
+    }
+
+    const candidates = [
+        `/api/books/${encodeURIComponent(slug)}`,
+        `./data/book/${encodeURIComponent(slug)}.json`,
+        `./data/book/${slug}.json`
+    ];
+
+    for (const url of candidates) {
+        try {
+            const response = await fetch(url, { cache: 'no-store' });
+            if (!response.ok) {
+                continue;
+            }
+            const payload = await response.json();
+            if (payload && typeof payload === 'object' && (payload.id || payload.title || Array.isArray(payload.editions))) {
+                return payload;
+            }
+        } catch (error) {
+            // continue to next candidate
+        }
+    }
+
+    return null;
+}
+
+function scheduleLookup(force = false) {
+    if (pendingLookupTimer) {
+        window.clearTimeout(pendingLookupTimer);
+    }
+
+    const formData = new FormData(form);
+    const slug = getBookSlugFromFormData(formData);
+    if (!slug) {
+        setFormStatus('Sách mới. Bạn có thể nhập thông tin ngay.', true);
+        return;
+    }
+
+    lookupVersion += 1;
+    const currentLookupVersion = lookupVersion;
+
+    pendingLookupTimer = window.setTimeout(async () => {
+        const existingBook = await loadExistingBookBySlug(slug);
+        if (currentLookupVersion !== lookupVersion && !force) {
+            return;
+        }
+
+        if (existingBook) {
+            populateFormFromBookDetail(existingBook);
+            return;
+        }
+
+        setFormStatus('Sách mới. Bạn có thể nhập thông tin và thêm editions mới.', true);
+    }, 250);
+}
+
+async function persistGeneratedFiles(formData) {
+    await refreshExistingIndexState(true);
+
+    const bookId = getBookSlugFromFormData(formData);
+    const bookDetailPayload = buildBookDetailPayload(formData);
+    const bookIndexPayload = buildBookIndexPayload(formData);
+    const authorPayload = buildAuthorPayload(formData);
+    const seriesPayload = buildSeriesPayload(formData);
+
+    const response = await fetch('/api/books/save', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            bookDetail: bookDetailPayload,
+            bookIndex: bookIndexPayload,
+            authorPayload,
+            seriesPayload
+        })
+    });
+
+    if (!response.ok) {
+        const errorPayload = await response.json().catch(() => ({}));
+        throw new Error(errorPayload.error || 'Không thể lưu dữ liệu vào workspace.');
+    }
+
+    return {
+        bookDetailPayload,
+        bookIndexPayload,
+        authorPayload,
+        seriesPayload
+    };
+}
+
 form.addEventListener('input', (event) => {
     if (event.target instanceof HTMLInputElement || event.target instanceof HTMLTextAreaElement) {
         const trimmedValue = normalizeText(event.target.value);
@@ -374,7 +756,23 @@ form.addEventListener('input', (event) => {
         }
     }
 
+    if (event.target && ['title', 'titleOriginal', 'authors', 'bookId'].includes(event.target.name)) {
+        scheduleLookup();
+    }
+
     renderOutputs();
+});
+
+form.addEventListener('change', (event) => {
+    if (event.target && ['title', 'titleOriginal', 'authors', 'bookId'].includes(event.target.name)) {
+        scheduleLookup(true);
+    }
+});
+
+form.addEventListener('focusout', (event) => {
+    if (event.target && ['title', 'titleOriginal', 'authors', 'bookId'].includes(event.target.name)) {
+        scheduleLookup(true);
+    }
 });
 
 form.addEventListener('paste', (event) => {
@@ -387,37 +785,63 @@ form.addEventListener('paste', (event) => {
     }
 });
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', async (event) => {
     event.preventDefault();
+    sanitizeFormValues(form);
+    const formData = new FormData(form);
+    renderOutputs();
+
+    try {
+        const persisted = await persistGeneratedFiles(formData);
+        await refreshExistingIndexState(true);
+        setFormStatus(`Đã cập nhật các file liên quan cho ${persisted.bookDetailPayload.id}.`, true);
+    } catch (error) {
+        setFormStatus(error.message || 'Không thể lưu trực tiếp vào workspace. Đã chuyển sang tải file JSON.', false);
+        const bookId = getBookSlugFromFormData(formData);
+        const baseName = bookId || 'book';
+        downloadJson(`${baseName}.book-index.json`, buildBookIndexPayload(formData));
+        downloadJson(`${baseName}.json`, buildBookDetailPayload(formData));
+        downloadJson(`${baseName}.authors.json`, buildAuthorPayload(formData));
+        downloadJson(`${baseName}.series.json`, buildSeriesPayload(formData));
+    }
+});
+
+addEditionButton.addEventListener('click', () => {
+    addEdition();
     renderOutputs();
 });
-
-addEditionButton.addEventListener('click', addEdition);
 resetButton.addEventListener('click', resetForm);
 
-document.getElementById('download-book-index').addEventListener('click', () => {
+document.getElementById('download-book-index').addEventListener('click', async () => {
     sanitizeFormValues(form);
     const formData = new FormData(form);
-    downloadJson('book.json', buildBookIndexPayload(formData));
+    await refreshExistingIndexState(true);
+    downloadJson(getDownloadFileName(formData, 'book-index'), buildBookIndexPayload(formData));
 });
 
-document.getElementById('download-book-detail').addEventListener('click', () => {
+document.getElementById('download-book-detail').addEventListener('click', async () => {
     sanitizeFormValues(form);
     const formData = new FormData(form);
-    downloadJson('book-detail.json', buildBookDetailPayload(formData));
+    await refreshExistingIndexState(true);
+    downloadJson(getDownloadFileName(formData), buildBookDetailPayload(formData));
 });
 
-document.getElementById('download-authors').addEventListener('click', () => {
+document.getElementById('download-authors').addEventListener('click', async () => {
     sanitizeFormValues(form);
     const formData = new FormData(form);
-    downloadJson('author.json', buildAuthorPayload(formData));
+    await refreshExistingIndexState(true);
+    downloadJson(getDownloadFileName(formData, 'authors'), buildAuthorPayload(formData));
 });
 
-document.getElementById('download-series').addEventListener('click', () => {
+document.getElementById('download-series').addEventListener('click', async () => {
     sanitizeFormValues(form);
     const formData = new FormData(form);
-    downloadJson('series.json', buildSeriesPayload(formData));
+    await refreshExistingIndexState(true);
+    downloadJson(getDownloadFileName(formData, 'series'), buildSeriesPayload(formData));
 });
 
-addEdition();
+populateEditionCards([]);
+updateSlugPreview();
 renderOutputs();
+refreshExistingIndexState();
+scheduleLookup(true);
