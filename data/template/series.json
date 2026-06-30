@@ -1,0 +1,9 @@
+{
+    "id": "canh-cua-mo-rong",
+    "name": "Cánh Cửa Mở Rộng",
+    "description": "Collection introducing...",
+    "thumbnail": "https://example.com/images/thumbnail.jpg",
+    "work_ids": [
+        "thomas-mann-the-tower"
+    ]
+}

@@ -1,7 +1,7 @@
 {
     "editions": [
         {
-            "edition_id": "rainbow-james-2024",
+            "caption": "rainbow-james-2024",
             "pub_year": 2025,
             "publisher": "NXB Lao Động",
             "issuers": [
@@ -20,7 +20,7 @@
             "weight_g": 420,
             "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/6/z6503173972316_6b80a8cc8db332d3650f8e45f2d368ec.jpg",
             "gellery_imgs": [],
-            "note": ""
+            "detail": ""
         }
     ],
     "updated_at": "2024-06-29"

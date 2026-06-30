@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book JSON Generator</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.5;
+        }
+
+        body {
+            margin: 0;
+            background: #f5f7fb;
+            color: #1f2937;
+        }
+
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+            margin-bottom: 24px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-top: 0;
+        }
+
+        .grid {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        }
+
+        .field-row-3 {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-column: 1 / -1;
+        }
+
+        .field-row-4 {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            grid-column: 1 / -1;
+        }
+
+        .field-row-2 {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-column: 1 / -1;
+        }
+
+        .edition-card .field-row-2 {
+            grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+        }
+
+        @media (max-width: 900px) {
+
+            .field-row-3,
+            .field-row-4 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .field-row-2,
+            .edition-card .field-row-2,
+            .field-row-3,
+            .field-row-4 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .field-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .slug-input-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-weight: 600;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 10px;
+            font: inherit;
+        }
+
+        textarea {
+            min-height: 84px;
+            resize: vertical;
+        }
+
+        .field-helper {
+            color: #64748b;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .field-large {
+            min-height: 120px;
+        }
+
+        .field-tall {
+            min-height: 160px;
+        }
+
+        .field-inline {
+            min-height: 46px;
+            resize: none;
+        }
+
+        .field-full-row {
+            grid-column: 1 / -1;
+        }
+
+        .subfield {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-top: 8px;
+        }
+
+        .slug-actions {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .slug-preview {
+            color: #2563eb;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .inline-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        button {
+            border: none;
+            border-radius: 999px;
+            padding: 10px 16px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.15s ease, opacity 0.15s ease;
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+        }
+
+        .button-small {
+            padding: 8px 12px;
+            font-size: 0.9rem;
+        }
+
+        .primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .secondary {
+            background: #e5e7eb;
+            color: #111827;
+        }
+
+        .danger {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e5e7eb;
+            margin: 20px 0;
+        }
+
+        .edition-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 14px;
+            padding: 16px;
+            background: #fcfdff;
+        }
+
+        .edition-card+.edition-card {
+            margin-top: 16px;
+        }
+
+        .output-panel {
+            background: #0f172a;
+            color: #e2e8f0;
+            border-radius: 14px;
+            padding: 16px;
+            overflow: auto;
+        }
+
+        .output-panel pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        .output-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .hint {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        .section-title {
+            margin: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <section class="card">
+            <h1>Tạo dữ liệu sách theo template JSON</h1>
+            <p class="hint">
+                Form này sẽ giúp bạn nhập thông tin một tựa sách và sinh ra nội dung JSON tương ứng cho các file
+                template: book.json, book-detail.json, author.json và series.json.
+            </p>
+        </section>
+
+        <form id="book-form" class="card" autocomplete="off">
+            <h2>Thông tin cơ bản</h2>
+            <div class="grid">
+                <div class="field-row-3 field-full-row">
+                    <label>
+                        Tựa đề gốc
+                        <input id="title-original" name="titleOriginal" placeholder="The Godfather" />
+                    </label>
+                    <label>
+                        Tựa đề tiếng Việt
+                        <input id="title" name="title" placeholder="The Godfather" required />
+                    </label>
+                    <label>
+                        Tác giả
+                        <input id="authors" name="authors" placeholder="Mario Puzo" required />
+                    </label>
+                </div>
+
+                <div class="field-row-2 field-full-row">
+                    <label>
+                        Giải thưởng
+                        <textarea id="awards" name="awards" rows="3" placeholder="Pulitzer Prize"></textarea>
+                    </label>
+                    <label>
+                        Bộ sưu tập
+                        <textarea id="series" name="series" rows="3" placeholder="Cánh cửa mở rộng"></textarea>
+                    </label>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+            <div class="inline-actions">
+                <h2 class="section-title">Các bản phát hành</h2>
+                <button type="button" id="add-edition" class="secondary">+ Thêm bản phát hành</button>
+            </div>
+            <div id="editions-container"></div>
+
+            <div class="divider"></div>
+            <div class="inline-actions">
+                <button type="submit" class="primary">Tạo JSON</button>
+                <button type="button" id="reset-form" class="secondary">Reset form</button>
+            </div>
+        </form>
+
+        <section class="card">
+            <h2>Kết quả JSON</h2>
+            <div class="output-panel">
+                <div class="output-actions">
+                    <button type="button" id="download-book-index" class="primary">Tải book.json</button>
+                    <button type="button" id="download-book-detail" class="secondary">Tải book-detail.json</button>
+                    <button type="button" id="download-authors" class="secondary">Tải author.json</button>
+                    <button type="button" id="download-series" class="secondary">Tải series.json</button>
+                </div>
+                <h3>book.json</h3>
+                <pre id="book-index-output">{}</pre>
+                <div class="divider"></div>
+                <h3>book-detail.json</h3>
+                <pre id="book-detail-output">{}</pre>
+                <div class="divider"></div>
+                <h3>author.json</h3>
+                <pre id="authors-output">[]</pre>
+                <div class="divider"></div>
+                <h3>series.json</h3>
+                <pre id="series-output">{}</pre>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script/book-data-generator.js"></script>
+</body>
+
+</html>

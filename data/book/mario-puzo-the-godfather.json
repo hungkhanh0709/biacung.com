@@ -2,9 +2,18 @@
     "id": "mario-puzo-the-godfather",
     "title": "Bố Già",
     "title_original": "The Godfather",
+    "authors": [
+        "Mario Puzo"
+    ],
+    "awards": [
+        "Giải thưởng Edgar năm 1969 cho tiểu thuyết hay nhất"
+    ],
+    "series": [
+        "The Godfather"
+    ],
     "editions": [
         {
-            "edition_id": "the-godfather-2026-fhs-50-nam",
+            "caption": "The Godfather - 50 năm xuất bản",
             "pub_year": 2026,
             "publisher": "NXB Văn Học",
             "issuers": [
@@ -13,6 +22,8 @@
             "translators": [
                 "Ngọc Thứ Lan"
             ],
+            "illustrators": [],
+            "proofreaders": [],
             "format": "hardcover",
             "cover_price": "990k",
             "print_run": 1000,
@@ -27,10 +38,10 @@
                 "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5161.jpg",
                 "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5172.jpg"
             ],
-            "note": "Phiên Bản Độc Quyền 50 Năm Fahasa"
+            "detail": "Phiên Bản Độc Quyền 50 Năm Fahasa"
         },
         {
-            "edition_id": "the-godfather-2026-hardcover",
+            "caption": "The Godfather - 2026 hardcover",
             "pub_year": 2024,
             "publisher": "NXB Văn Học",
             "issuers": [
@@ -49,10 +60,10 @@
             "weight_g": 890,
             "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/2/z2611575615164_9f60c133cfed1c7bb3f59b247f-600.jpg",
             "gellery_imgs": [],
-            "note": ""
+            "detail": ""
         },
         {
-            "edition_id": "the-godfather-55-nam-xuat-ban-lan-dau",
+            "caption": "The Godfather - 2024 paperback",
             "pub_year": 2024,
             "publisher": "NXB Văn Học",
             "issuers": [
@@ -71,7 +82,7 @@
             "weight_g": 600,
             "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/s/_/s_ch-_-bm.jpg",
             "gellery_imgs": [],
-            "note": "Ấn Bản Kỉ Niệm 55 Năm Xuất Bản Lần Đầu"
+            "detail": "Ấn Bản Kỉ Niệm 55 Năm Xuất Bản Lần Đầu"
         }
     ],
     "updated_at": "2024-06-10"
