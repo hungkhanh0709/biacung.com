@@ -1,0 +1,38 @@
+{
+    "id": "thomas-harris-hannibal-rising",
+    "title": "Hannibal Trỗi Dậy",
+    "title_original": "Hannibal Rising",
+    "authors": [
+        "Thomas Harris"
+    ],
+    "awards": [],
+    "series": [],
+    "editions": [
+        {
+            "id": "thomas-harris-hannibal-rising-2026-nha-nam-bia-mem-155k",
+            "isbn": null,
+            "caption": "Tái Bản 2026",
+            "pub_year": 2026,
+            "publisher": "NXB Hội Nhà Văn",
+            "issuers": [
+                "Nhã Nam"
+            ],
+            "translators": [
+                "Huyền Vũ"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm",
+            "cover_price": "155k",
+            "print_run": null,
+            "page_count": 312,
+            "copy_numbering": null,
+            "size_cm": "24 x 15.5 x 1.5",
+            "weight_g": 420,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/h/a/hannibal-troi-day-01_1.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-05"
+}

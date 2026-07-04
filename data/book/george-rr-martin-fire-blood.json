@@ -1,0 +1,40 @@
+{
+    "id": "george-rr-martin-fire-blood",
+    "title": "Lửa Và Máu",
+    "title_original": "Fire & Blood",
+    "authors": [
+        "George R.R Martin"
+    ],
+    "awards": [
+        "Goodreads Choice Award"
+    ],
+    "series": [],
+    "editions": [
+        {
+            "id": "george-rr-martin-fire-blood-2026-bach-viet-bia-cung-380k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2026,
+            "publisher": "NXB Thanh Niên",
+            "issuers": [
+                "Bách Việt"
+            ],
+            "translators": [
+                "Thế Giới Thần Thoại"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa cứng",
+            "cover_price": "380k",
+            "print_run": null,
+            "page_count": 904,
+            "copy_numbering": null,
+            "size_cm": "24 x 16 x 4.7",
+            "weight_g": 1420,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/p/h/photo_2026-06-11_11-53-21.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-05"
+}

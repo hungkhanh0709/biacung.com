@@ -1,0 +1,38 @@
+{
+    "id": "thomas-mann-der-zauberberg",
+    "title": "Núi Thần",
+    "title_original": "Der Zauberberg",
+    "authors": [
+        "Thomas Mann"
+    ],
+    "awards": [],
+    "series": [
+        "Sách Cánh Cửa Mở Rộng"
+    ],
+    "editions": [
+        {
+            "id": "thomas-mann-der-zauberberg-2024-bia-mem-550k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2024,
+            "publisher": "NXB Trẻ",
+            "issuers": [],
+            "translators": [
+                "Nguyễn Hồng Vân"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm",
+            "cover_price": "550k",
+            "print_run": null,
+            "page_count": 1420,
+            "copy_numbering": null,
+            "size_cm": "20x13x7.3",
+            "weight_g": 700,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/1/a/1a4dce3ea773456095f4f26da208b23b.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-05"
+}

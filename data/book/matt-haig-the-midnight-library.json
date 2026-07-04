@@ -1,0 +1,40 @@
+{
+    "id": "matt-haig-the-midnight-library",
+    "title": "Thư Viện Nửa Đêm",
+    "title_original": "The Midnight Library",
+    "authors": [
+        "Matt Haig"
+    ],
+    "awards": [
+        "Goodreads Choice Award"
+    ],
+    "series": [],
+    "editions": [
+        {
+            "id": "matt-haig-the-midnight-library-2026-nha-nam-bia-mem-175k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2026,
+            "publisher": "NXB Hội Nhà Văn",
+            "issuers": [
+                "Nhã Nam"
+            ],
+            "translators": [
+                "Matryoshka"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm",
+            "cover_price": "175k",
+            "print_run": null,
+            "page_count": 424,
+            "copy_numbering": null,
+            "size_cm": "20.5 x 14 x 2.1",
+            "weight_g": 440,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/t/h/thu-vien-nua-dem-01_1.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-05"
+}

@@ -2,6 +2,31 @@
     "id": "canh-cua-mo-rong",
     "name": "Cánh Cửa Mở Rộng",
     "description": "Ra đời vào tháng 08/2011, tủ sách “Cánh cửa mở rộng” là sự hợp tác giữa Nhà xuất bản Trẻ, giáo sư Ngô Bảo Châu, nhà văn Phan Việt, nhằm giới thiệu các đầu sách giá trị trong và ngoài nước đến với bạn đọc để thúc đẩy tinh thần hiếu học, coi trọng tri thức và các giá trị sống trong các thế hệ người Việt.",
-    "thumbnail": "https://example.com/images/canh-cua-mo-rong-thumbnail.jpg",
-    "work_ids": []
+    "thumbnail": "https://www.nxbtre.com.vn/Images/Bookcase/nxbtre_thumb_12162024_021630.jpg",
+    "work_ids": [
+        "ian-stewart-in-pursuit-of-the-unknown-17-equations-that-changed-the-world",
+        "selma-lagerlof-the-wonderful-adventures-of-nils-and-further-adventures-of-nils-holgersson",
+        "emile-chartlier-alain-noi-ve-hanh-phuc",
+        "tobias-wolff-our-story-begins-new-and-selected-stories",
+        "victor-segalen-rene-leys",
+        "norman-maclean-a-river-runs-through-it",
+        "john-steinbeck-travels-with-charley-in-search-of-america",
+        "thomas-mann-der-tod-in-venedig",
+        "david-zierler-con-duong-da-cam",
+        "john-steinbeck-tortilla-flat",
+        "philip-roth-nemesis",
+        "mark-levi-the-mathematical-mechanic-using-physical-reasoning-to-solve-problems",
+        "raymond-queneau-zazie-dans-le-metro",
+        "samuel-butler-the-way-of-all-flesh",
+        "thomas-mann-der-zauberberg",
+        "neil-shubin-your-inner-fish-a-journey-into-the-35-billion-year-history-of-the-human-body",
+        "michael-j-sandel-what-money-cant-buy-the-moral-limits-of-markets",
+        "albert-camus-le-mythe-de-sisyphe",
+        "victor-hugo-quatrevingt-treize",
+        "rohinton-mistry-a-fine-balance",
+        "hunter-s-thompson-fear-and-loathing-in-las-vegas-a-savage-journey-to-the-heart-of-the-american-dream",
+        "michael-j-sandel-justice-whats-the-right-thing-to-do",
+        "paul-auster-the-invention-of-solitude",
+        "jmg-le-clezio-mondo-et-autres-histoires"
+    ]
 }

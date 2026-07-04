@@ -235,6 +235,12 @@
             background: #fcfdff;
         }
 
+        .edition-card.is-new-edition {
+            background: linear-gradient(180deg, #eff6ff 0%, #f8fbff 100%);
+            border-color: #bfdbfe;
+            box-shadow: inset 0 0 0 1px rgba(59, 130, 246, 0.08);
+        }
+
         .edition-card+.edition-card {
             margin-top: 16px;
         }
@@ -298,11 +304,7 @@
 <body>
     <main class="page">
         <section class="card">
-            <h1>Tạo dữ liệu sách theo template JSON</h1>
-            <p class="hint">
-                Form này sẽ giúp bạn nhập thông tin một tựa sách và sinh ra nội dung JSON tương ứng cho các file
-                template: book.json, book-detail.json, author.json và series.json.
-            </p>
+            <h1>JSON Generator</h1>
         </section>
 
         <form id="book-form" class="card" autocomplete="off">
@@ -384,8 +386,8 @@
         </section>
     </main>
 
-    <script src="./script/edition-parser.js?v=20260702-2"></script>
-    <script src="./script/book-data-generator.js?v=20260702-2"></script>
+    <script src="./script/edition-parser.js?v=20260705-2"></script>
+    <script src="./script/book-data-generator.js?v=20260705-2"></script>
 </body>
 
 </html>

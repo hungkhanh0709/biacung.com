@@ -333,6 +333,9 @@
         } else if (typeof window !== 'undefined') {
             window.parseEditionText = parse;
         }
+        if (typeof module !== 'undefined' && module.exports) {
+            module.exports = { parseEditionText: parse };
+        }
         console.debug && console.debug('edition-parser: parseEditionText attached');
     } catch (err) {
         if (typeof console !== 'undefined' && console.error) {

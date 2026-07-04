@@ -1,0 +1,38 @@
+{
+    "id": "norman-maclean-a-river-runs-through-it",
+    "title": "Nơi Dòng Sông Chảy Qua",
+    "title_original": "A River Runs Through It",
+    "authors": [
+        "Norman Maclean"
+    ],
+    "awards": [],
+    "series": [
+        "CÁNH CỬA MỞ RỘNG"
+    ],
+    "editions": [
+        {
+            "id": "norman-maclean-a-river-runs-through-it-2012-bia-mem-72k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2012,
+            "publisher": "NXB Trẻ",
+            "issuers": [],
+            "translators": [
+                "Nam An"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm",
+            "cover_price": "72k",
+            "print_run": null,
+            "page_count": 200,
+            "copy_numbering": null,
+            "size_cm": "13 x 20",
+            "weight_g": null,
+            "thumbnail": "https://www.nxbtre.com.vn/Images/Book/NXBTreStoryFull_13372012_023728.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-04"
+}

@@ -1,0 +1,38 @@
+{
+    "id": "lucy-maud-montgomery-anne-of-green-gables",
+    "title": "Anne Tóc Đỏ",
+    "title_original": "Anne of Green Gables",
+    "authors": [
+        "Lucy Maud Montgomery"
+    ],
+    "awards": [],
+    "series": [
+        "50 Năm Fahasa"
+    ],
+    "editions": [
+        {
+            "id": "lucy-maud-montgomery-anne-of-green-gables-2026-nha-nam-boxset-bia-mem-1360k",
+            "isbn": null,
+            "caption": "Boxset Anne Tóc Đỏ (hộp 8 Tập) - Phiên Bản Độc Quyền 50 Năm Fahasa",
+            "pub_year": 2026,
+            "publisher": "NXB Hội Nhà Văn",
+            "issuers": [
+                "Nhã Nam"
+            ],
+            "translators": [],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Boxset, bìa mềm",
+            "cover_price": "1360k",
+            "print_run": 20000,
+            "page_count": 2848,
+            "copy_numbering": null,
+            "size_cm": "20.7x14.8x14.2",
+            "weight_g": 3000,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/a/n/anne-copy-1.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-05"
+}

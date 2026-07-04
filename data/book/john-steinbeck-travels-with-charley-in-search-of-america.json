@@ -1,0 +1,36 @@
+{
+    "id": "john-steinbeck-travels-with-charley-in-search-of-america",
+    "title": "Tôi, Charley Và Hành Trình Nước Mỹ",
+    "title_original": "Travels with Charley: In Search of America",
+    "authors": [
+        "John Steinbeck"
+    ],
+    "awards": [],
+    "series": [],
+    "editions": [
+        {
+            "id": "john-steinbeck-travels-with-charley-in-search-of-america-2012-bia-mem-125k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2012,
+            "publisher": "NXB Trẻ",
+            "issuers": [],
+            "translators": [
+                "Tuấn Việt"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm",
+            "cover_price": "125k",
+            "print_run": null,
+            "page_count": 424,
+            "copy_numbering": null,
+            "size_cm": "",
+            "weight_g": null,
+            "thumbnail": "https://www.nxbtre.com.vn/Images/Book/NXBTreStoryFull_13312012_023107.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-04"
+}

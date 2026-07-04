@@ -1,0 +1,40 @@
+{
+    "id": "john-steinbeck-east-of-eden",
+    "title": "Phía Đông Vườn Địa Đàng",
+    "title_original": "East of Eden",
+    "authors": [
+        "John Steinbeck"
+    ],
+    "awards": [
+        "Nobel Văn Chương"
+    ],
+    "series": [],
+    "editions": [
+        {
+            "id": "john-steinbeck-east-of-eden-2024-tao-dan-bia-mem-380k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2024,
+            "publisher": "NXB Hội Nhà Văn",
+            "issuers": [
+                "Tao Đàn"
+            ],
+            "translators": [
+                "Phạm Văn"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm",
+            "cover_price": "380k",
+            "print_run": null,
+            "page_count": 742,
+            "copy_numbering": null,
+            "size_cm": "24 x 16 x 3.7",
+            "weight_g": 950,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/9/7/9786043335712.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-05"
+}

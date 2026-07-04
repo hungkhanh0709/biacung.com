@@ -1,0 +1,38 @@
+{
+    "id": "samuel-butler-the-way-of-all-flesh",
+    "title": "Xác Thịt Về Đâu",
+    "title_original": "The Way of All Flesh",
+    "authors": [
+        "Samuel Butler"
+    ],
+    "awards": [],
+    "series": [
+        "Sách Cánh Cửa Mở Rộng"
+    ],
+    "editions": [
+        {
+            "id": "samuel-butler-the-way-of-all-flesh-bia-mem-175k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": null,
+            "publisher": "NXB Trẻ",
+            "issuers": [],
+            "translators": [
+                "Thái Hòa"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm",
+            "cover_price": "175k",
+            "print_run": null,
+            "page_count": 610,
+            "copy_numbering": null,
+            "size_cm": "14x20",
+            "weight_g": null,
+            "thumbnail": "https://www.nxbtre.com.vn/Images/Book/NXBTreStoryFull_20342013_103439.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-05"
+}

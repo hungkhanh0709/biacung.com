@@ -173,5 +173,285 @@
       "dk-the-chien-ii-khai-luoc-nhung-tu-tuong-lon",
       "dk-triet-hoc-khai-luoc-nhung-tu-tuong-lon"
     ]
+  },
+  {
+    "id": "ian-stewart",
+    "name": "Ian Stewart",
+    "work_ids": [
+      "ian-stewart-in-pursuit-of-the-unknown-17-equations-that-changed-the-world"
+    ]
+  },
+  {
+    "id": "selma-lagerlof",
+    "name": "Selma Lagerlöf",
+    "work_ids": [
+      "selma-lagerlof-the-wonderful-adventures-of-nils-and-further-adventures-of-nils-holgersson"
+    ]
+  },
+  {
+    "id": "emile-chartlier",
+    "name": "Émile Chartlier",
+    "work_ids": [
+      "emile-chartlier-alain-noi-ve-hanh-phuc"
+    ]
+  },
+  {
+    "id": "tobias-wolff",
+    "name": "Tobias Wolff",
+    "work_ids": [
+      "tobias-wolff-our-story-begins-new-and-selected-stories"
+    ]
+  },
+  {
+    "id": "victor-segalen",
+    "name": "Victor Segalen",
+    "work_ids": [
+      "victor-segalen-rene-leys"
+    ]
+  },
+  {
+    "id": "norman-maclean",
+    "name": "Norman Maclean",
+    "work_ids": [
+      "norman-maclean-a-river-runs-through-it"
+    ]
+  },
+  {
+    "id": "john-steinbeck",
+    "name": "John Steinbeck",
+    "work_ids": [
+      "john-steinbeck-travels-with-charley-in-search-of-america",
+      "john-steinbeck-tortilla-flat",
+      "john-steinbeck-east-of-eden",
+      "john-steinbeck-of-mice-and-men"
+    ]
+  },
+  {
+    "id": "thomas-mann",
+    "name": "Thomas Mann",
+    "work_ids": [
+      "thomas-mann-der-tod-in-venedig",
+      "thomas-mann-der-zauberberg"
+    ]
+  },
+  {
+    "id": "david-zierler",
+    "name": "David Zierler",
+    "work_ids": [
+      "david-zierler-con-duong-da-cam"
+    ]
+  },
+  {
+    "id": "philip-roth",
+    "name": "Philip Roth",
+    "work_ids": [
+      "philip-roth-nemesis"
+    ]
+  },
+  {
+    "id": "mark-levi",
+    "name": "Mark Levi",
+    "work_ids": [
+      "mark-levi-the-mathematical-mechanic-using-physical-reasoning-to-solve-problems"
+    ]
+  },
+  {
+    "id": "raymond-queneau",
+    "name": "Raymond Queneau",
+    "work_ids": [
+      "raymond-queneau-zazie-dans-le-metro"
+    ]
+  },
+  {
+    "id": "samuel-butler",
+    "name": "Samuel Butler",
+    "work_ids": [
+      "samuel-butler-the-way-of-all-flesh"
+    ]
+  },
+  {
+    "id": "neil-shubin",
+    "name": "Neil Shubin",
+    "work_ids": [
+      "neil-shubin-your-inner-fish-a-journey-into-the-35-billion-year-history-of-the-human-body"
+    ]
+  },
+  {
+    "id": "michael-j-sandel",
+    "name": "Michael J. Sandel",
+    "work_ids": [
+      "michael-j-sandel-what-money-cant-buy-the-moral-limits-of-markets"
+    ]
+  },
+  {
+    "id": "albert-camus",
+    "name": "Albert Camus",
+    "work_ids": [
+      "albert-camus-le-mythe-de-sisyphe"
+    ]
+  },
+  {
+    "id": "victor-hugo",
+    "name": "Victor Hugo",
+    "work_ids": [
+      "victor-hugo-quatrevingt-treize"
+    ]
+  },
+  {
+    "id": "rohinton-mistry",
+    "name": "Rohinton Mistry",
+    "work_ids": [
+      "rohinton-mistry-a-fine-balance"
+    ]
+  },
+  {
+    "id": "hunter-s-thompson",
+    "name": "Hunter S. Thompson",
+    "work_ids": [
+      "hunter-s-thompson-fear-and-loathing-in-las-vegas-a-savage-journey-to-the-heart-of-the-american-dream"
+    ]
+  },
+  {
+    "id": "abhijit-v-banerjee",
+    "name": "Abhijit V. Banerjee",
+    "work_ids": [
+      "abhijit-v-banerjee-poor-economics-a-radical-rethinking-of-the-way-to-fight-global-poverty",
+      "michael-j-sandel-justice-whats-the-right-thing-to-do"
+    ]
+  },
+  {
+    "id": "paul-auster",
+    "name": "Paul Auster",
+    "work_ids": [
+      "paul-auster-the-invention-of-solitude"
+    ]
+  },
+  {
+    "id": "jmg-le-clezio",
+    "name": "J.M.G. Le Clézio",
+    "work_ids": [
+      "jmg-le-clezio-mondo-et-autres-histoires"
+    ]
+  },
+  {
+    "id": "nguyen-nhat-anh",
+    "name": "Nguyễn Nhật Ánh",
+    "work_ids": [
+      "nguyen-nhat-anh-chuyen-tinh-thi-tran",
+      "nguyen-nhat-anh-sach-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim",
+      "nguyen-nhat-anh-dao-mong-mo"
+    ]
+  },
+  {
+    "id": "nguyen-dinh-chieu",
+    "name": "Nguyễn Đình Chiểu",
+    "work_ids": [
+      "nguyen-dinh-chieu-sach-luc-van-tien"
+    ]
+  },
+  {
+    "id": "nguyen-du",
+    "name": "Nguyễn Du",
+    "work_ids": [
+      "nguyen-du-truyen-kieu"
+    ]
+  },
+  {
+    "id": "jk-rowling",
+    "name": "J.K. Rowling",
+    "work_ids": [
+      "jk-rowling-harry-potter"
+    ]
+  },
+  {
+    "id": "hoang-nam-tien",
+    "name": "Hoàng Nam Tiến",
+    "work_ids": [
+      "hoang-nam-tien-sach-thu-cho-em"
+    ]
+  },
+  {
+    "id": "jose-mauro-de-vasconcelos",
+    "name": "José Mauro De Vasconcelos",
+    "work_ids": [
+      "jose-mauro-de-vasconcelos-boxset-cay-cam-ngot-cua-toi-suoi-am-mat-troi"
+    ]
+  },
+  {
+    "id": "lucy-maud-montgomery",
+    "name": "Lucy Maud Montgomery",
+    "work_ids": [
+      "lucy-maud-montgomery-anne-of-green-gables"
+    ]
+  },
+  {
+    "id": "r-f-kuang",
+    "name": "R. F. Kuang",
+    "work_ids": [
+      "r-f-kuang-yellowface"
+    ]
+  },
+  {
+    "id": "george-rr-martin",
+    "name": "George R.R Martin",
+    "work_ids": [
+      "george-rr-martin-fire-blood"
+    ]
+  },
+  {
+    "id": "lev-tolstoy-anna-karenina",
+    "name": "Lev Tolstoy",
+    "work_ids": [
+      "lev-tolstoy"
+    ]
+  },
+  {
+    "id": "vuong-hong-sen",
+    "name": "Vương Hồng Sển",
+    "work_ids": [
+      "vuong-hong-sen-tap-but-nam-canh-ngo-qua-tan-mui-1990-1991"
+    ]
+  },
+  {
+    "id": "thomas-harris",
+    "name": "Thomas Harris",
+    "work_ids": [
+      "thomas-harris-hannibal-rising"
+    ]
+  },
+  {
+    "id": "matt-haig",
+    "name": "Matt Haig",
+    "work_ids": [
+      "matt-haig-the-midnight-library"
+    ]
+  },
+  {
+    "id": "yagisawa-satoshi",
+    "name": "Yagisawa Satoshi",
+    "work_ids": [
+      "yagisawa-satoshi-nhung-giac-mo-o-hieu-sach-morisaki"
+    ]
+  },
+  {
+    "id": "khaled-hosseini",
+    "name": "Khaled Hosseini",
+    "work_ids": [
+      "khaled-hosseini-the-kite-runner"
+    ]
+  },
+  {
+    "id": "stephanie-garber",
+    "name": "Stephanie Garber",
+    "work_ids": [
+      "stephanie-garber-legendary"
+    ]
+  },
+  {
+    "id": "lev-nikolayevich-tolstoy",
+    "name": "Lev Nikolayevich Tolstoy",
+    "work_ids": [
+      "lev-nikolayevich-tolstoy-chien-tranh-va-hoa-binh"
+    ]
   }
 ]
