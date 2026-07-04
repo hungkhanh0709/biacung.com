@@ -5,15 +5,15 @@
         "limit": 4,
         "item_ids": [
             "dong-a-classic",
-            "canh-cua-mo-rong",
-            "viet-nam-danh-tac-nha-nam",
-            "moi-nha-van-mot-tac-pham"
+            "tram-nam-nobel",
+            "van-moi",
+            "khai-luoc-nhung-tu-tuong-lon"
         ]
     },
     {
         "id": "recently-archived",
         "name": "Bìa Mới",
-        "limit": 16,
+        "limit": 12,
         "item_ids": []
     }
 ]

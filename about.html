@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bìa Cứng - Giới thiệu</title>
+    <meta name="description" content="Giới thiệu về Bìa Cứng, website sưu tầm và theo dõi các phiên bản bìa sách." />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <!--    Favicons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-194x194.png" sizes="194x194" />
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="assets/img/favicon/android-chrome-192x192.png" sizes="192x192" />
+    <style>
+        :root {
+            color-scheme: light;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #f7f3ec;
+            color: #2f2f2f;
+        }
+
+        .about-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+
+        .about-card {
+            width: min(1100px, 100%);
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: minmax(280px, 420px) 1fr;
+        }
+
+        .about-visual {
+            background: #ffffff;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-visual img {
+            width: 100%;
+            max-width: 360px;
+            height: auto;
+            border-radius: 18px;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .about-content {
+            padding: 2.2rem 2rem 2.2rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .about-eyebrow {
+            display: inline-block;
+            color: #d0021b;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            font-size: 0.78rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .about-title {
+            font-size: clamp(1.8rem, 2.1vw, 2.4rem);
+            margin-bottom: 1rem;
+            color: #1c1c1c;
+        }
+
+        .about-copy {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #555555;
+        }
+
+        .about-copy p {
+            margin-bottom: 0.95rem;
+        }
+
+        .about-stats {
+            margin-top: 1.2rem;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 0.75rem;
+        }
+
+        .about-stat {
+            background: #faf7f2;
+            border: 1px solid #efe4d6;
+            border-radius: 14px;
+            padding: 0.95rem;
+        }
+
+        .about-stat .label {
+            display: block;
+            font-size: 0.8rem;
+            color: #7f7f7f;
+            margin-bottom: 0.35rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .about-stat .value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1c1c1c;
+        }
+
+        .about-link {
+            margin-top: 1.3rem;
+            display: inline-block;
+            color: #045bc1;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .about-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 860px) {
+            .about-card {
+                grid-template-columns: 1fr;
+            }
+
+            .about-visual {
+                padding: 1.2rem 1.2rem 0;
+            }
+
+            .about-content {
+                padding-top: 1.2rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="about-page">
+        <section class="about-card" aria-labelledby="about-title">
+            <div class="about-visual">
+                <img src="assets/img/teddy-bear-on-a-bike-khoai.png" alt="" />
+            </div>
+            <div class="about-content">
+                <span class="about-eyebrow">Giới thiệu</span>
+                <h1 class="about-title" id="about-title">Bìa Cứng</h1>
+                <div class="about-copy">
+                    <p>Xin chào, (chúng) tôi là <em>biacung.com</em> – sách bìa cứng.</p>
+                    <p>
+                        Một website do ông Khánh Tô khơi mào, ổng định làm trong lúc rảnh rỗi, vì ổng thích trưng sách
+                        bìa cứng chắc mọi người cũng biết.
+                    </p>
+                    <p>
+                        Nội dung sẽ được cập nhật dần trong tương lai xa - gần chưa rõ, do ổng vừa đi làm, vừa đi mua
+                        sách, lại vừa làm video tóp tóp.
+                    </p>
+                    <p>
+                        Đại khái là vậy, cũng không có gì wow lắm. Chỉ là một ngách nhỏ, hy vọng sẽ hữu ích cho mí anh
+                        chị em cùng đam mê sách bìa cứng, ghé xem có cái gì đó hay ho, hoặc không.
+                    </p>
+                </div>
+
+                <div class="about-stats" aria-live="polite">
+                    <div class="about-stat">
+                        <span class="label">Tác giả</span>
+                        <span class="value" id="author-count">-</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="label">Sách</span>
+                        <span class="value" id="book-count">-</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="label">Phiên bản bìa</span>
+                        <span class="value" id="edition-count">-</span>
+                    </div>
+                </div>
+
+                <a class="about-link" href="index.html">← Quay về trang chủ</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        async function loadStats() {
+            const authorCountEl = document.getElementById('author-count');
+            const bookCountEl = document.getElementById('book-count');
+            const editionCountEl = document.getElementById('edition-count');
+
+            try {
+                const [authorsResponse, bookIndexResponse] = await Promise.all([
+                    fetch('data/author.json'),
+                    fetch('data/book.json')
+                ]);
+
+                if (!authorsResponse.ok || !bookIndexResponse.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+
+                const authors = await authorsResponse.json();
+                const bookIndex = await bookIndexResponse.json();
+                const bookFiles = Array.isArray(bookIndex) ? bookIndex.map((item) => item.detail).filter(Boolean) : [];
+
+                const bookDetails = await Promise.all(
+                    bookFiles.map(async (detail) => {
+                        try {
+                            const response = await fetch(detail);
+                            return response.ok ? await response.json() : null;
+                        } catch (error) {
+                            return null;
+                        }
+                    })
+                );
+
+                const books = bookDetails.filter(Boolean);
+                const editionCount = books.reduce((total, book) => total + (Array.isArray(book.editions) ? book.editions.length : 0), 0);
+
+                authorCountEl.textContent = Array.isArray(authors) ? authors.length : 0;
+                bookCountEl.textContent = books.length;
+                editionCountEl.textContent = editionCount;
+            } catch (error) {
+                authorCountEl.textContent = '—';
+                bookCountEl.textContent = '—';
+                editionCountEl.textContent = '—';
+            }
+        }
+        loadStats();
+    </script>
+</body>
+
+</html>
