@@ -1,0 +1,38 @@
+{
+    "id": "dk-tam-li-hoc-khai-luoc-nhung-tu-tuong-lon",
+    "title": "Tâm lí học - Khái lược những tư tưởng lớn",
+    "title_original": "",
+    "authors": [
+        "DK"
+    ],
+    "awards": [],
+    "series": [],
+    "editions": [
+        {
+            "id": "dk-tam-li-hoc-khai-luoc-nhung-tu-tuong-lon-dong-a-450k",
+            "isbn": "978-604-88-6733-1",
+            "caption": "",
+            "pub_year": null,
+            "publisher": "NXB Dân Trí",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [
+                "Nguyễn Bảo Trung"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "",
+            "cover_price": "450k",
+            "print_run": null,
+            "page_count": 352,
+            "copy_numbering": null,
+            "size_cm": "19,3 x 23,5",
+            "weight_g": 700,
+            "thumbnail": "https://product.hstatic.net/1000328521/product/5_0dfcd81883aa429797ab472f65c8ad02_master.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-04"
+}

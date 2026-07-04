@@ -1,0 +1,38 @@
+{
+    "id": "emily-jane-bronte-wuthering-heights",
+    "title": "Đỉnh Gió Hú",
+    "title_original": "Wuthering Heights",
+    "authors": [
+        "Emily Jane Brontë"
+    ],
+    "awards": [],
+    "series": [],
+    "editions": [
+        {
+            "id": "emily-jane-bronte-wuthering-heights-2026-dong-a-bia-mem-130k",
+            "isbn": "978-604-372-843-9",
+            "caption": "",
+            "pub_year": 2026,
+            "publisher": "NXB Văn Học",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [
+                "Nguyễn Vân Hà"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa Mềm",
+            "cover_price": "130k",
+            "print_run": null,
+            "page_count": 352,
+            "copy_numbering": null,
+            "size_cm": "16 x 24 cm",
+            "weight_g": 800,
+            "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_2aebfa4df38c46398f4b2d8dd8261e52_master.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-03"
+}

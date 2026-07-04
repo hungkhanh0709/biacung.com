@@ -1,0 +1,177 @@
+[
+  {
+    "id": "craig-silvey",
+    "name": "Craig Silvey",
+    "work_ids": [
+      "craig-silvey-runt"
+    ]
+  },
+  {
+    "id": "mario-puzo",
+    "name": "Mario Puzo",
+    "work_ids": [
+      "mario-puzo-the-godfather",
+      "mario-puzo-fools-die",
+      "mario-puzo-the-fourth-k",
+      "mario-puzo-omerta",
+      "mario-puzo-the-sicilian",
+      "mario-puzo-the-family"
+    ]
+  },
+  {
+    "id": "nguyen-dinh-dang",
+    "name": "Nguyễn Đình Đăng",
+    "work_ids": [
+      "nguyen-dinh-dang-ky-thuat-ve-son-dau",
+      "nguyen-dinh-dang-60-bi-quyet-ve-son-dau"
+    ]
+  },
+  {
+    "id": "percival-everett",
+    "name": "Percival Everett",
+    "work_ids": [
+      "percival-everett-james"
+    ]
+  },
+  {
+    "id": "niccolo-machiavelli",
+    "name": "Niccolò Machiavelli",
+    "work_ids": [
+      "niccolo-machiavelli-il-principe"
+    ]
+  },
+  {
+    "id": "tran-dai-thang",
+    "name": "Trần Đại Thắng",
+    "work_ids": [
+      "tran-dai-thang-layers-of-memory",
+      "tran-dai-thang-toi-ke-tat-ca-deu-tu-sach"
+    ]
+  },
+  {
+    "id": "dong-a",
+    "name": "Đông A",
+    "work_ids": [
+      "dong-a-the-illustrated-history-of-vietnam",
+      "dong-a-ho-chi-minh-tieu-su-bang-hinh"
+    ]
+  },
+  {
+    "id": "nikolai-alekseyevich-ostrovsky",
+    "name": "Nikolai Alekseyevich Ostrovsky",
+    "work_ids": [
+      "nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered"
+    ]
+  },
+  {
+    "id": "emily-jane-bronte",
+    "name": "Emily Jane Brontë",
+    "work_ids": [
+      "emily-jane-bronte-wuthering-heights"
+    ]
+  },
+  {
+    "id": "tran-tien",
+    "name": "Trần Tiến",
+    "work_ids": [
+      "tran-tien-tran-tien-nguoi-hat-tho-minh-ca-khuc-nhung-cau-chuyen"
+    ]
+  },
+  {
+    "id": "henryk-sienkiewicz",
+    "name": "Henryk Sienkiewicz",
+    "work_ids": [
+      "henryk-sienkiewicz-lao-boc-hania-selim-mirza"
+    ]
+  },
+  {
+    "id": "ho-anh-thai",
+    "name": "Hồ Anh Thái",
+    "work_ids": [
+      "tran-tien-tran-tien-nguoi-hat-tho-minh-ca-khuc-nhung-cau-chuyen",
+      "sach-tet-binh-ngo-dong-a-2026",
+      "van-moi-10-nam-2015-2025-dong-a"
+    ]
+  },
+  {
+    "id": "mark-twain",
+    "name": "Mark Twain",
+    "work_ids": [
+      "mark-twain-the-adventures-of-tom-sawyer"
+    ]
+  },
+  {
+    "id": "frances-hodgson-burnett",
+    "name": "Frances Hodgson Burnett",
+    "work_ids": [
+      "frances-hodgson-burnett-the-secret-garden"
+    ]
+  },
+  {
+    "id": "hector-malot",
+    "name": "Hector Malot",
+    "work_ids": [
+      "hector-malot-en-famille",
+      "hector-malot-romain-kalbris"
+    ]
+  },
+  {
+    "id": "dan-brown",
+    "name": "Dan Brown",
+    "work_ids": [
+      "dan-brown-the-secret-of-secrets"
+    ]
+  },
+  {
+    "id": "johann-david-wyss",
+    "name": "Johann David Wyss",
+    "work_ids": [
+      "johann-david-wyss-der-schweizerische-robinson"
+    ]
+  },
+  {
+    "id": "nguyen-dong-chi",
+    "name": "Nguyễn Đổng Chi",
+    "work_ids": [
+      "nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam"
+    ]
+  },
+  {
+    "id": "jose-echegaray",
+    "name": "José Echegaray",
+    "work_ids": [
+      "jose-echegaray-dien-ro-hay-than-thanh"
+    ]
+  },
+  {
+    "id": "frederic-mistral",
+    "name": "Frédéric Mistral",
+    "work_ids": [
+      "frederic-mistral-nang-mireille"
+    ]
+  },
+  {
+    "id": "dk",
+    "name": "DK",
+    "work_ids": [
+      "dk-kinh-doanh-khai-luoc-nhung-tu-tuong-lon",
+      "dk-kinh-te-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-ton-giao-khai-luoc-nhung-tu-tuong-lon",
+      "dk-toan-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-chinh-tri-khai-luoc-nhung-tu-tuong-lon",
+      "dk-tam-li-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-nghe-thuat-khai-luoc-nhung-tu-tuong-lon",
+      "dk-khoa-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-van-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-nu-quyen-khai-luoc-nhung-tu-tuong-lon",
+      "dk-xa-hoi-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-luat-phap-khai-luoc-nhung-tu-tuong-lon",
+      "dk-y-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-sinh-thai-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-sinh-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-thien-van-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-the-chien-ii-khai-luoc-nhung-tu-tuong-lon",
+      "dk-triet-hoc-khai-luoc-nhung-tu-tuong-lon"
+    ]
+  }
+]

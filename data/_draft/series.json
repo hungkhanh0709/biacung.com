@@ -1,0 +1,11 @@
+[
+  {
+    "id": "the-godfather",
+    "name": "The Godfather",
+    "description": "Collection introducing...",
+    "thumbnail": "",
+    "work_ids": [
+      "mario-puzo-the-godfather"
+    ]
+  }
+]

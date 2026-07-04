@@ -1,0 +1,68 @@
+{
+    "id": "mario-puzo-the-family",
+    "title": "Cha con Giáo hoàng",
+    "title_original": "The Family",
+    "authors": [
+        "Mario Puzo",
+        "Carol Gino"
+    ],
+    "awards": [],
+    "series": [],
+    "editions": [
+        {
+            "id": "mario-puzo-the-family-2023-dong-a-bonded-leather-800k",
+            "isbn": "978-604-394-962-9",
+            "caption": "",
+            "pub_year": 2023,
+            "publisher": "NXB Văn Học",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [
+                "Phan Quang Định"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bonded leather",
+            "cover_price": "800k",
+            "print_run": null,
+            "page_count": 576,
+            "copy_numbering": null,
+            "size_cm": "16 x 24",
+            "weight_g": 600,
+            "thumbnail": "https://product.hstatic.net/1000328521/product/2_ba8972b6e9714f0b8a02eda81952208d_master.jpg",
+            "gellery_imgs": [
+                "https://product.hstatic.net/1000328521/product/5f3a7618_57c6b6da49004969965c40e5dc7e46bd_master.jpg",
+                "https://product.hstatic.net/1000328521/product/5f3a7592_7f27858f94fa4db9afa8b6f7bf207b27_master.jpg",
+                "https://product.hstatic.net/1000328521/product/5f3a7594_732bcb99f9f44e9682458b460755b5d9_master.jpg"
+            ],
+            "detail": "1. 500 bản giới hạn, đánh số từ DA 001 đến DA 500 phát hành tới bạn đọc. Mỗi bản được phát hành đều là duy nhất.\n2. Bìa sách bọc bằng da nhân tạo (bonded leather) màu xanh rêu đậm, nhập khẩu trực tiếp từ nhà sản xuất tại Mỹ, có gốc da thật, với các sợi da được bảo vệ bằng lớp sơn phủ gốc nước, ép vân nổi sắc nét, cho hình thức đẹp và bền với thời gian. Đây là dòng da được sản xuất trong điều kiện đảm bảo các yếu tố bảo vệ môi trường, và được sử dụng nhiều cho việc bọc bìa sách Kinh Thánh cùng nhiều loại sản phẩm khác. Ngoài ra, bìa sách được ép nhũ vàng họa tiết đồng nhất cho 2 mặt.\n3. Sách dày 576 trang, khổ 16 x 24 cm. Ruột sách in trên giấy GI76-BB định lượng 70 gsm.\n4. Mạ cạnh sách bằng nhũ vàng, đóng dấu đỏ của Đông A, có Ex-Libris - dấu sở hữu sách.\n5. Sách có hộp đựng bằng carton, in hình và thông tin bìa 1 và bìa 4 của cuốn sách."
+        },
+        {
+            "id": "mario-puzo-the-family-2023-dong-a-bia-mem-200k",
+            "isbn": "978-604-394-962-9",
+            "caption": "",
+            "pub_year": 2023,
+            "publisher": "NXB Văn Học",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [
+                "Phan Quang Định"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa Mềm",
+            "cover_price": "200k",
+            "print_run": null,
+            "page_count": 576,
+            "copy_numbering": null,
+            "size_cm": "16 x 24",
+            "weight_g": 600,
+            "thumbnail": "https://product.hstatic.net/1000328521/product/1_da_3c3f83956ebd4b30a0990ee23f83c1b5_master.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-02"
+}

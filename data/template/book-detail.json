@@ -1,0 +1,48 @@
+{
+    "id": "author-name-book-title",
+    "title": "Book Title In Vietnamese",
+    "title_original": "Book Title In Original Language",
+    "authors": [
+        "Author Name"
+    ],
+    "awards": [
+        "Award Name"
+    ],
+    "series": [
+        "Series Name"
+    ],
+    "editions": [
+        {
+            "id": "author-name-book-title-edition-caption-pub-year-format",
+            "isbn": null,
+            "caption": "Edition Caption",
+            "pub_year": 2026,
+            "publisher": "NXB Văn Học",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [
+                "Ngọc Thứ Lan"
+            ],
+            "illustrators": [
+                "Illustrator Name"
+            ],
+            "proofreaders": [
+                "Proofreader Name"
+            ],
+            "format": "hardcover / paperback / leatherbound / ...",
+            "cover_price": "xxk",
+            "print_run": null,
+            "page_count": null,
+            "copy_numbering": null,
+            "size_cm": "xx x xx x xx",
+            "weight_g": null,
+            "thumbnail": "thumbnail.jpg",
+            "gellery_imgs": [
+                "img1.jpg"
+            ],
+            "detail": "Description of this edition, e.g. special edition, signed copy, ..."
+        }
+    ],
+    "updated_at": "2024-06-26"
+}

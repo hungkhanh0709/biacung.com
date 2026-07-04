@@ -1,0 +1,26 @@
+{
+    "id": "khai-luoc-nhung-tu-tuong-lon",
+    "name": "Khái lược những tư tưởng lớn",
+    "description": "",
+    "thumbnail": "https://cdn.hstatic.net/products/1000328521/15_da_2b2f5246cc374f85836626269c7012ec_master.jpg",
+    "work_ids": [
+        "dk-kinh-doanh-khai-luoc-nhung-tu-tuong-lon",
+        "dk-kinh-te-hoc-khai-luoc-nhung-tu-tuong-lon",
+        "dk-ton-giao-khai-luoc-nhung-tu-tuong-lon",
+        "dk-toan-hoc-khai-luoc-nhung-tu-tuong-lon",
+        "dk-chinh-tri-khai-luoc-nhung-tu-tuong-lon",
+        "dk-tam-li-hoc-khai-luoc-nhung-tu-tuong-lon",
+        "dk-nghe-thuat-khai-luoc-nhung-tu-tuong-lon",
+        "dk-khoa-hoc-khai-luoc-nhung-tu-tuong-lon",
+        "dk-van-hoc-khai-luoc-nhung-tu-tuong-lon",
+        "dk-nu-quyen-khai-luoc-nhung-tu-tuong-lon",
+        "dk-xa-hoi-hoc-khai-luoc-nhung-tu-tuong-lon",
+        "dk-luat-phap-khai-luoc-nhung-tu-tuong-lon",
+        "dk-y-hoc-khai-luoc-nhung-tu-tuong-lon",
+        "dk-sinh-thai-hoc-khai-luoc-nhung-tu-tuong-lon",
+        "dk-sinh-hoc-khai-luoc-nhung-tu-tuong-lon",
+        "dk-thien-van-hoc-khai-luoc-nhung-tu-tuong-lon",
+        "dk-the-chien-ii-khai-luoc-nhung-tu-tuong-lon",
+        "dk-triet-hoc-khai-luoc-nhung-tu-tuong-lon"
+    ]
+}

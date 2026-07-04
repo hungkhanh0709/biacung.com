@@ -1,0 +1,42 @@
+{
+    "id": "sach-tet-binh-ngo-dong-a-2026",
+    "title": "Sách Tết Bính Ngọ 2026",
+    "title_original": "",
+    "authors": [
+        "Hồ Anh Thái (tuyển chọn)"
+    ],
+    "awards": [],
+    "series": [
+        "Sách Tết"
+    ],
+    "editions": [
+        {
+            "id": "sach-tet-binh-ngo-dong-a-2026-2025-dong-a-bia-mem-co-bia-ao-419k",
+            "isbn": "978-632-00-0779-0",
+            "caption": "",
+            "pub_year": 2025,
+            "publisher": "NXB Dân Trí",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm, có bìa áo",
+            "cover_price": "419k",
+            "print_run": null,
+            "page_count": 292,
+            "copy_numbering": "Mỗi cuốn được đánh số thứ tự riêng",
+            "size_cm": "16,5 x 24",
+            "weight_g": 800,
+            "thumbnail": "https://cdn.hstatic.net/products/1000328521/2_9c25505a747f441c8728aa334202d2f3_master.jpg",
+            "gellery_imgs": [
+                "https://cdn.hstatic.net/products/1000328521/1_f2a52e060c2a471db68a400f58b6e183_master.jpg",
+                "https://cdn.hstatic.net/products/1000328521/3_6a8b6f32b62046f8bb969e7fdf60945f_master.jpg",
+                "https://cdn.hstatic.net/products/1000328521/5_325ae8076ed04adebed3dd7c59055528_master.jpg"
+            ],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-04"
+}

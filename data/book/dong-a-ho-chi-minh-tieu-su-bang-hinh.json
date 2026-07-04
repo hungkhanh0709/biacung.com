@@ -1,0 +1,63 @@
+{
+    "id": "dong-a-ho-chi-minh-tieu-su-bang-hinh",
+    "title": "Hồ Chí Minh – Tiểu Sử Bằng Hình",
+    "title_original": "",
+    "authors": [
+        "Đông A (biên soạn)"
+    ],
+    "awards": [],
+    "series": [],
+    "editions": [
+        {
+            "id": "dong-a-ho-chi-minh-tieu-su-bang-hinh-2025-bia-vai-2tr",
+            "isbn": null,
+            "caption": "Ấn Bản Giới Hạn",
+            "pub_year": 2025,
+            "publisher": "NXB Đại Học Sư Phạm",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa vải",
+            "cover_price": "2tr",
+            "print_run": 500,
+            "page_count": 324,
+            "copy_numbering": "HCM001-HCM500",
+            "size_cm": "25 × 30",
+            "weight_g": 3000,
+            "thumbnail": "https://cdn.hstatic.net/products/1000328521/s_50bba486139e464a82ed578600ac0a7e_master.jpg",
+            "gellery_imgs": [
+                "https://cdn.hstatic.net/products/1000328521/0w5a1865_df00107ea62e499da2e85c8523509aba_master.jpg",
+                "https://cdn.hstatic.net/products/1000328521/0w5a1905_7ec1822e03fb4702a0988709cfd8709d_master.jpg",
+                "https://cdn.hstatic.net/products/1000328521/0w5a1904_f6705d5542664a4e8dce15eb01edf1d4_master.jpg"
+            ],
+            "detail": "- 500 bản giới hạn, đánh số từ HCM 001 đến HCM 500 phát hành tới độc giả. Mỗi bản được phát hành đều là duy nhất. \n- Bìa sách bọc vải, in hình chân dung Nguyễn Ái Quốc năm 1924, phía sau là cung điện Versailles. Phần nhãn tên ở bìa 1 và gáy được in trên giấy mỹ thuật và dán thủ công lên bề mặt vải.\n- Sách khổ 25 × 30 cm, 324 trang. Ruột in trên Couche Matt định lượng 150gsm.\n- Đóng dấu chìm của Đông A.\n- Hộp sách vỏ sò bọc vải, lót nhung, có dán nhãn tên sách in trên giấy mỹ thuật."
+        },
+        {
+            "id": "dong-a-ho-chi-minh-tieu-su-bang-hinh-2025-680k",
+            "isbn": "978-632-601-449-5",
+            "caption": "",
+            "pub_year": 2025,
+            "publisher": "NXB Đại Học Sư Phạm",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "",
+            "cover_price": "680k",
+            "print_run": null,
+            "page_count": 324,
+            "copy_numbering": null,
+            "size_cm": "25 x 30",
+            "weight_g": 2200,
+            "thumbnail": "https://cdn.hstatic.net/products/1000328521/3_da_3e36e560d6a84427a2e22e154c7f15f3_master.jpg",
+            "gellery_imgs": [],
+            "detail": "Ấn bản phổ thông có bìa cứng và bìa áo, in màu toàn bộ trên giấy couche 150 gsm, khổ 25 x 30cm, dày 324 trang. \nTrên tấm bìa 1 nổi bật chân dung Nguyễn Ái Quốc năm 1924. \nBìa trong ép nhũ với chân dung Chủ tịch Hồ Chí Minh."
+        }
+    ],
+    "updated_at": "2026-07-04"
+}

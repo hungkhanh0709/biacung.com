@@ -1,0 +1,27 @@
+[
+    {
+        "id": "mario-puzo",
+        "name": "Mario Puzo",
+        "work_ids": []
+    },
+    {
+        "id": "antonine-de-saint-exupery",
+        "name": "Antoine de Saint-Exupéry",
+        "work_ids": []
+    },
+    {
+        "id": "nguyen-huy-thiep",
+        "name": "Nguyễn Huy Thiệp",
+        "work_ids": []
+    },
+    {
+        "id": "nguyen-ngoc-tu",
+        "name": "Nguyễn Ngọc Tư",
+        "work_ids": []
+    },
+    {
+        "id": "laszlo-krasznahorkai-hungary",
+        "name": "László Krasznahorkai",
+        "work_ids": []
+    }
+]
