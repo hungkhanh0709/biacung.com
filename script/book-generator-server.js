@@ -1,6 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const { buildBookDetailFromHtml } = require('./fahasa-crawler');
 
 const rootDir = path.resolve(__dirname, '..');
 const dataDir = path.join(rootDir, 'data');
@@ -30,13 +31,6 @@ function writeJsonFile(filePath, payload) {
 
 function normalizeText(value) {
     return (value == null ? '' : String(value)).trim();
-}
-
-function parseLines(value) {
-    return normalizeText(value)
-        .split(/\r?\n/)
-        .map((entry) => entry.trim())
-        .filter(Boolean);
 }
 
 function slugify(value) {
@@ -99,22 +93,50 @@ function mergeSeries(existingSeries, incomingSeries, bookId) {
     return merged.sort((left, right) => (left.name || '').localeCompare(right.name || '', 'vi'));
 }
 
-function mergeBookIndex(existingBookIndex, detailPath, updatedAt, searchText) {
-    const merged = Array.isArray(existingBookIndex) ? existingBookIndex.filter((entry) => entry && entry.detail !== detailPath) : [];
-    merged.push({
-        detail: detailPath,
-        search_text: searchText || detailPath,
-        updated_at: updatedAt
-    });
-    return merged.sort((left, right) => (right.updated_at || '').localeCompare(left.updated_at || '', 'en'));
-}
-
 function getContentType(filePath) {
     if (filePath.endsWith('.html')) return 'text/html; charset=utf-8';
     if (filePath.endsWith('.js')) return 'application/javascript; charset=utf-8';
     if (filePath.endsWith('.css')) return 'text/css; charset=utf-8';
     if (filePath.endsWith('.json')) return 'application/json; charset=utf-8';
     return 'application/octet-stream';
+}
+
+function isFahasaUrl(rawUrl) {
+    try {
+        const parsed = new URL(rawUrl);
+        return parsed.protocol === 'https:' && (parsed.hostname === 'fahasa.com' || parsed.hostname.endsWith('.fahasa.com'));
+    } catch (error) {
+        return false;
+    }
+}
+
+function buildJinaProxyUrl(targetUrl) {
+    const parsed = new URL(targetUrl);
+    return `https://r.jina.ai/http://${parsed.hostname}${parsed.pathname}${parsed.search}`;
+}
+
+async function fetchSourceText(targetUrl) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 20000);
+
+    try {
+        const response = await fetch(targetUrl, {
+            signal: controller.signal,
+            headers: {
+                'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+                accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+                'accept-language': 'vi-VN,vi;q=0.9,en;q=0.8'
+            }
+        });
+
+        return {
+            response,
+            text: await response.text(),
+            source: 'direct'
+        };
+    } finally {
+        clearTimeout(timeout);
+    }
 }
 
 function serveStaticFile(requestUrl) {
@@ -241,6 +263,58 @@ function handleGetIndexState(req, res) {
     res.end(JSON.stringify({ bookIndex, authors, series }));
 }
 
+async function handleCrawlFahasa(req, res) {
+    let body = '';
+    req.on('data', (chunk) => {
+        body += chunk;
+    });
+
+    req.on('end', async () => {
+        try {
+            const payload = JSON.parse(body || '{}');
+            const targetUrl = normalizeText(payload.url || '');
+
+            if (!targetUrl) {
+                res.writeHead(400, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify({ error: 'Missing URL' }));
+                return;
+            }
+
+            if (!isFahasaUrl(targetUrl)) {
+                res.writeHead(400, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify({ error: 'Chỉ hỗ trợ URL từ fahasa.com.' }));
+                return;
+            }
+
+            let fetched = await fetchSourceText(targetUrl);
+            let usedProxy = false;
+
+            if (!fetched.response.ok) {
+                if (fetched.response.status === 403 || fetched.response.status === 429) {
+                    const proxyUrl = buildJinaProxyUrl(targetUrl);
+                    fetched = await fetchSourceText(proxyUrl);
+                    usedProxy = true;
+                }
+            }
+
+            if (!fetched.response.ok) {
+                res.writeHead(fetched.response.status, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify({ error: `Không thể tải trang Fahasa (${fetched.response.status})` }));
+                return;
+            }
+
+            const bookDetail = buildBookDetailFromHtml(fetched.text, targetUrl);
+
+            res.writeHead(200, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ ok: true, source: usedProxy ? 'fahasa-proxy' : 'fahasa', bookDetail }));
+        } catch (error) {
+            const status = error?.name === 'AbortError' ? 504 : 500;
+            res.writeHead(status, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ error: error.message || 'Không thể crawl dữ liệu từ Fahasa.' }));
+        }
+    });
+}
+
 const server = http.createServer((req, res) => {
     const url = new URL(req.url, 'http://127.0.0.1');
     const pathname = url.pathname;
@@ -265,6 +339,11 @@ const server = http.createServer((req, res) => {
         return;
     }
 
+    if (pathname === '/api/crawl/fahasa' && req.method === 'POST') {
+        handleCrawlFahasa(req, res);
+        return;
+    }
+
     const bookMatch = pathname.match(/^\/api\/books\/([^/]+)$/);
     if (bookMatch && req.method === 'GET') {
         handleGetBook(req, res, decodeURIComponent(bookMatch[1]));
@@ -277,3 +356,26 @@ const server = http.createServer((req, res) => {
             'Content-Type': staticFile.contentType,
             'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0'
         });
+        res.end(staticFile.body);
+        return;
+    }
+
+    res.writeHead(404, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({ error: 'not found' }));
+});
+
+if (require.main === module) {
+    const port = Number.parseInt(process.env.PORT || '3000', 10);
+    server.listen(port, () => {
+        console.log(`Book generator server listening on http://127.0.0.1:${port}`);
+    });
+}
+
+module.exports = {
+    server,
+    buildBookDetailFromHtml,
+    handleCrawlFahasa,
+    handleGetIndexState,
+    handleGetBook,
+    handleSave
+};

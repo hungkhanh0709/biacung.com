@@ -1,0 +1,65 @@
+{
+    "id": "nguyen-du-truyen-kieu",
+    "title": "Truyện Kiều",
+    "title_original": "",
+    "authors": [
+        "Nguyễn Du"
+    ],
+    "awards": [],
+    "series": [
+        "50 Năm Fahasa"
+    ],
+    "editions": [
+        {
+            "id": "nguyen-du-truyen-kieu-2026-dong-a-bia-cung-790k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2026,
+            "publisher": "NXB Văn Học",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [
+                "Nguyễn Thạch Giang"
+            ],
+            "illustrators": [
+                "Đặng Xuân Hòa"
+            ],
+            "proofreaders": [],
+            "format": "Bìa cứng",
+            "cover_price": "790k",
+            "print_run": null,
+            "page_count": 208,
+            "copy_numbering": null,
+            "size_cm": "30 x 25 x 2.2",
+            "weight_g": 2000,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5533.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        },
+        {
+            "id": "nguyen-du-truyen-kieu-2026-tazano-bia-mem-80k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2026,
+            "publisher": "NXB Dân Trí",
+            "issuers": [
+                "Tazano"
+            ],
+            "translators": [],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm",
+            "cover_price": "80k",
+            "print_run": null,
+            "page_count": 192,
+            "copy_numbering": null,
+            "size_cm": "20.5 x 14 x 1",
+            "weight_g": 210,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/9/7/9786326317220.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-05"
+}

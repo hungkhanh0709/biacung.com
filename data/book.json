@@ -1,133 +1,158 @@
 [
   {
-    "detail": "data/book/niccolo-machiavelli-il-principe.json",
-    "search_text": "quan vuong il principe niccolo machiavelli nxb van hoc đong a đang thu",
-    "updated_at": "2026-07-03"
+    "detail": "data/book/abhijit-v-banerjee-poor-economics-a-radical-rethinking-of-the-way-to-fight-global-poverty.json",
+    "search_text": "sach hieu ngheo thoat ngheo poor economics a radical rethinking of the way to fight global poverty abhijit v banerjee esther duflo canh cua mo rong nxb tre nguyen le bao ngoc",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/nguyen-dinh-dang-ky-thuat-ve-son-dau.json",
-    "search_text": "ky thuat ve son dau nguyen đinh đang nxb dan tri đong a",
-    "updated_at": "2026-07-03"
+    "detail": "data/book/albert-camus-le-mythe-de-sisyphe.json",
+    "search_text": "than thoai sisyphus le mythe de sisyphe albert camus canh cua mo rong nxb tre truong thi hoang yen",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/tran-dai-thang-layers-of-memory.json",
-    "search_text": "nhung tang ky uc layers of memory tran đai thang nxb dan tri đong a jesse peterson",
-    "updated_at": "2026-07-03"
+    "detail": "data/book/george-rr-martin-fire-blood.json",
+    "search_text": "lua va mau fire blood george rr martin goodreads choice award nxb thanh nien bach viet the gioi than thoai",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/mario-puzo-omerta.json",
-    "search_text": "luat im lang omerta mario puzo nxb van hoc đong a luong le giang",
-    "updated_at": "2026-07-02"
+    "detail": "data/book/hoang-nam-tien-sach-thu-cho-em.json",
+    "search_text": "thu cho em hoang nam tien 50 nam fahasa nxb hoi nha van nha nam",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/mario-puzo-the-sicilian.json",
-    "search_text": "đat mau sicily the sicilian mario puzo nxb van hoc đong a đang thu",
-    "updated_at": "2026-07-02"
+    "detail": "data/book/hunter-s-thompson-fear-and-loathing-in-las-vegas-a-savage-journey-to-the-heart-of-the-american-dream.json",
+    "search_text": "thac loan o las vegas fear and loathing in las vegas a savage journey to the heart of the american dream hunter s thompson canh cua mo rong nxb tre phu quy",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/percival-everett-james.json",
-    "search_text": "james percival everett pulitzer nxb vintage penguin books",
-    "updated_at": "2026-07-02"
+    "detail": "data/book/jk-rowling-harry-potter.json",
+    "search_text": "harry potter jk rowling 50 nam fahasa nxb tre ly lan",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/mario-puzo-the-family.json",
-    "search_text": "cha con giao hoang the family mario puzo nxb van hoc đong a phan quang đinh",
-    "updated_at": "2026-07-02"
+    "detail": "data/book/jmg-le-clezio-mondo-et-autres-histoires.json",
+    "search_text": "sach lu muc dong mondo et autres histoires jmg le clezio canh cua mo rong nxb tre hoang anh quynh anh thu hong",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/mario-puzo-the-godfather.json",
-    "search_text": "mario puzo the godfather bo gia ngoc thu lan dong a nxb van hoc",
-    "updated_at": "2026-06-30"
+    "detail": "data/book/jose-mauro-de-vasconcelos-boxset-cay-cam-ngot-cua-toi-suoi-am-mat-troi.json",
+    "search_text": "boxset cay cam ngot cua toi suoi am mat troi jose mauro de vasconcelos 50 nam fahasa nxb hoi nha van nha nam nguyen bich lan to yen ly dang bao kim",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/mario-puzo-fools-die.json",
-    "search_text": "fools die mario puzo nxb van hoc đong a nguyen minh",
-    "updated_at": "2026-06-30"
+    "detail": "data/book/lev-tolstoy-anna-karenina.json",
+    "search_text": "anna karenina lev tolstoy nxb hoi nha van nha nam duong tuong nhi ca",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/mario-puzo-the-fourth-k.json",
-    "search_text": "tong thong k thu tu the fourth k mario puzo nxb van hoc đong a orkid",
-    "updated_at": "2026-06-30"
+    "detail": "data/book/lucy-maud-montgomery-anne-of-green-gables.json",
+    "search_text": "anne toc do anne of green gables lucy maud montgomery 50 nam fahasa nxb hoi nha van nha nam",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/charlotte-bronte-jane-eyre.json",
-    "search_text": "jane eyre charlotte bronte nxb van hoc đong a thanh loan",
-    "updated_at": "2026-07-03"
+    "detail": "data/book/mark-levi-the-mathematical-mechanic-using-physical-reasoning-to-solve-problems.json",
+    "search_text": "tho co khi toan hoc the mathematical mechanic using physical reasoning to solve problems mark levi canh cua mo rong nxb tre huy nguyen",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/craig-silvey-runt.json",
-    "search_text": "chu cho runt runt craig silvey nxb van hoc dong a nguyen thi cam linh",
-    "updated_at": "2026-07-03"
+    "detail": "data/book/matt-haig-the-midnight-library.json",
+    "search_text": "thu vien nua dem the midnight library matt haig goodreads choice award nxb hoi nha van nha nam matryoshka",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/tran-dai-thang-toi-ke-tat-ca-deu-tu-sach.json",
-    "search_text": "toi ke tat ca deu tu sach tran dai thang nxb dan tri dong a",
-    "updated_at": "2026-07-03"
+    "detail": "data/book/michael-j-sandel-justice-whats-the-right-thing-to-do.json",
+    "search_text": "phai trai dung sai justice whats the right thing to do michael j sandel sach canh cua mo rong nxb tre ho dac phuong",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/dong-a-the-illustrated-history-of-vietnam.json",
-    "search_text": "the illustrated history of vietnam dong a nxb dai hoc su pham",
-    "updated_at": "2026-07-03"
+    "detail": "data/book/michael-j-sandel-what-money-cant-buy-the-moral-limits-of-markets.json",
+    "search_text": "tien khong mua duoc gi what money cant buy the moral limits of markets michael j sandel canh cua mo rong nxb tre nguyen dieu hang",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json",
-    "search_text": "thep da toi the day how the steel was tempered nikolai alekseyevich ostrovsky nxb van hoc dong a thep moi va huy van",
-    "updated_at": "2026-07-03"
+    "detail": "data/book/neil-shubin-your-inner-fish-a-journey-into-the-35-billion-year-history-of-the-human-body.json",
+    "search_text": "tat ca chung ta deu la ca your inner fish a journey into the 35 billion year history of the human body neil shubin sach canh cua mo rong nxb tre thach mai hoang",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/emily-jane-bronte-wuthering-heights.json",
-    "search_text": "dinh gio hu wuthering heights emily jane bronte nxb van hoc dong a nguyen van ha",
-    "updated_at": "2026-07-03"
+    "detail": "data/book/nguyen-dinh-chieu-sach-luc-van-tien.json",
+    "search_text": "luc van tien nguyen dinh chieu 50 nam fahasa nxb van hoc dong a nguyen thach giang",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/tran-tien-tran-tien-nguoi-hat-tho-minh-ca-khuc-nhung-cau-chuyen.json",
-    "search_text": "tran tien nguoi hat tho minh ca khuc nhung cau chuyen tran tien nxb hoi nha van dong a",
-    "updated_at": "2026-07-03"
+    "detail": "data/book/nguyen-du-truyen-kieu.json",
+    "search_text": "truyen kieu nguyen du 50 nam fahasa nxb dan tri tazano nxb van hoc dong a nguyen thach giang",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/george-bernard-shaw-pygmalion.json",
-    "search_text": "pygmalion george bernard shaw nxb van hoc dong a tran tien cao dang",
-    "updated_at": "2026-07-03"
+    "detail": "data/book/nguyen-nhat-anh-chuyen-tinh-thi-tran.json",
+    "search_text": "chuyen tinh thi tran nguyen nhat anh nxb tre",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/henryk-sienkiewicz-lao-boc-hania-selim-mirza.json",
-    "search_text": "lao boc hania selim mirza henryk sienkiewicz tram nam nobel nxb van hoc dong a nguyen huu dung",
-    "updated_at": "2026-07-03"
+    "detail": "data/book/nguyen-nhat-anh-dao-mong-mo.json",
+    "search_text": "dao mong mo nguyen nhat anh nxb tre dong a",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/sach-tet-binh-ngo-dong-a-2026.json",
-    "search_text": "sach tet binh ngo 2026 ho anh thai nxb dan tri dong a",
-    "updated_at": "2026-07-04"
+    "detail": "data/book/nguyen-nhat-anh-sach-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim.json",
+    "search_text": "sach boxset nguyen nhat anh da chuyen the thanh phim nguyen nhat anh 50 nam fahasa nxb tre",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/nguyen-dinh-dang-60-bi-quyet-ve-son-dau.json",
-    "search_text": "60 bi quyet ve son dau nguyen dinh dang nxb dan tri dong a",
-    "updated_at": "2026-07-04"
+    "detail": "data/book/paul-auster-the-invention-of-solitude.json",
+    "search_text": "khoi sinh cua co doc the invention of solitude paul auster canh cua mo rong nxb tre phuong huyen",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/van-moi-10-nam-2015-2025-dong-a.json",
-    "search_text": "van moi 10 nam 2015 2025 nhieu tac gia ho anh thai tuyen chon van moi nxb hoi nha van dong a",
-    "updated_at": "2026-07-04"
+    "detail": "data/book/philip-roth-nemesis.json",
+    "search_text": "bao ung nemesis philip roth canh cua mo rong nxb tre",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/dong-a-ho-chi-minh-tieu-su-bang-hinh.json",
-    "search_text": "ho chi minh tieu su bang hinh dong a bien soan nxb dai hoc su pham dong a",
-    "updated_at": "2026-07-04"
+    "detail": "data/book/r-f-kuang-yellowface.json",
+    "search_text": "doi lot da vang yellowface r f kuang goodreads choice award nxb lao dong rainbow lam vu",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/mark-twain-the-adventures-of-tom-sawyer.json",
-    "search_text": "nhung cuoc phieu luu cua tom sawyer the adventures of tom sawyer mark twain nxb van hoc dong a dang thu",
-    "updated_at": "2026-07-04"
+    "detail": "data/book/raymond-queneau-zazie-dans-le-metro.json",
+    "search_text": "zazie dans le metro raymond queneau nxb tre cam tho",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/frances-hodgson-burnett-the-secret-garden.json",
-    "search_text": "khu vuon bi mat the secret garden frances hodgson burnett dong a classic nxb van hoc dong a le thi oanh",
-    "updated_at": "2026-07-04"
+    "detail": "data/book/rohinton-mistry-a-fine-balance.json",
+    "search_text": "can bang mong manh a fine balance rohinton mistry canh cua mo rong nxb tre nguyen kim ngoc",
+    "updated_at": "2026-07-05"
   },
   {
-    "detail": "data/book/hector-malot-en-famille.json",
-    "search_text": "trong gia dinh en famille hector malot dong a classic nxb van hoc dong a huynh ly mai huong",
-    "updated_at": "2026-07-04"
+    "detail": "data/book/samuel-butler-the-way-of-all-flesh.json",
+    "search_text": "xac thit ve dau the way of all flesh samuel butler nxb tre thai hoa",
+    "updated_at": "2026-07-05"
+  },
+  {
+    "detail": "data/book/thomas-harris-hannibal-rising.json",
+    "search_text": "hannibal troi day hannibal rising thomas harris nxb hoi nha van nha nam huyen vu",
+    "updated_at": "2026-07-05"
+  },
+  {
+    "detail": "data/book/thomas-mann-der-zauberberg.json",
+    "search_text": "nui than der zauberberg thomas mann nxb tre nguyen hong van",
+    "updated_at": "2026-07-05"
+  },
+  {
+    "detail": "data/book/victor-hugo-quatrevingt-treize.json",
+    "search_text": "chin muoi ba quatrevingttreize victor hugo canh cua mo rong nxb tre chau dien",
+    "updated_at": "2026-07-05"
+  },
+  {
+    "detail": "data/book/vuong-hong-sen-tap-but-nam-canh-ngo-qua-tan-mui-1990-1991.json",
+    "search_text": "tap but nam canh ngo qua tan mui 19901991 vuong hong sen nxb tre",
+    "updated_at": "2026-07-05"
+  },
+  {
+    "detail": "data/book/yagisawa-satoshi-nhung-giac-mo-o-hieu-sach-morisaki.json",
+    "search_text": "nhung giac mo o hieu sach morisaki yagisawa satoshi nxb ha noi nha nam tran quynh anh",
+    "updated_at": "2026-07-05"
   },
   {
     "detail": "data/book/dan-brown-the-secret-of-secrets.json",
@@ -135,28 +160,18 @@
     "updated_at": "2026-07-04"
   },
   {
-    "detail": "data/book/johann-david-wyss-der-schweizerische-robinson.json",
-    "search_text": "gia dinh robinson thuy sy der schweizerische robinson johann david wyss nxb van hoc dong a nguyen minh",
+    "detail": "data/book/david-zierler-con-duong-da-cam.json",
+    "search_text": "con duong da cam david zierler nxb tre bui phuong thao",
     "updated_at": "2026-07-04"
   },
   {
-    "detail": "data/book/hector-malot-romain-kalbris.json",
-    "search_text": "ve voi gia dinh romain kalbris hector malot nxb van hoc dong a le dinh chi",
+    "detail": "data/book/dk-chinh-tri-khai-luoc-nhung-tu-tuong-lon.json",
+    "search_text": "chinh tri khai luoc nhung tu tuong lon dk khai luoc nhung tu tuong lon nxb dan tri dong a bich thu",
     "updated_at": "2026-07-04"
   },
   {
-    "detail": "data/book/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam.json",
-    "search_text": "kho tang truyen co tich viet nam nguyen dong chi nxb hoi nha van dong a",
-    "updated_at": "2026-07-04"
-  },
-  {
-    "detail": "data/book/jose-echegaray-dien-ro-hay-than-thanh.json",
-    "search_text": "dien ro hay than thanh jose echegaray tram nam nobel nxb van hoc dong a thanh loan",
-    "updated_at": "2026-07-04"
-  },
-  {
-    "detail": "data/book/frederic-mistral-nang-mireille.json",
-    "search_text": "nang mireille frederic mistral nxb van hoc dong a nguyen thi thuy an",
+    "detail": "data/book/dk-khoa-hoc-khai-luoc-nhung-tu-tuong-lon.json",
+    "search_text": "khoa hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a nguyen minh",
     "updated_at": "2026-07-04"
   },
   {
@@ -170,23 +185,8 @@
     "updated_at": "2026-07-04"
   },
   {
-    "detail": "data/book/dk-ton-giao-khai-luoc-nhung-tu-tuong-lon.json",
-    "search_text": "ton giao khai luoc nhung tu tuong lon the religions book dk nxb dan tri dong a nguyen minh",
-    "updated_at": "2026-07-04"
-  },
-  {
-    "detail": "data/book/dk-toan-hoc-khai-luoc-nhung-tu-tuong-lon.json",
-    "search_text": "toan hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a le huong ly nguyen thi binh",
-    "updated_at": "2026-07-04"
-  },
-  {
-    "detail": "data/book/dk-chinh-tri-khai-luoc-nhung-tu-tuong-lon.json",
-    "search_text": "chinh tri khai luoc nhung tu tuong lon dk khai luoc nhung tu tuong lon nxb dan tri dong a bich thu",
-    "updated_at": "2026-07-04"
-  },
-  {
-    "detail": "data/book/dk-tam-li-hoc-khai-luoc-nhung-tu-tuong-lon.json",
-    "search_text": "tam li hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a nguyen bao trung",
+    "detail": "data/book/dk-luat-phap-khai-luoc-nhung-tu-tuong-lon.json",
+    "search_text": "luat phap khai luoc nhung tu tuong lon dk nxb dan tri dong a le huong ly",
     "updated_at": "2026-07-04"
   },
   {
@@ -195,38 +195,8 @@
     "updated_at": "2026-07-04"
   },
   {
-    "detail": "data/book/dk-khoa-hoc-khai-luoc-nhung-tu-tuong-lon.json",
-    "search_text": "khoa hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a nguyen minh",
-    "updated_at": "2026-07-04"
-  },
-  {
-    "detail": "data/book/dk-van-hoc-khai-luoc-nhung-tu-tuong-lon.json",
-    "search_text": "van hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a ngoc tan yen nhi hong vy",
-    "updated_at": "2026-07-04"
-  },
-  {
     "detail": "data/book/dk-nu-quyen-khai-luoc-nhung-tu-tuong-lon.json",
     "search_text": "nu quyen khai luoc nhung tu tuong lon dk nxb dan tri dong a kim oanh",
-    "updated_at": "2026-07-04"
-  },
-  {
-    "detail": "data/book/dk-xa-hoi-hoc-khai-luoc-nhung-tu-tuong-lon.json",
-    "search_text": "xa hoi hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a nguyen minh",
-    "updated_at": "2026-07-04"
-  },
-  {
-    "detail": "data/book/dk-luat-phap-khai-luoc-nhung-tu-tuong-lon.json",
-    "search_text": "luat phap khai luoc nhung tu tuong lon dk nxb dan tri dong a le huong ly",
-    "updated_at": "2026-07-04"
-  },
-  {
-    "detail": "data/book/dk-y-hoc-khai-luoc-nhung-tu-tuong-lon.json",
-    "search_text": "y hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a kim oanh huong ly",
-    "updated_at": "2026-07-04"
-  },
-  {
-    "detail": "data/book/dk-sinh-thai-hoc-khai-luoc-nhung-tu-tuong-lon.json",
-    "search_text": "sinh thai hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a le huong ly",
     "updated_at": "2026-07-04"
   },
   {
@@ -235,8 +205,13 @@
     "updated_at": "2026-07-04"
   },
   {
-    "detail": "data/book/dk-thien-van-hoc-khai-luoc-nhung-tu-tuong-lon.json",
-    "search_text": "thien van hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a nguyen thi binh",
+    "detail": "data/book/dk-sinh-thai-hoc-khai-luoc-nhung-tu-tuong-lon.json",
+    "search_text": "sinh thai hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a le huong ly",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/dk-tam-li-hoc-khai-luoc-nhung-tu-tuong-lon.json",
+    "search_text": "tam li hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a nguyen bao trung",
     "updated_at": "2026-07-04"
   },
   {
@@ -245,8 +220,263 @@
     "updated_at": "2026-07-04"
   },
   {
+    "detail": "data/book/dk-thien-van-hoc-khai-luoc-nhung-tu-tuong-lon.json",
+    "search_text": "thien van hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a nguyen thi binh",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/dk-toan-hoc-khai-luoc-nhung-tu-tuong-lon.json",
+    "search_text": "toan hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a le huong ly nguyen thi binh",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/dk-ton-giao-khai-luoc-nhung-tu-tuong-lon.json",
+    "search_text": "ton giao khai luoc nhung tu tuong lon the religions book dk nxb dan tri dong a nguyen minh",
+    "updated_at": "2026-07-04"
+  },
+  {
     "detail": "data/book/dk-triet-hoc-khai-luoc-nhung-tu-tuong-lon.json",
     "search_text": "triet hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a le ngoc tan",
     "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/dk-van-hoc-khai-luoc-nhung-tu-tuong-lon.json",
+    "search_text": "van hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a ngoc tan yen nhi hong vy",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/dk-xa-hoi-hoc-khai-luoc-nhung-tu-tuong-lon.json",
+    "search_text": "xa hoi hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a nguyen minh",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/dk-y-hoc-khai-luoc-nhung-tu-tuong-lon.json",
+    "search_text": "y hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a kim oanh huong ly",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/dong-a-ho-chi-minh-tieu-su-bang-hinh.json",
+    "search_text": "ho chi minh tieu su bang hinh dong a bien soan nxb dai hoc su pham dong a",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/emile-chartlier-alain-noi-ve-hanh-phuc.json",
+    "search_text": "alain noi ve hanh phuc emile chartlier nxb tre ho thanh van cao viet dung nguyen i long",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/frances-hodgson-burnett-the-secret-garden.json",
+    "search_text": "khu vuon bi mat the secret garden frances hodgson burnett dong a classic nxb van hoc dong a le thi oanh",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/frederic-mistral-nang-mireille.json",
+    "search_text": "nang mireille frederic mistral nxb van hoc dong a nguyen thi thuy an",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/hector-malot-en-famille.json",
+    "search_text": "trong gia dinh en famille hector malot dong a classic nxb van hoc dong a huynh ly mai huong",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/hector-malot-romain-kalbris.json",
+    "search_text": "ve voi gia dinh romain kalbris hector malot nxb van hoc dong a le dinh chi",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/ian-stewart-in-pursuit-of-the-unknown-17-equations-that-changed-the-world.json",
+    "search_text": "17 phuong trinh thay doi the gioi in pursuit of the unknown 17 equations that changed the world ian stewart canh cua mo rong",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/johann-david-wyss-der-schweizerische-robinson.json",
+    "search_text": "gia dinh robinson thuy sy der schweizerische robinson johann david wyss nxb van hoc dong a nguyen minh",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/john-steinbeck-tortilla-flat.json",
+    "search_text": "thi tran tortilla flat tortilla flat john steinbeck lam vu thao",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/john-steinbeck-travels-with-charley-in-search-of-america.json",
+    "search_text": "toi charley va hanh trinh nuoc my travels with charley in search of america john steinbeck nxb tre tuan viet",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/jose-echegaray-dien-ro-hay-than-thanh.json",
+    "search_text": "dien ro hay than thanh jose echegaray tram nam nobel nxb van hoc dong a thanh loan",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/mark-twain-the-adventures-of-tom-sawyer.json",
+    "search_text": "nhung cuoc phieu luu cua tom sawyer the adventures of tom sawyer mark twain nxb van hoc dong a dang thu",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/nguyen-dinh-dang-60-bi-quyet-ve-son-dau.json",
+    "search_text": "60 bi quyet ve son dau nguyen dinh dang nxb dan tri dong a",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam.json",
+    "search_text": "kho tang truyen co tich viet nam nguyen dong chi nxb hoi nha van dong a",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/norman-maclean-a-river-runs-through-it.json",
+    "search_text": "noi dong song chay qua a river runs through it norman maclean canh cua mo rong nxb tre nam an",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/sach-tet-binh-ngo-dong-a-2026.json",
+    "search_text": "sach tet binh ngo 2026 ho anh thai nxb dan tri dong a",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/selma-lagerlof-the-wonderful-adventures-of-nils-and-further-adventures-of-nils-holgersson.json",
+    "search_text": "ngon ngu the wonderful adventures of nils and further adventures of nils holgersson selma lagerlof canh cua mo rong nxb tre hoang thieu son",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/thomas-mann-der-tod-in-venedig.json",
+    "search_text": "chet o venice der tod in venedig thomas mann nxb tre nguyen hong van",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/tobias-wolff-our-story-begins-new-and-selected-stories.json",
+    "search_text": "chuyen chung ta bat dau our story begins new and selected stories tobias wolff nxb tre phan viet",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/van-moi-10-nam-2015-2025-dong-a.json",
+    "search_text": "van moi 10 nam 2015 2025 nhieu tac gia ho anh thai tuyen chon van moi nxb hoi nha van dong a",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/victor-segalen-rene-leys.json",
+    "search_text": "rene leys nguoi tinh tre trong tu cam thanh rene leys victor segalen nxb tre que son",
+    "updated_at": "2026-07-04"
+  },
+  {
+    "detail": "data/book/charlotte-bronte-jane-eyre.json",
+    "search_text": "jane eyre charlotte bronte nxb van hoc đong a thanh loan",
+    "updated_at": "2026-07-03"
+  },
+  {
+    "detail": "data/book/craig-silvey-runt.json",
+    "search_text": "chu cho runt runt craig silvey nxb van hoc dong a nguyen thi cam linh",
+    "updated_at": "2026-07-03"
+  },
+  {
+    "detail": "data/book/dong-a-the-illustrated-history-of-vietnam.json",
+    "search_text": "sach lich su viet nam bang hinh the illustrated history of vietnam dong a nxb dai hoc su pham",
+    "updated_at": "2026-07-03"
+  },
+  {
+    "detail": "data/book/emily-jane-bronte-wuthering-heights.json",
+    "search_text": "dinh gio hu wuthering heights emily jane bronte nxb van hoc dong a nguyen van ha",
+    "updated_at": "2026-07-03"
+  },
+  {
+    "detail": "data/book/george-bernard-shaw-pygmalion.json",
+    "search_text": "pygmalion george bernard shaw nxb van hoc dong a tran tien cao dang",
+    "updated_at": "2026-07-03"
+  },
+  {
+    "detail": "data/book/henryk-sienkiewicz-lao-boc-hania-selim-mirza.json",
+    "search_text": "lao boc hania selim mirza henryk sienkiewicz tram nam nobel nxb van hoc dong a nguyen huu dung",
+    "updated_at": "2026-07-03"
+  },
+  {
+    "detail": "data/book/nguyen-dinh-dang-ky-thuat-ve-son-dau.json",
+    "search_text": "ky thuat ve son dau nguyen đinh đang nxb dan tri đong a",
+    "updated_at": "2026-07-03"
+  },
+  {
+    "detail": "data/book/niccolo-machiavelli-il-principe.json",
+    "search_text": "quan vuong il principe niccolo machiavelli nxb van hoc đong a đang thu",
+    "updated_at": "2026-07-03"
+  },
+  {
+    "detail": "data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json",
+    "search_text": "thep da toi the day how the steel was tempered nikolai alekseyevich ostrovsky 50 nam fahasa nxb van hoc tri viet dong a thep moi huy van",
+    "updated_at": "2026-07-03"
+  },
+  {
+    "detail": "data/book/tran-dai-thang-layers-of-memory.json",
+    "search_text": "nhung tang ky uc layers of memory tran đai thang nxb dan tri đong a jesse peterson",
+    "updated_at": "2026-07-03"
+  },
+  {
+    "detail": "data/book/tran-dai-thang-toi-ke-tat-ca-deu-tu-sach.json",
+    "search_text": "toi ke tat ca deu tu sach tran dai thang nxb dan tri dong a",
+    "updated_at": "2026-07-03"
+  },
+  {
+    "detail": "data/book/tran-tien-tran-tien-nguoi-hat-tho-minh-ca-khuc-nhung-cau-chuyen.json",
+    "search_text": "tran tien nguoi hat tho minh ca khuc nhung cau chuyen tran tien nxb hoi nha van dong a",
+    "updated_at": "2026-07-03"
+  },
+  {
+    "detail": "data/book/mario-puzo-omerta.json",
+    "search_text": "luat im lang omerta mario puzo nxb van hoc đong a luong le giang",
+    "updated_at": "2026-07-02"
+  },
+  {
+    "detail": "data/book/mario-puzo-the-family.json",
+    "search_text": "cha con giao hoang the family mario puzo nxb van hoc đong a phan quang đinh",
+    "updated_at": "2026-07-02"
+  },
+  {
+    "detail": "data/book/mario-puzo-the-sicilian.json",
+    "search_text": "đat mau sicily the sicilian mario puzo nxb van hoc đong a đang thu",
+    "updated_at": "2026-07-02"
+  },
+  {
+    "detail": "data/book/percival-everett-james.json",
+    "search_text": "james percival everett pulitzer nxb vintage penguin books",
+    "updated_at": "2026-07-02"
+  },
+  {
+    "detail": "data/book/mario-puzo-fools-die.json",
+    "search_text": "fools die mario puzo nxb van hoc đong a nguyen minh",
+    "updated_at": "2026-06-30"
+  },
+  {
+    "detail": "data/book/mario-puzo-the-fourth-k.json",
+    "search_text": "tong thong k thu tu the fourth k mario puzo nxb van hoc đong a orkid",
+    "updated_at": "2026-06-30"
+  },
+  {
+    "detail": "data/book/mario-puzo-the-godfather.json",
+    "search_text": "mario puzo the godfather bo gia ngoc thu lan dong a nxb van hoc",
+    "updated_at": "2026-06-30"
+  },
+  {
+    "detail": "data/book/khaled-hosseini-the-kite-runner.json",
+    "search_text": "nguoi dua dieu the kite runner khaled hosseini nxb hoi nha van nha nam nguyen ban",
+    "updated_at": "2026-07-05"
+  },
+  {
+    "detail": "data/book/stephanie-garber-legendary.json",
+    "search_text": "legendary stephanie garber goodreads choice award caraval nxb van hoc az viet nam han nhat minh",
+    "updated_at": "2026-07-05"
+  },
+  {
+    "detail": "data/book/john-steinbeck-east-of-eden.json",
+    "search_text": "phia dong vuon dia dang east of eden john steinbeck nobel van chuong nxb hoi nha van tao dan pham van",
+    "updated_at": "2026-07-05"
+  },
+  {
+    "detail": "data/book/john-steinbeck-of-mice-and-men.json",
+    "search_text": "cua chuot va nguoi of mice and men john steinbeck nobel van chuong nxb hoi nha van tao dan pham van",
+    "updated_at": "2026-07-05"
+  },
+  {
+    "detail": "data/book/lev-nikolayevich-tolstoy-chien-tranh-va-hoa-binh.json",
+    "search_text": "chien tranh va hoa binh lev nikolayevich tolstoy nxb van hoc khang viet thao linh",
+    "updated_at": "2026-07-05"
   }
 ]

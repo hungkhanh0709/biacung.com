@@ -1,6 +1,6 @@
 {
     "id": "dong-a-the-illustrated-history-of-vietnam",
-    "title": "",
+    "title": "Sách Lịch Sử Việt Nam Bằng Hình",
     "title_original": "The Illustrated History of Vietnam",
     "authors": [
         "Đông A"
@@ -9,7 +9,7 @@
     "series": [],
     "editions": [
         {
-            "id": "dong-a-the-illustrated-history-of-vietnam-2025-dong-a-bia-cung-boc-vai-co-bia-ao-65usd",
+            "id": "dong-a-the-illustrated-history-of-vietnam-2025-dong-a-bia-cung-ao-om-65usd",
             "isbn": "978-632-601-812-7",
             "caption": "Lịch Sử Việt Nam Bằng Hình – Phiên Bản Tiếng Anh",
             "pub_year": 2025,
@@ -20,7 +20,7 @@
             "translators": [],
             "illustrators": [],
             "proofreaders": [],
-            "format": "Bìa Cứng Bọc Vải, Có Bìa Áo",
+            "format": "Bìa cứng áo ôm",
             "cover_price": "65USD",
             "print_run": null,
             "page_count": 456,
@@ -34,7 +34,30 @@
                 "https://cdn.hstatic.net/products/1000328521/2_c655a540725e48b8aebd5acc1076f6ef_master.jpg"
             ],
             "detail": "Sách do Đông A tổ chức bản thảo và được PGS.TS. Trần Đức Cường - Chủ tịch Hội Khoa học Lịch sử Việt Nam, PGS.TS. Nguyễn Bá Cường, TS. Vũ Đức Liêm, PGS.TS. Phan Ngọc Huyền cố vấn nội dung.\nCuốn sách cũng nhận được sự góp ý, bổ sung thông tin từ nhiều nhà nghiên cứu, nhà sưu tập, họa sĩ, dịch giả."
+        },
+        {
+            "id": "dong-a-the-illustrated-history-of-vietnam-2024-dong-a-bia-cung-ao-om-900k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2024,
+            "publisher": "NXB Đại Học Sư Phạm",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa cứng áo ôm",
+            "cover_price": "900k",
+            "print_run": 2000,
+            "page_count": 660,
+            "copy_numbering": null,
+            "size_cm": "30 x 25 x 3.7",
+            "weight_g": 2900,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/u/n/untitled-2_28.jpg",
+            "gellery_imgs": [],
+            "detail": ""
         }
     ],
-    "updated_at": "2026-07-03"
+    "updated_at": "2026-07-05"
 }

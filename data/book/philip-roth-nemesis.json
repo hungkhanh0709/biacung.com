@@ -1,0 +1,36 @@
+{
+    "id": "philip-roth-nemesis",
+    "title": "Báo Ứng",
+    "title_original": "Nemesis",
+    "authors": [
+        "Philip Roth"
+    ],
+    "awards": [],
+    "series": [
+        "Cánh Cửa Mở Rộng"
+    ],
+    "editions": [
+        {
+            "id": "philip-roth-nemesis-2013-bia-mem-90k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2013,
+            "publisher": "NXB Trẻ",
+            "issuers": [],
+            "translators": [],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm",
+            "cover_price": "90k",
+            "print_run": null,
+            "page_count": 250,
+            "copy_numbering": null,
+            "size_cm": "13x20",
+            "weight_g": 300,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/i/m/image_195509_1_22034.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-05"
+}

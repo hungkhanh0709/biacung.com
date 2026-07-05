@@ -1,0 +1,38 @@
+{
+    "id": "victor-hugo-quatrevingt-treize",
+    "title": "Chín Mươi Ba",
+    "title_original": "Quatrevingt-treize",
+    "authors": [
+        "Victor Hugo"
+    ],
+    "awards": [],
+    "series": [
+        "Cánh Cửa Mở Rộng"
+    ],
+    "editions": [
+        {
+            "id": "victor-hugo-quatrevingt-treize-2014-bia-mem-159k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2014,
+            "publisher": "NXB Trẻ",
+            "issuers": [],
+            "translators": [
+                "Châu Diên"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm",
+            "cover_price": "159k",
+            "print_run": null,
+            "page_count": 564,
+            "copy_numbering": null,
+            "size_cm": "13x20",
+            "weight_g": 600,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8934974126553.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-05"
+}
