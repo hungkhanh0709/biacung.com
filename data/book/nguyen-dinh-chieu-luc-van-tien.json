@@ -1,5 +1,5 @@
 {
-    "id": "nguyen-dinh-chieu-sach-luc-van-tien",
+    "id": "nguyen-dinh-chieu-luc-van-tien",
     "title": "Lục Vân Tiên",
     "title_original": "",
     "authors": [
@@ -11,7 +11,34 @@
     ],
     "editions": [
         {
-            "id": "nguyen-dinh-chieu-sach-luc-van-tien-2026-dong-a-bia-cung-690k",
+            "id": "nguyen-dinh-chieu-luc-van-tien-2026-dong-a-bia-vai-2200k",
+            "isbn": null,
+            "caption": "Ấn Bản Giới Hạn - Bìa Vải - Phiên Bản Độc Quyền 50 Năm Fahasa",
+            "pub_year": 2026,
+            "publisher": "NXB Văn Học",
+            "issuers": [
+                "Đông A"
+            ],
+            "translators": [
+                "Nguyễn Thạch Giang"
+            ],
+            "illustrators": [
+                "Nguyễn Công Hoan"
+            ],
+            "proofreaders": [],
+            "format": "Bìa vải",
+            "cover_price": "2tr2",
+            "print_run": 500,
+            "page_count": 192,
+            "copy_numbering": "LVT001-LVT500",
+            "size_cm": "30 x 25 x 2.1",
+            "weight_g": 2000,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/_/n/_n_b_n_gi_i_h_n_l_c_v_n_ti_n.jpg",
+            "gellery_imgs": [],
+            "detail": "- Ấn phẩm được ấn hành nhân kỷ niệm 50 năm thành lập FAHASA.\n- 500 cuốn giới hạn, bìa vải, đựng trong hộp vỏ sò.\n- Ký hiệu từ LVT 001 đến LVT 500\n- Mạ cạnh sách bằng nhũ vàng.\n- Đóng dấu chìm Limited Edition của Đông A.\n- In bốn màu trên giấy Ford định lượng 150 gsm."
+        },
+        {
+            "id": "nguyen-dinh-chieu-luc-van-tien-2026-dong-a-bia-cung-690k",
             "isbn": null,
             "caption": "",
             "pub_year": 2026,
