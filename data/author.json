@@ -353,7 +353,8 @@
     "id": "nguyen-du",
     "name": "Nguyễn Du",
     "work_ids": [
-      "nguyen-du-truyen-kieu"
+      "nguyen-du-truyen-kieu",
+      "nguyen-du-truyen-kieu-hoi-ban"
     ]
   },
   {
@@ -488,7 +489,8 @@
     "id": "stephen-king",
     "name": "Stephen King",
     "work_ids": [
-      "stephen-king-the-dead-zone"
+      "stephen-king-the-dead-zone",
+      "stephen-king-duma-key"
     ]
   },
   {
@@ -496,6 +498,27 @@
     "name": "John Grisham",
     "work_ids": [
       "john-grisham-the-street-lawyer"
+    ]
+  },
+  {
+    "id": "charlotte-bronte",
+    "name": "Charlotte Brontë",
+    "work_ids": [
+      "charlotte-bronte-jane-eyre"
+    ]
+  },
+  {
+    "id": "vu-bang",
+    "name": "Vũ Bằng",
+    "work_ids": [
+      "vu-bang-mieng-ngon-ha-noi"
+    ]
+  },
+  {
+    "id": "thach-lam",
+    "name": "Thạch Lam",
+    "work_ids": [
+      "thach-lam-ha-noi-bam-sau-pho-phuong"
     ]
   }
 ]
