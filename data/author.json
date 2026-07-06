@@ -374,7 +374,9 @@
     "id": "jose-mauro-de-vasconcelos",
     "name": "José Mauro De Vasconcelos",
     "work_ids": [
-      "jose-mauro-de-vasconcelos-boxset-cay-cam-ngot-cua-toi-suoi-am-mat-troi"
+      "jose-mauro-de-vasconcelos-boxset-cay-cam-ngot-cua-toi-suoi-am-mat-troi",
+      "jose-mauro-de-vasconcelos-meu-pe-de-laranja-lima",
+      "jose-mauro-de-vasconcelos-vamos-aquecer-o-sol"
     ]
   },
   {
@@ -452,6 +454,48 @@
     "name": "Lev Nikolayevich Tolstoy",
     "work_ids": [
       "lev-nikolayevich-tolstoy-chien-tranh-va-hoa-binh"
+    ]
+  },
+  {
+    "id": "miguel-de-cervantes",
+    "name": "Miguel De Cervantes",
+    "work_ids": [
+      "miguel-de-cervantes-don-quijote-de-la-mancha"
+    ]
+  },
+  {
+    "id": "higashino-keigo",
+    "name": "Higashino Keigo",
+    "work_ids": [
+      "higashino-keigo-an-mang-ban-cung-lop"
+    ]
+  },
+  {
+    "id": "natsume-soseki",
+    "name": "Natsume Soseki",
+    "work_ids": [
+      "natsume-soseki-ta-la-meo"
+    ]
+  },
+  {
+    "id": "ernest-hemingway",
+    "name": "Ernest Hemingway",
+    "work_ids": [
+      "ernest-hemingway-the-old-man-and-the-sea"
+    ]
+  },
+  {
+    "id": "stephen-king",
+    "name": "Stephen King",
+    "work_ids": [
+      "stephen-king-the-dead-zone"
+    ]
+  },
+  {
+    "id": "john-grisham",
+    "name": "John Grisham",
+    "work_ids": [
+      "john-grisham-the-street-lawyer"
     ]
   }
 ]

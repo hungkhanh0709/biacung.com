@@ -182,6 +182,48 @@
             font-weight: 600;
         }
 
+        .author-slug-suggestions {
+            margin-top: 12px;
+            padding: 12px;
+            border-radius: 12px;
+            border: 1px solid #dbeafe;
+            background: #eff6ff;
+        }
+
+        .author-slug-suggestions-title {
+            margin-bottom: 8px;
+            color: #1e3a8a;
+            font-size: 0.92rem;
+            font-weight: 700;
+        }
+
+        .author-slug-suggestion-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .author-slug-suggestion-list button {
+            border-radius: 999px;
+            border: 1px solid transparent;
+        }
+
+        .author-slug-suggestion-list button.is-selected {
+            background: #1d4ed8;
+            color: white;
+            border-color: #1d4ed8;
+        }
+
+        .author-slug-suggestion-list .secondary.is-selected {
+            background: #1d4ed8;
+            color: white;
+        }
+
+        .author-slug-suggestion-empty {
+            color: #1e3a8a;
+            font-size: 0.9rem;
+        }
+
         .inline-actions {
             display: flex;
             gap: 10px;
@@ -333,6 +375,7 @@
                     </div>
                     <span class="field-helper" id="slug-status">Slug sẽ được tạo từ Tựa đề gốc + Tác giả. Nếu khớp file
                         đã có, dữ liệu sẽ được load tự động.</span>
+                    <div id="author-slug-suggestions" class="author-slug-suggestions hidden" aria-live="polite"></div>
                     <div id="form-status" class="status-message">Sách mới. Bạn có thể nhập thông tin ngay.</div>
                 </label>
 

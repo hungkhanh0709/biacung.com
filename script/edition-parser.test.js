@@ -14,6 +14,7 @@ const sample = `**Chú chó Runt**
 Tác giả: Craig Silvey
 Dịch giả: Nguyễn Thị Cẩm Linh
 Minh họa: Sara Acton
+Hiệu đính: Alpha One, Beta Two
 Kích thước: 14.5 x 20.5 cm
 Số trang: 336
 Trọng lượng: 500 gram
@@ -28,6 +29,7 @@ assert.strictEqual(parsed.title, 'Chú chó Runt');
 assert.deepStrictEqual(parsed.authors, ['Craig Silvey']);
 assert.deepStrictEqual(parsed.translators, ['Nguyễn Thị Cẩm Linh']);
 assert.deepStrictEqual(parsed.illustrators, ['Sara Acton']);
+assert.deepStrictEqual(parsed.proofreaders, ['Alpha One', 'Beta Two']);
 assert.strictEqual(parsed.publisher, 'NXB Văn học');
 assert.deepStrictEqual(parsed.issuers, ['Đông A']);
 assert.strictEqual(parsed.size_cm, '14.5 x 20.5');

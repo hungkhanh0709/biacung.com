@@ -1,0 +1,38 @@
+{
+    "id": "stephen-king-the-dead-zone",
+    "title": "Vùng Chết",
+    "title_original": "The Dead Zone",
+    "authors": [
+        "Stephen King"
+    ],
+    "awards": [],
+    "series": [],
+    "editions": [
+        {
+            "id": "stephen-king-the-dead-zone-2026-1980-books-bia-mem-359k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2026,
+            "publisher": "NXB Hà Nội",
+            "issuers": [
+                "1980 Books"
+            ],
+            "translators": [
+                "Hiếu Văn"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm",
+            "cover_price": "359k",
+            "print_run": null,
+            "page_count": 640,
+            "copy_numbering": null,
+            "size_cm": "24 x 16 x 3.2",
+            "weight_g": 820,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/v/u/vung-chet-bia-1.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-06"
+}

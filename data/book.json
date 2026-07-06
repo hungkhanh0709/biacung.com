@@ -478,5 +478,45 @@
     "detail": "data/book/lev-nikolayevich-tolstoy-chien-tranh-va-hoa-binh.json",
     "search_text": "chien tranh va hoa binh lev nikolayevich tolstoy nxb van hoc khang viet thao linh",
     "updated_at": "2026-07-05"
+  },
+  {
+    "detail": "data/book/miguel-de-cervantes-don-quijote-de-la-mancha.json",
+    "search_text": "don quixote nha quy toc tai ba xu mancha don quijote de la mancha miguel de cervantes nxb hoi nha van nha nam truong dac vy",
+    "updated_at": "2026-07-06"
+  },
+  {
+    "detail": "data/book/higashino-keigo-an-mang-ban-cung-lop.json",
+    "search_text": "an mang ban cung lop higashino keigo nxb dan tri 1980 books thuongchan",
+    "updated_at": "2026-07-06"
+  },
+  {
+    "detail": "data/book/natsume-soseki-ta-la-meo.json",
+    "search_text": "ta la meo natsume soseki nxb phu nu tao dan mai do",
+    "updated_at": "2026-07-06"
+  },
+  {
+    "detail": "data/book/ernest-hemingway-the-old-man-and-the-sea.json",
+    "search_text": "ong gia va bien ca the old man and the sea ernest hemingway nobel van chuong nxb van hoc nha nam hien trang",
+    "updated_at": "2026-07-06"
+  },
+  {
+    "detail": "data/book/jose-mauro-de-vasconcelos-meu-pe-de-laranja-lima.json",
+    "search_text": "cay cam ngot cua toi meu pe de laranja lima jose mauro de vasconcelos nxb hoi nha van nha nam nguyen bich lan to yen ly",
+    "updated_at": "2026-07-06"
+  },
+  {
+    "detail": "data/book/jose-mauro-de-vasconcelos-vamos-aquecer-o-sol.json",
+    "search_text": "suoi am mat troi vamos aquecer o sol jose mauro de vasconcelos nxb hoi nha van nha nam dang bao kim",
+    "updated_at": "2026-07-06"
+  },
+  {
+    "detail": "data/book/stephen-king-the-dead-zone.json",
+    "search_text": "vung chet the dead zone stephen king nxb ha noi 1980 books hieu van",
+    "updated_at": "2026-07-06"
+  },
+  {
+    "detail": "data/book/john-grisham-the-street-lawyer.json",
+    "search_text": "luat su duong pho the street lawyer john grisham nxb tre le thuy giang",
+    "updated_at": "2026-07-06"
   }
 ]
