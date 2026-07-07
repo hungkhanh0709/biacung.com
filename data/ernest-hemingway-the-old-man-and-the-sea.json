@@ -1,0 +1,40 @@
+{
+    "id": "ernest-hemingway-the-old-man-and-the-sea",
+    "title": "Ông Già Và Biển Cả",
+    "title_original": "The Old Man and the Sea",
+    "authors": [
+        "Ernest Hemingway"
+    ],
+    "awards": [
+        "Nobel Văn chương"
+    ],
+    "series": [],
+    "editions": [
+        {
+            "id": "ernest-hemingway-the-old-man-and-the-sea-2026-nha-nam-bia-mem-62k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2026,
+            "publisher": "NXB Văn Học",
+            "issuers": [
+                "Nhã Nam"
+            ],
+            "translators": [
+                "Hiền Trang"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm",
+            "cover_price": "62k",
+            "print_run": null,
+            "page_count": 136,
+            "copy_numbering": null,
+            "size_cm": "20.5 x 14 x 0.6",
+            "weight_g": 150,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8935235241121_2.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-06"
+}

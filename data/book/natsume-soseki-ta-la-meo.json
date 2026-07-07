@@ -1,0 +1,38 @@
+{
+    "id": "natsume-soseki-ta-la-meo",
+    "title": "Ta Là Mèo",
+    "title_original": "吾輩は猫である",
+    "authors": [
+        "Natsume Soseki"
+    ],
+    "awards": [],
+    "series": [],
+    "editions": [
+        {
+            "id": "natsume-soseki-ta-la-meo-2026-tao-dan-bia-mem-380k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2026,
+            "publisher": "NXB Phụ Nữ",
+            "issuers": [
+                "Tao Đàn"
+            ],
+            "translators": [
+                "Mai Đỗ"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm",
+            "cover_price": "380k",
+            "print_run": null,
+            "page_count": 500,
+            "copy_numbering": null,
+            "size_cm": "24 x 16 x 2.5",
+            "weight_g": 640,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/7/z7803835530492_bccfaade505cc9b6d5ff0900db3a7c83.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-06"
+}

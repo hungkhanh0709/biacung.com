@@ -204,6 +204,7 @@
             authors: [],
             translators: [],
             illustrators: [],
+            proofreaders: [],
             publisher: null,
             issuers: [],
             pub_year: null,
@@ -262,6 +263,17 @@
             const illLine = lines.find(l => /Minh họa|Illustrator|Illustrators/i.test(l));
             if (illLine) {
                 result.illustrators = parseAuthors(illLine.replace(/.*?:/, '').trim());
+            }
+        }
+
+        // Proofreaders
+        const proofreaderLabel = easyLabel(['Hiệu đính', 'Hiệu đính:', 'Proofreader', 'Proofreaders']);
+        if (proofreaderLabel) {
+            result.proofreaders = parseAuthors(proofreaderLabel);
+        } else {
+            const proofreaderLine = lines.find(l => /Hiệu đính|Proofreader|Proofreaders/i.test(l));
+            if (proofreaderLine) {
+                result.proofreaders = parseAuthors(proofreaderLine.replace(/.*?:/, '').trim());
             }
         }
 

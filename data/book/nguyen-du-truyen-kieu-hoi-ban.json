@@ -1,0 +1,39 @@
+{
+    "id": "nguyen-du-truyen-kieu-hoi-ban",
+    "title": "Truyện Kiều Hội Bản",
+    "title_original": "",
+    "authors": [
+        "Nguyễn Du"
+    ],
+    "awards": [],
+    "series": [],
+    "editions": [
+        {
+            "id": "nguyen-du-truyen-kieu-hoi-ban-2026-thai-ha-bia-cung-3tr8",
+            "isbn": null,
+            "caption": "Ấn Bản Khảm Trai",
+            "pub_year": 2026,
+            "publisher": "NXB Hà Nội",
+            "issuers": [
+                "Thái Hà"
+            ],
+            "translators": [
+                "Hoàng Ngọc Cương",
+                "Nguyễn Đức Bá"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa cứng",
+            "cover_price": "3tr8",
+            "print_run": null,
+            "page_count": 324,
+            "copy_numbering": null,
+            "size_cm": "25 x 17 x 2",
+            "weight_g": 800,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/7/z7750498447469_06a67dd2302a51f95ef0154730be9a54.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-06"
+}

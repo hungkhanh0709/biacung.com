@@ -112,7 +112,8 @@
     "name": "Hector Malot",
     "work_ids": [
       "hector-malot-en-famille",
-      "hector-malot-romain-kalbris"
+      "hector-malot-romain-kalbris",
+      "hector-malot-sans-famille"
     ]
   },
   {
@@ -353,7 +354,8 @@
     "id": "nguyen-du",
     "name": "Nguyễn Du",
     "work_ids": [
-      "nguyen-du-truyen-kieu"
+      "nguyen-du-truyen-kieu",
+      "nguyen-du-truyen-kieu-hoi-ban"
     ]
   },
   {
@@ -374,7 +376,9 @@
     "id": "jose-mauro-de-vasconcelos",
     "name": "José Mauro De Vasconcelos",
     "work_ids": [
-      "jose-mauro-de-vasconcelos-boxset-cay-cam-ngot-cua-toi-suoi-am-mat-troi"
+      "jose-mauro-de-vasconcelos-boxset-cay-cam-ngot-cua-toi-suoi-am-mat-troi",
+      "jose-mauro-de-vasconcelos-meu-pe-de-laranja-lima",
+      "jose-mauro-de-vasconcelos-vamos-aquecer-o-sol"
     ]
   },
   {
@@ -452,6 +456,105 @@
     "name": "Lev Nikolayevich Tolstoy",
     "work_ids": [
       "lev-nikolayevich-tolstoy-chien-tranh-va-hoa-binh"
+    ]
+  },
+  {
+    "id": "miguel-de-cervantes",
+    "name": "Miguel De Cervantes",
+    "work_ids": [
+      "miguel-de-cervantes-don-quijote-de-la-mancha"
+    ]
+  },
+  {
+    "id": "higashino-keigo",
+    "name": "Higashino Keigo",
+    "work_ids": [
+      "higashino-keigo-an-mang-ban-cung-lop"
+    ]
+  },
+  {
+    "id": "natsume-soseki",
+    "name": "Natsume Soseki",
+    "work_ids": [
+      "natsume-soseki-ta-la-meo"
+    ]
+  },
+  {
+    "id": "ernest-hemingway",
+    "name": "Ernest Hemingway",
+    "work_ids": [
+      "ernest-hemingway-the-old-man-and-the-sea"
+    ]
+  },
+  {
+    "id": "stephen-king",
+    "name": "Stephen King",
+    "work_ids": [
+      "stephen-king-the-dead-zone",
+      "stephen-king-duma-key"
+    ]
+  },
+  {
+    "id": "john-grisham",
+    "name": "John Grisham",
+    "work_ids": [
+      "john-grisham-the-street-lawyer"
+    ]
+  },
+  {
+    "id": "charlotte-bronte",
+    "name": "Charlotte Brontë",
+    "work_ids": [
+      "charlotte-bronte-jane-eyre"
+    ]
+  },
+  {
+    "id": "vu-bang",
+    "name": "Vũ Bằng",
+    "work_ids": [
+      "vu-bang-mieng-ngon-ha-noi"
+    ]
+  },
+  {
+    "id": "thach-lam",
+    "name": "Thạch Lam",
+    "work_ids": [
+      "thach-lam-ha-noi-bam-sau-pho-phuong"
+    ]
+  },
+  {
+    "id": "irving-stone",
+    "name": "Irving Stone",
+    "work_ids": [
+      "irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo"
+    ]
+  },
+  {
+    "id": "ocean-vuong",
+    "name": "Ocean Vuong",
+    "work_ids": [
+      "ocean-vuong-the-emperor-of-gladness"
+    ]
+  },
+  {
+    "id": "son-tung",
+    "name": "Sơn Tùng",
+    "work_ids": [
+      "son-tung-bup-sen-xanh"
+    ]
+  },
+  {
+    "id": "nguyen-van-thac",
+    "name": "Nguyễn Văn Thạc",
+    "work_ids": [
+      "nguyen-van-thac-mai-mai-tuoi-hai-muoi"
+    ]
+  },
+  {
+    "id": "dang-vuong-hung",
+    "name": "Đặng Vương Hưng",
+    "work_ids": [
+      "nguyen-van-thac-mai-mai-tuoi-hai-muoi"
     ]
   }
 ]

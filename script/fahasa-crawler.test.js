@@ -15,6 +15,8 @@ const sampleHtml = `
       <tr><td>Tên Nhà Cung Cấp</td><td>Bách Việt</td></tr>
       <tr><td>Tác giả</td><td>Dan Brown</td></tr>
       <tr><td>Người Dịch</td><td>Lê Đình Chi</td></tr>
+      <tr><td>Minh họa</td><td>Alice A, Bob B</td></tr>
+      <tr><td>Hiệu đính</td><td>Carol C, Dave D</td></tr>
       <tr><td>NXB</td><td>Dân Trí</td></tr>
       <tr><td>Năm XB</td><td>2026</td></tr>
       <tr><td>Trọng lượng (gr)</td><td>1500</td></tr>
@@ -45,6 +47,8 @@ assert.strictEqual(parsed.editions.length, 1);
 assert.strictEqual(parsed.editions[0].publisher, 'NXB Dân Trí');
 assert.deepStrictEqual(parsed.editions[0].issuers, ['Bách Việt']);
 assert.deepStrictEqual(parsed.editions[0].translators, ['Lê Đình Chi']);
+assert.deepStrictEqual(parsed.editions[0].illustrators, ['Alice A', 'Bob B']);
+assert.deepStrictEqual(parsed.editions[0].proofreaders, ['Carol C', 'Dave D']);
 assert.strictEqual(parsed.editions[0].pub_year, 2026);
 assert.strictEqual(parsed.editions[0].weight_g, 1500);
 assert.strictEqual(parsed.editions[0].page_count, 952);

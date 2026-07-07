@@ -1,0 +1,38 @@
+{
+  "id": "nguyen-van-thac-mai-mai-tuoi-hai-muoi",
+  "title": "Mãi Mãi Tuổi Hai Mươi",
+  "title_original": "",
+  "authors": [
+    "Nguyễn Văn Thạc",
+    "Đặng Vương Hưng"
+  ],
+  "awards": [],
+  "series": [
+    "Tủ Sách Thanh Niên"
+  ],
+  "editions": [
+    {
+      "id": "nguyen-van-thac-mai-mai-tuoi-hai-muoi-2025-bia-cung-135k",
+      "isbn": null,
+      "caption": "Bìa Cứng - Độc Quyền Fahasa",
+      "pub_year": 2025,
+      "publisher": "NXB Kim Đồng",
+      "issuers": [],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "135k",
+      "print_run": null,
+      "page_count": 348,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 13.5 x 1.9",
+      "weight_g": 560,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/6/z6923363964831_c6d0801298a97c228cf13c4609936b6a-1_1.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ],
+  "updated_at": "2026-07-07",
+  "book_id": "nguyen-van-thac-mai-mai-tuoi-hai-muoi"
+}

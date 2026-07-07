@@ -672,6 +672,14 @@
             findLabelValue(lines, ['Người Dịch', 'Người dịch', 'Dịch giả', 'Translator', 'Translators'])
             || extractPipeDelimitedValue(source, ['Người Dịch', 'Người dịch', 'Dịch giả', 'Translator', 'Translators'])
         );
+        const illustrators = splitAuthors(
+            findLabelValue(lines, ['Minh họa', 'Minh họa:', 'Illustrator', 'Illustrators'])
+            || extractPipeDelimitedValue(source, ['Minh họa', 'Minh họa:', 'Illustrator', 'Illustrators'])
+        );
+        const proofreaders = splitAuthors(
+            findLabelValue(lines, ['Hiệu đính', 'Hiệu đính:', 'Proofreader', 'Proofreaders'])
+            || extractPipeDelimitedValue(source, ['Hiệu đính', 'Hiệu đính:', 'Proofreader', 'Proofreaders'])
+        );
         const publisher = normalizePublisher(findLabelValue(lines, ['NXB', 'Nhà xuất bản', 'Nhà Xuất Bản']));
         const issuers = splitAuthors(findLabelValue(lines, ['Nhà cung cấp', 'Nhà cung cấp:', 'Tên Nhà Cung Cấp', 'Cty phát hành', 'Công ty phát hành']) || extractLabelValueFromText(allText, ['Nhà cung cấp', 'Tên Nhà Cung Cấp', 'Cty phát hành', 'Công ty phát hành']));
         const pubYear = extractYearFromLabelledLines(lines, ['Năm XB', 'Năm xuất bản', 'Phát hành'])
@@ -698,8 +706,8 @@
             publisher: publisher || '',
             issuers: issuers.length ? issuers : [],
             translators,
-            illustrators: [],
-            proofreaders: [],
+            illustrators,
+            proofreaders,
             format: normalizedFormat || '',
             cover_price: coverPrice || '',
             print_run: null,

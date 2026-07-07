@@ -1,0 +1,35 @@
+{
+  "id": "son-tung-bup-sen-xanh",
+  "title": "Búp Sen Xanh",
+  "title_original": "",
+  "authors": [
+    "Sơn Tùng"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "son-tung-bup-sen-xanh-2025-ban-doc-quyen-110k",
+      "isbn": null,
+      "caption": "Bìa Cứng - Độc Quyền Fahasa",
+      "pub_year": 2025,
+      "publisher": "NXB Kim Đồng",
+      "issuers": [],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bản độc quyền",
+      "cover_price": "110k",
+      "print_run": null,
+      "page_count": 444,
+      "copy_numbering": null,
+      "size_cm": "19 x 13 x 2.4",
+      "weight_g": 560,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/u/n/untitled-2_1_33.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ],
+  "updated_at": "2026-07-07",
+  "book_id": "son-tung-bup-sen-xanh"
+}

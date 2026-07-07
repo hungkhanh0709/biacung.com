@@ -1,0 +1,38 @@
+{
+    "id": "stephen-king-duma-key",
+    "title": "Đảo Hoạ Quỷ",
+    "title_original": "Duma Key",
+    "authors": [
+        "Stephen King"
+    ],
+    "awards": [],
+    "series": [],
+    "editions": [
+        {
+            "id": "stephen-king-duma-key-2026-1980-books-bia-mem-399k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2026,
+            "publisher": "NXB Hà Nội",
+            "issuers": [
+                "1980 Books"
+            ],
+            "translators": [
+                "Hoài Anh"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm",
+            "cover_price": "399k",
+            "print_run": null,
+            "page_count": 828,
+            "copy_numbering": null,
+            "size_cm": "24 x 16 x 4.1",
+            "weight_g": 1060,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/d/a/dao-hoa-quy-duma-key-bia-1.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-06"
+}

@@ -1,0 +1,39 @@
+{
+    "id": "jose-mauro-de-vasconcelos-meu-pe-de-laranja-lima",
+    "title": "Cây Cam Ngọt Của Tôi",
+    "title_original": "Meu Pé de Laranja Lima",
+    "authors": [
+        "José Mauro De Vasconcelos"
+    ],
+    "awards": [],
+    "series": [],
+    "editions": [
+        {
+            "id": "jose-mauro-de-vasconcelos-meu-pe-de-laranja-lima-2026-nha-nam-bia-mem-125k",
+            "isbn": null,
+            "caption": "",
+            "pub_year": 2026,
+            "publisher": "NXB Hội Nhà Văn",
+            "issuers": [
+                "Nhã Nam"
+            ],
+            "translators": [
+                "Nguyễn Bích Lan",
+                "Tô Yến Ly"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa mềm",
+            "cover_price": "125k",
+            "print_run": null,
+            "page_count": 244,
+            "copy_numbering": null,
+            "size_cm": "20 x 14.5 x 1.2",
+            "weight_g": 260,
+            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/i/m/image_217480_1.jpg",
+            "gellery_imgs": [],
+            "detail": ""
+        }
+    ],
+    "updated_at": "2026-07-06"
+}
