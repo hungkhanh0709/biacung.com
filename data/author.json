@@ -520,5 +520,19 @@
     "work_ids": [
       "thach-lam-ha-noi-bam-sau-pho-phuong"
     ]
+  },
+  {
+    "id": "irving-stone",
+    "name": "Irving Stone",
+    "work_ids": [
+      "irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo"
+    ]
+  },
+  {
+    "id": "ocean-vuong",
+    "name": "Ocean Vuong",
+    "work_ids": [
+      "ocean-vuong-the-emperor-of-gladness"
+    ]
   }
 ]

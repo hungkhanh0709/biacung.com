@@ -32,7 +32,6 @@
             margin-bottom: 24px;
         }
 
-        h1,
         h2,
         h3 {
             margin-top: 0;
@@ -100,6 +99,11 @@
             align-items: center;
             gap: 8px;
             flex-wrap: wrap;
+        }
+
+        .slug-input-row input {
+            flex: 1 1 320px;
+            min-width: 0;
         }
 
         label {
@@ -174,12 +178,6 @@
             gap: 8px;
             flex-wrap: wrap;
             align-items: center;
-        }
-
-        .slug-preview {
-            color: #2563eb;
-            font-size: 0.95rem;
-            font-weight: 600;
         }
 
         .author-slug-suggestions {
@@ -317,23 +315,18 @@
             font-size: 0.95rem;
         }
 
-        .status-message {
+        .inline-status {
             margin-top: 8px;
-            padding: 10px 12px;
-            border-radius: 10px;
-            background: #eff6ff;
-            color: #1d4ed8;
-            font-weight: 600;
+            color: #64748b;
+            font-size: 0.9rem;
+            font-weight: 500;
         }
 
-        .status-message.success {
-            background: #ecfdf5;
-            color: #047857;
-        }
-
-        .status-message.error {
+        .inline-status.error {
             background: #fef2f2;
             color: #b91c1c;
+            padding: 10px 12px;
+            border-radius: 10px;
         }
 
         .section-title {
@@ -345,10 +338,6 @@
 
 <body>
     <main class="page">
-        <section class="card">
-            <h1>JSON Generator</h1>
-        </section>
-
         <form id="book-form" class="card" autocomplete="off">
             <h2>Thông tin cơ bản</h2>
             <div class="grid">
@@ -370,13 +359,9 @@
                 <label class="field-full-row">
                     Slug tự động
                     <div class="slug-input-row">
-                        <input id="book-id" name="bookId" placeholder="mario-puzo-the-godfather" />
-                        <span class="slug-preview" id="slug-preview">slug sẽ được tạo</span>
+                        <input id="book-id" name="bookId" placeholder="data/book/{slug}.json" />
                     </div>
-                    <span class="field-helper" id="slug-status">Slug sẽ được tạo từ Tựa đề gốc + Tác giả. Nếu khớp file
-                        đã có, dữ liệu sẽ được load tự động.</span>
                     <div id="author-slug-suggestions" class="author-slug-suggestions hidden" aria-live="polite"></div>
-                    <div id="form-status" class="status-message">Sách mới. Bạn có thể nhập thông tin ngay.</div>
                 </label>
 
                 <div class="field-row-2 field-full-row">
@@ -393,37 +378,32 @@
 
             <div class="divider"></div>
             <div class="inline-actions">
-                <h2 class="section-title">Các bản phát hành</h2>
-                <button type="button" id="add-edition" class="secondary">+ Thêm bản phát hành</button>
+                <h2 class="section-title">Các phiên bản</h2>
+                <button type="button" id="add-edition" class="secondary">+ Thêm phiên bản</button>
             </div>
             <div id="editions-container"></div>
 
-            <div class="divider"></div>
-            <div class="inline-actions">
-                <button type="submit" class="primary">Tạo JSON</button>
-                <button type="button" id="reset-form" class="secondary">Reset form</button>
-            </div>
         </form>
 
         <section class="card">
             <h2>Kết quả JSON</h2>
             <div class="output-panel">
                 <div class="output-actions">
-                    <button type="button" id="download-book-index" class="primary">Tải book.json</button>
-                    <button type="button" id="download-book-detail" class="secondary">Tải book-detail.json</button>
-                    <button type="button" id="download-authors" class="secondary">Tải author.json</button>
-                    <button type="button" id="download-series" class="secondary">Tải series.json</button>
+                    <button type="button" id="download-book-index" class="primary">book.json</button>
+                    <button type="button" id="download-book-detail" class="secondary">detail.json</button>
+                    <button type="button" id="download-authors" class="secondary">author.json</button>
+                    <button type="button" id="download-series" class="secondary">series.json</button>
                 </div>
                 <h3>book.json</h3>
                 <pre id="book-index-output">{}</pre>
                 <div class="divider"></div>
-                <h3>book-detail.json</h3>
+                <h3 id="book-detail-filename">data/book/{slug}.json</h3>
                 <pre id="book-detail-output">{}</pre>
                 <div class="divider"></div>
                 <h3>author.json</h3>
                 <pre id="authors-output">[]</pre>
                 <div class="divider"></div>
-                <h3>series.json</h3>
+                <h3 id="series-filename">data/series/{slug}.json</h3>
                 <pre id="series-output">{}</pre>
             </div>
         </section>
