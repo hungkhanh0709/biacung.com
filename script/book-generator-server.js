@@ -43,28 +43,40 @@ function slugify(value) {
         .trim();
 }
 
-function mergeAuthors(existingAuthors, incomingAuthors, bookId) {
-    const merged = Array.isArray(existingAuthors) ? existingAuthors.map((entry) => ({ ...entry })) : [];
-    (Array.isArray(incomingAuthors) ? incomingAuthors : []).forEach((author) => {
-        const authorId = slugify(author.name || author.id || '');
-        const existingAuthor = merged.find((entry) => slugify(entry.name || '') === authorId || entry.id === authorId);
-        if (existingAuthor) {
-            existingAuthor.work_ids = existingAuthor.work_ids || [];
-            if (!existingAuthor.work_ids.includes(bookId)) {
-                existingAuthor.work_ids.push(bookId);
-            }
-            existingAuthor.name = existingAuthor.name || author.name;
+function mergeAuthors(existingAuthors, incomingAuthors) {
+    const orderedIds = [];
+    const mergedById = new Map();
+
+    const upsert = (author) => {
+        if (!author || typeof author !== 'object') {
             return;
         }
 
-        merged.push({
-            id: authorId,
-            name: author.name || author.id || '',
-            work_ids: [bookId]
-        });
-    });
+        const authorId = normalizeText(author.id || slugify(author.name || ''));
+        if (!authorId) {
+            return;
+        }
 
-    return merged.sort((left, right) => (left.name || '').localeCompare(right.name || '', 'vi'));
+        const normalizedAuthor = {
+            ...author,
+            id: authorId,
+            name: normalizeText(author.name || authorId),
+            work_ids: Array.isArray(author.work_ids)
+                ? [...new Set(author.work_ids.map((workId) => normalizeText(workId)).filter(Boolean))]
+                : []
+        };
+
+        if (!mergedById.has(authorId)) {
+            orderedIds.push(authorId);
+        }
+
+        mergedById.set(authorId, normalizedAuthor);
+    };
+
+    (Array.isArray(existingAuthors) ? existingAuthors : []).forEach(upsert);
+    (Array.isArray(incomingAuthors) ? incomingAuthors : []).forEach(upsert);
+
+    return orderedIds.map((authorId) => mergedById.get(authorId));
 }
 
 function mergeSeries(existingSeries, incomingSeries, bookId) {
@@ -74,7 +86,7 @@ function mergeSeries(existingSeries, incomingSeries, bookId) {
         const existingEntry = merged.find((entry) => slugify(entry.name || '') === seriesId || entry.id === seriesId);
         if (existingEntry) {
             existingEntry.work_ids = existingEntry.work_ids || [];
-            if (!existingEntry.work_ids.includes(bookId)) {
+            if (bookId && !existingEntry.work_ids.includes(bookId)) {
                 existingEntry.work_ids.push(bookId);
             }
             existingEntry.name = existingEntry.name || seriesItem.name;
@@ -86,11 +98,165 @@ function mergeSeries(existingSeries, incomingSeries, bookId) {
             name: seriesItem.name || seriesItem.id || '',
             description: seriesItem.description || 'Collection introducing...',
             thumbnail: seriesItem.thumbnail || '',
-            work_ids: [bookId]
+            work_ids: bookId ? [bookId] : []
         });
     });
 
     return merged.sort((left, right) => (left.name || '').localeCompare(right.name || '', 'vi'));
+}
+
+function normalizeArrayPayload(payload) {
+    if (Array.isArray(payload)) {
+        return payload;
+    }
+
+    if (payload && typeof payload === 'object') {
+        return [payload];
+    }
+
+    return [];
+}
+
+function mergeBookIndexEntries(existingBookIndex, incomingEntries, fallbackUpdatedAt) {
+    const orderedDetails = [];
+    const mergedByDetail = new Map();
+
+    const upsert = (entry) => {
+        if (!entry || typeof entry !== 'object' || !entry.detail) {
+            return;
+        }
+
+        const detailPath = normalizeText(entry.detail);
+        if (!detailPath) {
+            return;
+        }
+
+        const normalizedEntry = {
+            detail: detailPath,
+            search_text: normalizeText(entry.search_text || ''),
+            updated_at: normalizeText(entry.updated_at || fallbackUpdatedAt)
+        };
+
+        if (!mergedByDetail.has(detailPath)) {
+            orderedDetails.push(detailPath);
+        }
+
+        mergedByDetail.set(detailPath, normalizedEntry);
+    };
+
+    (Array.isArray(existingBookIndex) ? existingBookIndex : []).forEach(upsert);
+    normalizeArrayPayload(incomingEntries).forEach(upsert);
+
+    return orderedDetails.map((detailPath) => mergedByDetail.get(detailPath));
+}
+
+function mergeDetailPayload(existingPayload, incomingPayload, bookId, fallbackIdPath) {
+    const existing = existingPayload && typeof existingPayload === 'object' ? existingPayload : {};
+    const incoming = incomingPayload && typeof incomingPayload === 'object' ? incomingPayload : {};
+    const merged = {
+        ...existing,
+        ...incoming
+    };
+
+    merged.id = normalizeText(incoming.id || existing.id || fallbackIdPath);
+    if (bookId && !merged.book_id) {
+        merged.book_id = bookId;
+    }
+
+    return merged;
+}
+
+function writeSeriesDetailFiles(seriesPayload, bookId) {
+    const incomingSeries = normalizeArrayPayload(seriesPayload);
+    incomingSeries.forEach((seriesItem) => {
+        if (!seriesItem || typeof seriesItem !== 'object') {
+            return;
+        }
+
+        const seriesId = slugify(seriesItem.id || seriesItem.name || '');
+        if (!seriesId) {
+            return;
+        }
+
+        const filePath = path.join(seriesDir, `${seriesId}.json`);
+        const existingSeriesDetail = readJsonFile(filePath, null);
+        const mergedSeriesDetail = {
+            ...(existingSeriesDetail || {}),
+            ...seriesItem,
+            id: seriesId,
+            name: normalizeText(seriesItem.name || existingSeriesDetail?.name || ''),
+            description: normalizeText(seriesItem.description || existingSeriesDetail?.description || ''),
+            thumbnail: normalizeText(seriesItem.thumbnail || existingSeriesDetail?.thumbnail || ''),
+            work_ids: Array.isArray(seriesItem.work_ids)
+                ? [...new Set(seriesItem.work_ids.filter(Boolean))]
+                : (Array.isArray(existingSeriesDetail?.work_ids) ? existingSeriesDetail.work_ids.slice() : [])
+        };
+
+        if (bookId && !mergedSeriesDetail.work_ids.includes(bookId)) {
+            mergedSeriesDetail.work_ids.push(bookId);
+        }
+
+        writeJsonFile(filePath, mergedSeriesDetail);
+    });
+}
+
+function saveBookIndexReview(bookIndexReview, updatedAt) {
+    const existingBookIndex = readJsonFile(path.join(dataDir, 'book.json'), []);
+    const mergedBookIndex = mergeBookIndexEntries(existingBookIndex, bookIndexReview, updatedAt);
+    writeJsonFile(path.join(dataDir, 'book.json'), mergedBookIndex);
+    return mergedBookIndex;
+}
+
+function saveBookDetailReview(bookDetailReview, bookId) {
+    const normalizedBookId = normalizeText(bookId || bookDetailReview?.id || '');
+    if (!normalizedBookId) {
+        throw new Error('Missing book id');
+    }
+
+    const filePath = path.join(bookDir, `${normalizedBookId}.json`);
+    const existingBookDetail = readJsonFile(filePath, null);
+    const mergedBookDetail = mergeDetailPayload(existingBookDetail, bookDetailReview, normalizedBookId, normalizedBookId);
+    mergedBookDetail.id = normalizedBookId;
+    writeJsonFile(filePath, mergedBookDetail);
+    return mergedBookDetail;
+}
+
+function saveAuthorReview(authorReview, bookId) {
+    const existingAuthors = readJsonFile(path.join(dataDir, 'author.json'), []);
+    const incomingAuthors = normalizeArrayPayload(authorReview).map((author) => {
+        if (!author || typeof author !== 'object') {
+            return null;
+        }
+
+        const authorId = normalizeText(author.id || slugify(author.name || ''));
+        if (!authorId) {
+            return null;
+        }
+
+        const workIds = Array.isArray(author.work_ids)
+            ? author.work_ids.map((workId) => normalizeText(workId)).filter(Boolean)
+            : [];
+        if (bookId && !workIds.includes(bookId)) {
+            workIds.push(bookId);
+        }
+
+        return {
+            ...author,
+            id: authorId,
+            name: normalizeText(author.name || authorId),
+            work_ids: workIds
+        };
+    }).filter(Boolean);
+
+    const mergedAuthors = mergeAuthors(existingAuthors, incomingAuthors);
+    writeJsonFile(path.join(dataDir, 'author.json'), mergedAuthors);
+    return mergedAuthors;
+}
+
+function saveSeriesReview(seriesReview, bookId) {
+    writeSeriesDetailFiles(seriesReview, bookId);
+    const existingSeries = readJsonFile(path.join(dataDir, 'series.json'), []);
+    return mergeSeries(existingSeries, normalizeArrayPayload(seriesReview), bookId);
 }
 
 function getContentType(filePath) {
@@ -185,56 +351,103 @@ function handleSave(req, res) {
             ensureDirectory(bookDir);
             ensureDirectory(seriesDir);
 
-            const existingBookDetail = readJsonFile(path.join(bookDir, `${bookId}.json`), null);
-            const existingBookIndex = readJsonFile(path.join(dataDir, 'book.json'), []);
-            const existingAuthors = readJsonFile(path.join(dataDir, 'author.json'), []);
-            const existingSeries = readJsonFile(path.join(dataDir, 'series.json'), []);
-
-            const mergedBookDetail = {
-                ...(existingBookDetail || {}),
-                ...bookDetail,
-                id: bookId,
-                updated_at: updatedAt
-            };
-
-            const mergedBookIndex = Array.isArray(existingBookIndex) ? existingBookIndex.filter((entry) => entry && entry.detail !== detailPath) : [];
-            const incomingBookIndex = Array.isArray(bookIndex) ? bookIndex : [];
-            incomingBookIndex.forEach((entry) => {
-                if (entry && entry.detail) {
-                    mergedBookIndex.push({
-                        detail: entry.detail || detailPath,
-                        search_text: entry.search_text || '',
-                        updated_at: entry.updated_at || updatedAt
-                    });
-                }
-            });
-            mergedBookIndex.sort((left, right) => (right.updated_at || '').localeCompare(left.updated_at || '', 'en'));
-
-            const mergedAuthors = mergeAuthors(existingAuthors, Array.isArray(authorPayload) ? authorPayload : [], bookId);
-            const mergedSeries = mergeSeries(existingSeries, Array.isArray(seriesPayload) ? seriesPayload : [], bookId);
-
+            const mergedBookDetail = saveBookDetailReview(bookDetail, bookId);
+            mergedBookDetail.updated_at = updatedAt;
             writeJsonFile(path.join(bookDir, `${bookId}.json`), mergedBookDetail);
-            writeJsonFile(path.join(dataDir, 'book.json'), mergedBookIndex);
-            writeJsonFile(path.join(dataDir, 'author.json'), mergedAuthors);
-            writeJsonFile(path.join(dataDir, 'series.json'), mergedSeries);
-
-            (Array.isArray(seriesPayload) ? seriesPayload : []).forEach((seriesItem) => {
-                const seriesId = slugify(seriesItem.name || seriesItem.id || '');
-                if (!seriesId) {
-                    return;
-                }
-                const outputSeriesPayload = {
-                    id: seriesId,
-                    name: seriesItem.name || seriesItem.id || '',
-                    description: seriesItem.description || 'Collection introducing...',
-                    thumbnail: seriesItem.thumbnail || '',
-                    work_ids: Array.isArray(seriesItem.work_ids) ? seriesItem.work_ids : [bookId]
-                };
-                writeJsonFile(path.join(seriesDir, `${seriesId}.json`), outputSeriesPayload);
-            });
+            const mergedBookIndex = saveBookIndexReview(bookIndex, updatedAt);
+            const mergedAuthors = saveAuthorReview(authorPayload, bookId);
+            saveSeriesReview(seriesPayload, bookId);
 
             res.writeHead(200, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ ok: true, bookId, detailPath, updatedAt }));
+        } catch (error) {
+            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ error: error.message }));
+        }
+    });
+}
+
+function handleSaveBookIndexReview(req, res) {
+    let body = '';
+    req.on('data', (chunk) => {
+        body += chunk;
+    });
+
+    req.on('end', () => {
+        try {
+            const payload = JSON.parse(body || '{}');
+            const review = payload.bookIndexReview || payload.bookIndex || payload.review || payload || {};
+            const updatedAt = normalizeText(review.updated_at || new Date().toISOString().slice(0, 10));
+            const mergedBookIndex = saveBookIndexReview(review, updatedAt);
+
+            res.writeHead(200, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ ok: true, count: mergedBookIndex.length, updatedAt }));
+        } catch (error) {
+            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ error: error.message }));
+        }
+    });
+}
+
+function handleSaveBookDetailReview(req, res) {
+    let body = '';
+    req.on('data', (chunk) => {
+        body += chunk;
+    });
+
+    req.on('end', () => {
+        try {
+            const payload = JSON.parse(body || '{}');
+            const review = payload.bookDetail || payload.bookDetailReview || payload.review || payload || {};
+            const bookId = normalizeText(payload.bookId || review.id || '');
+            const savedBookDetail = saveBookDetailReview(review, bookId);
+
+            res.writeHead(200, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ ok: true, bookId: savedBookDetail.id }));
+        } catch (error) {
+            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ error: error.message }));
+        }
+    });
+}
+
+function handleSaveAuthorReview(req, res) {
+    let body = '';
+    req.on('data', (chunk) => {
+        body += chunk;
+    });
+
+    req.on('end', () => {
+        try {
+            const payload = JSON.parse(body || '{}');
+            const review = payload.authorReview || payload.authorPayload || payload.review || payload || [];
+            const bookId = normalizeText(payload.bookId || payload.bookDetail?.id || '');
+            const mergedAuthors = saveAuthorReview(review, bookId);
+
+            res.writeHead(200, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ ok: true, count: mergedAuthors.length }));
+        } catch (error) {
+            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ error: error.message }));
+        }
+    });
+}
+
+function handleSaveSeriesReview(req, res) {
+    let body = '';
+    req.on('data', (chunk) => {
+        body += chunk;
+    });
+
+    req.on('end', () => {
+        try {
+            const payload = JSON.parse(body || '{}');
+            const review = payload.seriesReview || payload.seriesPayload || payload.review || payload || [];
+            const bookId = normalizeText(payload.bookId || payload.bookDetail?.id || '');
+            const mergedSeries = saveSeriesReview(review, bookId);
+
+            res.writeHead(200, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ ok: true, count: mergedSeries.length }));
         } catch (error) {
             res.writeHead(500, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ error: error.message }));
@@ -331,6 +544,26 @@ const server = http.createServer((req, res) => {
 
     if (pathname === '/api/books/save' && req.method === 'POST') {
         handleSave(req, res);
+        return;
+    }
+
+    if (pathname === '/api/books/save/book-index-review' && req.method === 'POST') {
+        handleSaveBookIndexReview(req, res);
+        return;
+    }
+
+    if (pathname === '/api/books/save/book-detail-review' && req.method === 'POST') {
+        handleSaveBookDetailReview(req, res);
+        return;
+    }
+
+    if (pathname === '/api/books/save/author-review' && req.method === 'POST') {
+        handleSaveAuthorReview(req, res);
+        return;
+    }
+
+    if (pathname === '/api/books/save/series-review' && req.method === 'POST') {
+        handleSaveSeriesReview(req, res);
         return;
     }
 

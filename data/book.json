@@ -1,12 +1,32 @@
 [
   {
+    "detail": "data/book/emily-jane-bronte-wuthering-heights.json",
+    "search_text": "dinh gio hu wuthering heights emily jane bronte dong a classic nxb van hoc dong a nguyen van ha",
+    "updated_at": "2026-07-07"
+  },
+  {
+    "detail": "data/book/hector-malot-sans-famille.json",
+    "search_text": "khong gia dinh sans famille hector malot dong a classic nxb van hoc dong a huynh ly",
+    "updated_at": "2026-07-07"
+  },
+  {
     "detail": "data/book/irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo.json",
     "search_text": "thong kho va phieu linh the agony and the ecstasy a biographical novel of michelangelo irving stone dong a classic nxb van hoc dong a nguyen minh",
     "updated_at": "2026-07-07"
   },
   {
+    "detail": "data/book/nguyen-van-thac-mai-mai-tuoi-hai-muoi.json",
+    "search_text": "mai mai tuoi hai muoi nguyen van thac dang vuong hung tu sach thanh nien nxb kim dong",
+    "updated_at": "2026-07-07"
+  },
+  {
     "detail": "data/book/ocean-vuong-the-emperor-of-gladness.json",
     "search_text": "hoang de xu gladness the emperor of gladness ocean vuong goodreads choice award nxb hoi nha van nha nam tran khanh nguyen",
+    "updated_at": "2026-07-07"
+  },
+  {
+    "detail": "data/book/son-tung-bup-sen-xanh.json",
+    "search_text": "bup sen xanh son tung nxb kim dong",
     "updated_at": "2026-07-07"
   },
   {
@@ -477,11 +497,6 @@
   {
     "detail": "data/book/dong-a-the-illustrated-history-of-vietnam.json",
     "search_text": "sach lich su viet nam bang hinh the illustrated history of vietnam dong a nxb dai hoc su pham",
-    "updated_at": "2026-07-03"
-  },
-  {
-    "detail": "data/book/emily-jane-bronte-wuthering-heights.json",
-    "search_text": "dinh gio hu wuthering heights emily jane bronte nxb van hoc dong a nguyen van ha",
     "updated_at": "2026-07-03"
   },
   {

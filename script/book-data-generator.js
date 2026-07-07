@@ -15,7 +15,9 @@ const bookDetailFilename = document.getElementById('book-detail-filename');
 const authorsOutput = document.getElementById('authors-output');
 const seriesOutput = document.getElementById('series-output');
 const seriesFilename = document.getElementById('series-filename');
+const downloadBookIndexButton = document.getElementById('download-book-index');
 const downloadBookDetailButton = document.getElementById('download-book-detail');
+const downloadAuthorsButton = document.getElementById('download-authors');
 const downloadSeriesButton = document.getElementById('download-series');
 
 let editionCounter = 0;
@@ -77,6 +79,31 @@ async function fetchJson(pathname, options = {}) {
     }
 
     return { response, payload };
+}
+
+async function postJson(pathname, payload) {
+    const response = await fetch(apiUrl(pathname), {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+    });
+
+    let responsePayload = null;
+
+    try {
+        responsePayload = await response.json();
+    } catch (error) {
+        responsePayload = null;
+    }
+
+    if (!response.ok) {
+        const message = responsePayload?.error || `Request failed (${response.status})`;
+        throw new Error(message);
+    }
+
+    return responsePayload;
 }
 
 function parseLines(value) {
@@ -1873,49 +1900,124 @@ editionsContainer.addEventListener('keydown', async (event) => {
     }
 });
 
-document.getElementById('download-book-index').addEventListener('click', async () => {
+downloadBookIndexButton?.addEventListener('click', async (event) => {
+    const button = event.currentTarget instanceof HTMLButtonElement ? event.currentTarget : downloadBookIndexButton;
     sanitizeFormValues(form);
     const formData = new FormData(form);
     await refreshExistingIndexState(true);
-    const slug = getBookSlugFromFormData(formData) || 'book';
-    downloadJson(getDownloadFileNameFromSlug(slug, 'book-index'), buildBookIndexPayload(formData));
+    const payload = {
+        bookId: getBookSlugFromFormData(formData),
+        bookIndexReview: buildBookIndexReviewPayload(formData)
+    };
+
+    const originalText = button.textContent;
+    try {
+        button.disabled = true;
+        button.textContent = 'Đang lưu...';
+        await postJson('/api/books/save/book-index-review', payload);
+        await refreshExistingIndexState(true);
+        button.textContent = 'Đã lưu';
+    } catch (error) {
+        console.error('Failed to save book index review', error);
+        button.textContent = originalText || 'book.json';
+    } finally {
+        window.setTimeout(() => {
+            if (button) {
+                button.textContent = originalText || 'book.json';
+                button.disabled = false;
+            }
+        }, 700);
+    }
 });
 
 downloadBookDetailButton?.addEventListener('click', async () => {
+    const button = downloadBookDetailButton;
     sanitizeFormValues(form);
     const formData = new FormData(form);
     await refreshExistingIndexState(true);
-    const bookId = getBookSlugFromFormData(formData);
-    downloadJson(getDownloadFileNameFromSlug(bookId), buildBookDetailPayload(formData));
+    const payload = {
+        bookId: getBookSlugFromFormData(formData),
+        bookDetail: buildBookDetailPayload(formData)
+    };
+
+    const originalText = button.textContent;
+    try {
+        button.disabled = true;
+        button.textContent = 'Đang lưu...';
+        await postJson('/api/books/save/book-detail-review', payload);
+        await refreshExistingIndexState(true);
+        button.textContent = 'Đã lưu';
+    } catch (error) {
+        console.error('Failed to save book detail review', error);
+        button.textContent = originalText || 'detail.json';
+    } finally {
+        window.setTimeout(() => {
+            if (button) {
+                button.textContent = originalText || 'detail.json';
+                button.disabled = false;
+            }
+        }, 700);
+    }
 });
 
-document.getElementById('download-authors').addEventListener('click', async () => {
+downloadAuthorsButton?.addEventListener('click', async (event) => {
+    const button = event.currentTarget instanceof HTMLButtonElement ? event.currentTarget : downloadAuthorsButton;
     sanitizeFormValues(form);
     const formData = new FormData(form);
     await refreshExistingIndexState(true);
-    const slug = getBookSlugFromFormData(formData) || 'book';
-    downloadJson(getDownloadFileNameFromSlug(slug, 'authors'), buildAuthorPayload(formData));
+    const payload = {
+        bookId: getBookSlugFromFormData(formData),
+        authorReview: buildAuthorReviewPayload(formData)
+    };
+
+    const originalText = button.textContent;
+    try {
+        button.disabled = true;
+        button.textContent = 'Đang lưu...';
+        await postJson('/api/books/save/author-review', payload);
+        await refreshExistingIndexState(true);
+        button.textContent = 'Đã lưu';
+    } catch (error) {
+        console.error('Failed to save author review', error);
+        button.textContent = originalText || 'author.json';
+    } finally {
+        window.setTimeout(() => {
+            if (button) {
+                button.textContent = originalText || 'author.json';
+                button.disabled = false;
+            }
+        }, 700);
+    }
 });
 
-downloadSeriesButton?.addEventListener('click', async () => {
+downloadSeriesButton?.addEventListener('click', async (event) => {
+    const button = event.currentTarget instanceof HTMLButtonElement ? event.currentTarget : downloadSeriesButton;
     sanitizeFormValues(form);
     const formData = new FormData(form);
     await refreshExistingIndexState(true);
-    const seriesEntries = await buildSeriesReviewEntries(formData);
+    const payload = {
+        bookId: getBookSlugFromFormData(formData),
+        seriesReview: await buildSeriesReviewPayload(formData)
+    };
 
-    if (!seriesEntries.length) {
-        downloadJson('series.json', buildSeriesPayload(formData));
-        return;
+    const originalText = button.textContent;
+    try {
+        button.disabled = true;
+        button.textContent = 'Đang lưu...';
+        await postJson('/api/books/save/series-review', payload);
+        await refreshExistingIndexState(true);
+        button.textContent = 'Đã lưu';
+    } catch (error) {
+        console.error('Failed to save series review', error);
+        button.textContent = originalText || 'series.json';
+    } finally {
+        window.setTimeout(() => {
+            if (button) {
+                button.textContent = originalText || 'series.json';
+                button.disabled = false;
+            }
+        }, 700);
     }
-
-    if (seriesEntries.length === 1) {
-        downloadJson(getDownloadFileNameFromSlug(seriesEntries[0].id), seriesEntries[0].payload);
-        return;
-    }
-
-    seriesEntries.forEach((entry) => {
-        downloadJson(getDownloadFileNameFromSlug(entry.id), entry.payload);
-    });
 });
 
 populateEditionCards([]);

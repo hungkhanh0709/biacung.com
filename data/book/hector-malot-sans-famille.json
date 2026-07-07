@@ -1,0 +1,41 @@
+{
+  "id": "hector-malot-sans-famille",
+  "title": "Không Gia Đình",
+  "title_original": "Sans Famille",
+  "authors": [
+    "Hector Malot"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classic"
+  ],
+  "editions": [
+    {
+      "id": "hector-malot-sans-famille-2023-dong-a-bia-mem-180k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2023,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Huỳnh Lý"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "180k",
+      "print_run": null,
+      "page_count": 764,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 14 x 3.8",
+      "weight_g": 784,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8936203364248.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ],
+  "updated_at": "2026-07-07",
+  "book_id": "hector-malot-sans-famille"
+}

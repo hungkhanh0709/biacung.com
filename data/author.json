@@ -112,7 +112,8 @@
     "name": "Hector Malot",
     "work_ids": [
       "hector-malot-en-famille",
-      "hector-malot-romain-kalbris"
+      "hector-malot-romain-kalbris",
+      "hector-malot-sans-famille"
     ]
   },
   {
@@ -533,6 +534,27 @@
     "name": "Ocean Vuong",
     "work_ids": [
       "ocean-vuong-the-emperor-of-gladness"
+    ]
+  },
+  {
+    "id": "son-tung",
+    "name": "Sơn Tùng",
+    "work_ids": [
+      "son-tung-bup-sen-xanh"
+    ]
+  },
+  {
+    "id": "nguyen-van-thac",
+    "name": "Nguyễn Văn Thạc",
+    "work_ids": [
+      "nguyen-van-thac-mai-mai-tuoi-hai-muoi"
+    ]
+  },
+  {
+    "id": "dang-vuong-hung",
+    "name": "Đặng Vương Hưng",
+    "work_ids": [
+      "nguyen-van-thac-mai-mai-tuoi-hai-muoi"
     ]
   }
 ]
