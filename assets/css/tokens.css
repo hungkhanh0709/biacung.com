@@ -13,12 +13,12 @@
   --color-paper-warm: #f6f0e8;
   --shadow-soft: 0 1.25rem 3rem rgb(45 38 70 / 10%);
   --shadow-card: 0 0.75rem 1.6rem rgb(35 31 54 / 12%);
-  --font-heading: "Raleway", system-ui, sans-serif;
-  --font-body: "Source Sans 3", system-ui, sans-serif;
+  --font-heading: "Literata", Georgia, serif;
+  --font-body: "Be Vietnam Pro", system-ui, sans-serif;
   --container: 70rem;
   --radius-sm: 0.5rem;
   --radius-md: 0.85rem;
   --radius-lg: 1.35rem;
-  --space-section: clamp(3.5rem, 6vw, 6.75rem);
+  --space-block-gap: clamp(1rem, 2.5vw, 1.75rem);
+  --space-section: var(--space-block-gap);
 }
-

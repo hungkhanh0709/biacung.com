@@ -2,25 +2,27 @@
 <html lang="vi">
 
 <head>
-  <title>Kết quả tìm kiếm | Bìa Cứng</title>
+  <title>Series | Bìa Cứng</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <meta property="og:url" content="https://biacung.com/search.html" />
-  <meta property="og:title" content="Kết quả tìm kiếm | Bìa Cứng" />
+  <meta property="og:url" content="https://biacung.com/series.html" />
+  <meta property="og:title" content="Series | Bìa Cứng" />
   <meta property="og:image" content="https://biacung.com/assets/img/favicon/favicon-194x194.png" />
   <meta property="og:site_name" content="Bìa Cứng" />
-  <meta property="og:description" content="Tìm kiếm bìa sách, tác giả và nhà xuất bản trên Bìa Cứng." />
+  <meta property="og:description"
+    content="Khám phá các series sách và danh sách tác phẩm thuộc từng series trên Bìa Cứng." />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Kết quả tìm kiếm | Bìa Cứng" />
-  <meta name="twitter:description" content="Tìm kiếm bìa sách, tác giả và nhà xuất bản trên Bìa Cứng." />
+  <meta name="twitter:title" content="Series | Bìa Cứng" />
+  <meta name="twitter:description"
+    content="Khám phá các series sách và danh sách tác phẩm thuộc từng series trên Bìa Cứng." />
   <meta name="twitter:image" content="https://biacung.com/assets/img/favicon/favicon-194x194.png" />
 
-  <meta name="description" content="Tìm kiếm bìa sách, tác giả và nhà xuất bản trên Bìa Cứng." />
-  <link rel="canonical" href="https://biacung.com/search.html" />
+  <meta name="description" content="Khám phá các series sách và danh sách tác phẩm thuộc từng series trên Bìa Cứng." />
+  <link rel="canonical" href="https://biacung.com/series.html" />
 
   <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-touch-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-touch-icon-60x60.png" />
@@ -47,10 +49,10 @@
   <link rel="stylesheet" href="assets/css/home.css" />
   <link rel="stylesheet" href="assets/css/search.css" />
   <script src="assets/js/nav.js" defer></script>
-  <script src="assets/js/search.js" defer></script>
+  <script src="assets/js/series.js" defer></script>
 </head>
 
-<body class="search-page">
+<body class="search-page series-page">
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/" aria-label="Bìa Cứng trang chủ">
@@ -114,22 +116,22 @@
   </header>
 
   <main class="search-main">
-    <section class="section search-results-section" aria-labelledby="search-results-title">
+    <section class="section search-results-section" aria-labelledby="series-results-title">
       <div class="container">
         <div class="search-results-header">
           <div>
-            <span class="search-results-kicker">Tìm kiếm</span>
-            <h1 class="section-heading search-results-title" id="search-results-title">Kết quả tìm kiếm</h1>
+            <span class="search-results-kicker">Series</span>
+            <h1 class="section-heading search-results-title" id="series-results-title">Danh sách series</h1>
           </div>
         </div>
 
-        <p class="search-summary" data-search-summary>
-          Nhập từ khóa vào ô tìm kiếm để xem những bìa sách, series và tác phẩm phù hợp trong kho dữ liệu.
+        <p class="search-summary" data-series-summary>
+          Khám phá các series hiện có và danh sách tác phẩm thuộc từng bộ sách trên Bìa Cứng.
         </p>
-        <p class="empty-state" data-search-empty>Nhập từ khóa vào ô tìm kiếm để xem kết quả phù hợp.</p>
-        <div class="book-grid search-results-grid" data-search-results></div>
-        <div class="search-actions" data-search-actions hidden>
-          <button class="button button-primary" type="button" data-search-load-more>Xem thêm</button>
+        <p class="empty-state" data-series-empty>Hiện chưa có dữ liệu để hiển thị.</p>
+        <div class="book-grid search-results-grid" data-series-results></div>
+        <div class="search-actions" data-series-actions hidden>
+          <button class="button button-primary" type="button" data-series-load-more>Xem thêm</button>
         </div>
       </div>
     </section>

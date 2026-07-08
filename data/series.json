@@ -1,0 +1,46 @@
+[
+  {
+    "id": "50-nam-fahasa",
+    "detail": "data/series/50-nam-fahasa.json"
+  },
+  {
+    "id": "canh-cua-mo-rong",
+    "detail": "data/series/canh-cua-mo-rong.json"
+  },
+  {
+    "id": "caraval",
+    "detail": "data/series/caraval.json"
+  },
+  {
+    "id": "dong-a-classic",
+    "detail": "data/series/dong-a-classic.json"
+  },
+  {
+    "id": "khai-luoc-nhung-tu-tuong-lon",
+    "detail": "data/series/khai-luoc-nhung-tu-tuong-lon.json"
+  },
+  {
+    "id": "moi-nha-van-mot-tac-pham",
+    "detail": "data/series/moi-nha-van-mot-tac-pham.json"
+  },
+  {
+    "id": "sach-tet-dong-a",
+    "detail": "data/series/sach-tet-dong-a.json"
+  },
+  {
+    "id": "tram-nam-nobel",
+    "detail": "data/series/tram-nam-nobel.json"
+  },
+  {
+    "id": "tu-sach-thanh-nien",
+    "detail": "data/series/tu-sach-thanh-nien.json"
+  },
+  {
+    "id": "van-moi-dong-a",
+    "detail": "data/series/van-moi-dong-a.json"
+  },
+  {
+    "id": "viet-nam-danh-tac-nha-nam",
+    "detail": "data/series/viet-nam-danh-tac-nha-nam.json"
+  }
+]

@@ -2,7 +2,7 @@
 <html lang="vi">
 
 <head>
-  <title>Bìa Cứng - Mỗi bìa sách là một tác phẩm nghệ thuật!</title>
+  <title>Bìa Cứng - Mỗi bìa sách là một tác phẩm nghệ thuật</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -12,19 +12,23 @@
   <meta property="og:title" content="Bìa Cứng" />
   <meta property="og:image" content="https://biacung.com/assets/img/favicon/favicon-194x194.png" />
   <meta property="og:site_name" content="Bìa Cứng" />
-  <meta property="og:description" content="Bìa Cứng - nơi tổng hợp thông tin lịch phát hành, tác giả, tác phẩm & giải thưởng trong ngành xuất bản." />
+  <meta property="og:description"
+    content="Bìa Cứng - nơi trưng bày những bộ sách đẹp, bìa mới và dữ liệu sách dành cho người sưu tầm." />
 
   <meta itemprop="name" content="Bìa Cứng" />
-  <meta itemprop="description" content="Bìa Cứng - nơi tổng hợp thông tin lịch phát hành, tác giả, tác phẩm & giải thưởng trong ngành xuất bản." />
+  <meta itemprop="description"
+    content="Bìa Cứng - nơi trưng bày những bộ sách đẹp, bìa mới và dữ liệu sách dành cho người sưu tầm." />
   <meta itemprop="image" content="https://biacung.com/assets/img/favicon/favicon-194x194.png" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Bìa Cứng" />
-  <meta name="twitter:description" content="Bìa Cứng - nơi tổng hợp thông tin lịch phát hành, tác giả, tác phẩm & giải thưởng trong ngành xuất bản." />
+  <meta name="twitter:description"
+    content="Bìa Cứng - nơi trưng bày những bộ sách đẹp, bìa mới và dữ liệu sách dành cho người sưu tầm." />
   <meta name="twitter:image" content="https://biacung.com/assets/img/favicon/favicon-194x194.png" />
 
-  <meta name="description" content="Bìa Cứng - nơi tổng hợp thông tin lịch phát hành, tác giả, tác phẩm & giải thưởng trong ngành xuất bản." />
-  <meta name="keywords" content="book, bìa sách, xuất bản, sách bộ, bìa mới" />
+  <meta name="description"
+    content="Bìa Cứng - nơi trưng bày những bộ sách đẹp, bìa mới và dữ liệu sách dành cho người sưu tầm." />
+  <meta name="keywords" content="bìa sách, sách bộ, sách đẹp, sưu tầm sách, bìa mới" />
   <link rel="canonical" href="https://biacung.com/" />
 
   <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-touch-icon-57x57.png" />
@@ -44,10 +48,14 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/tokens.css" />
   <link rel="stylesheet" href="assets/css/home.css" />
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/home.js" defer></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158903740-1"></script>
   <script>
@@ -67,43 +75,57 @@
         <img src="assets/img/core/logo.png" alt="Bìa Cứng Book Blog" width="140" height="48" fetchpriority="high" />
       </a>
 
-      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Mở menu" />
-      <label class="menu-button" for="nav-toggle" aria-hidden="true"><span></span></label>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span aria-hidden="true"></span>
+        <span class="visually-hidden">Mở menu</span>
+      </button>
 
-      <nav class="site-nav" aria-label="Điều hướng chính">
+      <nav class="site-nav" id="site-nav" aria-label="Điều hướng chính">
         <ul class="nav-list">
+          <!-- <li class="nav-item has-submenu">
+            <div class="nav-link-row">
+              <a class="nav-link" href="/award.html" aria-haspopup="true">Vinh danh</a>
+            </div>
+          </li> -->
           <li class="nav-item has-submenu">
-            <a class="nav-link" href="/award/" aria-haspopup="true">Vinh danh</a>
-            <ul class="submenu" aria-label="Vinh danh">
-              <li><a href="/award/">Giải Sách Hay</a></li>
-              <li><a href="#">Best Seller</a></li>
-              <li><a href="#">Tác giả nổi bật</a></li>
+            <div class="nav-link-row">
+              <a class="nav-link" href="#" aria-haspopup="true">Nhà Xuất Bản</a>
+              <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="submenu-publishers">
+                <span class="visually-hidden">Mở hoặc đóng submenu NXB</span>
+              </button>
+            </div>
+            <ul class="submenu" id="submenu-publishers" aria-label="NXB">
+              <li><a href="/search.html?q=NXB Trẻ">NXB Trẻ</a></li>
+              <li><a href="/search.html?q=NXB Kim Đồng">NXB Kim Đồng</a></li>
+              <li><a href="/search.html?q=NXB Dân Trí">NXB Dân Trí</a></li>
+              <li><a href="/search.html?q=NXB Hội Nhà Văn">NXB Hội Nhà Văn</a></li>
             </ul>
           </li>
           <li class="nav-item has-submenu">
-            <a class="nav-link" href="#nxb" aria-haspopup="true">NXB</a>
-            <ul class="submenu" aria-label="NXB">
-              <li><a href="#">NXB Trẻ</a></li>
-              <li><a href="#">NXB Kim Đồng</a></li>
-              <li><a href="#">NXB Hội Nhà Văn</a></li>
+            <div class="nav-link-row">
+              <a class="nav-link" href="#" aria-haspopup="true">Cty phát hành</a>
+              <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="submenu-distributors">
+                <span class="visually-hidden">Mở hoặc đóng submenu Cty phát hành</span>
+              </button>
+            </div>
+            <ul class="submenu" id="submenu-distributors" aria-label="CT phát hành">
+              <li><a href="/search.html?q=Đông A">Đông A</a></li>
+              <li><a href="/search.html?q=Đông Tây">Đông Tây</a></li>
+              <li><a href="/search.html?q=Nhã Nam">Nhã Nam</a></li>
+              <li><a href="/search.html?q=Huy Hoàng">Huy Hoàng</a></li>
+              <li><a href="/search.html?q=Bách Việt">Bách Việt</a></li>
+              <li><a href="/search.html?q=Alpha Books">Alpha Books</a></li>
             </ul>
           </li>
-          <li class="nav-item has-submenu">
-            <a class="nav-link" href="#phat-hanh" aria-haspopup="true">CT phát hành</a>
-            <ul class="submenu" aria-label="CT phát hành">
-              <li><a href="#">Nhã Nam</a></li>
-              <li><a href="#">Đinh Tị Books</a></li>
-              <li><a href="#">Alpha Books</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="about.html">Giới thiệu</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">Giới thiệu</a></li>
         </ul>
       </nav>
 
       <search class="search-box">
         <form action="/search.html" method="get">
           <label for="site-search">Tìm kiếm</label>
-          <input id="site-search" type="search" name="q" placeholder="Tìm kiếm bìa sách, tác giả, NXB" autocomplete="off" />
+          <input id="site-search" type="search" name="q" placeholder="Tìm theo tên sách, tác giả, NXB"
+            autocomplete="off" />
         </form>
       </search>
     </div>
@@ -113,77 +135,58 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <span class="eyebrow">Book Blog</span>
-          <h1 id="hero-title">Ipsum Dolor Si</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend.</p>
-          <div class="hero-actions">
-            <a class="button" href="#sach-bo">Read more →</a>
+          <span class="eyebrow">biacung.com</span>
+          <h1 id="hero-title">Mỗi bìa sách là một tác phẩm nghệ thuật.</h1>
+          <p>Nơi tụ lại của những cuốn sách không chỉ để đọc, mà còn để giữ.</p>
+          <!-- <div class="hero-actions">
+            <a class="button" href="#series-focus">Khám phá bộ sách →</a>
           </div>
           <div class="hero-slider-ui" aria-label="Slide nổi bật">
             <span class="slider-dot is-active"></span>
             <span class="slider-dot"></span>
             <span class="slider-dot"></span>
             <span class="slider-dot"></span>
-          </div>
+          </div> -->
         </div>
 
         <div class="hero-book-wrap" aria-hidden="true">
           <div class="featured-book">
             <div class="book-cover-content">
-              <span class="series-name">Anna's Friends<br />Book #1</span>
-              <strong>The<br />Assignment</strong>
-              <small>By Yvonne G. Williams</small>
+              <span class="series-name">Kệ sách<br />tuyển chọn</span>
+              <strong>Mê<br />Bìa Cứng</strong>
+              <small>Người trưng sách</small>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="sach-bo" aria-labelledby="sach-bo-title">
+    <section class="section" id="series-focus" aria-labelledby="series-focus-title" data-home-section="series-focus">
       <div class="container">
-        <h2 class="section-heading" id="sach-bo-title">Sách Bộ</h2>
-        <div class="book-grid">
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-        </div>
+        <h2 class="section-heading" id="series-focus-title">Sách Bộ</h2>
+        <div class="book-grid" data-section-grid></div>
+        <p class="section-status" data-section-status>Đang tải...</p>
         <div class="section-actions">
-          <a class="button button-primary" href="#">Xem thêm</a>
+          <a class="button button-primary" href="/series.html">Xem thêm</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="bia-moi" aria-labelledby="bia-moi-title">
+    <section class="section" id="recently-archived" aria-labelledby="recently-archived-title"
+      data-home-section="recently-archived">
       <div class="container">
-        <h2 class="section-heading" id="bia-moi-title">Bìa Mới</h2>
-        <div class="book-grid">
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-          <article class="book-card"><a href="#"><img src="assets/img/mock/simple-way-of-piece-life.svg" alt="Bìa sách Simple Way Of Piece Life" width="360" height="500" loading="lazy" style="inline-size: min(100%, 9.5rem); aspect-ratio: .72; object-fit: cover; padding: .65rem; background: #fff; border: 1px solid var(--color-border); box-shadow: 0 .25rem 1.1rem rgb(38 34 54 / 13%);" /><div><h3 class="book-title">Simple Way Of Piece Life</h3><p class="book-author">Armor Ramsey</p></div></a></article>
-        </div>
+        <h2 class="section-heading" id="recently-archived-title">Bìa Mới</h2>
+        <div class="book-grid" data-section-grid></div>
+        <p class="section-status" data-section-status>Đang tải...</p>
         <div class="section-actions">
-          <a class="button button-primary" href="#">Xem thêm</a>
+          <a class="button button-primary" href="/search.html">Xem thêm</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">@BIACUNG.COM 2026</div>
+    <div class="container">@BIACUNG.COM <span data-current-year>2026</span></div>
   </footer>
 </body>
 
