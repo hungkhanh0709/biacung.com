@@ -1,0 +1,91 @@
+/* Search results page styles. Depends on tokens.css and home.css. */
+
+.search-page .site-header {
+  position: sticky;
+}
+
+.search-main {
+  padding-block: clamp(4rem, 8vw, 6.25rem) var(--space-section);
+}
+
+.search-heading {
+  margin-block-end: clamp(2rem, 4vw, 3.2rem);
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 2vw, 1.55rem);
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+}
+
+.search-heading mark {
+  color: var(--color-primary);
+  background: transparent;
+}
+
+.search-page .book-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(2.6rem, 5vw, 4.8rem) clamp(2rem, 6vw, 5.4rem);
+}
+
+.search-page .cover {
+  inline-size: min(100%, 11rem);
+}
+
+.search-page .section-actions {
+  margin-block-start: clamp(3.5rem, 7vw, 5.75rem);
+}
+
+.search-page .footer {
+  margin-block-start: 0;
+}
+
+.empty-state {
+  display: none;
+  max-inline-size: 34rem;
+  margin-inline: auto;
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-paper);
+  color: var(--color-muted);
+  text-align: center;
+}
+
+.search-page.is-empty .book-grid,
+.search-page.is-empty .section-actions {
+  display: none;
+}
+
+.search-page.is-empty .empty-state {
+  display: block;
+}
+
+@media (max-width: 62rem) {
+  .search-page .book-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 44rem) {
+  .search-main {
+    padding-block-start: 3rem;
+  }
+
+  .search-page .book-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .search-page .cover {
+    inline-size: min(100%, 8.8rem);
+  }
+}
+
+@media (max-width: 28rem) {
+  .search-page .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-page .cover {
+    inline-size: 10rem;
+  }
+}
