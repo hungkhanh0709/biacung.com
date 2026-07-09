@@ -1,39 +1,38 @@
 {
-    "id": "lev-tolstoy",
-    "title": "Anna Karenina",
-    "title_original": "Анна Каренина",
-    "authors": [
-        "Lev Tolstoy"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "lev-tolstoy-2026-nha-nam-bia-mem-220k190k",
-            "isbn": null,
-            "caption": "Bộ 2 Tập",
-            "pub_year": 2026,
-            "publisher": "NXB Hội Nhà Văn",
-            "issuers": [
-                "Nhã Nam"
-            ],
-            "translators": [
-                "Dương Tường",
-                "Nhị Ca"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "220k+190k",
-            "print_run": null,
-            "page_count": null,
-            "copy_numbering": null,
-            "size_cm": "",
-            "weight_g": null,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8935235248496.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-05"
+  "id": "lev-tolstoy-anna-karenina",
+  "title": "Anna Karenina",
+  "title_original": "Анна Каренина",
+  "authors": [
+    "Lev Tolstoy"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "lev-tolstoy-2026-nha-nam-bia-mem-220k190k",
+      "isbn": null,
+      "caption": "Bộ 2 Tập",
+      "pub_year": 2026,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Dương Tường",
+        "Nhị Ca"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "220k+190k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8935235248496.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

@@ -1,36 +1,35 @@
 {
-    "id": "nguyen-dinh-dang-ky-thuat-ve-son-dau",
-    "title": "Kỹ thuật vẽ sơn dầu",
-    "title_original": "",
-    "authors": [
-        "Nguyễn Đình Đăng"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "nguyen-dinh-dang-ky-thuat-ve-son-dau-dong-a-bia-mem-450k",
-            "isbn": "978-604-304-647-2",
-            "caption": "Kỹ Thuật Vẽ Sơn Dầu",
-            "pub_year": null,
-            "publisher": "NXB Dân Trí",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa Mềm",
-            "cover_price": "450k",
-            "print_run": null,
-            "page_count": 468,
-            "copy_numbering": null,
-            "size_cm": "16 x 24",
-            "weight_g": 1200,
-            "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_bb00ea56636442aca3ce9ecf2a9fcd0c_master.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-03"
+  "id": "nguyen-dinh-dang-ky-thuat-ve-son-dau",
+  "title": "Kỹ thuật vẽ sơn dầu",
+  "title_original": "",
+  "authors": [
+    "Nguyễn Đình Đăng"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "nguyen-dinh-dang-ky-thuat-ve-son-dau-dong-a-bia-mem-450k",
+      "isbn": "978-604-304-647-2",
+      "caption": "Kỹ Thuật Vẽ Sơn Dầu",
+      "pub_year": null,
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa Mềm",
+      "cover_price": "450k",
+      "print_run": null,
+      "page_count": 468,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 1200,
+      "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_bb00ea56636442aca3ce9ecf2a9fcd0c_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

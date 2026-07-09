@@ -1,36 +1,35 @@
 {
-    "id": "john-grisham-the-street-lawyer",
-    "title": "Luật Sư Đường Phố",
-    "title_original": "The Street Lawyer",
-    "authors": [
-        "John Grisham"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "john-grisham-the-street-lawyer-2026-bia-mem-195k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2026,
-            "publisher": "NXB Trẻ",
-            "issuers": [],
-            "translators": [
-                "Lê Thùy Giang"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "195k",
-            "print_run": null,
-            "page_count": 448,
-            "copy_numbering": null,
-            "size_cm": "20 x 14 x 2.2",
-            "weight_g": 400,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8934974215417.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-06"
+  "id": "john-grisham-the-street-lawyer",
+  "title": "Luật Sư Đường Phố",
+  "title_original": "The Street Lawyer",
+  "authors": [
+    "John Grisham"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "john-grisham-the-street-lawyer-2026-bia-mem-195k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Trẻ",
+      "issuers": [],
+      "translators": [
+        "Lê Thùy Giang"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "195k",
+      "print_run": null,
+      "page_count": 448,
+      "copy_numbering": null,
+      "size_cm": "20 x 14 x 2.2",
+      "weight_g": 400,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8934974215417.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

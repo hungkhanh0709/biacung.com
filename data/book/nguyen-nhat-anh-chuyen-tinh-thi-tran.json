@@ -1,55 +1,54 @@
 {
-    "id": "nguyen-nhat-anh-chuyen-tinh-thi-tran",
-    "title": "Chuyện Tình Thị Trấn",
-    "title_original": "",
-    "authors": [
-        "Nguyễn Nhật Ánh"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "nguyen-nhat-anh-chuyen-tinh-thi-tran-2026-nxb-tre-bia-cung-285k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2026,
-            "publisher": "NXB Trẻ",
-            "issuers": [],
-            "translators": [],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa cứng",
-            "cover_price": "256k",
-            "print_run": 20000,
-            "page_count": 360,
-            "copy_numbering": null,
-            "size_cm": "20 x 13 x 2",
-            "weight_g": 580,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/7/z7987418532989_5e00a4b7f82e7e83d8bfca9bdb4dc52b.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        },
-        {
-            "id": "nguyen-nhat-anh-chuyen-tinh-thi-tran-2026-nxb-tre-bia-mem-150k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2026,
-            "publisher": "NXB Trẻ",
-            "issuers": [],
-            "translators": [],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "150k",
-            "print_run": 80000,
-            "page_count": 360,
-            "copy_numbering": null,
-            "size_cm": "20 x 13 x 1.8",
-            "weight_g": 380,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/7/2/728315335_25232204509810370_3410_1.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-05"
+  "id": "nguyen-nhat-anh-chuyen-tinh-thi-tran",
+  "title": "Chuyện Tình Thị Trấn",
+  "title_original": "",
+  "authors": [
+    "Nguyễn Nhật Ánh"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "nguyen-nhat-anh-chuyen-tinh-thi-tran-2026-nxb-tre-bia-cung-285k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Trẻ",
+      "issuers": [],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "256k",
+      "print_run": 20000,
+      "page_count": 360,
+      "copy_numbering": null,
+      "size_cm": "20 x 13 x 2",
+      "weight_g": 580,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/7/z7987418532989_5e00a4b7f82e7e83d8bfca9bdb4dc52b.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "nguyen-nhat-anh-chuyen-tinh-thi-tran-2026-nxb-tre-bia-mem-150k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Trẻ",
+      "issuers": [],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "150k",
+      "print_run": 80000,
+      "page_count": 360,
+      "copy_numbering": null,
+      "size_cm": "20 x 13 x 1.8",
+      "weight_g": 380,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/7/2/728315335_25232204509810370_3410_1.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

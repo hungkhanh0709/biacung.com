@@ -1,38 +1,37 @@
 {
-    "id": "khaled-hosseini-the-kite-runner",
-    "title": "Người Đua Diều",
-    "title_original": "The Kite Runner",
-    "authors": [
-        "Khaled Hosseini"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "khaled-hosseini-the-kite-runner-2026-nha-nam-bia-mem-155k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2026,
-            "publisher": "NXB Hội Nhà Văn",
-            "issuers": [
-                "Nhã Nam"
-            ],
-            "translators": [
-                "Nguyễn Bản"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "155k",
-            "print_run": null,
-            "page_count": 460,
-            "copy_numbering": null,
-            "size_cm": "20.5 x 14 x 2.3",
-            "weight_g": 500,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8935235237773_1.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-05"
+  "id": "khaled-hosseini-the-kite-runner",
+  "title": "Người Đua Diều",
+  "title_original": "The Kite Runner",
+  "authors": [
+    "Khaled Hosseini"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "khaled-hosseini-the-kite-runner-2026-nha-nam-bia-mem-155k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Nguyễn Bản"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "155k",
+      "print_run": null,
+      "page_count": 460,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 14 x 2.3",
+      "weight_g": 500,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8935235237773_1.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

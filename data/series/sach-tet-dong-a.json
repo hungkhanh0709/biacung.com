@@ -1,8 +1,8 @@
 {
-    "id": "sach-tet",
-    "name": "Sách Tết",
+    "id": "sach-tet-dong-a",
+    "name": "Sách Tết Đông A",
     "description": "",
-    "thumbnail": "",
+    "thumbnail": "https://media.vneconomy.vn/images/upload/2025/01/15/sach-1.jpg",
     "work_ids": [
         "sach-tet-binh-ngo-dong-a-2026"
     ]

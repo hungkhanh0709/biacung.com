@@ -1,39 +1,38 @@
 {
-    "id": "nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam",
-    "title": "Kho tàng truyện cổ tích Việt Nam",
-    "title_original": "",
-    "authors": [
-        "Nguyễn Đổng Chi"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam-dong-a-bia-cung-1200k",
-            "isbn": null,
-            "caption": "Bộ 2 Quyển, In Lần Thứ 11, Hiệu Chỉnh Đầy Đủ Theo Bản Gốc, Bao Gồm Phần Khảo Dị",
-            "pub_year": null,
-            "publisher": "NXB Hội Nhà Văn",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [],
-            "illustrators": [
-                "Phạm Ngọc Tuấn",
-                "Phạm Ngọc Tân"
-            ],
-            "proofreaders": [],
-            "format": "Bìa cứng",
-            "cover_price": "1200k",
-            "print_run": null,
-            "page_count": "Tập 1: 1096 trang; tập 2: 920 trang",
-            "copy_numbering": null,
-            "size_cm": "18,5 x 26,5",
-            "weight_g": null,
-            "thumbnail": "https://product.hstatic.net/1000328521/product/combo_da_dcb656182de247d6b911dc1436e9df57_master.jpg",
-            "gellery_imgs": [],
-            "detail": "Lần in thứ 11 có những điểm đáng chú ý như sau:\n- Nội dung được chỉnh lý kỹ lưỡng bởi Giáo sư Nguyễn Huệ Chi, con trai của tác giả Nguyễn Đổng Chi, so với những lần in trước đây. \n- Chuyển phần tên riêng nước ngoài bằng tên nguyên gốc, với các ngôn ngữ không dùng chữ Latinh thì thay bằng chuyển tự Latin.\n- Bổ sung minh họa của hai họa sĩ Phạm Ngọc Tuấn và Phạm Ngọc Tân.\n- In 2 tập bìa cứng, có bìa áo, khổ 18,5 cm x 26,5 cm."
-        }
-    ],
-    "updated_at": "2026-07-04"
+  "id": "nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam",
+  "title": "Kho tàng truyện cổ tích Việt Nam",
+  "title_original": "",
+  "authors": [
+    "Nguyễn Đổng Chi"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam-dong-a-bia-cung-1200k",
+      "isbn": null,
+      "caption": "Bộ 2 Quyển, In Lần Thứ 11, Hiệu Chỉnh Đầy Đủ Theo Bản Gốc, Bao Gồm Phần Khảo Dị",
+      "pub_year": null,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Phạm Ngọc Tuấn",
+        "Phạm Ngọc Tân"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "1200k",
+      "print_run": null,
+      "page_count": "Tập 1: 1096 trang; tập 2: 920 trang",
+      "copy_numbering": null,
+      "size_cm": "18,5 x 26,5",
+      "weight_g": null,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/combo_da_dcb656182de247d6b911dc1436e9df57_master.jpg",
+      "gellery_imgs": [],
+      "detail": "Lần in thứ 11 có những điểm đáng chú ý như sau:\n- Nội dung được chỉnh lý kỹ lưỡng bởi Giáo sư Nguyễn Huệ Chi, con trai của tác giả Nguyễn Đổng Chi, so với những lần in trước đây. \n- Chuyển phần tên riêng nước ngoài bằng tên nguyên gốc, với các ngôn ngữ không dùng chữ Latinh thì thay bằng chuyển tự Latin.\n- Bổ sung minh họa của hai họa sĩ Phạm Ngọc Tuấn và Phạm Ngọc Tân.\n- In 2 tập bìa cứng, có bìa áo, khổ 18,5 cm x 26,5 cm."
+    }
+  ]
 }

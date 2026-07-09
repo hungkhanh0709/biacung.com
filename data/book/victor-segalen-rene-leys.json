@@ -1,36 +1,35 @@
 {
-    "id": "victor-segalen-rene-leys",
-    "title": "René Leys - Người Tình Trẻ Trong Tử Cấm Thành",
-    "title_original": "Rene Leys",
-    "authors": [
-        "Victor Segalen"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "victor-segalen-rene-leys-2011-bia-mem-80k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2011,
-            "publisher": "NXB Trẻ",
-            "issuers": [],
-            "translators": [
-                "Quế Sơn"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "80k",
-            "print_run": null,
-            "page_count": 308,
-            "copy_numbering": null,
-            "size_cm": "20 x 13",
-            "weight_g": 330,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/i/m/image_64389.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-04"
+  "id": "victor-segalen-rene-leys",
+  "title": "René Leys - Người Tình Trẻ Trong Tử Cấm Thành",
+  "title_original": "Rene Leys",
+  "authors": [
+    "Victor Segalen"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "victor-segalen-rene-leys-2011-bia-mem-80k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2011,
+      "publisher": "NXB Trẻ",
+      "issuers": [],
+      "translators": [
+        "Quế Sơn"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "80k",
+      "print_run": null,
+      "page_count": 308,
+      "copy_numbering": null,
+      "size_cm": "20 x 13",
+      "weight_g": 330,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/i/m/image_64389.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

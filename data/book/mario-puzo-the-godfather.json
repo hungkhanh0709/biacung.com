@@ -9,7 +9,7 @@
   "series": [],
   "editions": [
     {
-      "id": "mario-puzo-the-godfather-2026-dong-a-bia-vai-2400k",
+      "id": "mario-puzo-the-godfather-2026-dong-a-bia-vai-2tr4",
       "isbn": null,
       "caption": "Ấn Bản Giới Hạn - Bìa Vải - Phiên Bản Độc Quyền 50 Năm Fahasa",
       "pub_year": 2026,
@@ -36,6 +36,7 @@
       "detail": "- Ấn phẩm lần này được ấn hành nhân kỷ niệm 50 năm thành lập Fahasa.\n- 500 cuốn giới hạn, bìa vải, đựng trong hộp vỏ sò.\n- Ký hiệu từ FG 001 đến FG 500.\n- Mạ cạnh sách bằng nhũ vàng.\n- Đóng dấu chìm Limited Edition của Đông A.\n- In bốn màu trên giấy Ford định lượng 150 gsm."
     },
     {
+      "id": "mario-puzo-the-godfather-2026-dong-a-bia-cung-990k",
       "isbn": null,
       "caption": "Bố Già - Ấn Bản Cao Cấp - Bìa Cứng - Phiên Bản Độc Quyền 50 Năm Fahasa",
       "pub_year": 2026,
@@ -50,7 +51,7 @@
         "Art Werger"
       ],
       "proofreaders": [],
-      "format": "hardcover",
+      "format": "Bìa cứng",
       "cover_price": "990k",
       "print_run": 1000,
       "page_count": 320,
@@ -64,6 +65,7 @@
       "detail": "Ấn bản cao cấp lần này được thực hiện với khổ lớn 25 x 30 cm, bìa cứng kèm bìa áo, ruột in bốn màu trên giấy Ford 150 gsm và bổ sung 15 minh họa của họa sĩ Art Werger. Tác phẩm sử dụng bản dịch nổi tiếng của Ngọc Thứ Lang, vốn đã gắn bó với nhiều thế hệ độc giả Việt Nam."
     },
     {
+      "id": "mario-puzo-the-godfather-2024-dong-a-bia-mem-200",
       "isbn": null,
       "caption": "Bố Già - Ấn Bản Kỉ Niệm 55 Năm Xuất Bản Lần Đầu",
       "pub_year": 2024,
@@ -78,7 +80,7 @@
         "Art Werger"
       ],
       "proofreaders": [],
-      "format": "Bìa Mềm",
+      "format": "Bìa mềm",
       "cover_price": "200",
       "print_run": null,
       "page_count": 652,
@@ -90,6 +92,7 @@
       "detail": "Để ghi dấu 55 năm từ khi tác phẩm ra mắt bạn đọc, và để đưa đến cho bạn đọc những trải nghiệm mới, lần này, chúng tôi giới thiệu bản dịch mới do dịch giả Nguyễn Minh chuyển ngữ. Bản dịch này được thực hiện với quan điểm: dịch thì phải phóng, song chỉ dừng ở mức phóng dịch, chứ không đến mức gần như phóng tác. Ngoài ra, các bản dịch Bố Già trước đây đều chưa đầy đủ, bị lược bớt nhiều đoạn. Bản dịch mới này chủ trương giữ đúng tinh thần tác phẩm nên không giảm nhẹ, không né tránh, cũng không cắt bỏ. Bởi xét cho cùng, một cuốn tiểu thuyết đặc tả về xã hội đen thì lẽ tất nhiên phải… đen."
     },
     {
+      "id": "mario-puzo-the-godfather-2024-dong-a-250",
       "isbn": null,
       "caption": "Bố Già - Bìa Cứng",
       "pub_year": 2024,
@@ -113,6 +116,5 @@
       "gellery_imgs": [],
       "detail": ""
     }
-  ],
-  "updated_at": "2026-06-30"
+  ]
 }

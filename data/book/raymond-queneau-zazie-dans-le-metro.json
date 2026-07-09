@@ -1,38 +1,37 @@
 {
-    "id": "raymond-queneau-zazie-dans-le-metro",
-    "title": "",
-    "title_original": "Zazie dans le métro",
-    "authors": [
-        "Raymond Queneau"
-    ],
-    "awards": [],
-    "series": [
-        "Sách Cánh Cửa Mở Rộng"
-    ],
-    "editions": [
-        {
-            "id": "raymond-queneau-zazie-dans-le-metro-2012-bia-mem-95k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2012,
-            "publisher": "NXB Trẻ",
-            "issuers": [],
-            "translators": [
-                "Cẩm Thơ"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "95k",
-            "print_run": null,
-            "page_count": 254,
-            "copy_numbering": null,
-            "size_cm": "13x20",
-            "weight_g": null,
-            "thumbnail": "https://www.nxbtre.com.vn/Images/Book/NXBTreStoryFull_19052012_110521.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-05"
+  "id": "raymond-queneau-zazie-dans-le-metro",
+  "title": "",
+  "title_original": "Zazie dans le métro",
+  "authors": [
+    "Raymond Queneau"
+  ],
+  "awards": [],
+  "series": [
+    "Sách Cánh Cửa Mở Rộng"
+  ],
+  "editions": [
+    {
+      "id": "raymond-queneau-zazie-dans-le-metro-2012-bia-mem-95k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2012,
+      "publisher": "NXB Trẻ",
+      "issuers": [],
+      "translators": [
+        "Cẩm Thơ"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "95k",
+      "print_run": null,
+      "page_count": 254,
+      "copy_numbering": null,
+      "size_cm": "13x20",
+      "weight_g": null,
+      "thumbnail": "https://www.nxbtre.com.vn/Images/Book/NXBTreStoryFull_19052012_110521.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

@@ -1,38 +1,37 @@
 {
-    "id": "higashino-keigo-an-mang-ban-cung-lop",
-    "title": "Án Mạng Bạn Cùng Lớp",
-    "title_original": "同級生",
-    "authors": [
-        "Higashino Keigo"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "higashino-keigo-an-mang-ban-cung-lop-2026-1980-books-bia-mem-239k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2026,
-            "publisher": "NXB Dân Trí",
-            "issuers": [
-                "1980 Books"
-            ],
-            "translators": [
-                "Thương-Chan"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "239k",
-            "print_run": null,
-            "page_count": 468,
-            "copy_numbering": null,
-            "size_cm": "20.5 x 13 x 2.3",
-            "weight_g": 480,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/a/n/an-mang-ban-cung-lop-bia-1.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-06"
+  "id": "higashino-keigo-an-mang-ban-cung-lop",
+  "title": "Án Mạng Bạn Cùng Lớp",
+  "title_original": "同級生",
+  "authors": [
+    "Higashino Keigo"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "higashino-keigo-an-mang-ban-cung-lop-2026-1980-books-bia-mem-239k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "1980 Books"
+      ],
+      "translators": [
+        "Thương-Chan"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "239k",
+      "print_run": null,
+      "page_count": 468,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 13 x 2.3",
+      "weight_g": 480,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/a/n/an-mang-ban-cung-lop-bia-1.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

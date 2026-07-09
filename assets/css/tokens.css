@@ -1,0 +1,24 @@
+/* Shared design tokens for Bia Cung pages. Change theme colors here. */
+
+:root {
+  --color-primary: #6f4fc8;
+  --color-primary-dark: #4b27aa;
+  --color-primary-soft: #efe9ff;
+  --color-secondary: #ff6675;
+  --color-ink: #20212a;
+  --color-muted: #8c8c98;
+  --color-border: #e8e4ef;
+  --color-surface: #ffffff;
+  --color-paper: #fbfaf7;
+  --color-paper-warm: #f6f0e8;
+  --shadow-soft: 0 1.25rem 3rem rgb(45 38 70 / 10%);
+  --shadow-card: 0 0.75rem 1.6rem rgb(35 31 54 / 12%);
+  --font-heading: "Literata", Georgia, serif;
+  --font-body: "Be Vietnam Pro", system-ui, sans-serif;
+  --container: 70rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.85rem;
+  --radius-lg: 1.35rem;
+  --space-block-gap: clamp(1rem, 2.5vw, 1.75rem);
+  --space-section: var(--space-block-gap);
+}

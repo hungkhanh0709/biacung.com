@@ -1,40 +1,39 @@
 {
-    "id": "craig-silvey-runt",
-    "title": "Chú chó Runt",
-    "title_original": "Runt",
-    "authors": [
-        "Craig Silvey"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "craig-silvey-runt-2026-dong-a-150000d",
-            "isbn": "978-632-624-910-1",
-            "caption": "",
-            "pub_year": 2026,
-            "publisher": "NXB Văn Học",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [
-                "Nguyễn Thị Cẩm Linh"
-            ],
-            "illustrators": [
-                "Sara Acton"
-            ],
-            "proofreaders": [],
-            "format": "",
-            "cover_price": "150.000đ",
-            "print_run": null,
-            "page_count": 336,
-            "copy_numbering": null,
-            "size_cm": "14.5 x 20.5 cm",
-            "weight_g": 500,
-            "thumbnail": "",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-03"
+  "id": "craig-silvey-runt",
+  "title": "Chú chó Runt",
+  "title_original": "Runt",
+  "authors": [
+    "Craig Silvey"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "craig-silvey-runt-2026-dong-a-150k",
+      "isbn": "978-632-624-910-1",
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Thị Cẩm Linh"
+      ],
+      "illustrators": [
+        "Sara Acton"
+      ],
+      "proofreaders": [],
+      "format": "",
+      "cover_price": "150k",
+      "print_run": null,
+      "page_count": 336,
+      "copy_numbering": null,
+      "size_cm": "14.5 x 20.5 cm",
+      "weight_g": 500,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/b/i/bia-runt.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

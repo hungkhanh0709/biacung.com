@@ -1,9 +1,4 @@
-# Group 1
-User-agent: Googlebot
-Disallow: /assets/
-
-# Group 2
 User-agent: *
 Allow: /
 
-Sitemap: https://www.khoai.xyz/sitemap.xml
+Sitemap: https://biacung.com/sitemap.xml

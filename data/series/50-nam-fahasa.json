@@ -1,19 +1,17 @@
-[
-    {
-        "id": "50-nam-fahasa",
-        "name": "50 Năm Fahasa",
-        "description": "Phiên Bản Độc Quyền 50 Năm Fahasa",
-        "thumbnail": "",
-        "work_ids": [
-            "mario-puzo-the-godfather",
-            "nguyen-dinh-chieu-luc-van-tien",
-            "nguyen-du-truyen-kieu",
-            "nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered",
-            "jk-rowling-harry-potter",
-            "nguyen-nhat-anh-sach-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim",
-            "hoang-nam-tien-sach-thu-cho-em",
-            "jose-mauro-de-vasconcelos-boxset-cay-cam-ngot-cua-toi-suoi-am-mat-troi",
-            "lucy-maud-montgomery-anne-of-green-gables"
-        ]
-    }
-]
+{
+    "id": "50-nam-fahasa",
+    "name": "50 Năm Fahasa",
+    "description": "Phiên Bản Độc Quyền 50 Năm Fahasa",
+    "thumbnail": "/assets/img/series/50-nam-fahasa.jpeg",
+    "work_ids": [
+        "mario-puzo-the-godfather",
+        "nguyen-dinh-chieu-luc-van-tien",
+        "nguyen-du-truyen-kieu",
+        "nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered",
+        "jk-rowling-harry-potter",
+        "nguyen-nhat-anh-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim",
+        "hoang-nam-tien-sach-thu-cho-em",
+        "jose-mauro-de-vasconcelos-boxset-cay-cam-ngot-cua-toi-suoi-am-mat-troi",
+        "lucy-maud-montgomery-anne-of-green-gables"
+    ]
+}

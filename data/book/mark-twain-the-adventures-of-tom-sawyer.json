@@ -1,63 +1,62 @@
 {
-    "id": "mark-twain-the-adventures-of-tom-sawyer",
-    "title": "Những cuộc phiêu lưu của Tom Sawyer",
-    "title_original": "The Adventures of Tom Sawyer",
-    "authors": [
-        "Mark Twain"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "mark-twain-the-adventures-of-tom-sawyer-2025-dong-a-bia-vai-330k",
-            "isbn": "978-632-606-580-0",
-            "caption": "",
-            "pub_year": 2025,
-            "publisher": "NXB Văn Học",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [
-                "Đăng Thư"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa vải",
-            "cover_price": "330k",
-            "print_run": null,
-            "page_count": 352,
-            "copy_numbering": null,
-            "size_cm": "13 x 20,5",
-            "weight_g": 500,
-            "thumbnail": "https://cdn.hstatic.net/products/1000328521/0w5a1155_da_2e142b6a39124c65849f0ee6c489bc61_master.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        },
-        {
-            "id": "mark-twain-the-adventures-of-tom-sawyer-2025-dong-a-bia-mem-co-bia-ao-110k",
-            "isbn": "978-632-617-162-4",
-            "caption": "",
-            "pub_year": 2025,
-            "publisher": "NXB Văn Học",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [
-                "Đăng Thư"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm, có bìa áo",
-            "cover_price": "110k",
-            "print_run": null,
-            "page_count": 356,
-            "copy_numbering": null,
-            "size_cm": "13,5 x 20,5",
-            "weight_g": 400,
-            "thumbnail": "https://cdn.hstatic.net/products/1000328521/tom_sawyer_1_da_1c1fba35609c40a0b24439eb4a064b15_master.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-04"
+  "id": "mark-twain-the-adventures-of-tom-sawyer",
+  "title": "Những cuộc phiêu lưu của Tom Sawyer",
+  "title_original": "The Adventures of Tom Sawyer",
+  "authors": [
+    "Mark Twain"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "mark-twain-the-adventures-of-tom-sawyer-2025-dong-a-bia-vai-330k",
+      "isbn": "978-632-606-580-0",
+      "caption": "",
+      "pub_year": 2025,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Đăng Thư"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa vải",
+      "cover_price": "330k",
+      "print_run": null,
+      "page_count": 352,
+      "copy_numbering": null,
+      "size_cm": "13 x 20,5",
+      "weight_g": 500,
+      "thumbnail": "https://cdn.hstatic.net/products/1000328521/0w5a1155_da_2e142b6a39124c65849f0ee6c489bc61_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "mark-twain-the-adventures-of-tom-sawyer-2025-dong-a-bia-mem-co-bia-ao-110k",
+      "isbn": "978-632-617-162-4",
+      "caption": "",
+      "pub_year": 2025,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Đăng Thư"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm, có bìa áo",
+      "cover_price": "110k",
+      "print_run": null,
+      "page_count": 356,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": 400,
+      "thumbnail": "https://cdn.hstatic.net/products/1000328521/tom_sawyer_1_da_1c1fba35609c40a0b24439eb4a064b15_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

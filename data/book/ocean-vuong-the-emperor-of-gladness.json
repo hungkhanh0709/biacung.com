@@ -1,65 +1,64 @@
 {
-    "id": "ocean-vuong-the-emperor-of-gladness",
-    "title": "Hoàng Đế Xứ Gladness",
-    "title_original": "The Emperor of Gladness",
-    "authors": [
-        "Ocean Vuong"
-    ],
-    "awards": [
-        "Goodreads Choice Award"
-    ],
-    "series": [],
-    "editions": [
-        {
-            "id": "ocean-vuong-the-emperor-of-gladness-2025-nha-nam-bia-cung-299k",
-            "isbn": null,
-            "caption": "Bìa Cứng - Độc Quyền Fahasa",
-            "pub_year": 2025,
-            "publisher": "NXB Hội Nhà Văn",
-            "issuers": [
-                "Nhã Nam"
-            ],
-            "translators": [
-                "Trần Khánh Nguyên"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa cứng",
-            "cover_price": "299k",
-            "print_run": null,
-            "page_count": 564,
-            "copy_numbering": null,
-            "size_cm": "20.5 x 14 x 3",
-            "weight_g": 900,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/6/z6839868800904_3aa34971753133a150e102fd38e3e6a9.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        },
-        {
-            "id": "ocean-vuong-the-emperor-of-gladness-2025-nha-nam-bia-mem-250k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2025,
-            "publisher": "NXB Hội Nhà Văn",
-            "issuers": [
-                "Nhã Nam"
-            ],
-            "translators": [
-                "Trần Khánh Nguyên"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "250k",
-            "print_run": null,
-            "page_count": 564,
-            "copy_numbering": null,
-            "size_cm": "20.5 x 14 x 3",
-            "weight_g": 700,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/h/o/hoang-de-xu-gladness-b_a-m_m-01.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-07"
+  "id": "ocean-vuong-the-emperor-of-gladness",
+  "title": "Hoàng Đế Xứ Gladness",
+  "title_original": "The Emperor of Gladness",
+  "authors": [
+    "Ocean Vuong"
+  ],
+  "awards": [
+    "Goodreads Choice Award"
+  ],
+  "series": [],
+  "editions": [
+    {
+      "id": "ocean-vuong-the-emperor-of-gladness-2025-nha-nam-bia-cung-299k",
+      "isbn": null,
+      "caption": "Bìa Cứng - Độc Quyền Fahasa",
+      "pub_year": 2025,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Trần Khánh Nguyên"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "299k",
+      "print_run": null,
+      "page_count": 564,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 14 x 3",
+      "weight_g": 900,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/6/z6839868800904_3aa34971753133a150e102fd38e3e6a9.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "ocean-vuong-the-emperor-of-gladness-2025-nha-nam-bia-mem-250k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2025,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Trần Khánh Nguyên"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "250k",
+      "print_run": null,
+      "page_count": 564,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 14 x 3",
+      "weight_g": 700,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/h/o/hoang-de-xu-gladness-b_a-m_m-01.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

@@ -1,39 +1,38 @@
 {
-    "id": "van-moi-10-nam-2015-2025-dong-a",
-    "title": "Văn mới 10 năm 2015 - 2025",
-    "title_original": "",
-    "authors": [
-        "Nhiều tác giả",
-        "Hồ Anh Thái (tuyển chọn)"
-    ],
-    "awards": [],
-    "series": [
-        "Văn Mới"
-    ],
-    "editions": [
-        {
-            "id": "van-moi-10-nam-2015-2025-dong-a-bia-mem-290k",
-            "isbn": "978-632-618-828-8",
-            "caption": "",
-            "pub_year": 2015,
-            "publisher": "NXB Hội Nhà Văn",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "290k",
-            "print_run": null,
-            "page_count": 624,
-            "copy_numbering": null,
-            "size_cm": "15,5x 24",
-            "weight_g": 800,
-            "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_e93e116d8aa04171a7ee05e0b291f040_master.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-04"
+  "id": "van-moi-10-nam-2015-2025-dong-a",
+  "title": "Văn mới 10 năm 2015 - 2025",
+  "title_original": "",
+  "authors": [
+    "Nhiều tác giả",
+    "Hồ Anh Thái (tuyển chọn)"
+  ],
+  "awards": [],
+  "series": [
+    "Văn Mới"
+  ],
+  "editions": [
+    {
+      "id": "van-moi-10-nam-2015-2025-dong-a-bia-mem-290k",
+      "isbn": "978-632-618-828-8",
+      "caption": "",
+      "pub_year": 2015,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "290k",
+      "print_run": null,
+      "page_count": 624,
+      "copy_numbering": null,
+      "size_cm": "15,5x 24",
+      "weight_g": 800,
+      "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_e93e116d8aa04171a7ee05e0b291f040_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

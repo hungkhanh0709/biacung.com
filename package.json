@@ -1,8 +1,0 @@
-{
-  "name": "biacung-com",
-  "private": true,
-  "version": "1.0.0",
-  "scripts": {
-    "sort-book": "node script/sort-book.js"
-  }
-}

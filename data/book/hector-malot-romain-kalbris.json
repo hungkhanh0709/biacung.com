@@ -1,67 +1,66 @@
 {
-    "id": "hector-malot-romain-kalbris",
-    "title": "Về với gia đình",
-    "title_original": "Romain Kalbris",
-    "authors": [
-        "Hector Malot"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "hector-malot-romain-kalbris-2025-dong-a-bia-vai-320k",
-            "isbn": "978-632-606-579-4",
-            "caption": "",
-            "pub_year": 2025,
-            "publisher": "NXB Văn Học",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [
-                "Lê Đình Chi"
-            ],
-            "illustrators": [
-                "Émile Bayard"
-            ],
-            "proofreaders": [],
-            "format": "Bìa vải",
-            "cover_price": "320k",
-            "print_run": null,
-            "page_count": 336,
-            "copy_numbering": null,
-            "size_cm": "13 x 20,5",
-            "weight_g": 700,
-            "thumbnail": "https://product.hstatic.net/1000328521/product/vevoigd_da_e08533aed52845c1891324bde8af2fd9_master.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        },
-        {
-            "id": "hector-malot-romain-kalbris-2025-dong-a-bia-mem-100k",
-            "isbn": "978-632-606-722-4",
-            "caption": "Bìa Mềm, Có Bìa Áo",
-            "pub_year": 2025,
-            "publisher": "NXB Văn Học",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [
-                "Lê Đình Chi"
-            ],
-            "illustrators": [
-                "Émile Bayard"
-            ],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "100k",
-            "print_run": null,
-            "page_count": 316,
-            "copy_numbering": null,
-            "size_cm": "13,5 x 20,5",
-            "weight_g": 300,
-            "thumbnail": "https://product.hstatic.net/1000328521/product/ve_voi_gia_dinh_da_-_copy_84a66af60d234c4f9c2b063f8507c5ab_master.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-04"
+  "id": "hector-malot-romain-kalbris",
+  "title": "Về với gia đình",
+  "title_original": "Romain Kalbris",
+  "authors": [
+    "Hector Malot"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "hector-malot-romain-kalbris-2025-dong-a-bia-vai-320k",
+      "isbn": "978-632-606-579-4",
+      "caption": "",
+      "pub_year": 2025,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Lê Đình Chi"
+      ],
+      "illustrators": [
+        "Émile Bayard"
+      ],
+      "proofreaders": [],
+      "format": "Bìa vải",
+      "cover_price": "320k",
+      "print_run": null,
+      "page_count": 336,
+      "copy_numbering": null,
+      "size_cm": "13 x 20,5",
+      "weight_g": 700,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/vevoigd_da_e08533aed52845c1891324bde8af2fd9_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "hector-malot-romain-kalbris-2025-dong-a-bia-mem-100k",
+      "isbn": "978-632-606-722-4",
+      "caption": "Bìa Mềm, Có Bìa Áo",
+      "pub_year": 2025,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Lê Đình Chi"
+      ],
+      "illustrators": [
+        "Émile Bayard"
+      ],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "100k",
+      "print_run": null,
+      "page_count": 316,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": 300,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/ve_voi_gia_dinh_da_-_copy_84a66af60d234c4f9c2b063f8507c5ab_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

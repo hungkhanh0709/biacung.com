@@ -1,63 +1,62 @@
 {
-    "id": "nguyen-dinh-dang-60-bi-quyet-ve-son-dau",
-    "title": "60 bí quyết vẽ sơn dầu",
-    "title_original": "",
-    "authors": [
-        "Nguyễn Đình Đăng"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "nguyen-dinh-dang-60-bi-quyet-ve-son-dau-2026-dong-a-bia-cung-boc-vai-co-hop-vo-so-1tr2",
-            "isbn": "",
-            "caption": "Ấn Bản Giới Hạn",
-            "pub_year": 2026,
-            "publisher": "NXB Dân Trí",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa cứng bọc vải, có hộp vỏ sò",
-            "cover_price": "1tr2",
-            "print_run": null,
-            "page_count": 312,
-            "copy_numbering": "NDD001-NDD500",
-            "size_cm": "24 x 16 x 1.7",
-            "weight_g": 600,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/9/_/9_5_40.jpg",
-            "gellery_imgs": [
-                "https://cdn1.fahasa.com/media/catalog/product/2/_/2_19_66.jpg",
-                "https://cdn1.fahasa.com/media/catalog/product/3/_/3_15_38.jpg",
-                "https://cdn1.fahasa.com/media/catalog/product/5/_/5_13_57.jpg"
-            ],
-            "detail": "Sách được làm theo số lượng độc giả đăng ký trước."
-        },
-        {
-            "id": "nguyen-dinh-dang-60-bi-quyet-ve-son-dau-2025-dong-a-bia-mem-co-bia-ao-320k",
-            "isbn": "987-632-00-2226-7",
-            "caption": "",
-            "pub_year": 2025,
-            "publisher": "NXB Dân Trí",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm, có bìa áo",
-            "cover_price": "320k",
-            "print_run": null,
-            "page_count": 312,
-            "copy_numbering": null,
-            "size_cm": "16 x 24",
-            "weight_g": null,
-            "thumbnail": "https://cdn.hstatic.net/products/1000328521/0_da_ffebe14e0c1c4f9288e7e2d5dc079d59_master.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-04"
+  "id": "nguyen-dinh-dang-60-bi-quyet-ve-son-dau",
+  "title": "60 bí quyết vẽ sơn dầu",
+  "title_original": "",
+  "authors": [
+    "Nguyễn Đình Đăng"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "nguyen-dinh-dang-60-bi-quyet-ve-son-dau-2026-dong-a-bia-cung-boc-vai-co-hop-vo-so-1tr2",
+      "isbn": "",
+      "caption": "Ấn Bản Giới Hạn",
+      "pub_year": 2026,
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng bọc vải, có hộp vỏ sò",
+      "cover_price": "1tr2",
+      "print_run": null,
+      "page_count": 312,
+      "copy_numbering": "NDD001-NDD500",
+      "size_cm": "24 x 16 x 1.7",
+      "weight_g": 600,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/9/_/9_5_40.jpg",
+      "gellery_imgs": [
+        "https://cdn1.fahasa.com/media/catalog/product/2/_/2_19_66.jpg",
+        "https://cdn1.fahasa.com/media/catalog/product/3/_/3_15_38.jpg",
+        "https://cdn1.fahasa.com/media/catalog/product/5/_/5_13_57.jpg"
+      ],
+      "detail": "Sách được làm theo số lượng độc giả đăng ký trước."
+    },
+    {
+      "id": "nguyen-dinh-dang-60-bi-quyet-ve-son-dau-2025-dong-a-bia-mem-co-bia-ao-320k",
+      "isbn": "987-632-00-2226-7",
+      "caption": "",
+      "pub_year": 2025,
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm, có bìa áo",
+      "cover_price": "320k",
+      "print_run": null,
+      "page_count": 312,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "https://cdn.hstatic.net/products/1000328521/0_da_ffebe14e0c1c4f9288e7e2d5dc079d59_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

@@ -1,67 +1,66 @@
 {
-    "id": "stephanie-garber-legendary",
-    "title": "Legendary",
-    "title_original": "Legendary",
-    "authors": [
-        "Stephanie Garber"
-    ],
-    "awards": [
-        "Goodreads Choice Award"
-    ],
-    "series": [
-        "Caraval"
-    ],
-    "editions": [
-        {
-            "id": "stephanie-garber-legendary-2026-az-viet-nam-bia-cung-379k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2026,
-            "publisher": "NXB Văn Học",
-            "issuers": [
-                "AZ Việt Nam"
-            ],
-            "translators": [
-                "Hán Nhật Minh"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa cứng",
-            "cover_price": "379k",
-            "print_run": null,
-            "page_count": 464,
-            "copy_numbering": null,
-            "size_cm": "20.5 x 14.5 x 2.5",
-            "weight_g": 20,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/m/o/mockup-s_ch-_-ph_-ki_n.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        },
-        {
-            "id": "stephanie-garber-legendary-2026-az-viet-nam-bia-mem-199k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2026,
-            "publisher": "NXB Văn Học",
-            "issuers": [
-                "AZ Việt Nam"
-            ],
-            "translators": [
-                "Hán Nhật Minh"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "199k",
-            "print_run": null,
-            "page_count": 464,
-            "copy_numbering": null,
-            "size_cm": "20.5 x 14.5 x 2.3",
-            "weight_g": 480,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/m/o/mockup-s_ch-_-ph_-ki_n-1.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-05"
+  "id": "stephanie-garber-legendary",
+  "title": "Legendary",
+  "title_original": "Legendary",
+  "authors": [
+    "Stephanie Garber"
+  ],
+  "awards": [
+    "Goodreads Choice Award"
+  ],
+  "series": [
+    "Caraval"
+  ],
+  "editions": [
+    {
+      "id": "stephanie-garber-legendary-2026-az-viet-nam-bia-cung-379k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "AZ Việt Nam"
+      ],
+      "translators": [
+        "Hán Nhật Minh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "379k",
+      "print_run": null,
+      "page_count": 464,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 14.5 x 2.5",
+      "weight_g": 20,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/m/o/mockup-s_ch-_-ph_-ki_n.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "stephanie-garber-legendary-2026-az-viet-nam-bia-mem-199k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "AZ Việt Nam"
+      ],
+      "translators": [
+        "Hán Nhật Minh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "199k",
+      "print_run": null,
+      "page_count": 464,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 14.5 x 2.3",
+      "weight_g": 480,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/m/o/mockup-s_ch-_-ph_-ki_n-1.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }
