@@ -3,6 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "sort-book": "node script/sort-book.js"
+    "sort-book": "node script/sort-book.js",
+    "generate-sitemap": "node script/generate-sitemap.js",
+    "audit:release": "node script/release-audit.js",
+    "release:check": "npm run generate-sitemap && npm run audit:release"
   }
 }

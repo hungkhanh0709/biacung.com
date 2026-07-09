@@ -319,6 +319,18 @@ a.detail-pill:focus-visible {
   grid-column: 1 / -1;
   margin-block-start: 0.35rem;
   padding: clamp(0.95rem, 2vw, 1.25rem);
+  scroll-margin-top: clamp(0.85rem, 6vh, 3.5rem);
+  transition: box-shadow 220ms ease, border-color 220ms ease, background-color 220ms ease;
+}
+
+.detail-focus-card.is-updating {
+  border-color: color-mix(in oklab, var(--color-primary), white 30%);
+  background:
+    linear-gradient(180deg, rgb(111 79 200 / 7%), transparent 22%),
+    var(--color-surface);
+  box-shadow:
+    0 1.25rem 2.5rem rgb(38 34 54 / 12%),
+    0 0 0 0.2rem rgb(111 79 200 / 10%);
 }
 
 .detail-focus-header {
@@ -517,5 +529,11 @@ a.detail-pill:focus-visible {
   .detail-edition-grid,
   .detail-meta-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .detail-focus-card {
+    transition: none;
   }
 }

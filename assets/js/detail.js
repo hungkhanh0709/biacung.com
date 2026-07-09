@@ -27,6 +27,10 @@ const headerInput = document.querySelector("#site-search");
 let currentBook = null;
 let activeEditionIndex = 0;
 let activeImageIndex = 0;
+let focusCardPulseTimer = 0;
+
+const FOCUS_CARD_TOP_OFFSET = 20;
+const FOCUS_CARD_VISIBLE_RATIO = 0.72;
 
 function normalizeText(value) {
   return value == null ? "" : String(value).trim();
@@ -213,6 +217,64 @@ function preserveEditionViewport(index, renderFn) {
   nextButton?.focus({ preventScroll: true });
 }
 
+function prefersReducedMotion() {
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
+function pulseFocusCard() {
+  if (!focusCardNode) {
+    return;
+  }
+
+  window.clearTimeout(focusCardPulseTimer);
+  focusCardNode.classList.remove("is-updating");
+  void focusCardNode.offsetWidth;
+  focusCardNode.classList.add("is-updating");
+
+  focusCardPulseTimer = window.setTimeout(() => {
+    focusCardNode.classList.remove("is-updating");
+  }, 900);
+}
+
+function isFocusCardProminentlyVisible() {
+  if (!focusCardNode) {
+    return true;
+  }
+
+  const rect = focusCardNode.getBoundingClientRect();
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
+  if (!viewportHeight) {
+    return true;
+  }
+
+  const visibleTop = Math.max(rect.top, 0);
+  const visibleBottom = Math.min(rect.bottom, viewportHeight);
+  const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+  const visibleRatio = visibleHeight / Math.min(rect.height || viewportHeight, viewportHeight);
+
+  return visibleRatio >= FOCUS_CARD_VISIBLE_RATIO && rect.top <= viewportHeight * 0.2;
+}
+
+function revealFocusCard() {
+  if (!focusCardNode) {
+    return;
+  }
+
+  pulseFocusCard();
+
+  if (isFocusCardProminentlyVisible()) {
+    return;
+  }
+
+  const rect = focusCardNode.getBoundingClientRect();
+  const topTarget = window.scrollY + rect.top - Math.max(FOCUS_CARD_TOP_OFFSET, window.innerHeight * 0.08);
+
+  window.scrollTo({
+    top: Math.max(0, topTarget),
+    behavior: prefersReducedMotion() ? "auto" : "smooth"
+  });
+}
+
 function setImageSource(imageNode, src, alt) {
   if (!imageNode) {
     return;
@@ -244,6 +306,15 @@ function getHeroImageUrl(book) {
   const editions = Array.isArray(book?.editions) ? book.editions : [];
   const firstEdition = editions[0] || {};
   return normalizeUrl(book?.thumbnail) || normalizeUrl(firstEdition.thumbnail) || BOOK_FALLBACK_COVER;
+}
+
+function truncateText(value, maxLength) {
+  const normalized = normalizeText(value);
+  if (!normalized || normalized.length <= maxLength) {
+    return normalized;
+  }
+
+  return `${normalized.slice(0, Math.max(0, maxLength - 1)).trimEnd()}…`;
 }
 
 function summarizeBook(book, edition) {
@@ -540,6 +611,10 @@ function renderEditions(book) {
         renderActiveEdition();
         renderEditions(book);
       });
+
+      window.requestAnimationFrame(() => {
+        revealFocusCard();
+      });
     });
 
     const inner = document.createElement("div");
@@ -619,6 +694,66 @@ function renderActiveEdition() {
   renderEditionMeta(currentBook, edition);
   renderInfoCard(editionSummaryNode, "Thông phát hành", buildEditionSummaryLines(edition));
   renderDescription(edition);
+  updateSeoMetadata(currentBook, edition);
+}
+
+function updateSeoMetadata(book, edition) {
+  const seo = window.BiaCungSEO;
+  if (!seo || !book || !edition) {
+    return;
+  }
+
+  const displayTitle = getDisplayTitle(book);
+  const authors = dedupeStrings(book.authors);
+  const imageUrl = seo.toAbsoluteUrl(normalizeUrl(edition.thumbnail) || getHeroImageUrl(book)) || seo.FALLBACK_IMAGE;
+  const pagePath = `detail.html?id=${encodeURIComponent(book.id)}`;
+  const pageUrl = seo.toAbsoluteUrl(pagePath);
+  const description = truncateText(
+    [
+      authors.length ? `${displayTitle} - ${authors.join(", ")}.` : displayTitle,
+      summarizeBook(book, edition)
+    ].filter(Boolean).join(" "),
+    220
+  );
+  const editionName =
+    normalizeText(edition.caption) || `${displayTitle} - ${normalizeText(edition.format) || "Phiên bản sưu tầm"}`;
+
+  seo.setCanonical(pagePath);
+  seo.setMetaByName("description", description);
+  seo.setMetaByProperty("og:url", pageUrl);
+  seo.setMetaByProperty("og:title", `${displayTitle} | Bìa Cứng`);
+  seo.setMetaByProperty("og:description", description);
+  seo.setMetaByProperty("og:image", imageUrl);
+  seo.setMetaByName("twitter:title", `${displayTitle} | Bìa Cứng`);
+  seo.setMetaByName("twitter:description", description);
+  seo.setMetaByName("twitter:image", imageUrl);
+
+  seo.setStructuredData("book-structured-data", {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    name: displayTitle,
+    alternateName: normalizeText(book.title_original) || undefined,
+    url: pageUrl,
+    image: imageUrl,
+    inLanguage: "vi-VN",
+    description,
+    author: authors.map((author) => ({
+      "@type": "Person",
+      name: author
+    })),
+    workExample: {
+      "@type": "Book",
+      name: editionName,
+      bookFormat: normalizeText(edition.format) || undefined,
+      datePublished: normalizeText(edition.pub_year) || undefined,
+      publisher: normalizeText(edition.publisher)
+        ? {
+          "@type": "Organization",
+          name: normalizeText(edition.publisher)
+        }
+        : undefined
+    }
+  });
 }
 
 function renderBook(book) {

@@ -103,6 +103,15 @@ function buildBookDetailDataUrl(slug) {
   return value ? `data/book/${encodeURIComponent(value)}.json` : "";
 }
 
+function truncateText(value, maxLength) {
+  const normalized = normalizeText(value);
+  if (!normalized || normalized.length <= maxLength) {
+    return normalized;
+  }
+
+  return `${normalized.slice(0, Math.max(0, maxLength - 1)).trimEnd()}…`;
+}
+
 function isSafeDetailPath(path, pattern) {
   return pattern.test(normalizeText(path));
 }
@@ -356,6 +365,7 @@ async function renderSeriesIndexPage() {
     summary: `Hiển thị tất cả ${seriesCards.length} series`,
     empty: ""
   });
+  updateSeriesIndexSeo(seriesCards);
 }
 
 async function renderSeriesDetailPage() {
@@ -390,6 +400,96 @@ async function renderSeriesDetailPage() {
     title: normalizeText(series.name || series.id),
     summary: `Hiển thị ${books.length} tác phẩm thuộc series “${normalizeText(series.name || series.id)}”`,
     empty: ""
+  });
+  updateSeriesDetailSeo(series, books);
+}
+
+function updateSeriesIndexSeo(seriesCards) {
+  const seo = window.BiaCungSEO;
+  if (!seo) {
+    return;
+  }
+
+  const description = truncateText(
+    `Khám phá ${seriesCards.length} series sách và danh sách tác phẩm thuộc từng bộ sách trên Bìa Cứng.`,
+    220
+  );
+
+  seo.setCanonical("series.html");
+  seo.setMetaByName("description", description);
+  seo.setMetaByProperty("og:url", `${seo.SITE_URL}series.html`);
+  seo.setMetaByProperty("og:title", "Series | Bìa Cứng");
+  seo.setMetaByProperty("og:description", description);
+  seo.setMetaByProperty("og:image", seo.FALLBACK_IMAGE);
+  seo.setMetaByName("twitter:title", "Series | Bìa Cứng");
+  seo.setMetaByName("twitter:description", description);
+  seo.setMetaByName("twitter:image", seo.FALLBACK_IMAGE);
+
+  seo.setStructuredData("series-structured-data", {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Series | Bìa Cứng",
+    url: `${seo.SITE_URL}series.html`,
+    description,
+    inLanguage: "vi-VN",
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: seriesCards.length,
+      itemListElement: seriesCards.map((series, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: series.title,
+        url: seo.toAbsoluteUrl(series.href)
+      }))
+    }
+  });
+}
+
+function updateSeriesDetailSeo(series, books) {
+  const seo = window.BiaCungSEO;
+  if (!seo || !series) {
+    return;
+  }
+
+  const pagePath = `series.html?id=${encodeURIComponent(series.id)}`;
+  const pageUrl = seo.toAbsoluteUrl(pagePath);
+  const imageUrl = seo.toAbsoluteUrl(normalizeUrl(series.thumbnail)) || seo.FALLBACK_IMAGE;
+  const description = truncateText(
+    [
+      normalizeText(series.description),
+      books.length ? `Hiện có ${books.length} tác phẩm thuộc series này trên Bìa Cứng.` : ""
+    ].filter(Boolean).join(" "),
+    220
+  );
+
+  seo.setCanonical(pagePath);
+  seo.setMetaByName("description", description);
+  seo.setMetaByProperty("og:url", pageUrl);
+  seo.setMetaByProperty("og:title", `${normalizeText(series.name || series.id)} | Bìa Cứng`);
+  seo.setMetaByProperty("og:description", description);
+  seo.setMetaByProperty("og:image", imageUrl);
+  seo.setMetaByName("twitter:title", `${normalizeText(series.name || series.id)} | Bìa Cứng`);
+  seo.setMetaByName("twitter:description", description);
+  seo.setMetaByName("twitter:image", imageUrl);
+
+  seo.setStructuredData("series-structured-data", {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: normalizeText(series.name || series.id),
+    url: pageUrl,
+    image: imageUrl,
+    description,
+    inLanguage: "vi-VN",
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: books.length,
+      itemListElement: books.map((book, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: book.title,
+        url: seo.toAbsoluteUrl(book.href)
+      }))
+    }
   });
 }
 
