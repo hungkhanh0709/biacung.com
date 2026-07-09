@@ -33,6 +33,16 @@ function normalizeText(value) {
     return (value == null ? '' : String(value)).trim();
 }
 
+function sanitizeBookDetailPayload(payload, fallbackId = '') {
+    const source = payload && typeof payload === 'object' ? payload : {};
+    const { book_id, updated_at, ...rest } = source;
+
+    return {
+        ...rest,
+        id: normalizeText(rest.id || fallbackId)
+    };
+}
+
 function slugify(value) {
     return (value || '')
         .toLowerCase()
@@ -150,19 +160,15 @@ function mergeBookIndexEntries(existingBookIndex, incomingEntries, fallbackUpdat
     return orderedDetails.map((detailPath) => mergedByDetail.get(detailPath));
 }
 
-function mergeDetailPayload(existingPayload, incomingPayload, bookId, fallbackIdPath) {
-    const existing = existingPayload && typeof existingPayload === 'object' ? existingPayload : {};
-    const incoming = incomingPayload && typeof incomingPayload === 'object' ? incomingPayload : {};
+function mergeDetailPayload(existingPayload, incomingPayload, fallbackIdPath) {
+    const existing = sanitizeBookDetailPayload(existingPayload, fallbackIdPath);
+    const incoming = sanitizeBookDetailPayload(incomingPayload, fallbackIdPath);
     const merged = {
         ...existing,
         ...incoming
     };
 
     merged.id = normalizeText(incoming.id || existing.id || fallbackIdPath);
-    if (bookId && !merged.book_id) {
-        merged.book_id = bookId;
-    }
-
     return merged;
 }
 
@@ -215,7 +221,7 @@ function saveBookDetailReview(bookDetailReview, bookId) {
 
     const filePath = path.join(bookDir, `${normalizedBookId}.json`);
     const existingBookDetail = readJsonFile(filePath, null);
-    const mergedBookDetail = mergeDetailPayload(existingBookDetail, bookDetailReview, normalizedBookId, normalizedBookId);
+    const mergedBookDetail = mergeDetailPayload(existingBookDetail, bookDetailReview, normalizedBookId);
     mergedBookDetail.id = normalizedBookId;
     writeJsonFile(filePath, mergedBookDetail);
     return mergedBookDetail;
@@ -339,7 +345,6 @@ function handleSave(req, res) {
             const authorPayload = payload.authorPayload || [];
             const seriesPayload = payload.seriesPayload || [];
             const bookId = normalizeText(bookDetail.id || '');
-            const updatedAt = bookDetail.updated_at || new Date().toISOString().slice(0, 10);
             const detailPath = `data/book/${bookId}.json`;
 
             if (!bookId) {
@@ -351,9 +356,8 @@ function handleSave(req, res) {
             ensureDirectory(bookDir);
             ensureDirectory(seriesDir);
 
-            const mergedBookDetail = saveBookDetailReview(bookDetail, bookId);
-            mergedBookDetail.updated_at = updatedAt;
-            writeJsonFile(path.join(bookDir, `${bookId}.json`), mergedBookDetail);
+            saveBookDetailReview(bookDetail, bookId);
+            const updatedAt = new Date().toISOString().slice(0, 10);
             const mergedBookIndex = saveBookIndexReview(bookIndex, updatedAt);
             const mergedAuthors = saveAuthorReview(authorPayload, bookId);
             saveSeriesReview(seriesPayload, bookId);
@@ -464,7 +468,8 @@ function handleGetBook(req, res, slug) {
     }
 
     res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.end(fs.readFileSync(filePath, 'utf8'));
+    const bookDetail = readJsonFile(filePath, {});
+    res.end(JSON.stringify(sanitizeBookDetailPayload(bookDetail, slug)));
 }
 
 function handleGetIndexState(req, res) {

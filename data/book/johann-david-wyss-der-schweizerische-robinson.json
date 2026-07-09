@@ -1,38 +1,37 @@
 {
-    "id": "johann-david-wyss-der-schweizerische-robinson",
-    "title": "Gia đình Robinson Thụy Sỹ",
-    "title_original": "Der Schweizerische Robinson",
-    "authors": [
-        "Johann David Wyss"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "johann-david-wyss-der-schweizerische-robinson-2025-dong-a-bia-mem-120k",
-            "isbn": "978-632-617-163-1",
-            "caption": "",
-            "pub_year": 2025,
-            "publisher": "NXB Văn Học",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [
-                "Nguyễn Minh"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "120k",
-            "print_run": null,
-            "page_count": 448,
-            "copy_numbering": null,
-            "size_cm": "13,5 x 20,5",
-            "weight_g": 400,
-            "thumbnail": "https://cdn.hstatic.net/products/1000328521/gia_dinh_robinson_1_da_9cf17ba5b7074624ba782819ed122609_master.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-04"
+  "id": "johann-david-wyss-der-schweizerische-robinson",
+  "title": "Gia đình Robinson Thụy Sỹ",
+  "title_original": "Der Schweizerische Robinson",
+  "authors": [
+    "Johann David Wyss"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "johann-david-wyss-der-schweizerische-robinson-2025-dong-a-bia-mem-120k",
+      "isbn": "978-632-617-163-1",
+      "caption": "",
+      "pub_year": 2025,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Minh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "120k",
+      "print_run": null,
+      "page_count": 448,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": 400,
+      "thumbnail": "https://cdn.hstatic.net/products/1000328521/gia_dinh_robinson_1_da_9cf17ba5b7074624ba782819ed122609_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

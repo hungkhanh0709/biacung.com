@@ -55,6 +55,15 @@ function normalizeText(value) {
     return (value == null ? '' : String(value)).trim();
 }
 
+function sanitizeBookDetailPayload(bookDetail = {}) {
+    if (!bookDetail || typeof bookDetail !== 'object') {
+        return {};
+    }
+
+    const { book_id, updated_at, ...rest } = bookDetail;
+    return rest;
+}
+
 function getApiBaseUrl() {
     if (typeof window !== 'undefined' && window.BOOK_GENERATOR_API_BASE) {
         return normalizeText(window.BOOK_GENERATOR_API_BASE);
@@ -851,8 +860,8 @@ function isMeaningfulEdition(edition) {
 }
 
 function mergeBookDetails(primaryDetail = {}, secondaryDetail = {}) {
-    const primary = primaryDetail && typeof primaryDetail === 'object' ? primaryDetail : {};
-    const secondary = secondaryDetail && typeof secondaryDetail === 'object' ? secondaryDetail : {};
+    const primary = sanitizeBookDetailPayload(primaryDetail);
+    const secondary = sanitizeBookDetailPayload(secondaryDetail);
 
     const primaryEditions = Array.isArray(primary.editions) ? primary.editions.filter(isMeaningfulEdition) : [];
     const secondaryEditions = Array.isArray(secondary.editions) ? secondary.editions.filter(isMeaningfulEdition) : [];
@@ -908,8 +917,7 @@ function mergeBookDetails(primaryDetail = {}, secondaryDetail = {}) {
         series: Array.isArray(primary.series) && primary.series.length
             ? primary.series
             : (Array.isArray(secondary.series) ? secondary.series : []),
-        editions: sortEditionsByPubYear(mergedEditions),
-        updated_at: pick(primary.updated_at, secondary.updated_at, new Date().toISOString().slice(0, 10))
+        editions: sortEditionsByPubYear(mergedEditions)
     };
 }
 
@@ -1019,8 +1027,7 @@ function buildBookDetailPayload(formData) {
         authors: parseCommaSeparatedLines(formData.get('authors') || '').map(toTitleCase),
         awards: parseLines(formData.get('awards') || ''),
         series: parseLines(formData.get('series') || ''),
-        editions: sortEditionsByPubYear(editions),
-        updated_at: new Date().toISOString().slice(0, 10)
+        editions: sortEditionsByPubYear(editions)
     };
 }
 

@@ -1,38 +1,37 @@
 {
-    "id": "lev-nikolayevich-tolstoy-chien-tranh-va-hoa-binh",
-    "title": "Chiến Tranh Và Hòa Bình",
-    "title_original": "Война и мир",
-    "authors": [
-        "Lev Nikolayevich Tolstoy"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "lev-nikolayevich-tolstoy-chien-tranh-va-hoa-binh-2026-khang-viet-bia-cung-780k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2026,
-            "publisher": "NXB Văn Học",
-            "issuers": [
-                "Khang Việt"
-            ],
-            "translators": [
-                "Thảo Linh"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa cứng",
-            "cover_price": "780k",
-            "print_run": null,
-            "page_count": 1848,
-            "copy_numbering": null,
-            "size_cm": "24 x 16 x 9.7",
-            "weight_g": 2780,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/v/n/vn-11134207-81ztc-mm5ghj4rgxdt85_389986e8843e425c8257630d0bc09a38_1024x1024.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-05"
+  "id": "lev-nikolayevich-tolstoy-chien-tranh-va-hoa-binh",
+  "title": "Chiến Tranh Và Hòa Bình",
+  "title_original": "Война и мир",
+  "authors": [
+    "Lev Nikolayevich Tolstoy"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "lev-nikolayevich-tolstoy-chien-tranh-va-hoa-binh-2026-khang-viet-bia-cung-780k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Khang Việt"
+      ],
+      "translators": [
+        "Thảo Linh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "780k",
+      "print_run": null,
+      "page_count": 1848,
+      "copy_numbering": null,
+      "size_cm": "24 x 16 x 9.7",
+      "weight_g": 2780,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/v/n/vn-11134207-81ztc-mm5ghj4rgxdt85_389986e8843e425c8257630d0bc09a38_1024x1024.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

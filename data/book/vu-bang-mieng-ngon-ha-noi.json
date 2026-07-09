@@ -1,38 +1,37 @@
 {
-    "id": "vu-bang-mieng-ngon-ha-noi",
-    "title": "Miếng Ngon Hà Nội",
-    "title_original": "",
-    "authors": [
-        "Vũ Bằng"
-    ],
-    "awards": [],
-    "series": [
-        "Việt Nam Danh Tác"
-    ],
-    "editions": [
-        {
-            "id": "vu-bang-mieng-ngon-ha-noi-2026-nha-nam-bia-mem-85k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2026,
-            "publisher": "NXB Hội Nhà Văn",
-            "issuers": [
-                "Nhã Nam"
-            ],
-            "translators": [],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "85k",
-            "print_run": null,
-            "page_count": 212,
-            "copy_numbering": null,
-            "size_cm": "20.5 x 14.5 x 1",
-            "weight_g": 240,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/m/i/mieng-ngon-ha-noi_1_1.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-06"
+  "id": "vu-bang-mieng-ngon-ha-noi",
+  "title": "Miếng Ngon Hà Nội",
+  "title_original": "",
+  "authors": [
+    "Vũ Bằng"
+  ],
+  "awards": [],
+  "series": [
+    "Việt Nam Danh Tác"
+  ],
+  "editions": [
+    {
+      "id": "vu-bang-mieng-ngon-ha-noi-2026-nha-nam-bia-mem-85k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "85k",
+      "print_run": null,
+      "page_count": 212,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 14.5 x 1",
+      "weight_g": 240,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/m/i/mieng-ngon-ha-noi_1_1.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

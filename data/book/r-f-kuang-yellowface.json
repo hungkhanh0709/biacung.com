@@ -1,40 +1,39 @@
 {
-    "id": "r-f-kuang-yellowface",
-    "title": "Đội Lốt Da Vàng",
-    "title_original": "Yellowface",
-    "authors": [
-        "R. F. Kuang"
-    ],
-    "awards": [
-        "Goodreads Choice Award"
-    ],
-    "series": [],
-    "editions": [
-        {
-            "id": "r-f-kuang-yellowface-2026-rainbow-bia-mem-205k",
-            "isbn": null,
-            "caption": "Tái Bản 2026",
-            "pub_year": 2026,
-            "publisher": "NXB Lao Động",
-            "issuers": [
-                "Rainbow"
-            ],
-            "translators": [
-                "Lam Vũ"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "205k",
-            "print_run": null,
-            "page_count": 344,
-            "copy_numbering": null,
-            "size_cm": "24 x 16 x 1.7",
-            "weight_g": 500,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/7/z7965837234777_ee26cc7d6600e7607339ec00a673a295.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-05"
+  "id": "r-f-kuang-yellowface",
+  "title": "Đội Lốt Da Vàng",
+  "title_original": "Yellowface",
+  "authors": [
+    "R. F. Kuang"
+  ],
+  "awards": [
+    "Goodreads Choice Award"
+  ],
+  "series": [],
+  "editions": [
+    {
+      "id": "r-f-kuang-yellowface-2026-rainbow-bia-mem-205k",
+      "isbn": null,
+      "caption": "Tái Bản 2026",
+      "pub_year": 2026,
+      "publisher": "NXB Lao Động",
+      "issuers": [
+        "Rainbow"
+      ],
+      "translators": [
+        "Lam Vũ"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "205k",
+      "print_run": null,
+      "page_count": 344,
+      "copy_numbering": null,
+      "size_cm": "24 x 16 x 1.7",
+      "weight_g": 500,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/7/z7965837234777_ee26cc7d6600e7607339ec00a673a295.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

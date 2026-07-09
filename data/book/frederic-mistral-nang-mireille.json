@@ -1,40 +1,39 @@
 {
-    "id": "frederic-mistral-nang-mireille",
-    "title": "Nàng Mireille",
-    "title_original": "",
-    "authors": [
-        "Frédéric Mistral"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "frederic-mistral-nang-mireille-2024-dong-a-bia-buckram-800k",
-            "isbn": "978-604-496-905-3",
-            "caption": "Bìa Cứng Bọc Bằng Buckram, Có Hộp",
-            "pub_year": 2024,
-            "publisher": "NXB Văn Học",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [
-                "Nguyễn Thị Thúy An"
-            ],
-            "illustrators": [
-                "Frédéric Montenard"
-            ],
-            "proofreaders": [],
-            "format": "Bìa buckram",
-            "cover_price": "800k",
-            "print_run": null,
-            "page_count": 264,
-            "copy_numbering": null,
-            "size_cm": "16 x 24",
-            "weight_g": 1000,
-            "thumbnail": "https://product.hstatic.net/1000328521/product/2_9ad5235d57f7440cb98265db37dab926_master.jpg",
-            "gellery_imgs": [],
-            "detail": "- Bìa sách là bìa cứng với chất liệu bọc bìa là Heritage Library Buckram được nhập từ hãng Ratchford, Anh Quốc.\n- Sách in 4 màu trên giấy GV76-BB 100 gsm đều được in bằng máy in Heidelberg, Đức.\n- Sách được mạ cạnh bằng nhũ vàng và in dấu Limited Edition của Đông A.\n- Hộp sách bằng carton."
-        }
-    ],
-    "updated_at": "2026-07-04"
+  "id": "frederic-mistral-nang-mireille",
+  "title": "Nàng Mireille",
+  "title_original": "",
+  "authors": [
+    "Frédéric Mistral"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "frederic-mistral-nang-mireille-2024-dong-a-bia-buckram-800k",
+      "isbn": "978-604-496-905-3",
+      "caption": "Bìa Cứng Bọc Bằng Buckram, Có Hộp",
+      "pub_year": 2024,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Thị Thúy An"
+      ],
+      "illustrators": [
+        "Frédéric Montenard"
+      ],
+      "proofreaders": [],
+      "format": "Bìa buckram",
+      "cover_price": "800k",
+      "print_run": null,
+      "page_count": 264,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 1000,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/2_9ad5235d57f7440cb98265db37dab926_master.jpg",
+      "gellery_imgs": [],
+      "detail": "- Bìa sách là bìa cứng với chất liệu bọc bìa là Heritage Library Buckram được nhập từ hãng Ratchford, Anh Quốc.\n- Sách in 4 màu trên giấy GV76-BB 100 gsm đều được in bằng máy in Heidelberg, Đức.\n- Sách được mạ cạnh bằng nhũ vàng và in dấu Limited Edition của Đông A.\n- Hộp sách bằng carton."
+    }
+  ]
 }

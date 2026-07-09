@@ -1,40 +1,39 @@
 {
-    "id": "john-steinbeck-of-mice-and-men",
-    "title": "Của Chuột Và Người",
-    "title_original": "Of Mice and Men",
-    "authors": [
-        "John Steinbeck"
-    ],
-    "awards": [
-        "Nobel Văn Chương"
-    ],
-    "series": [],
-    "editions": [
-        {
-            "id": "john-steinbeck-of-mice-and-men-2024-tao-dan-bia-mem-90k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2024,
-            "publisher": "NXB Hội Nhà Văn",
-            "issuers": [
-                "Tao Đàn"
-            ],
-            "translators": [
-                "Phạm Văn"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "90k",
-            "print_run": null,
-            "page_count": 180,
-            "copy_numbering": null,
-            "size_cm": "20.5 x 13 x 0.9",
-            "weight_g": 200,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/i/m/image_228418_1.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-05"
+  "id": "john-steinbeck-of-mice-and-men",
+  "title": "Của Chuột Và Người",
+  "title_original": "Of Mice and Men",
+  "authors": [
+    "John Steinbeck"
+  ],
+  "awards": [
+    "Nobel Văn Chương"
+  ],
+  "series": [],
+  "editions": [
+    {
+      "id": "john-steinbeck-of-mice-and-men-2024-tao-dan-bia-mem-90k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2024,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Tao Đàn"
+      ],
+      "translators": [
+        "Phạm Văn"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "90k",
+      "print_run": null,
+      "page_count": 180,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 13 x 0.9",
+      "weight_g": 200,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/i/m/image_228418_1.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

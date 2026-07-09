@@ -1,42 +1,41 @@
 {
-    "id": "dk-chinh-tri-khai-luoc-nhung-tu-tuong-lon",
-    "title": "Chính trị - Khái lược những tư tưởng lớn",
-    "title_original": "",
-    "authors": [
-        "DK"
-    ],
-    "awards": [],
-    "series": [
-        "Khái lược những tư tưởng lớn"
-    ],
-    "editions": [
-        {
-            "id": "dk-chinh-tri-khai-luoc-nhung-tu-tuong-lon-2023-dong-a-bia-cung-450k",
-            "isbn": "978-604-88-8773-5",
-            "caption": "",
-            "pub_year": 2023,
-            "publisher": "NXB Dân Trí",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [
-                "Bích Thu"
-            ],
-            "illustrators": [],
-            "proofreaders": [
-                "Lê Ngọc Tân"
-            ],
-            "format": "Bìa cứng",
-            "cover_price": "450k",
-            "print_run": null,
-            "page_count": 352,
-            "copy_numbering": null,
-            "size_cm": "19,3 x 23,5",
-            "weight_g": 200,
-            "thumbnail": "https://product.hstatic.net/1000328521/product/2_ce636933f7e147a68e461b053d8e20fb_master.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-04"
+  "id": "dk-chinh-tri-khai-luoc-nhung-tu-tuong-lon",
+  "title": "Chính trị - Khái lược những tư tưởng lớn",
+  "title_original": "",
+  "authors": [
+    "DK"
+  ],
+  "awards": [],
+  "series": [
+    "Khái lược những tư tưởng lớn"
+  ],
+  "editions": [
+    {
+      "id": "dk-chinh-tri-khai-luoc-nhung-tu-tuong-lon-2023-dong-a-bia-cung-450k",
+      "isbn": "978-604-88-8773-5",
+      "caption": "",
+      "pub_year": 2023,
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Bích Thu"
+      ],
+      "illustrators": [],
+      "proofreaders": [
+        "Lê Ngọc Tân"
+      ],
+      "format": "Bìa cứng",
+      "cover_price": "450k",
+      "print_run": null,
+      "page_count": 352,
+      "copy_numbering": null,
+      "size_cm": "19,3 x 23,5",
+      "weight_g": 200,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/2_ce636933f7e147a68e461b053d8e20fb_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

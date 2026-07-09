@@ -1,63 +1,62 @@
 {
-    "id": "nguyen-nhat-anh-dao-mong-mo",
-    "title": "Đảo Mộng Mơ",
-    "title_original": "",
-    "authors": [
-        "Nguyễn Nhật Ánh"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "nguyen-nhat-anh-dao-mong-mo-2026-dong-a-bia-mem-tai-ban-lan-39-75k",
-            "isbn": null,
-            "caption": "Tái Bản Lần Thứ 39",
-            "pub_year": 2026,
-            "publisher": "NXB Trẻ",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [],
-            "illustrators": [
-                "Đỗ Hoàng Tường"
-            ],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "75k",
-            "print_run": null,
-            "page_count": 256,
-            "copy_numbering": null,
-            "size_cm": "20.5 x 13.5 x 1.2",
-            "weight_g": 350,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/b/i/bia_daomongmotb39-02.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        },
-        {
-            "id": "nguyen-nhat-anh-dao-mong-mo-2026-dong-a-bia-mem-tai-ban-lan-38-75k",
-            "isbn": null,
-            "caption": "Tái Bản Lần Thứ 38",
-            "pub_year": 2026,
-            "publisher": "NXB Trẻ",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [],
-            "illustrators": [
-                "Đỗ Hoàng Tường"
-            ],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "75k",
-            "print_run": null,
-            "page_count": 256,
-            "copy_numbering": null,
-            "size_cm": "20.5 x 13.5 x 1.2",
-            "weight_g": 350,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/1/-/1-1_1_19.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-05"
+  "id": "nguyen-nhat-anh-dao-mong-mo",
+  "title": "Đảo Mộng Mơ",
+  "title_original": "",
+  "authors": [
+    "Nguyễn Nhật Ánh"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "nguyen-nhat-anh-dao-mong-mo-2026-dong-a-bia-mem-tai-ban-lan-39-75k",
+      "isbn": null,
+      "caption": "Tái Bản Lần Thứ 39",
+      "pub_year": 2026,
+      "publisher": "NXB Trẻ",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Đỗ Hoàng Tường"
+      ],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "75k",
+      "print_run": null,
+      "page_count": 256,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 13.5 x 1.2",
+      "weight_g": 350,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/b/i/bia_daomongmotb39-02.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "nguyen-nhat-anh-dao-mong-mo-2026-dong-a-bia-mem-tai-ban-lan-38-75k",
+      "isbn": null,
+      "caption": "Tái Bản Lần Thứ 38",
+      "pub_year": 2026,
+      "publisher": "NXB Trẻ",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Đỗ Hoàng Tường"
+      ],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "75k",
+      "print_run": null,
+      "page_count": 256,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 13.5 x 1.2",
+      "weight_g": 350,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/1/-/1-1_1_19.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

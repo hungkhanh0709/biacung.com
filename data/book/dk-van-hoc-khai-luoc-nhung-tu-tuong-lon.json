@@ -1,40 +1,39 @@
 {
-    "id": "dk-van-hoc-khai-luoc-nhung-tu-tuong-lon",
-    "title": "Văn học – Khái lược những tư tưởng lớn",
-    "title_original": "",
-    "authors": [
-        "DK"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "dk-van-hoc-khai-luoc-nhung-tu-tuong-lon-2022-dong-a-bia-cung-390",
-            "isbn": "978-604-331-457-1",
-            "caption": "",
-            "pub_year": 2022,
-            "publisher": "NXB Dân Trí",
-            "issuers": [
-                "Đông A"
-            ],
-            "translators": [
-                "Ngọc Tân",
-                "Yến Nhi",
-                "Hồng Vỹ"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa cứng",
-            "cover_price": "390",
-            "print_run": null,
-            "page_count": 352,
-            "copy_numbering": null,
-            "size_cm": "19,3 x 23,5",
-            "weight_g": null,
-            "thumbnail": "https://product.hstatic.net/1000328521/product/1111_fc147b9c685f4ae888426ab28f010c16_master.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-04"
+  "id": "dk-van-hoc-khai-luoc-nhung-tu-tuong-lon",
+  "title": "Văn học – Khái lược những tư tưởng lớn",
+  "title_original": "",
+  "authors": [
+    "DK"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "dk-van-hoc-khai-luoc-nhung-tu-tuong-lon-2022-dong-a-bia-cung-390",
+      "isbn": "978-604-331-457-1",
+      "caption": "",
+      "pub_year": 2022,
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Ngọc Tân",
+        "Yến Nhi",
+        "Hồng Vỹ"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "390",
+      "print_run": null,
+      "page_count": 352,
+      "copy_numbering": null,
+      "size_cm": "19,3 x 23,5",
+      "weight_g": null,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/1111_fc147b9c685f4ae888426ab28f010c16_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

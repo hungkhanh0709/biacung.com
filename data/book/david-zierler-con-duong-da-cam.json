@@ -1,36 +1,35 @@
 {
-    "id": "david-zierler-con-duong-da-cam",
-    "title": "Con Đường Da Cam",
-    "title_original": "",
-    "authors": [
-        "David Zierler"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "david-zierler-con-duong-da-cam-2012-bia-mem-95k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2012,
-            "publisher": "NXB Trẻ",
-            "issuers": [],
-            "translators": [
-                "Bùi Phương Thảo"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "95k",
-            "print_run": null,
-            "page_count": 325,
-            "copy_numbering": null,
-            "size_cm": "13 x 20",
-            "weight_g": null,
-            "thumbnail": "https://www.netabooks.vn/Data/Sites/1/Product/5018/1.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-04"
+  "id": "david-zierler-con-duong-da-cam",
+  "title": "Con Đường Da Cam",
+  "title_original": "",
+  "authors": [
+    "David Zierler"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "david-zierler-con-duong-da-cam-2012-bia-mem-95k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2012,
+      "publisher": "NXB Trẻ",
+      "issuers": [],
+      "translators": [
+        "Bùi Phương Thảo"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "95k",
+      "print_run": null,
+      "page_count": 325,
+      "copy_numbering": null,
+      "size_cm": "13 x 20",
+      "weight_g": null,
+      "thumbnail": "https://www.netabooks.vn/Data/Sites/1/Product/5018/1.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

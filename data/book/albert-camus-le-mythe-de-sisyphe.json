@@ -1,40 +1,39 @@
 {
-    "id": "albert-camus-le-mythe-de-sisyphe",
-    "title": "Thần Thoại Sisyphus",
-    "title_original": "Le mythe de Sisyphe",
-    "authors": [
-        "Albert Camus"
-    ],
-    "awards": [],
-    "series": [
-        "Cánh Cửa Mở Rộng"
-    ],
-    "editions": [
-        {
-            "id": "albert-camus-le-mythe-de-sisyphe-2022-nxb-tre-bia-mem-95k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2022,
-            "publisher": "NXB Trẻ",
-            "issuers": [
-                "Nxb Trẻ"
-            ],
-            "translators": [
-                "Trương Thị Hoàng Yến"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "95k",
-            "print_run": null,
-            "page_count": 201,
-            "copy_numbering": null,
-            "size_cm": "20x13x1",
-            "weight_g": 225,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8934974182306.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-05"
+  "id": "albert-camus-le-mythe-de-sisyphe",
+  "title": "Thần Thoại Sisyphus",
+  "title_original": "Le mythe de Sisyphe",
+  "authors": [
+    "Albert Camus"
+  ],
+  "awards": [],
+  "series": [
+    "Cánh Cửa Mở Rộng"
+  ],
+  "editions": [
+    {
+      "id": "albert-camus-le-mythe-de-sisyphe-2022-nxb-tre-bia-mem-95k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2022,
+      "publisher": "NXB Trẻ",
+      "issuers": [
+        "Nxb Trẻ"
+      ],
+      "translators": [
+        "Trương Thị Hoàng Yến"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "95k",
+      "print_run": null,
+      "page_count": 201,
+      "copy_numbering": null,
+      "size_cm": "20x13x1",
+      "weight_g": 225,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8934974182306.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

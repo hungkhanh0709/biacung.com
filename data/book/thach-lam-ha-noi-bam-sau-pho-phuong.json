@@ -1,38 +1,37 @@
 {
-    "id": "thach-lam-ha-noi-bam-sau-pho-phuong",
-    "title": "Hà Nội Băm Sáu Phố Phường",
-    "title_original": "",
-    "authors": [
-        "Thạch Lam"
-    ],
-    "awards": [],
-    "series": [
-        "Việt Nam Danh Tác"
-    ],
-    "editions": [
-        {
-            "id": "thach-lam-ha-noi-bam-sau-pho-phuong-2026-nha-nam-bia-mem-60k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2026,
-            "publisher": "NXB Hội Nhà Văn",
-            "issuers": [
-                "Nhã Nam"
-            ],
-            "translators": [],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "60k",
-            "print_run": null,
-            "page_count": 124,
-            "copy_numbering": null,
-            "size_cm": "20.5 x 14 x 0.7",
-            "weight_g": 150,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/h/a/hanoibamsauphophuong1.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-06"
+  "id": "thach-lam-ha-noi-bam-sau-pho-phuong",
+  "title": "Hà Nội Băm Sáu Phố Phường",
+  "title_original": "",
+  "authors": [
+    "Thạch Lam"
+  ],
+  "awards": [],
+  "series": [
+    "Việt Nam Danh Tác"
+  ],
+  "editions": [
+    {
+      "id": "thach-lam-ha-noi-bam-sau-pho-phuong-2026-nha-nam-bia-mem-60k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "60k",
+      "print_run": null,
+      "page_count": 124,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 14 x 0.7",
+      "weight_g": 150,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/h/a/hanoibamsauphophuong1.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

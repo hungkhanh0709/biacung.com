@@ -1,40 +1,39 @@
 {
-    "id": "jmg-le-clezio-mondo-et-autres-histoires",
-    "title": "Sách Lũ Mục Đồng",
-    "title_original": "Mondo et autres histoires",
-    "authors": [
-        "J.M.G. Le Clézio"
-    ],
-    "awards": [],
-    "series": [
-        "Cánh Cửa Mở Rộng"
-    ],
-    "editions": [
-        {
-            "id": "jmg-le-clezio-mondo-et-autres-histoires-2016-bia-mem-143k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2016,
-            "publisher": "NXB Trẻ",
-            "issuers": [],
-            "translators": [
-                "Hoàng Anh",
-                "Quỳnh Anh",
-                "Thu Hồng"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "143k",
-            "print_run": null,
-            "page_count": 352,
-            "copy_numbering": null,
-            "size_cm": "13x20",
-            "weight_g": 308,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/l/u/lumucdong.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-05"
+  "id": "jmg-le-clezio-mondo-et-autres-histoires",
+  "title": "Sách Lũ Mục Đồng",
+  "title_original": "Mondo et autres histoires",
+  "authors": [
+    "J.M.G. Le Clézio"
+  ],
+  "awards": [],
+  "series": [
+    "Cánh Cửa Mở Rộng"
+  ],
+  "editions": [
+    {
+      "id": "jmg-le-clezio-mondo-et-autres-histoires-2016-bia-mem-143k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2016,
+      "publisher": "NXB Trẻ",
+      "issuers": [],
+      "translators": [
+        "Hoàng Anh",
+        "Quỳnh Anh",
+        "Thu Hồng"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "143k",
+      "print_run": null,
+      "page_count": 352,
+      "copy_numbering": null,
+      "size_cm": "13x20",
+      "weight_g": 308,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/l/u/lumucdong.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

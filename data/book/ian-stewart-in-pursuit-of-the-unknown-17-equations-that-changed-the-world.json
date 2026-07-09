@@ -1,39 +1,38 @@
 {
-    "id": "ian-stewart-in-pursuit-of-the-unknown-17-equations-that-changed-the-world",
-    "title": "Mã hàng",
-    "title_original": "In Pursuit of the Unknown: 17 Equations That Changed the World",
-    "authors": [
-        "Ian Stewart"
-    ],
-    "awards": [],
-    "series": [
-        "Cánh Cửa Mở Rộng"
-    ],
-    "editions": [
-        {
-            "id": "ian-stewart-in-pursuit-of-the-unknown-17-equations-that-changed-the-world-2019-bia-mem-250",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2019,
-            "publisher": "NXB Trẻ",
-            "issuers": [],
-            "translators": [
-                "Phạm Văn Thiều",
-                "Nguyễn Duy Khánh"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "250k",
-            "print_run": null,
-            "page_count": 524,
-            "copy_numbering": null,
-            "size_cm": "13 x 20",
-            "weight_g": 530,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/i/m/image_195509_1_33500.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-04"
+  "id": "ian-stewart-in-pursuit-of-the-unknown-17-equations-that-changed-the-world",
+  "title": "17 Phương Trình Thay Đổi Thế Giới",
+  "title_original": "In Pursuit of the Unknown: 17 Equations That Changed the World",
+  "authors": [
+    "Ian Stewart"
+  ],
+  "awards": [],
+  "series": [
+    "Cánh Cửa Mở Rộng"
+  ],
+  "editions": [
+    {
+      "id": "ian-stewart-in-pursuit-of-the-unknown-17-equations-that-changed-the-world-2019-bia-mem-250k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2019,
+      "publisher": "NXB Trẻ",
+      "issuers": [],
+      "translators": [
+        "Phạm Văn Thiều",
+        "Nguyễn Duy Khánh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "250k",
+      "print_run": null,
+      "page_count": 524,
+      "copy_numbering": null,
+      "size_cm": "13 x 20",
+      "weight_g": 530,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/i/m/image_195509_1_33500.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

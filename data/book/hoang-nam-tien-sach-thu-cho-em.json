@@ -1,61 +1,60 @@
 {
-    "id": "hoang-nam-tien-sach-thu-cho-em",
-    "title": "Thư Cho Em",
-    "title_original": "",
-    "authors": [
-        "Hoàng Nam Tiến"
-    ],
-    "awards": [],
-    "series": [
-        "50 Năm Fahasa"
-    ],
-    "editions": [
-        {
-            "id": "hoang-nam-tien-sach-thu-cho-em-2026-nha-nam-bia-cung-270k",
-            "isbn": null,
-            "caption": "Bìa Cứng - Phiên Bản Độc Quyền 50 Năm Fahasa",
-            "pub_year": 2026,
-            "publisher": "NXB Hội Nhà Văn",
-            "issuers": [
-                "Nhã Nam"
-            ],
-            "translators": [],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa cứng",
-            "cover_price": "270k",
-            "print_run": null,
-            "page_count": 312,
-            "copy_numbering": null,
-            "size_cm": "20.5 x. 14 x 1.7",
-            "weight_g": 550,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/7/z7848504858500_4ddef93c1b7aee67242442c5eb30adf5.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        },
-        {
-            "id": "hoang-nam-tien-thu-cho-em-2024-nha-nam-bia-mem-140k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2024,
-            "publisher": "NXB Hội Nhà Văn",
-            "issuers": [
-                "Nhã Nam"
-            ],
-            "translators": [],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "140k",
-            "print_run": null,
-            "page_count": 312,
-            "copy_numbering": null,
-            "size_cm": "20.5 x 14 x. 1.5",
-            "weight_g": 330,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8935235241015.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-05"
+  "id": "hoang-nam-tien-sach-thu-cho-em",
+  "title": "Thư Cho Em",
+  "title_original": "",
+  "authors": [
+    "Hoàng Nam Tiến"
+  ],
+  "awards": [],
+  "series": [
+    "50 Năm Fahasa"
+  ],
+  "editions": [
+    {
+      "id": "hoang-nam-tien-sach-thu-cho-em-2026-nha-nam-bia-cung-270k",
+      "isbn": null,
+      "caption": "Bìa Cứng - Phiên Bản Độc Quyền 50 Năm Fahasa",
+      "pub_year": 2026,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "270k",
+      "print_run": null,
+      "page_count": 312,
+      "copy_numbering": null,
+      "size_cm": "20.5 x. 14 x 1.7",
+      "weight_g": 550,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/7/z7848504858500_4ddef93c1b7aee67242442c5eb30adf5.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "hoang-nam-tien-thu-cho-em-2024-nha-nam-bia-mem-140k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2024,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "140k",
+      "print_run": null,
+      "page_count": 312,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 14 x. 1.5",
+      "weight_g": 330,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8935235241015.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

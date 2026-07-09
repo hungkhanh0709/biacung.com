@@ -23,6 +23,7 @@ const editionMetaNode = document.querySelector("[data-edition-meta]");
 const editionSummaryNode = document.querySelector("[data-edition-summary]");
 const editionDescriptionNode = document.querySelector("[data-edition-description]");
 const headerInput = document.querySelector("#site-search");
+const mobileDetailLayoutQuery = window.matchMedia("(max-width: 44rem)");
 
 let currentBook = null;
 let activeEditionIndex = 0;
@@ -221,6 +222,10 @@ function prefersReducedMotion() {
   return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
+function usesMobileDetailLayout() {
+  return mobileDetailLayoutQuery.matches;
+}
+
 function pulseFocusCard() {
   if (!focusCardNode) {
     return;
@@ -411,6 +416,22 @@ function buildMetaItems(book, edition) {
   });
 }
 
+function isCompactMetaItem(item) {
+  if (!item) {
+    return false;
+  }
+
+  if (item.asPills && Array.isArray(item.value)) {
+    return item.value.length === 1 && normalizeText(item.value[0]).length <= 22;
+  }
+
+  if (typeof item.value === "string") {
+    return normalizeText(item.value).length <= 24;
+  }
+
+  return false;
+}
+
 function renderInfoCard(node, title, lines) {
   if (!node) {
     return;
@@ -551,7 +572,7 @@ function renderEditionMeta(book, edition) {
 
   items.forEach((item) => {
     const wrapper = document.createElement("div");
-    wrapper.className = "detail-meta-item";
+    wrapper.className = `detail-meta-item${isCompactMetaItem(item) ? " is-compact" : ""}`;
 
     const label = document.createElement("span");
     label.className = "detail-meta-label";
@@ -579,6 +600,7 @@ function renderEditions(book) {
 
   const editions = Array.isArray(book.editions) ? book.editions : [];
   editionsGridNode.replaceChildren();
+  editionsGridNode.dataset.layout = usesMobileDetailLayout() ? "mobile" : "desktop";
   const hasEditionChoices = editions.length > 1;
 
   editionsHeadingNode.textContent = hasEditionChoices ? `${editions.length} Phiên Bản Bìa` : "";
@@ -665,6 +687,14 @@ function renderEditions(book) {
     article.appendChild(button);
     editionNodes.push(article);
   });
+
+  if (usesMobileDetailLayout()) {
+    editionsGridNode.appendChild(focusCardNode);
+    editionNodes.forEach((node) => {
+      editionsGridNode.appendChild(node);
+    });
+    return;
+  }
 
   const columns = getGridColumnCount(editionsGridNode);
   const rowIndex = Math.floor(activeEditionIndex / columns);

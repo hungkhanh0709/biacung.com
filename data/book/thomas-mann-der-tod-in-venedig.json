@@ -1,36 +1,35 @@
 {
-    "id": "thomas-mann-der-tod-in-venedig",
-    "title": "Chết Ở Venice",
-    "title_original": "Der Tod in Venedig",
-    "authors": [
-        "Thomas Mann"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "thomas-mann-der-tod-in-venedig-2018-bia-mem-73k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2018,
-            "publisher": "NXB Trẻ",
-            "issuers": [],
-            "translators": [
-                "Nguyễn Hồng Vân"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "73k",
-            "print_run": null,
-            "page_count": 152,
-            "copy_numbering": null,
-            "size_cm": "13 x 20",
-            "weight_g": 250,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/i/m/image_146292.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-04"
+  "id": "thomas-mann-der-tod-in-venedig",
+  "title": "Chết Ở Venice",
+  "title_original": "Der Tod in Venedig",
+  "authors": [
+    "Thomas Mann"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "thomas-mann-der-tod-in-venedig-2018-bia-mem-73k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2018,
+      "publisher": "NXB Trẻ",
+      "issuers": [],
+      "translators": [
+        "Nguyễn Hồng Vân"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "73k",
+      "print_run": null,
+      "page_count": 152,
+      "copy_numbering": null,
+      "size_cm": "13 x 20",
+      "weight_g": 250,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/i/m/image_146292.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

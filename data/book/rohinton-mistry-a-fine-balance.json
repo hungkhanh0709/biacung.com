@@ -1,38 +1,37 @@
 {
-    "id": "rohinton-mistry-a-fine-balance",
-    "title": "Cân Bằng Mong Manh",
-    "title_original": "A Fine Balance",
-    "authors": [
-        "Rohinton Mistry"
-    ],
-    "awards": [],
-    "series": [
-        "Cánh Cửa Mở Rộng"
-    ],
-    "editions": [
-        {
-            "id": "rohinton-mistry-a-fine-balance-2014-bia-mem-315k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2014,
-            "publisher": "NXB Trẻ",
-            "issuers": [],
-            "translators": [
-                "Nguyễn Kim Ngọc"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "315k",
-            "print_run": null,
-            "page_count": 1056,
-            "copy_numbering": null,
-            "size_cm": "13x20",
-            "weight_g": 1100,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/c/a/can-bang-mong-manh.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-05"
+  "id": "rohinton-mistry-a-fine-balance",
+  "title": "Cân Bằng Mong Manh",
+  "title_original": "A Fine Balance",
+  "authors": [
+    "Rohinton Mistry"
+  ],
+  "awards": [],
+  "series": [
+    "Cánh Cửa Mở Rộng"
+  ],
+  "editions": [
+    {
+      "id": "rohinton-mistry-a-fine-balance-2014-bia-mem-315k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2014,
+      "publisher": "NXB Trẻ",
+      "issuers": [],
+      "translators": [
+        "Nguyễn Kim Ngọc"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "315k",
+      "print_run": null,
+      "page_count": 1056,
+      "copy_numbering": null,
+      "size_cm": "13x20",
+      "weight_g": 1100,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/c/a/can-bang-mong-manh.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

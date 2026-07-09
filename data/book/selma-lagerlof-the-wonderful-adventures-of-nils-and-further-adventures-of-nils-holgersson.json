@@ -1,38 +1,37 @@
 {
-    "id": "selma-lagerlof-the-wonderful-adventures-of-nils-and-further-adventures-of-nils-holgersson",
-    "title": "Ngôn Ngữ",
-    "title_original": "The Wonderful Adventures of Nils and Further Adventures of Nils Holgersson",
-    "authors": [
-        "Selma Lagerlöf"
-    ],
-    "awards": [],
-    "series": [
-        "Cánh Cửa Mở Rộng"
-    ],
-    "editions": [
-        {
-            "id": "selma-lagerlof-the-wonderful-adventures-of-nils-and-further-adventures-of-nils-holgersson-2023-bia-mem-180k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2023,
-            "publisher": "NXB Trẻ",
-            "issuers": [],
-            "translators": [
-                "Hoàng Thiếu Sơn"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "180k",
-            "print_run": null,
-            "page_count": 548,
-            "copy_numbering": null,
-            "size_cm": "20 x 13 x 2.7",
-            "weight_g": 560,
-            "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8934974186953.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-04"
+  "id": "selma-lagerlof-the-wonderful-adventures-of-nils-and-further-adventures-of-nils-holgersson",
+  "title": "Ngôn Ngữ",
+  "title_original": "The Wonderful Adventures of Nils and Further Adventures of Nils Holgersson",
+  "authors": [
+    "Selma Lagerlöf"
+  ],
+  "awards": [],
+  "series": [
+    "Cánh Cửa Mở Rộng"
+  ],
+  "editions": [
+    {
+      "id": "selma-lagerlof-the-wonderful-adventures-of-nils-and-further-adventures-of-nils-holgersson-2023-bia-mem-180k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2023,
+      "publisher": "NXB Trẻ",
+      "issuers": [],
+      "translators": [
+        "Hoàng Thiếu Sơn"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "180k",
+      "print_run": null,
+      "page_count": 548,
+      "copy_numbering": null,
+      "size_cm": "20 x 13 x 2.7",
+      "weight_g": 560,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8934974186953.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

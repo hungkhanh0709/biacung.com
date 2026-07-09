@@ -1,36 +1,35 @@
 {
-    "id": "john-steinbeck-tortilla-flat",
-    "title": "Thị trấn Tortilla Flat",
-    "title_original": "Tortilla Flat",
-    "authors": [
-        "John Steinbeck"
-    ],
-    "awards": [],
-    "series": [],
-    "editions": [
-        {
-            "id": "john-steinbeck-tortilla-flat-2012-bia-mem-95k",
-            "isbn": null,
-            "caption": "",
-            "pub_year": 2012,
-            "publisher": "NXB Trẻ",
-            "issuers": [],
-            "translators": [
-                "Lâm Vũ Thao"
-            ],
-            "illustrators": [],
-            "proofreaders": [],
-            "format": "Bìa mềm",
-            "cover_price": "95k",
-            "print_run": null,
-            "page_count": 284,
-            "copy_numbering": null,
-            "size_cm": "13 x 20",
-            "weight_g": null,
-            "thumbnail": "https://www.nxbtre.com.vn/Images/Book/NXBTreStoryFull_19122012_111259.jpg",
-            "gellery_imgs": [],
-            "detail": ""
-        }
-    ],
-    "updated_at": "2026-07-04"
+  "id": "john-steinbeck-tortilla-flat",
+  "title": "Thị trấn Tortilla Flat",
+  "title_original": "Tortilla Flat",
+  "authors": [
+    "John Steinbeck"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "john-steinbeck-tortilla-flat-2012-bia-mem-95k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2012,
+      "publisher": "NXB Trẻ",
+      "issuers": [],
+      "translators": [
+        "Lâm Vũ Thao"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "95k",
+      "print_run": null,
+      "page_count": 284,
+      "copy_numbering": null,
+      "size_cm": "13 x 20",
+      "weight_g": null,
+      "thumbnail": "https://www.nxbtre.com.vn/Images/Book/NXBTreStoryFull_19122012_111259.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
 }

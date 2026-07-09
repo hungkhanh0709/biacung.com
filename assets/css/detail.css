@@ -226,6 +226,10 @@ a.detail-pill:focus-visible {
   align-items: start;
 }
 
+.detail-edition-grid[data-layout="mobile"] {
+  grid-template-columns: 1fr;
+}
+
 .detail-edition-card {
   container-type: inline-size;
 }
@@ -514,21 +518,258 @@ a.detail-pill:focus-visible {
 }
 
 @media (max-width: 44rem) {
+  .detail-main {
+    padding-block-end: calc(var(--space-block-gap) * 0.65);
+  }
+
+  .detail-hero-section {
+    padding-block-start: 0.85rem;
+  }
+
+  .detail-shell {
+    min-block-size: 0;
+  }
+
+  .detail-hero-card,
+  .detail-focus-card {
+    border-radius: calc(var(--radius-lg) - 0.1rem);
+    box-shadow: 0 1rem 2rem rgb(38 34 54 / 8%);
+  }
+
+  .detail-hero-card {
+    gap: 0.9rem;
+    padding: 0.9rem;
+  }
+
+  .detail-hero-media {
+    justify-items: center;
+  }
+
+  .detail-cover-stage {
+    inline-size: min(100%, 15.5rem);
+    min-block-size: auto;
+    margin-inline: auto;
+    padding: 0.5rem;
+  }
+
+  .detail-hero-copy {
+    gap: 0.8rem;
+    text-align: center;
+  }
+
+  .detail-title {
+    font-size: clamp(1.9rem, 8vw, 2.45rem);
+    line-height: 1.08;
+  }
+
+  .detail-original {
+    margin-top: -0.1rem;
+    font-size: 0.95rem;
+  }
+
+  .detail-pill-group {
+    justify-content: center;
+    gap: 0.45rem;
+  }
+
+  .detail-pill {
+    min-block-size: 1.95rem;
+    padding-inline: 0.7rem;
+    font-size: 0.74rem;
+  }
+
+  .detail-editions-section {
+    padding-block-start: 1rem;
+  }
+
+  .section-heading {
+    margin-block-end: 0.8rem;
+  }
+
   .detail-edition-grid,
   .detail-meta-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
+  }
+
+  .detail-edition-grid[data-layout="mobile"] {
+    gap: 0.85rem;
+  }
+
+  .detail-edition-grid[data-layout="mobile"] .detail-focus-card {
+    order: -1;
+    margin-block-start: 0;
+  }
+
+  .detail-edition-grid[data-layout="mobile"] .detail-edition-card {
+    container-type: normal;
+  }
+
+  .detail-edition-grid[data-layout="mobile"] .detail-edition-button {
+    text-align: start;
+  }
+
+  .detail-edition-grid[data-layout="mobile"] .detail-edition-card-inner {
+    grid-template-columns: auto minmax(0, 1fr);
+    justify-items: start;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.8rem 0.9rem;
+    border-color: var(--color-border);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .detail-edition-grid[data-layout="mobile"] .detail-edition-card.is-active .detail-edition-card-inner::after {
+    display: none;
+  }
+
+  .detail-edition-grid[data-layout="mobile"] .detail-edition-media {
+    inline-size: 4.75rem;
+    padding: 0.35rem;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 0.65rem 1.2rem rgb(38 34 54 / 9%);
+  }
+
+  .detail-edition-grid[data-layout="mobile"] .detail-edition-content {
+    gap: 0.2rem;
+    text-align: start;
+  }
+
+  .detail-edition-grid[data-layout="mobile"] .detail-edition-title {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .detail-edition-grid[data-layout="mobile"] .detail-edition-subtitle,
+  .detail-edition-grid[data-layout="mobile"] .detail-edition-meta {
+    font-size: 0.78rem;
+  }
+
+  .detail-focus-card {
+    padding: 0.9rem;
+    scroll-margin-top: 5.4rem;
+  }
+
+  .detail-focus-header {
+    margin-block-end: 0.75rem;
+  }
+
+  .detail-focus-kicker {
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+  }
+
+  .detail-focus-kicker::before {
+    inline-size: 1.4rem;
+  }
+
+  .detail-focus-title {
+    font-size: clamp(1.35rem, 7vw, 1.9rem);
+    line-height: 1.1;
+  }
+
+  .detail-focus-body,
+  .detail-info-panels {
+    gap: 0.9rem;
+  }
+
+  .detail-focus-media {
+    gap: 0.75rem;
+  }
+
+  .detail-focus-cover {
+    min-block-size: auto;
+    padding: 0.35rem;
+  }
+
+  .detail-focus-cover img {
+    max-block-size: min(58vh, 25rem);
   }
 
   .detail-thumb-row,
   .detail-focus-gallery {
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-block-end: 0.25rem;
+    scrollbar-width: thin;
+  }
+
+  .detail-focus-gallery .detail-thumb {
+    flex: 0 0 auto;
+    inline-size: 4.6rem;
+  }
+
+  .detail-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .detail-meta-item {
+    grid-column: 1 / -1;
+    min-block-size: 0;
+    min-inline-size: 0;
+    padding: 0.7rem 0.8rem;
+  }
+
+  .detail-meta-item.is-compact {
+    grid-column: auto;
+  }
+
+  .detail-meta-label {
+    font-size: 0.68rem;
+  }
+
+  .detail-meta-value,
+  .detail-description {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .detail-meta-value.is-pill-list {
+    gap: 0.4rem;
+  }
+
+  .detail-description ul {
+    padding-inline-start: 1rem;
+  }
+
+  .detail-description li + li {
+    margin-block-start: 0.35rem;
   }
 }
 
-@media (max-width: 28rem) {
-  .detail-edition-grid,
-  .detail-meta-grid {
+@media (max-width: 22rem) {
+  .detail-hero-card,
+  .detail-focus-card {
+    padding-inline: 0.75rem;
+  }
+
+  .detail-cover-stage {
+    inline-size: min(100%, 14rem);
+  }
+
+  .detail-title {
+    font-size: 1.7rem;
+  }
+
+  .detail-edition-grid[data-layout="mobile"] .detail-edition-card-inner {
     grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .detail-edition-grid[data-layout="mobile"] .detail-edition-content {
+    text-align: center;
+  }
+
+  .detail-focus-cover img {
+    max-block-size: min(52vh, 21rem);
+  }
+
+  .detail-meta-item.is-compact {
+    grid-column: 1 / -1;
   }
 }
 
