@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="500" viewBox="0 0 360 500">
-  <rect width="360" height="500" fill="#f6f0e7"/>
-  <circle cx="180" cy="112" r="39" fill="#4b3424"/>
-  <path d="M127 151c28-51 79-47 105 0 28 51 28 125 48 203H80c20-78 19-152 47-203z" fill="#efe5d5" stroke="#b99b7e" stroke-width="4"/>
-  <path d="M103 214c60 34 102 35 154 0" fill="none" stroke="#c8a98b" stroke-width="8" opacity=".55"/>
-  <text x="180" y="385" text-anchor="middle" fill="#6b4b33" font-family="Georgia, serif" font-size="30" font-style="italic">The Lady Beauty</text>
-  <text x="180" y="420" text-anchor="middle" fill="#6b4b33" font-family="Georgia, serif" font-size="30" font-style="italic">Scarlet.</text>
-  <text x="180" y="451" text-anchor="middle" fill="#8a735b" font-family="Georgia, serif" font-size="14">author bob</text>
-</svg>

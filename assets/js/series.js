@@ -1,5 +1,5 @@
 const SERIES_INDEX_URL = "data/series.json";
-const BOOK_FALLBACK_COVER = "assets/img/book-cover.png.avif";
+const BOOK_FALLBACK_COVER = "assets/img/core/book-cover.png.avif";
 const SEARCH_PAGE_SIZE = 16;
 const MAX_SERIES_ID_LENGTH = 120;
 const SAFE_SERIES_ID = /^[a-z0-9-]+$/;
@@ -24,6 +24,34 @@ let visibleCount = 0;
 
 function normalizeText(value) {
   return value == null ? "" : String(value).trim();
+}
+
+function normalizeSeriesDetailPayload(payload) {
+  if (Array.isArray(payload)) {
+    return payload.find((entry) => entry && typeof entry === "object") || null;
+  }
+
+  return payload && typeof payload === "object" ? payload : null;
+}
+
+function getNormalizedSeriesItems(indexEntries) {
+  const dedupedEntries = [];
+  const seenKeys = new Set();
+
+  (Array.isArray(indexEntries) ? indexEntries : []).forEach((entry) => {
+    const id = sanitizeSlugParam(entry?.id);
+    const detail = normalizeText(entry?.detail);
+    const key = `${id}::${detail}`;
+
+    if (!id || !detail || seenKeys.has(key)) {
+      return;
+    }
+
+    seenKeys.add(key);
+    dedupedEntries.push({ id, detail });
+  });
+
+  return dedupedEntries;
 }
 
 function sanitizeSlugParam(value) {
@@ -235,7 +263,7 @@ function setResults(results) {
 
 async function loadAllSeriesCards() {
   const seriesIndex = await fetchJson(SERIES_INDEX_URL);
-  const detailEntries = Array.isArray(seriesIndex) ? seriesIndex : [];
+  const detailEntries = getNormalizedSeriesItems(seriesIndex);
 
   const seriesDetails = await Promise.all(
     detailEntries.map((entry) => {
@@ -245,6 +273,7 @@ async function loadAllSeriesCards() {
   );
 
   return seriesDetails
+    .map((series) => normalizeSeriesDetailPayload(series))
     .filter(Boolean)
     .sort((a, b) => normalizeText(a.name || a.id).localeCompare(normalizeText(b.name || b.id), "vi"))
     .map((series) => ({
@@ -263,7 +292,11 @@ async function loadSeriesBooks(seriesSlug) {
     throw new Error("Invalid series id");
   }
 
-  const series = await fetchJson(detailPath);
+  const series = normalizeSeriesDetailPayload(await fetchJson(detailPath));
+  if (!series) {
+    throw new Error("Invalid series detail payload");
+  }
+
   const workIds = Array.isArray(series.work_ids) ? series.work_ids.map((workId) => normalizeText(workId)).filter(Boolean) : [];
 
   const books = await Promise.all(

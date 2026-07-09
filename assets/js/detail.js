@@ -1,4 +1,4 @@
-const BOOK_FALLBACK_COVER = "assets/img/book-cover.png.avif";
+const BOOK_FALLBACK_COVER = "assets/img/core/book-cover.png.avif";
 const MAX_BOOK_ID_LENGTH = 120;
 const SAFE_BOOK_ID = /^[a-z0-9-]+$/;
 
@@ -15,6 +15,7 @@ const heroCoverNode = document.querySelector("[data-book-cover]");
 const editionsHeadingNode = document.querySelector("[data-editions-heading]");
 const editionsGridNode = document.querySelector("[data-editions-grid]");
 const focusCardNode = document.querySelector("[data-detail-focus-card]");
+const editionKickerNode = document.querySelector("[data-edition-kicker]");
 const editionTitleNode = document.querySelector("[data-edition-title]");
 const editionCoverNode = document.querySelector("[data-edition-cover]");
 const editionGalleryNode = document.querySelector("[data-edition-gallery]");
@@ -506,8 +507,21 @@ function renderEditions(book) {
   }
 
   const editions = Array.isArray(book.editions) ? book.editions : [];
-  editionsHeadingNode.textContent = `${editions.length} Phiên Bản Bìa`;
   editionsGridNode.replaceChildren();
+  const hasEditionChoices = editions.length > 1;
+
+  editionsHeadingNode.textContent = hasEditionChoices ? `${editions.length} Phiên Bản Bìa` : "";
+  editionsHeadingNode.hidden = !hasEditionChoices;
+
+  if (editionKickerNode) {
+    editionKickerNode.textContent = hasEditionChoices ? "Phiên bản đang xem" : "Ấn bản hiện có";
+  }
+
+  if (!hasEditionChoices) {
+    editionsGridNode.appendChild(focusCardNode);
+    return;
+  }
+
   const editionNodes = [];
 
   editions.forEach((edition, index) => {

@@ -1,6 +1,6 @@
 const HOME_DATA_URL = "data/home.json";
 const BOOK_INDEX_URL = "data/book.json";
-const BOOK_DETAIL_FALLBACK = "assets/img/book-cover.png.avif";
+const BOOK_DETAIL_FALLBACK = "assets/img/core/book-cover.png.avif";
 const SERIES_DETAIL_URL = "data/series";
 
 function normalizeText(value) {

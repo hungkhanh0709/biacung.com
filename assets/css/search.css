@@ -34,20 +34,6 @@
   background: currentColor;
 }
 
-.search-summary {
-  max-inline-size: 44rem;
-}
-
-.search-summary {
-  margin: 0 0 1.25rem;
-  color: var(--color-primary-dark);
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5;
-  word-break: break-word;
-}
-
 .search-results-grid {
   min-block-size: 2rem;
 }
@@ -64,7 +50,8 @@
 
 .empty-state {
   display: none;
-  max-inline-size: 42rem;
+  inline-size: 100%;
+  max-inline-size: none;
   margin: 0;
   padding: 1.5rem;
   border: 1px solid var(--color-border);

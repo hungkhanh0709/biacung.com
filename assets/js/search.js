@@ -1,6 +1,6 @@
 const HOME_DATA_URL = "data/home.json";
 const BOOK_INDEX_URL = "data/book.json";
-const BOOK_FALLBACK_COVER = "assets/img/book-cover.png.avif";
+const BOOK_FALLBACK_COVER = "assets/img/core/book-cover.png.avif";
 const SERIES_DETAIL_DIR = "data/series";
 const SEARCH_PAGE_SIZE = 16;
 const MAX_QUERY_LENGTH = 120;
@@ -12,7 +12,6 @@ const keyword = sanitizeQueryParam(params.get("q"));
 
 const page = document.querySelector(".search-page");
 const headerInput = document.querySelector("#site-search");
-const summaryNode = document.querySelector("[data-search-summary]");
 const emptyNode = document.querySelector("[data-search-empty]");
 const resultsNode = document.querySelector("[data-search-results]");
 const actionsNode = document.querySelector("[data-search-actions]");
@@ -144,13 +143,9 @@ function setPageState(state) {
   page?.classList.toggle("is-ready", state === "results");
 }
 
-function updateCopy({ summary, empty }) {
-  if (summaryNode) {
-    summaryNode.textContent = summary;
-  }
-
+function updateEmptyState(copy) {
   if (emptyNode) {
-    emptyNode.textContent = empty;
+    emptyNode.textContent = copy;
   }
 }
 
@@ -365,7 +360,7 @@ async function loadBookMatches(normalizedKeyword, searchTerms) {
 }
 
 async function renderResults() {
-  if (!resultsNode || !summaryNode || !emptyNode) {
+  if (!resultsNode || !emptyNode) {
     return;
   }
 
@@ -376,12 +371,11 @@ async function renderResults() {
     ? `Kết quả tìm kiếm “${keyword}” | Bìa Cứng`
     : "Tất cả kết quả | Bìa Cứng";
   setPageState("loading");
-  updateCopy({
-    summary: hasKeyword
+  updateEmptyState(
+    hasKeyword
       ? `Đang tra cứu dữ liệu cho “${keyword}”.`
-      : "Đang tải toàn bộ bìa sách và series hiện có.",
-    empty: "Đang tải kết quả..."
-  });
+      : "Đang tải toàn bộ bìa sách và series hiện có."
+  );
 
   try {
     const normalizedKeyword = normalizeSearchText(keyword);
@@ -395,31 +389,19 @@ async function renderResults() {
 
     if (!results.length) {
       setPageState("empty");
-      updateCopy({
-        summary: hasKeyword
-          ? `Không tìm thấy kết quả phù hợp cho “${keyword}”.`
-          : "Hiện chưa có dữ liệu để hiển thị.",
-        empty: hasKeyword
-          ? "Thử dùng tên tác giả, tên sách, NXB hoặc một từ khóa ngắn hơn."
-          : "Kho dữ liệu hiện chưa có sách hoặc series nào."
-      });
+      updateEmptyState(
+        hasKeyword
+          ? `Không tìm thấy kết quả phù hợp cho “${keyword}”. Thử dùng tên tác giả, tên sách, NXB hoặc một từ khóa ngắn hơn.`
+          : "Hiện chưa có dữ liệu để hiển thị. Kho dữ liệu hiện chưa có sách hoặc series nào."
+      );
       return;
     }
 
     setResults(results);
     setPageState("results");
-    updateCopy({
-      summary: hasKeyword
-        ? `Tìm thấy ${results.length} kết quả cho “${keyword}”`
-        : `Hiển thị tất cả ${results.length} kết quả`,
-      empty: ""
-    });
   } catch (error) {
     setPageState("error");
-    updateCopy({
-      summary: "Không thể tải dữ liệu tìm kiếm lúc này.",
-      empty: "Vui lòng thử lại sau."
-    });
+    updateEmptyState("Không thể tải dữ liệu tìm kiếm lúc này. Vui lòng thử lại sau.");
   }
 }
 
