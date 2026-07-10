@@ -1,7 +1,7 @@
 [
   {
-    "detail": "data/book/dino-buzzati-dino-buzzati-tuyen-tap-tac-pham.json",
-    "search_text": "dino buzzati tuyen tap tac pham dino buzzati nxb van hoc dong tay",
+    "detail": "data/book/homere-odyssee.json",
+    "search_text": "anh hung ca odyssee odyssee homere nxb van hoc dong a hoang huu dan john flaxman",
     "updated_at": "2026-07-10"
   },
   {
@@ -10,13 +10,18 @@
     "updated_at": "2026-07-10"
   },
   {
-    "detail": "data/book/fyodor-dostoevsky-dem-trang.json",
-    "search_text": "dem trang fyodor dostoevsky nxb ha noi dong tay doan tu huyen",
+    "detail": "data/book/mikhail-bulgacov-nghe-nhan-va-margarita.json",
+    "search_text": "nghe nhan va margarita mikhail bulgacov nxb lao dong dong tay doan tu huyen",
     "updated_at": "2026-07-10"
   },
   {
-    "detail": "data/book/homere-odyssee.json",
-    "search_text": "anh hung ca odyssee odyssee homere nxb van hoc dong a hoang huu dan john flaxman",
+    "detail": "data/book/dino-buzzati-dino-buzzati-tuyen-tap-tac-pham.json",
+    "search_text": "dino buzzati tuyen tap tac pham dino buzzati nxb van hoc dong tay",
+    "updated_at": "2026-07-10"
+  },
+  {
+    "detail": "data/book/fyodor-dostoevsky-dem-trang.json",
+    "search_text": "dem trang fyodor dostoevsky nxb ha noi dong tay doan tu huyen",
     "updated_at": "2026-07-10"
   },
   {
@@ -27,11 +32,6 @@
   {
     "detail": "data/book/marai-sandor-loi-co-cay.json",
     "search_text": "loi co cay marai sandor nxb lao dong dong tay nguyen hong nhung",
-    "updated_at": "2026-07-10"
-  },
-  {
-    "detail": "data/book/mikhail-bulgacov-nghe-nhan-va-margarita.json",
-    "search_text": "nghe nhan va margarita mikhail bulgacov nxb lao dong dong tay doan tu huyen",
     "updated_at": "2026-07-10"
   },
   {
