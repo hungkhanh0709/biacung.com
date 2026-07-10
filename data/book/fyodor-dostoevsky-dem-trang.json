@@ -1,0 +1,37 @@
+{
+    "id": "fyodor-dostoevsky-dem-trang",
+    "title": "Đêm Trắng",
+    "title_original": "Белые ночи / Петербургская летопись",
+    "authors": [
+        "Fyodor Dostoevsky"
+    ],
+    "awards": [],
+    "series": [],
+    "editions": [
+        {
+            "id": "fyodor-dostoevsky-dem-trang-2026-dong-tay-bia-cung-108k",
+            "isbn": null,
+            "caption": "Bìa Cứng - H999",
+            "pub_year": 2026,
+            "publisher": "NXB Hà Nội",
+            "issuers": [
+                "Đông Tây"
+            ],
+            "translators": [
+                "Đoàn Tử Huyến"
+            ],
+            "illustrators": [],
+            "proofreaders": [],
+            "format": "Bìa cứng",
+            "cover_price": "108k",
+            "print_run": 999,
+            "page_count": 135,
+            "copy_numbering": null,
+            "size_cm": "",
+            "weight_g": null,
+            "thumbnail": "https://dongtay.vn/upload/images/20000/scan-20250630-103823_1.jpg",
+            "gellery_imgs": [],
+            "detail": "H999 – 999 bản, Bìa cứng, có áo bọc, phiếu phát hành. In giấy tốt hơn bản bìa mềm, phổ thông"
+        }
+    ]
+}

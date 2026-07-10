@@ -1,0 +1,37 @@
+{
+  "id": "mikhail-bulgakov-trai-tim-cho",
+  "title": "Trái tim chó",
+  "title_original": "Собачье сердце",
+  "authors": [
+    "Mikhail Bulgakov"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "mikhail-bulgakov-trai-tim-cho-2025-dong-tay-bia-cung-128k",
+      "isbn": null,
+      "caption": "Bìa Cứng - H666",
+      "pub_year": 2025,
+      "publisher": "NXB Lao Động",
+      "issuers": [
+        "Đông Tây"
+      ],
+      "translators": [
+        "Đoàn Tử Huyến"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "128k",
+      "print_run": 666,
+      "page_count": 198,
+      "copy_numbering": null,
+      "size_cm": "12 x 20",
+      "weight_g": null,
+      "thumbnail": "https://dongtay.vn/upload/images/20000/scan-20250822-145407.jpg",
+      "gellery_imgs": [],
+      "detail": "H666 – 666 bản. Bìa cứng, có áo bọc, phiếu phát hành. In giấy tốt hơn bản bìa mềm, phổ thông"
+    }
+  ]
+}

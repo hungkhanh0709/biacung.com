@@ -122,6 +122,15 @@ function createPill(text) {
   return pill;
 }
 
+function createContributorLink(text) {
+  const linkText = normalizeText(text);
+  const link = document.createElement("a");
+  link.className = "detail-meta-contributor-link";
+  link.href = buildSearchUrl(linkText);
+  link.textContent = linkText;
+  return link;
+}
+
 function dedupeStrings(values) {
   return Array.from(
     new Set(
@@ -366,7 +375,7 @@ function buildEditionSummaryLines(edition) {
   const lines = [];
 
   if (normalizeText(edition.pub_year)) {
-    lines.push(`Phát hành năm: ${normalizeText(edition.pub_year)}`);
+    lines.push(`Năm phát hành: ${normalizeText(edition.pub_year)}`);
   }
 
   if (normalizeText(edition.format)) {
@@ -398,16 +407,23 @@ function buildMetaItems(book, edition) {
   const distributionValues = publisherValue
     ? [publisherValue, ...issuerValues]
     : issuerValues;
+  const contributors = [
+    { role: "Tác giả", people: dedupeStrings(book.authors) },
+    { role: "Dịch giả", people: dedupeStrings(edition.translators) },
+    { role: "Họa sĩ", people: dedupeStrings(edition.illustrators) }
+  ].filter((group) => group.people.length > 0);
 
   const items = [
     { label: "Đơn vị phát hành", value: dedupeStrings(distributionValues), asPills: true },
-    { label: "Tác giả", value: dedupeStrings(book.authors), asPills: true },
-    { label: "Dịch giả", value: dedupeStrings(edition.translators), asPills: true },
-    { label: "Họa sĩ", value: dedupeStrings(edition.illustrators), asPills: true },
+    { label: "Những người thực hiện", value: contributors, isContributorGroups: true },
     { label: "Hiệu đính", value: dedupeStrings(edition.proofreaders), asPills: true }
   ];
 
   return items.filter((item) => {
+    if (item.isContributorGroups && Array.isArray(item.value)) {
+      return item.value.length > 0;
+    }
+
     if (Array.isArray(item.value)) {
       return item.value.length > 0;
     }
@@ -430,6 +446,33 @@ function isCompactMetaItem(item) {
   }
 
   return false;
+}
+
+function renderContributorGroups(valueNode, groups) {
+  valueNode.classList.add("detail-meta-contributors");
+
+  groups.forEach((group) => {
+    const row = document.createElement("div");
+    row.className = "detail-meta-contributor-row";
+
+    const role = document.createElement("span");
+    role.className = "detail-meta-contributor-role";
+    role.textContent = group.role;
+
+    const people = document.createElement("div");
+    people.className = "detail-meta-contributor-people";
+
+    group.people.forEach((person, index) => {
+      if (index > 0) {
+        people.appendChild(document.createTextNode(", "));
+      }
+
+      people.appendChild(createContributorLink(person));
+    });
+
+    row.append(role, people);
+    valueNode.appendChild(row);
+  });
 }
 
 function renderInfoCard(node, title, lines) {
@@ -572,7 +615,7 @@ function renderEditionMeta(book, edition) {
 
   items.forEach((item) => {
     const wrapper = document.createElement("div");
-    wrapper.className = `detail-meta-item${isCompactMetaItem(item) ? " is-compact" : ""}`;
+    wrapper.className = `detail-panel${isCompactMetaItem(item) ? " is-compact" : ""}`;
 
     const label = document.createElement("span");
     label.className = "detail-meta-label";
@@ -581,7 +624,9 @@ function renderEditionMeta(book, edition) {
     const value = document.createElement("div");
     value.className = "detail-meta-value";
 
-    if (item.asPills && Array.isArray(item.value)) {
+    if (item.isContributorGroups && Array.isArray(item.value)) {
+      renderContributorGroups(value, item.value);
+    } else if (item.asPills && Array.isArray(item.value)) {
       value.classList.add("is-pill-list");
       item.value.forEach((entry) => value.appendChild(createPill(entry)));
     } else {
@@ -607,7 +652,7 @@ function renderEditions(book) {
   editionsHeadingNode.hidden = !hasEditionChoices;
 
   if (editionKickerNode) {
-    editionKickerNode.textContent = hasEditionChoices ? "Phiên bản đang xem" : "Ấn bản hiện có";
+    editionKickerNode.textContent = "Phiên bản đang xem";
   }
 
   if (!hasEditionChoices) {
@@ -722,7 +767,7 @@ function renderActiveEdition() {
 
   renderEditionGallery(edition);
   renderEditionMeta(currentBook, edition);
-  renderInfoCard(editionSummaryNode, "Thông phát hành", buildEditionSummaryLines(edition));
+  renderInfoCard(editionSummaryNode, "Thông tin phát hành", buildEditionSummaryLines(edition));
   renderDescription(edition);
   updateSeoMetadata(currentBook, edition);
 }

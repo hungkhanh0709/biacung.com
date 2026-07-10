@@ -556,5 +556,70 @@
     "work_ids": [
       "nguyen-van-thac-mai-mai-tuoi-hai-muoi"
     ]
+  },
+  {
+    "id": "fyodor-dostoevsky",
+    "name": "Fyodor Dostoevsky",
+    "work_ids": [
+      "fyodor-dostoevsky-dem-trang"
+    ]
+  },
+  {
+    "id": "mikhail-bulgakov",
+    "name": "Mikhail Bulgakov",
+    "work_ids": [
+      "mikhail-bulgakov-nhung-qua-trung-dinh-menh",
+      "mikhail-bulgakov-trai-tim-cho"
+    ]
+  },
+  {
+    "id": "marai-sandor",
+    "name": "Márai Sándor",
+    "work_ids": [
+      "marai-sandor-loi-co-cay",
+      "marai-sandor-a-gyertyak-csonkig-egnek"
+    ]
+  },
+  {
+    "id": "mikhail-prishvin",
+    "name": "Mikhail Prishvin",
+    "work_ids": [
+      "mikhail-prishvin-giot-rung"
+    ]
+  },
+  {
+    "id": "nhieu-tac-gia",
+    "name": "Nhiều Tác Giả",
+    "work_ids": [
+      "nhieu-tac-gia-doan-tu-huyen-mot-nghe-nhan"
+    ]
+  },
+  {
+    "id": "dino-buzzati",
+    "name": "Dino Buzzati",
+    "work_ids": [
+      "dino-buzzati-dino-buzzati-tuyen-tap-tac-pham"
+    ]
+  },
+  {
+    "id": "franz-kafka",
+    "name": "Franz Kafka",
+    "work_ids": [
+      "franz-kafka-tuyen-tap-tac-pham-frank-kafka"
+    ]
+  },
+  {
+    "id": "mikhail-bulgacov",
+    "name": "Mikhail Bulgacov",
+    "work_ids": [
+      "mikhail-bulgacov-nghe-nhan-va-margarita"
+    ]
+  },
+  {
+    "id": "homere",
+    "name": "Homère",
+    "work_ids": [
+      "homere-odyssee"
+    ]
   }
 ]

@@ -1,0 +1,45 @@
+{
+  "id": "homere-odyssee",
+  "title": "Anh Hùng Ca Odyssée",
+  "title_original": "Odyssee",
+  "authors": [
+    "Homère"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "homere-odyssee-2026-dong-a-bia-vai-2tr5",
+      "isbn": null,
+      "caption": "Ấn Bản Giới Hạn S365 - Bìa Vải",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Hoàng Hữu Đản"
+      ],
+      "illustrators": [
+        "John Flaxman"
+      ],
+      "proofreaders": [],
+      "format": "Bìa vải",
+      "cover_price": "2tr5",
+      "print_run": 365,
+      "page_count": 576,
+      "copy_numbering": "ODS001-ODS365",
+      "size_cm": "30 x 25 x 4",
+      "weight_g": 3000,
+      "thumbnail": "https://cdn.hstatic.net/products/1000328521/0w5a5758_d96bcd0b8cc84ce1bb4897d21b8d5ba4_master.jpg",
+      "gellery_imgs": [
+        "https://cdn.hstatic.net/products/1000328521/1_4872ef61a89e435895633567c456f6b2_master.jpg",
+        "https://cdn.hstatic.net/products/1000328521/2_cc7e2f27992a4fe88494dd04318a5967_master.jpg",
+        "https://cdn.hstatic.net/products/1000328521/4_dde33aeadfa7426d8da458be3c299d49_master.jpg",
+        "https://cdn.hstatic.net/products/1000328521/5_a67eadd136564e039f7d17805e38c1ac_master.jpg",
+        "https://cdn.hstatic.net/products/1000328521/6_84de215d27de4db4ba814188838844e3_master.jpg"
+      ],
+      "detail": "- 365 bản giới hạn, đánh số nhảy từ ODS 001 đến ODS 365.\n- Bìa cứng bọc vải.\n- Ruột in trên giấy GV76-BB định lượng 100 gsm, khổ 25 x 30 cm, 576 trang.\n- Hộp vỏ sò bọc vải, lót nhung."
+    }
+  ]
+}
