@@ -1,0 +1,35 @@
+{
+  "id": "dino-buzzati-dino-buzzati-tuyen-tap-tac-pham",
+  "title": "Dino Buzzati - Tuyển tập tác phẩm",
+  "title_original": "",
+  "authors": [
+    "Dino Buzzati"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "dino-buzzati-dino-buzzati-tuyen-tap-tac-pham-2025-dong-tay-bia-cung",
+      "isbn": null,
+      "caption": "Bìa Cứng - H365",
+      "pub_year": 2025,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông Tây"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "",
+      "print_run": 365,
+      "page_count": 477,
+      "copy_numbering": null,
+      "size_cm": "15 x 23",
+      "weight_g": null,
+      "thumbnail": "https://dongtay.vn/upload/images/20000/scan-20251112-155820.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "marai-sandor-loi-co-cay",
+  "title": "Lời cỏ cây",
+  "title_original": "",
+  "authors": [
+    "Márai Sándor"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "marai-sandor-loi-co-cay-2025-dong-tay-bia-cung-128k",
+      "isbn": null,
+      "caption": "Bìa Cứng - H666",
+      "pub_year": 2025,
+      "publisher": "NXB Lao Động",
+      "issuers": [
+        "Đông Tây"
+      ],
+      "translators": [
+        "Nguyễn Hồng Nhung"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "128k",
+      "print_run": 666,
+      "page_count": 205,
+      "copy_numbering": null,
+      "size_cm": "12 x 20",
+      "weight_g": null,
+      "thumbnail": "https://dongtay.vn/upload/images/20000/scan-20251120-103023_1.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}
