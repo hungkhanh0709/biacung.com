@@ -288,6 +288,12 @@
     "last_pub_year": 2026
   },
   {
+    "detail": "data/book/erich-maria-remarque-im-westen-nichts-neues.json",
+    "search_text": "phia tay khong co gi la im westen nichts neues erich maria remarque nxb van hoc dong a vu huong giang",
+    "last_pub_year": 2025,
+    "updated_at": "2026-07-11"
+  },
+  {
     "detail": "data/book/dino-buzzati-dino-buzzati-tuyen-tap-tac-pham.json",
     "search_text": "dino buzzati tuyen tap tac pham dino buzzati nxb van hoc dong tay",
     "updated_at": "2026-07-10",
@@ -444,6 +450,12 @@
     "updated_at": "2026-07-11"
   },
   {
+    "detail": "data/book/tran-trong-kim-viet-nam-su-luoc.json",
+    "search_text": "viet nam su luoc tran trong kim nxb van hoc dong a",
+    "last_pub_year": 2023,
+    "updated_at": "2026-07-11"
+  },
+  {
     "detail": "data/book/hector-malot-sans-famille.json",
     "search_text": "khong gia dinh sans famille hector malot dong a classic nxb van hoc dong a huynh ly",
     "updated_at": "2026-07-07",
@@ -504,6 +516,12 @@
     "last_pub_year": 2023
   },
   {
+    "detail": "data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json",
+    "search_text": "dai viet su ky toan thu nhieu tac gia nxb van hoc dong a ngo duc tho hoang van lau",
+    "last_pub_year": 2022,
+    "updated_at": "2026-07-11"
+  },
+  {
     "detail": "data/book/albert-camus-le-mythe-de-sisyphe.json",
     "search_text": "than thoai sisyphus le mythe de sisyphe albert camus canh cua mo rong nxb tre truong thi hoang yen",
     "updated_at": "2026-07-05",
@@ -532,6 +550,24 @@
     "search_text": "fools die mario puzo nxb van hoc đong a nguyen minh",
     "updated_at": "2026-06-30",
     "last_pub_year": 2022
+  },
+  {
+    "detail": "data/book/dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do.json",
+    "search_text": "mahabharata bang hinh thien su thi vi dai nhat cua an do dk nxb dan tri dong a le thi oanh ho anh thai",
+    "last_pub_year": 2021,
+    "updated_at": "2026-07-11"
+  },
+  {
+    "detail": "data/book/michael-collins-remarkable-books.json",
+    "search_text": "nhung cuon sach thay doi lich su remarkable books michael collins nxb dan tri dong a le ngoc tan",
+    "last_pub_year": 2020,
+    "updated_at": "2026-07-11"
+  },
+  {
+    "detail": "data/book/dk-lich-su-quan-su-bach-khoa-thu-cac-loai-vu-khi-dinh-hinh-the-gioi.json",
+    "search_text": "lich su quan su bach khoa thu cac loai vu khi dinh hinh the gioi dk nxb dan tri dong a nguyen minh",
+    "last_pub_year": 2019,
+    "updated_at": "2026-07-11"
   },
   {
     "detail": "data/book/michael-j-sandel-what-money-cant-buy-the-moral-limits-of-markets.json",
@@ -564,10 +600,22 @@
     "last_pub_year": 2018
   },
   {
+    "detail": "data/book/dk-lich-su-the-gioi-lich-su-the-gioi-chan-dung-nhan-loai-theo-dong-su-kien.json",
+    "search_text": "lich su the gioi lich su the gioi chan dung nhan loai theo dong su kien dk nxb dan tri dong a le thi oanh",
+    "last_pub_year": 2017,
+    "updated_at": "2026-07-11"
+  },
+  {
     "detail": "data/book/emile-chartlier-alain-noi-ve-hanh-phuc.json",
     "search_text": "alain noi ve hanh phuc emile chartlier nxb tre ho thanh van cao viet dung nguyen i long",
     "updated_at": "2026-07-04",
     "last_pub_year": 2017
+  },
+  {
+    "detail": "data/book/mario-puzo-the-last-don.json",
+    "search_text": "ong trum cuoi cung the last don mario puzo nxb van hoc dong a",
+    "last_pub_year": 2016,
+    "updated_at": "2026-07-11"
   },
   {
     "detail": "data/book/jmg-le-clezio-mondo-et-autres-histoires.json",
@@ -667,7 +715,7 @@
   },
   {
     "detail": "data/book/niccolo-machiavelli-il-principe.json",
-    "search_text": "quan vuong il principe niccolo machiavelli nxb van hoc đong a đang thu",
+    "search_text": "quan vuong il principe niccolo machiavelli nxb van hoc dong a dang thu",
     "updated_at": "2026-07-03",
     "last_pub_year": 2006
   },

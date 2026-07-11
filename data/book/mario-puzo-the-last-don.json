@@ -1,0 +1,35 @@
+{
+  "id": "mario-puzo-the-last-don",
+  "title": "Ông Trùm Cuối Cùng",
+  "title_original": "The Last Don",
+  "authors": [
+    "Mario Puzo"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "mario-puzo-the-last-don-2016-dong-a-bia-mem-150k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2016,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "150k",
+      "print_run": null,
+      "page_count": 646,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": 792,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/ong_trum_da_8abd3af4715e4bb78291b8f1d2c23a83_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

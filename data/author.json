@@ -15,7 +15,8 @@
       "mario-puzo-the-fourth-k",
       "mario-puzo-omerta",
       "mario-puzo-the-sicilian",
-      "mario-puzo-the-family"
+      "mario-puzo-the-family",
+      "mario-puzo-the-last-don"
     ]
   },
   {
@@ -172,7 +173,10 @@
       "dk-sinh-hoc-khai-luoc-nhung-tu-tuong-lon",
       "dk-thien-van-hoc-khai-luoc-nhung-tu-tuong-lon",
       "dk-the-chien-ii-khai-luoc-nhung-tu-tuong-lon",
-      "dk-triet-hoc-khai-luoc-nhung-tu-tuong-lon"
+      "dk-triet-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-lich-su-the-gioi-lich-su-the-gioi-chan-dung-nhan-loai-theo-dong-su-kien",
+      "dk-lich-su-quan-su-bach-khoa-thu-cac-loai-vu-khi-dinh-hinh-the-gioi",
+      "dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do"
     ]
   },
   {
@@ -591,7 +595,8 @@
     "id": "nhieu-tac-gia",
     "name": "Nhiều Tác Giả",
     "work_ids": [
-      "nhieu-tac-gia-doan-tu-huyen-mot-nghe-nhan"
+      "nhieu-tac-gia-doan-tu-huyen-mot-nghe-nhan",
+      "nhieu-tac-gia-dai-viet-su-ky-toan-thu"
     ]
   },
   {
@@ -655,6 +660,27 @@
     "name": "Antoine Galland",
     "work_ids": [
       "antoine-galland-nghin-le-mot-dem"
+    ]
+  },
+  {
+    "id": "erich-maria-remarque",
+    "name": "Erich Maria Remarque",
+    "work_ids": [
+      "erich-maria-remarque-im-westen-nichts-neues"
+    ]
+  },
+  {
+    "id": "tran-trong-kim",
+    "name": "Trần Trọng Kim",
+    "work_ids": [
+      "tran-trong-kim-viet-nam-su-luoc"
+    ]
+  },
+  {
+    "id": "michael-collins",
+    "name": "Michael Collins",
+    "work_ids": [
+      "michael-collins-remarkable-books"
     ]
   }
 ]
