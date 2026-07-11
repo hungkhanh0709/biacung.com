@@ -1,0 +1,39 @@
+{
+  "id": "jules-verne-vingt-mille-lieues-sous-les-mers",
+  "title": "Hai Vạn Dặm Dưới Biển",
+  "title_original": "Vingt Mille Lieues sous les mers",
+  "authors": [
+    "Jules Verne"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classic"
+  ],
+  "editions": [
+    {
+      "id": "jules-verne-vingt-mille-lieues-sous-les-mers-2023-dong-a-bia-mem-110k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2023,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Đỗ Ca Sơn"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "110k",
+      "print_run": null,
+      "page_count": 424,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 13.5 x 2.1",
+      "weight_g": 500,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/h/a/hai-van-dam-duoi-bien---bia-1-1.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

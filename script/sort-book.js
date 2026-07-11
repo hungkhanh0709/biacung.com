@@ -28,7 +28,92 @@ function getUpdatedAtValue(entry) {
     return typeof entry.updated_at === 'string' ? entry.updated_at.trim() : '';
 }
 
+function getDetailPathValue(entry) {
+    if (!entry || typeof entry !== 'object') {
+        return '';
+    }
+
+    return typeof entry.detail === 'string' ? entry.detail.trim() : '';
+}
+
+function normalizePubYearValue(value) {
+    if (typeof value === 'number' && Number.isFinite(value)) {
+        return value;
+    }
+
+    if (typeof value === 'string' && value.trim() !== '') {
+        const parsedYear = Number(value.trim());
+        return Number.isFinite(parsedYear) ? parsedYear : null;
+    }
+
+    return null;
+}
+
+function getLastPubYearFromBookDetail(bookDetail) {
+    if (!bookDetail || typeof bookDetail !== 'object' || !Array.isArray(bookDetail.editions)) {
+        return '';
+    }
+
+    let maxPubYear = null;
+    for (const edition of bookDetail.editions) {
+        const pubYear = normalizePubYearValue(edition && edition.pub_year);
+        if (pubYear === null) {
+            continue;
+        }
+
+        if (maxPubYear === null || pubYear > maxPubYear) {
+            maxPubYear = pubYear;
+        }
+    }
+
+    return maxPubYear === null ? '' : maxPubYear;
+}
+
+function enrichBookEntryWithLastPubYear(entry) {
+    const detailPathValue = getDetailPathValue(entry);
+    if (!detailPathValue) {
+        return {
+            ...entry,
+            last_pub_year: ''
+        };
+    }
+
+    const detailPath = path.join(rootDir, detailPathValue);
+    if (!fs.existsSync(detailPath)) {
+        throw new Error(`Không tìm thấy file chi tiết cho entry: ${detailPathValue}`);
+    }
+
+    const bookDetail = readJsonFile(detailPath);
+    return {
+        ...entry,
+        last_pub_year: getLastPubYearFromBookDetail(bookDetail)
+    };
+}
+
+function getLastPubYearValue(entry) {
+    if (!entry || typeof entry !== 'object') {
+        return null;
+    }
+
+    return normalizePubYearValue(entry.last_pub_year);
+}
+
 function compareBookEntries(left, right) {
+    const leftLastPubYear = getLastPubYearValue(left);
+    const rightLastPubYear = getLastPubYearValue(right);
+
+    if (leftLastPubYear !== rightLastPubYear) {
+        if (leftLastPubYear === null) {
+            return 1;
+        }
+
+        if (rightLastPubYear === null) {
+            return -1;
+        }
+
+        return rightLastPubYear - leftLastPubYear;
+    }
+
     const leftUpdatedAt = getUpdatedAtValue(left);
     const rightUpdatedAt = getUpdatedAtValue(right);
 
@@ -36,8 +121,8 @@ function compareBookEntries(left, right) {
         return rightUpdatedAt.localeCompare(leftUpdatedAt, 'en');
     }
 
-    const leftDetail = left && typeof left.detail === 'string' ? left.detail : '';
-    const rightDetail = right && typeof right.detail === 'string' ? right.detail : '';
+    const leftDetail = getDetailPathValue(left);
+    const rightDetail = getDetailPathValue(right);
 
     return leftDetail.localeCompare(rightDetail, 'en');
 }
@@ -52,10 +137,13 @@ function main() {
         throw new Error('`data/book.json` phải là một mảng JSON.');
     }
 
-    const sortedEntries = bookEntries.slice().sort(compareBookEntries);
+    const hydratedEntries = bookEntries.map(enrichBookEntryWithLastPubYear);
+    const sortedEntries = hydratedEntries.slice().sort(compareBookEntries);
     writeJsonFileAtomic(bookIndexPath, sortedEntries);
 
-    console.log(`Đã sắp xếp ${sortedEntries.length} mục trong ${path.relative(rootDir, bookIndexPath)}.`);
+    console.log(
+        `Đã cập nhật last_pub_year và sắp xếp ${sortedEntries.length} mục trong ${path.relative(rootDir, bookIndexPath)}.`
+    );
 }
 
 try {

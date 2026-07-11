@@ -436,11 +436,7 @@ function renderContributorGroups(valueNode, groups) {
     const people = document.createElement("div");
     people.className = "detail-meta-contributor-people";
 
-    group.people.forEach((person, index) => {
-      if (index > 0) {
-        people.appendChild(document.createTextNode(", "));
-      }
-
+    group.people.forEach((person) => {
       people.appendChild(createContributorLink(person));
     });
 
@@ -783,8 +779,7 @@ function renderActiveEdition() {
     return;
   }
 
-  editionTitleNode.textContent =
-    normalizeText(edition.caption) || `${getDisplayTitle(currentBook)} - ${normalizeText(edition.format) || "Phiên bản sưu tầm"}`;
+  editionTitleNode.textContent = normalizeText(edition.caption) || "";
 
   renderEditionGallery(edition);
   renderEditionMeta(currentBook, edition);

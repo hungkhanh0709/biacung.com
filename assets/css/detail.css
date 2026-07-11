@@ -492,6 +492,10 @@ a.detail-pill:focus-visible {
 }
 
 .detail-meta-contributor-people {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: flex-start;
   min-inline-size: 0;
   color: var(--color-ink);
   font-size: 0.95rem;
