@@ -258,40 +258,41 @@ const SECTION_RENDERERS = {
 async function main() {
   const sections = document.querySelectorAll("[data-home-section]");
   if (!sections.length) {
+    window.BiaCungPageLoader?.hide();
     return;
   }
 
-  let homeConfig = [];
   try {
-    homeConfig = await fetchJson(HOME_DATA_URL);
+    const homeConfig = await fetchJson(HOME_DATA_URL);
+
+    await Promise.all(
+      Array.from(sections).map(async (sectionElement) => {
+        const sectionId = sectionElement.dataset.homeSection;
+        const sectionConfig = homeConfig.find((entry) => entry.id === sectionId);
+        const renderSection = SECTION_RENDERERS[sectionId];
+
+        if (!sectionConfig) {
+          setSectionState(sectionElement, "Mục này chưa được cấu hình.");
+          return;
+        }
+
+        if (!renderSection) {
+          setSectionState(sectionElement, "Mục này chưa hỗ trợ hiển thị.");
+          return;
+        }
+
+        try {
+          await renderSection(sectionConfig, sectionElement);
+        } catch (error) {
+          setSectionState(sectionElement, "Có lỗi khi tải dữ liệu.");
+        }
+      })
+    );
   } catch (error) {
     sections.forEach((section) => setSectionState(section, "Không tải được cấu hình trang chủ."));
-    return;
+  } finally {
+    window.BiaCungPageLoader?.hide();
   }
-
-  await Promise.all(
-    Array.from(sections).map(async (sectionElement) => {
-      const sectionId = sectionElement.dataset.homeSection;
-      const sectionConfig = homeConfig.find((entry) => entry.id === sectionId);
-      const renderSection = SECTION_RENDERERS[sectionId];
-
-      if (!sectionConfig) {
-        setSectionState(sectionElement, "Mục này chưa được cấu hình.");
-        return;
-      }
-
-      if (!renderSection) {
-        setSectionState(sectionElement, "Mục này chưa hỗ trợ hiển thị.");
-        return;
-      }
-
-      try {
-        await renderSection(sectionConfig, sectionElement);
-      } catch (error) {
-        setSectionState(sectionElement, "Có lỗi khi tải dữ liệu.");
-      }
-    })
-  );
 }
 
 main();

@@ -4,6 +4,7 @@ async function main() {
   const editionCountEl = document.getElementById("edition-count");
 
   if (!authorCountEl || !bookCountEl || !editionCountEl) {
+    window.BiaCungPageLoader?.hide();
     return;
   }
 
@@ -47,6 +48,8 @@ async function main() {
     authorCountEl.textContent = "—";
     bookCountEl.textContent = "—";
     editionCountEl.textContent = "—";
+  } finally {
+    window.BiaCungPageLoader?.hide();
   }
 }
 

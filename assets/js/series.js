@@ -495,6 +495,7 @@ function updateSeriesDetailSeo(series, books) {
 
 async function main() {
   if (!resultsNode || !summaryNode || !emptyNode || !titleNode) {
+    window.BiaCungPageLoader?.hide();
     return;
   }
 
@@ -517,6 +518,8 @@ async function main() {
         : "Không thể tải danh sách series lúc này.",
       empty: "Vui lòng thử lại sau."
     });
+  } finally {
+    window.BiaCungPageLoader?.hide();
   }
 }
 

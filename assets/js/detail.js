@@ -19,7 +19,9 @@ const editionKickerNode = document.querySelector("[data-edition-kicker]");
 const editionTitleNode = document.querySelector("[data-edition-title]");
 const editionCoverNode = document.querySelector("[data-edition-cover]");
 const editionGalleryNode = document.querySelector("[data-edition-gallery]");
-const editionMetaNode = document.querySelector("[data-edition-meta]");
+const focusCopyNode = document.querySelector("[data-detail-focus-copy]");
+const editionDistributionNode = document.querySelector("[data-edition-distribution]");
+const editionContributorsNode = document.querySelector("[data-edition-contributors]");
 const editionSummaryNode = document.querySelector("[data-edition-summary]");
 const editionDescriptionNode = document.querySelector("[data-edition-description]");
 const headerInput = document.querySelector("#site-search");
@@ -401,7 +403,7 @@ function buildEditionSummaryLines(edition) {
   return lines;
 }
 
-function buildMetaItems(book, edition) {
+function buildMetaPanels(book, edition) {
   const issuerValues = dedupeStrings(edition.issuers);
   const publisherValue = normalizeText(edition.publisher);
   const distributionValues = publisherValue
@@ -410,42 +412,14 @@ function buildMetaItems(book, edition) {
   const contributors = [
     { role: "Tác giả", people: dedupeStrings(book.authors) },
     { role: "Dịch giả", people: dedupeStrings(edition.translators) },
-    { role: "Họa sĩ", people: dedupeStrings(edition.illustrators) }
+    { role: "Họa sĩ", people: dedupeStrings(edition.illustrators) },
+    { role: "Hiệu đính", people: dedupeStrings(edition.proofreaders) }
   ].filter((group) => group.people.length > 0);
 
-  const items = [
-    { label: "Đơn vị phát hành", value: dedupeStrings(distributionValues), asPills: true },
-    { label: "Những người thực hiện", value: contributors, isContributorGroups: true },
-    { label: "Hiệu đính", value: dedupeStrings(edition.proofreaders), asPills: true }
-  ];
-
-  return items.filter((item) => {
-    if (item.isContributorGroups && Array.isArray(item.value)) {
-      return item.value.length > 0;
-    }
-
-    if (Array.isArray(item.value)) {
-      return item.value.length > 0;
-    }
-
-    return Boolean(normalizeText(item.value));
-  });
-}
-
-function isCompactMetaItem(item) {
-  if (!item) {
-    return false;
-  }
-
-  if (item.asPills && Array.isArray(item.value)) {
-    return item.value.length === 1 && normalizeText(item.value[0]).length <= 22;
-  }
-
-  if (typeof item.value === "string") {
-    return normalizeText(item.value).length <= 24;
-  }
-
-  return false;
+  return {
+    distributionValues: dedupeStrings(distributionValues),
+    contributors
+  };
 }
 
 function renderContributorGroups(valueNode, groups) {
@@ -473,6 +447,57 @@ function renderContributorGroups(valueNode, groups) {
     row.append(role, people);
     valueNode.appendChild(row);
   });
+}
+
+function renderPillPanel(node, title, values) {
+  if (!node) {
+    return;
+  }
+
+  node.replaceChildren();
+
+  if (!Array.isArray(values) || !values.length) {
+    node.hidden = true;
+    return;
+  }
+
+  node.hidden = false;
+
+  const label = document.createElement("span");
+  label.className = "detail-meta-label";
+  label.textContent = title;
+
+  const value = document.createElement("div");
+  value.className = "detail-meta-value is-pill-list";
+
+  values.forEach((entry) => value.appendChild(createPill(entry)));
+
+  node.append(label, value);
+}
+
+function renderContributorsPanel(node, title, groups) {
+  if (!node) {
+    return;
+  }
+
+  node.replaceChildren();
+
+  if (!Array.isArray(groups) || !groups.length) {
+    node.hidden = true;
+    return;
+  }
+
+  node.hidden = false;
+
+  const label = document.createElement("span");
+  label.className = "detail-meta-label";
+  label.textContent = title;
+
+  const value = document.createElement("div");
+  value.className = "detail-meta-value";
+  renderContributorGroups(value, groups);
+
+  node.append(label, value);
 }
 
 function renderInfoCard(node, title, lines) {
@@ -606,35 +631,31 @@ function renderEditionGallery(edition) {
 }
 
 function renderEditionMeta(book, edition) {
-  if (!editionMetaNode) {
+  if (!editionDistributionNode && !editionContributorsNode) {
     return;
   }
 
-  editionMetaNode.replaceChildren();
-  const items = buildMetaItems(book, edition);
+  const panels = buildMetaPanels(book, edition);
+  renderPillPanel(editionDistributionNode, "Đơn vị phát hành", panels.distributionValues);
+  renderContributorsPanel(editionContributorsNode, "Những người thực hiện", panels.contributors);
+}
 
-  items.forEach((item) => {
-    const wrapper = document.createElement("div");
-    wrapper.className = `detail-panel${isCompactMetaItem(item) ? " is-compact" : ""}`;
+function syncFocusCopyLayout() {
+  if (!focusCopyNode) {
+    return;
+  }
 
-    const label = document.createElement("span");
-    label.className = "detail-meta-label";
-    label.textContent = item.label;
+  const topPanels = [editionDistributionNode, editionContributorsNode].filter(Boolean);
+  const bottomPanels = [editionSummaryNode, editionDescriptionNode].filter(Boolean);
+  const visibleTopPanels = topPanels.filter((node) => !node.hidden);
+  const visibleBottomPanels = bottomPanels.filter((node) => !node.hidden);
 
-    const value = document.createElement("div");
-    value.className = "detail-meta-value";
+  topPanels.forEach((node) => {
+    node.classList.toggle("detail-panel--span-2", visibleTopPanels.length === 1 && !node.hidden);
+  });
 
-    if (item.isContributorGroups && Array.isArray(item.value)) {
-      renderContributorGroups(value, item.value);
-    } else if (item.asPills && Array.isArray(item.value)) {
-      value.classList.add("is-pill-list");
-      item.value.forEach((entry) => value.appendChild(createPill(entry)));
-    } else {
-      value.textContent = Array.isArray(item.value) ? item.value.join(", ") : item.value;
-    }
-
-    wrapper.append(label, value);
-    editionMetaNode.appendChild(wrapper);
+  bottomPanels.forEach((node) => {
+    node.classList.toggle("detail-panel--span-2", visibleBottomPanels.length === 1 && !node.hidden);
   });
 }
 
@@ -769,6 +790,7 @@ function renderActiveEdition() {
   renderEditionMeta(currentBook, edition);
   renderInfoCard(editionSummaryNode, "Thông tin phát hành", buildEditionSummaryLines(edition));
   renderDescription(edition);
+  syncFocusCopyLayout();
   updateSeoMetadata(currentBook, edition);
 }
 
@@ -873,6 +895,7 @@ async function main() {
 
   if (!bookId) {
     setPageState("empty");
+    window.BiaCungPageLoader?.hide();
     return;
   }
 
@@ -887,6 +910,8 @@ async function main() {
     renderBook(book);
   } catch (error) {
     setPageState("empty");
+  } finally {
+    window.BiaCungPageLoader?.hide();
   }
 }
 
