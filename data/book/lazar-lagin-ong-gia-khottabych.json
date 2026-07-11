@@ -1,0 +1,39 @@
+{
+  "id": "lazar-lagin-ong-gia-khottabych",
+  "title": "Ông Già Khottabych",
+  "title_original": "Старик Хоттабыч",
+  "authors": [
+    "Lazar Lagin"
+  ],
+  "awards": [],
+  "series": [
+    "Đông a Classic"
+  ],
+  "editions": [
+    {
+      "id": "lazar-lagin-ong-gia-khottabych-2023-dong-a-bia-mem-120k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2023,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Minh Đăng Khánh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "120k",
+      "print_run": null,
+      "page_count": 436,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 13.5 x 2.1",
+      "weight_g": 450,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/o/n/ong-gia-khottabit---bia-1-1.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

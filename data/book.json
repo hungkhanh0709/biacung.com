@@ -384,6 +384,18 @@
     "last_pub_year": 2025
   },
   {
+    "detail": "data/book/antoine-galland-nghin-le-mot-dem.json",
+    "search_text": "nghin le mot dem antoine galland dong a classic nxb van hoc dong a phan quang",
+    "last_pub_year": 2024,
+    "updated_at": "2026-07-11"
+  },
+  {
+    "detail": "data/book/jacob-ludwig-karl-grimm-kinder-und-hausmarchen.json",
+    "search_text": "truyen co grimm kinder und hausmarchen jacob ludwig karl grimm wilhelm carl grimm dong a classic nxb van hoc dong a huu ngoc",
+    "last_pub_year": 2024,
+    "updated_at": "2026-07-11"
+  },
+  {
     "detail": "data/book/jose-mauro-de-vasconcelos-vamos-aquecer-o-sol.json",
     "search_text": "suoi am mat troi vamos aquecer o sol jose mauro de vasconcelos nxb hoi nha van nha nam dang bao kim",
     "updated_at": "2026-07-06",
@@ -418,6 +430,18 @@
     "search_text": "dien ro hay than thanh jose echegaray tram nam nobel nxb van hoc dong a thanh loan",
     "updated_at": "2026-07-04",
     "last_pub_year": 2024
+  },
+  {
+    "detail": "data/book/jules-verne-vingt-mille-lieues-sous-les-mers.json",
+    "search_text": "hai van dam duoi bien vingt mille lieues sous les mers jules verne dong a classic nxb van hoc dong a do ca son",
+    "last_pub_year": 2023,
+    "updated_at": "2026-07-11"
+  },
+  {
+    "detail": "data/book/lazar-lagin-ong-gia-khottabych.json",
+    "search_text": "ong gia khottabych lazar lagin dong a classic nxb van hoc dong a minh dang khanh",
+    "last_pub_year": 2023,
+    "updated_at": "2026-07-11"
   },
   {
     "detail": "data/book/hector-malot-sans-famille.json",

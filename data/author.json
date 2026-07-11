@@ -621,5 +621,40 @@
     "work_ids": [
       "homere-odyssee"
     ]
+  },
+  {
+    "id": "lazar-lagin",
+    "name": "Lazar Lagin",
+    "work_ids": [
+      "lazar-lagin-ong-gia-khottabych"
+    ]
+  },
+  {
+    "id": "jacob-ludwig-karl-grimm",
+    "name": "Jacob Ludwig Karl Grimm",
+    "work_ids": [
+      "jacob-ludwig-karl-grimm-kinder-und-hausmarchen"
+    ]
+  },
+  {
+    "id": "wilhelm-carl-grimm",
+    "name": "Wilhelm Carl Grimm",
+    "work_ids": [
+      "jacob-ludwig-karl-grimm-kinder-und-hausmarchen"
+    ]
+  },
+  {
+    "id": "jules-verne",
+    "name": "Jules Verne",
+    "work_ids": [
+      "jules-verne-vingt-mille-lieues-sous-les-mers"
+    ]
+  },
+  {
+    "id": "antoine-galland",
+    "name": "Antoine Galland",
+    "work_ids": [
+      "antoine-galland-nghin-le-mot-dem"
+    ]
   }
 ]
