@@ -43,6 +43,16 @@ function sanitizeBookDetailPayload(payload, fallbackId = '') {
     };
 }
 
+function sanitizeSeriesDetailPayload(payload, fallbackId = '') {
+    const source = payload && typeof payload === 'object' ? payload : {};
+    const { detail, ...rest } = source;
+
+    return {
+        ...rest,
+        id: normalizeText(rest.id || fallbackId)
+    };
+}
+
 function slugify(value) {
     return (value || '')
         .toLowerCase()
@@ -127,25 +137,36 @@ function normalizeArrayPayload(payload) {
     return [];
 }
 
+function normalizeBookIndexEntry(entry, fallbackUpdatedAt, existingEntry = null) {
+    if (!entry || typeof entry !== 'object' || !entry.detail) {
+        return null;
+    }
+
+    const detailPath = normalizeText(entry.detail);
+    if (!detailPath) {
+        return null;
+    }
+
+    return {
+        ...(existingEntry && typeof existingEntry === 'object' ? existingEntry : {}),
+        ...entry,
+        detail: detailPath,
+        search_text: normalizeText(entry.search_text || ''),
+        updated_at: normalizeText(entry.updated_at || existingEntry?.updated_at || fallbackUpdatedAt)
+    };
+}
+
 function mergeBookIndexEntries(existingBookIndex, incomingEntries, fallbackUpdatedAt) {
     const orderedDetails = [];
     const mergedByDetail = new Map();
 
     const upsert = (entry) => {
-        if (!entry || typeof entry !== 'object' || !entry.detail) {
+        const normalizedEntry = normalizeBookIndexEntry(entry, fallbackUpdatedAt, mergedByDetail.get(normalizeText(entry?.detail)));
+        if (!normalizedEntry) {
             return;
         }
 
-        const detailPath = normalizeText(entry.detail);
-        if (!detailPath) {
-            return;
-        }
-
-        const normalizedEntry = {
-            detail: detailPath,
-            search_text: normalizeText(entry.search_text || ''),
-            updated_at: normalizeText(entry.updated_at || fallbackUpdatedAt)
-        };
+        const detailPath = normalizedEntry.detail;
 
         if (!mergedByDetail.has(detailPath)) {
             orderedDetails.push(detailPath);
@@ -186,15 +207,16 @@ function writeSeriesDetailFiles(seriesPayload, bookId) {
 
         const filePath = path.join(seriesDir, `${seriesId}.json`);
         const existingSeriesDetail = readJsonFile(filePath, null);
+        const normalizedSeriesItem = sanitizeSeriesDetailPayload(seriesItem, seriesId);
         const mergedSeriesDetail = {
             ...(existingSeriesDetail || {}),
-            ...seriesItem,
+            ...normalizedSeriesItem,
             id: seriesId,
-            name: normalizeText(seriesItem.name || existingSeriesDetail?.name || ''),
-            description: normalizeText(seriesItem.description || existingSeriesDetail?.description || ''),
-            thumbnail: normalizeText(seriesItem.thumbnail || existingSeriesDetail?.thumbnail || ''),
-            work_ids: Array.isArray(seriesItem.work_ids)
-                ? [...new Set(seriesItem.work_ids.filter(Boolean))]
+            name: normalizeText(normalizedSeriesItem.name || existingSeriesDetail?.name || ''),
+            description: normalizeText(normalizedSeriesItem.description || existingSeriesDetail?.description || ''),
+            thumbnail: normalizeText(normalizedSeriesItem.thumbnail || existingSeriesDetail?.thumbnail || ''),
+            work_ids: Array.isArray(normalizedSeriesItem.work_ids)
+                ? [...new Set(normalizedSeriesItem.work_ids.filter(Boolean))]
                 : (Array.isArray(existingSeriesDetail?.work_ids) ? existingSeriesDetail.work_ids.slice() : [])
         };
 

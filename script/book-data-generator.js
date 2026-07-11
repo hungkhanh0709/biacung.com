@@ -375,6 +375,19 @@ function getSeriesDetailFilePath(seriesId) {
     return `data/series/${slug}.json`;
 }
 
+function isSeriesDetailPayload(entry) {
+    if (!entry || typeof entry !== 'object') {
+        return false;
+    }
+
+    return Boolean(
+        normalizeText(entry.name)
+        || normalizeText(entry.description)
+        || normalizeText(entry.thumbnail)
+        || (Array.isArray(entry.work_ids) && entry.work_ids.length)
+    );
+}
+
 function getDownloadFileNameFromSlug(slug, suffix = '') {
     const base = slugify(slug) || 'book';
     const normalizedSuffix = normalizeText(suffix);
@@ -1108,14 +1121,24 @@ function buildBookIndexPayload(formData, existingBookIndex = existingBookIndexEn
     const searchText = collectSearchTextTerms(formData).join(' ');
     const updatedAt = new Date().toISOString().slice(0, 10);
     const mergedBookIndex = Array.isArray(existingBookIndex) ? existingBookIndex.filter((entry) => entry && entry.detail !== detailPath) : [];
+    const existingEntry = findExistingBookIndexEntry(detailPath, existingBookIndex);
 
     mergedBookIndex.push({
         detail: detailPath,
         search_text: searchText,
+        last_pub_year: existingEntry?.last_pub_year ?? '',
         updated_at: updatedAt
     });
 
     return mergedBookIndex.sort((left, right) => (right.updated_at || '').localeCompare(left.updated_at || '', 'en'));
+}
+
+function findExistingBookIndexEntry(detailPath, existingBookIndex = existingBookIndexEntries) {
+    if (!detailPath || !Array.isArray(existingBookIndex)) {
+        return null;
+    }
+
+    return existingBookIndex.find((entry) => normalizeText(entry?.detail) === detailPath) || null;
 }
 
 function buildBookIndexReviewPayload(formData) {
@@ -1123,10 +1146,12 @@ function buildBookIndexReviewPayload(formData) {
     const detailPath = getBookDetailFilePath(bookId);
     const searchText = collectSearchTextTerms(formData).join(' ');
     const updatedAt = new Date().toISOString().slice(0, 10);
+    const existingEntry = findExistingBookIndexEntry(detailPath);
 
     return {
         detail: detailPath,
         search_text: searchText,
+        last_pub_year: existingEntry?.last_pub_year ?? '',
         updated_at: updatedAt
     };
 }
@@ -1219,7 +1244,7 @@ function buildSeriesPayload(formData, existingSeries = existingSeriesEntries) {
     return mergedSeries.sort((left, right) => (left.name || '').localeCompare(right.name || '', 'vi'));
 }
 
-async function loadExistingSeriesBySlug(slug) {
+async function loadExistingSeriesBySlug(slug, detailPath = '') {
     const normalizedSlug = slugify(slug);
     if (!normalizedSlug) {
         return null;
@@ -1230,9 +1255,10 @@ async function loadExistingSeriesBySlug(slug) {
     }
 
     const candidates = [
+        normalizeText(detailPath),
         `./data/series/${encodeURIComponent(normalizedSlug)}.json`,
         `./data/series/${normalizedSlug}.json`
-    ];
+    ].filter(Boolean);
 
     for (const url of candidates) {
         try {
@@ -1265,6 +1291,34 @@ async function loadExistingSeriesBySlug(slug) {
     return null;
 }
 
+async function resolveExistingSeriesReviewEntry(seriesId, existingSeries = existingSeriesEntries) {
+    if (!seriesId) {
+        return null;
+    }
+
+    const existingSeriesEntry = Array.isArray(existingSeries)
+        ? existingSeries.find((entry) => slugify(entry.name || '') === seriesId || entry.id === seriesId)
+        : null;
+
+    const loadedSeriesEntry = await loadExistingSeriesBySlug(seriesId, existingSeriesEntry?.detail);
+    if (loadedSeriesEntry && existingSeriesEntry && typeof existingSeriesEntry === 'object') {
+        return {
+            ...existingSeriesEntry,
+            ...loadedSeriesEntry
+        };
+    }
+
+    if (loadedSeriesEntry) {
+        return loadedSeriesEntry;
+    }
+
+    if (isSeriesDetailPayload(existingSeriesEntry)) {
+        return { ...existingSeriesEntry };
+    }
+
+    return null;
+}
+
 async function buildSeriesReviewEntries(formData, existingSeries = existingSeriesEntries) {
     const seriesNames = parseLines(formData.get('series') || '');
     const bookId = getBookSlugFromFormData(formData);
@@ -1277,11 +1331,8 @@ async function buildSeriesReviewEntries(formData, existingSeries = existingSerie
 
     for (const name of seriesNames) {
         const seriesId = slugify(name);
-        const existingSeriesEntry = Array.isArray(existingSeries)
-            ? existingSeries.find((entry) => slugify(entry.name || '') === seriesId || entry.id === seriesId)
-            : null;
-        const loadedSeriesEntry = existingSeriesEntry || await loadExistingSeriesBySlug(seriesId);
-        const payload = loadedSeriesEntry ? { ...loadedSeriesEntry } : {
+        const existingSeriesEntry = await resolveExistingSeriesReviewEntry(seriesId, existingSeries);
+        const payload = existingSeriesEntry ? { ...existingSeriesEntry } : {
             id: seriesId,
             name,
             description: '',
@@ -1289,6 +1340,7 @@ async function buildSeriesReviewEntries(formData, existingSeries = existingSerie
             work_ids: []
         };
 
+        delete payload.detail;
         payload.id = payload.id || seriesId;
         payload.name = payload.name || name;
         payload.description = normalizeText(payload.description);
