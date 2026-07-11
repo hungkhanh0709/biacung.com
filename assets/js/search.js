@@ -361,6 +361,7 @@ async function loadBookMatches(normalizedKeyword, searchTerms) {
 
 async function renderResults() {
   if (!resultsNode || !emptyNode) {
+    window.BiaCungPageLoader?.hide();
     return;
   }
 
@@ -402,6 +403,8 @@ async function renderResults() {
   } catch (error) {
     setPageState("error");
     updateEmptyState("Không thể tải dữ liệu tìm kiếm lúc này. Vui lòng thử lại sau.");
+  } finally {
+    window.BiaCungPageLoader?.hide();
   }
 }
 

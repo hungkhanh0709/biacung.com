@@ -1,0 +1,64 @@
+{
+  "id": "antoine-galland-nghin-le-mot-dem",
+  "title": "Nghìn Lẻ Một Đêm",
+  "title_original": "",
+  "authors": [
+    "Antoine Galland"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classic"
+  ],
+  "editions": [
+    {
+      "id": "antoine-galland-nghin-le-mot-dem-2024-dong-a-bia-mem-100k",
+      "isbn": null,
+      "caption": "Những Truyện Hay Chọn Lọc",
+      "pub_year": 2024,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Phan Quang"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "100k",
+      "print_run": null,
+      "page_count": 348,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 13.5 x 1.7",
+      "weight_g": 200,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/b/_/b_a-1-nghin-le-mot-dem.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "antoine-galland-nghin-le-mot-dem-2021-dong-a-bia-cung-ao-om-990k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2021,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Phan Quang"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng, áo ôm",
+      "cover_price": "990k",
+      "print_run": null,
+      "page_count": 1364,
+      "copy_numbering": null,
+      "size_cm": "27.3 x 19 x 7",
+      "weight_g": 2675,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/i/m/image_244718_1_1842.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

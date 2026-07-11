@@ -1,0 +1,37 @@
+{
+  "id": "mikhail-bulgakov-nhung-qua-trung-dinh-menh",
+  "title": "Những quả trứng định mệnh",
+  "title_original": "Роковые яйца",
+  "authors": [
+    "Mikhail Bulgakov"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "mikhail-bulgakov-nhung-qua-trung-dinh-menh-2026-dong-tay-bia-cung-118k",
+      "isbn": null,
+      "caption": "Bìa Cứng - H666",
+      "pub_year": 2025,
+      "publisher": "NXB Hà Nội",
+      "issuers": [
+        "Đông Tây"
+      ],
+      "translators": [
+        "Đoàn Tử Huyến"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "118k",
+      "print_run": 666,
+      "page_count": 158,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "https://dongtay.vn/upload/images/20000/6.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

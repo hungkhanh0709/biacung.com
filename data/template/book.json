@@ -2,6 +2,7 @@
     {
         "detail": "data/book/mario-puzo-the-godfather.json",
         "search_text": "search text in normalized form, e.g. lower case, no diacritics, no punctuation",
+        "last_pub_year": 2026,
         "updated_at": "2026-06-26"
     }
 ]

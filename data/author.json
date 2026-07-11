@@ -15,7 +15,8 @@
       "mario-puzo-the-fourth-k",
       "mario-puzo-omerta",
       "mario-puzo-the-sicilian",
-      "mario-puzo-the-family"
+      "mario-puzo-the-family",
+      "mario-puzo-the-last-don"
     ]
   },
   {
@@ -172,7 +173,10 @@
       "dk-sinh-hoc-khai-luoc-nhung-tu-tuong-lon",
       "dk-thien-van-hoc-khai-luoc-nhung-tu-tuong-lon",
       "dk-the-chien-ii-khai-luoc-nhung-tu-tuong-lon",
-      "dk-triet-hoc-khai-luoc-nhung-tu-tuong-lon"
+      "dk-triet-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-lich-su-the-gioi-lich-su-the-gioi-chan-dung-nhan-loai-theo-dong-su-kien",
+      "dk-lich-su-quan-su-bach-khoa-thu-cac-loai-vu-khi-dinh-hinh-the-gioi",
+      "dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do"
     ]
   },
   {
@@ -555,6 +559,128 @@
     "name": "Đặng Vương Hưng",
     "work_ids": [
       "nguyen-van-thac-mai-mai-tuoi-hai-muoi"
+    ]
+  },
+  {
+    "id": "fyodor-dostoevsky",
+    "name": "Fyodor Dostoevsky",
+    "work_ids": [
+      "fyodor-dostoevsky-dem-trang"
+    ]
+  },
+  {
+    "id": "mikhail-bulgakov",
+    "name": "Mikhail Bulgakov",
+    "work_ids": [
+      "mikhail-bulgakov-nhung-qua-trung-dinh-menh",
+      "mikhail-bulgakov-trai-tim-cho"
+    ]
+  },
+  {
+    "id": "marai-sandor",
+    "name": "Márai Sándor",
+    "work_ids": [
+      "marai-sandor-loi-co-cay",
+      "marai-sandor-a-gyertyak-csonkig-egnek"
+    ]
+  },
+  {
+    "id": "mikhail-prishvin",
+    "name": "Mikhail Prishvin",
+    "work_ids": [
+      "mikhail-prishvin-giot-rung"
+    ]
+  },
+  {
+    "id": "nhieu-tac-gia",
+    "name": "Nhiều Tác Giả",
+    "work_ids": [
+      "nhieu-tac-gia-doan-tu-huyen-mot-nghe-nhan",
+      "nhieu-tac-gia-dai-viet-su-ky-toan-thu"
+    ]
+  },
+  {
+    "id": "dino-buzzati",
+    "name": "Dino Buzzati",
+    "work_ids": [
+      "dino-buzzati-dino-buzzati-tuyen-tap-tac-pham"
+    ]
+  },
+  {
+    "id": "franz-kafka",
+    "name": "Franz Kafka",
+    "work_ids": [
+      "franz-kafka-tuyen-tap-tac-pham-frank-kafka"
+    ]
+  },
+  {
+    "id": "mikhail-bulgacov",
+    "name": "Mikhail Bulgacov",
+    "work_ids": [
+      "mikhail-bulgacov-nghe-nhan-va-margarita"
+    ]
+  },
+  {
+    "id": "homere",
+    "name": "Homère",
+    "work_ids": [
+      "homere-odyssee"
+    ]
+  },
+  {
+    "id": "lazar-lagin",
+    "name": "Lazar Lagin",
+    "work_ids": [
+      "lazar-lagin-ong-gia-khottabych"
+    ]
+  },
+  {
+    "id": "jacob-ludwig-karl-grimm",
+    "name": "Jacob Ludwig Karl Grimm",
+    "work_ids": [
+      "jacob-ludwig-karl-grimm-kinder-und-hausmarchen"
+    ]
+  },
+  {
+    "id": "wilhelm-carl-grimm",
+    "name": "Wilhelm Carl Grimm",
+    "work_ids": [
+      "jacob-ludwig-karl-grimm-kinder-und-hausmarchen"
+    ]
+  },
+  {
+    "id": "jules-verne",
+    "name": "Jules Verne",
+    "work_ids": [
+      "jules-verne-vingt-mille-lieues-sous-les-mers"
+    ]
+  },
+  {
+    "id": "antoine-galland",
+    "name": "Antoine Galland",
+    "work_ids": [
+      "antoine-galland-nghin-le-mot-dem"
+    ]
+  },
+  {
+    "id": "erich-maria-remarque",
+    "name": "Erich Maria Remarque",
+    "work_ids": [
+      "erich-maria-remarque-im-westen-nichts-neues"
+    ]
+  },
+  {
+    "id": "tran-trong-kim",
+    "name": "Trần Trọng Kim",
+    "work_ids": [
+      "tran-trong-kim-viet-nam-su-luoc"
+    ]
+  },
+  {
+    "id": "michael-collins",
+    "name": "Michael Collins",
+    "work_ids": [
+      "michael-collins-remarkable-books"
     ]
   }
 ]

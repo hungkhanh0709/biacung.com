@@ -1,0 +1,35 @@
+{
+  "id": "tran-trong-kim-viet-nam-su-luoc",
+  "title": "Việt Nam Sử Lược",
+  "title_original": "",
+  "authors": [
+    "Trần Trọng Kim"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "tran-trong-kim-viet-nam-su-luoc-2023-dong-a-bia-cung-660k",
+      "isbn": null,
+      "caption": "Ấn Bản Kỉ Niệm 100 Năm Ngày Tác Phẩm Ra Đời 1920 - 2020",
+      "pub_year": 2023,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "660k",
+      "print_run": null,
+      "page_count": 656,
+      "copy_numbering": null,
+      "size_cm": "18.5 x 26.5 x 7",
+      "weight_g": 1400,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/v/i/vi_t-nam-s_-l_c-k_m-qu_-t_ng.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

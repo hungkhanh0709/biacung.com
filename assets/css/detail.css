@@ -407,31 +407,49 @@ a.detail-pill:focus-visible {
 
 .detail-focus-copy {
   display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
   gap: 0.9rem;
+  align-items: stretch;
 }
 
-.detail-meta-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  gap: 0.7rem 0.8rem;
-}
-
-.detail-info-panels {
-  display: grid;
-  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
-  gap: 0.8rem;
-  align-items: start;
-}
-
-.detail-meta-item {
+.detail-panel {
   display: grid;
   gap: 0.28rem;
   align-content: start;
   min-block-size: 5.2rem;
+  min-inline-size: 0;
   padding: 0.75rem 0.85rem;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-surface);
+}
+
+.detail-panel[hidden] {
+  display: none;
+}
+
+.detail-panel--distribution {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.detail-panel--contributors {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.detail-panel--summary {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.detail-panel--description {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.detail-panel--span-2 {
+  grid-column: 1 / -1;
 }
 
 .detail-meta-label {
@@ -452,6 +470,60 @@ a.detail-pill:focus-visible {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
+}
+
+.detail-meta-contributors {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.detail-meta-contributor-row {
+  display: grid;
+  grid-template-columns: minmax(5.5rem, auto) minmax(0, 1fr);
+  gap: 0.45rem 0.9rem;
+  align-items: start;
+}
+
+.detail-meta-contributor-role {
+  color: color-mix(in oklab, var(--color-ink), var(--color-muted) 28%);
+  font-size: 0.83rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.detail-meta-contributor-people {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: flex-start;
+  min-inline-size: 0;
+  color: var(--color-ink);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.detail-meta-contributor-link {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 1.75rem;
+  padding-inline: 0.75rem;
+  border: 1px solid color-mix(in oklab, var(--color-primary), white 15%);
+  border-radius: 999rem;
+  color: var(--color-primary-dark);
+  background: rgb(255 255 255 / 88%);
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-decoration: none;
+  vertical-align: top;
+  transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
+}
+
+a.detail-meta-contributor-link:hover,
+a.detail-meta-contributor-link:focus-visible {
+  border-color: var(--color-primary-dark);
+  background: var(--color-primary-soft);
+  box-shadow: 0 0.75rem 1.35rem rgb(111 79 200 / 14%);
+  transform: translateY(-0.08rem);
 }
 
 .detail-description-card {
@@ -512,9 +584,6 @@ a.detail-pill:focus-visible {
     padding: 0.4rem;
   }
 
-  .detail-info-panels {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 44rem) {
@@ -586,8 +655,7 @@ a.detail-pill:focus-visible {
     margin-block-end: 0.8rem;
   }
 
-  .detail-edition-grid,
-  .detail-meta-grid {
+  .detail-edition-grid {
     grid-template-columns: 1fr;
   }
 
@@ -668,8 +736,7 @@ a.detail-pill:focus-visible {
     line-height: 1.1;
   }
 
-  .detail-focus-body,
-  .detail-info-panels {
+  .detail-focus-body {
     gap: 0.9rem;
   }
 
@@ -700,21 +767,23 @@ a.detail-pill:focus-visible {
     inline-size: 4.6rem;
   }
 
-  .detail-meta-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.65rem;
+  .detail-focus-copy {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
   }
 
-  .detail-meta-item {
-    grid-column: 1 / -1;
+  .detail-panel {
     min-block-size: 0;
-    min-inline-size: 0;
     padding: 0.7rem 0.8rem;
   }
 
-  .detail-meta-item.is-compact {
+  .detail-panel--distribution,
+  .detail-panel--contributors,
+  .detail-panel--summary,
+  .detail-panel--description,
+  .detail-panel--span-2 {
     grid-column: auto;
+    grid-row: auto;
   }
 
   .detail-meta-label {
@@ -729,6 +798,25 @@ a.detail-pill:focus-visible {
 
   .detail-meta-value.is-pill-list {
     gap: 0.4rem;
+  }
+
+  .detail-meta-contributors {
+    gap: 0.5rem;
+  }
+
+  .detail-meta-contributor-row {
+    grid-template-columns: minmax(4.8rem, auto) minmax(0, 1fr);
+    gap: 0.35rem 0.75rem;
+    align-items: center;
+  }
+
+  .detail-meta-contributor-role {
+    font-size: 0.8rem;
+  }
+
+  .detail-meta-contributor-people {
+    font-size: 0.9rem;
+    line-height: 1.45;
   }
 
   .detail-description ul {
@@ -768,9 +856,6 @@ a.detail-pill:focus-visible {
     max-block-size: min(52vh, 21rem);
   }
 
-  .detail-meta-item.is-compact {
-    grid-column: 1 / -1;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
