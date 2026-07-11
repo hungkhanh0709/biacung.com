@@ -345,6 +345,7 @@ input:focus-visible {
 
 .search-box input::placeholder {
   color: var(--color-muted);
+  font-size: 0.9rem;
   font-style: italic;
 }
 
