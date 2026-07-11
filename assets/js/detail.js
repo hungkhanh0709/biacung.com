@@ -873,6 +873,7 @@ async function main() {
 
   if (!bookId) {
     setPageState("empty");
+    window.BiaCungPageLoader?.hide();
     return;
   }
 
@@ -887,6 +888,8 @@ async function main() {
     renderBook(book);
   } catch (error) {
     setPageState("empty");
+  } finally {
+    window.BiaCungPageLoader?.hide();
   }
 }
 
