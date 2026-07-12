@@ -63,6 +63,14 @@
   line-height: 1.7;
 }
 
+.search-page.is-loading .empty-state {
+  display: none;
+}
+
+.search-page.is-loading .search-actions {
+  display: none;
+}
+
 .search-page.is-empty .search-results-grid {
   display: none;
 }

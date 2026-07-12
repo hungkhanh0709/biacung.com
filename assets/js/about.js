@@ -2,11 +2,23 @@ async function main() {
   const authorCountEl = document.getElementById("author-count");
   const bookCountEl = document.getElementById("book-count");
   const editionCountEl = document.getElementById("edition-count");
+  const statValueNodes = document.querySelectorAll("[data-about-stat-value]");
 
   if (!authorCountEl || !bookCountEl || !editionCountEl) {
     window.BiaCungPageLoader?.hide();
     return;
   }
+
+  window.BiaCungPageLoader?.handoff("Đang tải trang giới thiệu...");
+
+  const applyStatValue = (node, value) => {
+    if (!node) {
+      return;
+    }
+
+    node.textContent = value;
+    node.classList.remove("skeleton-block", "skeleton-inline");
+  };
 
   try {
     const [authorsResponse, bookIndexResponse] = await Promise.all([
@@ -41,13 +53,13 @@ async function main() {
       0
     );
 
-    authorCountEl.textContent = Array.isArray(authors) ? String(authors.length) : "0";
-    bookCountEl.textContent = String(books.length);
-    editionCountEl.textContent = String(editionCount);
+    applyStatValue(authorCountEl, Array.isArray(authors) ? String(authors.length) : "0");
+    applyStatValue(bookCountEl, String(books.length));
+    applyStatValue(editionCountEl, String(editionCount));
   } catch (error) {
-    authorCountEl.textContent = "—";
-    bookCountEl.textContent = "—";
-    editionCountEl.textContent = "—";
+    statValueNodes.forEach((node) => {
+      applyStatValue(node, "—");
+    });
   } finally {
     window.BiaCungPageLoader?.hide();
   }

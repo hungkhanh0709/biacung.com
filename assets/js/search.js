@@ -16,6 +16,8 @@ const emptyNode = document.querySelector("[data-search-empty]");
 const resultsNode = document.querySelector("[data-search-results]");
 const actionsNode = document.querySelector("[data-search-actions]");
 const loadMoreButton = document.querySelector("[data-search-load-more]");
+const managedImageLoader = window.BiaCungImageLoader;
+const skeletonRenderer = window.BiaCungSkeleton;
 
 let currentResults = [];
 let visibleCount = 0;
@@ -139,6 +141,7 @@ function syncSearchInputs(value) {
 }
 
 function setPageState(state) {
+  page?.classList.toggle("is-loading", state === "loading");
   page?.classList.toggle("is-empty", state === "empty" || state === "error" || state === "idle");
   page?.classList.toggle("is-ready", state === "results");
 }
@@ -171,19 +174,14 @@ function createCard({ title, subtitle, description, image, href, meta }) {
 
   const img = document.createElement("img");
   img.className = "cover";
-  img.src = normalizeUrl(image) || BOOK_FALLBACK_COVER;
-  img.alt = title ? `Bìa sách ${title}` : "Bìa sách";
   img.width = 360;
   img.height = 500;
-  img.loading = "lazy";
-  img.decoding = "async";
-  img.addEventListener("error", () => {
-    if (img.dataset.fallbackApplied === "true") {
-      return;
-    }
-
-    img.dataset.fallbackApplied = "true";
-    img.src = BOOK_FALLBACK_COVER;
+  managedImageLoader?.mount({
+    imageNode: img,
+    frameNode: media,
+    src: normalizeUrl(image),
+    alt: title ? `Bìa sách ${title}` : "Bìa sách",
+    fallbackSrc: BOOK_FALLBACK_COVER
   });
   media.appendChild(img);
 
@@ -250,6 +248,10 @@ function setResults(results) {
   visibleCount = 0;
   resultsNode?.replaceChildren();
   appendVisibleResults();
+}
+
+function renderLoadingSkeletons(count = SEARCH_PAGE_SIZE) {
+  skeletonRenderer?.renderBookCardGrid(resultsNode, count);
 }
 
 async function loadSeriesMatches(normalizedKeyword, searchTerms) {
@@ -372,11 +374,13 @@ async function renderResults() {
     ? `Kết quả tìm kiếm “${keyword}” | Bìa Cứng`
     : "Tất cả kết quả | Bìa Cứng";
   setPageState("loading");
+  renderLoadingSkeletons();
   updateEmptyState(
     hasKeyword
       ? `Đang tra cứu dữ liệu cho “${keyword}”.`
       : "Đang tải toàn bộ bìa sách và series hiện có."
   );
+  window.BiaCungPageLoader?.handoff("Đang tải kết quả tìm kiếm...");
 
   try {
     const normalizedKeyword = normalizeSearchText(keyword);
@@ -389,6 +393,7 @@ async function renderResults() {
     const results = [...seriesMatches, ...bookMatches];
 
     if (!results.length) {
+      resultsNode?.replaceChildren();
       setPageState("empty");
       updateEmptyState(
         hasKeyword
@@ -401,6 +406,7 @@ async function renderResults() {
     setResults(results);
     setPageState("results");
   } catch (error) {
+    resultsNode?.replaceChildren();
     setPageState("error");
     updateEmptyState("Không thể tải dữ liệu tìm kiếm lúc này. Vui lòng thử lại sau.");
   } finally {

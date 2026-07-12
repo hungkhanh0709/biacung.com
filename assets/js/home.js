@@ -2,6 +2,12 @@ const HOME_DATA_URL = "data/home.json";
 const BOOK_INDEX_URL = "data/book.json";
 const BOOK_DETAIL_FALLBACK = "assets/img/core/book-cover.png.avif";
 const SERIES_DETAIL_URL = "data/series";
+const managedImageLoader = window.BiaCungImageLoader;
+const skeletonRenderer = window.BiaCungSkeleton;
+const DEFAULT_HOME_SKELETON_COUNT = {
+  "series-focus": 4,
+  "recently-archived": 12
+};
 
 function normalizeText(value) {
   return value == null ? "" : String(value).trim();
@@ -9,11 +15,6 @@ function normalizeText(value) {
 
 function safeUrl(value) {
   return normalizeText(value).replace(/\s+/g, "");
-}
-
-function buildSearchUrl(keyword) {
-  const query = normalizeText(keyword);
-  return query ? `search.html?q=${encodeURIComponent(query)}` : "search.html";
 }
 
 function buildDetailUrl(bookId) {
@@ -45,6 +46,15 @@ async function fetchOptionalJson(url) {
 
 function getSectionGrid(sectionElement) {
   return sectionElement.querySelector("[data-section-grid]");
+}
+
+function getSectionSkeletonCount(sectionId, sectionConfig) {
+  const configuredLimit = getSectionLimit(sectionConfig);
+  if (configuredLimit > 0) {
+    return configuredLimit;
+  }
+
+  return DEFAULT_HOME_SKELETON_COUNT[sectionId] || 4;
 }
 
 function getSectionLimit(sectionConfig) {
@@ -94,23 +104,17 @@ function createCard({ title, subtitle, description, image, href, meta }) {
 
   const img = document.createElement("img");
   img.className = "cover";
-  img.src = image || BOOK_DETAIL_FALLBACK;
-  img.alt = title ? `Bìa sách ${title}` : "Bìa sách";
   img.width = 360;
   img.height = 500;
-  img.loading = "lazy";
-  img.decoding = "async";
-  img.addEventListener("error", () => {
-    if (img.dataset.fallbackApplied === "true") {
-      return;
-    }
-
-    img.dataset.fallbackApplied = "true";
-    img.src = BOOK_DETAIL_FALLBACK;
-  });
-
   const media = document.createElement("div");
   media.className = "book-media";
+  managedImageLoader?.mount({
+    imageNode: img,
+    frameNode: media,
+    src: image || BOOK_DETAIL_FALLBACK,
+    alt: title ? `Bìa sách ${title}` : "Bìa sách",
+    fallbackSrc: BOOK_DETAIL_FALLBACK
+  });
   media.appendChild(img);
 
   const content = document.createElement("div");
@@ -148,21 +152,17 @@ function createCard({ title, subtitle, description, image, href, meta }) {
   return article;
 }
 
-function setSectionState(section, message, type = "loading") {
-  const status = section.querySelector("[data-section-status]");
-  if (!status) {
+function renderSectionSkeletons(sectionElement, count) {
+  const grid = getSectionGrid(sectionElement);
+  if (!grid) {
     return;
   }
 
-  if (type === "ready") {
-    status.hidden = true;
-    status.textContent = "";
-    return;
-  }
+  skeletonRenderer?.renderBookCardGrid(grid, count);
+}
 
-  status.hidden = false;
-  status.textContent = message;
-  status.dataset.state = type;
+function clearSectionGrid(sectionElement) {
+  getSectionGrid(sectionElement)?.replaceChildren();
 }
 
 async function renderSeriesSection(sectionConfig, sectionElement) {
@@ -174,7 +174,7 @@ async function renderSeriesSection(sectionConfig, sectionElement) {
   }
 
   if (!itemIds.length) {
-    setSectionState(sectionElement, "Chưa có dữ liệu cho mục này.");
+    grid.replaceChildren();
     return;
   }
 
@@ -185,7 +185,7 @@ async function renderSeriesSection(sectionConfig, sectionElement) {
   const validSeries = seriesDetails.filter(Boolean);
 
   if (!validSeries.length) {
-    setSectionState(sectionElement, "Chưa tải được dữ liệu series.");
+    grid.replaceChildren();
     return;
   }
 
@@ -201,8 +201,6 @@ async function renderSeriesSection(sectionConfig, sectionElement) {
 
     grid.appendChild(card);
   });
-
-  setSectionState(sectionElement, "", "ready");
 }
 
 async function renderRecentSection(sectionConfig, sectionElement) {
@@ -217,14 +215,14 @@ async function renderRecentSection(sectionConfig, sectionElement) {
   const recentEntries = Array.isArray(bookIndex) ? bookIndex : [];
 
   if (!recentEntries.length) {
-    setSectionState(sectionElement, "Chưa có sách mới trong kho dữ liệu.");
+    grid.replaceChildren();
     return;
   }
 
   const validBooks = await loadRecentBooks(recentEntries, limit);
 
   if (!validBooks.length) {
-    setSectionState(sectionElement, "Chưa tải được dữ liệu bìa mới.");
+    grid.replaceChildren();
     return;
   }
 
@@ -246,8 +244,6 @@ async function renderRecentSection(sectionConfig, sectionElement) {
 
     grid.appendChild(card);
   });
-
-  setSectionState(sectionElement, "", "ready");
 }
 
 const SECTION_RENDERERS = {
@@ -262,6 +258,12 @@ async function main() {
     return;
   }
 
+  window.BiaCungPageLoader?.handoff("Đang tải trang chủ...");
+  sections.forEach((sectionElement) => {
+    const sectionId = sectionElement.dataset.homeSection;
+    renderSectionSkeletons(sectionElement, DEFAULT_HOME_SKELETON_COUNT[sectionId] || 4);
+  });
+
   try {
     const homeConfig = await fetchJson(HOME_DATA_URL);
 
@@ -272,24 +274,27 @@ async function main() {
         const renderSection = SECTION_RENDERERS[sectionId];
 
         if (!sectionConfig) {
-          setSectionState(sectionElement, "Mục này chưa được cấu hình.");
+          clearSectionGrid(sectionElement);
           return;
         }
 
         if (!renderSection) {
-          setSectionState(sectionElement, "Mục này chưa hỗ trợ hiển thị.");
+          clearSectionGrid(sectionElement);
           return;
         }
 
         try {
+          renderSectionSkeletons(sectionElement, getSectionSkeletonCount(sectionId, sectionConfig));
           await renderSection(sectionConfig, sectionElement);
         } catch (error) {
-          setSectionState(sectionElement, "Có lỗi khi tải dữ liệu.");
+          clearSectionGrid(sectionElement);
         }
       })
     );
   } catch (error) {
-    sections.forEach((section) => setSectionState(section, "Không tải được cấu hình trang chủ."));
+    sections.forEach((section) => {
+      clearSectionGrid(section);
+    });
   } finally {
     window.BiaCungPageLoader?.hide();
   }

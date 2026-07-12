@@ -23,10 +23,10 @@
 }
 
 .detail-loading {
+  display: grid;
+  gap: 1.1rem;
   margin: 0;
-  padding: 1.5rem;
-  color: var(--color-muted);
-  text-align: center;
+  padding: clamp(1rem, 2vw, 1.35rem);
 }
 
 .detail-empty {
@@ -57,6 +57,139 @@
   display: none !important;
 }
 
+.detail-skeleton-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.detail-skeleton-hero {
+  display: grid;
+  grid-template-columns: minmax(12.5rem, 0.48fr) minmax(0, 1.52fr);
+  gap: clamp(1rem, 2.4vw, 2rem);
+  padding: clamp(0.9rem, 2vw, 1.35rem);
+}
+
+.detail-skeleton-hero-media {
+  display: grid;
+}
+
+.detail-skeleton-cover {
+  inline-size: 100%;
+  min-block-size: clamp(15rem, 26vw, 19.5rem);
+  border-radius: calc(var(--radius-lg) - 0.2rem);
+}
+
+.detail-skeleton-hero-copy,
+.detail-skeleton-section,
+.detail-edition-card--skeleton .detail-edition-content,
+.detail-focus-card--skeleton .detail-focus-copy,
+.detail-focus-card--skeleton .detail-panel {
+  display: grid;
+  align-content: start;
+  gap: 0.75rem;
+}
+
+.detail-skeleton-kicker {
+  inline-size: 10rem;
+  block-size: 0.82rem;
+}
+
+.detail-skeleton-title {
+  inline-size: 100%;
+  block-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.detail-skeleton-title--short {
+  inline-size: 72%;
+}
+
+.detail-skeleton-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.detail-skeleton-pill {
+  inline-size: 7rem;
+  block-size: 1.85rem;
+  border-radius: 999px;
+}
+
+.detail-skeleton-pill--short {
+  inline-size: 5rem;
+}
+
+.detail-skeleton-section {
+  gap: 0.85rem;
+}
+
+.detail-skeleton-heading {
+  inline-size: min(14rem, 42%);
+  block-size: 1.65rem;
+}
+
+.detail-skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 1.6rem);
+  align-items: start;
+}
+
+.detail-edition-card--skeleton .detail-edition-card-inner {
+  justify-items: center;
+}
+
+.detail-edition-card--skeleton .detail-edition-media,
+.detail-focus-card--skeleton .detail-focus-cover,
+.detail-focus-card--skeleton .detail-thumb {
+  background: #fff;
+}
+
+.detail-focus-card--skeleton .detail-thumb {
+  display: block;
+  cursor: default;
+}
+
+.detail-skeleton-card-title {
+  inline-size: 88%;
+  block-size: 1rem;
+}
+
+.detail-skeleton-card-subtitle {
+  inline-size: 70%;
+  block-size: 0.82rem;
+}
+
+.detail-skeleton-card-meta {
+  inline-size: 46%;
+  block-size: 0.78rem;
+}
+
+.detail-focus-card--skeleton {
+  grid-column: 1 / -1;
+}
+
+.detail-skeleton-focus-title {
+  inline-size: min(19rem, 75%);
+  block-size: 1.9rem;
+}
+
+.detail-skeleton-panel-label {
+  inline-size: 7rem;
+  block-size: 0.72rem;
+}
+
+.detail-skeleton-panel-line {
+  inline-size: 100%;
+  block-size: 0.9rem;
+}
+
+.detail-skeleton-panel-line--short {
+  inline-size: 72%;
+}
+
 .detail-hero-card,
 .detail-focus-card {
   border: 1px solid var(--color-border);
@@ -79,6 +212,7 @@
 }
 
 .detail-cover-stage {
+  position: relative;
   display: grid;
   place-items: center;
   min-block-size: clamp(15rem, 26vw, 19.5rem);
@@ -87,6 +221,7 @@
   border-radius: calc(var(--radius-lg) - 0.2rem);
   background: #fff;
   box-shadow: 0 1rem 2.25rem rgb(38 34 54 / 10%);
+  overflow: hidden;
 }
 
 .detail-cover-stage img,
@@ -96,6 +231,15 @@
   max-inline-size: 100%;
   max-block-size: 100%;
   object-fit: contain;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.detail-cover-stage img.is-loaded,
+.detail-focus-cover img.is-loaded,
+.detail-edition-media img.is-loaded,
+.detail-thumb img.is-loaded {
+  opacity: 1;
 }
 
 .detail-thumb-row {
@@ -105,6 +249,7 @@
 }
 
 .detail-thumb {
+  position: relative;
   inline-size: clamp(4rem, 10vw, 5.3rem);
   aspect-ratio: 0.73;
   padding: 0.35rem;
@@ -280,6 +425,7 @@ a.detail-pill:focus-visible {
 }
 
 .detail-edition-media {
+  position: relative;
   inline-size: min(100%, 10rem);
   aspect-ratio: 0.72;
   display: grid;
@@ -289,12 +435,15 @@ a.detail-pill:focus-visible {
   border-radius: var(--radius-md);
   background: #fff;
   box-shadow: 0 0.95rem 1.8rem rgb(38 34 54 / 10%);
+  overflow: hidden;
 }
 
 .detail-edition-media img {
   inline-size: 100%;
   block-size: 100%;
   object-fit: contain;
+  opacity: 0;
+  transition: opacity 180ms ease;
 }
 
 .detail-edition-content {
@@ -372,6 +521,30 @@ a.detail-pill:focus-visible {
   box-shadow:
     inset 0 1px 0 rgb(255 255 255 / 80%),
     0 1.5rem 3rem rgb(38 34 54 / 10%);
+}
+
+.detail-cover-stage::after,
+.detail-focus-cover::after,
+.detail-edition-media::after,
+.detail-thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(110deg, rgb(255 255 255 / 0%) 0%, rgb(255 255 255 / 60%) 45%, rgb(255 255 255 / 0%) 100%),
+    linear-gradient(135deg, rgb(111 79 200 / 7%), rgb(111 79 200 / 2%));
+  background-size: 220% 100%, 100% 100%;
+  opacity: 0;
+  transition: opacity 180ms ease;
+  animation: detailImageSkeletonShimmer 1.35s linear infinite;
+  pointer-events: none;
+}
+
+.detail-cover-stage[data-image-state="loading"]::after,
+.detail-focus-cover[data-image-state="loading"]::after,
+.detail-edition-media[data-image-state="loading"]::after,
+.detail-thumb[data-image-state="loading"]::after {
+  opacity: 1;
 }
 
 .detail-focus-cover::before {
@@ -561,6 +734,7 @@ a.detail-meta-contributor-link:focus-visible {
 }
 
 @media (max-width: 62rem) {
+  .detail-skeleton-hero,
   .detail-hero-card,
   .detail-focus-body {
     grid-template-columns: 1fr;
@@ -575,6 +749,7 @@ a.detail-meta-contributor-link:focus-visible {
     gap: 0.9rem;
   }
 
+  .detail-skeleton-grid,
   .detail-edition-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -599,21 +774,25 @@ a.detail-meta-contributor-link:focus-visible {
     min-block-size: 0;
   }
 
+  .detail-skeleton-hero,
   .detail-hero-card,
   .detail-focus-card {
     border-radius: calc(var(--radius-lg) - 0.1rem);
     box-shadow: 0 1rem 2rem rgb(38 34 54 / 8%);
   }
 
+  .detail-skeleton-hero,
   .detail-hero-card {
     gap: 0.9rem;
     padding: 0.9rem;
   }
 
+  .detail-skeleton-hero-media,
   .detail-hero-media {
     justify-items: center;
   }
 
+  .detail-skeleton-cover,
   .detail-cover-stage {
     inline-size: min(100%, 15.5rem);
     min-block-size: auto;
@@ -621,6 +800,7 @@ a.detail-meta-contributor-link:focus-visible {
     padding: 0.5rem;
   }
 
+  .detail-skeleton-hero-copy,
   .detail-hero-copy {
     gap: 0.8rem;
     text-align: center;
@@ -655,6 +835,7 @@ a.detail-meta-contributor-link:focus-visible {
     margin-block-end: 0.8rem;
   }
 
+  .detail-skeleton-grid,
   .detail-edition-grid {
     grid-template-columns: 1fr;
   }
@@ -825,6 +1006,25 @@ a.detail-meta-contributor-link:focus-visible {
 
   .detail-description li + li {
     margin-block-start: 0.35rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .detail-cover-stage::after,
+  .detail-focus-cover::after,
+  .detail-edition-media::after,
+  .detail-thumb::after {
+    animation: none;
+  }
+}
+
+@keyframes detailImageSkeletonShimmer {
+  from {
+    background-position: 200% 0, 0 0;
+  }
+
+  to {
+    background-position: -20% 0, 0 0;
   }
 }
 
