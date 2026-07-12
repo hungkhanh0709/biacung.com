@@ -415,37 +415,59 @@ function updateSeriesIndexSeo(seriesCards) {
   }
 
   const description = truncateText(
-    `Khám phá ${seriesCards.length} series sách và danh sách tác phẩm thuộc từng bộ sách trên Bìa Cứng.`,
+    `Khám phá ${seriesCards.length} series sách, sách bộ và danh sách tác phẩm thuộc từng bộ sách trên Bìa Cứng.`,
     220
   );
 
   seo.setCanonical("series.html");
   seo.setMetaByName("description", description);
   seo.setMetaByProperty("og:url", `${seo.SITE_URL}series.html`);
-  seo.setMetaByProperty("og:title", "Series | Bìa Cứng");
+  seo.setMetaByProperty("og:title", "Series sách bộ | Bìa Cứng");
   seo.setMetaByProperty("og:description", description);
   seo.setMetaByProperty("og:image", seo.FALLBACK_IMAGE);
-  seo.setMetaByName("twitter:title", "Series | Bìa Cứng");
+  seo.setMetaByName("twitter:title", "Series sách bộ | Bìa Cứng");
   seo.setMetaByName("twitter:description", description);
   seo.setMetaByName("twitter:image", seo.FALLBACK_IMAGE);
 
   seo.setStructuredData("series-structured-data", {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: "Series | Bìa Cứng",
-    url: `${seo.SITE_URL}series.html`,
-    description,
-    inLanguage: "vi-VN",
-    mainEntity: {
-      "@type": "ItemList",
-      numberOfItems: seriesCards.length,
-      itemListElement: seriesCards.map((series, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        name: series.title,
-        url: seo.toAbsoluteUrl(series.href)
-      }))
-    }
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Trang chủ",
+            item: seo.SITE_URL
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Series",
+            item: `${seo.SITE_URL}series.html`
+          }
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        name: "Series sách bộ | Bìa Cứng",
+        url: `${seo.SITE_URL}series.html`,
+        description,
+        inLanguage: "vi-VN",
+        keywords: "series sách, sách bộ, bộ sách",
+        mainEntity: {
+          "@type": "ItemList",
+          numberOfItems: seriesCards.length,
+          itemListElement: seriesCards.map((series, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: series.title,
+            url: seo.toAbsoluteUrl(series.href)
+          }))
+        }
+      }
+    ]
   });
 }
 
@@ -478,22 +500,49 @@ function updateSeriesDetailSeo(series, books) {
 
   seo.setStructuredData("series-structured-data", {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: normalizeText(series.name || series.id),
-    url: pageUrl,
-    image: imageUrl,
-    description,
-    inLanguage: "vi-VN",
-    mainEntity: {
-      "@type": "ItemList",
-      numberOfItems: books.length,
-      itemListElement: books.map((book, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        name: book.title,
-        url: seo.toAbsoluteUrl(book.href)
-      }))
-    }
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Trang chủ",
+            item: seo.SITE_URL
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Series",
+            item: `${seo.SITE_URL}series.html`
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: normalizeText(series.name || series.id),
+            item: pageUrl
+          }
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        name: normalizeText(series.name || series.id),
+        url: pageUrl,
+        image: imageUrl,
+        description,
+        inLanguage: "vi-VN",
+        mainEntity: {
+          "@type": "ItemList",
+          numberOfItems: books.length,
+          itemListElement: books.map((book, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: book.title,
+            url: seo.toAbsoluteUrl(book.href)
+          }))
+        }
+      }
+    ]
   });
 }
 

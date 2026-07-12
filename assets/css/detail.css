@@ -652,8 +652,8 @@ a.detail-pill:focus-visible {
 
 .detail-meta-contributor-row {
   display: grid;
-  grid-template-columns: minmax(5.5rem, auto) minmax(0, 1fr);
-  gap: 0.45rem 0.9rem;
+  grid-template-columns: fit-content(4.75rem) minmax(0, 1fr);
+  gap: 0.35rem 0.6rem;
   align-items: start;
 }
 
@@ -986,8 +986,8 @@ a.detail-meta-contributor-link:focus-visible {
   }
 
   .detail-meta-contributor-row {
-    grid-template-columns: minmax(4.8rem, auto) minmax(0, 1fr);
-    gap: 0.35rem 0.75rem;
+    grid-template-columns: fit-content(4.2rem) minmax(0, 1fr);
+    gap: 0.3rem 0.5rem;
     align-items: center;
   }
 

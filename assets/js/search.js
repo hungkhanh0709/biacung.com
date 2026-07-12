@@ -60,10 +60,6 @@ function normalizeUrl(value) {
   return "";
 }
 
-function splitSearchTerms(value) {
-  return normalizeSearchText(value).split(/\s+/).filter(Boolean);
-}
-
 function isSafeDetailPath(path, pattern) {
   return pattern.test(normalizeText(path));
 }
@@ -79,40 +75,6 @@ function buildDetailUrl(type, slug) {
   }
 
   return `detail.html?id=${encodeURIComponent(value)}`;
-}
-
-function scoreSearchMatch(haystack, keyword, terms) {
-  if (!haystack || !keyword) {
-    return 0;
-  }
-
-  let score = 0;
-
-  if (haystack === keyword) {
-    score += 200;
-  } else if (haystack.startsWith(keyword)) {
-    score += 120;
-  } else if (haystack.includes(keyword)) {
-    score += 80;
-  }
-
-  terms.forEach((term) => {
-    if (haystack === term) {
-      score += 40;
-      return;
-    }
-
-    if (haystack.startsWith(term)) {
-      score += 20;
-      return;
-    }
-
-    if (haystack.includes(term)) {
-      score += 10;
-    }
-  });
-
-  return score;
 }
 
 async function fetchJson(url) {
@@ -254,7 +216,7 @@ function renderLoadingSkeletons(count = SEARCH_PAGE_SIZE) {
   skeletonRenderer?.renderBookCardGrid(resultsNode, count);
 }
 
-async function loadSeriesMatches(normalizedKeyword, searchTerms) {
+async function loadSeriesMatches(normalizedKeyword) {
   const homeConfig = await fetchJson(HOME_DATA_URL);
   const seriesConfig = Array.isArray(homeConfig)
     ? homeConfig.find((entry) => entry && entry.id === "series-focus")
@@ -282,18 +244,10 @@ async function loadSeriesMatches(normalizedKeyword, searchTerms) {
         return null;
       }
 
-      const score = scoreSearchMatch(text, normalizedKeyword, searchTerms);
-      return { series, score };
+      return series;
     })
     .filter(Boolean)
-    .sort((a, b) => {
-      if (!normalizedKeyword) {
-        return 0;
-      }
-
-      return b.score - a.score || normalizeText(a.series.name).localeCompare(normalizeText(b.series.name), "vi");
-    })
-    .map(({ series }) => ({
+    .map((series) => ({
       type: "series",
       title: normalizeText(series.name || series.id),
       subtitle: Array.isArray(series.work_ids) ? `${series.work_ids.length} tác phẩm` : "Series tuyển chọn",
@@ -304,7 +258,7 @@ async function loadSeriesMatches(normalizedKeyword, searchTerms) {
     }));
 }
 
-async function loadBookMatches(normalizedKeyword, searchTerms) {
+async function loadBookMatches(normalizedKeyword) {
   const bookIndex = await fetchJson(BOOK_INDEX_URL);
   const matchedEntries = Array.isArray(bookIndex)
     ? bookIndex
@@ -314,17 +268,9 @@ async function loadBookMatches(normalizedKeyword, searchTerms) {
           return null;
         }
 
-        const score = scoreSearchMatch(searchableText, normalizedKeyword, searchTerms);
-        return { entry, score };
+        return entry;
       })
       .filter(Boolean)
-      .sort((a, b) => {
-        if (!normalizedKeyword) {
-          return 0;
-        }
-
-        return b.score - a.score || normalizeText(a.entry?.search_text).localeCompare(normalizeText(b.entry?.search_text), "vi");
-      })
     : [];
 
   if (!matchedEntries.length) {
@@ -332,7 +278,7 @@ async function loadBookMatches(normalizedKeyword, searchTerms) {
   }
 
   const books = await Promise.all(
-    matchedEntries.map(async ({ entry }) => {
+    matchedEntries.map(async (entry) => {
       const detailPath = normalizeText(entry?.detail);
       if (!detailPath || !isSafeDetailPath(detailPath, SAFE_BOOK_DETAIL_PATH)) {
         return null;
@@ -384,10 +330,9 @@ async function renderResults() {
 
   try {
     const normalizedKeyword = normalizeSearchText(keyword);
-    const searchTerms = splitSearchTerms(keyword);
     const [seriesMatches, bookMatches] = await Promise.all([
-      loadSeriesMatches(normalizedKeyword, searchTerms),
-      loadBookMatches(normalizedKeyword, searchTerms)
+      loadSeriesMatches(normalizedKeyword),
+      loadBookMatches(normalizedKeyword)
     ]);
 
     const results = [...seriesMatches, ...bookMatches];

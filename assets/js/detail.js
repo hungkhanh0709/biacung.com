@@ -808,6 +808,12 @@ function updateSeoMetadata(book, edition) {
   );
   const editionName =
     normalizeText(edition.caption) || `${displayTitle} - ${normalizeText(edition.format) || "Phiên bản sưu tầm"}`;
+  const translators = dedupeStrings(edition.translators);
+  const illustrators = dedupeStrings(edition.illustrators);
+  const proofreaders = dedupeStrings(edition.proofreaders);
+  const seriesNames = dedupeStrings(book.series);
+  const publisherName = normalizeText(edition.publisher);
+  const keywords = collectBookTags(book).slice(0, 24).join(", ");
 
   seo.setCanonical(pagePath);
   seo.setMetaByName("description", description);
@@ -821,29 +827,77 @@ function updateSeoMetadata(book, edition) {
 
   seo.setStructuredData("book-structured-data", {
     "@context": "https://schema.org",
-    "@type": "Book",
-    name: displayTitle,
-    alternateName: normalizeText(book.title_original) || undefined,
-    url: pageUrl,
-    image: imageUrl,
-    inLanguage: "vi-VN",
-    description,
-    author: authors.map((author) => ({
-      "@type": "Person",
-      name: author
-    })),
-    workExample: {
-      "@type": "Book",
-      name: editionName,
-      bookFormat: normalizeText(edition.format) || undefined,
-      datePublished: normalizeText(edition.pub_year) || undefined,
-      publisher: normalizeText(edition.publisher)
-        ? {
-          "@type": "Organization",
-          name: normalizeText(edition.publisher)
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Trang chủ",
+            item: seo.SITE_URL
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: displayTitle,
+            item: pageUrl
+          }
+        ]
+      },
+      {
+        "@type": "Book",
+        name: displayTitle,
+        alternateName: normalizeText(book.title_original) || undefined,
+        url: pageUrl,
+        mainEntityOfPage: pageUrl,
+        image: imageUrl,
+        inLanguage: "vi-VN",
+        description,
+        keywords: keywords || undefined,
+        author: authors.map((author) => ({
+          "@type": "Person",
+          name: author
+        })),
+        translator: translators.map((name) => ({
+          "@type": "Person",
+          name
+        })),
+        illustrator: illustrators.map((name) => ({
+          "@type": "Person",
+          name
+        })),
+        editor: proofreaders.map((name) => ({
+          "@type": "Person",
+          name
+        })),
+        isPartOf: seriesNames.map((name) => ({
+          "@type": "CreativeWorkSeries",
+          name
+        })),
+        bookEdition: editionName,
+        bookFormat: normalizeText(edition.format) || undefined,
+        datePublished: normalizeText(edition.pub_year) || undefined,
+        publisher: publisherName
+          ? {
+            "@type": "Organization",
+            name: publisherName
+          }
+          : undefined,
+        workExample: {
+          "@type": "Book",
+          name: editionName,
+          bookFormat: normalizeText(edition.format) || undefined,
+          datePublished: normalizeText(edition.pub_year) || undefined,
+          publisher: publisherName
+            ? {
+              "@type": "Organization",
+              name: publisherName
+            }
+            : undefined
         }
-        : undefined
-    }
+      }
+    ]
   });
 }
 
