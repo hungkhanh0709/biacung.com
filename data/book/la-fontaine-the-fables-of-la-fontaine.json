@@ -1,0 +1,39 @@
+{
+  "id": "la-fontaine-the-fables-of-la-fontaine",
+  "title": "Ngụ Ngôn La Fontaine",
+  "title_original": "The Fables of La Fontaine",
+  "authors": [
+    "La Fontaine"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "la-fontaine-the-fables-of-la-fontaine-2022-dong-a-bia-cung-1100k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2022,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nhiều Người Dịch"
+      ],
+      "illustrators": [
+        "Gustave Doré"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "1100k",
+      "print_run": null,
+      "page_count": 828,
+      "copy_numbering": null,
+      "size_cm": "30.5 x 26.5 x 6.2",
+      "weight_g": 3660,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/l/a/la-fontaine---bia-ao---bia-1.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

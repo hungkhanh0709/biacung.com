@@ -6,6 +6,12 @@
     "last_pub_year": 2026
   },
   {
+    "detail": "data/book/george-rr-martin-fire-blood.json",
+    "search_text": "lua va mau fire blood george rr martin goodreads choice award nxb phu nu bach viet the gioi than thoai",
+    "updated_at": "2026-07-12",
+    "last_pub_year": 2026
+  },
+  {
     "detail": "data/book/franz-kafka-tuyen-tap-tac-pham-frank-kafka.json",
     "search_text": "tuyen tap tac pham frank kafka franz kafka nxb van hoc dong tay",
     "updated_at": "2026-07-10",
@@ -144,12 +150,6 @@
     "last_pub_year": 2026
   },
   {
-    "detail": "data/book/george-rr-martin-fire-blood.json",
-    "search_text": "lua va mau fire blood george rr martin goodreads choice award nxb thanh nien bach viet the gioi than thoai",
-    "updated_at": "2026-07-05",
-    "last_pub_year": 2026
-  },
-  {
     "detail": "data/book/hoang-nam-tien-sach-thu-cho-em.json",
     "search_text": "thu cho em hoang nam tien 50 nam fahasa nxb hoi nha van nha nam",
     "updated_at": "2026-07-05",
@@ -190,6 +190,12 @@
     "search_text": "thu vien nua dem the midnight library matt haig goodreads choice award nxb hoi nha van nha nam matryoshka",
     "updated_at": "2026-07-05",
     "last_pub_year": 2026
+  },
+  {
+    "detail": "data/book/ton-tu-ton-tu-binh-phap.json",
+    "search_text": "ton tu binh phap ton tu nxb dan tri dong a ngo van trien",
+    "last_pub_year": 2026,
+    "updated_at": "2026-07-12"
   },
   {
     "detail": "data/book/nguyen-nhat-anh-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim.json",
@@ -438,6 +444,24 @@
     "last_pub_year": 2024
   },
   {
+    "detail": "data/book/dao-duy-anh-viet-nam-van-hoa-su-cuong.json",
+    "search_text": "viet nam van hoa su cuong dao duy anh nxb dai hoc su pham dong a",
+    "last_pub_year": 2023,
+    "updated_at": "2026-07-12"
+  },
+  {
+    "detail": "data/book/johanna-spyri-heidi.json",
+    "search_text": "heidi johanna spyri dong a classic nxb van hoc dong a thanh van elena selivanova",
+    "last_pub_year": 2023,
+    "updated_at": "2026-07-12"
+  },
+  {
+    "detail": "data/book/victor-hugo-les-miserables.json",
+    "search_text": "nhung nguoi khon kho les miserables victor hugo dong a classic nxb van hoc dong a huynh ly vu dinh lien le tri vien do duc hieu gustave brion emile bayard",
+    "last_pub_year": 2023,
+    "updated_at": "2026-07-12"
+  },
+  {
     "detail": "data/book/jules-verne-vingt-mille-lieues-sous-les-mers.json",
     "search_text": "hai van dam duoi bien vingt mille lieues sous les mers jules verne dong a classic nxb van hoc dong a do ca son",
     "last_pub_year": 2023,
@@ -516,6 +540,24 @@
     "last_pub_year": 2023
   },
   {
+    "detail": "data/book/dk-nhung-tran-chien-thay-doi-lich-su.json",
+    "search_text": "nhung tran chien thay doi lich su dk nxb dan tri dong a nguyen minh",
+    "last_pub_year": 2022,
+    "updated_at": "2026-07-12"
+  },
+  {
+    "detail": "data/book/jane-bingham-the-internet-linked-encyclopedia-of-world-history.json",
+    "search_text": "bach khoa lich su the gioi the internetlinked encyclopedia of world history jane bingham fiona chandler sam taplin nxb dan tri dong a le thi oanh",
+    "last_pub_year": 2022,
+    "updated_at": "2026-07-12"
+  },
+  {
+    "detail": "data/book/la-fontaine-the-fables-of-la-fontaine.json",
+    "search_text": "ngu ngon la fontaine the fables of la fontaine la fontaine nxb van hoc dong a nhieu nguoi dich gustave dore",
+    "last_pub_year": 2022,
+    "updated_at": "2026-07-12"
+  },
+  {
     "detail": "data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json",
     "search_text": "dai viet su ky toan thu nhieu tac gia nxb van hoc dong a ngo duc tho hoang van lau",
     "last_pub_year": 2022,
@@ -556,6 +598,18 @@
     "search_text": "mahabharata bang hinh thien su thi vi dai nhat cua an do dk nxb dan tri dong a le thi oanh ho anh thai",
     "last_pub_year": 2021,
     "updated_at": "2026-07-11"
+  },
+  {
+    "detail": "data/book/alexandre-dumas-les-trois-mousquetaires.json",
+    "search_text": "ba nguoi linh ngu lam les trois mousquetaires alexandre dumas nxb van hoc dong a tran vu anh viet",
+    "last_pub_year": 2020,
+    "updated_at": "2026-07-12"
+  },
+  {
+    "detail": "data/book/irving-stone-lust-for-life.json",
+    "search_text": "khat vong song lust for life irving stone dong a classic nxb van hoc dong a vu dinh binh",
+    "last_pub_year": 2020,
+    "updated_at": "2026-07-12"
   },
   {
     "detail": "data/book/michael-collins-remarkable-books.json",
@@ -622,6 +676,12 @@
     "search_text": "sach lu muc dong mondo et autres histoires jmg le clezio canh cua mo rong nxb tre hoang anh quynh anh thu hong",
     "updated_at": "2026-07-05",
     "last_pub_year": 2016
+  },
+  {
+    "detail": "data/book/nhieu-tac-gia-bach-khoa-tri-thuc-bang-hinh.json",
+    "search_text": "bach khoa tri thuc bang hinh nhieu tac gia nxb dan tri dong a",
+    "last_pub_year": 2015,
+    "updated_at": "2026-07-12"
   },
   {
     "detail": "data/book/abhijit-v-banerjee-poor-economics-a-radical-rethinking-of-the-way-to-fight-global-poverty.json",
