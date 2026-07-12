@@ -1,0 +1,45 @@
+{
+  "id": "victor-hugo-les-miserables",
+  "title": "Những Người Khốn Khổ",
+  "title_original": "Les Misérables",
+  "authors": [
+    "Victor Hugo"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classic"
+  ],
+  "editions": [
+    {
+      "id": "victor-hugo-les-miserables-2023-dong-a-boxset-bia-mem-660k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2023,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Huỳnh Lý",
+        "Vũ Đình Liên",
+        "Lê Trí Viễn",
+        "Đỗ Đức Hiểu"
+      ],
+      "illustrators": [
+        "Gustave Brion",
+        "Émile Bayard"
+      ],
+      "proofreaders": [],
+      "format": "Boxset, bìa mềm",
+      "cover_price": "660k",
+      "print_run": null,
+      "page_count": 1620,
+      "copy_numbering": null,
+      "size_cm": "24 x 16 x 8.8",
+      "weight_g": 3600,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8936203363838.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

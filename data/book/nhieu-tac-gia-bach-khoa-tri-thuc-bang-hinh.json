@@ -1,0 +1,35 @@
+{
+  "id": "nhieu-tac-gia-bach-khoa-tri-thuc-bang-hinh",
+  "title": "Bách Khoa Tri Thức Bằng Hình",
+  "title_original": "",
+  "authors": [
+    "Nhiều Tác Giả"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "nhieu-tac-gia-bach-khoa-tri-thuc-bang-hinh-2015-dong-a-bia-cung-599k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2015,
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "599k",
+      "print_run": null,
+      "page_count": 800,
+      "copy_numbering": null,
+      "size_cm": "31 x 26.5 x 4",
+      "weight_g": 3525,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8936071672162.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

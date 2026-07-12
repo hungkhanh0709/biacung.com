@@ -1,0 +1,38 @@
+{
+  "id": "alexandre-dumas-les-trois-mousquetaires",
+  "title": "Ba Người Lính Ngự Lâm",
+  "title_original": "Les Trois Mousquetaires",
+  "authors": [
+    "Alexandre Dumas"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "alexandre-dumas-les-trois-mousquetaires-2020-dong-a-bia-mem-250k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2020,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Trần Vũ",
+        "Anh Việt"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "250k",
+      "print_run": null,
+      "page_count": 840,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 900,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/b/a/ba_nguoi_linh_ngu_lam_tai_ban_2020_1_2020_05_27_15_30_01.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

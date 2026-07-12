@@ -176,7 +176,8 @@
       "dk-triet-hoc-khai-luoc-nhung-tu-tuong-lon",
       "dk-lich-su-the-gioi-lich-su-the-gioi-chan-dung-nhan-loai-theo-dong-su-kien",
       "dk-lich-su-quan-su-bach-khoa-thu-cac-loai-vu-khi-dinh-hinh-the-gioi",
-      "dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do"
+      "dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do",
+      "dk-nhung-tran-chien-thay-doi-lich-su"
     ]
   },
   {
@@ -299,7 +300,9 @@
     "id": "victor-hugo",
     "name": "Victor Hugo",
     "work_ids": [
-      "victor-hugo-quatrevingt-treize"
+      "victor-hugo-quatrevingt-treize",
+      "victor-hugo-nhung-nguoi-khon-kho",
+      "victor-hugo-les-miserables"
     ]
   },
   {
@@ -530,7 +533,8 @@
     "id": "irving-stone",
     "name": "Irving Stone",
     "work_ids": [
-      "irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo"
+      "irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo",
+      "irving-stone-lust-for-life"
     ]
   },
   {
@@ -596,7 +600,8 @@
     "name": "Nhiều Tác Giả",
     "work_ids": [
       "nhieu-tac-gia-doan-tu-huyen-mot-nghe-nhan",
-      "nhieu-tac-gia-dai-viet-su-ky-toan-thu"
+      "nhieu-tac-gia-dai-viet-su-ky-toan-thu",
+      "nhieu-tac-gia-bach-khoa-tri-thuc-bang-hinh"
     ]
   },
   {
@@ -681,6 +686,62 @@
     "name": "Michael Collins",
     "work_ids": [
       "michael-collins-remarkable-books"
+    ]
+  },
+  {
+    "id": "jane-bingham",
+    "name": "Jane Bingham",
+    "work_ids": [
+      "jane-bingham-the-internet-linked-encyclopedia-of-world-history"
+    ]
+  },
+  {
+    "id": "fiona-chandler",
+    "name": "Fiona Chandler",
+    "work_ids": [
+      "jane-bingham-the-internet-linked-encyclopedia-of-world-history"
+    ]
+  },
+  {
+    "id": "sam-taplin",
+    "name": "Sam Taplin",
+    "work_ids": [
+      "jane-bingham-the-internet-linked-encyclopedia-of-world-history"
+    ]
+  },
+  {
+    "id": "ton-tu",
+    "name": "Tôn Tử",
+    "work_ids": [
+      "ton-tu-ton-tu-binh-phap"
+    ]
+  },
+  {
+    "id": "johanna-spyri",
+    "name": "Johanna Spyri",
+    "work_ids": [
+      "johanna-spyri-heidi"
+    ]
+  },
+  {
+    "id": "la-fontaine",
+    "name": "La Fontaine",
+    "work_ids": [
+      "la-fontaine-the-fables-of-la-fontaine"
+    ]
+  },
+  {
+    "id": "dao-duy-anh",
+    "name": "Đào Duy Anh",
+    "work_ids": [
+      "dao-duy-anh-viet-nam-van-hoa-su-cuong"
+    ]
+  },
+  {
+    "id": "alexandre-dumas",
+    "name": "Alexandre Dumas",
+    "work_ids": [
+      "alexandre-dumas-les-trois-mousquetaires"
     ]
   }
 ]

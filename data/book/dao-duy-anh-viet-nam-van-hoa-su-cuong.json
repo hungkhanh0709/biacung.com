@@ -1,0 +1,35 @@
+{
+  "id": "dao-duy-anh-viet-nam-van-hoa-su-cuong",
+  "title": "Việt Nam Văn Hoá Sử Cương",
+  "title_original": "",
+  "authors": [
+    "Đào Duy Anh"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "dao-duy-anh-viet-nam-van-hoa-su-cuong-2023-dong-a-bia-cung-390k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2023,
+      "publisher": "NXB Đại Học Sư Phạm",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "390k",
+      "print_run": null,
+      "page_count": 368,
+      "copy_numbering": null,
+      "size_cm": "26.5 x 18.5 x 2",
+      "weight_g": 500,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/b/_/b_a-ngo_i.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}
