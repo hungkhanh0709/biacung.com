@@ -162,13 +162,6 @@ function createCard({ title, subtitle, description, image, href, meta }) {
     content.appendChild(subtitleNode);
   }
 
-  // if (description) {
-  //   const descriptionNode = document.createElement("p");
-  //   descriptionNode.className = "book-description";
-  //   descriptionNode.textContent = description;
-  //   content.appendChild(descriptionNode);
-  // }
-
   if (meta) {
     const metaNode = document.createElement("p");
     metaNode.className = "book-meta";
@@ -331,7 +324,8 @@ async function renderResults() {
   try {
     const normalizedKeyword = normalizeSearchText(keyword);
     const [seriesMatches, bookMatches] = await Promise.all([
-      loadSeriesMatches(normalizedKeyword),
+      // loadSeriesMatches(normalizedKeyword), // Currently disabled due to limited series data
+      Promise.resolve([]),
       loadBookMatches(normalizedKeyword)
     ]);
 
