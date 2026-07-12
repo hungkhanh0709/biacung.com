@@ -18,6 +18,8 @@ const emptyNode = document.querySelector("[data-series-empty]");
 const resultsNode = document.querySelector("[data-series-results]");
 const actionsNode = document.querySelector("[data-series-actions]");
 const loadMoreButton = document.querySelector("[data-series-load-more]");
+const managedImageLoader = window.BiaCungImageLoader;
+const skeletonRenderer = window.BiaCungSkeleton;
 
 let currentResults = [];
 let visibleCount = 0;
@@ -149,6 +151,7 @@ function syncSearchInput() {
 }
 
 function setPageState(state) {
+  page?.classList.toggle("is-loading", state === "loading");
   page?.classList.toggle("is-empty", state === "empty" || state === "error");
   page?.classList.toggle("is-ready", state === "results");
 }
@@ -189,19 +192,14 @@ function createCard({ title, subtitle, description, image, href, meta }) {
 
   const img = document.createElement("img");
   img.className = "cover";
-  img.src = normalizeUrl(image) || BOOK_FALLBACK_COVER;
-  img.alt = title ? `Bìa sách ${title}` : "Bìa sách";
   img.width = 360;
   img.height = 500;
-  img.loading = "lazy";
-  img.decoding = "async";
-  img.addEventListener("error", () => {
-    if (img.dataset.fallbackApplied === "true") {
-      return;
-    }
-
-    img.dataset.fallbackApplied = "true";
-    img.src = BOOK_FALLBACK_COVER;
+  managedImageLoader?.mount({
+    imageNode: img,
+    frameNode: media,
+    src: normalizeUrl(image),
+    alt: title ? `Bìa sách ${title}` : "Bìa sách",
+    fallbackSrc: BOOK_FALLBACK_COVER
   });
   media.appendChild(img);
 
@@ -268,6 +266,10 @@ function setResults(results) {
   visibleCount = 0;
   resultsNode?.replaceChildren();
   appendVisibleResults();
+}
+
+function renderLoadingSkeletons(count = SEARCH_PAGE_SIZE) {
+  skeletonRenderer?.renderBookCardGrid(resultsNode, count);
 }
 
 async function loadAllSeriesCards() {
@@ -349,6 +351,7 @@ async function renderSeriesIndexPage() {
   const seriesCards = await loadAllSeriesCards();
 
   if (!seriesCards.length) {
+    resultsNode?.replaceChildren();
     setPageState("empty");
     updateCopy({
       title: "Danh sách series",
@@ -381,6 +384,7 @@ async function renderSeriesDetailPage() {
   document.title = `${normalizeText(series.name || series.id)} | Bìa Cứng`;
 
   if (!books.length) {
+    resultsNode?.replaceChildren();
     setPageState("empty");
     updateCopy({
       title: normalizeText(series.name || series.id),
@@ -411,37 +415,59 @@ function updateSeriesIndexSeo(seriesCards) {
   }
 
   const description = truncateText(
-    `Khám phá ${seriesCards.length} series sách và danh sách tác phẩm thuộc từng bộ sách trên Bìa Cứng.`,
+    `Khám phá ${seriesCards.length} series sách, sách bộ và danh sách tác phẩm thuộc từng bộ sách trên Bìa Cứng.`,
     220
   );
 
   seo.setCanonical("series.html");
   seo.setMetaByName("description", description);
   seo.setMetaByProperty("og:url", `${seo.SITE_URL}series.html`);
-  seo.setMetaByProperty("og:title", "Series | Bìa Cứng");
+  seo.setMetaByProperty("og:title", "Series sách bộ | Bìa Cứng");
   seo.setMetaByProperty("og:description", description);
   seo.setMetaByProperty("og:image", seo.FALLBACK_IMAGE);
-  seo.setMetaByName("twitter:title", "Series | Bìa Cứng");
+  seo.setMetaByName("twitter:title", "Series sách bộ | Bìa Cứng");
   seo.setMetaByName("twitter:description", description);
   seo.setMetaByName("twitter:image", seo.FALLBACK_IMAGE);
 
   seo.setStructuredData("series-structured-data", {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: "Series | Bìa Cứng",
-    url: `${seo.SITE_URL}series.html`,
-    description,
-    inLanguage: "vi-VN",
-    mainEntity: {
-      "@type": "ItemList",
-      numberOfItems: seriesCards.length,
-      itemListElement: seriesCards.map((series, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        name: series.title,
-        url: seo.toAbsoluteUrl(series.href)
-      }))
-    }
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Trang chủ",
+            item: seo.SITE_URL
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Series",
+            item: `${seo.SITE_URL}series.html`
+          }
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        name: "Series sách bộ | Bìa Cứng",
+        url: `${seo.SITE_URL}series.html`,
+        description,
+        inLanguage: "vi-VN",
+        keywords: "series sách, sách bộ, bộ sách",
+        mainEntity: {
+          "@type": "ItemList",
+          numberOfItems: seriesCards.length,
+          itemListElement: seriesCards.map((series, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: series.title,
+            url: seo.toAbsoluteUrl(series.href)
+          }))
+        }
+      }
+    ]
   });
 }
 
@@ -474,22 +500,49 @@ function updateSeriesDetailSeo(series, books) {
 
   seo.setStructuredData("series-structured-data", {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: normalizeText(series.name || series.id),
-    url: pageUrl,
-    image: imageUrl,
-    description,
-    inLanguage: "vi-VN",
-    mainEntity: {
-      "@type": "ItemList",
-      numberOfItems: books.length,
-      itemListElement: books.map((book, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        name: book.title,
-        url: seo.toAbsoluteUrl(book.href)
-      }))
-    }
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Trang chủ",
+            item: seo.SITE_URL
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Series",
+            item: `${seo.SITE_URL}series.html`
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: normalizeText(series.name || series.id),
+            item: pageUrl
+          }
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        name: normalizeText(series.name || series.id),
+        url: pageUrl,
+        image: imageUrl,
+        description,
+        inLanguage: "vi-VN",
+        mainEntity: {
+          "@type": "ItemList",
+          numberOfItems: books.length,
+          itemListElement: books.map((book, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: book.title,
+            url: seo.toAbsoluteUrl(book.href)
+          }))
+        }
+      }
+    ]
   });
 }
 
@@ -501,6 +554,16 @@ async function main() {
 
   syncSearchInput();
   resetRenderedResults();
+  setPageState("loading");
+  renderLoadingSkeletons();
+  updateCopy({
+    title: seriesId ? "Đang tải series" : "Danh sách series",
+    summary: seriesId
+      ? "Đang tải thông tin series và danh sách tác phẩm liên quan."
+      : "Đang tải danh sách series hiện có trên Bìa Cứng.",
+    empty: "Vui lòng chờ trong giây lát."
+  });
+  window.BiaCungPageLoader?.handoff("Đang tải dữ liệu series...");
 
   try {
     if (!seriesId) {
@@ -510,6 +573,7 @@ async function main() {
 
     await renderSeriesDetailPage();
   } catch (error) {
+    resultsNode?.replaceChildren();
     setPageState("empty");
     updateCopy({
       title: seriesId ? "Series không tồn tại" : "Danh sách series",

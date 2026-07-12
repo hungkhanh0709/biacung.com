@@ -1,7 +1,7 @@
 {
   "name": "Bìa Cứng",
   "short_name": "Bìa Cứng",
-  "description": "Nhặt từng bìa, trọn từng bộ!",
+  "description": "Website về sách bìa cứng, sách bộ và những ấn bản đẹp dành cho người sưu tầm.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f4ecde",

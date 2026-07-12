@@ -16,6 +16,8 @@ const emptyNode = document.querySelector("[data-search-empty]");
 const resultsNode = document.querySelector("[data-search-results]");
 const actionsNode = document.querySelector("[data-search-actions]");
 const loadMoreButton = document.querySelector("[data-search-load-more]");
+const managedImageLoader = window.BiaCungImageLoader;
+const skeletonRenderer = window.BiaCungSkeleton;
 
 let currentResults = [];
 let visibleCount = 0;
@@ -58,10 +60,6 @@ function normalizeUrl(value) {
   return "";
 }
 
-function splitSearchTerms(value) {
-  return normalizeSearchText(value).split(/\s+/).filter(Boolean);
-}
-
 function isSafeDetailPath(path, pattern) {
   return pattern.test(normalizeText(path));
 }
@@ -77,40 +75,6 @@ function buildDetailUrl(type, slug) {
   }
 
   return `detail.html?id=${encodeURIComponent(value)}`;
-}
-
-function scoreSearchMatch(haystack, keyword, terms) {
-  if (!haystack || !keyword) {
-    return 0;
-  }
-
-  let score = 0;
-
-  if (haystack === keyword) {
-    score += 200;
-  } else if (haystack.startsWith(keyword)) {
-    score += 120;
-  } else if (haystack.includes(keyword)) {
-    score += 80;
-  }
-
-  terms.forEach((term) => {
-    if (haystack === term) {
-      score += 40;
-      return;
-    }
-
-    if (haystack.startsWith(term)) {
-      score += 20;
-      return;
-    }
-
-    if (haystack.includes(term)) {
-      score += 10;
-    }
-  });
-
-  return score;
 }
 
 async function fetchJson(url) {
@@ -139,6 +103,7 @@ function syncSearchInputs(value) {
 }
 
 function setPageState(state) {
+  page?.classList.toggle("is-loading", state === "loading");
   page?.classList.toggle("is-empty", state === "empty" || state === "error" || state === "idle");
   page?.classList.toggle("is-ready", state === "results");
 }
@@ -171,19 +136,14 @@ function createCard({ title, subtitle, description, image, href, meta }) {
 
   const img = document.createElement("img");
   img.className = "cover";
-  img.src = normalizeUrl(image) || BOOK_FALLBACK_COVER;
-  img.alt = title ? `Bìa sách ${title}` : "Bìa sách";
   img.width = 360;
   img.height = 500;
-  img.loading = "lazy";
-  img.decoding = "async";
-  img.addEventListener("error", () => {
-    if (img.dataset.fallbackApplied === "true") {
-      return;
-    }
-
-    img.dataset.fallbackApplied = "true";
-    img.src = BOOK_FALLBACK_COVER;
+  managedImageLoader?.mount({
+    imageNode: img,
+    frameNode: media,
+    src: normalizeUrl(image),
+    alt: title ? `Bìa sách ${title}` : "Bìa sách",
+    fallbackSrc: BOOK_FALLBACK_COVER
   });
   media.appendChild(img);
 
@@ -201,13 +161,6 @@ function createCard({ title, subtitle, description, image, href, meta }) {
     subtitleNode.textContent = subtitle;
     content.appendChild(subtitleNode);
   }
-
-  // if (description) {
-  //   const descriptionNode = document.createElement("p");
-  //   descriptionNode.className = "book-description";
-  //   descriptionNode.textContent = description;
-  //   content.appendChild(descriptionNode);
-  // }
 
   if (meta) {
     const metaNode = document.createElement("p");
@@ -252,7 +205,11 @@ function setResults(results) {
   appendVisibleResults();
 }
 
-async function loadSeriesMatches(normalizedKeyword, searchTerms) {
+function renderLoadingSkeletons(count = SEARCH_PAGE_SIZE) {
+  skeletonRenderer?.renderBookCardGrid(resultsNode, count);
+}
+
+async function loadSeriesMatches(normalizedKeyword) {
   const homeConfig = await fetchJson(HOME_DATA_URL);
   const seriesConfig = Array.isArray(homeConfig)
     ? homeConfig.find((entry) => entry && entry.id === "series-focus")
@@ -280,18 +237,10 @@ async function loadSeriesMatches(normalizedKeyword, searchTerms) {
         return null;
       }
 
-      const score = scoreSearchMatch(text, normalizedKeyword, searchTerms);
-      return { series, score };
+      return series;
     })
     .filter(Boolean)
-    .sort((a, b) => {
-      if (!normalizedKeyword) {
-        return 0;
-      }
-
-      return b.score - a.score || normalizeText(a.series.name).localeCompare(normalizeText(b.series.name), "vi");
-    })
-    .map(({ series }) => ({
+    .map((series) => ({
       type: "series",
       title: normalizeText(series.name || series.id),
       subtitle: Array.isArray(series.work_ids) ? `${series.work_ids.length} tác phẩm` : "Series tuyển chọn",
@@ -302,7 +251,7 @@ async function loadSeriesMatches(normalizedKeyword, searchTerms) {
     }));
 }
 
-async function loadBookMatches(normalizedKeyword, searchTerms) {
+async function loadBookMatches(normalizedKeyword) {
   const bookIndex = await fetchJson(BOOK_INDEX_URL);
   const matchedEntries = Array.isArray(bookIndex)
     ? bookIndex
@@ -312,17 +261,9 @@ async function loadBookMatches(normalizedKeyword, searchTerms) {
           return null;
         }
 
-        const score = scoreSearchMatch(searchableText, normalizedKeyword, searchTerms);
-        return { entry, score };
+        return entry;
       })
       .filter(Boolean)
-      .sort((a, b) => {
-        if (!normalizedKeyword) {
-          return 0;
-        }
-
-        return b.score - a.score || normalizeText(a.entry?.search_text).localeCompare(normalizeText(b.entry?.search_text), "vi");
-      })
     : [];
 
   if (!matchedEntries.length) {
@@ -330,7 +271,7 @@ async function loadBookMatches(normalizedKeyword, searchTerms) {
   }
 
   const books = await Promise.all(
-    matchedEntries.map(async ({ entry }) => {
+    matchedEntries.map(async (entry) => {
       const detailPath = normalizeText(entry?.detail);
       if (!detailPath || !isSafeDetailPath(detailPath, SAFE_BOOK_DETAIL_PATH)) {
         return null;
@@ -372,23 +313,26 @@ async function renderResults() {
     ? `Kết quả tìm kiếm “${keyword}” | Bìa Cứng`
     : "Tất cả kết quả | Bìa Cứng";
   setPageState("loading");
+  renderLoadingSkeletons();
   updateEmptyState(
     hasKeyword
       ? `Đang tra cứu dữ liệu cho “${keyword}”.`
       : "Đang tải toàn bộ bìa sách và series hiện có."
   );
+  window.BiaCungPageLoader?.handoff("Đang tải kết quả tìm kiếm...");
 
   try {
     const normalizedKeyword = normalizeSearchText(keyword);
-    const searchTerms = splitSearchTerms(keyword);
     const [seriesMatches, bookMatches] = await Promise.all([
-      loadSeriesMatches(normalizedKeyword, searchTerms),
-      loadBookMatches(normalizedKeyword, searchTerms)
+      // loadSeriesMatches(normalizedKeyword), // Currently disabled due to limited series data
+      Promise.resolve([]),
+      loadBookMatches(normalizedKeyword)
     ]);
 
     const results = [...seriesMatches, ...bookMatches];
 
     if (!results.length) {
+      resultsNode?.replaceChildren();
       setPageState("empty");
       updateEmptyState(
         hasKeyword
@@ -401,6 +345,7 @@ async function renderResults() {
     setResults(results);
     setPageState("results");
   } catch (error) {
+    resultsNode?.replaceChildren();
     setPageState("error");
     updateEmptyState("Không thể tải dữ liệu tìm kiếm lúc này. Vui lòng thử lại sau.");
   } finally {

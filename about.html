@@ -2,29 +2,29 @@
 <html lang="vi">
 
 <head>
-  <title>Giới thiệu | Bìa Cứng</title>
+  <title>Giới thiệu Bìa Cứng | Website về sách bìa cứng và sách bộ</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description"
-    content="Tìm hiểu về Bìa Cứng, dự án lưu trữ và trưng bày những ấn bản sách đẹp dành cho người sưu tầm." />
+    content="Tìm hiểu về Bìa Cứng, website về sách bìa cứng, sách bộ và những ấn bản đẹp dành cho người sưu tầm." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta name="theme-color" content="#f4ecde" />
 
   <meta property="og:url" content="https://biacung.com/about.html" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="vi_VN" />
-  <meta property="og:title" content="Giới thiệu | Bìa Cứng" />
+  <meta property="og:title" content="Giới thiệu Bìa Cứng | Website về sách bìa cứng và sách bộ" />
   <meta property="og:image" content="https://biacung.com/assets/img/favicon/android-chrome-512x512.png" />
   <meta property="og:site_name" content="Bìa Cứng" />
   <meta property="og:description"
-    content="Tìm hiểu về Bìa Cứng, dự án lưu trữ và trưng bày những ấn bản sách đẹp dành cho người sưu tầm." />
+    content="Tìm hiểu về Bìa Cứng, website về sách bìa cứng, sách bộ và những ấn bản đẹp dành cho người sưu tầm." />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Giới thiệu | Bìa Cứng" />
+  <meta name="twitter:title" content="Giới thiệu Bìa Cứng | Website về sách bìa cứng và sách bộ" />
   <meta name="twitter:description"
-    content="Tìm hiểu về Bìa Cứng, dự án lưu trữ và trưng bày những ấn bản sách đẹp dành cho người sưu tầm." />
+    content="Tìm hiểu về Bìa Cứng, website về sách bìa cứng, sách bộ và những ấn bản đẹp dành cho người sưu tầm." />
   <meta name="twitter:image" content="https://biacung.com/assets/img/favicon/android-chrome-512x512.png" />
   <link rel="canonical" href="https://biacung.com/about.html" />
 
@@ -51,21 +51,25 @@
     {
       "@context": "https://schema.org",
       "@type": "AboutPage",
-      "name": "Giới thiệu | Bìa Cứng",
+      "name": "Giới thiệu Bìa Cứng | Website về sách bìa cứng và sách bộ",
       "url": "https://biacung.com/about.html",
-      "description": "Tìm hiểu về Bìa Cứng, dự án lưu trữ và trưng bày những ấn bản sách đẹp dành cho người sưu tầm.",
+      "description": "Tìm hiểu về Bìa Cứng, website về sách bìa cứng, sách bộ và những ấn bản đẹp dành cho người sưu tầm.",
       "mainEntity": {
         "@type": "Organization",
         "name": "Bìa Cứng",
         "url": "https://biacung.com/",
         "logo": "https://biacung.com/assets/img/core/logo.png",
-        "slogan": "Nhặt từng bìa, trọn từng bộ!"
+        "slogan": "Nhặt từng bìa, trọn từng bộ!",
+        "sameAs": [
+          "https://www.facebook.com/biacunglib/",
+          "https://www.tiktok.com/@dimuasach"
+        ]
       }
     }
   </script>
 </head>
 
-<body>
+<body class="about-page">
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/" aria-label="Bìa Cứng trang chủ">
@@ -157,15 +161,15 @@
 
         <div class="about-stats" aria-live="polite">
           <div class="about-stat">
-            <span class="value" id="author-count">-</span>
+            <span class="value skeleton-block skeleton-inline" id="author-count" data-about-stat-value></span>
             <span class="label">Tác giả</span>
           </div>
           <div class="about-stat">
-            <span class="value" id="book-count">-</span>
+            <span class="value skeleton-block skeleton-inline" id="book-count" data-about-stat-value></span>
             <span class="label">Tựa sách</span>
           </div>
           <div class="about-stat">
-            <span class="value" id="edition-count">-</span>
+            <span class="value skeleton-block skeleton-inline" id="edition-count" data-about-stat-value></span>
             <span class="label">Bản bìa</span>
           </div>
         </div>
