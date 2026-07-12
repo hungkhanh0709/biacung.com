@@ -26,6 +26,7 @@ const editionSummaryNode = document.querySelector("[data-edition-summary]");
 const editionDescriptionNode = document.querySelector("[data-edition-description]");
 const headerInput = document.querySelector("#site-search");
 const mobileDetailLayoutQuery = window.matchMedia("(max-width: 44rem)");
+const managedImageLoader = window.BiaCungImageLoader;
 
 let currentBook = null;
 let activeEditionIndex = 0;
@@ -296,17 +297,13 @@ function setImageSource(imageNode, src, alt) {
     return;
   }
 
-  imageNode.dataset.fallbackApplied = "false";
-  imageNode.alt = alt;
-  imageNode.onerror = () => {
-    if (imageNode.dataset.fallbackApplied === "true") {
-      return;
-    }
-
-    imageNode.dataset.fallbackApplied = "true";
-    imageNode.src = BOOK_FALLBACK_COVER;
-  };
-  imageNode.src = src || BOOK_FALLBACK_COVER;
+  managedImageLoader?.mount({
+    imageNode,
+    frameNode: imageNode.parentElement,
+    src: src || BOOK_FALLBACK_COVER,
+    alt,
+    fallbackSrc: BOOK_FALLBACK_COVER
+  });
 }
 
 function getEditionImageUrls(edition) {
@@ -362,10 +359,6 @@ function summarizeBook(book, edition) {
   }
 
   return parts.join(" ");
-}
-
-function formatCountLabel(count, singular, plural = singular) {
-  return `${count} ${count === 1 ? singular : plural}`;
 }
 
 function formatValue(value, suffix = "") {
@@ -581,7 +574,13 @@ function renderHeroImage(book) {
     return;
   }
 
-  setImageSource(heroCoverNode, getHeroImageUrl(book), `Bìa sách ${getDisplayTitle(book)}`);
+  managedImageLoader?.mount({
+    imageNode: heroCoverNode,
+    frameNode: heroCoverNode.closest(".detail-cover-stage"),
+    src: getHeroImageUrl(book),
+    alt: `Bìa sách ${getDisplayTitle(book)}`,
+    fallbackSrc: BOOK_FALLBACK_COVER
+  });
 }
 
 function renderEditionGallery(edition) {
@@ -613,13 +612,13 @@ function renderEditionGallery(edition) {
     });
 
     const imageNode = document.createElement("img");
-    imageNode.src = image || BOOK_FALLBACK_COVER;
-    imageNode.alt = "";
-    imageNode.loading = "lazy";
-    imageNode.decoding = "async";
-    imageNode.onerror = () => {
-      imageNode.src = BOOK_FALLBACK_COVER;
-    };
+    managedImageLoader?.mount({
+      imageNode,
+      frameNode: button,
+      src: image,
+      alt: "",
+      fallbackSrc: BOOK_FALLBACK_COVER
+    });
 
     button.appendChild(imageNode);
     editionGalleryNode.appendChild(button);
@@ -708,15 +707,15 @@ function renderEditions(book) {
     media.className = "detail-edition-media";
 
     const image = document.createElement("img");
-    image.alt = "";
     image.width = 240;
     image.height = 340;
-    image.loading = "lazy";
-    image.decoding = "async";
-    image.onerror = () => {
-      image.src = BOOK_FALLBACK_COVER;
-    };
-    image.src = normalizeUrl(edition.thumbnail) || BOOK_FALLBACK_COVER;
+    managedImageLoader?.mount({
+      imageNode: image,
+      frameNode: media,
+      src: normalizeUrl(edition.thumbnail),
+      alt: "",
+      fallbackSrc: BOOK_FALLBACK_COVER
+    });
 
     const content = document.createElement("div");
     content.className = "detail-edition-content";
@@ -809,6 +808,12 @@ function updateSeoMetadata(book, edition) {
   );
   const editionName =
     normalizeText(edition.caption) || `${displayTitle} - ${normalizeText(edition.format) || "Phiên bản sưu tầm"}`;
+  const translators = dedupeStrings(edition.translators);
+  const illustrators = dedupeStrings(edition.illustrators);
+  const proofreaders = dedupeStrings(edition.proofreaders);
+  const seriesNames = dedupeStrings(book.series);
+  const publisherName = normalizeText(edition.publisher);
+  const keywords = collectBookTags(book).slice(0, 24).join(", ");
 
   seo.setCanonical(pagePath);
   seo.setMetaByName("description", description);
@@ -822,29 +827,77 @@ function updateSeoMetadata(book, edition) {
 
   seo.setStructuredData("book-structured-data", {
     "@context": "https://schema.org",
-    "@type": "Book",
-    name: displayTitle,
-    alternateName: normalizeText(book.title_original) || undefined,
-    url: pageUrl,
-    image: imageUrl,
-    inLanguage: "vi-VN",
-    description,
-    author: authors.map((author) => ({
-      "@type": "Person",
-      name: author
-    })),
-    workExample: {
-      "@type": "Book",
-      name: editionName,
-      bookFormat: normalizeText(edition.format) || undefined,
-      datePublished: normalizeText(edition.pub_year) || undefined,
-      publisher: normalizeText(edition.publisher)
-        ? {
-          "@type": "Organization",
-          name: normalizeText(edition.publisher)
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Trang chủ",
+            item: seo.SITE_URL
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: displayTitle,
+            item: pageUrl
+          }
+        ]
+      },
+      {
+        "@type": "Book",
+        name: displayTitle,
+        alternateName: normalizeText(book.title_original) || undefined,
+        url: pageUrl,
+        mainEntityOfPage: pageUrl,
+        image: imageUrl,
+        inLanguage: "vi-VN",
+        description,
+        keywords: keywords || undefined,
+        author: authors.map((author) => ({
+          "@type": "Person",
+          name: author
+        })),
+        translator: translators.map((name) => ({
+          "@type": "Person",
+          name
+        })),
+        illustrator: illustrators.map((name) => ({
+          "@type": "Person",
+          name
+        })),
+        editor: proofreaders.map((name) => ({
+          "@type": "Person",
+          name
+        })),
+        isPartOf: seriesNames.map((name) => ({
+          "@type": "CreativeWorkSeries",
+          name
+        })),
+        bookEdition: editionName,
+        bookFormat: normalizeText(edition.format) || undefined,
+        datePublished: normalizeText(edition.pub_year) || undefined,
+        publisher: publisherName
+          ? {
+            "@type": "Organization",
+            name: publisherName
+          }
+          : undefined,
+        workExample: {
+          "@type": "Book",
+          name: editionName,
+          bookFormat: normalizeText(edition.format) || undefined,
+          datePublished: normalizeText(edition.pub_year) || undefined,
+          publisher: publisherName
+            ? {
+              "@type": "Organization",
+              name: publisherName
+            }
+            : undefined
         }
-        : undefined
-    }
+      }
+    ]
   });
 }
 
@@ -877,16 +930,16 @@ function renderBook(book) {
     });
   }
 
+  setPageState("ready");
   renderHeroImage(book);
   renderEditions(book);
   renderActiveEdition();
-
-  setPageState("ready");
 }
 
 async function main() {
   syncSearchInput({ title: "" });
   setPageState("loading");
+  window.BiaCungPageLoader?.handoff("Đang tải chi tiết sách...");
 
   if (!bookId) {
     setPageState("empty");

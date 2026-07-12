@@ -624,7 +624,15 @@ input:focus-visible {
   gap: 1rem;
 }
 
+.book-card-surface {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 1rem;
+}
+
 .book-media {
+  position: relative;
   inline-size: min(100%, clamp(12rem, 18vw, 14.5rem));
   block-size: clamp(13.5rem, 20vw, 17rem);
   display: grid;
@@ -637,6 +645,24 @@ input:focus-visible {
   background: #fff;
   overflow: hidden;
   transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.book-media::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(110deg, rgb(255 255 255 / 0%) 0%, rgb(255 255 255 / 55%) 45%, rgb(255 255 255 / 0%) 100%),
+    linear-gradient(135deg, rgb(111 79 200 / 7%), rgb(111 79 200 / 2%));
+  background-size: 220% 100%, 100% 100%;
+  opacity: 0;
+  transition: opacity 180ms ease;
+  animation: imageSkeletonShimmer 1.35s linear infinite;
+  pointer-events: none;
+}
+
+.book-media[data-image-state="loading"]::before {
+  opacity: 1;
 }
 
 .book-card a:hover .book-media {
@@ -652,12 +678,67 @@ input:focus-visible {
   max-block-size: 100%;
   object-fit: contain;
   object-position: center center;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.cover.is-loaded {
+  opacity: 1;
 }
 
 .book-card-content {
   display: grid;
   gap: 0.22rem;
   inline-size: min(100%, 17rem);
+}
+
+.book-card--skeleton .book-media {
+  transform: none;
+  box-shadow: 0 1rem 2.4rem rgb(38 34 54 / 8%);
+}
+
+.book-card--skeleton .book-card-content {
+  align-content: start;
+}
+
+.skeleton-block,
+.skeleton-line {
+  display: block;
+  border-radius: 999px;
+  background:
+    linear-gradient(110deg, rgb(255 255 255 / 0%) 0%, rgb(255 255 255 / 58%) 45%, rgb(255 255 255 / 0%) 100%),
+    linear-gradient(135deg, rgb(111 79 200 / 9%), rgb(111 79 200 / 3%));
+  background-size: 220% 100%, 100% 100%;
+  animation: imageSkeletonShimmer 1.35s linear infinite;
+}
+
+.skeleton-line {
+  inline-size: 100%;
+  block-size: 0.88rem;
+}
+
+.skeleton-line--title {
+  inline-size: 88%;
+  block-size: 1.2rem;
+}
+
+.skeleton-line--subtitle {
+  inline-size: 68%;
+}
+
+.skeleton-line--description {
+  inline-size: 94%;
+}
+
+.skeleton-line--meta {
+  inline-size: 42%;
+}
+
+.skeleton-inline {
+  display: inline-block;
+  min-inline-size: 3ch;
+  min-block-size: 1em;
+  vertical-align: middle;
 }
 
 .book-title {
@@ -693,13 +774,6 @@ input:focus-visible {
   display: flex;
   justify-content: center;
   margin-block-start: clamp(2rem, 4vw, 3rem);
-}
-
-.section-status {
-  margin-block-start: 1rem;
-  color: var(--color-muted);
-  font-size: 0.95rem;
-  text-align: center;
 }
 
 .button-primary {
@@ -952,6 +1026,18 @@ input:focus-visible {
     box-shadow: var(--shadow-soft);
   }
 
+  .book-card-surface {
+    grid-template-columns: auto minmax(0, 1fr);
+    justify-items: start;
+    align-items: start;
+    gap: 0.95rem;
+    padding: 0.9rem;
+    border: 1px solid var(--color-border);
+    border-radius: calc(var(--radius-lg) + 0.15rem);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-soft);
+  }
+
   .book-media {
     inline-size: 8.5rem;
     block-size: 11rem;
@@ -999,6 +1085,12 @@ input:focus-visible {
     text-align: center;
   }
 
+  .book-card-surface {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
   .book-media {
     inline-size: min(100%, 8.75rem);
     block-size: 11.35rem;
@@ -1023,5 +1115,24 @@ input:focus-visible {
   .submenu-toggle::before,
   .submenu {
     transition: none;
+  }
+
+  .book-media::before {
+    animation: none;
+  }
+
+  .skeleton-block,
+  .skeleton-line {
+    animation: none;
+  }
+}
+
+@keyframes imageSkeletonShimmer {
+  from {
+    background-position: 200% 0, 0 0;
+  }
+
+  to {
+    background-position: -20% 0, 0 0;
   }
 }
