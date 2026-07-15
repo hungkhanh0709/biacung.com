@@ -1,8 +1,20 @@
 [
   {
+    "detail": "data/book/frank-herbert-children-of-dune.json",
+    "search_text": "hau due xu cat dune 3 children of dune frank herbert dune nxb the gioi nha nam hai stark",
+    "last_pub_year": 2026,
+    "updated_at": "2026-07-15"
+  },
+  {
+    "detail": "data/book/phong-tu-khai-tung-bach-dan-suong-truc-chiu-han.json",
+    "search_text": "tung bach dan suong truc chiu han phong tu khai nxb ha noi nha nam nhuong le",
+    "last_pub_year": 2026,
+    "updated_at": "2026-07-15"
+  },
+  {
     "detail": "data/book/homere-odyssee.json",
     "search_text": "anh hung ca odyssee odyssee homere nxb van hoc dong a hoang huu dan john flaxman",
-    "updated_at": "2026-07-11",
+    "updated_at": "2026-07-14",
     "last_pub_year": 2026
   },
   {
@@ -10,6 +22,12 @@
     "search_text": "lua va mau fire blood george rr martin goodreads choice award nxb phu nu bach viet the gioi than thoai",
     "updated_at": "2026-07-12",
     "last_pub_year": 2026
+  },
+  {
+    "detail": "data/book/ton-tu-ton-tu-binh-phap.json",
+    "search_text": "ton tu binh phap ton tu nxb dan tri dong a ngo van trien",
+    "last_pub_year": 2026,
+    "updated_at": "2026-07-12"
   },
   {
     "detail": "data/book/franz-kafka-tuyen-tap-tac-pham-frank-kafka.json",
@@ -190,12 +208,6 @@
     "search_text": "thu vien nua dem the midnight library matt haig goodreads choice award nxb hoi nha van nha nam matryoshka",
     "updated_at": "2026-07-05",
     "last_pub_year": 2026
-  },
-  {
-    "detail": "data/book/ton-tu-ton-tu-binh-phap.json",
-    "search_text": "ton tu binh phap ton tu nxb dan tri dong a ngo van trien",
-    "last_pub_year": 2026,
-    "updated_at": "2026-07-12"
   },
   {
     "detail": "data/book/nguyen-nhat-anh-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim.json",

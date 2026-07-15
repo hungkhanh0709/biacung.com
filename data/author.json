@@ -743,5 +743,19 @@
     "work_ids": [
       "alexandre-dumas-les-trois-mousquetaires"
     ]
+  },
+  {
+    "id": "frank-herbert",
+    "name": "Frank Herbert",
+    "work_ids": [
+      "frank-herbert-children-of-dune"
+    ]
+  },
+  {
+    "id": "phong-tu-khai",
+    "name": "Phong Tử Khải",
+    "work_ids": [
+      "phong-tu-khai-tung-bach-dan-suong-truc-chiu-han"
+    ]
   }
 ]
