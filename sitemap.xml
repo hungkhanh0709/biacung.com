@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://biacung.com/</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://biacung.com/series.html</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://biacung.com/series.html?id=dong-a-classic</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://biacung.com/series.html?id=moi-nha-van-mot-tac-pham</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -87,6 +87,12 @@
   <url>
     <loc>https://biacung.com/detail.html?id=homere-odyssee</loc>
     <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail.html?id=george-rr-martin-fire-blood</loc>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -229,12 +235,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=george-rr-martin-fire-blood</loc>
-    <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://biacung.com/detail.html?id=hoang-nam-tien-sach-thu-cho-em</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -273,6 +273,12 @@
   <url>
     <loc>https://biacung.com/detail.html?id=matt-haig-the-midnight-library</loc>
     <lastmod>2026-07-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail.html?id=ton-tu-ton-tu-binh-phap</loc>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -523,6 +529,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://biacung.com/detail.html?id=dao-duy-anh-viet-nam-van-hoa-su-cuong</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail.html?id=johanna-spyri-heidi</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail.html?id=victor-hugo-les-miserables</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://biacung.com/detail.html?id=jules-verne-vingt-mille-lieues-sous-les-mers</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -601,6 +625,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://biacung.com/detail.html?id=dk-nhung-tran-chien-thay-doi-lich-su</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail.html?id=jane-bingham-the-internet-linked-encyclopedia-of-world-history</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail.html?id=la-fontaine-the-fables-of-la-fontaine</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://biacung.com/detail.html?id=nhieu-tac-gia-dai-viet-su-ky-toan-thu</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -639,6 +681,18 @@
   <url>
     <loc>https://biacung.com/detail.html?id=dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do</loc>
     <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail.html?id=alexandre-dumas-les-trois-mousquetaires</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail.html?id=irving-stone-lust-for-life</loc>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -705,6 +759,12 @@
   <url>
     <loc>https://biacung.com/detail.html?id=jmg-le-clezio-mondo-et-autres-histoires</loc>
     <lastmod>2026-07-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail.html?id=nhieu-tac-gia-bach-khoa-tri-thuc-bang-hinh</loc>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

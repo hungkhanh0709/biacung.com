@@ -1,0 +1,41 @@
+{
+  "id": "johanna-spyri-heidi",
+  "title": "Heidi",
+  "title_original": "",
+  "authors": [
+    "Johanna Spyri"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classic"
+  ],
+  "editions": [
+    {
+      "id": "johanna-spyri-heidi-2023-dong-a-bia-cung-280k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2023,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Thanh Vân"
+      ],
+      "illustrators": [
+        "Elena Selivanova"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "280k",
+      "print_run": null,
+      "page_count": 304,
+      "copy_numbering": null,
+      "size_cm": "24 x 15.5 x 2",
+      "weight_g": 1200,
+      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/b/_/b_a-1---heidi---copy.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}
