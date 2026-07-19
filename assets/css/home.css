@@ -256,17 +256,22 @@ input:focus-visible {
 }
 
 .nav-item:hover .nav-link,
-.nav-item:focus-within .nav-link {
+.nav-item:focus-within .nav-link,
+.nav-link.is-active,
+.has-active-descendant > .nav-link-row .nav-link {
   color: var(--color-primary-dark);
 }
 
 .nav-item:hover .nav-link::after,
-.nav-item:focus-within .nav-link::after {
+.nav-item:focus-within .nav-link::after,
+.nav-link.is-active::after,
+.has-active-descendant > .nav-link-row .nav-link::after {
   transform: scaleX(1);
 }
 
 .has-submenu:hover .nav-link::before,
-.has-submenu:focus-within .nav-link::before {
+.has-submenu:focus-within .nav-link::before,
+.has-submenu.has-active-descendant > .nav-link-row .nav-link::before {
   transform: translateY(0.12rem) rotate(225deg);
 }
 
@@ -309,6 +314,11 @@ input:focus-visible {
 
 .submenu a:hover,
 .submenu a:focus-visible {
+  color: var(--color-primary-dark);
+  background: var(--color-primary-soft);
+}
+
+.submenu a.is-active {
   color: var(--color-primary-dark);
   background: var(--color-primary-soft);
 }

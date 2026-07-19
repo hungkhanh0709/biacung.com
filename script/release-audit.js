@@ -100,6 +100,22 @@ function auditStaticPages(rootDir, errors) {
       `${file} is missing Chauchaubook navigation link`
     );
   });
+
+  const cssVersionChecks = [
+    { file: "index.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v='] },
+    { file: "about.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/about.css?v='] },
+    { file: "search.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/search.css?v='] },
+    { file: "series.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/search.css?v='] },
+    { file: "detail.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/detail.css?v='] },
+    { file: "award/index.html", snippets: ['../assets/css/tokens.css?v=', '../assets/css/home.css?v=', '../assets/css/award.css?v='] }
+  ];
+
+  cssVersionChecks.forEach((rule) => {
+    const content = readFileSafe(path.join(rootDir, rule.file));
+    rule.snippets.forEach((snippet) => {
+      pushIfMissing(errors, content.includes(snippet), `${rule.file} is missing CSS cache-busting version: ${snippet}`);
+    });
+  });
 }
 
 function auditCoreFiles(rootDir, errors) {
