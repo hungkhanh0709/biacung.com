@@ -266,7 +266,6 @@
 .detail-thumb.is-active {
   border-color: var(--color-primary);
   box-shadow: 0 0.85rem 1.45rem rgb(111 79 200 / 18%);
-  transform: translateY(-0.12rem);
 }
 
 .detail-thumb img {
@@ -309,7 +308,7 @@
   margin: 0;
   color: var(--color-primary-dark);
   font-family: var(--font-heading);
-  line-height: 1.08;
+  line-height: 1.4;
   letter-spacing: -0.03em;
 }
 
@@ -654,7 +653,7 @@ a.detail-pill:focus-visible {
   display: grid;
   grid-template-columns: fit-content(4.75rem) minmax(0, 1fr);
   gap: 0.35rem 0.6rem;
-  align-items: start;
+  align-items: baseline;
 }
 
 .detail-meta-contributor-role {
@@ -906,6 +905,7 @@ a.detail-meta-contributor-link:focus-visible {
   .detail-focus-kicker {
     font-size: 0.7rem;
     letter-spacing: 0.16em;
+    padding-bottom: 0.3rem;
   }
 
   .detail-focus-kicker::before {
@@ -914,7 +914,7 @@ a.detail-meta-contributor-link:focus-visible {
 
   .detail-focus-title {
     font-size: clamp(1.35rem, 7vw, 1.9rem);
-    line-height: 1.1;
+    line-height: 1.4;
   }
 
   .detail-focus-body {

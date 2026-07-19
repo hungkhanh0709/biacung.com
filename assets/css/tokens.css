@@ -19,6 +19,6 @@
   --radius-sm: 0.5rem;
   --radius-md: 0.85rem;
   --radius-lg: 1.35rem;
-  --space-block-gap: clamp(1rem, 2.5vw, 1.75rem);
+  --space-block-gap: clamp(3rem, 2.5vw, 1.75rem);
   --space-section: var(--space-block-gap);
 }
