@@ -4,6 +4,85 @@ function setExpanded(element, expanded) {
   element?.setAttribute("aria-expanded", expanded ? "true" : "false");
 }
 
+function normalizeText(value) {
+  return value == null ? "" : String(value).trim();
+}
+
+function normalizeSearchValue(value) {
+  return normalizeText(value)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[đĐ]/g, "d")
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim();
+}
+
+function normalizePathname(pathname) {
+  const normalized = normalizeText(pathname);
+  if (!normalized || normalized === "/") {
+    return "/";
+  }
+
+  return normalized.replace(/\/+$/, "") || "/";
+}
+
+function isSameRoute(linkUrl, currentUrl) {
+  if (linkUrl.hash && !linkUrl.search) {
+    return (
+      normalizePathname(linkUrl.pathname) === normalizePathname(currentUrl.pathname) &&
+      linkUrl.hash === currentUrl.hash
+    );
+  }
+
+  if (normalizePathname(linkUrl.pathname) !== normalizePathname(currentUrl.pathname)) {
+    return false;
+  }
+
+  if (normalizePathname(currentUrl.pathname) === "/search.html") {
+    const linkQuery = normalizeSearchValue(linkUrl.searchParams.get("q"));
+    const currentQuery = normalizeSearchValue(currentUrl.searchParams.get("q"));
+    return Boolean(linkQuery) && linkQuery === currentQuery;
+  }
+
+  if (linkUrl.search) {
+    return linkUrl.search === currentUrl.search;
+  }
+
+  return true;
+}
+
+function applyActiveNavState(siteNav, navItems) {
+  const currentUrl = new URL(window.location.href);
+  const navLinks = Array.from(siteNav.querySelectorAll("a[href]"));
+
+  navLinks.forEach((link) => {
+    const href = normalizeText(link.getAttribute("href"));
+    if (!href || href === "#") {
+      return;
+    }
+
+    let isActive = false;
+    try {
+      isActive = isSameRoute(new URL(href, currentUrl.origin), currentUrl);
+    } catch (error) {
+      isActive = false;
+    }
+
+    link.classList.toggle("is-active", isActive);
+    if (isActive) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+
+  navItems.forEach((item) => {
+    const hasActiveDescendant = Boolean(item.querySelector(".submenu a.is-active"));
+    item.classList.toggle("has-active-descendant", hasActiveDescendant);
+  });
+}
+
 function syncFooterYear() {
   const yearNodes = document.querySelectorAll("[data-current-year]");
   if (!yearNodes.length) {
@@ -50,6 +129,8 @@ function main() {
   if (!header || !menuButton || !siteNav) {
     return;
   }
+
+  applyActiveNavState(siteNav, navItems);
 
   menuButton.addEventListener("click", () => {
     const shouldOpen = !header.classList.contains("is-nav-open");
