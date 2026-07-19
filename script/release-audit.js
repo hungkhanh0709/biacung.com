@@ -29,6 +29,14 @@ function pushIfMissing(list, condition, message) {
 }
 
 function auditStaticPages(rootDir, errors) {
+  const navPages = [
+    "index.html",
+    "about.html",
+    "search.html",
+    "series.html",
+    "detail.html",
+    "award/index.html"
+  ];
   const pageRules = [
     {
       file: "index.html",
@@ -82,6 +90,15 @@ function auditStaticPages(rootDir, errors) {
     rule.checks.forEach((snippet) => {
       pushIfMissing(errors, content.includes(snippet), `${rule.file} is missing required snippet: ${snippet}`);
     });
+  });
+
+  navPages.forEach((file) => {
+    const content = readFileSafe(path.join(rootDir, file));
+    pushIfMissing(
+      errors,
+      content.includes('href="/search.html?q=chauchaubook">Chauchaubook</a>'),
+      `${file} is missing Chauchaubook navigation link`
+    );
   });
 }
 

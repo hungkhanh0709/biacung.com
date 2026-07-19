@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://biacung.com/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://biacung.com/about.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://biacung.com/series.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://biacung.com/series.html?id=moi-nha-van-mot-tac-pham</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -85,13 +85,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://biacung.com/detail.html?id=frank-herbert-children-of-dune</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail.html?id=phong-tu-khai-tung-bach-dan-suong-truc-chiu-han</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://biacung.com/detail.html?id=homere-odyssee</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://biacung.com/detail.html?id=george-rr-martin-fire-blood</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail.html?id=ton-tu-ton-tu-binh-phap</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -273,12 +291,6 @@
   <url>
     <loc>https://biacung.com/detail.html?id=matt-haig-the-midnight-library</loc>
     <lastmod>2026-07-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail.html?id=ton-tu-ton-tu-binh-phap</loc>
-    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
