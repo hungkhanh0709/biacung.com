@@ -9,6 +9,62 @@
   "series": [],
   "editions": [
     {
+      "id": "mario-puzo-the-godfather-2026-dong-a-bia-bia-cung-kem-bia-ao-599k",
+      "isbn": "978-632-00-6088-7",
+      "caption": "Bìa Đen",
+      "pub_year": 2026,
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Minh"
+      ],
+      "illustrators": [
+        "Art Werger"
+      ],
+      "proofreaders": [],
+      "format": "Bìa bìa cứng, kèm bìa áo",
+      "cover_price": "599k",
+      "print_run": null,
+      "page_count": 560,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": 600,
+      "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_a0c1dd0702774985b7e67edd82fbea79_master.jpg",
+      "gellery_imgs": [
+        "https://cdn.hstatic.net/products/1000328521/b_a_trong_3644934af07142adaebf9ad9be63c027_master.jpg"
+      ],
+      "detail": ""
+    },
+    {
+      "id": "mario-puzo-the-godfather-dong-a-bia-bia-cung-kem-bia-ao-599k",
+      "isbn": "978-632-00-6088-7",
+      "caption": "Bìa Trắng",
+      "pub_year": 2026,
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Minh"
+      ],
+      "illustrators": [
+        "Art Werger"
+      ],
+      "proofreaders": [],
+      "format": "Bìa bìa cứng, kèm bìa áo",
+      "cover_price": "599k",
+      "print_run": null,
+      "page_count": 560,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": 600,
+      "thumbnail": "https://cdn.hstatic.net/products/1000328521/2_da_33e2b8a3b9d14b6bb7cb46ca51c300ea_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
       "id": "mario-puzo-the-godfather-2026-dong-a-bia-vai-2tr4",
       "isbn": null,
       "caption": "Ấn Bản Giới Hạn - Bìa Vải - Phiên Bản Độc Quyền 50 Năm Fahasa",
