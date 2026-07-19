@@ -6,6 +6,14 @@ const SEARCH_PAGE_SIZE = 16;
 const MAX_QUERY_LENGTH = 120;
 const SAFE_BOOK_DETAIL_PATH = /^data\/book\/[a-z0-9-]+\.json$/;
 const SAFE_SERIES_DETAIL_PATH = /^data\/series\/[a-z0-9-]+\.json$/;
+const SEARCH_QUERY_PRESETS = {
+  chauchaubook: {
+    label: "Chauchaubook",
+    aliases: ["chauchaubook", "chau chau book", "chau chau books", "chauchau book", "chauchau books"],
+    loadingCopy: "Đang tìm sách được custom bởi Chauchaubook.",
+    emptyCopy: "Hiện chưa tìm thấy bìa sách nào được custom bởi Chauchaubook."
+  }
+};
 
 const params = new URLSearchParams(window.location.search);
 const keyword = sanitizeQueryParam(params.get("q"));
@@ -41,6 +49,25 @@ function normalizeSearchText(value) {
     .toLowerCase()
     .replace(/[^\p{L}\p{N}]+/gu, " ")
     .trim();
+}
+
+function getSearchPreset(query) {
+  const normalizedQuery = normalizeSearchText(query);
+  return SEARCH_QUERY_PRESETS[normalizedQuery] || null;
+}
+
+function getSearchNeedles(query) {
+  const normalizedQuery = normalizeSearchText(query);
+  const preset = SEARCH_QUERY_PRESETS[normalizedQuery];
+  const values = preset?.aliases?.length ? preset.aliases : [query];
+
+  return Array.from(
+    new Set(
+      values
+        .map((value) => normalizeSearchText(value))
+        .filter(Boolean)
+    )
+  );
 }
 
 function normalizeUrl(value) {
@@ -251,13 +278,14 @@ async function loadSeriesMatches(normalizedKeyword) {
     }));
 }
 
-async function loadBookMatches(normalizedKeyword) {
+async function loadBookMatches(searchNeedles) {
   const bookIndex = await fetchJson(BOOK_INDEX_URL);
+  const needles = Array.isArray(searchNeedles) ? searchNeedles.filter(Boolean) : [];
   const matchedEntries = Array.isArray(bookIndex)
     ? bookIndex
       .map((entry) => {
         const searchableText = normalizeSearchText(entry?.search_text);
-        if (normalizedKeyword && !searchableText.includes(normalizedKeyword)) {
+        if (needles.length && !needles.some((needle) => searchableText.includes(needle))) {
           return null;
         }
 
@@ -309,24 +337,25 @@ async function renderResults() {
   syncSearchInputs(keyword);
   resetRenderedResults();
   const hasKeyword = Boolean(keyword);
+  const preset = getSearchPreset(keyword);
   document.title = hasKeyword
-    ? `Kết quả tìm kiếm “${keyword}” | Bìa Cứng`
+    ? `Kết quả tìm kiếm “${preset?.label || keyword}” | Bìa Cứng`
     : "Tất cả kết quả | Bìa Cứng";
   setPageState("loading");
   renderLoadingSkeletons();
   updateEmptyState(
     hasKeyword
-      ? `Đang tra cứu dữ liệu cho “${keyword}”.`
+      ? preset?.loadingCopy || `Đang tra cứu dữ liệu cho “${keyword}”.`
       : "Đang tải toàn bộ bìa sách và series hiện có."
   );
   window.BiaCungPageLoader?.handoff("Đang tải kết quả tìm kiếm...");
 
   try {
-    const normalizedKeyword = normalizeSearchText(keyword);
+    const searchNeedles = getSearchNeedles(keyword);
     const [seriesMatches, bookMatches] = await Promise.all([
-      // loadSeriesMatches(normalizedKeyword), // Currently disabled due to limited series data
+      // loadSeriesMatches(searchNeedles[0]), // Currently disabled due to limited series data
       Promise.resolve([]),
-      loadBookMatches(normalizedKeyword)
+      loadBookMatches(searchNeedles)
     ]);
 
     const results = [...seriesMatches, ...bookMatches];
@@ -336,7 +365,8 @@ async function renderResults() {
       setPageState("empty");
       updateEmptyState(
         hasKeyword
-          ? `Không tìm thấy kết quả phù hợp cho “${keyword}”. Thử dùng tên tác giả, tên sách, NXB hoặc một từ khóa ngắn hơn.`
+          ? preset?.emptyCopy ||
+          `Không tìm thấy kết quả phù hợp cho “${keyword}”. Thử dùng tên tác giả, tên sách, NXB hoặc một từ khóa ngắn hơn.`
           : "Hiện chưa có dữ liệu để hiển thị. Kho dữ liệu hiện chưa có sách hoặc series nào."
       );
       return;
