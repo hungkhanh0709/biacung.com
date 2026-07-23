@@ -1,5 +1,11 @@
 [
   {
+    "detail": "data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json",
+    "search_text": "dai viet su ky toan thu nhieu tac gia nxb van hoc dong a ngo duc tho hoang van lau",
+    "last_pub_year": 2026,
+    "updated_at": "2026-07-23"
+  },
+  {
     "detail": "data/book/mario-puzo-the-godfather.json",
     "search_text": "bo gia the godfather mario puzo nxb dan tri dong a nguyen minh art werger nxb van hoc ngoc thu lang ngoc thu lan nxb hoi nha van",
     "updated_at": "2026-07-19",
@@ -556,12 +562,6 @@
     "search_text": "ngu ngon la fontaine the fables of la fontaine la fontaine nxb van hoc dong a nhieu nguoi dich gustave dore",
     "last_pub_year": 2022,
     "updated_at": "2026-07-12"
-  },
-  {
-    "detail": "data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json",
-    "search_text": "dai viet su ky toan thu nhieu tac gia nxb van hoc dong a ngo duc tho hoang van lau",
-    "last_pub_year": 2022,
-    "updated_at": "2026-07-11"
   },
   {
     "detail": "data/book/albert-camus-le-mythe-de-sisyphe.json",
