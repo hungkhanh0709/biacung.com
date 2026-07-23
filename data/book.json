@@ -1,8 +1,20 @@
 [
   {
+    "detail": "data/book/mario-puzo-the-godfather.json",
+    "search_text": "bo gia the godfather mario puzo nxb dan tri dong a nguyen minh art werger nxb van hoc ngoc thu lang ngoc thu lan nxb hoi nha van",
+    "updated_at": "2026-07-19",
+    "last_pub_year": 2026
+  },
+  {
     "detail": "data/book/homere-odyssee.json",
     "search_text": "anh hung ca odyssee odyssee homere nxb van hoc dong a hoang huu dan john flaxman",
-    "updated_at": "2026-07-11",
+    "updated_at": "2026-07-13",
+    "last_pub_year": 2026
+  },
+  {
+    "detail": "data/book/dan-brown-the-secret-of-secrets.json",
+    "search_text": "bi mat toi thuong the secret of secrets dan brown nxb dan tri bach viet le dinh chi",
+    "updated_at": "2026-07-12",
     "last_pub_year": 2026
   },
   {
@@ -50,12 +62,6 @@
   {
     "detail": "data/book/jk-rowling-harry-potter.json",
     "search_text": "harry potter jk rowling 50 nam fahasa nxb tre ly lan",
-    "updated_at": "2026-07-09",
-    "last_pub_year": 2026
-  },
-  {
-    "detail": "data/book/mario-puzo-the-godfather.json",
-    "search_text": "bo gia the godfather mario puzo nxb van hoc dong a ngoc thu lang art werger ngoc thu lan nxb hoi nha van nguyen minh",
     "updated_at": "2026-07-09",
     "last_pub_year": 2026
   },
@@ -192,12 +198,6 @@
     "last_pub_year": 2026
   },
   {
-    "detail": "data/book/ton-tu-ton-tu-binh-phap.json",
-    "search_text": "ton tu binh phap ton tu nxb dan tri dong a ngo van trien",
-    "last_pub_year": 2026,
-    "updated_at": "2026-07-12"
-  },
-  {
     "detail": "data/book/nguyen-nhat-anh-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim.json",
     "search_text": "sach boxset nguyen nhat anh da chuyen the thanh phim nguyen nhat anh 50 nam fahasa nxb tre",
     "updated_at": "2026-07-05",
@@ -246,12 +246,6 @@
     "last_pub_year": 2026
   },
   {
-    "detail": "data/book/dan-brown-the-secret-of-secrets.json",
-    "search_text": "bi mat toi thuong the secret of secrets dan brown nxb dan tri bach viet le dinh chi",
-    "updated_at": "2026-07-04",
-    "last_pub_year": 2026
-  },
-  {
     "detail": "data/book/nguyen-dinh-dang-60-bi-quyet-ve-son-dau.json",
     "search_text": "60 bi quyet ve son dau nguyen dinh dang nxb dan tri dong a",
     "updated_at": "2026-07-04",
@@ -292,6 +286,12 @@
     "search_text": "tran tien nguoi hat tho minh ca khuc nhung cau chuyen tran tien nxb hoi nha van dong a",
     "updated_at": "2026-07-03",
     "last_pub_year": 2026
+  },
+  {
+    "detail": "data/book/ton-tu-ton-tu-binh-phap.json",
+    "search_text": "ton tu binh phap ton tu nxb dan tri dong a ngo van trien",
+    "last_pub_year": 2026,
+    "updated_at": "2026-07-01"
   },
   {
     "detail": "data/book/erich-maria-remarque-im-westen-nichts-neues.json",

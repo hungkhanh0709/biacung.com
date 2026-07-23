@@ -29,6 +29,14 @@ function pushIfMissing(list, condition, message) {
 }
 
 function auditStaticPages(rootDir, errors) {
+  const navPages = [
+    "index.html",
+    "about.html",
+    "search.html",
+    "series.html",
+    "detail.html",
+    "award/index.html"
+  ];
   const pageRules = [
     {
       file: "index.html",
@@ -81,6 +89,31 @@ function auditStaticPages(rootDir, errors) {
     const content = readFileSafe(path.join(rootDir, rule.file));
     rule.checks.forEach((snippet) => {
       pushIfMissing(errors, content.includes(snippet), `${rule.file} is missing required snippet: ${snippet}`);
+    });
+  });
+
+  navPages.forEach((file) => {
+    const content = readFileSafe(path.join(rootDir, file));
+    pushIfMissing(
+      errors,
+      content.includes('href="/search.html?q=chauchaubook">Chauchaubook</a>'),
+      `${file} is missing Chauchaubook navigation link`
+    );
+  });
+
+  const cssVersionChecks = [
+    { file: "index.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v='] },
+    { file: "about.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/about.css?v='] },
+    { file: "search.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/search.css?v='] },
+    { file: "series.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/search.css?v='] },
+    { file: "detail.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/detail.css?v='] },
+    { file: "award/index.html", snippets: ['../assets/css/tokens.css?v=', '../assets/css/home.css?v=', '../assets/css/award.css?v='] }
+  ];
+
+  cssVersionChecks.forEach((rule) => {
+    const content = readFileSafe(path.join(rootDir, rule.file));
+    rule.snippets.forEach((snippet) => {
+      pushIfMissing(errors, content.includes(snippet), `${rule.file} is missing CSS cache-busting version: ${snippet}`);
     });
   });
 }

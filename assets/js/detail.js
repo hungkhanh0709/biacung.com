@@ -34,6 +34,7 @@ let activeImageIndex = 0;
 let focusCardPulseTimer = 0;
 
 const FOCUS_CARD_TOP_OFFSET = 20;
+const FOCUS_CARD_EXTRA_SCROLL = -10;
 const FOCUS_CARD_VISIBLE_RATIO = 0.72;
 
 function normalizeText(value) {
@@ -284,8 +285,11 @@ function revealFocusCard() {
   }
 
   const rect = focusCardNode.getBoundingClientRect();
-  const topTarget = window.scrollY + rect.top - Math.max(FOCUS_CARD_TOP_OFFSET, window.innerHeight * 0.08);
-
+  const topTarget =
+    window.scrollY +
+    rect.top -
+    Math.max(FOCUS_CARD_TOP_OFFSET, window.innerHeight * 0.08) +
+    FOCUS_CARD_EXTRA_SCROLL;
   window.scrollTo({
     top: Math.max(0, topTarget),
     behavior: prefersReducedMotion() ? "auto" : "smooth"
@@ -583,13 +587,9 @@ function renderHeroImage(book) {
   });
 }
 
-function renderEditionGallery(edition) {
-  if (!editionCoverNode || !editionGalleryNode) {
-    return;
-  }
-
+function selectEditionImage(edition, index) {
   const images = getEditionImageUrls(edition);
-  const boundedIndex = Math.min(activeImageIndex, images.length - 1);
+  const boundedIndex = Math.min(index, images.length - 1);
   activeImageIndex = boundedIndex < 0 ? 0 : boundedIndex;
 
   setImageSource(
@@ -597,6 +597,21 @@ function renderEditionGallery(edition) {
     images[activeImageIndex],
     `Bìa phiên bản ${normalizeText(edition.caption) || getDisplayTitle(currentBook)}`
   );
+
+  editionGalleryNode?.querySelectorAll(".detail-thumb").forEach((button, buttonIndex) => {
+    const isActive = buttonIndex === activeImageIndex;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", isActive ? "true" : "false");
+  });
+}
+
+function renderEditionGallery(edition) {
+  if (!editionCoverNode || !editionGalleryNode) {
+    return;
+  }
+
+  const images = getEditionImageUrls(edition);
+  selectEditionImage(edition, activeImageIndex);
 
   editionGalleryNode.replaceChildren();
 
@@ -607,8 +622,7 @@ function renderEditionGallery(edition) {
     button.setAttribute("aria-label", `Xem ảnh ${index + 1}`);
     button.setAttribute("aria-pressed", index === activeImageIndex ? "true" : "false");
     button.addEventListener("click", () => {
-      activeImageIndex = index;
-      renderEditionGallery(edition);
+      selectEditionImage(edition, index);
     });
 
     const imageNode = document.createElement("img");
