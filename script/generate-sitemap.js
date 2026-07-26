@@ -75,6 +75,7 @@ function buildSitemapEntries(rootDir) {
   return [
     { loc: `${SITE_URL}/`, lastmod: latestBookDate, changefreq: "daily", priority: "1.0" },
     { loc: `${SITE_URL}/about.html`, lastmod: today, changefreq: "monthly", priority: "0.6" },
+    { loc: `${SITE_URL}/chauchaubook.html`, lastmod: latestBookDate, changefreq: "weekly", priority: "0.8" },
     { loc: `${SITE_URL}/series.html`, lastmod: latestSeriesDate, changefreq: "weekly", priority: "0.8" },
     ...seriesEntries.map((entry) => ({
       loc: `${SITE_URL}/series.html?id=${encodeURIComponent(entry.id)}`,

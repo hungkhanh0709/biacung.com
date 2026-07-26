@@ -2,25 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://biacung.com/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://biacung.com/about.html</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://biacung.com/chauchaubook.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://biacung.com/series.html</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://biacung.com/series.html?id=50-nam-fahasa</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -50,7 +56,7 @@
   </url>
   <url>
     <loc>https://biacung.com/series.html?id=moi-nha-van-mot-tac-pham</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -85,20 +91,20 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=frank-herbert-children-of-dune</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail.html?id=phong-tu-khai-tung-bach-dan-suong-truc-chiu-han</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://biacung.com/detail.html?id=homere-odyssee</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail.html?id=mario-puzo-the-godfather</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail.html?id=dan-brown-the-secret-of-secrets</loc>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -109,8 +115,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=ton-tu-ton-tu-binh-phap</loc>
-    <lastmod>2026-07-12</lastmod>
+    <loc>https://biacung.com/detail.html?id=nhieu-tac-gia-dai-viet-su-ky-toan-thu</loc>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -152,12 +158,6 @@
   </url>
   <url>
     <loc>https://biacung.com/detail.html?id=jk-rowling-harry-potter</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail.html?id=mario-puzo-the-godfather</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -343,12 +343,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dan-brown-the-secret-of-secrets</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://biacung.com/detail.html?id=nguyen-dinh-dang-60-bi-quyet-ve-son-dau</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -387,6 +381,12 @@
   <url>
     <loc>https://biacung.com/detail.html?id=tran-tien-tran-tien-nguoi-hat-tho-minh-ca-khuc-nhung-cau-chuyen</loc>
     <lastmod>2026-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail.html?id=ton-tu-ton-tu-binh-phap</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -651,12 +651,6 @@
   <url>
     <loc>https://biacung.com/detail.html?id=la-fontaine-the-fables-of-la-fontaine</loc>
     <lastmod>2026-07-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail.html?id=nhieu-tac-gia-dai-viet-su-ky-toan-thu</loc>
-    <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
