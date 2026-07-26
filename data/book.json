@@ -1,20 +1,14 @@
 [
   {
-    "detail": "data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json",
-    "search_text": "dai viet su ky toan thu nhieu tac gia nxb van hoc dong a ngo duc tho hoang van lau",
-    "last_pub_year": 2026,
-    "updated_at": "2026-07-23"
+    "detail": "data/book/homere-odyssee.json",
+    "search_text": "anh hung ca odyssee odyssee homere s100 nxb van hoc dong a hoang huu dan john flaxman",
+    "updated_at": "2026-07-26",
+    "last_pub_year": 2026
   },
   {
     "detail": "data/book/mario-puzo-the-godfather.json",
     "search_text": "bo gia the godfather mario puzo nxb dan tri dong a nguyen minh art werger nxb van hoc ngoc thu lang ngoc thu lan nxb hoi nha van",
     "updated_at": "2026-07-19",
-    "last_pub_year": 2026
-  },
-  {
-    "detail": "data/book/homere-odyssee.json",
-    "search_text": "anh hung ca odyssee odyssee homere nxb van hoc dong a hoang huu dan john flaxman",
-    "updated_at": "2026-07-13",
     "last_pub_year": 2026
   },
   {
@@ -28,6 +22,12 @@
     "search_text": "lua va mau fire blood george rr martin goodreads choice award nxb phu nu bach viet the gioi than thoai",
     "updated_at": "2026-07-12",
     "last_pub_year": 2026
+  },
+  {
+    "detail": "data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json",
+    "search_text": "dai viet su ky toan thu nhieu tac gia nxb van hoc dong a ngo duc tho hoang van lau",
+    "last_pub_year": 2026,
+    "updated_at": "2026-07-11"
   },
   {
     "detail": "data/book/franz-kafka-tuyen-tap-tac-pham-frank-kafka.json",

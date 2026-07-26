@@ -6,8 +6,41 @@
     "Homère"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "S100"
+  ],
   "editions": [
+    {
+      "id": "homere-odyssee-2026-dong-a-bia-da-that",
+      "isbn": null,
+      "caption": "Ấn Bản Giới Hạn S100 Bìa Da Thật",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Hoàng Hữu Đản"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 100,
+      "page_count": 576,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-1.jpeg",
+      "gellery_imgs": [
+        "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-2.jpeg",
+        "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-3.jpeg",
+        "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-4.jpeg",
+        "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-5.jpeg",
+        "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-6.jpeg"
+      ],
+      "detail": ""
+    },
     {
       "id": "homere-odyssee-2026-dong-a-bia-vai-2tr5",
       "isbn": null,

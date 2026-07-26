@@ -56,6 +56,16 @@ function getSearchPreset(query) {
   return SEARCH_QUERY_PRESETS[normalizedQuery] || null;
 }
 
+function maybeRedirectPresetPage(query) {
+  const preset = getSearchPreset(query);
+  if (!preset || normalizeSearchText(query) !== "chauchaubook") {
+    return false;
+  }
+
+  window.location.replace("/chauchaubook.html");
+  return true;
+}
+
 function getSearchNeedles(query) {
   const normalizedQuery = normalizeSearchText(query);
   const preset = SEARCH_QUERY_PRESETS[normalizedQuery];
@@ -331,6 +341,10 @@ async function loadBookMatches(searchNeedles) {
 async function renderResults() {
   if (!resultsNode || !emptyNode) {
     window.BiaCungPageLoader?.hide();
+    return;
+  }
+
+  if (maybeRedirectPresetPage(keyword)) {
     return;
   }
 
