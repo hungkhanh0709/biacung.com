@@ -35,7 +35,8 @@ function auditStaticPages(rootDir, errors) {
     "search.html",
     "series.html",
     "detail.html",
-    "award/index.html"
+    "award/index.html",
+    "chauchaubook.html"
   ];
   const pageRules = [
     {
@@ -55,6 +56,15 @@ function auditStaticPages(rootDir, errors) {
         'meta name="description"',
         'meta name="robots" content="index,follow,max-image-preview:large"',
         'type="application/ld+json"'
+      ]
+    },
+    {
+      file: "chauchaubook.html",
+      checks: [
+        'meta name="description"',
+        'meta name="robots" content="index,follow,max-image-preview:large"',
+        'type="application/ld+json"',
+        'rel="canonical" href="https://biacung.com/chauchaubook.html"'
       ]
     },
     {
@@ -96,7 +106,7 @@ function auditStaticPages(rootDir, errors) {
     const content = readFileSafe(path.join(rootDir, file));
     pushIfMissing(
       errors,
-      content.includes('href="/search.html?q=chauchaubook">Chauchaubook</a>'),
+      content.includes('href="/chauchaubook.html">Chauchaubook</a>'),
       `${file} is missing Chauchaubook navigation link`
     );
   });
@@ -104,6 +114,14 @@ function auditStaticPages(rootDir, errors) {
   const cssVersionChecks = [
     { file: "index.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v='] },
     { file: "about.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/about.css?v='] },
+    {
+      file: "chauchaubook.html",
+      snippets: [
+        'assets/css/tokens.css?v=',
+        'assets/css/home.css?v=',
+        'assets/css/search.css?v='
+      ]
+    },
     { file: "search.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/search.css?v='] },
     { file: "series.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/search.css?v='] },
     { file: "detail.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/detail.css?v='] },
@@ -144,6 +162,7 @@ function auditSitemap(rootDir, errors) {
   pushIfMissing(errors, current === expected, "sitemap.xml is stale. Run `node script/generate-sitemap.js`.");
 
   const entries = buildSitemapEntries(rootDir);
+  pushIfMissing(errors, entries.some((entry) => entry.loc === "https://biacung.com/chauchaubook.html"), "sitemap.xml does not include Chauchaubook page");
   pushIfMissing(errors, entries.some((entry) => entry.loc.includes("/detail.html?id=")), "sitemap.xml does not include book detail URLs");
   pushIfMissing(errors, entries.some((entry) => entry.loc.includes("/series.html?id=")), "sitemap.xml does not include series detail URLs");
   pushIfMissing(errors, !entries.some((entry) => entry.loc.includes("/search.html")), "sitemap.xml should not include search result pages");
