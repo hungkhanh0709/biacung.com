@@ -11,6 +11,31 @@
   ],
   "editions": [
     {
+      "id": "homere-odyssee-2026-omega-plus-boxset-bia-cung-589k",
+      "isbn": null,
+      "caption": "Boxset Odyssêy - Iliad",
+      "pub_year": 2026,
+      "publisher": "NXB Thế Giới",
+      "issuers": [
+        "Omega Plus"
+      ],
+      "translators": [
+        "Đỗ Khánh Hoan"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Boxset, bìa cứng",
+      "cover_price": "589k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "14 x 20,5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/homere-odyssee/omega-plus-boxset-bia-cung-589k.webp",
+      "gellery_imgs": [],
+      "detail": "- Có hộp đựng 2 cuốn.\n- Bìa sách được thiết kế mới phong cách typo và in ép nhũ họa tiết chữ O và I."
+    },
+    {
       "id": "homere-odyssee-2026-dong-a-bia-da-that",
       "isbn": null,
       "caption": "Ấn Bản Giới Hạn S100 Bìa Da Thật",
