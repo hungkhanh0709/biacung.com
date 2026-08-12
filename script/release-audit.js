@@ -136,6 +136,23 @@ function auditStaticPages(rootDir, errors) {
       pushIfMissing(errors, content.includes(snippet), `${rule.file} is missing CSS cache-busting version: ${snippet}`);
     });
   });
+
+  const jsVersionChecks = [
+    { file: "index.html", snippets: ['assets/js/nav.js?v=', 'assets/js/home.js?v='] },
+    { file: "about.html", snippets: ['assets/js/nav.js?v='] },
+    { file: "chauchaubook.html", snippets: ['assets/js/nav.js?v=', 'assets/js/chauchaubook.js?v='] },
+    { file: "search.html", snippets: ['assets/js/nav.js?v=', 'assets/js/search.js?v='] },
+    { file: "series.html", snippets: ['assets/js/nav.js?v=', 'assets/js/series.js?v='] },
+    { file: "detail.html", snippets: ['assets/js/nav.js?v=', 'assets/js/detail.js?v='] },
+    { file: "award/index.html", snippets: ['../assets/js/nav.js?v='] }
+  ];
+
+  jsVersionChecks.forEach((rule) => {
+    const content = readFileSafe(path.join(rootDir, rule.file));
+    rule.snippets.forEach((snippet) => {
+      pushIfMissing(errors, content.includes(snippet), `${rule.file} is missing JS cache-busting version: ${snippet}`);
+    });
+  });
 }
 
 function auditCoreFiles(rootDir, errors) {

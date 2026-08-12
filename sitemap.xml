@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://biacung.com/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,19 +14,19 @@
   </url>
   <url>
     <loc>https://biacung.com/chauchaubook</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://biacung.com/series</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://biacung.com/series?id=50-nam-fahasa</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://biacung.com/series?id=moi-nha-van-mot-tac-pham</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -87,6 +87,12 @@
   <url>
     <loc>https://biacung.com/series?id=viet-nam-danh-tac-nha-nam</loc>
     <lastmod>2026-07-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -170,12 +176,6 @@
   </url>
   <url>
     <loc>https://biacung.com/detail?id=nguyen-du-truyen-kieu</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
