@@ -370,15 +370,24 @@ function formatValue(value, suffix = "") {
   return normalized ? `${normalized}${suffix}` : "";
 }
 
+function isChauchaubookEdition(edition) {
+  return normalizeText(edition?.format).toLowerCase() === "chauchaubook";
+}
+
 function buildEditionSummaryLines(edition) {
   const lines = [];
+  const isArtwork = isChauchaubookEdition(edition);
 
   if (normalizeText(edition.pub_year)) {
-    lines.push(`Năm phát hành: ${normalizeText(edition.pub_year)}`);
+    const yearLabel = isArtwork ? "Năm thực hiện" : "Năm phát hành";
+    lines.push(`${yearLabel}: ${normalizeText(edition.pub_year)}`);
   }
 
   if (normalizeText(edition.format)) {
-    lines.push(`Hình thức: ${normalizeText(edition.format)}`);
+    const displayFormat = isArtwork
+      ? normalizeText(edition.artwork_medium) || normalizeText(edition.format)
+      : normalizeText(edition.format);
+    lines.push(`Hình thức: ${displayFormat}`);
   }
 
   if (normalizeText(edition.cover_price)) {
@@ -796,7 +805,8 @@ function renderActiveEdition() {
 
   renderEditionGallery(edition);
   renderEditionMeta(currentBook, edition);
-  renderInfoCard(editionSummaryNode, "Thông tin phát hành", buildEditionSummaryLines(edition));
+  const summaryTitle = isChauchaubookEdition(edition) ? "Thông tin tác phẩm" : "Thông tin phát hành";
+  renderInfoCard(editionSummaryNode, summaryTitle, buildEditionSummaryLines(edition));
   renderDescription(edition);
   syncFocusCopyLayout();
   updateSeoMetadata(currentBook, edition);
