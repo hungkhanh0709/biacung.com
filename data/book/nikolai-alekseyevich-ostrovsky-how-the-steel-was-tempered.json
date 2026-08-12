@@ -6,25 +6,26 @@
     "Nikolai Alekseyevich Ostrovsky"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Chauchaubook"
+  ],
   "editions": [
     {
       "id": "nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered-2026-chauchaubook",
       "isbn": null,
-      "caption": "Bìa vẽ tay bởi Châu Châu Book",
+      "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
       "pub_year": 2026,
-      "publisher": null,
+      "publisher": "",
       "issuers": [],
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
       "format": "Chauchaubook",
-      "artwork_medium": "màu acrylic trên canvas",
-      "cover_price": null,
+      "cover_price": "",
       "print_run": null,
       "page_count": null,
       "copy_numbering": null,
-      "size_cm": null,
+      "size_cm": "",
       "weight_g": null,
       "thumbnail": "assets/img/books/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered/chauchaubook-1.jpg",
       "gellery_imgs": [

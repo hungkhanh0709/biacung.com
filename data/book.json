@@ -1,5 +1,11 @@
 [
   {
+    "detail": "data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json",
+    "search_text": "thep da toi the day how the steel was tempered nikolai alekseyevich ostrovsky chauchaubook nxb van hoc dong a thep moi huy van tri viet",
+    "updated_at": "2026-08-12",
+    "last_pub_year": 2026
+  },
+  {
     "detail": "data/book/homere-odyssee.json",
     "search_text": "anh hung ca odyssee odyssee homere s100 nxb the gioi omega plus do khanh hoan nxb van hoc dong a hoang huu dan john flaxman",
     "updated_at": "2026-07-30",
@@ -80,12 +86,6 @@
   {
     "detail": "data/book/nguyen-du-truyen-kieu.json",
     "search_text": "truyen kieu nguyen du 50 nam fahasa nxb van hoc dong a nguyen thach giang dang xuan hoa nxb dan tri tazano",
-    "updated_at": "2026-07-09",
-    "last_pub_year": 2026
-  },
-  {
-    "detail": "data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json",
-    "search_text": "thep da toi the day how the steel was tempered nikolai alekseyevich ostrovsky nxb van hoc dong a thep moi huy van tri viet",
     "updated_at": "2026-07-09",
     "last_pub_year": 2026
   },
