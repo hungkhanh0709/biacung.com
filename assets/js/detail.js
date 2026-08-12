@@ -114,7 +114,7 @@ function syncSearchInput(book) {
 
 function buildSearchUrl(query) {
   const keyword = normalizeText(query);
-  return keyword ? `search.html?q=${encodeURIComponent(keyword)}` : "search.html";
+  return keyword ? `/search?q=${encodeURIComponent(keyword)}` : "/search";
 }
 
 function createPill(text) {
@@ -821,7 +821,7 @@ function updateSeoMetadata(book, edition) {
   const displayTitle = getDisplayTitle(book);
   const authors = dedupeStrings(book.authors);
   const imageUrl = seo.toAbsoluteUrl(normalizeUrl(edition.thumbnail) || getHeroImageUrl(book)) || seo.FALLBACK_IMAGE;
-  const pagePath = `detail.html?id=${encodeURIComponent(book.id)}`;
+  const pagePath = `/detail?id=${encodeURIComponent(book.id)}`;
   const pageUrl = seo.toAbsoluteUrl(pagePath);
   const description = truncateText(
     [

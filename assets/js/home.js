@@ -19,12 +19,12 @@ function safeUrl(value) {
 
 function buildDetailUrl(bookId) {
   const id = normalizeText(bookId);
-  return id ? `detail.html?id=${encodeURIComponent(id)}` : "";
+  return id ? `/detail?id=${encodeURIComponent(id)}` : "";
 }
 
 function buildSeriesDetailUrlPage(seriesId) {
   const id = normalizeText(seriesId);
-  return id ? `series.html?id=${encodeURIComponent(id)}` : "";
+  return id ? `/series?id=${encodeURIComponent(id)}` : "";
 }
 
 async function fetchJson(url) {

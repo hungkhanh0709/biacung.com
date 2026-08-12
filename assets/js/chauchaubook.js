@@ -41,7 +41,7 @@ function normalizeUrl(value) {
 
 function buildDetailUrl(bookId) {
   const value = normalizeText(bookId);
-  return value ? `detail.html?id=${encodeURIComponent(value)}` : "detail.html";
+  return value ? `/detail?id=${encodeURIComponent(value)}` : "/detail";
 }
 
 async function fetchJson(url) {
