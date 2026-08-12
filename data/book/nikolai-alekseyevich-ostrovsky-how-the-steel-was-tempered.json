@@ -6,8 +6,37 @@
     "Nikolai Alekseyevich Ostrovsky"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Chauchaubook"
+  ],
   "editions": [
+    {
+      "id": "nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered-2026-chauchaubook",
+      "isbn": null,
+      "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
+      "pub_year": 2026,
+      "publisher": "",
+      "issuers": [],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Chauchaubook",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "assets/img/books/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered/chauchaubook-1.jpg",
+      "gellery_imgs": [
+        "assets/img/books/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered/chauchaubook-2.jpg",
+        "assets/img/books/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered/chauchaubook-3.jpg",
+        "assets/img/books/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered/chauchaubook-4.jpg",
+        "assets/img/books/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered/chauchaubook-5.jpg",
+        "assets/img/books/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered/chauchaubook-6.jpg"
+      ],
+      "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
+    },
     {
       "id": "nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered-2026-dong-a-bia-vai-2tr3",
       "isbn": null,

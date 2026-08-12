@@ -11,12 +11,13 @@
 
 ## Main pages
 
-- `index.html`: homepage
-- `detail.html`: book detail page
-- `series.html`: series listing and series detail page
-- `search.html`: search page
-- `about.html`: about page
-- `award*`: awards page
+- `/`: homepage (`index.html`)
+- `/detail`: book detail page (`detail.html`)
+- `/series`: series listing and series detail page (`series.html`)
+- `/search`: search page (`search.html`)
+- `/about`: about page (`about.html`)
+- `/chauchaubook`: Chauchaubook page (`chauchaubook.html`)
+- `/award/`: awards page (`award/index.html`)
 
 ## Project structure
 
@@ -43,19 +44,21 @@
 
 ## Local development
 
-You can open the HTML files directly, but using a simple local static server is recommended.
+Use the project server so local development resolves the same extensionless URLs as GitHub Pages:
 
 Example:
 
 ```bash
-python3 -m http.server 5500
+npm run static-server
 ```
 
 Then open:
 
 ```text
-http://localhost:8000
+http://localhost:3000
 ```
+
+The port can be changed with `PORT=5500 npm run static-server`. Physical `.html` files remain in place so previously shared legacy URLs continue to work.
 
 ## Release workflow
 

@@ -84,7 +84,7 @@ function normalizeUrl(value) {
 
 function buildSeriesDetailUrl(slug) {
   const value = sanitizeSlugParam(slug);
-  return value ? `series.html?id=${encodeURIComponent(value)}` : "series.html";
+  return value ? `/series?id=${encodeURIComponent(value)}` : "/series";
 }
 
 function buildBookDetailUrl(slug) {
@@ -93,7 +93,7 @@ function buildBookDetailUrl(slug) {
     return "";
   }
 
-  return value ? `detail.html?id=${encodeURIComponent(value)}` : "";
+  return value ? `/detail?id=${encodeURIComponent(value)}` : "";
 }
 
 function buildBookDetailDataUrl(slug) {
@@ -419,9 +419,9 @@ function updateSeriesIndexSeo(seriesCards) {
     220
   );
 
-  seo.setCanonical("series.html");
+  seo.setCanonical("series");
   seo.setMetaByName("description", description);
-  seo.setMetaByProperty("og:url", `${seo.SITE_URL}series.html`);
+  seo.setMetaByProperty("og:url", `${seo.SITE_URL}series`);
   seo.setMetaByProperty("og:title", "Series sách bộ | Bìa Cứng");
   seo.setMetaByProperty("og:description", description);
   seo.setMetaByProperty("og:image", seo.FALLBACK_IMAGE);
@@ -445,14 +445,14 @@ function updateSeriesIndexSeo(seriesCards) {
             "@type": "ListItem",
             position: 2,
             name: "Series",
-            item: `${seo.SITE_URL}series.html`
+            item: `${seo.SITE_URL}series`
           }
         ]
       },
       {
         "@type": "CollectionPage",
         name: "Series sách bộ | Bìa Cứng",
-        url: `${seo.SITE_URL}series.html`,
+        url: `${seo.SITE_URL}series`,
         description,
         inLanguage: "vi-VN",
         keywords: "series sách, sách bộ, bộ sách",
@@ -477,7 +477,7 @@ function updateSeriesDetailSeo(series, books) {
     return;
   }
 
-  const pagePath = `series.html?id=${encodeURIComponent(series.id)}`;
+  const pagePath = `/series?id=${encodeURIComponent(series.id)}`;
   const pageUrl = seo.toAbsoluteUrl(pagePath);
   const imageUrl = seo.toAbsoluteUrl(normalizeUrl(series.thumbnail)) || seo.FALLBACK_IMAGE;
   const description = truncateText(
@@ -514,7 +514,7 @@ function updateSeriesDetailSeo(series, books) {
             "@type": "ListItem",
             position: 2,
             name: "Series",
-            item: `${seo.SITE_URL}series.html`
+            item: `${seo.SITE_URL}series`
           },
           {
             "@type": "ListItem",

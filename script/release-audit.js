@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const { buildSitemapXml, buildSitemapEntries } = require("./generate-sitemap");
+const { resolveRequestPath } = require("./static-server");
 
 function normalizeText(value) {
   return value == null ? "" : String(value).trim();
@@ -47,7 +48,7 @@ function auditStaticPages(rootDir, errors) {
         'meta property="og:title"',
         'rel="canonical" href="https://biacung.com/"',
         'type="application/ld+json"',
-        'target": "https://biacung.com/search.html?q={search_term_string}"'
+        'target": "https://biacung.com/search?q={search_term_string}"'
       ]
     },
     {
@@ -64,7 +65,7 @@ function auditStaticPages(rootDir, errors) {
         'meta name="description"',
         'meta name="robots" content="index,follow,max-image-preview:large"',
         'type="application/ld+json"',
-        'rel="canonical" href="https://biacung.com/chauchaubook.html"'
+        'rel="canonical" href="https://biacung.com/chauchaubook"'
       ]
     },
     {
@@ -106,9 +107,10 @@ function auditStaticPages(rootDir, errors) {
     const content = readFileSafe(path.join(rootDir, file));
     pushIfMissing(
       errors,
-      content.includes('href="/chauchaubook.html">Chauchaubook</a>'),
+      content.includes('href="/chauchaubook">Chauchaubook</a>'),
       `${file} is missing Chauchaubook navigation link`
     );
+    pushIfMissing(errors, !content.includes(".html"), `${file} contains a public URL with an .html suffix`);
   });
 
   const cssVersionChecks = [
@@ -142,6 +144,7 @@ function auditCoreFiles(rootDir, errors) {
     "sitemap.xml",
     "site.webmanifest",
     "assets/js/seo.js",
+    "script/static-server.js",
     "assets/img/favicon/apple-touch-icon.png",
     "assets/img/favicon/android-chrome-192x192.png",
     "assets/img/favicon/android-chrome-512x512.png",
@@ -156,16 +159,41 @@ function auditCoreFiles(rootDir, errors) {
   pushIfMissing(errors, robots.includes("Sitemap: https://biacung.com/sitemap.xml"), "robots.txt is missing sitemap declaration");
 }
 
+function auditLocalRoutes(rootDir, errors) {
+  const routeRules = [
+    ["/", "index.html"],
+    ["/about", "about.html"],
+    ["/chauchaubook", "chauchaubook.html"],
+    ["/search", "search.html"],
+    ["/series", "series.html"],
+    ["/detail", "detail.html"],
+    ["/award", "award/index.html"],
+    ["/award/", "award/index.html"],
+    ["/about.html", "about.html"],
+    ["/detail.html", "detail.html"]
+  ];
+
+  routeRules.forEach(([route, expectedFile]) => {
+    const resolved = resolveRequestPath(rootDir, route);
+    const expected = path.join(rootDir, expectedFile);
+    pushIfMissing(errors, resolved === expected, `Local route ${route} does not resolve to ${expectedFile}`);
+  });
+
+  pushIfMissing(errors, resolveRequestPath(rootDir, "/missing-page") === null, "Local server does not return 404 for a missing route");
+  pushIfMissing(errors, resolveRequestPath(rootDir, "/%2e%2e%2fpackage.json") === null, "Local server allows path traversal");
+}
+
 function auditSitemap(rootDir, errors) {
   const expected = buildSitemapXml(rootDir).trim();
   const current = readFileSafe(path.join(rootDir, "sitemap.xml")).trim();
   pushIfMissing(errors, current === expected, "sitemap.xml is stale. Run `node script/generate-sitemap.js`.");
 
   const entries = buildSitemapEntries(rootDir);
-  pushIfMissing(errors, entries.some((entry) => entry.loc === "https://biacung.com/chauchaubook.html"), "sitemap.xml does not include Chauchaubook page");
-  pushIfMissing(errors, entries.some((entry) => entry.loc.includes("/detail.html?id=")), "sitemap.xml does not include book detail URLs");
-  pushIfMissing(errors, entries.some((entry) => entry.loc.includes("/series.html?id=")), "sitemap.xml does not include series detail URLs");
-  pushIfMissing(errors, !entries.some((entry) => entry.loc.includes("/search.html")), "sitemap.xml should not include search result pages");
+  pushIfMissing(errors, entries.some((entry) => entry.loc === "https://biacung.com/chauchaubook"), "sitemap.xml does not include Chauchaubook page");
+  pushIfMissing(errors, entries.some((entry) => entry.loc.includes("/detail?id=")), "sitemap.xml does not include book detail URLs");
+  pushIfMissing(errors, entries.some((entry) => entry.loc.includes("/series?id=")), "sitemap.xml does not include series detail URLs");
+  pushIfMissing(errors, !entries.some((entry) => entry.loc.includes("/search")), "sitemap.xml should not include search result pages");
+  pushIfMissing(errors, !entries.some((entry) => entry.loc.includes(".html")), "sitemap.xml contains legacy .html URLs");
 }
 
 function auditData(rootDir, errors, warnings) {
@@ -234,6 +262,7 @@ function main() {
   const warnings = [];
 
   auditCoreFiles(rootDir, errors);
+  auditLocalRoutes(rootDir, errors);
   auditStaticPages(rootDir, errors);
   auditSitemap(rootDir, errors);
   auditData(rootDir, errors, warnings);
