@@ -155,7 +155,7 @@ function updatePageCopy() {
     kickerNode.textContent = "Chauchaubook";
   }
   if (titleNode) {
-    titleNode.textContent = "Kết quả Chauchaubook";
+    titleNode.textContent = "Bìa sách được Chauchaubook thực hiện";
   }
 }
 
