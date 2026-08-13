@@ -2,966 +2,966 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://biacung.com/</loc>
-    <lastmod>2026-07-26</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://biacung.com/about.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://biacung.com/about</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://biacung.com/chauchaubook.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://biacung.com/chauchaubook</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://biacung.com/series.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://biacung.com/series</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://biacung.com/series.html?id=50-nam-fahasa</loc>
-    <lastmod>2026-07-19</lastmod>
+    <loc>https://biacung.com/series?id=50-nam-fahasa</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/series.html?id=canh-cua-mo-rong</loc>
+    <loc>https://biacung.com/series?id=canh-cua-mo-rong</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/series.html?id=caraval</loc>
+    <loc>https://biacung.com/series?id=caraval</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/series.html?id=dong-a-classic</loc>
+    <loc>https://biacung.com/series?id=dong-a-classic</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/series.html?id=khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/series?id=khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/series.html?id=moi-nha-van-mot-tac-pham</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://biacung.com/series?id=moi-nha-van-mot-tac-pham</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/series.html?id=sach-tet-dong-a</loc>
+    <loc>https://biacung.com/series?id=sach-tet-dong-a</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/series.html?id=tram-nam-nobel</loc>
+    <loc>https://biacung.com/series?id=tram-nam-nobel</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/series.html?id=tu-sach-thanh-nien</loc>
+    <loc>https://biacung.com/series?id=tu-sach-thanh-nien</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/series.html?id=van-moi-dong-a</loc>
+    <loc>https://biacung.com/series?id=van-moi-dong-a</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/series.html?id=viet-nam-danh-tac-nha-nam</loc>
+    <loc>https://biacung.com/series?id=viet-nam-danh-tac-nha-nam</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=homere-odyssee</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://biacung.com/detail?id=nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=mario-puzo-the-godfather</loc>
+    <loc>https://biacung.com/detail?id=homere-odyssee</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=mario-puzo-the-godfather</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dan-brown-the-secret-of-secrets</loc>
+    <loc>https://biacung.com/detail?id=dan-brown-the-secret-of-secrets</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=george-rr-martin-fire-blood</loc>
+    <loc>https://biacung.com/detail?id=george-rr-martin-fire-blood</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=nhieu-tac-gia-dai-viet-su-ky-toan-thu</loc>
+    <loc>https://biacung.com/detail?id=nhieu-tac-gia-dai-viet-su-ky-toan-thu</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=franz-kafka-tuyen-tap-tac-pham-frank-kafka</loc>
+    <loc>https://biacung.com/detail?id=franz-kafka-tuyen-tap-tac-pham-frank-kafka</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=fyodor-dostoevsky-dem-trang</loc>
+    <loc>https://biacung.com/detail?id=fyodor-dostoevsky-dem-trang</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=marai-sandor-a-gyertyak-csonkig-egnek</loc>
+    <loc>https://biacung.com/detail?id=marai-sandor-a-gyertyak-csonkig-egnek</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=mikhail-bulgacov-nghe-nhan-va-margarita</loc>
+    <loc>https://biacung.com/detail?id=mikhail-bulgacov-nghe-nhan-va-margarita</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=mikhail-prishvin-giot-rung</loc>
+    <loc>https://biacung.com/detail?id=mikhail-prishvin-giot-rung</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=nhieu-tac-gia-doan-tu-huyen-mot-nghe-nhan</loc>
+    <loc>https://biacung.com/detail?id=nhieu-tac-gia-doan-tu-huyen-mot-nghe-nhan</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=jk-rowling-harry-potter</loc>
+    <loc>https://biacung.com/detail?id=jk-rowling-harry-potter</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=nguyen-dinh-chieu-luc-van-tien</loc>
+    <loc>https://biacung.com/detail?id=nguyen-dinh-chieu-luc-van-tien</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=nguyen-du-truyen-kieu</loc>
+    <loc>https://biacung.com/detail?id=nguyen-du-truyen-kieu</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail.html?id=emily-jane-bronte-wuthering-heights</loc>
+    <loc>https://biacung.com/detail?id=emily-jane-bronte-wuthering-heights</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=ernest-hemingway-the-old-man-and-the-sea</loc>
+    <loc>https://biacung.com/detail?id=ernest-hemingway-the-old-man-and-the-sea</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=higashino-keigo-an-mang-ban-cung-lop</loc>
+    <loc>https://biacung.com/detail?id=higashino-keigo-an-mang-ban-cung-lop</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=john-grisham-the-street-lawyer</loc>
+    <loc>https://biacung.com/detail?id=john-grisham-the-street-lawyer</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=jose-mauro-de-vasconcelos-meu-pe-de-laranja-lima</loc>
+    <loc>https://biacung.com/detail?id=jose-mauro-de-vasconcelos-meu-pe-de-laranja-lima</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=miguel-de-cervantes-don-quijote-de-la-mancha</loc>
+    <loc>https://biacung.com/detail?id=miguel-de-cervantes-don-quijote-de-la-mancha</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=natsume-soseki-ta-la-meo</loc>
+    <loc>https://biacung.com/detail?id=natsume-soseki-ta-la-meo</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=nguyen-du-truyen-kieu-hoi-ban</loc>
+    <loc>https://biacung.com/detail?id=nguyen-du-truyen-kieu-hoi-ban</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=stephen-king-duma-key</loc>
+    <loc>https://biacung.com/detail?id=stephen-king-duma-key</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=stephen-king-the-dead-zone</loc>
+    <loc>https://biacung.com/detail?id=stephen-king-the-dead-zone</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=thach-lam-ha-noi-bam-sau-pho-phuong</loc>
+    <loc>https://biacung.com/detail?id=thach-lam-ha-noi-bam-sau-pho-phuong</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=vu-bang-mieng-ngon-ha-noi</loc>
+    <loc>https://biacung.com/detail?id=vu-bang-mieng-ngon-ha-noi</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=hoang-nam-tien-sach-thu-cho-em</loc>
+    <loc>https://biacung.com/detail?id=hoang-nam-tien-sach-thu-cho-em</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=jose-mauro-de-vasconcelos-boxset-cay-cam-ngot-cua-toi-suoi-am-mat-troi</loc>
+    <loc>https://biacung.com/detail?id=jose-mauro-de-vasconcelos-boxset-cay-cam-ngot-cua-toi-suoi-am-mat-troi</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=khaled-hosseini-the-kite-runner</loc>
+    <loc>https://biacung.com/detail?id=khaled-hosseini-the-kite-runner</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=lev-nikolayevich-tolstoy-chien-tranh-va-hoa-binh</loc>
+    <loc>https://biacung.com/detail?id=lev-nikolayevich-tolstoy-chien-tranh-va-hoa-binh</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=lev-tolstoy-anna-karenina</loc>
+    <loc>https://biacung.com/detail?id=lev-tolstoy-anna-karenina</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=lucy-maud-montgomery-anne-of-green-gables</loc>
+    <loc>https://biacung.com/detail?id=lucy-maud-montgomery-anne-of-green-gables</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=matt-haig-the-midnight-library</loc>
+    <loc>https://biacung.com/detail?id=matt-haig-the-midnight-library</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=nguyen-nhat-anh-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim</loc>
+    <loc>https://biacung.com/detail?id=nguyen-nhat-anh-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=nguyen-nhat-anh-chuyen-tinh-thi-tran</loc>
+    <loc>https://biacung.com/detail?id=nguyen-nhat-anh-chuyen-tinh-thi-tran</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=nguyen-nhat-anh-dao-mong-mo</loc>
+    <loc>https://biacung.com/detail?id=nguyen-nhat-anh-dao-mong-mo</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=r-f-kuang-yellowface</loc>
+    <loc>https://biacung.com/detail?id=r-f-kuang-yellowface</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=stephanie-garber-legendary</loc>
+    <loc>https://biacung.com/detail?id=stephanie-garber-legendary</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=thomas-harris-hannibal-rising</loc>
+    <loc>https://biacung.com/detail?id=thomas-harris-hannibal-rising</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=vuong-hong-sen-tap-but-nam-canh-ngo-qua-tan-mui-1990-1991</loc>
+    <loc>https://biacung.com/detail?id=vuong-hong-sen-tap-but-nam-canh-ngo-qua-tan-mui-1990-1991</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=yagisawa-satoshi-nhung-giac-mo-o-hieu-sach-morisaki</loc>
+    <loc>https://biacung.com/detail?id=yagisawa-satoshi-nhung-giac-mo-o-hieu-sach-morisaki</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=nguyen-dinh-dang-60-bi-quyet-ve-son-dau</loc>
+    <loc>https://biacung.com/detail?id=nguyen-dinh-dang-60-bi-quyet-ve-son-dau</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=charlotte-bronte-jane-eyre</loc>
+    <loc>https://biacung.com/detail?id=charlotte-bronte-jane-eyre</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=craig-silvey-runt</loc>
+    <loc>https://biacung.com/detail?id=craig-silvey-runt</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=george-bernard-shaw-pygmalion</loc>
+    <loc>https://biacung.com/detail?id=george-bernard-shaw-pygmalion</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=tran-dai-thang-layers-of-memory</loc>
+    <loc>https://biacung.com/detail?id=tran-dai-thang-layers-of-memory</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=tran-dai-thang-toi-ke-tat-ca-deu-tu-sach</loc>
+    <loc>https://biacung.com/detail?id=tran-dai-thang-toi-ke-tat-ca-deu-tu-sach</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=tran-tien-tran-tien-nguoi-hat-tho-minh-ca-khuc-nhung-cau-chuyen</loc>
+    <loc>https://biacung.com/detail?id=tran-tien-tran-tien-nguoi-hat-tho-minh-ca-khuc-nhung-cau-chuyen</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=ton-tu-ton-tu-binh-phap</loc>
+    <loc>https://biacung.com/detail?id=ton-tu-ton-tu-binh-phap</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=erich-maria-remarque-im-westen-nichts-neues</loc>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-im-westen-nichts-neues</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dino-buzzati-dino-buzzati-tuyen-tap-tac-pham</loc>
+    <loc>https://biacung.com/detail?id=dino-buzzati-dino-buzzati-tuyen-tap-tac-pham</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=marai-sandor-loi-co-cay</loc>
+    <loc>https://biacung.com/detail?id=marai-sandor-loi-co-cay</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=mikhail-bulgakov-nhung-qua-trung-dinh-menh</loc>
+    <loc>https://biacung.com/detail?id=mikhail-bulgakov-nhung-qua-trung-dinh-menh</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=mikhail-bulgakov-trai-tim-cho</loc>
+    <loc>https://biacung.com/detail?id=mikhail-bulgakov-trai-tim-cho</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=nguyen-van-thac-mai-mai-tuoi-hai-muoi</loc>
+    <loc>https://biacung.com/detail?id=nguyen-van-thac-mai-mai-tuoi-hai-muoi</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=ocean-vuong-the-emperor-of-gladness</loc>
+    <loc>https://biacung.com/detail?id=ocean-vuong-the-emperor-of-gladness</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=son-tung-bup-sen-xanh</loc>
+    <loc>https://biacung.com/detail?id=son-tung-bup-sen-xanh</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dong-a-ho-chi-minh-tieu-su-bang-hinh</loc>
+    <loc>https://biacung.com/detail?id=dong-a-ho-chi-minh-tieu-su-bang-hinh</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=frances-hodgson-burnett-the-secret-garden</loc>
+    <loc>https://biacung.com/detail?id=frances-hodgson-burnett-the-secret-garden</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=hector-malot-en-famille</loc>
+    <loc>https://biacung.com/detail?id=hector-malot-en-famille</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=hector-malot-romain-kalbris</loc>
+    <loc>https://biacung.com/detail?id=hector-malot-romain-kalbris</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=johann-david-wyss-der-schweizerische-robinson</loc>
+    <loc>https://biacung.com/detail?id=johann-david-wyss-der-schweizerische-robinson</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=mark-twain-the-adventures-of-tom-sawyer</loc>
+    <loc>https://biacung.com/detail?id=mark-twain-the-adventures-of-tom-sawyer</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=sach-tet-binh-ngo-dong-a-2026</loc>
+    <loc>https://biacung.com/detail?id=sach-tet-binh-ngo-dong-a-2026</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dong-a-the-illustrated-history-of-vietnam</loc>
+    <loc>https://biacung.com/detail?id=dong-a-the-illustrated-history-of-vietnam</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=percival-everett-james</loc>
+    <loc>https://biacung.com/detail?id=percival-everett-james</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=antoine-galland-nghin-le-mot-dem</loc>
+    <loc>https://biacung.com/detail?id=antoine-galland-nghin-le-mot-dem</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=jacob-ludwig-karl-grimm-kinder-und-hausmarchen</loc>
+    <loc>https://biacung.com/detail?id=jacob-ludwig-karl-grimm-kinder-und-hausmarchen</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=jose-mauro-de-vasconcelos-vamos-aquecer-o-sol</loc>
+    <loc>https://biacung.com/detail?id=jose-mauro-de-vasconcelos-vamos-aquecer-o-sol</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=john-steinbeck-east-of-eden</loc>
+    <loc>https://biacung.com/detail?id=john-steinbeck-east-of-eden</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=john-steinbeck-of-mice-and-men</loc>
+    <loc>https://biacung.com/detail?id=john-steinbeck-of-mice-and-men</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=thomas-mann-der-zauberberg</loc>
+    <loc>https://biacung.com/detail?id=thomas-mann-der-zauberberg</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=frederic-mistral-nang-mireille</loc>
+    <loc>https://biacung.com/detail?id=frederic-mistral-nang-mireille</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=jose-echegaray-dien-ro-hay-than-thanh</loc>
+    <loc>https://biacung.com/detail?id=jose-echegaray-dien-ro-hay-than-thanh</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dao-duy-anh-viet-nam-van-hoa-su-cuong</loc>
+    <loc>https://biacung.com/detail?id=dao-duy-anh-viet-nam-van-hoa-su-cuong</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=johanna-spyri-heidi</loc>
+    <loc>https://biacung.com/detail?id=johanna-spyri-heidi</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=victor-hugo-les-miserables</loc>
+    <loc>https://biacung.com/detail?id=victor-hugo-les-miserables</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=jules-verne-vingt-mille-lieues-sous-les-mers</loc>
+    <loc>https://biacung.com/detail?id=jules-verne-vingt-mille-lieues-sous-les-mers</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=lazar-lagin-ong-gia-khottabych</loc>
+    <loc>https://biacung.com/detail?id=lazar-lagin-ong-gia-khottabych</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=tran-trong-kim-viet-nam-su-luoc</loc>
+    <loc>https://biacung.com/detail?id=tran-trong-kim-viet-nam-su-luoc</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=hector-malot-sans-famille</loc>
+    <loc>https://biacung.com/detail?id=hector-malot-sans-famille</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo</loc>
+    <loc>https://biacung.com/detail?id=irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-chinh-tri-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-chinh-tri-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-khoa-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-khoa-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-kinh-doanh-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-kinh-doanh-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-kinh-te-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-kinh-te-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=selma-lagerlof-the-wonderful-adventures-of-nils-and-further-adventures-of-nils-holgersson</loc>
+    <loc>https://biacung.com/detail?id=selma-lagerlof-the-wonderful-adventures-of-nils-and-further-adventures-of-nils-holgersson</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=mario-puzo-omerta</loc>
+    <loc>https://biacung.com/detail?id=mario-puzo-omerta</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=mario-puzo-the-family</loc>
+    <loc>https://biacung.com/detail?id=mario-puzo-the-family</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=mario-puzo-the-sicilian</loc>
+    <loc>https://biacung.com/detail?id=mario-puzo-the-sicilian</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-nhung-tran-chien-thay-doi-lich-su</loc>
+    <loc>https://biacung.com/detail?id=dk-nhung-tran-chien-thay-doi-lich-su</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=jane-bingham-the-internet-linked-encyclopedia-of-world-history</loc>
+    <loc>https://biacung.com/detail?id=jane-bingham-the-internet-linked-encyclopedia-of-world-history</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=la-fontaine-the-fables-of-la-fontaine</loc>
+    <loc>https://biacung.com/detail?id=la-fontaine-the-fables-of-la-fontaine</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=albert-camus-le-mythe-de-sisyphe</loc>
+    <loc>https://biacung.com/detail?id=albert-camus-le-mythe-de-sisyphe</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=michael-j-sandel-justice-whats-the-right-thing-to-do</loc>
+    <loc>https://biacung.com/detail?id=michael-j-sandel-justice-whats-the-right-thing-to-do</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-nu-quyen-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-nu-quyen-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-van-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-van-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=mario-puzo-fools-die</loc>
+    <loc>https://biacung.com/detail?id=mario-puzo-fools-die</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do</loc>
+    <loc>https://biacung.com/detail?id=dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=alexandre-dumas-les-trois-mousquetaires</loc>
+    <loc>https://biacung.com/detail?id=alexandre-dumas-les-trois-mousquetaires</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=irving-stone-lust-for-life</loc>
+    <loc>https://biacung.com/detail?id=irving-stone-lust-for-life</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=michael-collins-remarkable-books</loc>
+    <loc>https://biacung.com/detail?id=michael-collins-remarkable-books</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-lich-su-quan-su-bach-khoa-thu-cac-loai-vu-khi-dinh-hinh-the-gioi</loc>
+    <loc>https://biacung.com/detail?id=dk-lich-su-quan-su-bach-khoa-thu-cac-loai-vu-khi-dinh-hinh-the-gioi</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=michael-j-sandel-what-money-cant-buy-the-moral-limits-of-markets</loc>
+    <loc>https://biacung.com/detail?id=michael-j-sandel-what-money-cant-buy-the-moral-limits-of-markets</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-ton-giao-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-ton-giao-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-triet-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-triet-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=ian-stewart-in-pursuit-of-the-unknown-17-equations-that-changed-the-world</loc>
+    <loc>https://biacung.com/detail?id=ian-stewart-in-pursuit-of-the-unknown-17-equations-that-changed-the-world</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=thomas-mann-der-tod-in-venedig</loc>
+    <loc>https://biacung.com/detail?id=thomas-mann-der-tod-in-venedig</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-lich-su-the-gioi-lich-su-the-gioi-chan-dung-nhan-loai-theo-dong-su-kien</loc>
+    <loc>https://biacung.com/detail?id=dk-lich-su-the-gioi-lich-su-the-gioi-chan-dung-nhan-loai-theo-dong-su-kien</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=emile-chartlier-alain-noi-ve-hanh-phuc</loc>
+    <loc>https://biacung.com/detail?id=emile-chartlier-alain-noi-ve-hanh-phuc</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=mario-puzo-the-last-don</loc>
+    <loc>https://biacung.com/detail?id=mario-puzo-the-last-don</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=jmg-le-clezio-mondo-et-autres-histoires</loc>
+    <loc>https://biacung.com/detail?id=jmg-le-clezio-mondo-et-autres-histoires</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=nhieu-tac-gia-bach-khoa-tri-thuc-bang-hinh</loc>
+    <loc>https://biacung.com/detail?id=nhieu-tac-gia-bach-khoa-tri-thuc-bang-hinh</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=abhijit-v-banerjee-poor-economics-a-radical-rethinking-of-the-way-to-fight-global-poverty</loc>
+    <loc>https://biacung.com/detail?id=abhijit-v-banerjee-poor-economics-a-radical-rethinking-of-the-way-to-fight-global-poverty</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=van-moi-10-nam-2015-2025-dong-a</loc>
+    <loc>https://biacung.com/detail?id=van-moi-10-nam-2015-2025-dong-a</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=hunter-s-thompson-fear-and-loathing-in-las-vegas-a-savage-journey-to-the-heart-of-the-american-dream</loc>
+    <loc>https://biacung.com/detail?id=hunter-s-thompson-fear-and-loathing-in-las-vegas-a-savage-journey-to-the-heart-of-the-american-dream</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=rohinton-mistry-a-fine-balance</loc>
+    <loc>https://biacung.com/detail?id=rohinton-mistry-a-fine-balance</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=victor-hugo-quatrevingt-treize</loc>
+    <loc>https://biacung.com/detail?id=victor-hugo-quatrevingt-treize</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=paul-auster-the-invention-of-solitude</loc>
+    <loc>https://biacung.com/detail?id=paul-auster-the-invention-of-solitude</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=philip-roth-nemesis</loc>
+    <loc>https://biacung.com/detail?id=philip-roth-nemesis</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=raymond-queneau-zazie-dans-le-metro</loc>
+    <loc>https://biacung.com/detail?id=raymond-queneau-zazie-dans-le-metro</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=david-zierler-con-duong-da-cam</loc>
+    <loc>https://biacung.com/detail?id=david-zierler-con-duong-da-cam</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=john-steinbeck-tortilla-flat</loc>
+    <loc>https://biacung.com/detail?id=john-steinbeck-tortilla-flat</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=john-steinbeck-travels-with-charley-in-search-of-america</loc>
+    <loc>https://biacung.com/detail?id=john-steinbeck-travels-with-charley-in-search-of-america</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=norman-maclean-a-river-runs-through-it</loc>
+    <loc>https://biacung.com/detail?id=norman-maclean-a-river-runs-through-it</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=mark-levi-the-mathematical-mechanic-using-physical-reasoning-to-solve-problems</loc>
+    <loc>https://biacung.com/detail?id=mark-levi-the-mathematical-mechanic-using-physical-reasoning-to-solve-problems</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=tobias-wolff-our-story-begins-new-and-selected-stories</loc>
+    <loc>https://biacung.com/detail?id=tobias-wolff-our-story-begins-new-and-selected-stories</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=victor-segalen-rene-leys</loc>
+    <loc>https://biacung.com/detail?id=victor-segalen-rene-leys</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=niccolo-machiavelli-il-principe</loc>
+    <loc>https://biacung.com/detail?id=niccolo-machiavelli-il-principe</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=neil-shubin-your-inner-fish-a-journey-into-the-35-billion-year-history-of-the-human-body</loc>
+    <loc>https://biacung.com/detail?id=neil-shubin-your-inner-fish-a-journey-into-the-35-billion-year-history-of-the-human-body</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=samuel-butler-the-way-of-all-flesh</loc>
+    <loc>https://biacung.com/detail?id=samuel-butler-the-way-of-all-flesh</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-luat-phap-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-luat-phap-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-nghe-thuat-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-nghe-thuat-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-sinh-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-sinh-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-sinh-thai-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-sinh-thai-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-tam-li-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-tam-li-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-the-chien-ii-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-the-chien-ii-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-thien-van-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-thien-van-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-toan-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-toan-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-xa-hoi-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-xa-hoi-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=dk-y-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
+    <loc>https://biacung.com/detail?id=dk-y-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam</loc>
+    <loc>https://biacung.com/detail?id=nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=henryk-sienkiewicz-lao-boc-hania-selim-mirza</loc>
+    <loc>https://biacung.com/detail?id=henryk-sienkiewicz-lao-boc-hania-selim-mirza</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=nguyen-dinh-dang-ky-thuat-ve-son-dau</loc>
+    <loc>https://biacung.com/detail?id=nguyen-dinh-dang-ky-thuat-ve-son-dau</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/detail.html?id=mario-puzo-the-fourth-k</loc>
+    <loc>https://biacung.com/detail?id=mario-puzo-the-fourth-k</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

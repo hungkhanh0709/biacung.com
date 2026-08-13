@@ -62,7 +62,7 @@ function maybeRedirectPresetPage(query) {
     return false;
   }
 
-  window.location.replace("/chauchaubook.html");
+  window.location.replace("/chauchaubook");
   return true;
 }
 
@@ -108,10 +108,10 @@ function buildDetailUrl(type, slug) {
   }
 
   if (type === "series") {
-    return `series.html?id=${encodeURIComponent(value)}`;
+    return `/series?id=${encodeURIComponent(value)}`;
   }
 
-  return `detail.html?id=${encodeURIComponent(value)}`;
+  return `/detail?id=${encodeURIComponent(value)}`;
 }
 
 async function fetchJson(url) {

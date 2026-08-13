@@ -41,7 +41,7 @@ function normalizeUrl(value) {
 
 function buildDetailUrl(bookId) {
   const value = normalizeText(bookId);
-  return value ? `detail.html?id=${encodeURIComponent(value)}` : "detail.html";
+  return value ? `/detail?id=${encodeURIComponent(value)}` : "/detail";
 }
 
 async function fetchJson(url) {
@@ -155,7 +155,7 @@ function updatePageCopy() {
     kickerNode.textContent = "Chauchaubook";
   }
   if (titleNode) {
-    titleNode.textContent = "Kết quả Chauchaubook";
+    titleNode.textContent = "Bìa sách được Chauchaubook thực hiện";
   }
 }
 

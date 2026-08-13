@@ -24,7 +24,7 @@ function normalizePathname(pathname) {
     return "/";
   }
 
-  return normalized.replace(/\/+$/, "") || "/";
+  return normalized.replace(/\/+$/, "").replace(/\.html$/, "") || "/";
 }
 
 function isSameRoute(linkUrl, currentUrl) {
@@ -39,7 +39,7 @@ function isSameRoute(linkUrl, currentUrl) {
     return false;
   }
 
-  if (normalizePathname(currentUrl.pathname) === "/search.html") {
+  if (normalizePathname(currentUrl.pathname) === "/search") {
     const linkQuery = normalizeSearchValue(linkUrl.searchParams.get("q"));
     const currentQuery = normalizeSearchValue(currentUrl.searchParams.get("q"));
     return Boolean(linkQuery) && linkQuery === currentQuery;
