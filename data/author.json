@@ -757,5 +757,12 @@
     "work_ids": [
       "phong-tu-khai-tung-bach-dan-suong-truc-chiu-han"
     ]
+  },
+  {
+    "id": "jrr-tolkien",
+    "name": "J.R.R. Tolkien",
+    "work_ids": [
+      "jrr-tolkien-the-lord-of-the-rings"
+    ]
   }
 ]
