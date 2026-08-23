@@ -1,0 +1,35 @@
+{
+  "id": "pham-ngoc-tien-chuyen-lien-ong-lien-ba",
+  "title": "Chuyện Liền Ông Liền Bà",
+  "title_original": "",
+  "authors": [
+    "Phạm Ngọc Tiến"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "pham-ngoc-tien-chuyen-lien-ong-lien-ba-2026-nha-nam-bia-cung-320k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Hà Nội",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "320k",
+      "print_run": null,
+      "page_count": 170,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 14 x 1.1",
+      "weight_g": 200,
+      "thumbnail": "/assets/img/books/pham-ngoc-tien-chuyen-lien-ong-lien-ba/cover.webp",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

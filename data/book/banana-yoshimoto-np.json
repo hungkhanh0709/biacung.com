@@ -1,0 +1,40 @@
+{
+  "id": "banana-yoshimoto-np",
+  "title": "N.P",
+  "title_original": "N.P",
+  "authors": [
+    "Banana Yoshimoto"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "banana-yoshimoto-np-2026-nha-nam-bia-cung",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Hà Nội",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Lương Việt Dũng"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/banana-yoshimoto-np/cover.webp",
+      "gellery_imgs": [
+        "/assets/img/books/banana-yoshimoto-kitchen/kitchen-np.jpeg",
+        "/assets/img/books/banana-yoshimoto-np/signed.jpeg"
+      ],
+      "detail": "Signed Edition trên bìa cùng chữ ký tay trực tiếp từ Dịch giả Lương Việt Dũng."
+    }
+  ]
+}

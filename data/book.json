@@ -1,5 +1,53 @@
 [
   {
+    "detail": "data/book/knut-hamsun-sult.json",
+    "search_text": "doi sult knut hamsun nxb ha noi dong tay thai ba tan",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-24"
+  },
+  {
+    "detail": "data/book/banana-yoshimoto-kitchen.json",
+    "search_text": "kitchen banana yoshimoto nxb ha noi nha nam luong viet dung",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-23"
+  },
+  {
+    "detail": "data/book/banana-yoshimoto-np.json",
+    "search_text": "np banana yoshimoto nxb ha noi nha nam luong viet dung",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-23"
+  },
+  {
+    "detail": "data/book/pham-ngoc-tien-chan-dung-cua-ruou.json",
+    "search_text": "chan dung cua ruou pham ngoc tien nxb ha noi nha nam",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-23"
+  },
+  {
+    "detail": "data/book/pham-ngoc-tien-chuyen-lien-ong-lien-ba.json",
+    "search_text": "chuyen lien ong lien ba pham ngoc tien nxb ha noi nha nam",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-23"
+  },
+  {
+    "detail": "data/book/pham-ngoc-tien-tinh-yeu-thach-sung.json",
+    "search_text": "tinh yeu thach sung pham ngoc tien nxb ha noi nha nam",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-23"
+  },
+  {
+    "detail": "data/book/frank-herbert-dune-messiah.json",
+    "search_text": "cuu tinh xu cat dune messiah frank herbert dune nxb the gioi nha nam tam thuy",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-22"
+  },
+  {
+    "detail": "data/book/frank-herbert-children-of-dune.json",
+    "search_text": "hau due xu cat dune 3 children of dune frank herbert dune nxb the gioi nha nam hai stark",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-21"
+  },
+  {
     "detail": "data/book/jrr-tolkien-the-lord-of-the-rings.json",
     "search_text": "chua nhan the lord of the rings jrr tolkien nxb van hoc nha nam dang tran viet an ly tam thuy tung lam ngoc diep",
     "last_pub_year": 2026,
