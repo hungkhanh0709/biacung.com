@@ -3,13 +3,13 @@
   "title": "Chúa Nhẫn",
   "title_original": "The Lord of the Rings",
   "authors": [
-    "J.r.r. Tolkien"
+    "J.R.R. Tolkien"
   ],
   "awards": [],
   "series": [],
   "editions": [
     {
-      "id": "jrr-tolkien-the-lord-of-the-rings-2026-nha-nam-boxset-bia-cung-bung-sach-ma-nhu-vang-2tr8",
+      "id": "jrr-tolkien-the-lord-of-the-rings-2026-nha-nam-boxset-bia-cung-2tr8",
       "isbn": null,
       "caption": "Bản Đặc Biệt N'333",
       "pub_year": 2026,
@@ -18,14 +18,16 @@
         "Nhã Nam"
       ],
       "translators": [
-        "Đặng Trần Việt"
+        "Đặng Trần Việt",
+        "An Lý",
+        "Tâm Thủy"
       ],
       "illustrators": [
         "Tùng Lâm",
         "Ngọc Điệp"
       ],
       "proofreaders": [],
-      "format": "Boxset, bìa cứng, bụng sách mạ nhũ vàng",
+      "format": "Boxset, bìa cứng",
       "cover_price": "2tr8",
       "print_run": 333,
       "page_count": null,
