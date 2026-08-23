@@ -1,0 +1,40 @@
+{
+  "id": "banana-yoshimoto-kitchen",
+  "title": "Kitchen",
+  "title_original": "Kitchen",
+  "authors": [
+    "Banana Yoshimoto"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "banana-yoshimoto-kitchen-2026-nha-nam-bia-cung-360k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Hà Nội",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Lương Việt Dũng"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "360k",
+      "print_run": null,
+      "page_count": 245,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/banana-yoshimoto-kitchen/cover.webp",
+      "gellery_imgs": [
+        "/assets/img/books/banana-yoshimoto-kitchen/kitchen-np.jpeg",
+        "/assets/img/books/banana-yoshimoto-kitchen/signed.jpeg"
+      ],
+      "detail": "Signed Edition trên bìa cùng chữ ký tay trực tiếp từ Dịch giả Lương Việt Dũng."
+    }
+  ]
+}

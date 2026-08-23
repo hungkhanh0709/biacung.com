@@ -748,7 +748,8 @@
     "id": "frank-herbert",
     "name": "Frank Herbert",
     "work_ids": [
-      "frank-herbert-children-of-dune"
+      "frank-herbert-children-of-dune",
+      "frank-herbert-dune-messiah"
     ]
   },
   {
@@ -763,6 +764,30 @@
     "name": "J.R.R. Tolkien",
     "work_ids": [
       "jrr-tolkien-the-lord-of-the-rings"
+    ]
+  },
+  {
+    "id": "pham-ngoc-tien",
+    "name": "Phạm Ngọc Tiến",
+    "work_ids": [
+      "pham-ngoc-tien-chan-dung-cua-ruou",
+      "pham-ngoc-tien-chuyen-lien-ong-lien-ba",
+      "pham-ngoc-tien-tinh-yeu-thach-sung"
+    ]
+  },
+  {
+    "id": "banana-yoshimoto",
+    "name": "Banana Yoshimoto",
+    "work_ids": [
+      "banana-yoshimoto-np",
+      "banana-yoshimoto-kitchen"
+    ]
+  },
+  {
+    "id": "knut-hamsun",
+    "name": "Knut Hamsun",
+    "work_ids": [
+      "knut-hamsun-sult"
     ]
   }
 ]

@@ -1,0 +1,43 @@
+{
+  "id": "knut-hamsun-sult",
+  "title": "Đói",
+  "title_original": "Sult",
+  "authors": [
+    "Knut Hamsun"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "knut-hamsun-sult-2026-dong-tay-bia-cung-ao-om-135k",
+      "isbn": null,
+      "caption": "H365",
+      "pub_year": 2026,
+      "publisher": "NXB Hà Nội",
+      "issuers": [
+        "Đông Tây"
+      ],
+      "translators": [
+        "Thái Bá Tân"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "135k",
+      "print_run": 365,
+      "page_count": 268,
+      "copy_numbering": "001-365",
+      "size_cm": "12 x 20,5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/knut-hamsun-sult/cover.jpeg",
+      "gellery_imgs": [
+        "/assets/img/books/knut-hamsun-sult/hardcover-jacket.jpeg",
+        "/assets/img/books/knut-hamsun-sult/endpaper.jpeg",
+        "/assets/img/books/knut-hamsun-sult/endpaper-open.jpeg",
+        "/assets/img/books/knut-hamsun-sult/dust-jacket.jpeg",
+        "/assets/img/books/knut-hamsun-sult/hardcover.jpeg"
+      ],
+      "detail": "- Bản H365 chỉ phát hành 365 cuốn, đóng số từ 1 đến 365 và không tái bản.\n- Bìa cứng, in trên giấy Kraft bồi carton, giấy BB70/76\n- Có bìa áo, tờ gác thiết kế riêng, kèm bookmark\n- Đóng số từ 1 đến 365"
+    }
+  ]
+}
