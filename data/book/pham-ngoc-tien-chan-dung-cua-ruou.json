@@ -1,0 +1,35 @@
+{
+  "id": "pham-ngoc-tien-chan-dung-cua-ruou",
+  "title": "Chân Dung Của Rượu",
+  "title_original": "",
+  "authors": [
+    "Phạm Ngọc Tiến"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "pham-ngoc-tien-chan-dung-cua-ruou-2026-nha-nam-bia-cung-450k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Hà Nội",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "450k",
+      "print_run": null,
+      "page_count": 406,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": 500,
+      "thumbnail": "/assets/img/books/pham-ngoc-tien-chan-dung-cua-ruou/cover.webp",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

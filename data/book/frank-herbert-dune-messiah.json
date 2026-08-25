@@ -1,0 +1,39 @@
+{
+  "id": "frank-herbert-dune-messiah",
+  "title": "Cứu Tinh Xứ Cát",
+  "title_original": "Dune Messiah",
+  "authors": [
+    "Frank Herbert"
+  ],
+  "awards": [],
+  "series": [
+    "Dune"
+  ],
+  "editions": [
+    {
+      "id": "frank-herbert-dune-messiah-2026-nha-nam-bia-cung-300k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Thế Giới",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Tâm Thủy"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "300k",
+      "print_run": null,
+      "page_count": 380,
+      "copy_numbering": null,
+      "size_cm": "17 x 25",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/frank-herbert-dune-messiah/cover.webp",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

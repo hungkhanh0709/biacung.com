@@ -31,10 +31,10 @@
       "copy_numbering": null,
       "size_cm": "",
       "weight_g": null,
-      "thumbnail": "https://salt.tikicdn.com/cache/750x750/ts/product/74/b5/64/941b8643397b40e3b1e5a280edf16cdc.jpg.webp",
+      "thumbnail": "/assets/img/books/frank-herbert-children-of-dune/cover.webp",
       "gellery_imgs": [
-        "assets/img/books/frank-herbert-children-of-dune/frank-herbert-children-of-dune-2026-nha-nam-bia-cung-458k_1.jpeg",
-        "assets/img/books/frank-herbert-children-of-dune/frank-herbert-children-of-dune-2026-nha-nam-bia-cung-458k_2.jpeg"
+        "/assets/img/books/frank-herbert-children-of-dune/book.webp",
+        "/assets/img/books/frank-herbert-children-of-dune/detail.webp"
       ],
       "detail": ""
     }
