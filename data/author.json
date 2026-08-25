@@ -840,5 +840,19 @@
     "work_ids": [
       "leo-tolstoy-anna-karenina"
     ]
+  },
+  {
+    "id": "quoc-su-quan-trieu-nguyen",
+    "name": "Quốc Sử Quán Triều Nguyễn",
+    "work_ids": [
+      "quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc"
+    ]
+  },
+  {
+    "id": "sir-arthur-conan-doyle",
+    "name": "Sir Arthur Conan Doyle",
+    "work_ids": [
+      "sir-arthur-conan-doyle-the-complete-sherlock-holmes"
+    ]
   }
 ]

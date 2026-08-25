@@ -1,5 +1,11 @@
 [
   {
+    "detail": "data/book/sir-arthur-conan-doyle-the-complete-sherlock-holmes.json",
+    "search_text": "sherlock holmes toan tap the complete sherlock holmes sir arthur conan doyle nxb van hoc dong a dang thu le quang toan thien nga sidney paget d h friston f h townsend josef friedrich frank wiles arthur twidle h m brock r i joseph simpson r b a walter paget alec ball a gilbert howard elcock",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-26"
+  },
+  {
     "detail": "data/book/chu-lai-mua-do.json",
     "search_text": "mua do chu lai nxb quan doi nhan dan cty tri thuc van hoa sach vn",
     "last_pub_year": 2026,
@@ -100,6 +106,12 @@
     "search_text": "hau due xu cat dune 3 children of dune frank herbert dune nxb the gioi nha nam hai stark",
     "last_pub_year": 2026,
     "updated_at": "2026-08-21"
+  },
+  {
+    "detail": "data/book/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc.json",
+    "search_text": "kham dinh viet su thong giam cuong muc quoc su quan trieu nguyen nxb van hoc dong a hoa bang pham trong diem tran van giap",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-20"
   },
   {
     "detail": "data/book/jrr-tolkien-the-lord-of-the-rings.json",
