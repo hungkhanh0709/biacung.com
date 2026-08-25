@@ -367,9 +367,11 @@
   },
   {
     "id": "jk-rowling",
-    "name": "J.K. Rowling",
+    "name": "J.k. Rowling",
     "work_ids": [
-      "jk-rowling-harry-potter"
+      "jk-rowling-harry-potter",
+      "jk-rowling-harry-potter-and-the-goblet-of-fire",
+      "jk-rowling-harry-potter-and-the-prisoner-of-azkaban"
     ]
   },
   {
@@ -788,6 +790,55 @@
     "name": "Knut Hamsun",
     "work_ids": [
       "knut-hamsun-sult"
+    ]
+  },
+  {
+    "id": "harper-lee",
+    "name": "Harper Lee",
+    "work_ids": [
+      "harper-lee-to-kill-a-mockingbird"
+    ]
+  },
+  {
+    "id": "fredrik-backman",
+    "name": "Fredrik Backman",
+    "work_ids": [
+      "fredrik-backman-en-man-som-heter-ove"
+    ]
+  },
+  {
+    "id": "chu-lai",
+    "name": "Chu Lai",
+    "work_ids": [
+      "chu-lai-mua-do"
+    ]
+  },
+  {
+    "id": "shinkai-makoto",
+    "name": "Shinkai Makoto",
+    "work_ids": [
+      "shinkai-makoto-khu-vuon-ngon-tu"
+    ]
+  },
+  {
+    "id": "j-d-salinger",
+    "name": "J. D. Salinger",
+    "work_ids": [
+      "j-d-salinger-the-catcher-in-the-rye"
+    ]
+  },
+  {
+    "id": "rf-kuang",
+    "name": "R.F. Kuang",
+    "work_ids": [
+      "rf-kuang-babel"
+    ]
+  },
+  {
+    "id": "leo-tolstoy",
+    "name": "Leo Tolstoy",
+    "work_ids": [
+      "leo-tolstoy-anna-karenina"
     ]
   }
 ]

@@ -1,0 +1,43 @@
+{
+  "id": "rf-kuang-babel",
+  "title": "Babel Hay Sự Cần Thiết Của Bạo Lực",
+  "title_original": "Babel",
+  "authors": [
+    "R.f. Kuang"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "rf-kuang-babel-2026-rainbow-chauchaubook",
+      "isbn": null,
+      "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
+      "pub_year": 2026,
+      "publisher": "NXB Lao Động",
+      "issuers": [
+        "Rainbow"
+      ],
+      "translators": [
+        "Lam Vũ"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Chauchaubook",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": 636,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/rf-kuang-babel/chauchaubook-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/rf-kuang-babel/chauchaubook-back-cover.jpg",
+        "/assets/img/books/rf-kuang-babel/chauchaubook-endpaper.jpg",
+        "/assets/img/books/rf-kuang-babel/chauchaubook-interior-illustration.jpg",
+        "/assets/img/books/rf-kuang-babel/chauchaubook-cover-standing.jpg",
+        "/assets/img/books/rf-kuang-babel/chauchaubook-cover-detail.jpg"
+      ],
+      "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
+    }
+  ]
+}

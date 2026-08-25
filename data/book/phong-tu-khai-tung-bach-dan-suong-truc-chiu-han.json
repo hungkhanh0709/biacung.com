@@ -29,10 +29,10 @@
       "copy_numbering": null,
       "size_cm": "",
       "weight_g": null,
-      "thumbnail": "assets/img/books/phong-tu-khai-tung-bach-dan-suong-truc-chiu-han/phong-tu-khai-tung-bach-dan-suong-truc-chiu-han-2026-nha-nam-bia-cung-ao-om-275k.jpeg",
+      "thumbnail": "/assets/img/books/phong-tu-khai-tung-bach-dan-suong-truc-chiu-han/cover.jpeg",
       "gellery_imgs": [
-        "assets/img/books/phong-tu-khai-tung-bach-dan-suong-truc-chiu-han/phong-tu-khai-tung-bach-dan-suong-truc-chiu-han-2026-nha-nam-bia-cung-ao-om-275k_1.jpeg",
-        "assets/img/books/phong-tu-khai-tung-bach-dan-suong-truc-chiu-han/phong-tu-khai-tung-bach-dan-suong-truc-chiu-han-2026-nha-nam-bia-cung-ao-om-275k_2.jpeg"
+        "/assets/img/books/phong-tu-khai-tung-bach-dan-suong-truc-chiu-han/signed.jpeg",
+        "/assets/img/books/phong-tu-khai-tung-bach-dan-suong-truc-chiu-han/hardcover-jacket.jpeg"
       ],
       "detail": ""
     }

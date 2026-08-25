@@ -1,0 +1,42 @@
+{
+  "id": "leo-tolstoy-anna-karenina",
+  "title": "Anna Karenina",
+  "title_original": "Анна Каренина",
+  "authors": [
+    "Leo Tolstoy"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "leo-tolstoy-anna-karenina-2026-nha-nam-chauchaubook",
+      "isbn": null,
+      "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
+      "pub_year": 2026,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Dương Tường",
+        "Nhị Ca"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Chauchaubook",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/leo-tolstoy-anna-karenina/chauchaubook-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/leo-tolstoy-anna-karenina/chauchaubook-back-cover.jpg",
+        "/assets/img/books/leo-tolstoy-anna-karenina/chauchaubook-spine.jpg",
+        "/assets/img/books/leo-tolstoy-anna-karenina/chauchaubook-cover-angle.jpg"
+      ],
+      "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
+    }
+  ]
+}

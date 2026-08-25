@@ -1,5 +1,59 @@
 [
   {
+    "detail": "data/book/chu-lai-mua-do.json",
+    "search_text": "mua do chu lai nxb quan doi nhan dan cty tri thuc van hoa sach vn",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-25"
+  },
+  {
+    "detail": "data/book/fredrik-backman-en-man-som-heter-ove.json",
+    "search_text": "nguoi dan ong mang ten ove en man som heter ove fredrik backman nxb tre hoang anh",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-25"
+  },
+  {
+    "detail": "data/book/harper-lee-to-kill-a-mockingbird.json",
+    "search_text": "giet con chim nhai to kill a mockingbird harper lee nxb hoi nha van nha nam huynh kim oanh pham viem phuong",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-25"
+  },
+  {
+    "detail": "data/book/j-d-salinger-the-catcher-in-the-rye.json",
+    "search_text": "bat tre dong xanh the catcher in the rye j d salinger nxb hoi nha van nha nam phung khanh",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-25"
+  },
+  {
+    "detail": "data/book/jk-rowling-harry-potter-and-the-goblet-of-fire.json",
+    "search_text": "harry potter va chiec coc lua harry potter and the goblet of fire jk rowling nxb tre ly lan",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-25"
+  },
+  {
+    "detail": "data/book/jk-rowling-harry-potter-and-the-prisoner-of-azkaban.json",
+    "search_text": "harry potter va ten tu nhan nguc azkaban harry potter and the prisoner of azkaban jk rowling nxb tre ly lan",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-25"
+  },
+  {
+    "detail": "data/book/leo-tolstoy-anna-karenina.json",
+    "search_text": "anna karenina leo tolstoy nxb hoi nha van nha nam duong tuong nhi ca",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-25"
+  },
+  {
+    "detail": "data/book/rf-kuang-babel.json",
+    "search_text": "babel hay su can thiet cua bao luc babel rf kuang nxb lao dong rainbow lam vu",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-25"
+  },
+  {
+    "detail": "data/book/shinkai-makoto-khu-vuon-ngon-tu.json",
+    "search_text": "khu vuon ngon tu shinkai makoto nxb hong duc ipm",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-25"
+  },
+  {
     "detail": "data/book/knut-hamsun-sult.json",
     "search_text": "doi sult knut hamsun nxb ha noi dong tay thai ba tan",
     "last_pub_year": 2026,

@@ -1,0 +1,42 @@
+{
+  "id": "jk-rowling-harry-potter-and-the-goblet-of-fire",
+  "title": "Harry Potter Và Chiếc Cốc Lửa",
+  "title_original": "Harry Potter and the Goblet of Fire",
+  "authors": [
+    "J.k. Rowling"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "jk-rowling-harry-potter-and-the-goblet-of-fire-2026-chauchaubook",
+      "isbn": null,
+      "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
+      "pub_year": 2026,
+      "publisher": "NXB Trẻ",
+      "issuers": [],
+      "translators": [
+        "Lý Lan"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Chauchaubook",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": 922,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/jk-rowling-harry-potter-and-the-goblet-of-fire/chauchaubook-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/jk-rowling-harry-potter-and-the-goblet-of-fire/chauchaubook-before-custom.jpg",
+        "/assets/img/books/jk-rowling-harry-potter-and-the-goblet-of-fire/chauchaubook-back-cover.jpg",
+        "/assets/img/books/jk-rowling-harry-potter-and-the-goblet-of-fire/chauchaubook-spine.jpg",
+        "/assets/img/books/jk-rowling-harry-potter-and-the-goblet-of-fire/chauchaubook-spine-detail.jpg",
+        "/assets/img/books/jk-rowling-harry-potter-and-the-goblet-of-fire/chauchaubook-endpaper.jpg",
+        "/assets/img/books/jk-rowling-harry-potter-and-the-goblet-of-fire/chauchaubook-cover-standing.jpg"
+      ],
+      "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "chu-lai-mua-do",
+  "title": "Mưa Đỏ",
+  "title_original": "",
+  "authors": [
+    "Chu Lai"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "chu-lai-mua-do-2026-cty-tri-thuc-van-hoa-sach-vn-chauchaubook",
+      "isbn": null,
+      "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
+      "pub_year": 2026,
+      "publisher": "NXB Quân Đội Nhân Dân",
+      "issuers": [
+        "Cty Tri Thức Văn Hóa Sách VN"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Chauchaubook",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": 334,
+      "thumbnail": "/assets/img/books/chu-lai-mua-do/chauchaubook-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/chu-lai-mua-do/chauchaubook-before-custom.jpg",
+        "/assets/img/books/chu-lai-mua-do/chauchaubook-back-cover.jpg",
+        "/assets/img/books/chu-lai-mua-do/chauchaubook-spine.jpg",
+        "/assets/img/books/chu-lai-mua-do/chauchaubook-cover-detail.jpg",
+        "/assets/img/books/chu-lai-mua-do/chauchaubook-fore-edge.jpg"
+      ],
+      "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
+    }
+  ]
+}
