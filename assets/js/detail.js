@@ -383,11 +383,8 @@ function buildEditionSummaryLines(edition) {
     lines.push(`${yearLabel}: ${normalizeText(edition.pub_year)}`);
   }
 
-  if (normalizeText(edition.format)) {
-    const displayFormat = isArtwork
-      ? normalizeText(edition.artwork_medium) || normalizeText(edition.format)
-      : normalizeText(edition.format);
-    lines.push(`Hình thức: ${displayFormat}`);
+  if (normalizeText(edition.format) && !isArtwork) {
+    lines.push(`Hình thức: ${normalizeText(edition.format)}`);
   }
 
   if (normalizeText(edition.cover_price)) {

@@ -1,0 +1,42 @@
+{
+  "id": "j-d-salinger-the-catcher-in-the-rye",
+  "title": "Bắt Trẻ Đồng Xanh",
+  "title_original": "The Catcher in the Rye",
+  "authors": [
+    "J. D. Salinger"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "j-d-salinger-the-catcher-in-the-rye-2026-nha-nam-chauchaubook",
+      "isbn": null,
+      "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
+      "pub_year": 2026,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Phùng Khánh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Chauchaubook",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": 328,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/j-d-salinger-the-catcher-in-the-rye/chauchaubook-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/j-d-salinger-the-catcher-in-the-rye/chauchaubook-endpaper.jpg",
+        "/assets/img/books/j-d-salinger-the-catcher-in-the-rye/chauchaubook-cover-detail.jpg",
+        "/assets/img/books/j-d-salinger-the-catcher-in-the-rye/chauchaubook-back-cover.jpg",
+        "/assets/img/books/j-d-salinger-the-catcher-in-the-rye/chauchaubook-bookmark.jpg"
+      ],
+      "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
+    }
+  ]
+}

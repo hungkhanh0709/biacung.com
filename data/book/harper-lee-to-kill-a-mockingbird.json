@@ -1,0 +1,45 @@
+{
+  "id": "harper-lee-to-kill-a-mockingbird",
+  "title": "Giết con chim nhại",
+  "title_original": "To Kill a Mockingbird",
+  "authors": [
+    "Harper Lee"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "harper-lee-to-kill-a-mockingbird-2026-nha-nam-chauchaubook",
+      "isbn": null,
+      "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
+      "pub_year": 2026,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Huỳnh Kim Oanh",
+        "Phạm Viêm Phương"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Chauchaubook",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": 420,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/harper-lee-to-kill-a-mockingbird/chauchaubook-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/harper-lee-to-kill-a-mockingbird/chauchaubook-before-custom.jpg",
+        "/assets/img/books/harper-lee-to-kill-a-mockingbird/chauchaubook-endpaper.jpg",
+        "/assets/img/books/harper-lee-to-kill-a-mockingbird/chauchaubook-spine.jpg",
+        "/assets/img/books/harper-lee-to-kill-a-mockingbird/chauchaubook-cover-detail.jpg",
+        "/assets/img/books/harper-lee-to-kill-a-mockingbird/chauchaubook-fore-edge.jpg",
+        "/assets/img/books/harper-lee-to-kill-a-mockingbird/chauchaubook-bookmark.jpg"
+      ],
+      "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
+    }
+  ]
+}
