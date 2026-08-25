@@ -1,0 +1,40 @@
+{
+  "id": "shinkai-makoto-khu-vuon-ngon-tu",
+  "title": "Khu Vườn Ngôn Từ",
+  "title_original": "言の葉の庭",
+  "authors": [
+    "Shinkai Makoto"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "shinkai-makoto-khu-vuon-ngon-tu-2026-ipm-chauchaubook",
+      "isbn": null,
+      "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
+      "pub_year": 2026,
+      "publisher": "NXB Hồng Đức",
+      "issuers": [
+        "Ipm"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Chauchaubook",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": 300,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/shinkai-makoto-khu-vuon-ngon-tu/chauchaubook-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/shinkai-makoto-khu-vuon-ngon-tu/chauchaubook-back-cover.jpg",
+        "/assets/img/books/shinkai-makoto-khu-vuon-ngon-tu/chauchaubook-endpaper.jpg",
+        "/assets/img/books/shinkai-makoto-khu-vuon-ngon-tu/chauchaubook-endpaper-art.jpg",
+        "/assets/img/books/shinkai-makoto-khu-vuon-ngon-tu/chauchaubook-interior-illustration.jpg"
+      ],
+      "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "jk-rowling-harry-potter-and-the-prisoner-of-azkaban",
+  "title": "Harry Potter Và Tên Tù Nhân Ngục Azkaban",
+  "title_original": "Harry Potter and the Prisoner of Azkaban",
+  "authors": [
+    "J.k. Rowling"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "jk-rowling-harry-potter-and-the-prisoner-of-azkaban-2026-chauchaubook",
+      "isbn": null,
+      "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
+      "pub_year": 2026,
+      "publisher": "NXB Trẻ",
+      "issuers": [],
+      "translators": [
+        "Lý Lan"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Chauchaubook",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": 560,
+      "thumbnail": "/assets/img/books/jk-rowling-harry-potter-and-the-prisoner-of-azkaban/chauchaubook-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/jk-rowling-harry-potter-and-the-prisoner-of-azkaban/chauchaubook-back-cover.jpg",
+        "/assets/img/books/jk-rowling-harry-potter-and-the-prisoner-of-azkaban/chauchaubook-cover-detail.jpg",
+        "/assets/img/books/jk-rowling-harry-potter-and-the-prisoner-of-azkaban/chauchaubook-cover-angle.jpg",
+        "/assets/img/books/jk-rowling-harry-potter-and-the-prisoner-of-azkaban/chauchaubook-endpaper.jpg",
+        "/assets/img/books/jk-rowling-harry-potter-and-the-prisoner-of-azkaban/chauchaubook-fore-edge.jpg"
+      ],
+      "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
+    }
+  ]
+}
