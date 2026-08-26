@@ -6,7 +6,9 @@
     "Mark Twain"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Đông A Classics (bỏ túi)"
+  ],
   "editions": [
     {
       "id": "mark-twain-the-adventures-of-tom-sawyer-2025-dong-a-bia-vai-330k",
@@ -56,6 +58,34 @@
       "weight_g": 400,
       "thumbnail": "https://cdn.hstatic.net/products/1000328521/tom_sawyer_1_da_1c1fba35609c40a0b24439eb4a064b15_master.jpg",
       "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "mark-twain-the-adventures-of-tom-sawyer-2013-dong-a-bia-mem-65k",
+      "isbn": null,
+      "caption": "Bộ 2 Tập",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Ngụy Mộng Huyền",
+        "Hoàng Văn Phương"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "65k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/mark-twain-the-adventures-of-tom-sawyer/dong-a-classics-volume-1.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/mark-twain-the-adventures-of-tom-sawyer/dong-a-classics-volume-2.jpg"
+      ],
       "detail": ""
     }
   ]

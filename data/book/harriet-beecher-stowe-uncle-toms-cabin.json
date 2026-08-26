@@ -1,0 +1,41 @@
+{
+  "id": "harriet-beecher-stowe-uncle-toms-cabin",
+  "title": "Túp lều bác Tôm",
+  "title_original": "Uncle Tom's Cabin",
+  "authors": [
+    "Harriet Beecher Stowe"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classics (bỏ túi)"
+  ],
+  "editions": [
+    {
+      "id": "harriet-beecher-stowe-uncle-toms-cabin-2013-dong-a-bia-mem-77k",
+      "isbn": null,
+      "caption": "Bộ 2 Tập",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Đỗ Đức Hiểu"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "77k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/harriet-beecher-stowe-uncle-toms-cabin/dong-a-classics-volume-1.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/harriet-beecher-stowe-uncle-toms-cabin/dong-a-classics-volume-2.jpg"
+      ],
+      "detail": ""
+    }
+  ]
+}

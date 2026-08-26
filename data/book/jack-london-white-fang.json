@@ -1,0 +1,39 @@
+{
+  "id": "jack-london-white-fang",
+  "title": "Nanh Trắng",
+  "title_original": "White Fang",
+  "authors": [
+    "Jack London"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classics (bỏ túi)"
+  ],
+  "editions": [
+    {
+      "id": "jack-london-white-fang-2013-dong-a-bia-mem-50k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Bảo Hưng"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "50k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/jack-london-white-fang/dong-a-classics-cover.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

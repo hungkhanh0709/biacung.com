@@ -1,5 +1,11 @@
 [
   {
+    "detail": "data/book/hao-nguyen-bo-suu-tap-mu-suong.json",
+    "search_text": "bo suu tap mu suong hao nguyen van moi dong a nxb dan tri dong a",
+    "last_pub_year": 2026,
+    "updated_at": "2026-08-26"
+  },
+  {
     "detail": "data/book/sir-arthur-conan-doyle-the-complete-sherlock-holmes.json",
     "search_text": "sherlock holmes toan tap the complete sherlock holmes sir arthur conan doyle nxb van hoc dong a dang thu le quang toan thien nga sidney paget d h friston f h townsend josef friedrich frank wiles arthur twidle h m brock r i joseph simpson r b a walter paget alec ball a gilbert howard elcock",
     "last_pub_year": 2026,
@@ -420,6 +426,18 @@
     "updated_at": "2026-07-01"
   },
   {
+    "detail": "data/book/johann-david-wyss-der-schweizerische-robinson.json",
+    "search_text": "gia dinh robinson thuy sy der schweizerische robinson johann david wyss dong a classics bo tui nxb van hoc dong a hoang anh thai nguyen minh",
+    "updated_at": "2026-08-26",
+    "last_pub_year": 2025
+  },
+  {
+    "detail": "data/book/mark-twain-the-adventures-of-tom-sawyer.json",
+    "search_text": "nhung cuoc phieu luu cua tom sawyer the adventures of tom sawyer mark twain dong a classics bo tui nxb van hoc dong a nguy mong huyen hoang van phuong dang thu",
+    "updated_at": "2026-08-26",
+    "last_pub_year": 2025
+  },
+  {
     "detail": "data/book/erich-maria-remarque-im-westen-nichts-neues.json",
     "search_text": "phia tay khong co gi la im westen nichts neues erich maria remarque nxb van hoc dong a vu huong giang",
     "last_pub_year": 2025,
@@ -492,20 +510,14 @@
     "last_pub_year": 2025
   },
   {
-    "detail": "data/book/johann-david-wyss-der-schweizerische-robinson.json",
-    "search_text": "gia dinh robinson thuy sy der schweizerische robinson johann david wyss nxb van hoc dong a nguyen minh",
-    "updated_at": "2026-07-04",
-    "last_pub_year": 2025
-  },
-  {
-    "detail": "data/book/mark-twain-the-adventures-of-tom-sawyer.json",
-    "search_text": "nhung cuoc phieu luu cua tom sawyer the adventures of tom sawyer mark twain nxb van hoc dong a dang thu",
-    "updated_at": "2026-07-04",
-    "last_pub_year": 2025
-  },
-  {
     "detail": "data/book/sach-tet-binh-ngo-dong-a-2026.json",
     "search_text": "sach tet binh ngo 2026 ho anh thai nxb dan tri dong a",
+    "updated_at": "2026-07-04",
+    "last_pub_year": 2025
+  },
+  {
+    "detail": "data/book/van-moi-10-nam-2015-2025-dong-a.json",
+    "search_text": "van moi 10 nam 2015 2025 nhieu tac gia ho anh thai van moi dong a nxb hoi nha van dong a",
     "updated_at": "2026-07-04",
     "last_pub_year": 2025
   },
@@ -570,14 +582,32 @@
     "last_pub_year": 2024
   },
   {
-    "detail": "data/book/dao-duy-anh-viet-nam-van-hoa-su-cuong.json",
-    "search_text": "viet nam van hoa su cuong dao duy anh nxb dai hoc su pham dong a",
-    "last_pub_year": 2023,
-    "updated_at": "2026-07-12"
+    "detail": "data/book/hector-malot-sans-famille.json",
+    "search_text": "khong gia dinh sans famille hector malot dong a classic dong a classics bo tui nxb van hoc dong a huynh ly",
+    "updated_at": "2026-08-26",
+    "last_pub_year": 2023
   },
   {
     "detail": "data/book/johanna-spyri-heidi.json",
-    "search_text": "heidi johanna spyri dong a classic nxb van hoc dong a thanh van elena selivanova",
+    "search_text": "heidi johanna spyri dong a classic dong a classics bo tui nxb van hoc dong a thanh van elena selivanova",
+    "last_pub_year": 2023,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/jules-verne-vingt-mille-lieues-sous-les-mers.json",
+    "search_text": "hai van dam duoi bien vingt mille lieues sous les mers jules verne dong a classic dong a classics bo tui nxb van hoc dong a le anh do ca son",
+    "last_pub_year": 2023,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/lazar-lagin-ong-gia-khottabych.json",
+    "search_text": "ong gia khottabych lazar lagin dong a classic dong a classics bo tui nxb van hoc dong a minh dang khanh",
+    "last_pub_year": 2023,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/dao-duy-anh-viet-nam-van-hoa-su-cuong.json",
+    "search_text": "viet nam van hoa su cuong dao duy anh nxb dai hoc su pham dong a",
     "last_pub_year": 2023,
     "updated_at": "2026-07-12"
   },
@@ -588,28 +618,10 @@
     "updated_at": "2026-07-12"
   },
   {
-    "detail": "data/book/jules-verne-vingt-mille-lieues-sous-les-mers.json",
-    "search_text": "hai van dam duoi bien vingt mille lieues sous les mers jules verne dong a classic nxb van hoc dong a do ca son",
-    "last_pub_year": 2023,
-    "updated_at": "2026-07-11"
-  },
-  {
-    "detail": "data/book/lazar-lagin-ong-gia-khottabych.json",
-    "search_text": "ong gia khottabych lazar lagin dong a classic nxb van hoc dong a minh dang khanh",
-    "last_pub_year": 2023,
-    "updated_at": "2026-07-11"
-  },
-  {
     "detail": "data/book/tran-trong-kim-viet-nam-su-luoc.json",
     "search_text": "viet nam su luoc tran trong kim nxb van hoc dong a",
     "last_pub_year": 2023,
     "updated_at": "2026-07-11"
-  },
-  {
-    "detail": "data/book/hector-malot-sans-famille.json",
-    "search_text": "khong gia dinh sans famille hector malot dong a classic nxb van hoc dong a huynh ly",
-    "updated_at": "2026-07-07",
-    "last_pub_year": 2023
   },
   {
     "detail": "data/book/irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo.json",
@@ -810,12 +822,6 @@
     "last_pub_year": 2015
   },
   {
-    "detail": "data/book/van-moi-10-nam-2015-2025-dong-a.json",
-    "search_text": "van moi 10 nam 2015 2025 nhieu tac gia ho anh thai tuyen chon van moi nxb hoi nha van dong a",
-    "updated_at": "2026-07-04",
-    "last_pub_year": 2015
-  },
-  {
     "detail": "data/book/hunter-s-thompson-fear-and-loathing-in-las-vegas-a-savage-journey-to-the-heart-of-the-american-dream.json",
     "search_text": "thac loan o las vegas fear and loathing in las vegas a savage journey to the heart of the american dream hunter s thompson canh cua mo rong nxb tre phu quy",
     "updated_at": "2026-07-05",
@@ -832,6 +838,120 @@
     "search_text": "chin muoi ba quatrevingttreize victor hugo canh cua mo rong nxb tre chau dien",
     "updated_at": "2026-07-05",
     "last_pub_year": 2014
+  },
+  {
+    "detail": "data/book/anna-sewell-black-beauty.json",
+    "search_text": "ngua o yeu dau black beauty anna sewell dong a classics bo tui nxb van hoc dong a thanh van",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/charles-dickens-oliver-twist.json",
+    "search_text": "oliver twist charles dickens dong a classics bo tui nxb van hoc dong a phan ngoc",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/e-nesbit-the-enchanted-castle.json",
+    "search_text": "lau dai than bi the enchanted castle e nesbit dong a classics bo tui nxb van hoc dong a manh chuong",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/e-nesbit-the-railway-children.json",
+    "search_text": "lu tre duong ray the railway children e nesbit dong a classics bo tui nxb van hoc dong a dang thu",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/edmondo-de-amicis-cuore.json",
+    "search_text": "nhung tam long cao ca cuore edmondo de amicis dong a classics bo tui nxb van hoc dong a hoang thieu son",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/ernest-seton-thompson-wild-animals-i-have-known.json",
+    "search_text": "truyen loai vat wild animals i have known ernest seton thompson dong a classics bo tui nxb van hoc dong a le thuy duong",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/frances-hodgson-burnett-a-little-princess.json",
+    "search_text": "cong chua nho a little princess frances hodgson burnett dong a classics bo tui nxb van hoc dong a nguyen thi nga",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/gavriil-troyepolsky-con-bim-trang-tai-den.json",
+    "search_text": "con bim trang tai den gavriil troyepolsky dong a classics bo tui nxb van hoc dong a tuan nguyen tran thu",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/harriet-beecher-stowe-uncle-toms-cabin.json",
+    "search_text": "tup leu bac tom uncle toms cabin harriet beecher stowe dong a classics bo tui nxb van hoc dong a do duc hieu",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/henryk-sienkiewicz-w-pustyni-i-w-puszczy.json",
+    "search_text": "tren sa mac va trong rung tham w pustyni i w puszczy henryk sienkiewicz dong a classics bo tui nxb van hoc dong a nguyen huu dung",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/iar-larri-cuoc-phieu-luu-ki-la-cua-karik-va-valia.json",
+    "search_text": "cuoc phieu luu ki la cua karik va valia iar larri dong a classics bo tui nxb van hoc dong a thieu huy phan thi men",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/jack-london-the-call-of-the-wild.json",
+    "search_text": "tieng goi cua hoang da the call of the wild jack london dong a classics bo tui nxb van hoc dong a manh chuong nguyen cong ai vu tuan phuong",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/jack-london-white-fang.json",
+    "search_text": "nanh trang white fang jack london dong a classics bo tui nxb van hoc dong a bao hung",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/jonathan-swift-gullivers-travels.json",
+    "search_text": "gulliver du ki gullivers travels jonathan swift dong a classics bo tui nxb van hoc dong a do duc hieu",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/lewis-carroll-alices-adventures-in-wonderland.json",
+    "search_text": "alice o xu so dieu ki alices adventures in wonderland lewis carroll dong a classics bo tui nxb van hoc dong a",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/mark-twain-the-adventures-of-huckleberry-finn.json",
+    "search_text": "nhung cuoc phieu luu cua huck finn mark twain dong a classics bo tui nxb van hoc dong a luong thi than",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/robert-louis-stevenson-treasure-island.json",
+    "search_text": "dao giau vang treasure island robert louis stevenson dong a classics bo tui nxb van hoc dong a dang khanh",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/rudyard-kipling-just-so-stories.json",
+    "search_text": "su tich cac loai vat just so stories rudyard kipling dong a classics bo tui nxb van hoc dong a le ha",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
+  },
+  {
+    "detail": "data/book/xelma-lagerlof-the-wonderful-adventures-of-nils-and-further-adventures-of-nils-holgersson.json",
+    "search_text": "cuoc du hanh ki dieu cua nils holgersson the wonderful adventures of nils and further adventures of nils holgersson xelma lagerlof dong a classics bo tui nxb van hoc dong a cam nhuong",
+    "last_pub_year": 2013,
+    "updated_at": "2026-08-26"
   },
   {
     "detail": "data/book/paul-auster-the-invention-of-solitude.json",

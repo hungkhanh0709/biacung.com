@@ -1,0 +1,39 @@
+{
+  "id": "anna-sewell-black-beauty",
+  "title": "Ngựa ô yêu dấu",
+  "title_original": "Black Beauty",
+  "authors": [
+    "Anna Sewell"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classics (bỏ túi)"
+  ],
+  "editions": [
+    {
+      "id": "anna-sewell-black-beauty-2013-dong-a-bia-mem-42k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Thanh Vân"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "42k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/anna-sewell-black-beauty/dong-a-classics-cover.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

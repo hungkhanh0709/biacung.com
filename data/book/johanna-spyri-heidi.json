@@ -7,7 +7,8 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classic"
+    "Đông A Classic",
+    "Đông A Classics (bỏ túi)"
   ],
   "editions": [
     {
@@ -34,6 +35,31 @@
       "size_cm": "24 x 15.5 x 2",
       "weight_g": 1200,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/b/_/b_a-1---heidi---copy.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "johanna-spyri-heidi-2013-dong-a-bia-mem-50k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Thanh Vân"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "50k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/johanna-spyri-heidi/dong-a-classics-cover.jpg",
       "gellery_imgs": [],
       "detail": ""
     }

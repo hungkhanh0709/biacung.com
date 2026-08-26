@@ -1,0 +1,41 @@
+{
+  "id": "mark-twain-the-adventures-of-huckleberry-finn",
+  "title": "Những cuộc phiêu lưu của Huck Finn",
+  "title_original": "",
+  "authors": [
+    "Mark Twain"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classics (bỏ túi)"
+  ],
+  "editions": [
+    {
+      "id": "mark-twain-the-adventures-of-huckleberry-finn-2013-dong-a-bia-mem-77k",
+      "isbn": null,
+      "caption": "Bộ 2 Tập",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Lương Thị Thận"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "77k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/mark-twain-the-adventures-of-huckleberry-finn/dong-a-classics-volume-1.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/mark-twain-the-adventures-of-huckleberry-finn/dong-a-classics-volume-2.jpg"
+      ],
+      "detail": ""
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "iar-larri-cuoc-phieu-luu-ki-la-cua-karik-va-valia",
+  "title": "Cuộc phiêu lưu kì lạ của Karik và Valia",
+  "title_original": "Необыкновенные приключения Карика и Вали",
+  "authors": [
+    "Iar Larri"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classics (bỏ túi)"
+  ],
+  "editions": [
+    {
+      "id": "iar-larri-cuoc-phieu-luu-ki-la-cua-karik-va-valia-2013-dong-a-bia-mem-56k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Thiệu Huy",
+        "Phan Thị Mến"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "56k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/iar-larri-cuoc-phieu-luu-ki-la-cua-karik-va-valia/dong-a-classics-cover.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

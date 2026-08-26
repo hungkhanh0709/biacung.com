@@ -1,0 +1,41 @@
+{
+  "id": "jack-london-the-call-of-the-wild",
+  "title": "Tiếng gọi của Hoang Dã",
+  "title_original": "The Call of the Wild",
+  "authors": [
+    "Jack London"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classics (bỏ túi)"
+  ],
+  "editions": [
+    {
+      "id": "jack-london-the-call-of-the-wild-2013-dong-a-bia-mem-43k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Mạnh Chương",
+        "Nguyễn Công Ái",
+        "Vũ Tuấn Phương"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "43k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/jack-london-the-call-of-the-wild/dong-a-classics-cover.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

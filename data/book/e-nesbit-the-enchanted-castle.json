@@ -1,0 +1,39 @@
+{
+  "id": "e-nesbit-the-enchanted-castle",
+  "title": "Lâu đài thần bí",
+  "title_original": "The Enchanted Castle",
+  "authors": [
+    "E. Nesbit"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classics (bỏ túi)"
+  ],
+  "editions": [
+    {
+      "id": "e-nesbit-the-enchanted-castle-2013-dong-a-bia-mem-55k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Mạnh Chương"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "55k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/e-nesbit-the-enchanted-castle/dong-a-classics-cover.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "rudyard-kipling-just-so-stories",
+  "title": "Sự tích các loài vật",
+  "title_original": "Just So Stories",
+  "authors": [
+    "Rudyard Kipling"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classics (bỏ túi)"
+  ],
+  "editions": [
+    {
+      "id": "rudyard-kipling-just-so-stories-2013-dong-a-bia-mem-24k",
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Lê Hà"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "24k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/rudyard-kipling-just-so-stories/dong-a-classics-cover.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}
