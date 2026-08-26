@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "xelma-lagerlof-the-wonderful-adventures-of-nils-and-further-adventures-of-nils-holgersson-2013-dong-a-bia-mem-64k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "Bộ 2 tập",
       "pub_year": 2013,

@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "anna-sewell-black-beauty-2013-dong-a-bia-mem-42k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2013,

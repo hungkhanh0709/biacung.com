@@ -38,6 +38,9 @@
     },
     {
       "id": "lazar-lagin-ong-gia-khottabych-2013-dong-a-bia-mem-77k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2013,

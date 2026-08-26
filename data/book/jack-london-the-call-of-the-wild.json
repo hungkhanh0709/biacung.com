@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "jack-london-the-call-of-the-wild-2013-dong-a-bia-mem-43k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2013,

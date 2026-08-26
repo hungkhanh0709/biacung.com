@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "mark-twain-the-adventures-of-huckleberry-finn-2013-dong-a-bia-mem-77k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "Bộ 2 Tập",
       "pub_year": 2013,

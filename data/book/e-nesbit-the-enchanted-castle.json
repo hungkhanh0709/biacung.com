@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "e-nesbit-the-enchanted-castle-2013-dong-a-bia-mem-55k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2013,

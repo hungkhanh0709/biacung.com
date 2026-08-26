@@ -38,6 +38,9 @@
     },
     {
       "id": "hector-malot-sans-famille-2013-dong-a-bia-mem-115k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "Bộ 2 Tập",
       "pub_year": 2013,

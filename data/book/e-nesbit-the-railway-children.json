@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "e-nesbit-the-railway-children-2013-dong-a-bia-mem-45k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2013,

@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "robert-louis-stevenson-treasure-island-2013-dong-a-bia-mem-52k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2013,

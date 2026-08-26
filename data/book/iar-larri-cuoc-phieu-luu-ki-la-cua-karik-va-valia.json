@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "iar-larri-cuoc-phieu-luu-ki-la-cua-karik-va-valia-2013-dong-a-bia-mem-56k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2013,

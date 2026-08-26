@@ -62,6 +62,9 @@
     },
     {
       "id": "mark-twain-the-adventures-of-tom-sawyer-2013-dong-a-bia-mem-65k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "Bộ 2 Tập",
       "pub_year": 2013,

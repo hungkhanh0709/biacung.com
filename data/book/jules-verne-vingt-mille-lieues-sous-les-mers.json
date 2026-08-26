@@ -38,6 +38,9 @@
     },
     {
       "id": "jules-verne-vingt-mille-lieues-sous-les-mers-2013-dong-a-72k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "Bộ 2 Tập",
       "pub_year": 2013,

@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "rudyard-kipling-just-so-stories-2013-dong-a-bia-mem-24k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2013,

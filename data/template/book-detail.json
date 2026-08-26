@@ -14,6 +14,9 @@
     "editions": [
         {
             "id": "author-name-book-title-edition-caption-pub-year-format",
+            "series_ids": [
+                "series-slug"
+            ],
             "isbn": null,
             "caption": "Edition Caption",
             "pub_year": 2026,

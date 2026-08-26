@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "gavriil-troyepolsky-con-bim-trang-tai-den-2013-dong-a-bia-mem-48k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2013,

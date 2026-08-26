@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "jonathan-swift-gullivers-travels-2013-dong-a-28k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2013,

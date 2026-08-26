@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "nguyen-nhat-anh-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim-2026-boxset-bia-cung-1490k",
+      "series_ids": [
+        "50-nam-fahasa"
+      ],
       "isbn": null,
       "caption": "Boxset Nguyễn Nhật Ánh - Đã Chuyển Thể Thành Phim (hộp 4 Cuốn) - Phiên Bản Độc Quyền 50 Năm",
       "pub_year": 2026,

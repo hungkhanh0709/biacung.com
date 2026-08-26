@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "jk-rowling-harry-potter-2026-boxset-bia-cung-4tr150k",
+      "series_ids": [
+        "50-nam-fahasa"
+      ],
       "isbn": null,
       "caption": "Boxset Harry Potter (hộp 7 Cuốn) - Bìa Cứng - Phiên Bản Độc Quyền 50 Năm Fahasa",
       "pub_year": 2026,

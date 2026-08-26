@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "jack-london-white-fang-2013-dong-a-bia-mem-50k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2013,
