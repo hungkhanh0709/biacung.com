@@ -46,5 +46,9 @@
   {
     "id": "dong-a-classics-bo-tui",
     "detail": "data/series/dong-a-classics-bo-tui.json"
+  },
+  {
+    "id": "chauchaubook",
+    "detail": "data/series/chauchaubook.json"
   }
 ]

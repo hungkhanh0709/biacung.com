@@ -224,15 +224,29 @@ function auditData(rootDir, errors, warnings) {
     pushIfMissing(errors, detail && fs.existsSync(path.join(rootDir, detail)), `Book index points to missing file: ${detail}`);
   });
 
+  const seriesDir = path.join(rootDir, "data", "series");
+  fs.readdirSync(seriesDir)
+    .filter((file) => file.endsWith(".json"))
+    .forEach((file) => {
+      const series = readJsonSafe(path.join(seriesDir, file), null);
+      if (!series) {
+        errors.push(`Invalid JSON: data/series/${file}`);
+        return;
+      }
+
+      const expectedId = file.replace(/\.json$/, "");
+      const seriesId = normalizeText(series.id);
+      if (seriesId !== expectedId) {
+        errors.push(`Series id mismatch in data/series/${file}: expected "${expectedId}", got "${seriesId}"`);
+        return;
+      }
+
+      seriesById.set(seriesId, series);
+    });
+
   (Array.isArray(seriesIndex) ? seriesIndex : []).forEach((entry) => {
     const detail = normalizeText(entry?.detail);
     pushIfMissing(errors, detail && fs.existsSync(path.join(rootDir, detail)), `Series index points to missing file: ${detail}`);
-
-    const series = detail ? readJsonSafe(path.join(rootDir, detail), null) : null;
-    const seriesId = normalizeText(series?.id);
-    if (seriesId) {
-      seriesById.set(seriesId, series);
-    }
   });
 
   const bookDir = path.join(rootDir, "data", "book");

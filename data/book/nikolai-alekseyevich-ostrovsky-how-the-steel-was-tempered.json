@@ -7,11 +7,15 @@
   ],
   "awards": [],
   "series": [
-    "50 Năm Fahasa"
+    "50 Năm Fahasa",
+    "Chauchaubook"
   ],
   "editions": [
     {
       "id": "nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered-2026-chauchaubook",
+      "series_ids": [
+        "chauchaubook"
+      ],
       "isbn": null,
       "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
       "pub_year": 2026,
