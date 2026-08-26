@@ -6,10 +6,15 @@
     "J. D. Salinger"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Chauchaubook"
+  ],
   "editions": [
     {
       "id": "j-d-salinger-the-catcher-in-the-rye-2026-nha-nam-chauchaubook",
+      "series_ids": [
+        "chauchaubook"
+      ],
       "isbn": null,
       "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
       "pub_year": 2026,

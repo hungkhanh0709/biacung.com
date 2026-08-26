@@ -7,7 +7,8 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classic"
+    "Đông A Classic",
+    "Đông A Classics (bỏ túi)"
   ],
   "editions": [
     {
@@ -33,6 +34,36 @@
       "weight_g": 784,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8936203364248.jpg",
       "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "hector-malot-sans-famille-2013-dong-a-bia-mem-115k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
+      "isbn": null,
+      "caption": "Bộ 2 Tập",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Huỳnh Lý"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "115k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/hector-malot-sans-famille/dong-a-classics-volume-1.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/hector-malot-sans-famille/dong-a-classics-volume-2.jpg"
+      ],
       "detail": ""
     }
   ]

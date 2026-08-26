@@ -6,10 +6,15 @@
     "Shinkai Makoto"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Chauchaubook"
+  ],
   "editions": [
     {
       "id": "shinkai-makoto-khu-vuon-ngon-tu-2026-ipm-chauchaubook",
+      "series_ids": [
+        "chauchaubook"
+      ],
       "isbn": null,
       "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
       "pub_year": 2026,

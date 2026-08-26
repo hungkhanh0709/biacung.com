@@ -1,0 +1,44 @@
+{
+  "id": "henryk-sienkiewicz-w-pustyni-i-w-puszczy",
+  "title": "Trên sa mạc và trong rừng thẳm",
+  "title_original": "W pustyni i w puszczy",
+  "authors": [
+    "Henryk Sienkiewicz"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classics (bỏ túi)"
+  ],
+  "editions": [
+    {
+      "id": "henryk-sienkiewicz-w-pustyni-i-w-puszczy-2013-dong-a-bia-mem-89k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Hữu Dũng"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "89k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/henryk-sienkiewicz-w-pustyni-i-w-puszczy/dong-a-classics-volume-1.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/henryk-sienkiewicz-w-pustyni-i-w-puszczy/dong-a-classics-volume-2.jpg"
+      ],
+      "detail": ""
+    }
+  ]
+}

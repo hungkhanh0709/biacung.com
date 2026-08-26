@@ -6,7 +6,9 @@
     "Johann David Wyss"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Đông A Classics (bỏ túi)"
+  ],
   "editions": [
     {
       "id": "johann-david-wyss-der-schweizerische-robinson-2025-dong-a-bia-mem-120k",
@@ -30,6 +32,34 @@
       "size_cm": "13,5 x 20,5",
       "weight_g": 400,
       "thumbnail": "https://cdn.hstatic.net/products/1000328521/gia_dinh_robinson_1_da_9cf17ba5b7074624ba782819ed122609_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "johann-david-wyss-der-schweizerische-robinson-2013-dong-a-bia-mem-56k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
+      "isbn": null,
+      "caption": "Lớn Lên Trên Đảo Vắng",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Hoàng Anh Thái"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "56k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/johann-david-wyss-der-schweizerische-robinson/dong-a-classics-cover.jpg",
       "gellery_imgs": [],
       "detail": ""
     }

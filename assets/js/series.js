@@ -127,6 +127,25 @@ function getBookDisplayTitle(book) {
   return normalizeText(book?.title_original || book?.id);
 }
 
+function getMatchingSeriesEditions(editions, seriesSlug) {
+  const normalizedSeriesSlug = sanitizeSlugParam(seriesSlug);
+  if (!normalizedSeriesSlug) {
+    return [];
+  }
+
+  return (Array.isArray(editions) ? editions : []).filter((edition) => {
+    const seriesIds = Array.isArray(edition?.series_ids) ? edition.series_ids : [];
+    return seriesIds.some((id) => sanitizeSlugParam(id) === normalizedSeriesSlug);
+  });
+}
+
+function getEditionMeta(edition) {
+  return [edition?.caption, edition?.pub_year, edition?.format]
+    .map((value) => normalizeText(value))
+    .filter(Boolean)
+    .join(" · ");
+}
+
 async function fetchJson(url) {
   const response = await fetch(url, { cache: "no-store" });
   if (!response.ok) {
@@ -310,7 +329,7 @@ async function loadSeriesBooks(seriesSlug) {
 
   const workIds = Array.isArray(series.work_ids) ? series.work_ids.map((workId) => normalizeText(workId)).filter(Boolean) : [];
 
-  const books = await Promise.all(
+  const bookGroups = await Promise.all(
     workIds.map(async (workId) => {
       const bookDetailUrl = buildBookDetailDataUrl(workId);
       const book = bookDetailUrl && isSafeDetailPath(bookDetailUrl, SAFE_BOOK_DETAIL_PATH)
@@ -321,22 +340,25 @@ async function loadSeriesBooks(seriesSlug) {
       }
 
       const editions = Array.isArray(book.editions) ? book.editions : [];
-      const firstEdition = editions[0] || {};
+      const matchingEditions = getMatchingSeriesEditions(editions, seriesSlug);
+      const selectedEditions = matchingEditions.length ? matchingEditions : editions.slice(0, 1);
 
-      return {
+      return selectedEditions.map((edition) => ({
         title: getBookDisplayTitle(book),
         subtitle: Array.isArray(book.authors) ? book.authors.join(", ") : "",
         description: "",
-        image: firstEdition.thumbnail || book.thumbnail,
+        image: edition.thumbnail || book.thumbnail,
         href: buildBookDetailUrl(book.id),
-        meta: editions.length ? `(${editions.length} phiên bản)` : ""
-      };
+        meta: matchingEditions.length
+          ? getEditionMeta(edition)
+          : (editions.length ? `(${editions.length} phiên bản)` : "")
+      }));
     })
   );
 
   return {
     series,
-    books: books.filter(Boolean)
+    books: bookGroups.flat().filter(Boolean)
   };
 }
 
@@ -402,7 +424,7 @@ async function renderSeriesDetailPage() {
   setPageState("results");
   updateCopy({
     title: normalizeText(series.name || series.id),
-    summary: `Hiển thị ${books.length} tác phẩm thuộc series “${normalizeText(series.name || series.id)}”`,
+    summary: `Hiển thị ${books.length} phiên bản sách thuộc series “${normalizeText(series.name || series.id)}”`,
     empty: ""
   });
   updateSeriesDetailSeo(series, books);
@@ -483,7 +505,7 @@ function updateSeriesDetailSeo(series, books) {
   const description = truncateText(
     [
       normalizeText(series.description),
-      books.length ? `Hiện có ${books.length} tác phẩm thuộc series này trên Bìa Cứng.` : ""
+      books.length ? `Hiện có ${books.length} phiên bản sách thuộc series này trên Bìa Cứng.` : ""
     ].filter(Boolean).join(" "),
     220
   );

@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "hoang-nam-tien-sach-thu-cho-em-2026-nha-nam-bia-cung-270k",
+      "series_ids": [
+        "50-nam-fahasa"
+      ],
       "isbn": null,
       "caption": "Bìa Cứng - Phiên Bản Độc Quyền 50 Năm Fahasa",
       "pub_year": 2026,

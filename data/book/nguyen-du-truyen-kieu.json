@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "nguyen-du-truyen-kieu-2026-dong-a-bia-vai-2tr2",
+      "series_ids": [
+        "50-nam-fahasa"
+      ],
       "isbn": null,
       "caption": "Ấn Bản Giới Hạn - Bìa Vải - Phiên Bản Độc Quyền 50 Năm Fahasa",
       "pub_year": 2026,
@@ -39,6 +42,9 @@
     },
     {
       "id": "nguyen-du-truyen-kieu-2026-dong-a-bia-cung-790k",
+      "series_ids": [
+        "50-nam-fahasa"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2026,

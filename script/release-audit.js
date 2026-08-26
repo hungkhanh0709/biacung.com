@@ -216,11 +216,33 @@ function auditSitemap(rootDir, errors) {
 function auditData(rootDir, errors, warnings) {
   const bookIndex = readJsonSafe(path.join(rootDir, "data", "book.json"), []);
   const seriesIndex = readJsonSafe(path.join(rootDir, "data", "series.json"), []);
+  const seriesById = new Map();
+  const taggedBooksBySeriesId = new Map();
 
   (Array.isArray(bookIndex) ? bookIndex : []).forEach((entry) => {
     const detail = normalizeText(entry?.detail);
     pushIfMissing(errors, detail && fs.existsSync(path.join(rootDir, detail)), `Book index points to missing file: ${detail}`);
   });
+
+  const seriesDir = path.join(rootDir, "data", "series");
+  fs.readdirSync(seriesDir)
+    .filter((file) => file.endsWith(".json"))
+    .forEach((file) => {
+      const series = readJsonSafe(path.join(seriesDir, file), null);
+      if (!series) {
+        errors.push(`Invalid JSON: data/series/${file}`);
+        return;
+      }
+
+      const expectedId = file.replace(/\.json$/, "");
+      const seriesId = normalizeText(series.id);
+      if (seriesId !== expectedId) {
+        errors.push(`Series id mismatch in data/series/${file}: expected "${expectedId}", got "${seriesId}"`);
+        return;
+      }
+
+      seriesById.set(seriesId, series);
+    });
 
   (Array.isArray(seriesIndex) ? seriesIndex : []).forEach((entry) => {
     const detail = normalizeText(entry?.detail);
@@ -258,8 +280,44 @@ function auditData(rootDir, errors, warnings) {
         if (!normalizeText(edition?.publisher)) {
           warnings.push(`Edition missing publisher: data/book/${file}#${index + 1}`);
         }
+
+        const seriesIds = edition?.series_ids;
+        if (seriesIds != null && !Array.isArray(seriesIds)) {
+          errors.push(`Edition series_ids must be an array: data/book/${file}#${index + 1}`);
+          return;
+        }
+
+        (Array.isArray(seriesIds) ? seriesIds : []).forEach((rawSeriesId) => {
+          const seriesId = normalizeText(rawSeriesId);
+          if (!seriesId || !seriesById.has(seriesId)) {
+            errors.push(`Edition points to unknown series "${seriesId}": data/book/${file}#${index + 1}`);
+            return;
+          }
+
+          const taggedBooks = taggedBooksBySeriesId.get(seriesId) || new Set();
+          taggedBooks.add(expectedId);
+          taggedBooksBySeriesId.set(seriesId, taggedBooks);
+
+          const workIds = Array.isArray(seriesById.get(seriesId)?.work_ids)
+            ? seriesById.get(seriesId).work_ids
+            : [];
+          if (!workIds.includes(expectedId)) {
+            errors.push(`Edition series "${seriesId}" does not include work "${expectedId}"`);
+          }
+        });
       });
     });
+
+  taggedBooksBySeriesId.forEach((taggedBooks, seriesId) => {
+    const workIds = Array.isArray(seriesById.get(seriesId)?.work_ids)
+      ? seriesById.get(seriesId).work_ids
+      : [];
+    workIds.forEach((workId) => {
+      if (!taggedBooks.has(workId)) {
+        errors.push(`Migrated series "${seriesId}" has no tagged edition for work "${workId}"`);
+      }
+    });
+  });
 }
 
 function printMessages(header, messages) {
