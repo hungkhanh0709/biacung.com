@@ -1,0 +1,43 @@
+{
+  "id": "gavriil-troyepolsky-con-bim-trang-tai-den",
+  "title": "Con Bim Trắng Tai Đen",
+  "title_original": "Белый Бим Чёрное ухо",
+  "authors": [
+    "Gavriil Troyepolsky"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classics (bỏ túi)"
+  ],
+  "editions": [
+    {
+      "id": "gavriil-troyepolsky-con-bim-trang-tai-den-2013-dong-a-bia-mem-48k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Tuân Nguyễn",
+        "Trần Thư"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "48k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/gavriil-troyepolsky-con-bim-trang-tai-den/dong-a-classics-cover.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

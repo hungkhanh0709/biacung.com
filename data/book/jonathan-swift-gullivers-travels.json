@@ -1,0 +1,42 @@
+{
+  "id": "jonathan-swift-gullivers-travels",
+  "title": "Gulliver du kí",
+  "title_original": "Gulliver’s Travels",
+  "authors": [
+    "Jonathan Swift"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classics (bỏ túi)"
+  ],
+  "editions": [
+    {
+      "id": "jonathan-swift-gullivers-travels-2013-dong-a-28k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Đỗ Đức Hiểu"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "",
+      "cover_price": "28k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/jonathan-swift-gullivers-travels/dong-a-classics-cover.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

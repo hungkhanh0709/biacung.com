@@ -1,9 +1,9 @@
-const BOOK_INDEX_URL = "data/book.json";
+const CHAUCHAUBOOK_SERIES_URL = "data/series/chauchaubook.json";
 const BOOK_FALLBACK_COVER = "/assets/img/core/book-cover.png.avif";
 const PAGE_SIZE = 16;
 const SAFE_BOOK_ID = /^[a-z0-9-]+$/;
 const SAFE_BOOK_DETAIL_PATH = /^data\/book\/[a-z0-9-]+\.json$/;
-const CHAUCHAUBOOK_NAME = "chauchaubook";
+const CHAUCHAUBOOK_SERIES_ID = "chauchaubook";
 
 const page = document.querySelector(".chauchaubook-page");
 const titleNode = document.querySelector("[data-chauchaubook-title]");
@@ -159,16 +159,9 @@ function updatePageCopy() {
   }
 }
 
-function normalizeName(value) {
-  return normalizeText(value)
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[đĐ]/g, "d")
-    .toLowerCase();
-}
-
-function hasChauchaubookFormat(edition) {
-  return normalizeName(edition?.format) === CHAUCHAUBOOK_NAME;
+function belongsToChauchaubookSeries(edition) {
+  const seriesIds = Array.isArray(edition?.series_ids) ? edition.series_ids : [];
+  return seriesIds.some((seriesId) => normalizeText(seriesId) === CHAUCHAUBOOK_SERIES_ID);
 }
 
 function pickEditionShowcaseImage(edition) {
@@ -184,11 +177,20 @@ function pickEditionShowcaseImage(edition) {
 }
 
 async function loadChauchaubookResults() {
-  const bookIndex = await fetchJson(BOOK_INDEX_URL);
-  const entries = Array.isArray(bookIndex) ? bookIndex : [];
+  const series = await fetchJson(CHAUCHAUBOOK_SERIES_URL);
+  if (normalizeText(series?.id) !== CHAUCHAUBOOK_SERIES_ID) {
+    throw new Error("Invalid Chauchaubook series payload");
+  }
+
+  const workIds = Array.isArray(series?.work_ids) ? series.work_ids : [];
   const books = await Promise.all(
-    entries.map(async (entry) => {
-      const detailPath = normalizeText(entry?.detail);
+    workIds.map(async (workId) => {
+      const bookId = normalizeText(workId);
+      if (!SAFE_BOOK_ID.test(bookId)) {
+        return null;
+      }
+
+      const detailPath = `data/book/${encodeURIComponent(bookId)}.json`;
       if (!SAFE_BOOK_DETAIL_PATH.test(detailPath)) {
         return null;
       }
@@ -207,7 +209,7 @@ async function loadChauchaubookResults() {
 
     const editions = Array.isArray(book?.editions) ? book.editions : [];
     editions.forEach((edition) => {
-      if (!hasChauchaubookFormat(edition)) {
+      if (!belongsToChauchaubookSeries(edition)) {
         return;
       }
 

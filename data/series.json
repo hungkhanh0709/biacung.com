@@ -42,5 +42,13 @@
   {
     "id": "viet-nam-danh-tac-nha-nam",
     "detail": "data/series/viet-nam-danh-tac-nha-nam.json"
+  },
+  {
+    "id": "dong-a-classics-bo-tui",
+    "detail": "data/series/dong-a-classics-bo-tui.json"
+  },
+  {
+    "id": "chauchaubook",
+    "detail": "data/series/chauchaubook.json"
   }
 ]

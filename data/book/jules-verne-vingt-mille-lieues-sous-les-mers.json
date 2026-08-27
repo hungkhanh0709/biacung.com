@@ -1,13 +1,14 @@
 {
   "id": "jules-verne-vingt-mille-lieues-sous-les-mers",
-  "title": "Hai Vạn Dặm Dưới Biển",
+  "title": "Hai vạn dặm dưới biển",
   "title_original": "Vingt Mille Lieues sous les mers",
   "authors": [
     "Jules Verne"
   ],
   "awards": [],
   "series": [
-    "Đông A Classic"
+    "Đông A Classic",
+    "Đông A Classics (bỏ túi)"
   ],
   "editions": [
     {
@@ -33,6 +34,36 @@
       "weight_g": 500,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/h/a/hai-van-dam-duoi-bien---bia-1-1.jpg",
       "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "jules-verne-vingt-mille-lieues-sous-les-mers-2013-dong-a-72k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
+      "isbn": null,
+      "caption": "Bộ 2 Tập",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Lê Anh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "",
+      "cover_price": "72k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/jules-verne-vingt-mille-lieues-sous-les-mers/dong-a-classics-volume-1.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/jules-verne-vingt-mille-lieues-sous-les-mers/dong-a-classics-volume-2.jpg"
+      ],
       "detail": ""
     }
   ]

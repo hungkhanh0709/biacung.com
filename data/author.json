@@ -82,7 +82,8 @@
     "id": "henryk-sienkiewicz",
     "name": "Henryk Sienkiewicz",
     "work_ids": [
-      "henryk-sienkiewicz-lao-boc-hania-selim-mirza"
+      "henryk-sienkiewicz-lao-boc-hania-selim-mirza",
+      "henryk-sienkiewicz-w-pustyni-i-w-puszczy"
     ]
   },
   {
@@ -98,14 +99,16 @@
     "id": "mark-twain",
     "name": "Mark Twain",
     "work_ids": [
-      "mark-twain-the-adventures-of-tom-sawyer"
+      "mark-twain-the-adventures-of-tom-sawyer",
+      "mark-twain-the-adventures-of-huckleberry-finn"
     ]
   },
   {
     "id": "frances-hodgson-burnett",
     "name": "Frances Hodgson Burnett",
     "work_ids": [
-      "frances-hodgson-burnett-the-secret-garden"
+      "frances-hodgson-burnett-the-secret-garden",
+      "frances-hodgson-burnett-a-little-princess"
     ]
   },
   {
@@ -602,6 +605,7 @@
     "name": "Nhiều Tác Giả",
     "work_ids": [
       "nhieu-tac-gia-doan-tu-huyen-mot-nghe-nhan",
+      "van-moi-10-nam-2015-2025-dong-a",
       "nhieu-tac-gia-dai-viet-su-ky-toan-thu",
       "nhieu-tac-gia-bach-khoa-tri-thuc-bang-hinh"
     ]
@@ -853,6 +857,113 @@
     "name": "Sir Arthur Conan Doyle",
     "work_ids": [
       "sir-arthur-conan-doyle-the-complete-sherlock-holmes"
+    ]
+  },
+  {
+    "id": "hao-nguyen",
+    "name": "Hạo Nguyên",
+    "work_ids": [
+      "hao-nguyen-bo-suu-tap-mu-suong"
+    ]
+  },
+  {
+    "id": "lewis-carroll",
+    "name": "Lewis Carroll",
+    "work_ids": [
+      "lewis-carroll-alices-adventures-in-wonderland"
+    ]
+  },
+  {
+    "id": "gavriil-troyepolsky",
+    "name": "Gavriil Troyepolsky",
+    "work_ids": [
+      "gavriil-troyepolsky-con-bim-trang-tai-den"
+    ]
+  },
+  {
+    "id": "robert-louis-stevenson",
+    "name": "Robert Louis Stevenson",
+    "work_ids": [
+      "robert-louis-stevenson-treasure-island"
+    ]
+  },
+  {
+    "id": "jonathan-swift",
+    "name": "Jonathan Swift",
+    "work_ids": [
+      "jonathan-swift-gullivers-travels"
+    ]
+  },
+  {
+    "id": "iar-larri",
+    "name": "Iar Larri",
+    "work_ids": [
+      "iar-larri-cuoc-phieu-luu-ki-la-cua-karik-va-valia"
+    ]
+  },
+  {
+    "id": "e-nesbit",
+    "name": "E. Nesbit",
+    "work_ids": [
+      "e-nesbit-the-enchanted-castle",
+      "e-nesbit-the-railway-children"
+    ]
+  },
+  {
+    "id": "jack-london",
+    "name": "Jack London",
+    "work_ids": [
+      "jack-london-white-fang",
+      "jack-london-the-call-of-the-wild"
+    ]
+  },
+  {
+    "id": "anna-sewell",
+    "name": "Anna Sewell",
+    "work_ids": [
+      "anna-sewell-black-beauty"
+    ]
+  },
+  {
+    "id": "edmondo-de-amicis",
+    "name": "Edmondo De Amicis",
+    "work_ids": [
+      "edmondo-de-amicis-cuore"
+    ]
+  },
+  {
+    "id": "xelma-lagerlof",
+    "name": "Xelma Lagerlof",
+    "work_ids": [
+      "xelma-lagerlof-the-wonderful-adventures-of-nils-and-further-adventures-of-nils-holgersson"
+    ]
+  },
+  {
+    "id": "charles-dickens",
+    "name": "Charles Dickens",
+    "work_ids": [
+      "charles-dickens-oliver-twist"
+    ]
+  },
+  {
+    "id": "rudyard-kipling",
+    "name": "Rudyard Kipling",
+    "work_ids": [
+      "rudyard-kipling-just-so-stories"
+    ]
+  },
+  {
+    "id": "ernest-seton-thompson",
+    "name": "Ernest Seton Thompson",
+    "work_ids": [
+      "ernest-seton-thompson-wild-animals-i-have-known"
+    ]
+  },
+  {
+    "id": "harriet-beecher-stowe",
+    "name": "Harriet Beecher Stowe",
+    "work_ids": [
+      "harriet-beecher-stowe-uncle-toms-cabin"
     ]
   }
 ]

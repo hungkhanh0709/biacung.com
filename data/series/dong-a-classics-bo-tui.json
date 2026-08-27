@@ -1,0 +1,33 @@
+{
+  "id": "dong-a-classics-bo-tui",
+  "name": "Đông A Classics (bỏ túi)",
+  "description": "",
+  "thumbnail": "/assets/img/books/lewis-carroll-alices-adventures-in-wonderland/dong-a-classics-cover.jpg",
+  "work_ids": [
+    "lewis-carroll-alices-adventures-in-wonderland",
+    "gavriil-troyepolsky-con-bim-trang-tai-den",
+    "frances-hodgson-burnett-a-little-princess",
+    "robert-louis-stevenson-treasure-island",
+    "jonathan-swift-gullivers-travels",
+    "jules-verne-vingt-mille-lieues-sous-les-mers",
+    "johanna-spyri-heidi",
+    "mark-twain-the-adventures-of-huckleberry-finn",
+    "iar-larri-cuoc-phieu-luu-ki-la-cua-karik-va-valia",
+    "hector-malot-sans-famille",
+    "lazar-lagin-ong-gia-khottabych",
+    "e-nesbit-the-enchanted-castle",
+    "johann-david-wyss-der-schweizerische-robinson",
+    "e-nesbit-the-railway-children",
+    "jack-london-white-fang",
+    "anna-sewell-black-beauty",
+    "edmondo-de-amicis-cuore",
+    "xelma-lagerlof-the-wonderful-adventures-of-nils-and-further-adventures-of-nils-holgersson",
+    "charles-dickens-oliver-twist",
+    "rudyard-kipling-just-so-stories",
+    "jack-london-the-call-of-the-wild",
+    "mark-twain-the-adventures-of-tom-sawyer",
+    "henryk-sienkiewicz-w-pustyni-i-w-puszczy",
+    "ernest-seton-thompson-wild-animals-i-have-known",
+    "harriet-beecher-stowe-uncle-toms-cabin"
+  ]
+}

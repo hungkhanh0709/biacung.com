@@ -6,10 +6,15 @@
     "Fredrik Backman"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Chauchaubook"
+  ],
   "editions": [
     {
       "id": "fredrik-backman-en-man-som-heter-ove-2026-chauchaubook",
+      "series_ids": [
+        "chauchaubook"
+      ],
       "isbn": null,
       "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
       "pub_year": 2026,

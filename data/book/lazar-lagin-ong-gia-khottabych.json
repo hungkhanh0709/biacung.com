@@ -7,7 +7,8 @@
   ],
   "awards": [],
   "series": [
-    "Đông a Classic"
+    "Đông a Classic",
+    "Đông A Classics (bỏ túi)"
   ],
   "editions": [
     {
@@ -33,6 +34,36 @@
       "weight_g": 450,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/o/n/ong-gia-khottabit---bia-1-1.jpg",
       "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "lazar-lagin-ong-gia-khottabych-2013-dong-a-bia-mem-77k",
+      "series_ids": [
+        "dong-a-classics-bo-tui"
+      ],
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2013,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Minh Đăng Khánh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "77k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/lazar-lagin-ong-gia-khottabych/dong-a-classics-volume-1.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/lazar-lagin-ong-gia-khottabych/dong-a-classics-volume-2.jpg"
+      ],
       "detail": ""
     }
   ]

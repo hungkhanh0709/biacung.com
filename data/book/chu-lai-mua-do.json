@@ -6,10 +6,15 @@
     "Chu Lai"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Chauchaubook"
+  ],
   "editions": [
     {
       "id": "chu-lai-mua-do-2026-cty-tri-thuc-van-hoa-sach-vn-chauchaubook",
+      "series_ids": [
+        "chauchaubook"
+      ],
       "isbn": null,
       "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
       "pub_year": 2026,

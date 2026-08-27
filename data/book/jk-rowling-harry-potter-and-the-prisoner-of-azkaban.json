@@ -6,10 +6,15 @@
     "J.k. Rowling"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Chauchaubook"
+  ],
   "editions": [
     {
       "id": "jk-rowling-harry-potter-and-the-prisoner-of-azkaban-2026-chauchaubook",
+      "series_ids": [
+        "chauchaubook"
+      ],
       "isbn": null,
       "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
       "pub_year": 2026,
