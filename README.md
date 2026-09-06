@@ -16,7 +16,8 @@
 - `/series`: series listing and series detail page (`series.html`)
 - `/search`: search page (`search.html`)
 - `/about`: about page (`about.html`)
-- `/chauchaubook`: Chauchaubook page (`chauchaubook.html`)
+- `/chauchaubook`: Chauchaubook story and process page (`chauchaubook.html`)
+- `/chauchaubook/works`: Chauchaubook works collection (`chauchaubook/works/index.html`)
 - `/award/`: awards page (`award/index.html`)
 
 ## Project structure
@@ -39,6 +40,10 @@
 ├── series.html
 ├── search.html
 ├── about.html
+├── chauchaubook.html
+├── chauchaubook/
+│   └── works/
+│       └── index.html
 └── award*
 ```
 

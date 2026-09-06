@@ -1,4 +1,4 @@
-const CHAUCHAUBOOK_SERIES_URL = "data/series/chauchaubook.json";
+const CHAUCHAUBOOK_SERIES_URL = "/data/series/chauchaubook.json";
 const BOOK_FALLBACK_COVER = "/assets/img/core/book-cover.png.avif";
 const PAGE_SIZE = 16;
 const SAFE_BOOK_ID = /^[a-z0-9-]+$/;
@@ -161,7 +161,7 @@ function renderLoadingSkeletons(count = PAGE_SIZE) {
 
 function updatePageCopy() {
   if (kickerNode) {
-    kickerNode.textContent = "Chauchaubook";
+    kickerNode.textContent = "Tuyển tập Chauchaubook";
   }
   if (titleNode) {
     titleNode.textContent = "Bìa sách được Chauchaubook thực hiện";
@@ -199,12 +199,12 @@ async function loadChauchaubookResults() {
         return null;
       }
 
-      const detailPath = `data/book/${encodeURIComponent(bookId)}.json`;
-      if (!SAFE_BOOK_DETAIL_PATH.test(detailPath)) {
+      const relativeDetailPath = `data/book/${encodeURIComponent(bookId)}.json`;
+      if (!SAFE_BOOK_DETAIL_PATH.test(relativeDetailPath)) {
         return null;
       }
 
-      return fetchOptionalJson(detailPath);
+      return fetchOptionalJson(`/${relativeDetailPath}`);
     })
   );
 
@@ -251,7 +251,7 @@ async function renderPage() {
     const results = await loadChauchaubookResults();
 
     updatePageCopy();
-    document.title = "Chauchaubook | Bìa Cứng";
+    document.title = "Tác phẩm Chauchaubook | Bìa Cứng";
 
     if (!results.length) {
       resultsNode.replaceChildren();
