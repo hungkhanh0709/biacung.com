@@ -210,7 +210,13 @@ function mergeDetailPayload(existingPayload, incomingPayload, fallbackIdPath) {
             } else {
                 normalizedEdition.title = editionTitle;
             }
-            return normalizedEdition;
+
+            const { id, title, ...editionFields } = normalizedEdition;
+            return {
+                ...(id ? { id } : {}),
+                ...(title ? { title } : {}),
+                ...editionFields
+            };
         });
     }
     return merged;

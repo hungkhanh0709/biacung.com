@@ -528,18 +528,21 @@ function renderAuthorSlugSuggestions(formData) {
     authorSlugSuggestions.appendChild(list);
 }
 
-function useAuthorSuggestionSlug(slug) {
+async function useAuthorSuggestionSlug(slug) {
     const normalizedSlug = slugify(slug);
     if (!normalizedSlug || !bookIdInput) {
         return;
     }
 
+    if (pendingLookupTimer) {
+        window.clearTimeout(pendingLookupTimer);
+        pendingLookupTimer = null;
+    }
+    lookupVersion += 1;
     blockedAutoLoadSlug = '';
     bookIdInput.value = normalizedSlug;
     hydratedBookSlug = '';
-    setFormStatus(`Đã chọn slug có sẵn: ${normalizedSlug}. Dữ liệu sẽ được load từ file tương ứng.`, true);
-    renderOutputs();
-    scheduleLookup(true);
+    await loadBookFromCurrentSlug();
 }
 
 function createEditionCard(index = editionCounter, editionData = {}, options = {}) {
@@ -1056,32 +1059,26 @@ function collectSearchTextTerms(formData) {
         });
     };
 
-    addValues(formData.get('title') || '');
-    addValues(formData.get('titleOriginal') || '');
+    const addEditionFieldValues = (prefix, transform = (value) => value) => {
+        for (const [fieldName, value] of formData.entries()) {
+            if (fieldName.startsWith(prefix)) {
+                addValues(transform(value));
+            }
+        }
+    };
+
     parseCommaSeparatedLines(formData.get('authors') || '').forEach((entry) => addValues(entry));
-    parseLines(formData.get('awards') || '').forEach((entry) => addValues(entry));
+    addValues(formData.get('titleOriginal') || '');
+    addValues(formData.get('title') || '');
+    addEditionFieldValues('edition-title-');
+    addEditionFieldValues('edition-publisher-', normalizePublisher);
+    addEditionFieldValues('edition-issuers-');
+    addEditionFieldValues('edition-translators-');
+    addEditionFieldValues('edition-illustrators-');
+    addEditionFieldValues('edition-proofreaders-');
     parseLines(formData.get('series') || '').forEach((entry) => addValues(entry));
-
-    Array.from(form?.elements || []).forEach((field) => {
-        const fieldName = field?.name || '';
-        if (!fieldName) {
-            return;
-        }
-
-        if (fieldName.startsWith('edition-publisher-')) {
-            addValues(normalizePublisher(field.value));
-            return;
-        }
-
-        if (fieldName.startsWith('edition-title-') || fieldName.startsWith('edition-caption-')) {
-            addValues(field.value);
-            return;
-        }
-
-        if (fieldName.startsWith('edition-issuers-') || fieldName.startsWith('edition-translators-') || fieldName.startsWith('edition-illustrators-') || fieldName.startsWith('edition-proofreaders-')) {
-            addValues(field.value);
-        }
-    });
+    addEditionFieldValues('edition-caption-');
+    parseLines(formData.get('awards') || '').forEach((entry) => addValues(entry));
 
     return terms;
 }
@@ -1720,7 +1717,7 @@ form.addEventListener('paste', (event) => {
 });
 
 if (authorSlugSuggestions) {
-    authorSlugSuggestions.addEventListener('click', (event) => {
+    authorSlugSuggestions.addEventListener('click', async (event) => {
         const target = event.target;
         if (!(target instanceof HTMLElement)) {
             return;
@@ -1732,7 +1729,14 @@ if (authorSlugSuggestions) {
         }
 
         if (button.dataset.authorSlugAction === 'use-existing') {
-            useAuthorSuggestionSlug(button.dataset.bookSlug || '');
+            button.disabled = true;
+            try {
+                await useAuthorSuggestionSlug(button.dataset.bookSlug || '');
+            } finally {
+                if (button.isConnected) {
+                    button.disabled = false;
+                }
+            }
         }
     });
 }
