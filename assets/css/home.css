@@ -403,7 +403,6 @@ input:focus-visible {
   grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.92fr);
   align-items: center;
   gap: clamp(2.5rem, 6vw, 6rem);
-  padding-block: clamp(3.75rem, 7vw, 6.5rem);
 }
 
 .eyebrow {
@@ -511,96 +510,6 @@ input:focus-visible {
   display: grid;
   place-items: center;
   min-block-size: 28rem;
-  perspective: 80rem;
-}
-
-.hero-book-wrap::before {
-  content: "";
-  position: absolute;
-  inline-size: min(76%, 26rem);
-  block-size: 3rem;
-  inset-block-end: 2.5rem;
-  border-radius: 999rem;
-  background: rgb(31 20 70 / 16%);
-  filter: blur(1.15rem);
-  transform: rotate(-7deg);
-}
-
-.featured-book {
-  position: relative;
-  inline-size: clamp(13rem, 31vw, 19rem);
-  aspect-ratio: 0.72;
-  border-radius: 0.22rem 0.9rem 0.9rem 0.22rem;
-  background:
-    linear-gradient(90deg, rgb(0 0 0 / 18%), transparent 12%, transparent 88%, rgb(255 255 255 / 25%)),
-    linear-gradient(145deg, var(--color-secondary), #ff8f77 58%, #f64973);
-  box-shadow: -1.25rem 1.75rem 2.7rem rgb(44 33 75 / 22%);
-  transform: rotateY(-18deg) rotateZ(2deg);
-  transform-style: preserve-3d;
-  isolation: isolate;
-}
-
-.featured-book::before {
-  content: "";
-  position: absolute;
-  inset-block: 0.55rem;
-  inset-inline-start: -1rem;
-  inline-size: 1rem;
-  border-radius: 0.2rem 0 0 0.2rem;
-  background: linear-gradient(180deg, #ff7585, #d9345d);
-  transform: rotateY(80deg);
-  transform-origin: right;
-}
-
-.featured-book::after {
-  content: "";
-  position: absolute;
-  inset-inline: 1.15rem 0.7rem;
-  inset-block-start: -0.75rem;
-  block-size: 1rem;
-  border-radius: 0.18rem 0.6rem 0 0;
-  background: repeating-linear-gradient(180deg, #f8f8f8 0 0.16rem, #d8d8df 0.16rem 0.3rem);
-  transform: skewX(-48deg);
-  transform-origin: bottom;
-  z-index: -1;
-}
-
-.book-cover-content {
-  position: absolute;
-  inset: 1.3rem;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  color: #fff6f6;
-  text-align: center;
-}
-
-.series-name {
-  font-family: var(--font-heading);
-  font-size: clamp(1rem, 2.5vw, 1.45rem);
-  font-weight: 700;
-  line-height: 1.1;
-}
-
-.book-cover-content strong {
-  align-self: center;
-  color: #194b85;
-  font-family: var(--font-heading);
-  font-size: clamp(2rem, 4.8vw, 3rem);
-  font-weight: 800;
-  line-height: 0.9;
-  letter-spacing: -0.05em;
-  text-shadow: 0.08em 0.08em 0 rgb(255 255 255 / 70%);
-  transform: rotate(-8deg);
-}
-
-.book-cover-content small {
-  justify-self: center;
-  border-radius: 999rem;
-  padding: 0.32rem 0.75rem;
-  background: rgb(255 255 255 / 24%);
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .section {
