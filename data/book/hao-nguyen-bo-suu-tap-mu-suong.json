@@ -29,8 +29,13 @@
       "copy_numbering": null,
       "size_cm": "13,5 x 20,5",
       "weight_g": 300,
-      "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_2644126e6b984659bba51c7e40efc308_master.jpg",
-      "gellery_imgs": [],
+      "thumbnail": "/assets/img/books/hao-nguyen-bo-suu-tap-mu-suong/van-moi-dong-a-cover.webp",
+      "gellery_imgs": [
+        "/assets/img/books/hao-nguyen-bo-suu-tap-mu-suong/van-moi-dong-a-cover-photo-1.jpg",
+        "/assets/img/books/hao-nguyen-bo-suu-tap-mu-suong/van-moi-dong-a-cover-photo-2.jpg",
+        "/assets/img/books/hao-nguyen-bo-suu-tap-mu-suong/van-moi-dong-a-cover-photo-3.jpg",
+        "/assets/img/books/hao-nguyen-bo-suu-tap-mu-suong/van-moi-dong-a-cover-photo-4.jpg"
+      ],
       "detail": ""
     }
   ]

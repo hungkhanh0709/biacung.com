@@ -48,6 +48,10 @@
     "detail": "data/series/dong-a-classics-bo-tui.json"
   },
   {
+    "id": "dong-a-classics-bia-vai",
+    "detail": "data/series/dong-a-classics-bia-vai.json"
+  },
+  {
     "id": "chauchaubook",
     "detail": "data/series/chauchaubook.json"
   }

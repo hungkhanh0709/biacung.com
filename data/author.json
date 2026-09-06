@@ -965,5 +965,12 @@
     "work_ids": [
       "harriet-beecher-stowe-uncle-toms-cabin"
     ]
+  },
+  {
+    "id": "antoine-de-saint-exupery",
+    "name": "Antoine De Saint-Exupéry",
+    "work_ids": [
+      "antoine-de-saint-exupery-le-petit-prince"
+    ]
   }
 ]

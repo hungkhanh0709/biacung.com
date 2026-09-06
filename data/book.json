@@ -1,5 +1,17 @@
 [
   {
+    "detail": "data/book/antoine-de-saint-exupery-le-petit-prince.json",
+    "search_text": "hoang tu be le petit prince antoine de saintexupery dong a classics bia vai nxb van hoc dong a vinh lac",
+    "last_pub_year": 2026,
+    "updated_at": "2026-09-06"
+  },
+  {
+    "detail": "data/book/jack-london-the-call-of-the-wild.json",
+    "search_text": "tieng goi cua hoang da the call of the wild jack london dong a classics bo tui dong a classics bia vai nxb van hoc dong a nguyen minh duc lam manh chuong nguyen cong ai vu tuan phuong",
+    "last_pub_year": 2026,
+    "updated_at": "2026-09-06"
+  },
+  {
     "detail": "data/book/hao-nguyen-bo-suu-tap-mu-suong.json",
     "search_text": "bo suu tap mu suong hao nguyen van moi dong a nxb dan tri dong a",
     "last_pub_year": 2026,
@@ -433,7 +445,7 @@
   },
   {
     "detail": "data/book/mark-twain-the-adventures-of-tom-sawyer.json",
-    "search_text": "nhung cuoc phieu luu cua tom sawyer the adventures of tom sawyer mark twain dong a classics bo tui nxb van hoc dong a nguy mong huyen hoang van phuong dang thu",
+    "search_text": "nhung cuoc phieu luu cua tom sawyer the adventures of tom sawyer mark twain dong a classics bo tui dong a classics bia vai nxb van hoc dong a dang thu nguy mong huyen hoang van phuong",
     "updated_at": "2026-08-26",
     "last_pub_year": 2025
   },
@@ -493,7 +505,7 @@
   },
   {
     "detail": "data/book/frances-hodgson-burnett-the-secret-garden.json",
-    "search_text": "khu vuon bi mat the secret garden frances hodgson burnett dong a classic nxb van hoc dong a le thi oanh",
+    "search_text": "khu vuon bi mat the secret garden frances hodgson burnett dong a classic dong a classics bia vai nxb van hoc dong a le thi oanh",
     "updated_at": "2026-07-04",
     "last_pub_year": 2025
   },
@@ -505,7 +517,7 @@
   },
   {
     "detail": "data/book/hector-malot-romain-kalbris.json",
-    "search_text": "ve voi gia dinh romain kalbris hector malot nxb van hoc dong a le dinh chi",
+    "search_text": "ve voi gia dinh romain kalbris hector malot dong a classics bia vai nxb van hoc dong a le dinh chi emile bayard",
     "updated_at": "2026-07-04",
     "last_pub_year": 2025
   },
@@ -902,12 +914,6 @@
   {
     "detail": "data/book/iar-larri-cuoc-phieu-luu-ki-la-cua-karik-va-valia.json",
     "search_text": "cuoc phieu luu ki la cua karik va valia iar larri dong a classics bo tui nxb van hoc dong a thieu huy phan thi men",
-    "last_pub_year": 2013,
-    "updated_at": "2026-08-26"
-  },
-  {
-    "detail": "data/book/jack-london-the-call-of-the-wild.json",
-    "search_text": "tieng goi cua hoang da the call of the wild jack london dong a classics bo tui nxb van hoc dong a manh chuong nguyen cong ai vu tuan phuong",
     "last_pub_year": 2013,
     "updated_at": "2026-08-26"
   },
