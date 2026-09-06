@@ -7,9 +7,45 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classics (bỏ túi)"
+    "Đông A Classics (bỏ túi)",
+    "Đông A Classics (bìa vải)"
   ],
   "editions": [
+    {
+      "id": "jack-london-the-call-of-the-wild-2026-dong-a-bia-cung-boc-vai-ma-vang-canh-sach-220k",
+      "series_ids": [
+        "dong-a-classics-bia-vai"
+      ],
+      "isbn": null,
+      "caption": "Tiếng Gọi Nơi Hoang Dã (bìa vải)",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Minh"
+      ],
+      "illustrators": [
+        "Đức Lâm"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng bọc vải, mạ vàng cạnh sách",
+      "cover_price": "220k",
+      "print_run": 1000,
+      "page_count": 156,
+      "copy_numbering": null,
+      "size_cm": "13 x 20,5c",
+      "weight_g": 400,
+      "thumbnail": "/assets/img/books/jack-london-the-call-of-the-wild/dong-a-classics-bia-vai-cover.webp",
+      "gellery_imgs": [
+        "/assets/img/books/jack-london-the-call-of-the-wild/dong-a-classics-bia-vai-interior-1.jpg",
+        "/assets/img/books/jack-london-the-call-of-the-wild/dong-a-classics-bia-vai-interior-2.jpg",
+        "/assets/img/books/jack-london-the-call-of-the-wild/dong-a-classics-bia-vai-interior-3.jpg",
+        "/assets/img/books/jack-london-the-call-of-the-wild/dong-a-classics-bia-vai-cover-photo.jpg"
+      ],
+      "detail": ""
+    },
     {
       "id": "jack-london-the-call-of-the-wild-2013-dong-a-bia-mem-43k",
       "series_ids": [
