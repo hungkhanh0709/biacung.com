@@ -1,0 +1,13 @@
+{
+  "id": "dong-a-classics-bia-vai",
+  "name": "Đông A Classics (bìa vải)",
+  "description": "",
+  "thumbnail": "/assets/img/series/dong-a-classics-bia-vai.webp",
+  "work_ids": [
+    "antoine-de-saint-exupery-le-petit-prince",
+    "jack-london-the-call-of-the-wild",
+    "mark-twain-the-adventures-of-tom-sawyer",
+    "frances-hodgson-burnett-the-secret-garden",
+    "hector-malot-romain-kalbris"
+  ]
+}

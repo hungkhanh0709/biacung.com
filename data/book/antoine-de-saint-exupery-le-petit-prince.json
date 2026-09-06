@@ -1,0 +1,47 @@
+{
+  "id": "antoine-de-saint-exupery-le-petit-prince",
+  "title": "Hoàng Tử Bé",
+  "title_original": "Le petit prince",
+  "authors": [
+    "Antoine De Saint-Exupéry"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classics (bìa vải)"
+  ],
+  "editions": [
+    {
+      "id": "antoine-de-saint-exupery-le-petit-prince-2026-dong-a-bia-cung-boc-vai-ma-vang-canh-sach-190k",
+      "isbn": "978-632-631-952-1",
+      "series_ids": [
+        "dong-a-classics-bia-vai"
+      ],
+      "caption": "Hoàng Tử Bé (bìa vải)",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Vĩnh Lạc"
+      ],
+      "illustrators": [
+        "Antoine De Saint-Exupéry"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng bọc vải, mạ vàng cạnh sách",
+      "cover_price": "190k",
+      "print_run": 1000,
+      "page_count": 116,
+      "copy_numbering": null,
+      "size_cm": "13 x 20,5",
+      "weight_g": 300,
+      "thumbnail": "/assets/img/books/antoine-de-saint-exupery-le-petit-prince/dong-a-classics-bia-vai-cover.webp",
+      "gellery_imgs": [
+        "/assets/img/books/antoine-de-saint-exupery-le-petit-prince/dong-a-classics-bia-vai-cover-detail.jpg",
+        "/assets/img/books/antoine-de-saint-exupery-le-petit-prince/dong-a-classics-bia-vai-endpaper.jpg"
+      ],
+      "detail": "- Bìa cứng bọc vải trắng, điểm nhũ lấp lánh\n- Bụng sách nhũ vàng, tăng tính thẩm mỹ và góp phần bảo quản sách\n- Trang gác in họa tiết vintage, như lời mời bạn lật mở từng trang\n- Ruột sách in trên giấy Bãi Bằng định lượng 100 gsm"
+    }
+  ]
+}
