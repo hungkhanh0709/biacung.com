@@ -439,8 +439,8 @@
   },
   {
     "detail": "data/book/johann-david-wyss-der-schweizerische-robinson.json",
-    "search_text": "gia dinh robinson thuy sy der schweizerische robinson johann david wyss dong a classics bo tui nxb van hoc dong a hoang anh thai nguyen minh",
-    "updated_at": "2026-08-26",
+    "search_text": "gia dinh robinson thuy sy der schweizerische robinson johann david wyss dong a classics bo tui dong a classics bia vai nxb van hoc dong a nguyen minh hoang anh thai",
+    "updated_at": "2026-09-06",
     "last_pub_year": 2025
   },
   {
@@ -544,6 +544,18 @@
     "search_text": "james percival everett pulitzer nxb vintage penguin books",
     "updated_at": "2026-07-02",
     "last_pub_year": 2025
+  },
+  {
+    "detail": "data/book/edmondo-de-amicis-cuore.json",
+    "search_text": "nhung tam long cao ca cuore edmondo de amicis dong a classics bo tui dong a classics bia vai nxb van hoc dong a dinh tran lien huong hoang thieu son",
+    "last_pub_year": 2024,
+    "updated_at": "2026-09-06"
+  },
+  {
+    "detail": "data/book/henryk-sienkiewicz-w-pustyni-i-w-puszczy.json",
+    "search_text": "tren sa mac va trong rung tham w pustyni i w puszczy henryk sienkiewicz dong a classics bo tui dong a classics bia vai nxb van hoc dong a nguyen huu dung duc lam",
+    "last_pub_year": 2024,
+    "updated_at": "2026-09-06"
   },
   {
     "detail": "data/book/antoine-galland-nghin-le-mot-dem.json",
@@ -876,12 +888,6 @@
     "updated_at": "2026-08-26"
   },
   {
-    "detail": "data/book/edmondo-de-amicis-cuore.json",
-    "search_text": "nhung tam long cao ca cuore edmondo de amicis dong a classics bo tui nxb van hoc dong a hoang thieu son",
-    "last_pub_year": 2013,
-    "updated_at": "2026-08-26"
-  },
-  {
     "detail": "data/book/ernest-seton-thompson-wild-animals-i-have-known.json",
     "search_text": "truyen loai vat wild animals i have known ernest seton thompson dong a classics bo tui nxb van hoc dong a le thuy duong",
     "last_pub_year": 2013,
@@ -902,12 +908,6 @@
   {
     "detail": "data/book/harriet-beecher-stowe-uncle-toms-cabin.json",
     "search_text": "tup leu bac tom uncle toms cabin harriet beecher stowe dong a classics bo tui nxb van hoc dong a do duc hieu",
-    "last_pub_year": 2013,
-    "updated_at": "2026-08-26"
-  },
-  {
-    "detail": "data/book/henryk-sienkiewicz-w-pustyni-i-w-puszczy.json",
-    "search_text": "tren sa mac va trong rung tham w pustyni i w puszczy henryk sienkiewicz dong a classics bo tui nxb van hoc dong a nguyen huu dung",
     "last_pub_year": 2013,
     "updated_at": "2026-08-26"
   },

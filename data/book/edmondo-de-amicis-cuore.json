@@ -7,15 +7,44 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classics (bỏ túi)"
+    "Đông A Classics (bỏ túi)",
+    "Đông A Classics (bìa vải)"
   ],
   "editions": [
     {
+      "id": "edmondo-de-amicis-cuore-2024-dong-a-bia-cung-boc-vai-ma-vang-canh-sach-400k",
+      "isbn": "978-604-491-136-6",
+      "series_ids": [
+        "dong-a-classics-bia-vai"
+      ],
+      "caption": "Tâm Hồn Cao Thượng (bìa Vải)",
+      "pub_year": 2024,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Đinh Trần Liên Hương"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng bọc vải, mạ vàng cạnh sách",
+      "cover_price": "400k",
+      "print_run": null,
+      "page_count": 554,
+      "copy_numbering": null,
+      "size_cm": "13 x 20,5",
+      "weight_g": 1100,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/1_da_2bfaeedc57594c1b98617198ac4ce32b_master.jpg",
+      "gellery_imgs": [],
+      "detail": "- Sách có bìa cứng, bọc bằng vải\n- Các họa tiết được in nhũ sắc nét trên bìa vải. \n- Trang gác in họa tiết vintage như mời gọi bạn lật mở từng trang sách. \n- Bụng sách được nhũ vàng tăng tính thẩm mỹ và thời gian bảo quản. \n- Ruột sách khổ 13,5 x 20,5cm, in trên giấy Bãi Bằng 100 gsm."
+    },
+    {
       "id": "edmondo-de-amicis-cuore-2013-dong-a-bia-mem-55k",
+      "isbn": null,
       "series_ids": [
         "dong-a-classics-bo-tui"
       ],
-      "isbn": null,
       "caption": "",
       "pub_year": 2013,
       "publisher": "NXB Văn Học",
