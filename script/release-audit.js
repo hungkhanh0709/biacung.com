@@ -66,7 +66,10 @@ function auditStaticPages(rootDir, errors) {
         'meta name="description"',
         'meta name="robots" content="index,follow,max-image-preview:large"',
         'type="application/ld+json"',
-        'rel="canonical" href="https://biacung.com/chauchaubook"'
+        'rel="canonical" href="https://biacung.com/chauchaubook"',
+        'https://znews.vn/nghi-viec-9x-kiem-tien-tu-nghe-do-bia-cho-sach-post1587206.html',
+        'https://tuoitre.vn/co-gai-bo-viec-hoc-phuc-che-sach-giu-ky-uc-tu-nhung-trang-giay-cu-10026082810194445.htm',
+        'https://www.vietnam.vn/en/co-gai-bo-viec-hoc-phuc-che-sach-giu-ky-uc-tu-nhung-trang-giay-cu'
       ]
     },
     {
@@ -125,7 +128,11 @@ function auditStaticPages(rootDir, errors) {
       content.includes('href="/chauchaubook/works">Tác phẩm</a>'),
       `${file} is missing Chauchaubook works submenu link`
     );
-    pushIfMissing(errors, !content.includes(".html"), `${file} contains a public URL with an .html suffix`);
+    pushIfMissing(
+      errors,
+      !/(?:href|src)=["']\/[^"']*\.html(?:[?#][^"']*)?["']/.test(content),
+      `${file} contains an internal public URL with an .html suffix`
+    );
   });
 
   const cssVersionChecks = [

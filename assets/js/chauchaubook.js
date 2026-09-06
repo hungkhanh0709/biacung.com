@@ -33,7 +33,7 @@ function normalizeUrl(value) {
   }
 
   if (/^[a-z0-9./_-]+$/i.test(normalized)) {
-    return normalized;
+    return `/${normalized.replace(/^\.\//, "")}`;
   }
 
   return "";
