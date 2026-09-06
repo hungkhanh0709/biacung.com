@@ -13,12 +13,13 @@
     ],
     "editions": [
         {
-            "id": "author-name-book-title-edition-caption-pub-year-format",
+            "id": "author-name-book-title-pub-year-issuer-format-price",
             "series_ids": [
                 "series-slug"
             ],
+            "title": "Optional Vietnamese title override; omit when same as book.title",
             "isbn": null,
-            "caption": "Edition Caption",
+            "caption": "Edition description, e.g. limited edition / clothbound / two-volume set",
             "pub_year": 2026,
             "publisher": "NXB Văn Học",
             "issuers": [

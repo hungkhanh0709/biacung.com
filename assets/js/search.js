@@ -101,7 +101,7 @@ function isSafeDetailPath(path, pattern) {
   return pattern.test(normalizeText(path));
 }
 
-function buildDetailUrl(type, slug) {
+function buildDetailUrl(type, slug, editionId = "") {
   const value = normalizeText(slug);
   if (!value) {
     return "";
@@ -111,7 +111,43 @@ function buildDetailUrl(type, slug) {
     return `/series?id=${encodeURIComponent(value)}`;
   }
 
-  return `/detail?id=${encodeURIComponent(value)}`;
+  const query = new URLSearchParams({ id: value });
+  const normalizedEditionId = normalizeText(editionId).toLowerCase();
+  if (/^[a-z0-9-]+$/.test(normalizedEditionId)) {
+    query.set("edition", normalizedEditionId);
+  }
+  return `/detail?${query.toString()}`;
+}
+
+function matchesAnyNeedle(value, needles) {
+  const searchableText = normalizeSearchText(value);
+  return searchableText && needles.some((needle) => searchableText.includes(needle));
+}
+
+function getMatchingEditions(book, needles) {
+  const editions = Array.isArray(book?.editions) ? book.editions : [];
+  if (!needles.length) {
+    return [];
+  }
+
+  return editions.filter((edition) => {
+    const effectiveTitle = normalizeText(edition?.title || book?.title);
+    const fields = [
+      effectiveTitle,
+      edition?.caption,
+      edition?.publisher,
+      ...(Array.isArray(edition?.issuers) ? edition.issuers : []),
+      ...(Array.isArray(edition?.translators) ? edition.translators : []),
+      ...(Array.isArray(edition?.illustrators) ? edition.illustrators : []),
+      ...(Array.isArray(edition?.proofreaders) ? edition.proofreaders : []),
+      edition?.format,
+      edition?.pub_year,
+      edition?.cover_price,
+      edition?.isbn
+    ];
+
+    return fields.some((value) => matchesAnyNeedle(value, needles));
+  });
 }
 
 async function fetchJson(url) {
@@ -322,15 +358,17 @@ async function loadBookMatches(searchNeedles) {
 
       const editions = Array.isArray(book.editions) ? book.editions : [];
       const firstEdition = editions[0] || {};
+      const matchingEditions = getMatchingEditions(book, needles);
+      const selectedEdition = matchingEditions[0] || firstEdition;
+      const visibleEditionCount = matchingEditions.length || editions.length;
 
       return {
         type: "book",
-        title: normalizeText(book.title || book.title_original || book.id),
+        title: normalizeText(selectedEdition.title || book.title || book.title_original || book.id),
         subtitle: Array.isArray(book.authors) ? book.authors.join(", ") : "",
-        // description: normalizeText(firstEdition.caption),
-        image: firstEdition.thumbnail || book.thumbnail,
-        href: buildDetailUrl("book", book.id),
-        meta: editions.length ? `(${editions.length} phiên bản)` : ""
+        image: selectedEdition.thumbnail || book.thumbnail,
+        href: buildDetailUrl("book", book.id, selectedEdition.id),
+        meta: visibleEditionCount ? `(${visibleEditionCount} phiên bản)` : ""
       };
     })
   );

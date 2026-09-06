@@ -87,13 +87,18 @@ function buildSeriesDetailUrl(slug) {
   return value ? `/series?id=${encodeURIComponent(value)}` : "/series";
 }
 
-function buildBookDetailUrl(slug) {
+function buildBookDetailUrl(slug, editionId = "") {
   const value = normalizeText(slug).toLowerCase();
   if (!SAFE_BOOK_ID.test(value)) {
     return "";
   }
 
-  return value ? `/detail?id=${encodeURIComponent(value)}` : "";
+  const normalizedEditionId = normalizeText(editionId).toLowerCase();
+  const query = new URLSearchParams({ id: value });
+  if (SAFE_BOOK_ID.test(normalizedEditionId)) {
+    query.set("edition", normalizedEditionId);
+  }
+  return value ? `/detail?${query.toString()}` : "";
 }
 
 function buildBookDetailDataUrl(slug) {
@@ -344,11 +349,11 @@ async function loadSeriesBooks(seriesSlug) {
       const selectedEditions = matchingEditions.length ? matchingEditions : editions.slice(0, 1);
 
       return selectedEditions.map((edition) => ({
-        title: getBookDisplayTitle(book),
+        title: normalizeText(edition.title) || getBookDisplayTitle(book),
         subtitle: Array.isArray(book.authors) ? book.authors.join(", ") : "",
         description: "",
         image: edition.thumbnail || book.thumbnail,
-        href: buildBookDetailUrl(book.id),
+        href: buildBookDetailUrl(book.id, edition.id),
         meta: matchingEditions.length
           ? getEditionMeta(edition)
           : (editions.length ? `(${editions.length} phiên bản)` : "")

@@ -4,6 +4,7 @@ const SAFE_BOOK_ID = /^[a-z0-9-]+$/;
 
 const params = new URLSearchParams(window.location.search);
 const bookId = sanitizeSlugParam(params.get("id"));
+const requestedEditionId = sanitizeEditionId(params.get("edition"));
 
 const loadingNode = document.querySelector("[data-detail-loading]");
 const contentNode = document.querySelector("[data-detail-content]");
@@ -50,6 +51,15 @@ function sanitizeSlugParam(value) {
   return SAFE_BOOK_ID.test(normalized) ? normalized : "";
 }
 
+function sanitizeEditionId(value) {
+  const normalized = normalizeText(value)
+    .toLowerCase()
+    .replace(/[\u0000-\u001F\u007F]+/g, "")
+    .slice(0, 240);
+
+  return SAFE_BOOK_ID.test(normalized) ? normalized : "";
+}
+
 function normalizeUrl(value) {
   const normalized = normalizeText(value).replace(/\s+/g, "");
   if (!normalized) {
@@ -69,6 +79,20 @@ function normalizeUrl(value) {
 
 function getBookDataUrl(slug) {
   return slug ? `data/book/${encodeURIComponent(slug)}.json` : "";
+}
+
+function getEditionPagePath(book, edition) {
+  const normalizedBookId = sanitizeSlugParam(book?.id);
+  const normalizedEditionId = sanitizeEditionId(edition?.id);
+  if (!normalizedBookId) {
+    return "/detail";
+  }
+
+  const query = new URLSearchParams({ id: normalizedBookId });
+  if (normalizedEditionId) {
+    query.set("edition", normalizedEditionId);
+  }
+  return `/detail?${query.toString()}`;
 }
 
 function setVisibility(node, visible) {
@@ -94,6 +118,16 @@ function getDisplayTitle(book) {
   return normalizeText(book?.title_original || book?.id);
 }
 
+function getEditionTitle(book, edition) {
+  return normalizeText(edition?.title) || getDisplayTitle(book);
+}
+
+function getEditionCaption(book, edition) {
+  const caption = normalizeText(edition?.caption);
+  const editionTitle = getEditionTitle(book, edition);
+  return caption && caption.toLocaleLowerCase("vi") !== editionTitle.toLocaleLowerCase("vi") ? caption : "";
+}
+
 function fetchJson(url) {
   return fetch(url, { cache: "no-store" }).then((response) => {
     if (!response.ok) {
@@ -104,12 +138,12 @@ function fetchJson(url) {
   });
 }
 
-function syncSearchInput(book) {
+function syncSearchInput(book, edition = null) {
   if (!headerInput) {
     return;
   }
 
-  headerInput.value = getDisplayTitle(book);
+  headerInput.value = getEditionTitle(book, edition);
 }
 
 function buildSearchUrl(query) {
@@ -177,6 +211,8 @@ function collectBookTags(book) {
   tags.push(...dedupeStringsLoose(book?.series));
 
   editions.forEach((edition) => {
+    tags.push(normalizeText(edition?.title));
+    tags.push(normalizeText(edition?.caption));
     tags.push(normalizeText(edition?.publisher));
     tags.push(...dedupeStringsLoose(edition?.issuers));
     tags.push(...dedupeStringsLoose(edition?.translators));
@@ -342,8 +378,9 @@ function summarizeBook(book, edition) {
     parts.push(`Thuộc series ${series.join(", ")}.`);
   }
 
-  if (normalizeText(edition?.caption)) {
-    parts.push(normalizeText(edition.caption));
+  const editionCaption = getEditionCaption(book, edition);
+  if (editionCaption) {
+    parts.push(editionCaption);
   }
 
   if (normalizeText(edition?.detail)) {
@@ -579,7 +616,7 @@ function renderDescription(edition) {
   editionDescriptionNode.appendChild(content);
 }
 
-function renderHeroImage(book) {
+function renderHeroImage(book, edition = null) {
   if (!heroCoverNode) {
     return;
   }
@@ -587,8 +624,8 @@ function renderHeroImage(book) {
   managedImageLoader?.mount({
     imageNode: heroCoverNode,
     frameNode: heroCoverNode.closest(".detail-cover-stage"),
-    src: getHeroImageUrl(book),
-    alt: `Bìa sách ${getDisplayTitle(book)}`,
+    src: normalizeUrl(edition?.thumbnail) || getHeroImageUrl(book),
+    alt: `Bìa sách ${getEditionTitle(book, edition)}`,
     fallbackSrc: BOOK_FALLBACK_COVER
   });
 }
@@ -601,7 +638,7 @@ function selectEditionImage(edition, index) {
   setImageSource(
     editionCoverNode,
     images[activeImageIndex],
-    `Bìa phiên bản ${normalizeText(edition.caption) || getDisplayTitle(currentBook)}`
+    `Bìa phiên bản ${getEditionTitle(currentBook, edition)}`
   );
 
   editionGalleryNode?.querySelectorAll(".detail-thumb").forEach((button, buttonIndex) => {
@@ -687,10 +724,6 @@ function renderEditions(book) {
   editionsHeadingNode.textContent = hasEditionChoices ? `${editions.length} Phiên Bản Bìa` : "";
   editionsHeadingNode.hidden = !hasEditionChoices;
 
-  if (editionKickerNode) {
-    editionKickerNode.textContent = "Phiên bản đang xem";
-  }
-
   if (!hasEditionChoices) {
     editionsGridNode.appendChild(focusCardNode);
     return;
@@ -742,11 +775,14 @@ function renderEditions(book) {
 
     const title = document.createElement("h3");
     title.className = "detail-edition-title";
-    title.textContent = normalizeText(edition.caption) || `${getDisplayTitle(book)} - ${normalizeText(edition.format) || "Phiên bản"}`;
+    title.textContent = getEditionTitle(book, edition);
 
     const subtitle = document.createElement("p");
     subtitle.className = "detail-edition-subtitle";
-    subtitle.textContent = dedupeStrings(edition.issuers).join(", ") || normalizeText(edition.publisher) || "Bìa Cứng";
+    subtitle.textContent = [
+      getEditionCaption(book, edition),
+      dedupeStrings(edition.issuers).join(", ") || normalizeText(edition.publisher) || "Bìa Cứng"
+    ].filter(Boolean).join(" • ");
 
     const meta = document.createElement("p");
     meta.className = "detail-edition-meta";
@@ -798,7 +834,32 @@ function renderActiveEdition() {
     return;
   }
 
-  editionTitleNode.textContent = normalizeText(edition.caption) || "";
+  const editionTitle = getEditionTitle(currentBook, edition);
+  const editionCaption = getEditionCaption(currentBook, edition);
+  editionTitleNode.textContent = editionTitle;
+  if (editionKickerNode) {
+    editionKickerNode.textContent = editionCaption
+      ? `Phiên bản đang xem · ${editionCaption}`
+      : "Phiên bản đang xem";
+  }
+  const authors = dedupeStrings(currentBook.authors);
+  if (titleNode) {
+    titleNode.textContent = [editionTitle, authors.join(", ")].filter(Boolean).join(" - ");
+  }
+  if (originalNode) {
+    const titleOriginal = normalizeText(currentBook.title_original);
+    originalNode.textContent = titleOriginal && titleOriginal !== editionTitle ? titleOriginal : "";
+    setVisibility(originalNode, Boolean(originalNode.textContent));
+  }
+  document.title = `${editionTitle} | Bìa Cứng`;
+  syncSearchInput(currentBook, edition);
+  renderHeroImage(currentBook, edition);
+
+  const editionPagePath = getEditionPagePath(currentBook, edition);
+  const currentPagePath = `${window.location.pathname}${window.location.search}`;
+  if (window.history?.replaceState && currentPagePath !== editionPagePath) {
+    window.history.replaceState(null, "", editionPagePath);
+  }
 
   renderEditionGallery(edition);
   renderEditionMeta(currentBook, edition);
@@ -815,10 +876,10 @@ function updateSeoMetadata(book, edition) {
     return;
   }
 
-  const displayTitle = getDisplayTitle(book);
+  const displayTitle = getEditionTitle(book, edition);
   const authors = dedupeStrings(book.authors);
   const imageUrl = seo.toAbsoluteUrl(normalizeUrl(edition.thumbnail) || getHeroImageUrl(book)) || seo.FALLBACK_IMAGE;
-  const pagePath = `/detail?id=${encodeURIComponent(book.id)}`;
+  const pagePath = getEditionPagePath(book, edition);
   const pageUrl = seo.toAbsoluteUrl(pagePath);
   const description = truncateText(
     [
@@ -828,7 +889,7 @@ function updateSeoMetadata(book, edition) {
     220
   );
   const editionName =
-    normalizeText(edition.caption) || `${displayTitle} - ${normalizeText(edition.format) || "Phiên bản sưu tầm"}`;
+    getEditionCaption(book, edition) || normalizeText(edition.format) || "Phiên bản sưu tầm";
   const translators = dedupeStrings(edition.translators);
   const illustrators = dedupeStrings(edition.illustrators);
   const proofreaders = dedupeStrings(edition.proofreaders);
@@ -907,7 +968,8 @@ function updateSeoMetadata(book, edition) {
           : undefined,
         workExample: {
           "@type": "Book",
-          name: editionName,
+          name: displayTitle,
+          bookEdition: editionName,
           bookFormat: normalizeText(edition.format) || undefined,
           datePublished: normalizeText(edition.pub_year) || undefined,
           publisher: publisherName
@@ -924,16 +986,21 @@ function updateSeoMetadata(book, edition) {
 
 function renderBook(book) {
   currentBook = book;
-  activeEditionIndex = 0;
+  const editions = Array.isArray(book?.editions) ? book.editions : [];
+  const requestedIndex = requestedEditionId
+    ? editions.findIndex((edition) => sanitizeEditionId(edition?.id) === requestedEditionId)
+    : -1;
+  activeEditionIndex = requestedIndex >= 0 ? requestedIndex : 0;
   activeImageIndex = 0;
 
-  const displayTitle = getDisplayTitle(book);
+  const activeEdition = editions[activeEditionIndex] || editions[0];
+  const displayTitle = getEditionTitle(book, activeEdition);
   const titleOriginal = normalizeText(book.title_original);
   const authors = dedupeStrings(book.authors);
   const pills = collectBookTags(book);
 
   document.title = `${displayTitle} | Bìa Cứng`;
-  syncSearchInput(book);
+  syncSearchInput(book, activeEdition);
 
   if (titleNode) {
     titleNode.textContent = [displayTitle, authors.join(", ")].filter(Boolean).join(" - ");
@@ -952,7 +1019,6 @@ function renderBook(book) {
   }
 
   setPageState("ready");
-  renderHeroImage(book);
   renderEditions(book);
   renderActiveEdition();
 }

@@ -39,9 +39,18 @@ function normalizeUrl(value) {
   return "";
 }
 
-function buildDetailUrl(bookId) {
+function buildDetailUrl(bookId, editionId = "") {
   const value = normalizeText(bookId);
-  return value ? `/detail?id=${encodeURIComponent(value)}` : "/detail";
+  if (!SAFE_BOOK_ID.test(value)) {
+    return "/detail";
+  }
+
+  const normalizedEditionId = normalizeText(editionId);
+  const query = new URLSearchParams({ id: value });
+  if (SAFE_BOOK_ID.test(normalizedEditionId)) {
+    query.set("edition", normalizedEditionId);
+  }
+  return `/detail?${query.toString()}`;
 }
 
 async function fetchJson(url) {
@@ -215,11 +224,11 @@ async function loadChauchaubookResults() {
 
       results.push({
         bookId,
-        title: normalizeText(book.title || book.title_original || book.id),
+        title: normalizeText(edition.title || book.title || book.title_original || book.id),
         subtitle: Array.isArray(book.authors) ? book.authors.join(", ") : "",
         meta: normalizeText(edition.caption) || "Phiên bản Chauchaubook",
         image: pickEditionShowcaseImage(edition),
-        href: buildDetailUrl(book.id),
+        href: buildDetailUrl(book.id, edition.id),
         pubYear: Number(edition.pub_year) || null
       });
     });
