@@ -274,6 +274,18 @@ function auditData(rootDir, errors, warnings) {
       }
 
       editions.forEach((edition, index) => {
+        if (edition?.title != null && typeof edition.title !== "string") {
+          errors.push(`Edition title must be a string: data/book/${file}#${index + 1}`);
+        }
+        if (
+          normalizeText(edition?.title)
+          && normalizeText(edition.title).toLocaleLowerCase("vi") === normalizeText(payload.title).toLocaleLowerCase("vi")
+        ) {
+          warnings.push(`Redundant edition title duplicates book title: data/book/${file}#${index + 1}`);
+        }
+        if (edition?.caption != null && typeof edition.caption !== "string") {
+          errors.push(`Edition caption must be a string: data/book/${file}#${index + 1}`);
+        }
         if (!normalizeText(edition?.thumbnail)) {
           warnings.push(`Edition missing thumbnail: data/book/${file}#${index + 1}`);
         }
