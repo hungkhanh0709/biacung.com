@@ -15,6 +15,12 @@
   <url>
     <loc>https://biacung.com/chauchaubook</loc>
     <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://biacung.com/chauchaubook/works</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -103,8 +109,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://biacung.com/series?id=chauchaubook</loc>
-    <lastmod>2026-08-25</lastmod>
+    <loc>https://biacung.com/detail?id=keigo-higashino-dieu-ky-dieu-cua-tiem-tap-hoa-namiya</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

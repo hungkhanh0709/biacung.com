@@ -37,7 +37,8 @@ function auditStaticPages(rootDir, errors) {
     "series.html",
     "detail.html",
     "award/index.html",
-    "chauchaubook.html"
+    "chauchaubook.html",
+    "chauchaubook/works/index.html"
   ];
   const pageRules = [
     {
@@ -65,7 +66,19 @@ function auditStaticPages(rootDir, errors) {
         'meta name="description"',
         'meta name="robots" content="index,follow,max-image-preview:large"',
         'type="application/ld+json"',
-        'rel="canonical" href="https://biacung.com/chauchaubook"'
+        'rel="canonical" href="https://biacung.com/chauchaubook"',
+        'https://znews.vn/nghi-viec-9x-kiem-tien-tu-nghe-do-bia-cho-sach-post1587206.html',
+        'https://tuoitre.vn/co-gai-bo-viec-hoc-phuc-che-sach-giu-ky-uc-tu-nhung-trang-giay-cu-10026082810194445.htm',
+        'https://www.vietnam.vn/en/co-gai-bo-viec-hoc-phuc-che-sach-giu-ky-uc-tu-nhung-trang-giay-cu'
+      ]
+    },
+    {
+      file: "chauchaubook/works/index.html",
+      checks: [
+        'meta name="description"',
+        'meta name="robots" content="index,follow,max-image-preview:large"',
+        'type="application/ld+json"',
+        'rel="canonical" href="https://biacung.com/chauchaubook/works"'
       ]
     },
     {
@@ -107,10 +120,19 @@ function auditStaticPages(rootDir, errors) {
     const content = readFileSafe(path.join(rootDir, file));
     pushIfMissing(
       errors,
-      content.includes('href="/chauchaubook">Chauchaubook</a>'),
+      content.includes('href="/chauchaubook" aria-haspopup="true">Chauchaubook</a>'),
       `${file} is missing Chauchaubook navigation link`
     );
-    pushIfMissing(errors, !content.includes(".html"), `${file} contains a public URL with an .html suffix`);
+    pushIfMissing(
+      errors,
+      content.includes('href="/chauchaubook/works">Tác phẩm</a>'),
+      `${file} is missing Chauchaubook works submenu link`
+    );
+    pushIfMissing(
+      errors,
+      !/(?:href|src)=["']\/[^"']*\.html(?:[?#][^"']*)?["']/.test(content),
+      `${file} contains an internal public URL with an .html suffix`
+    );
   });
 
   const cssVersionChecks = [
@@ -121,7 +143,16 @@ function auditStaticPages(rootDir, errors) {
       snippets: [
         'assets/css/tokens.css?v=',
         'assets/css/home.css?v=',
-        'assets/css/search.css?v='
+        'assets/css/chauchaubook.css?v='
+      ]
+    },
+    {
+      file: "chauchaubook/works/index.html",
+      snippets: [
+        '/assets/css/tokens.css?v=',
+        '/assets/css/home.css?v=',
+        '/assets/css/search.css?v=',
+        '/assets/css/chauchaubook.css?v='
       ]
     },
     { file: "search.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/search.css?v='] },
@@ -140,7 +171,8 @@ function auditStaticPages(rootDir, errors) {
   const jsVersionChecks = [
     { file: "index.html", snippets: ['assets/js/nav.js?v=', 'assets/js/home.js?v='] },
     { file: "about.html", snippets: ['assets/js/nav.js?v='] },
-    { file: "chauchaubook.html", snippets: ['assets/js/nav.js?v=', 'assets/js/chauchaubook.js?v='] },
+    { file: "chauchaubook.html", snippets: ['assets/js/nav.js?v='] },
+    { file: "chauchaubook/works/index.html", snippets: ['/assets/js/nav.js?v=', '/assets/js/chauchaubook.js?v='] },
     { file: "search.html", snippets: ['assets/js/nav.js?v=', 'assets/js/search.js?v='] },
     { file: "series.html", snippets: ['assets/js/nav.js?v=', 'assets/js/series.js?v='] },
     { file: "detail.html", snippets: ['assets/js/nav.js?v=', 'assets/js/detail.js?v='] },
@@ -181,6 +213,8 @@ function auditLocalRoutes(rootDir, errors) {
     ["/", "index.html"],
     ["/about", "about.html"],
     ["/chauchaubook", "chauchaubook.html"],
+    ["/chauchaubook/works", "chauchaubook/works/index.html"],
+    ["/chauchaubook/works/", "chauchaubook/works/index.html"],
     ["/search", "search.html"],
     ["/series", "series.html"],
     ["/detail", "detail.html"],
@@ -207,6 +241,8 @@ function auditSitemap(rootDir, errors) {
 
   const entries = buildSitemapEntries(rootDir);
   pushIfMissing(errors, entries.some((entry) => entry.loc === "https://biacung.com/chauchaubook"), "sitemap.xml does not include Chauchaubook page");
+  pushIfMissing(errors, entries.some((entry) => entry.loc === "https://biacung.com/chauchaubook/works"), "sitemap.xml does not include Chauchaubook works page");
+  pushIfMissing(errors, !entries.some((entry) => entry.loc === "https://biacung.com/series?id=chauchaubook"), "sitemap.xml includes duplicate Chauchaubook series page");
   pushIfMissing(errors, entries.some((entry) => entry.loc.includes("/detail?id=")), "sitemap.xml does not include book detail URLs");
   pushIfMissing(errors, entries.some((entry) => entry.loc.includes("/series?id=")), "sitemap.xml does not include series detail URLs");
   pushIfMissing(errors, !entries.some((entry) => entry.loc.includes("/search")), "sitemap.xml should not include search result pages");

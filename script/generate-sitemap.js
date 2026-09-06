@@ -70,14 +70,16 @@ function buildSitemapEntries(rootDir) {
   const bookEntries = getBookEntries(rootDir);
   const latestBookDate = bookEntries.map((entry) => entry.updatedAt).filter(Boolean).sort().at(-1) || today;
   const seriesEntries = getSeriesEntries(rootDir, bookEntries, latestBookDate);
-  const latestSeriesDate = seriesEntries.map((entry) => entry.lastmod).filter(Boolean).sort().at(-1) || latestBookDate;
+  const publicSeriesEntries = seriesEntries.filter((entry) => entry.id !== "chauchaubook");
+  const latestSeriesDate = publicSeriesEntries.map((entry) => entry.lastmod).filter(Boolean).sort().at(-1) || latestBookDate;
 
   return [
     { loc: `${SITE_URL}/`, lastmod: latestBookDate, changefreq: "daily", priority: "1.0" },
     { loc: `${SITE_URL}/about`, lastmod: today, changefreq: "monthly", priority: "0.6" },
-    { loc: `${SITE_URL}/chauchaubook`, lastmod: latestBookDate, changefreq: "weekly", priority: "0.8" },
+    { loc: `${SITE_URL}/chauchaubook`, lastmod: latestBookDate, changefreq: "monthly", priority: "0.8" },
+    { loc: `${SITE_URL}/chauchaubook/works`, lastmod: latestBookDate, changefreq: "weekly", priority: "0.8" },
     { loc: `${SITE_URL}/series`, lastmod: latestSeriesDate, changefreq: "weekly", priority: "0.8" },
-    ...seriesEntries.map((entry) => ({
+    ...publicSeriesEntries.map((entry) => ({
       loc: `${SITE_URL}/series?id=${encodeURIComponent(entry.id)}`,
       lastmod: entry.lastmod,
       changefreq: "weekly",
