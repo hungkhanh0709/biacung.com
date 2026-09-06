@@ -1,13 +1,12 @@
 const form = document.getElementById('book-form');
-const sourceUrlInput = document.getElementById('source-url');
-const crawlButton = document.getElementById('crawl-source');
 const editionsContainer = document.getElementById('editions-container');
 const addEditionButton = document.getElementById('add-edition');
+const loadBookButton = document.getElementById('load-book');
 const bookIdInput = document.getElementById('book-id');
 const authorSlugSuggestions = document.getElementById('author-slug-suggestions');
+const formStatus = document.getElementById('form-status');
 
 setNoHistoryBehavior(form);
-setNoHistoryBehavior(sourceUrlInput);
 
 const bookIndexOutput = document.getElementById('book-index-output');
 const bookDetailOutput = document.getElementById('book-detail-output');
@@ -407,24 +406,14 @@ function downloadJson(filename, payload) {
 }
 
 function setFormStatus(message, success = true) {
-    void message;
-    void success;
-}
-
-function setEditionCrawlStatus(card, message, success = true) {
-    if (!card) {
+    if (!formStatus) {
         return;
     }
 
-    const status = card.querySelector('.edition-crawl-status');
-    if (!status) {
-        return;
-    }
-
-    status.textContent = message;
-    status.className = 'inline-status edition-crawl-status';
+    formStatus.textContent = message;
+    formStatus.className = 'form-status';
     if (!success) {
-        status.classList.add('error');
+        formStatus.classList.add('error');
     }
 }
 
@@ -555,20 +544,15 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
     }
     card.dataset.editionIndex = String(index);
     card.innerHTML = `
+        <div class="edition-card-heading">
+            <strong>${options.isNewEdition ? 'Phiên bản mới' : 'Phiên bản đã lưu'}</strong>
+        </div>
         <div class="grid">
             <label class="field-full-row">
-                Link Fahasa
-                <input class="field-inline" name="edition-source-url-${index}" placeholder="https://www.fahasa.com/..." />
-                <div class="inline-actions">
-                    <button type="button" class="secondary crawl-edition-source">Trích xuất từ URL</button>
-                </div>
-            </label>
-            <div class="inline-status edition-crawl-status">Sẵn sàng.</div>
-            <label class="field-full-row">
-                Auto input (dán nội dung tự do ở đây):
+                Nhập nhanh từ nội dung có sẵn
                 <textarea class="field-inline" name="edition-raw-${index}" rows="4" placeholder="Dán thông tin nhà sách / mô tả sản phẩm..."></textarea>
                 <div class="inline-actions">
-                    <button type="button" class="secondary auto-fill" data-for-index="${index}">Tự động nhập</button>
+                    <button type="button" class="secondary auto-fill" data-for-index="${index}">Điền vào form</button>
                 </div>
             </label>
             <div class="field-row-2 field-full-row">
@@ -595,6 +579,12 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
                     <input name="edition-issuers-${index}" placeholder="Đông A" />
                 </label>
             </div>
+
+            <label class="field-full-row">
+                Series IDs
+                <textarea class="field-inline" name="edition-series-ids-${index}" rows="2" placeholder="dong-a-classics-bia-vai"></textarea>
+                <span class="field-helper">Mỗi ID một dòng. Để trống nếu phiên bản không thuộc series.</span>
+            </label>
 
             <div class="field-row-3 field-full-row">
                 <label>
@@ -685,6 +675,12 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
         target.value = String(value);
     };
 
+    const setParsedFieldValue = (fieldName, value) => {
+        if (Array.isArray(value) ? value.length > 0 : normalizeText(value) !== '') {
+            setFieldValue(fieldName, value);
+        }
+    };
+
     const removeButton = card.querySelector('.remove-edition');
     removeButton.addEventListener('click', () => {
         card.remove();
@@ -697,6 +693,7 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
     if (editionData && typeof editionData === 'object') {
         setFieldValue(`edition-caption-${index}`, editionData.caption || '');
         setFieldValue(`edition-isbn-${index}`, editionData.isbn || '');
+        setFieldValue(`edition-series-ids-${index}`, editionData.series_ids || []);
         setFieldValue(`edition-pub-year-${index}`, editionData.pub_year ?? '');
         setFieldValue(`edition-publisher-${index}`, editionData.publisher || '');
         setFieldValue(`edition-issuers-${index}`, Array.isArray(editionData.issuers)
@@ -733,10 +730,8 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
                     }
 
                     const authorsField = form?.querySelector('[name="authors"]');
-                    if (authorsField) {
-                        authorsField.value = Array.isArray(parsed.authors) && parsed.authors.length
-                            ? parsed.authors.join(', ')
-                            : '';
+                    if (authorsField && Array.isArray(parsed.authors) && parsed.authors.length) {
+                        authorsField.value = parsed.authors.join(', ');
                     }
 
                     const normalizeParsedIssuers = (parsedObj, raw) => {
@@ -753,21 +748,22 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
                     const normalizedIssuers = normalizeParsedIssuers(parsed, rawText || '');
                     const normalizedPublisher = normalizeText(parsed.publisher || '').replace(/^NXB\s*/i, '');
 
-                    setFieldValue(`edition-isbn-${index}`, parsed.isbn || parsed.sku || '');
-                    setFieldValue(`edition-pub-year-${index}`, parsed.pub_year ?? '');
-                    setFieldValue(`edition-publisher-${index}`, normalizedPublisher || '');
-                    setFieldValue(`edition-issuers-${index}`, normalizedIssuers || []);
-                    setFieldValue(`edition-translators-${index}`, formatCommaSeparatedNames(parsed.translators || []));
-                    setFieldValue(`edition-illustrators-${index}`, formatCommaSeparatedNames(parsed.illustrators || []));
-                    setFieldValue(`edition-proofreaders-${index}`, formatCommaSeparatedNames(parsed.proofreaders || []));
-                    setFieldValue(`edition-format-${index}`, normalizeFormatValue(parsed.format || ''));
-                    setFieldValue(`edition-cover-price-${index}`, parsed.cover_price || '');
-                    setFieldValue(`edition-page-count-${index}`, parsed.page_count ?? '');
-                    setFieldValue(`edition-weight-${index}`, parsed.weight_g ?? '');
-                    setFieldValue(`edition-size-${index}`, normalizeSizeValue(parsed.size_cm || ''));
-                    setFieldValue(`edition-thumbnail-${index}`, parsed.thumbnail || '');
-                    setFieldValue(`edition-detail-${index}`, parsed.detail || '');
+                    setParsedFieldValue(`edition-isbn-${index}`, parsed.isbn || parsed.sku || '');
+                    setParsedFieldValue(`edition-pub-year-${index}`, parsed.pub_year ?? '');
+                    setParsedFieldValue(`edition-publisher-${index}`, normalizedPublisher || '');
+                    setParsedFieldValue(`edition-issuers-${index}`, normalizedIssuers || []);
+                    setParsedFieldValue(`edition-translators-${index}`, formatCommaSeparatedNames(parsed.translators || []));
+                    setParsedFieldValue(`edition-illustrators-${index}`, formatCommaSeparatedNames(parsed.illustrators || []));
+                    setParsedFieldValue(`edition-proofreaders-${index}`, formatCommaSeparatedNames(parsed.proofreaders || []));
+                    setParsedFieldValue(`edition-format-${index}`, normalizeFormatValue(parsed.format || ''));
+                    setParsedFieldValue(`edition-cover-price-${index}`, parsed.cover_price || '');
+                    setParsedFieldValue(`edition-page-count-${index}`, parsed.page_count ?? '');
+                    setParsedFieldValue(`edition-weight-${index}`, parsed.weight_g ?? '');
+                    setParsedFieldValue(`edition-size-${index}`, normalizeSizeValue(parsed.size_cm || ''));
+                    setParsedFieldValue(`edition-thumbnail-${index}`, parsed.thumbnail || '');
+                    setParsedFieldValue(`edition-detail-${index}`, parsed.detail || '');
 
+                    setFormStatus('Đã điền các trường nhận diện được; dữ liệu đang có được giữ nguyên.', true);
                     renderOutputs();
                 } catch (err) {
                     console.error('Auto-fill parser error', err);
@@ -780,61 +776,6 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
     }
 
     return card;
-}
-
-function setEditionCardFieldValue(card, fieldName, value) {
-    const target = card?.querySelector?.(`[name="${fieldName}"]`);
-    if (!target) {
-        return;
-    }
-
-    if (Array.isArray(value)) {
-        target.value = value.join('\n');
-        return;
-    }
-
-    if (value == null) {
-        target.value = '';
-        return;
-    }
-
-    target.value = String(value);
-}
-
-function hydrateEditionCard(card, index, editionData = {}) {
-    if (!card) {
-        return;
-    }
-
-    setEditionCardFieldValue(card, `edition-caption-${index}`, editionData.caption || '');
-    setEditionCardFieldValue(card, `edition-isbn-${index}`, editionData.isbn || '');
-    setEditionCardFieldValue(card, `edition-pub-year-${index}`, editionData.pub_year ?? '');
-    setEditionCardFieldValue(card, `edition-publisher-${index}`, editionData.publisher || '');
-    setEditionCardFieldValue(card, `edition-issuers-${index}`, Array.isArray(editionData.issuers)
-        ? editionData.issuers.map((issuer) => normalizeIssuerValue(issuer)).filter(Boolean)
-        : normalizeIssuerLines(editionData.issuers || ''));
-    setEditionCardFieldValue(card, `edition-translators-${index}`, Array.isArray(editionData.translators) ? editionData.translators.join(', ') : (editionData.translators || ''));
-    setEditionCardFieldValue(card, `edition-illustrators-${index}`, formatCommaSeparatedNames(editionData.illustrators || []));
-    setEditionCardFieldValue(card, `edition-proofreaders-${index}`, formatCommaSeparatedNames(editionData.proofreaders || []));
-    setEditionCardFieldValue(card, `edition-format-${index}`, normalizeFormatValue(editionData.format || ''));
-    setEditionCardFieldValue(card, `edition-cover-price-${index}`, editionData.cover_price || '');
-    setEditionCardFieldValue(card, `edition-print-run-${index}`, editionData.print_run ?? '');
-    setEditionCardFieldValue(card, `edition-page-count-${index}`, editionData.page_count ?? '');
-    setEditionCardFieldValue(card, `edition-copy-numbering-${index}`, editionData.copy_numbering || '');
-    setEditionCardFieldValue(card, `edition-size-${index}`, normalizeSizeValue(editionData.size_cm || ''));
-    setEditionCardFieldValue(card, `edition-weight-${index}`, editionData.weight_g ?? '');
-    setEditionCardFieldValue(card, `edition-thumbnail-${index}`, editionData.thumbnail || '');
-    setEditionCardFieldValue(card, `edition-gallery-${index}`, editionData.gellery_imgs || []);
-    setEditionCardFieldValue(card, `edition-detail-${index}`, editionData.detail || '');
-}
-
-function isEditionCardEmpty(card) {
-    if (!card) {
-        return true;
-    }
-
-    const fields = Array.from(card.querySelectorAll('input, textarea, select'));
-    return fields.every((field) => !normalizeText(field.value));
 }
 
 function isMeaningfulValue(value) {
@@ -853,6 +794,7 @@ function isMeaningfulEdition(edition) {
     return [
         edition.caption,
         edition.isbn,
+        edition.series_ids,
         edition.pub_year,
         edition.publisher,
         edition.issuers,
@@ -953,6 +895,7 @@ function buildEditionId(bookId, edition) {
 
 function buildEditionFromFormData(formData, index, bookId) {
     const isbn = normalizeText(formData.get(`edition-isbn-${index}`));
+    const seriesIds = parseLines(formData.get(`edition-series-ids-${index}`) || '').map(slugify).filter(Boolean);
     const caption = toTitleCase(formData.get(`edition-caption-${index}`));
     const pubYear = normalizeText(formData.get(`edition-pub-year-${index}`));
     const publisher = normalizePublisher(formData.get(`edition-publisher-${index}`));
@@ -972,6 +915,7 @@ function buildEditionFromFormData(formData, index, bookId) {
     const detail = normalizeText(formData.get(`edition-detail-${index}`));
     const editionObject = {
         isbn: isbn || null,
+        series_ids: [...new Set(seriesIds)],
         caption: caption || '',
         pub_year: pubYear ? Number(pubYear) : null,
         publisher: publisher || '',
@@ -1115,6 +1059,31 @@ function collectSearchTextTerms(formData) {
     return terms;
 }
 
+function getLatestPublicationYear(formData) {
+    const years = Array.from(form.elements)
+        .filter((field) => field.name?.startsWith('edition-pub-year-'))
+        .map((field) => Number.parseInt(normalizeText(formData.get(field.name)), 10))
+        .filter((year) => Number.isInteger(year) && year > 0);
+
+    return years.length ? Math.max(...years) : '';
+}
+
+function findUnknownSeriesIds(formData) {
+    const knownIds = new Set(
+        (Array.isArray(existingSeriesEntries) ? existingSeriesEntries : [])
+            .map((entry) => slugify(entry?.id || entry?.name || ''))
+            .filter(Boolean)
+    );
+    parseLines(formData.get('series') || '').forEach((name) => knownIds.add(slugify(name)));
+
+    const requestedIds = Array.from(form.elements)
+        .filter((field) => field.name?.startsWith('edition-series-ids-'))
+        .flatMap((field) => parseLines(formData.get(field.name) || '').map(slugify))
+        .filter(Boolean);
+
+    return [...new Set(requestedIds.filter((seriesId) => !knownIds.has(seriesId)))];
+}
+
 function buildBookIndexPayload(formData, existingBookIndex = existingBookIndexEntries) {
     const bookId = getBookSlugFromFormData(formData);
     const detailPath = getBookDetailFilePath(bookId);
@@ -1126,7 +1095,7 @@ function buildBookIndexPayload(formData, existingBookIndex = existingBookIndexEn
     mergedBookIndex.push({
         detail: detailPath,
         search_text: searchText,
-        last_pub_year: existingEntry?.last_pub_year ?? '',
+        last_pub_year: getLatestPublicationYear(formData) || existingEntry?.last_pub_year || '',
         updated_at: updatedAt
     });
 
@@ -1151,7 +1120,7 @@ function buildBookIndexReviewPayload(formData) {
     return {
         detail: detailPath,
         search_text: searchText,
-        last_pub_year: existingEntry?.last_pub_year ?? '',
+        last_pub_year: getLatestPublicationYear(formData) || existingEntry?.last_pub_year || '',
         updated_at: updatedAt
     };
 }
@@ -1457,24 +1426,15 @@ async function renderOutputs() {
         seriesFilename.textContent = seriesEntries.length === 1 ? seriesEntries[0].file_path : 'data/series/{slug}.json';
     }
     if (downloadBookDetailButton) {
-        downloadBookDetailButton.textContent = 'detail.json';
+        downloadBookDetailButton.textContent = 'Lưu detail.json';
     }
     if (downloadSeriesButton) {
-        downloadSeriesButton.textContent = 'series.json';
+        downloadSeriesButton.textContent = 'Lưu series.json';
     }
     bookIndexOutput.textContent = JSON.stringify(bookIndexReviewPayload, null, 2);
     bookDetailOutput.textContent = JSON.stringify(bookDetailPayload, null, 2);
     authorsOutput.textContent = JSON.stringify(authorsReviewPayload, null, 2);
     seriesOutput.textContent = JSON.stringify(seriesPayload, null, 2);
-}
-
-function cancelPendingLookup() {
-    if (pendingLookupTimer) {
-        window.clearTimeout(pendingLookupTimer);
-        pendingLookupTimer = null;
-    }
-
-    lookupVersion += 1;
 }
 
 function populateEditionCards(editions = []) {
@@ -1496,8 +1456,6 @@ function populateFormFromBookDetail(detail) {
     }
 
     const editions = sortEditionsByPubYear(detail.editions || []);
-    const existingCards = Array.from(editionsContainer.querySelectorAll('.edition-card'));
-    const canReuseCurrentCard = existingCards.length === 1 && isEditionCardEmpty(existingCards[0]) && editions.length > 0;
 
     suppressAutoLookup = true;
 
@@ -1528,18 +1486,7 @@ function populateFormFromBookDetail(detail) {
             seriesField.value = Array.isArray(detail.series) ? detail.series.join('\n') : '';
         }
 
-        if (canReuseCurrentCard) {
-            hydrateEditionCard(existingCards[0], 0, editions[0]);
-            editionCounter = 1;
-
-            editions.slice(1).forEach((edition) => {
-                const card = createEditionCard(editionCounter, edition, { isNewEdition: false });
-                editionsContainer.appendChild(card);
-                editionCounter += 1;
-            });
-        } else {
-            populateEditionCards(editions);
-        }
+        populateEditionCards(editions);
     } finally {
         suppressAutoLookup = false;
     }
@@ -1548,58 +1495,6 @@ function populateFormFromBookDetail(detail) {
     blockedAutoLoadSlug = '';
     setFormStatus(`Đã load dữ liệu cho ${detail.id || 'sách hiện có'}. Bạn có thể chỉnh sửa hoặc thêm phiên bản mới.`, true);
     renderOutputs();
-}
-
-function isBookBasicsEmpty(formData) {
-    return !normalizeText(formData.get('title'))
-        && !normalizeText(formData.get('titleOriginal'))
-        && parseCommaSeparatedLines(formData.get('authors') || '').length === 0
-        && parseLines(formData.get('awards') || '').length === 0
-        && parseLines(formData.get('series') || '').length === 0;
-}
-
-function populateBookBasicsFromCrawlResult(bookDetail) {
-    if (!bookDetail || typeof bookDetail !== 'object') {
-        return;
-    }
-
-    const titleField = form.querySelector('[name="title"]');
-    const titleOriginalField = form.querySelector('[name="titleOriginal"]');
-    const authorsField = form.querySelector('[name="authors"]');
-
-    if (titleField && !normalizeText(titleField.value) && bookDetail.title) {
-        titleField.value = normalizeBookTitle(bookDetail.title || '');
-    }
-
-    if (titleOriginalField && !normalizeText(titleOriginalField.value) && bookDetail.title_original) {
-        titleOriginalField.value = bookDetail.title_original || '';
-    }
-
-    if (authorsField && !normalizeText(authorsField.value) && Array.isArray(bookDetail.authors) && bookDetail.authors.length) {
-        authorsField.value = bookDetail.authors.join(', ');
-    }
-}
-
-function populateEditionCardFromCrawlResult(card, bookDetail, sourceUrl = '') {
-    if (!card || !bookDetail || typeof bookDetail !== 'object') {
-        return null;
-    }
-
-    const editions = Array.isArray(bookDetail.editions) ? bookDetail.editions : [];
-    const edition = editions[0];
-    if (!edition) {
-        return null;
-    }
-
-    const index = card.dataset.editionIndex || '0';
-    const normalizedEdition = {
-        ...edition
-    };
-
-    hydrateEditionCard(card, index, normalizedEdition);
-
-    setEditionCrawlStatus(card, 'Đã trích xuất dữ liệu.', true);
-    return normalizedEdition;
 }
 
 async function loadExistingBookBySlug(slug) {
@@ -1631,92 +1526,34 @@ async function loadExistingBookBySlug(slug) {
     return null;
 }
 
-async function crawlFahasaFromUrl(url) {
-    const targetUrl = normalizeText(url);
-    if (!targetUrl) {
-        throw new Error('Vui lòng nhập URL sản phẩm Fahasa.');
+async function loadBookFromCurrentSlug() {
+    sanitizeFormValues(form);
+    const slug = getBookSlugFromFormData(new FormData(form));
+    if (!slug) {
+        setFormStatus('Nhập slug, hoặc nhập tác giả và tựa đề trước khi tải.', false);
+        bookIdInput?.focus();
+        return;
     }
 
-    if (!/^https:\/\/(www\.)?fahasa\.com\//i.test(targetUrl)) {
-        throw new Error('Hiện chỉ hỗ trợ link từ fahasa.com.');
-    }
-
+    const originalText = loadBookButton?.textContent || 'Tải dữ liệu';
     try {
-        const { response, payload } = await fetchJson('/api/crawl/fahasa', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ url: targetUrl })
-        });
-
-        if (!response.ok) {
-            if (response.status === 501) {
-                throw new Error(`Backend hiện tại không hỗ trợ POST. Hãy chạy \`node script/book-generator-server.js\` tại ${getApiBaseUrl()}.`);
-            }
-
-            if (response.status === 404) {
-                throw new Error(`Không tìm thấy endpoint crawl tại ${getApiBaseUrl()}. Hãy chạy \`node script/book-generator-server.js\`.`);
-            }
-
-            throw new Error(payload.error || 'Không thể crawl dữ liệu từ Fahasa.');
+        if (loadBookButton) {
+            loadBookButton.disabled = true;
+            loadBookButton.textContent = 'Đang tải...';
+        }
+        setFormStatus(`Đang tải ${slug}...`, true);
+        const bookDetail = await loadExistingBookBySlug(slug);
+        if (!bookDetail) {
+            blockedAutoLoadSlug = slug;
+            setFormStatus(`Không tìm thấy data/book/${slug}.json. Bạn có thể tiếp tục tạo sách mới.`, false);
+            return;
         }
 
-        const bookDetail = payload?.bookDetail;
-        if (!bookDetail || typeof bookDetail !== 'object') {
-            throw new Error('Server không trả về dữ liệu sách hợp lệ.');
-        }
-        return bookDetail;
-    } catch (error) {
-        if (/fetch/i.test(error.message || '') || /network/i.test(error.message || '')) {
-            throw new Error(`Không kết nối được backend crawl tại ${getApiBaseUrl()}. Hãy chạy \`node script/book-generator-server.js\`.`);
-        }
-        throw error;
-    }
-}
-
-async function crawlFahasaIntoEditionCard(card, url) {
-    const targetUrl = normalizeText(url);
-    if (!targetUrl) {
-        throw new Error('Vui lòng nhập URL sản phẩm Fahasa.');
-    }
-
-    if (!/^https:\/\/(www\.)?fahasa\.com\//i.test(targetUrl)) {
-        throw new Error('Hiện chỉ hỗ trợ link từ fahasa.com.');
-    }
-
-    const crawlButton = card?.querySelector('.crawl-edition-source');
-    if (crawlButton) {
-        crawlButton.disabled = true;
-    }
-
-    cancelPendingLookup();
-    setEditionCrawlStatus(card, 'Đang trích xuất...', true);
-
-    try {
-        const bookDetail = await crawlFahasaFromUrl(targetUrl);
-        const basicsWereEmpty = isBookBasicsEmpty(new FormData(form));
-        const normalizedEdition = populateEditionCardFromCrawlResult(card, bookDetail, targetUrl);
-        if (!normalizedEdition) {
-            throw new Error('Server không trả về dữ liệu edition hợp lệ.');
-        }
-
-        if (basicsWereEmpty) {
-            populateBookBasicsFromCrawlResult(bookDetail);
-            setFormStatus('Đã đổ dữ liệu vào form.', true);
-            renderOutputs();
-            scheduleLookup(true);
-        } else {
-            renderOutputs();
-        }
-
-        return bookDetail;
-    } catch (error) {
-        setEditionCrawlStatus(card, error.message || 'Không thể crawl dữ liệu từ Fahasa.', false);
-        throw error;
+        populateFormFromBookDetail(bookDetail);
     } finally {
-        if (crawlButton) {
-            crawlButton.disabled = false;
+        if (loadBookButton) {
+            loadBookButton.disabled = false;
+            loadBookButton.textContent = originalText;
         }
     }
 }
@@ -1789,9 +1626,10 @@ async function persistGeneratedFiles(formData) {
 
     const bookId = getBookSlugFromFormData(formData);
     const bookDetailPayload = buildBookDetailPayload(formData);
-    const bookIndexPayload = buildBookIndexPayload(formData);
-    const authorPayload = buildAuthorPayload(formData);
-    const seriesPayload = buildSeriesPayload(formData);
+    const bookIndexPayload = buildBookIndexReviewPayload(formData);
+    const authorPayload = buildAuthorReviewPayload(formData);
+    const seriesEntries = await buildSeriesReviewEntries(formData);
+    const seriesPayload = seriesEntries.map((entry) => entry.payload);
 
     const response = await fetch(apiUrl('/api/books/save'), {
         method: 'POST',
@@ -1875,10 +1713,34 @@ if (authorSlugSuggestions) {
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
     sanitizeFormValues(form);
+    if (!form.reportValidity()) {
+        setFormStatus('Vui lòng điền đủ tựa đề và tác giả.', false);
+        return;
+    }
+
+    await refreshExistingIndexState(true);
     const formData = new FormData(form);
+    const bookId = getBookSlugFromFormData(formData);
+    if (!bookId) {
+        setFormStatus('Không thể tạo slug sách từ dữ liệu hiện tại.', false);
+        return;
+    }
+
+    const unknownSeriesIds = findUnknownSeriesIds(formData);
+    if (unknownSeriesIds.length) {
+        setFormStatus(`Series ID chưa có trong data/series.json hoặc trường Bộ sưu tập: ${unknownSeriesIds.join(', ')}.`, false);
+        form.querySelector('[name^="edition-series-ids-"]')?.focus();
+        return;
+    }
+
     renderOutputs();
+    const submitButtons = Array.from(document.querySelectorAll('[type="submit"][form="book-form"], #book-form [type="submit"]'));
 
     try {
+        submitButtons.forEach((button) => {
+            button.disabled = true;
+        });
+        setFormStatus(`Đang lưu ${bookId}...`, true);
         const persisted = await persistGeneratedFiles(formData);
         await refreshExistingIndexState(true);
         setFormStatus(`Đã cập nhật file cho ${persisted.bookDetailPayload.id}.`, true);
@@ -1897,66 +1759,18 @@ form.addEventListener('submit', async (event) => {
                 downloadJson(getDownloadFileNameFromSlug(entry.id), entry.payload);
             });
         }
+    } finally {
+        submitButtons.forEach((button) => {
+            button.disabled = false;
+        });
     }
 });
+
+loadBookButton?.addEventListener('click', loadBookFromCurrentSlug);
 
 addEditionButton.addEventListener('click', () => {
     addEdition();
     renderOutputs();
-});
-
-editionsContainer.addEventListener('click', async (event) => {
-    const target = event.target;
-    if (!(target instanceof HTMLElement)) {
-        return;
-    }
-
-    const button = target.closest('.crawl-edition-source');
-    if (!button) {
-        return;
-    }
-
-    const card = button.closest('.edition-card');
-    if (!(card instanceof HTMLElement)) {
-        return;
-    }
-
-    const index = card.dataset.editionIndex || '0';
-    const sourceField = card.querySelector(`[name="edition-source-url-${index}"]`);
-    const targetUrl = sourceField ? sourceField.value : '';
-
-    try {
-        await crawlFahasaIntoEditionCard(card, targetUrl);
-    } catch (error) {
-        const message = error.message || 'Không thể crawl dữ liệu từ Fahasa.';
-        setEditionCrawlStatus(card, message, false);
-        setFormStatus(message, false);
-    }
-});
-
-editionsContainer.addEventListener('keydown', async (event) => {
-    const target = event.target;
-    if (!(target instanceof HTMLElement) || event.key !== 'Enter') {
-        return;
-    }
-
-    if (!target.matches('[name^="edition-source-url-"]')) {
-        return;
-    }
-
-    event.preventDefault();
-    const card = target.closest('.edition-card');
-    if (!(card instanceof HTMLElement)) {
-        return;
-    }
-
-    try {
-        await crawlFahasaIntoEditionCard(card, target.value);
-    } catch (error) {
-        const message = error.message || 'Không thể crawl dữ liệu từ Fahasa.';
-        setEditionCrawlStatus(card, message, false);
-        setFormStatus(message, false);
-    }
 });
 
 downloadBookIndexButton?.addEventListener('click', async (event) => {
@@ -1978,11 +1792,11 @@ downloadBookIndexButton?.addEventListener('click', async (event) => {
         button.textContent = 'Đã lưu';
     } catch (error) {
         console.error('Failed to save book index review', error);
-        button.textContent = originalText || 'book.json';
+        button.textContent = originalText || 'Lưu book.json';
     } finally {
         window.setTimeout(() => {
             if (button) {
-                button.textContent = originalText || 'book.json';
+                button.textContent = originalText || 'Lưu book.json';
                 button.disabled = false;
             }
         }, 700);
@@ -2008,11 +1822,11 @@ downloadBookDetailButton?.addEventListener('click', async () => {
         button.textContent = 'Đã lưu';
     } catch (error) {
         console.error('Failed to save book detail review', error);
-        button.textContent = originalText || 'detail.json';
+        button.textContent = originalText || 'Lưu detail.json';
     } finally {
         window.setTimeout(() => {
             if (button) {
-                button.textContent = originalText || 'detail.json';
+                button.textContent = originalText || 'Lưu detail.json';
                 button.disabled = false;
             }
         }, 700);
@@ -2038,11 +1852,11 @@ downloadAuthorsButton?.addEventListener('click', async (event) => {
         button.textContent = 'Đã lưu';
     } catch (error) {
         console.error('Failed to save author review', error);
-        button.textContent = originalText || 'author.json';
+        button.textContent = originalText || 'Lưu author.json';
     } finally {
         window.setTimeout(() => {
             if (button) {
-                button.textContent = originalText || 'author.json';
+                button.textContent = originalText || 'Lưu author.json';
                 button.disabled = false;
             }
         }, 700);
@@ -2068,11 +1882,11 @@ downloadSeriesButton?.addEventListener('click', async (event) => {
         button.textContent = 'Đã lưu';
     } catch (error) {
         console.error('Failed to save series review', error);
-        button.textContent = originalText || 'series.json';
+        button.textContent = originalText || 'Lưu series.json';
     } finally {
         window.setTimeout(() => {
             if (button) {
-                button.textContent = originalText || 'series.json';
+                button.textContent = originalText || 'Lưu series.json';
                 button.disabled = false;
             }
         }, 700);

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book JSON Generator</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Nhập dữ liệu sách</title>
     <style>
         :root {
             color-scheme: light;
@@ -22,6 +23,23 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 24px;
+        }
+
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .page-header h1 {
+            margin: 0 0 6px;
+            font-size: clamp(1.55rem, 3vw, 2.1rem);
+        }
+
+        .page-header p {
+            margin: 0;
         }
 
         .card {
@@ -104,6 +122,21 @@
         .slug-input-row input {
             flex: 1 1 320px;
             min-width: 0;
+        }
+
+        .form-status {
+            flex: 1 1 320px;
+            padding: 10px 12px;
+            border-radius: 10px;
+            background: #eff6ff;
+            color: #1e40af;
+            font-size: 0.92rem;
+            font-weight: 600;
+        }
+
+        .form-status.error {
+            background: #fef2f2;
+            color: #b91c1c;
         }
 
         label {
@@ -285,6 +318,18 @@
             margin-top: 16px;
         }
 
+        .edition-card-heading {
+            display: flex;
+            align-items: center;
+            margin-bottom: 14px;
+            color: #475569;
+            font-size: 0.9rem;
+        }
+
+        .is-new-edition .edition-card-heading {
+            color: #1d4ed8;
+        }
+
         .output-panel {
             background: #0f172a;
             color: #e2e8f0;
@@ -333,11 +378,34 @@
             margin: 0;
             width: 100%;
         }
+
+        details.card>summary {
+            cursor: pointer;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        details.card[open]>summary {
+            margin-bottom: 18px;
+        }
+
+        @media (max-width: 640px) {
+            .page-header {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 
 <body>
     <main class="page">
+        <header class="page-header">
+            <div>
+                <h1>Nhập dữ liệu sách</h1>
+                <p class="hint">Tải dữ liệu có sẵn, chỉnh sửa hoặc thêm phiên bản, rồi lưu vào workspace.</p>
+            </div>
+            <button type="submit" form="book-form" class="primary" id="save-all">Lưu tất cả</button>
+        </header>
         <form id="book-form" class="card" autocomplete="off">
             <h2>Thông tin cơ bản</h2>
             <div class="grid">
@@ -357,10 +425,12 @@
                 </div>
 
                 <label class="field-full-row">
-                    Slug tự động
+                    Slug sách
                     <div class="slug-input-row">
                         <input id="book-id" name="bookId" placeholder="data/book/{slug}.json" />
+                        <button type="button" id="load-book" class="secondary">Tải dữ liệu</button>
                     </div>
+                    <span class="field-helper">Để trống để tạo tự động từ tác giả và tựa đề.</span>
                     <div id="author-slug-suggestions" class="author-slug-suggestions hidden" aria-live="polite"></div>
                 </label>
 
@@ -382,17 +452,21 @@
                 <button type="button" id="add-edition" class="secondary">+ Thêm phiên bản</button>
             </div>
             <div id="editions-container"></div>
-
+            <div class="divider"></div>
+            <div class="inline-actions">
+                <button type="submit" class="primary">Lưu tất cả</button>
+                <div id="form-status" class="form-status" role="status" aria-live="polite">Sẵn sàng nhập liệu.</div>
+            </div>
         </form>
 
-        <section class="card">
-            <h2>Kết quả JSON</h2>
+        <details class="card">
+            <summary>Xem trước JSON và lưu riêng từng file</summary>
             <div class="output-panel">
                 <div class="output-actions">
-                    <button type="button" id="download-book-index" class="primary">book.json</button>
-                    <button type="button" id="download-book-detail" class="secondary">detail.json</button>
-                    <button type="button" id="download-authors" class="secondary">author.json</button>
-                    <button type="button" id="download-series" class="secondary">series.json</button>
+                    <button type="button" id="download-book-index" class="primary">Lưu book.json</button>
+                    <button type="button" id="download-book-detail" class="secondary">Lưu detail.json</button>
+                    <button type="button" id="download-authors" class="secondary">Lưu author.json</button>
+                    <button type="button" id="download-series" class="secondary">Lưu series.json</button>
                 </div>
                 <h3>book.json</h3>
                 <pre id="book-index-output">{}</pre>
@@ -406,11 +480,11 @@
                 <h3 id="series-filename">data/series/{slug}.json</h3>
                 <pre id="series-output">{}</pre>
             </div>
-        </section>
+        </details>
     </main>
 
     <script src="./script/edition-parser.js?v=20260709-1"></script>
-    <script src="./script/book-data-generator.js?v=20260709-1"></script>
+    <script src="./script/book-input.js?v=20260906-1"></script>
 </body>
 
 </html>

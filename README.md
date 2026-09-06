@@ -60,6 +60,16 @@ http://localhost:3000
 
 The port can be changed with `PORT=5500 npm run static-server`. Physical `.html` files remain in place so previously shared legacy URLs continue to work.
 
+### Nhập dữ liệu sách
+
+Chạy server nhập liệu (server này cung cấp cả trang và API lưu file):
+
+```bash
+npm run book-input-server
+```
+
+Sau đó mở `http://127.0.0.1:3000/book-input.html`. Luồng chính của công cụ là tải sách theo slug, nhập hoặc chỉnh dữ liệu, xem trước JSON và lưu vào workspace.
+
 ## Release workflow
 
 Before publishing updates, it is recommended to run:

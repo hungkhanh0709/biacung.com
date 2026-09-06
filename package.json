@@ -7,7 +7,7 @@
     "generate-sitemap": "node script/generate-sitemap.js",
     "audit:release": "node script/release-audit.js",
     "release:check": "npm run generate-sitemap && npm run audit:release",
-    "book-gen-server": "node script/book-generator-server.js",
+    "book-input-server": "node script/book-input-server.js",
     "static-server": "node script/static-server.js"
   }
 }

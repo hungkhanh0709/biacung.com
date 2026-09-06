@@ -1,7 +1,6 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const { buildBookDetailFromHtml } = require('./fahasa-crawler');
 
 const rootDir = path.resolve(__dirname, '..');
 const dataDir = path.join(rootDir, 'data');
@@ -56,11 +55,13 @@ function sanitizeSeriesDetailPayload(payload, fallbackId = '') {
 function slugify(value) {
     return (value || '')
         .toLowerCase()
+        .replace(/đ/g, 'd')
         .normalize('NFD')
-        .replace(/[^\p{L}\p{N}\s-]/gu, '')
+        .replace(/\p{M}/gu, '')
+        .replace(/[^a-z0-9\s-]/g, '')
         .replace(/\s+/g, '-')
         .replace(/-+/g, '-')
-        .trim();
+        .replace(/^-+|-+$/g, '');
 }
 
 function mergeAuthors(existingAuthors, incomingAuthors) {
@@ -103,26 +104,23 @@ function mergeSeries(existingSeries, incomingSeries, bookId) {
     const merged = Array.isArray(existingSeries) ? existingSeries.map((entry) => ({ ...entry })) : [];
     (Array.isArray(incomingSeries) ? incomingSeries : []).forEach((seriesItem) => {
         const seriesId = slugify(seriesItem.name || seriesItem.id || '');
-        const existingEntry = merged.find((entry) => slugify(entry.name || '') === seriesId || entry.id === seriesId);
+        if (!seriesId) {
+            return;
+        }
+
+        const existingEntry = merged.find((entry) => entry.id === seriesId);
         if (existingEntry) {
-            existingEntry.work_ids = existingEntry.work_ids || [];
-            if (bookId && !existingEntry.work_ids.includes(bookId)) {
-                existingEntry.work_ids.push(bookId);
-            }
-            existingEntry.name = existingEntry.name || seriesItem.name;
+            existingEntry.detail = existingEntry.detail || `data/series/${seriesId}.json`;
             return;
         }
 
         merged.push({
             id: seriesId,
-            name: seriesItem.name || seriesItem.id || '',
-            description: seriesItem.description || 'Collection introducing...',
-            thumbnail: seriesItem.thumbnail || '',
-            work_ids: bookId ? [bookId] : []
+            detail: `data/series/${seriesId}.json`
         });
     });
 
-    return merged.sort((left, right) => (left.name || '').localeCompare(right.name || '', 'vi'));
+    return merged;
 }
 
 function normalizeArrayPayload(payload) {
@@ -190,6 +188,18 @@ function mergeDetailPayload(existingPayload, incomingPayload, fallbackIdPath) {
     };
 
     merged.id = normalizeText(incoming.id || existing.id || fallbackIdPath);
+    if (Array.isArray(incoming.editions)) {
+        const existingEditionsById = new Map(
+            (Array.isArray(existing.editions) ? existing.editions : [])
+                .filter((edition) => normalizeText(edition?.id))
+                .map((edition) => [normalizeText(edition.id), edition])
+        );
+        merged.editions = incoming.editions.map((edition) => ({
+            ...(existingEditionsById.get(normalizeText(edition?.id)) || {}),
+            ...edition,
+            series_ids: Array.isArray(edition?.series_ids) ? edition.series_ids : []
+        }));
+    }
     return merged;
 }
 
@@ -236,7 +246,7 @@ function saveBookIndexReview(bookIndexReview, updatedAt) {
 }
 
 function saveBookDetailReview(bookDetailReview, bookId) {
-    const normalizedBookId = normalizeText(bookId || bookDetailReview?.id || '');
+    const normalizedBookId = slugify(bookId || bookDetailReview?.id || '');
     if (!normalizedBookId) {
         throw new Error('Missing book id');
     }
@@ -282,9 +292,16 @@ function saveAuthorReview(authorReview, bookId) {
 }
 
 function saveSeriesReview(seriesReview, bookId) {
-    writeSeriesDetailFiles(seriesReview, bookId);
     const existingSeries = readJsonFile(path.join(dataDir, 'series.json'), []);
-    return mergeSeries(existingSeries, normalizeArrayPayload(seriesReview), bookId);
+    const incomingSeries = normalizeArrayPayload(seriesReview).filter((entry) => slugify(entry?.id || entry?.name || ''));
+    if (!incomingSeries.length) {
+        return existingSeries;
+    }
+
+    writeSeriesDetailFiles(incomingSeries, bookId);
+    const mergedSeries = mergeSeries(existingSeries, incomingSeries, bookId);
+    writeJsonFile(path.join(dataDir, 'series.json'), mergedSeries);
+    return mergedSeries;
 }
 
 function getContentType(filePath) {
@@ -293,44 +310,6 @@ function getContentType(filePath) {
     if (filePath.endsWith('.css')) return 'text/css; charset=utf-8';
     if (filePath.endsWith('.json')) return 'application/json; charset=utf-8';
     return 'application/octet-stream';
-}
-
-function isFahasaUrl(rawUrl) {
-    try {
-        const parsed = new URL(rawUrl);
-        return parsed.protocol === 'https:' && (parsed.hostname === 'fahasa.com' || parsed.hostname.endsWith('.fahasa.com'));
-    } catch (error) {
-        return false;
-    }
-}
-
-function buildJinaProxyUrl(targetUrl) {
-    const parsed = new URL(targetUrl);
-    return `https://r.jina.ai/http://${parsed.hostname}${parsed.pathname}${parsed.search}`;
-}
-
-async function fetchSourceText(targetUrl) {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 20000);
-
-    try {
-        const response = await fetch(targetUrl, {
-            signal: controller.signal,
-            headers: {
-                'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
-                accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-                'accept-language': 'vi-VN,vi;q=0.9,en;q=0.8'
-            }
-        });
-
-        return {
-            response,
-            text: await response.text(),
-            source: 'direct'
-        };
-    } finally {
-        clearTimeout(timeout);
-    }
 }
 
 function serveStaticFile(requestUrl) {
@@ -366,7 +345,7 @@ function handleSave(req, res) {
             const bookIndex = payload.bookIndex || [];
             const authorPayload = payload.authorPayload || [];
             const seriesPayload = payload.seriesPayload || [];
-            const bookId = normalizeText(bookDetail.id || '');
+            const bookId = slugify(bookDetail.id || '');
             const detailPath = `data/book/${bookId}.json`;
 
             if (!bookId) {
@@ -482,7 +461,14 @@ function handleSaveSeriesReview(req, res) {
 }
 
 function handleGetBook(req, res, slug) {
-    const filePath = path.join(bookDir, `${slug}.json`);
+    const normalizedSlug = slugify(slug);
+    if (!normalizedSlug || normalizedSlug !== slug) {
+        res.writeHead(400, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: 'invalid book id' }));
+        return;
+    }
+
+    const filePath = path.join(bookDir, `${normalizedSlug}.json`);
     if (!fs.existsSync(filePath)) {
         res.writeHead(404, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: 'not found' }));
@@ -491,7 +477,7 @@ function handleGetBook(req, res, slug) {
 
     res.writeHead(200, { 'Content-Type': 'application/json' });
     const bookDetail = readJsonFile(filePath, {});
-    res.end(JSON.stringify(sanitizeBookDetailPayload(bookDetail, slug)));
+    res.end(JSON.stringify(sanitizeBookDetailPayload(bookDetail, normalizedSlug)));
 }
 
 function handleGetIndexState(req, res) {
@@ -501,58 +487,6 @@ function handleGetIndexState(req, res) {
 
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify({ bookIndex, authors, series }));
-}
-
-async function handleCrawlFahasa(req, res) {
-    let body = '';
-    req.on('data', (chunk) => {
-        body += chunk;
-    });
-
-    req.on('end', async () => {
-        try {
-            const payload = JSON.parse(body || '{}');
-            const targetUrl = normalizeText(payload.url || '');
-
-            if (!targetUrl) {
-                res.writeHead(400, { 'Content-Type': 'application/json' });
-                res.end(JSON.stringify({ error: 'Missing URL' }));
-                return;
-            }
-
-            if (!isFahasaUrl(targetUrl)) {
-                res.writeHead(400, { 'Content-Type': 'application/json' });
-                res.end(JSON.stringify({ error: 'Chỉ hỗ trợ URL từ fahasa.com.' }));
-                return;
-            }
-
-            let fetched = await fetchSourceText(targetUrl);
-            let usedProxy = false;
-
-            if (!fetched.response.ok) {
-                if (fetched.response.status === 403 || fetched.response.status === 429) {
-                    const proxyUrl = buildJinaProxyUrl(targetUrl);
-                    fetched = await fetchSourceText(proxyUrl);
-                    usedProxy = true;
-                }
-            }
-
-            if (!fetched.response.ok) {
-                res.writeHead(fetched.response.status, { 'Content-Type': 'application/json' });
-                res.end(JSON.stringify({ error: `Không thể tải trang Fahasa (${fetched.response.status})` }));
-                return;
-            }
-
-            const bookDetail = buildBookDetailFromHtml(fetched.text, targetUrl);
-
-            res.writeHead(200, { 'Content-Type': 'application/json' });
-            res.end(JSON.stringify({ ok: true, source: usedProxy ? 'fahasa-proxy' : 'fahasa', bookDetail }));
-        } catch (error) {
-            const status = error?.name === 'AbortError' ? 504 : 500;
-            res.writeHead(status, { 'Content-Type': 'application/json' });
-            res.end(JSON.stringify({ error: error.message || 'Không thể crawl dữ liệu từ Fahasa.' }));
-        }
-    });
 }
 
 const server = http.createServer((req, res) => {
@@ -599,11 +533,6 @@ const server = http.createServer((req, res) => {
         return;
     }
 
-    if (pathname === '/api/crawl/fahasa' && req.method === 'POST') {
-        handleCrawlFahasa(req, res);
-        return;
-    }
-
     const bookMatch = pathname.match(/^\/api\/books\/([^/]+)$/);
     if (bookMatch && req.method === 'GET') {
         handleGetBook(req, res, decodeURIComponent(bookMatch[1]));
@@ -627,15 +556,16 @@ const server = http.createServer((req, res) => {
 if (require.main === module) {
     const port = Number.parseInt(process.env.PORT || '3000', 10);
     server.listen(port, () => {
-        console.log(`Book generator server listening on http://127.0.0.1:${port}`);
+        console.log(`Book input server listening on http://127.0.0.1:${port}`);
     });
 }
 
 module.exports = {
     server,
-    buildBookDetailFromHtml,
-    handleCrawlFahasa,
     handleGetIndexState,
     handleGetBook,
-    handleSave
+    handleSave,
+    mergeBookIndexEntries,
+    mergeAuthors,
+    mergeSeries
 };
