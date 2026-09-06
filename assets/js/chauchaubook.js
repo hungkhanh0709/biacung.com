@@ -228,20 +228,12 @@ async function loadChauchaubookResults() {
         subtitle: Array.isArray(book.authors) ? book.authors.join(", ") : "",
         meta: normalizeText(edition.caption) || "Phiên bản Chauchaubook",
         image: pickEditionShowcaseImage(edition),
-        href: buildDetailUrl(book.id, edition.id),
-        pubYear: Number(edition.pub_year) || null
+        href: buildDetailUrl(book.id, edition.id)
       });
     });
   });
 
-  return results.sort((left, right) => {
-    const yearDelta = (right.pubYear || 0) - (left.pubYear || 0);
-    if (yearDelta !== 0) {
-      return yearDelta;
-    }
-
-    return left.title.localeCompare(right.title, "vi");
-  });
+  return results;
 }
 
 async function renderPage() {
