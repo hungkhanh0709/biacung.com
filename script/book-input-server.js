@@ -194,11 +194,24 @@ function mergeDetailPayload(existingPayload, incomingPayload, fallbackIdPath) {
                 .filter((edition) => normalizeText(edition?.id))
                 .map((edition) => [normalizeText(edition.id), edition])
         );
-        merged.editions = incoming.editions.map((edition) => ({
-            ...(existingEditionsById.get(normalizeText(edition?.id)) || {}),
-            ...edition,
-            series_ids: Array.isArray(edition?.series_ids) ? edition.series_ids : []
-        }));
+        merged.editions = incoming.editions.map((edition) => {
+            const normalizedEdition = {
+                ...(existingEditionsById.get(normalizeText(edition?.id)) || {}),
+                ...edition,
+                series_ids: Array.isArray(edition?.series_ids) ? edition.series_ids : []
+            };
+            if (!Object.prototype.hasOwnProperty.call(edition, 'title')) {
+                delete normalizedEdition.title;
+            }
+            const editionTitle = normalizeText(normalizedEdition.title);
+            const defaultTitle = normalizeText(merged.title);
+            if (!editionTitle || editionTitle.toLocaleLowerCase('vi') === defaultTitle.toLocaleLowerCase('vi')) {
+                delete normalizedEdition.title;
+            } else {
+                normalizedEdition.title = editionTitle;
+            }
+            return normalizedEdition;
+        });
     }
     return merged;
 }

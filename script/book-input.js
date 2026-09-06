@@ -159,6 +159,12 @@ function normalizeBookTitle(value) {
         .trim();
 }
 
+function titlesMatch(left, right) {
+    const normalizedLeft = normalizeBookTitle(left).toLocaleLowerCase('vi');
+    const normalizedRight = normalizeBookTitle(right).toLocaleLowerCase('vi');
+    return Boolean(normalizedLeft && normalizedRight && normalizedLeft === normalizedRight);
+}
+
 function normalizeFormatValue(value) {
     const normalized = normalizeText(value);
     if (!normalized) {
@@ -278,7 +284,7 @@ function sanitizeFormValues(root = form) {
             return;
         }
 
-        if (field.name === 'title') {
+        if (field.name === 'title' || field.name?.startsWith('edition-title-')) {
             const normalizedTitle = normalizeBookTitle(field.value);
             if (normalizedTitle !== field.value) {
                 field.value = normalizedTitle;
@@ -557,14 +563,16 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
             </label>
             <div class="field-row-2 field-full-row">
                 <label>
-                    Caption
-                    <input class="field-inline" name="edition-caption-${index}" placeholder="Bản dịch tiếng Việt" />
+                    Tựa của bản dịch / phiên bản
+                    <input class="field-inline" name="edition-title-${index}" placeholder="Odyssêy — để trống nếu giống tựa chung" />
+                    <span class="field-helper">Chỉ nhập khi khác tựa tiếng Việt mặc định.</span>
                 </label>
                 <label>
-                    ISBN
-                    <input name="edition-isbn-${index}" placeholder="978-..." />
+                    Mô tả phiên bản
+                    <input class="field-inline" name="edition-caption-${index}" placeholder="Ấn bản giới hạn, bìa vải, bộ 2 tập..." />
                 </label>
             </div>
+            <input type="hidden" name="edition-isbn-${index}" />
             <div class="field-row-3 field-full-row">
                 <label>
                     Năm xuất bản
@@ -691,6 +699,7 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
     });
 
     if (editionData && typeof editionData === 'object') {
+        setFieldValue(`edition-title-${index}`, editionData.title || '');
         setFieldValue(`edition-caption-${index}`, editionData.caption || '');
         setFieldValue(`edition-isbn-${index}`, editionData.isbn || '');
         setFieldValue(`edition-series-ids-${index}`, editionData.series_ids || []);
@@ -725,8 +734,17 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
                     const parsed = window.parseEditionText(rawText || '');
 
                     const titleField = form?.querySelector('[name="title"]');
-                    if (titleField && parsed.title) {
-                        titleField.value = parsed.title;
+                    const parsedTitle = normalizeBookTitle(parsed.title || '');
+                    if (titleField && parsedTitle && !normalizeText(titleField.value)) {
+                        titleField.value = parsedTitle;
+                    }
+                    const canonicalTitle = normalizeBookTitle(titleField?.value || '');
+                    if (
+                        parsedTitle
+                        && canonicalTitle
+                        && parsedTitle.toLocaleLowerCase('vi') !== canonicalTitle.toLocaleLowerCase('vi')
+                    ) {
+                        setParsedFieldValue(`edition-title-${index}`, parsedTitle);
                     }
 
                     const authorsField = form?.querySelector('[name="authors"]');
@@ -792,6 +810,7 @@ function isMeaningfulEdition(edition) {
     }
 
     return [
+        edition.title,
         edition.caption,
         edition.isbn,
         edition.series_ids,
@@ -896,6 +915,8 @@ function buildEditionId(bookId, edition) {
 function buildEditionFromFormData(formData, index, bookId) {
     const isbn = normalizeText(formData.get(`edition-isbn-${index}`));
     const seriesIds = parseLines(formData.get(`edition-series-ids-${index}`) || '').map(slugify).filter(Boolean);
+    const title = normalizeBookTitle(formData.get(`edition-title-${index}`) || '');
+    const defaultTitle = normalizeBookTitle(formData.get('title') || '');
     const caption = toTitleCase(formData.get(`edition-caption-${index}`));
     const pubYear = normalizeText(formData.get(`edition-pub-year-${index}`));
     const publisher = normalizePublisher(formData.get(`edition-publisher-${index}`));
@@ -914,6 +935,7 @@ function buildEditionFromFormData(formData, index, bookId) {
     const gallery = parseLines(formData.get(`edition-gallery-${index}`) || '');
     const detail = normalizeText(formData.get(`edition-detail-${index}`));
     const editionObject = {
+        ...(title && !titlesMatch(title, defaultTitle) ? { title } : {}),
         isbn: isbn || null,
         series_ids: [...new Set(seriesIds)],
         caption: caption || '',
@@ -960,19 +982,19 @@ function sortEditionsByPubYear(editions = []) {
             return 1;
         }
 
-        return String(left?.caption || '').localeCompare(String(right?.caption || ''), 'vi');
+        return String(left?.title || left?.caption || '').localeCompare(String(right?.title || right?.caption || ''), 'vi');
     });
 }
 
 function buildBookDetailPayload(formData) {
     const bookId = getBookSlugFromFormData(formData);
     const editions = [];
-    const captionInputs = Array.from(form.elements).filter((el) => el.name && el.name.startsWith('edition-caption-'));
+    const editionCards = Array.from(editionsContainer.querySelectorAll('.edition-card'));
 
-    captionInputs.forEach((field) => {
-        const index = field.name.replace('edition-caption-', '');
+    editionCards.forEach((card) => {
+        const index = card.dataset.editionIndex || '';
         const edition = buildEditionFromFormData(formData, index, bookId);
-        if (edition.caption || edition.publisher || edition.format || edition.isbn || edition.thumbnail || edition.detail || edition.issuers.length || edition.translators.length || edition.illustrators.length || edition.proofreaders.length || edition.gellery_imgs.length) {
+        if (edition.title || edition.caption || edition.publisher || edition.format || edition.isbn || edition.thumbnail || edition.detail || edition.issuers.length || edition.translators.length || edition.illustrators.length || edition.proofreaders.length || edition.gellery_imgs.length) {
             editions.push(edition);
         }
     });
@@ -990,10 +1012,10 @@ function buildBookDetailPayload(formData) {
 
 function updateEditionIdPreviews(formData) {
     const bookId = getBookSlugFromFormData(formData);
-    const captionInputs = Array.from(form.elements).filter((el) => el.name && el.name.startsWith('edition-caption-'));
+    const editionCards = Array.from(editionsContainer.querySelectorAll('.edition-card'));
 
-    captionInputs.forEach((field) => {
-        const index = field.name.replace('edition-caption-', '');
+    editionCards.forEach((card) => {
+        const index = card.dataset.editionIndex || '';
         const preview = editionsContainer.querySelector(`[data-edition-id-for="${index}"]`);
         if (!preview) {
             return;
@@ -1048,6 +1070,11 @@ function collectSearchTextTerms(formData) {
 
         if (fieldName.startsWith('edition-publisher-')) {
             addValues(normalizePublisher(field.value));
+            return;
+        }
+
+        if (fieldName.startsWith('edition-title-') || fieldName.startsWith('edition-caption-')) {
+            addValues(field.value);
             return;
         }
 
