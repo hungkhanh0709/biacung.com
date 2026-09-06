@@ -11,6 +11,37 @@
   ],
   "editions": [
     {
+      "id": "mario-puzo-the-godfather-2026-dong-a-bia-mem-250k",
+      "isbn": null,
+      "caption": "Phiên Bản Trung Thu",
+      "pub_year": 2026,
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Minh"
+      ],
+      "illustrators": [
+        "Art Werger"
+      ],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "250k",
+      "print_run": null,
+      "page_count": 652,
+      "copy_numbering": null,
+      "size_cm": "12 x 19",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/mario-puzo-the-godfather/dong-a-mid-autumn-paperback-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-mid-autumn-paperback-collection.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-mid-autumn-paperback-cover-detail.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-mid-autumn-paperback-endpaper.jpg"
+      ],
+      "detail": ""
+    },
+    {
       "id": "mario-puzo-the-godfather-2026-dong-a-bia-bia-cung-kem-bia-ao-599k",
       "isbn": "978-632-00-6088-7",
       "caption": "Bìa Đen",
@@ -40,7 +71,7 @@
       "detail": ""
     },
     {
-      "id": "mario-puzo-the-godfather-dong-a-bia-bia-cung-kem-bia-ao-599k",
+      "id": "mario-puzo-the-godfather-2026-dong-a-bia-bia-cung-kem-bia-ao-599k",
       "isbn": "978-632-00-6088-7",
       "caption": "Bìa Trắng",
       "pub_year": 2026,
@@ -68,9 +99,6 @@
     },
     {
       "id": "mario-puzo-the-godfather-2026-dong-a-bia-vai-2tr4",
-      "series_ids": [
-        "50-nam-fahasa"
-      ],
       "isbn": null,
       "caption": "Ấn Bản Giới Hạn - Bìa Vải - Phiên Bản Độc Quyền 50 Năm Fahasa",
       "pub_year": 2026,
@@ -98,9 +126,6 @@
     },
     {
       "id": "mario-puzo-the-godfather-2026-dong-a-bia-cung-990k",
-      "series_ids": [
-        "50-nam-fahasa"
-      ],
       "isbn": null,
       "caption": "Bố Già - Ấn Bản Cao Cấp - Bìa Cứng - Phiên Bản Độc Quyền 50 Năm Fahasa",
       "pub_year": 2026,

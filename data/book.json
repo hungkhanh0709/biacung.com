@@ -12,6 +12,12 @@
     "updated_at": "2026-09-06"
   },
   {
+    "detail": "data/book/mario-puzo-the-godfather.json",
+    "search_text": "bo gia the godfather mario puzo 50 nam fahasa nxb dan tri dong a nguyen minh art werger nxb van hoc ngoc thu lang ngoc thu lan nxb hoi nha van",
+    "updated_at": "2026-09-06",
+    "last_pub_year": 2026
+  },
+  {
     "detail": "data/book/hao-nguyen-bo-suu-tap-mu-suong.json",
     "search_text": "bo suu tap mu suong hao nguyen van moi dong a nxb dan tri dong a",
     "last_pub_year": 2026,
@@ -147,12 +153,6 @@
     "detail": "data/book/homere-odyssee.json",
     "search_text": "anh hung ca odyssee odyssee homere s100 nxb the gioi omega plus do khanh hoan nxb van hoc dong a hoang huu dan john flaxman",
     "updated_at": "2026-07-30",
-    "last_pub_year": 2026
-  },
-  {
-    "detail": "data/book/mario-puzo-the-godfather.json",
-    "search_text": "bo gia the godfather mario puzo nxb dan tri dong a nguyen minh art werger nxb van hoc ngoc thu lang ngoc thu lan nxb hoi nha van",
-    "updated_at": "2026-07-19",
     "last_pub_year": 2026
   },
   {
