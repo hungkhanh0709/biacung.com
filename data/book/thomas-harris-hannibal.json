@@ -1,0 +1,47 @@
+{
+  "id": "thomas-harris-hannibal",
+  "title": "Hannibal",
+  "title_original": "Hannibal",
+  "authors": [
+    "Thomas Harris"
+  ],
+  "awards": [],
+  "series": [
+    "Chauchaubook"
+  ],
+  "editions": [
+    {
+      "id": "thomas-harris-hannibal-2026-nha-nam",
+      "isbn": null,
+      "series_ids": [
+        "chauchaubook"
+      ],
+      "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
+      "pub_year": 2026,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Thu Lê"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": 432,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/thomas-harris-hannibal/chauchaubook-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/thomas-harris-hannibal/chauchaubook-back-cover.jpg",
+        "/assets/img/books/thomas-harris-hannibal/chauchaubook-cover-standing.jpg",
+        "/assets/img/books/thomas-harris-hannibal/chauchaubook-endpaper-art.jpg",
+        "/assets/img/books/thomas-harris-hannibal/chauchaubook-back-cover-detail.jpg"
+      ],
+      "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
+    }
+  ]
+}
