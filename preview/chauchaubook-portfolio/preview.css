@@ -17,13 +17,15 @@
 }
 
 .chauchaubook-story-page {
+  --chauchaubook-neutral: #fffdf9;
+  --chauchaubook-neutral-soft: #f3efe7;
   --chauchaubook-moss: #a1b283;
   --chauchaubook-moss-dark: #354129;
   --chauchaubook-moss-soft: #d5dcc7;
   --chauchaubook-moss-pale: #f0f3ea;
   --chauchaubook-purple-on-moss: #421f9d;
 
-  background: var(--color-paper);
+  background: var(--chauchaubook-neutral);
 }
 
 .chauchaubook-main {
@@ -86,7 +88,7 @@
 }
 
 .chauchaubook-hero h1 {
-  max-inline-size: 13ch;
+  max-inline-size: 16ch;
   margin-block: 1.1rem 1.25rem;
   color: var(--color-ink);
   font-family: var(--font-heading);
@@ -197,6 +199,10 @@
   margin-block-end: 0;
 }
 
+.chauchaubook-intro {
+  background: var(--chauchaubook-neutral);
+}
+
 .chauchaubook-process {
   background: #24212b;
   color: #f8f4ec;
@@ -247,7 +253,7 @@
 
 .chauchaubook-step {
   display: block;
-  margin-block-end: 4.2rem;
+  margin-block-end: 2.5rem;
   color: #a18acb;
   font-family: var(--font-heading);
   font-size: 0.9rem;
@@ -329,8 +335,16 @@
   color: var(--color-primary);
 }
 
+.chauchaubook-material-card li strong {
+  color: var(--color-ink);
+}
+
+.chauchaubook-material-card .chauchaubook-material-note {
+  margin-block-start: 1rem;
+}
+
 .chauchaubook-showcase {
-  background: var(--chauchaubook-moss-pale);
+  background: var(--chauchaubook-neutral);
 }
 
 .chauchaubook-showcase .chauchaubook-section-heading > .chauchaubook-text-link {
@@ -397,7 +411,7 @@
 }
 
 .chauchaubook-press {
-  background: var(--chauchaubook-moss-soft);
+  background: var(--chauchaubook-neutral-soft);
 }
 
 .chauchaubook-press-layout {
@@ -472,7 +486,7 @@
 }
 
 .chauchaubook-closing {
-  background: var(--chauchaubook-moss-pale);
+  background: var(--chauchaubook-neutral);
 }
 
 .chauchaubook-closing-panel {
