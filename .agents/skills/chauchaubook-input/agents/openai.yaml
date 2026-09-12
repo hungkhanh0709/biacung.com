@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chauchaubook Input"
+  short_description: "Chuẩn hóa ảnh và metadata sách Chauchaubook"
+  default_prompt: "Use $chauchaubook-input with a bookId to normalize its Chauchaubook images and book JSON."
