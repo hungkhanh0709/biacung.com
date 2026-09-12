@@ -234,7 +234,7 @@ async function renderRecentSection(sectionConfig, sectionElement) {
     const meta = editions.length ? `(${editions.length} phiên bản)` : "";
 
     const card = createCard({
-      title: normalizeText(book.title || book.title_original || book.id),
+      title: normalizeText(firstEdition.title || book.title || book.title_original || book.id),
       subtitle: authors,
       // description: normalizeText(firstEdition.caption || ""),
       image: safeUrl(firstEdition.thumbnail || book.thumbnail) || BOOK_DETAIL_FALLBACK,
