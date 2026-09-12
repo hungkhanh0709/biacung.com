@@ -1,9 +1,9 @@
 [
   {
-    "detail": "data/book/keigo-higashino-dieu-ky-dieu-cua-tiem-tap-hoa-namiya.json",
-    "search_text": "keigo higashino dieu ky dieu cua tiem tap hoa namiya nxb hoi nha van nha nam phuong nam chauchaubook bia ve tay boi chau chau book",
+    "detail": "data/book/thomas-harris-hannibal.json",
+    "search_text": "thomas harris hannibal nxb hoi nha van nha nam thu le chauchaubook bia ve tay boi chau chau book",
     "last_pub_year": 2026,
-    "updated_at": "2026-09-06"
+    "updated_at": "2026-09-12"
   },
   {
     "detail": "data/book/antoine-de-saint-exupery-le-petit-prince.json",
@@ -14,6 +14,12 @@
   {
     "detail": "data/book/jack-london-the-call-of-the-wild.json",
     "search_text": "tieng goi cua hoang da the call of the wild jack london dong a classics bo tui dong a classics bia vai nxb van hoc dong a nguyen minh duc lam manh chuong nguyen cong ai vu tuan phuong",
+    "last_pub_year": 2026,
+    "updated_at": "2026-09-06"
+  },
+  {
+    "detail": "data/book/keigo-higashino-dieu-ky-dieu-cua-tiem-tap-hoa-namiya.json",
+    "search_text": "keigo higashino dieu ky dieu cua tiem tap hoa namiya nxb hoi nha van nha nam phuong nam chauchaubook bia ve tay boi chau chau book",
     "last_pub_year": 2026,
     "updated_at": "2026-09-06"
   },
