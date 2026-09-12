@@ -179,6 +179,7 @@
 .chauchaubook-materials,
 .chauchaubook-showcase,
 .chauchaubook-press,
+.chauchaubook-contact,
 .chauchaubook-closing {
   padding-block: clamp(3.8rem, 8vw, 7rem);
 }
@@ -191,7 +192,8 @@
 
 .chauchaubook-intro h2,
 .chauchaubook-section-heading h2,
-.chauchaubook-press h2 {
+.chauchaubook-press h2,
+.chauchaubook-contact h2 {
   margin-block: 0.85rem 0;
   color: var(--color-ink);
   font-family: var(--font-heading);
@@ -199,6 +201,40 @@
   font-weight: 600;
   letter-spacing: -0.035em;
   line-height: 1.12;
+}
+
+.chauchaubook-story-portrait {
+  overflow: hidden;
+  inline-size: min(100%, 22rem);
+  margin: 2rem 0 0;
+  border: 1px solid rgb(79 94 63 / 16%);
+  border-radius: var(--radius-lg);
+  background: var(--chauchaubook-neutral-soft);
+  box-shadow: 0 1.4rem 3.5rem rgb(79 94 63 / 10%);
+}
+
+.chauchaubook-story-portrait-media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 2 / 3;
+}
+
+.chauchaubook-story-portrait img {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-start: 50%;
+  inline-size: 145%;
+  max-inline-size: none;
+  block-size: auto;
+  transform: translateX(-50%);
+}
+
+.chauchaubook-story-portrait figcaption {
+  padding: 0.8rem 1rem 0.9rem;
+  color: var(--chauchaubook-moss-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
 .chauchaubook-prose {
@@ -286,6 +322,42 @@
   line-height: 1.7;
 }
 
+.chauchaubook-workshop-photos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.8rem, 2vw, 1.25rem);
+  margin-block-end: clamp(2rem, 5vw, 3.6rem);
+}
+
+.chauchaubook-workshop-photos figure {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid rgb(79 94 63 / 16%);
+  border-radius: var(--radius-lg);
+  background: var(--chauchaubook-moss-pale);
+  box-shadow: 0 1.1rem 2.8rem rgb(79 94 63 / 9%);
+}
+
+.chauchaubook-workshop-photo-media {
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: var(--chauchaubook-moss-dark);
+}
+
+.chauchaubook-workshop-photo-media img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.chauchaubook-workshop-photos figcaption {
+  padding: 0.8rem 1rem 0.9rem;
+  color: var(--chauchaubook-moss-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
 .chauchaubook-materials {
   background: var(--chauchaubook-moss-soft);
 }
@@ -311,6 +383,59 @@
   border-radius: var(--radius-lg);
   background: rgb(255 255 255 / 82%);
   box-shadow: 0 1.4rem 3.5rem rgb(79 94 63 / 12%);
+}
+
+.chauchaubook-material-card-media {
+  overflow: hidden;
+  display: grid;
+  block-size: clamp(13rem, 24vw, 18rem);
+  margin-block-end: 1.5rem;
+  border-radius: calc(var(--radius-lg) - 0.55rem);
+  background: var(--chauchaubook-moss-pale);
+}
+
+.chauchaubook-material-card-media.is-split {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.35rem;
+}
+
+.chauchaubook-material-media-frame {
+  position: relative;
+  overflow: hidden;
+  min-inline-size: 0;
+}
+
+.chauchaubook-material-card-media:not(.is-split) {
+  position: relative;
+}
+
+.chauchaubook-material-card-media img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.chauchaubook-material-media-frame:first-child img {
+  object-position: center bottom;
+}
+
+.chauchaubook-material-media-frame:last-child img {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-end: 0;
+  inline-size: 170%;
+  block-size: auto;
+  max-inline-size: none;
+}
+
+.chauchaubook-material-card-media:not(.is-split) img {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  inline-size: 100%;
+  block-size: auto;
+  max-inline-size: none;
+  transform: translate(-50%, -56%);
 }
 
 .chauchaubook-material-label {
@@ -497,6 +622,128 @@
   font-weight: 800;
 }
 
+.chauchaubook-contact {
+  background: var(--chauchaubook-moss-pale);
+}
+
+.chauchaubook-contact-layout {
+  display: block;
+}
+
+.chauchaubook-contact-heading {
+  margin-block-end: clamp(2rem, 4vw, 3rem);
+}
+
+.chauchaubook-contact-body {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.6fr) minmax(0, 1.4fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.chauchaubook-contact-list {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin: 0;
+  font-style: normal;
+}
+
+.chauchaubook-contact-note {
+  max-inline-size: 30rem;
+  margin: 0;
+  color: var(--chauchaubook-moss-dark);
+  line-height: 1.75;
+}
+
+.chauchaubook-contact-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-column: span 3;
+  gap: 0.9rem;
+  align-items: center;
+  min-inline-size: 0;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid rgb(79 94 63 / 18%);
+  border-radius: var(--radius-lg);
+  background: rgb(255 255 255 / 78%);
+  color: var(--chauchaubook-moss-dark);
+  transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+}
+
+.chauchaubook-contact-card:nth-child(n + 3) {
+  grid-column: span 2;
+}
+
+.chauchaubook-contact-icon {
+  display: grid;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--chauchaubook-moss-soft);
+  color: var(--chauchaubook-moss-dark);
+}
+
+.chauchaubook-contact-icon svg {
+  inline-size: 1.35rem;
+  block-size: 1.35rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.chauchaubook-contact-icon .is-filled {
+  fill: currentColor;
+  stroke: none;
+}
+
+.chauchaubook-contact-copy {
+  overflow: hidden;
+  display: grid;
+  gap: 0.3rem;
+  min-inline-size: 0;
+}
+
+.chauchaubook-contact-copy > span {
+  color: var(--color-primary-dark);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.chauchaubook-contact-card.is-social .chauchaubook-contact-copy > span {
+  font-size: 0.85rem;
+}
+
+.chauchaubook-contact-copy strong {
+  overflow-wrap: anywhere;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.chauchaubook-contact-arrow {
+  color: var(--color-primary-dark);
+  font-weight: 800;
+}
+
+.chauchaubook-contact-card:hover,
+.chauchaubook-contact-card:focus-visible {
+  border-color: var(--chauchaubook-moss);
+  color: var(--chauchaubook-moss-dark);
+  text-decoration: none;
+  transform: translateY(-0.15rem);
+  box-shadow: 0 1rem 2.5rem rgb(79 94 63 / 12%);
+}
+
+.chauchaubook-contact-card:hover .chauchaubook-contact-icon,
+.chauchaubook-contact-card:focus-visible .chauchaubook-contact-icon {
+  background: var(--chauchaubook-moss);
+}
+
 .chauchaubook-closing {
   background: var(--chauchaubook-neutral);
 }
@@ -554,6 +801,20 @@
     gap: 1.6rem;
   }
 
+  .chauchaubook-contact-list {
+    grid-template-columns: 1fr;
+  }
+
+  .chauchaubook-contact-body {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .chauchaubook-contact-card,
+  .chauchaubook-contact-card:nth-child(n + 3) {
+    grid-column: auto;
+  }
+
   .chauchaubook-press-heading {
     display: grid;
     align-items: start;
@@ -608,6 +869,19 @@
     margin-block-end: 1.8rem;
   }
 
+  .chauchaubook-workshop-photos {
+    overflow-x: auto;
+    grid-template-columns: none;
+    grid-auto-columns: min(82vw, 21rem);
+    grid-auto-flow: column;
+    padding-block-end: 0.75rem;
+    scroll-snap-type: inline mandatory;
+  }
+
+  .chauchaubook-workshop-photos figure {
+    scroll-snap-align: start;
+  }
+
   .chauchaubook-showcase-grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, minmax(18rem, 72vw));
@@ -628,7 +902,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .chauchaubook-showcase-card img,
-  .chauchaubook-press-card {
+  .chauchaubook-press-card,
+  .chauchaubook-contact-card {
     transition: none;
   }
 }
