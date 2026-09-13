@@ -608,7 +608,8 @@
       "nhieu-tac-gia-doan-tu-huyen-mot-nghe-nhan",
       "van-moi-10-nam-2015-2025-dong-a",
       "nhieu-tac-gia-dai-viet-su-ky-toan-thu",
-      "nhieu-tac-gia-bach-khoa-tri-thuc-bang-hinh"
+      "nhieu-tac-gia-bach-khoa-tri-thuc-bang-hinh",
+      "nhieu-tac-gia-boxset-bo-sach-dau-an-10-nam-omega"
     ]
   },
   {
@@ -741,7 +742,8 @@
     "id": "dao-duy-anh",
     "name": "Đào Duy Anh",
     "work_ids": [
-      "dao-duy-anh-viet-nam-van-hoa-su-cuong"
+      "dao-duy-anh-viet-nam-van-hoa-su-cuong",
+      "dao-duy-anh-dat-nuoc-viet-nam-qua-cac-doi"
     ]
   },
   {
@@ -979,6 +981,69 @@
     "name": "Keigo Higashino",
     "work_ids": [
       "keigo-higashino-dieu-ky-dieu-cua-tiem-tap-hoa-namiya"
+    ]
+  },
+  {
+    "id": "plato",
+    "name": "Plato",
+    "work_ids": [
+      "plato-cong-hoa"
+    ]
+  },
+  {
+    "id": "lao-tu",
+    "name": "Lão Tử",
+    "work_ids": [
+      "lao-tu-dao-duc-kinh"
+    ]
+  },
+  {
+    "id": "paul-doumer",
+    "name": "Paul Doumer",
+    "work_ids": [
+      "paul-doumer-lindo-chine-francaise"
+    ]
+  },
+  {
+    "id": "carl-gustav-jung",
+    "name": "Carl Gustav Jung",
+    "work_ids": [
+      "carl-gustav-jung-erinnerungen-traume-gedanken"
+    ]
+  },
+  {
+    "id": "paul-kalanithi",
+    "name": "Paul Kalanithi",
+    "work_ids": [
+      "paul-kalanithi-when-breath-becomes-air"
+    ]
+  },
+  {
+    "id": "pham-thi-kieu-ly",
+    "name": "Phạm Thị Kiều Ly",
+    "work_ids": [
+      "pham-thi-kieu-ly-lich-su-chu-quoc-ngu-1615-1919"
+    ]
+  },
+  {
+    "id": "siddhartha-mukherjee",
+    "name": "Siddhartha Mukherjee",
+    "work_ids": [
+      "siddhartha-mukherjee-the-gene-an-intimate-history"
+    ]
+  },
+  {
+    "id": "jared-diamond",
+    "name": "Jared Diamond",
+    "work_ids": [
+      "jared-diamond-guns-germs-and-steel"
+    ]
+  },
+  {
+    "id": "yuval-noah-harari",
+    "name": "Yuval Noah Harari",
+    "work_ids": [
+      "yuval-noah-harari-sapiens-a-brief-history-of-mankind"
     ]
   }
 ]

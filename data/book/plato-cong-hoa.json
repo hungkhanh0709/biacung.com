@@ -1,0 +1,42 @@
+{
+  "id": "plato-cong-hoa",
+  "title": "Cộng Hòa",
+  "title_original": "Πολιτεία",
+  "authors": [
+    "Plato"
+  ],
+  "awards": [],
+  "series": [
+    "Dấu Ấn 10 Năm Omega+"
+  ],
+  "editions": [
+    {
+      "id": "plato-cong-hoa-2026-omega-plus-bia-cung-395k",
+      "isbn": null,
+      "series_ids": [
+        "dau-an-10-nam-omega"
+      ],
+      "caption": "Ấn Phẩm Dấu Ấn 10 Năm Omega+",
+      "pub_year": 2026,
+      "publisher": "NXB Thế Giới",
+      "issuers": [
+        "Omega Plus"
+      ],
+      "translators": [
+        "Đỗ Khánh Hoan"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "395k",
+      "print_run": null,
+      "page_count": 728,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 14 x 3.8",
+      "weight_g": 940,
+      "thumbnail": "/assets/img/books/plato-cong-hoa/10-nam-omega-thumbnail.jpeg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}
