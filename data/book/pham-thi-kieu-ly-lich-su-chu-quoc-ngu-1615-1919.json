@@ -1,0 +1,42 @@
+{
+  "id": "pham-thi-kieu-ly-lich-su-chu-quoc-ngu-1615-1919",
+  "title": "Lịch Sử Chữ Quốc Ngữ (1615-1919)",
+  "title_original": "",
+  "authors": [
+    "Phạm Thị Kiều Ly"
+  ],
+  "awards": [],
+  "series": [
+    "Dấu Ấn 10 Năm Omega+"
+  ],
+  "editions": [
+    {
+      "id": "pham-thi-kieu-ly-lich-su-chu-quoc-ngu-1615-1919-2026-omega-plus-bia-cung-365k",
+      "isbn": null,
+      "series_ids": [
+        "dau-an-10-nam-omega"
+      ],
+      "caption": "Ấn Phẩm Dấu Ấn 10 Năm Omega+",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Omega Plus"
+      ],
+      "translators": [
+        "Thanh Thư"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "365k",
+      "print_run": null,
+      "page_count": 436,
+      "copy_numbering": null,
+      "size_cm": "24 x 16 x 2.4",
+      "weight_g": 820,
+      "thumbnail": "/assets/img/books/pham-thi-kieu-ly-lich-su-chu-quoc-ngu-1615-1919/10-nam-omega-thumbnail.jpeg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

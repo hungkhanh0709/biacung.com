@@ -1,0 +1,42 @@
+{
+  "id": "yuval-noah-harari-sapiens-a-brief-history-of-mankind",
+  "title": "Sapiens - Lược Sử Loài Người",
+  "title_original": "Sapiens - A Brief History Of Mankind",
+  "authors": [
+    "Yuval Noah Harari"
+  ],
+  "awards": [],
+  "series": [
+    "Dấu Ấn 10 Năm Omega+"
+  ],
+  "editions": [
+    {
+      "id": "yuval-noah-harari-sapiens-a-brief-history-of-mankind-2026-omega-plus-bia-cung-455k",
+      "isbn": null,
+      "series_ids": [
+        "dau-an-10-nam-omega"
+      ],
+      "caption": "Ấn Phẩm Dấu Ấn 10 Năm Omega+",
+      "pub_year": 2026,
+      "publisher": "NXB Tri Thức",
+      "issuers": [
+        "Omega Plus"
+      ],
+      "translators": [
+        "Nguyễn Thủy Chung"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "455k",
+      "print_run": null,
+      "page_count": 576,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": 1000,
+      "thumbnail": "/assets/img/books/yuval-noah-harari-sapiens-a-brief-history-of-mankind/10-nam-omega-thumbnail.jpeg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

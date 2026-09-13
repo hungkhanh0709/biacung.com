@@ -1,0 +1,40 @@
+{
+  "id": "dao-duy-anh-dat-nuoc-viet-nam-qua-cac-doi",
+  "title": "Đất Nước Việt Nam Qua Các Đời",
+  "title_original": "",
+  "authors": [
+    "Đào Duy Anh"
+  ],
+  "awards": [],
+  "series": [
+    "Dấu Ấn 10 Năm Omega+"
+  ],
+  "editions": [
+    {
+      "id": "dao-duy-anh-dat-nuoc-viet-nam-qua-cac-doi-2026-omega-plus-bia-cung-365k",
+      "isbn": null,
+      "series_ids": [
+        "dau-an-10-nam-omega"
+      ],
+      "caption": "Ấn Phẩm Dấu Ấn 10 Năm Omega+",
+      "pub_year": 2026,
+      "publisher": "NXB Thế Giới",
+      "issuers": [
+        "Omega Plus"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "365k",
+      "print_run": null,
+      "page_count": 456,
+      "copy_numbering": null,
+      "size_cm": "24 x 16 x 2.5",
+      "weight_g": 860,
+      "thumbnail": "/assets/img/books/dao-duy-anh-dat-nuoc-viet-nam-qua-cac-doi/10-nam-omega-thumbnail.jpeg.jpeg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

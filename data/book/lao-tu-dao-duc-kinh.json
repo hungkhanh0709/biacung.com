@@ -1,0 +1,42 @@
+{
+  "id": "lao-tu-dao-duc-kinh",
+  "title": "Đạo Đức Kinh",
+  "title_original": "道德經",
+  "authors": [
+    "Lão Tử"
+  ],
+  "awards": [],
+  "series": [
+    "Dấu Ấn 10 Năm Omega+"
+  ],
+  "editions": [
+    {
+      "id": "lao-tu-dao-duc-kinh-2026-omega-plus-bia-cung-245k",
+      "isbn": null,
+      "series_ids": [
+        "dau-an-10-nam-omega"
+      ],
+      "caption": "Ấn Phẩm Dấu Ấn 10 Năm Omega+",
+      "pub_year": 2026,
+      "publisher": "NXB Thế Giới",
+      "issuers": [
+        "Omega Plus"
+      ],
+      "translators": [
+        "Vũ Thế Ngọc"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "245k",
+      "print_run": null,
+      "page_count": 212,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 14 x 1.3",
+      "weight_g": 430,
+      "thumbnail": "/assets/img/books/lao-tu-dao-duc-kinh/10-nam-omega-thumbnail.jpeg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

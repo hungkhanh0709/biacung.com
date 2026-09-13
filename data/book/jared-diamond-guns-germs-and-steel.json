@@ -1,0 +1,42 @@
+{
+  "id": "jared-diamond-guns-germs-and-steel",
+  "title": "Súng, Vi Trùng Và Thép",
+  "title_original": "Guns, Germs And Steel",
+  "authors": [
+    "Jared Diamond"
+  ],
+  "awards": [],
+  "series": [
+    "Dấu Ấn 10 Năm Omega+"
+  ],
+  "editions": [
+    {
+      "id": "jared-diamond-guns-germs-and-steel-2026-omega-plus-bia-cung-485k",
+      "isbn": null,
+      "series_ids": [
+        "dau-an-10-nam-omega"
+      ],
+      "caption": "Ấn Phẩm Dấu Ấn 10 Năm Omega+",
+      "pub_year": 2026,
+      "publisher": "NXB Thế Giới",
+      "issuers": [
+        "Omega Plus"
+      ],
+      "translators": [
+        "Trần Tiễn Cao Đăng"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "485k",
+      "print_run": null,
+      "page_count": 660,
+      "copy_numbering": null,
+      "size_cm": "24 x 16 x 3.2",
+      "weight_g": 1130,
+      "thumbnail": "/assets/img/books/jared-diamond-guns-germs-and-steel/10-nam-omega-thumbnail.jpeg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}
