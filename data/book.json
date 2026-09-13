@@ -1,5 +1,17 @@
 [
   {
+    "detail": "data/book/rf-kuang-babel.json",
+    "search_text": "r.f. kuang babel babel hay su can thiet cua bao luc nxb lao dong rainbow lam vu chauchaubook bia ve tay boi chau chau book",
+    "last_pub_year": 2026,
+    "updated_at": "2026-09-13"
+  },
+  {
+    "detail": "data/book/hector-malot-sans-famille.json",
+    "search_text": "hector malot sans famille khong gia dinh nxb van hoc huy hoang dong a nhu phong huynh ly dong a classic dong a classics bo tui chauchaubook bia ve tay boi chau chau book bo 2 tap",
+    "updated_at": "2026-09-12",
+    "last_pub_year": 2026
+  },
+  {
     "detail": "data/book/thomas-harris-hannibal.json",
     "search_text": "thomas harris hannibal nxb hoi nha van nha nam thu le chauchaubook bia ve tay boi chau chau book",
     "last_pub_year": 2026,
@@ -80,12 +92,6 @@
   {
     "detail": "data/book/leo-tolstoy-anna-karenina.json",
     "search_text": "anna karenina leo tolstoy nxb hoi nha van nha nam duong tuong nhi ca",
-    "last_pub_year": 2026,
-    "updated_at": "2026-08-25"
-  },
-  {
-    "detail": "data/book/rf-kuang-babel.json",
-    "search_text": "babel hay su can thiet cua bao luc babel rf kuang nxb lao dong rainbow lam vu",
     "last_pub_year": 2026,
     "updated_at": "2026-08-25"
   },
@@ -616,12 +622,6 @@
     "search_text": "dien ro hay than thanh jose echegaray tram nam nobel nxb van hoc dong a thanh loan",
     "updated_at": "2026-07-04",
     "last_pub_year": 2024
-  },
-  {
-    "detail": "data/book/hector-malot-sans-famille.json",
-    "search_text": "khong gia dinh sans famille hector malot dong a classic dong a classics bo tui nxb van hoc dong a huynh ly",
-    "updated_at": "2026-08-26",
-    "last_pub_year": 2023
   },
   {
     "detail": "data/book/johanna-spyri-heidi.json",
