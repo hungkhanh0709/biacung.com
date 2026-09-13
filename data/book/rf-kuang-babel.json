@@ -11,6 +11,41 @@
   ],
   "editions": [
     {
+      "id": "rf-kuang-babel-2026-rainbow-chauchaubook-2",
+      "series_ids": [
+        "chauchaubook"
+      ],
+      "isbn": null,
+      "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
+      "pub_year": 2026,
+      "publisher": "NXB Lao Động",
+      "issuers": [
+        "Rainbow"
+      ],
+      "translators": [
+        "Lam Vũ"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Chauchaubook",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": 636,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/rf-kuang-babel/chauchaubook-cover-2.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/rf-kuang-babel/chauchaubook-before-custom.jpg",
+        "/assets/img/books/rf-kuang-babel/chauchaubook-back-cover-2.jpg",
+        "/assets/img/books/rf-kuang-babel/chauchaubook-cover-standing-2.jpg",
+        "/assets/img/books/rf-kuang-babel/chauchaubook-endpaper-2.jpg",
+        "/assets/img/books/rf-kuang-babel/chauchaubook-fore-edge.jpg",
+        "/assets/img/books/rf-kuang-babel/chauchaubook-spine.jpg"
+      ],
+      "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
+    },
+    {
       "id": "rf-kuang-babel-2026-rainbow-chauchaubook",
       "series_ids": [
         "chauchaubook"
@@ -37,9 +72,9 @@
       "thumbnail": "/assets/img/books/rf-kuang-babel/chauchaubook-cover.jpg",
       "gellery_imgs": [
         "/assets/img/books/rf-kuang-babel/chauchaubook-back-cover.jpg",
+        "/assets/img/books/rf-kuang-babel/chauchaubook-cover-standing.jpg",
         "/assets/img/books/rf-kuang-babel/chauchaubook-endpaper.jpg",
         "/assets/img/books/rf-kuang-babel/chauchaubook-interior-illustration.jpg",
-        "/assets/img/books/rf-kuang-babel/chauchaubook-cover-standing.jpg",
         "/assets/img/books/rf-kuang-babel/chauchaubook-cover-detail.jpg"
       ],
       "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
