@@ -67,6 +67,7 @@ function auditStaticPages(rootDir, errors) {
         'meta name="robots" content="index,follow,max-image-preview:large"',
         'type="application/ld+json"',
         'rel="canonical" href="https://biacung.com/chauchaubook"',
+        'assets/css/chauchaubook-portfolio.css?v=',
         'https://znews.vn/nghi-viec-9x-kiem-tien-tu-nghe-do-bia-cho-sach-post1587206.html',
         'https://tuoitre.vn/co-gai-bo-viec-hoc-phuc-che-sach-giu-ky-uc-tu-nhung-trang-giay-cu-10026082810194445.htm',
         'https://www.vietnam.vn/en/co-gai-bo-viec-hoc-phuc-che-sach-giu-ky-uc-tu-nhung-trang-giay-cu'
@@ -130,6 +131,11 @@ function auditStaticPages(rootDir, errors) {
     );
     pushIfMissing(
       errors,
+      content.includes('href="/chauchaubook">Câu chuyện &amp; Quy trình</a>'),
+      `${file} is missing Chauchaubook story and process submenu link`
+    );
+    pushIfMissing(
+      errors,
       !/(?:href|src)=["']\/[^"']*\.html(?:[?#][^"']*)?["']/.test(content),
       `${file} contains an internal public URL with an .html suffix`
     );
@@ -143,7 +149,7 @@ function auditStaticPages(rootDir, errors) {
       snippets: [
         'assets/css/tokens.css?v=',
         'assets/css/home.css?v=',
-        'assets/css/chauchaubook.css?v='
+        'assets/css/chauchaubook-portfolio.css?v='
       ]
     },
     {
@@ -192,6 +198,7 @@ function auditCoreFiles(rootDir, errors) {
     "robots.txt",
     "sitemap.xml",
     "site.webmanifest",
+    "assets/css/chauchaubook-portfolio.css",
     "assets/js/seo.js",
     "script/static-server.js",
     "assets/img/favicon/apple-touch-icon.png",
