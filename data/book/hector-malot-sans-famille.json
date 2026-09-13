@@ -8,9 +8,46 @@
   "awards": [],
   "series": [
     "Đông A Classic",
-    "Đông A Classics (bỏ túi)"
+    "Đông A Classics (bỏ túi)",
+    "Chauchaubook"
   ],
   "editions": [
+    {
+      "id": "hector-malot-sans-famille-2026-huy-hoang-chauchaubook",
+      "isbn": null,
+      "series_ids": [
+        "chauchaubook"
+      ],
+      "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Huy Hoang"
+      ],
+      "translators": [
+        "Như Phong"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Chauchaubook",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": 616,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/hector-malot-sans-famille/chauchaubook-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/hector-malot-sans-famille/chauchaubook-back-cover.jpg",
+        "/assets/img/books/hector-malot-sans-famille/chauchaubook-interior-illustration.jpg",
+        "/assets/img/books/hector-malot-sans-famille/chauchaubook-fore-edge.jpg",
+        "/assets/img/books/hector-malot-sans-famille/chauchaubook-fore-edge-2.jpg",
+        "/assets/img/books/hector-malot-sans-famille/chauchaubook-bookmark.jpg",
+        "/assets/img/books/hector-malot-sans-famille/chauchaubook-bookmark-2.jpg",
+        "/assets/img/books/hector-malot-sans-famille/chauchaubook-cover-detail.jpg"
+      ],
+      "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
+    },
     {
       "id": "hector-malot-sans-famille-2023-dong-a-bia-mem-180k",
       "isbn": null,
