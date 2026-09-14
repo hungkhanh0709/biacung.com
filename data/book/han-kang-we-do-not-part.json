@@ -1,0 +1,38 @@
+{
+  "id": "han-kang-we-do-not-part",
+  "title": "Không Từ Biệt",
+  "title_original": "We Do Not Part",
+  "authors": [
+    "Han Kang"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "han-kang-we-do-not-part-2026-nha-nam-bia-cung-ao-om-325k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2026,
+      "publisher": "NXB Hà Nội",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Kim Ngân"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "325k",
+      "print_run": 300,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 14",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/han-kang-we-do-not-part/thumbnail.jpeg",
+      "gellery_imgs": [],
+      "detail": "- Bản bìa cứng giới hạn 300 bản"
+    }
+  ]
+}
