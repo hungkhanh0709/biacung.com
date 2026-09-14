@@ -1,0 +1,41 @@
+{
+  "id": "khai-hung-doi-mua-gio",
+  "title": "Đời Mưa Gió",
+  "title_original": "",
+  "authors": [
+    "Khái Hưng",
+    "Nhất Linh"
+  ],
+  "awards": [],
+  "series": [
+    "Việt Nam Danh Tác (Nhã Nam)"
+  ],
+  "editions": [
+    {
+      "id": "khai-hung-doi-mua-gio-2026-nha-nam-bia-cung-ao-om-268k",
+      "isbn": null,
+      "series_ids": [
+        "viet-nam-danh-tac-nha-nam"
+      ],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2026,
+      "publisher": "NXB Hà Nội",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "268k",
+      "print_run": 555,
+      "page_count": 262,
+      "copy_numbering": "001-555",
+      "size_cm": "14,5 x 20,5",
+      "weight_g": 500,
+      "thumbnail": "/assets/img/books/khai-hung-doi-mua-gio/thumbnail.jpeg",
+      "gellery_imgs": [],
+      "detail": "- Bìa cứng, đánh số giới hạn 555 bản\n- Giấy bãi bằng 100gsm"
+    }
+  ]
+}

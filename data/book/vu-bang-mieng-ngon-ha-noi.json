@@ -7,12 +7,15 @@
   ],
   "awards": [],
   "series": [
-    "Việt Nam Danh Tác"
+    "Việt Nam Danh Tác (Nhã Nam)"
   ],
   "editions": [
     {
       "id": "vu-bang-mieng-ngon-ha-noi-2026-nha-nam-bia-mem-85k",
       "isbn": null,
+      "series_ids": [
+        "viet-nam-danh-tac-nha-nam"
+      ],
       "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Hội Nhà Văn",

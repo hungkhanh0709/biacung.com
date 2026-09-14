@@ -1,0 +1,38 @@
+{
+  "id": "kawabata-yasunari-co-do",
+  "title": "Cố Đô",
+  "title_original": "古都",
+  "authors": [
+    "Kawabata Yasunari"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "kawabata-yasunari-co-do-2026-nha-nam-bia-cung-ao-om-245k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2026,
+      "publisher": "NXB Hà Nội",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Ngọc Chân"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "245k",
+      "print_run": 300,
+      "page_count": 270,
+      "copy_numbering": null,
+      "size_cm": "20.5 x 14",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/kawabata-yasunari-co-do/thumbnail.jpeg",
+      "gellery_imgs": [],
+      "detail": "- Có chữ ký dịch giả\n- Bìa cứng, giới hạn 300 bản"
+    }
+  ]
+}

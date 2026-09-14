@@ -12,6 +12,24 @@
     "updated_at": "2026-09-15"
   },
   {
+    "detail": "data/book/han-kang-we-do-not-part.json",
+    "search_text": "han kang we do not part khong tu biet nxb ha noi nha nam kim ngan bia cung gioi han",
+    "last_pub_year": 2026,
+    "updated_at": "2026-09-14"
+  },
+  {
+    "detail": "data/book/kawabata-yasunari-co-do.json",
+    "search_text": "kawabata yasunari co do nxb ha noi nha nam ngoc chan bia cung gioi han",
+    "last_pub_year": 2026,
+    "updated_at": "2026-09-14"
+  },
+  {
+    "detail": "data/book/khai-hung-doi-mua-gio.json",
+    "search_text": "khai hung nhat linh doi mua gio nxb ha noi nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2026,
+    "updated_at": "2026-09-14"
+  },
+  {
     "detail": "data/book/nhieu-tac-gia-boxset-bo-sach-dau-an-10-nam-omega.json",
     "search_text": "nhieu tac gia boxset bo sach dau an 10 nam omega nxb the gioi tri thuc van hoc dan tri omega plus nhieu nguoi dich dau an 10 nam omega 50 nam fahasa an pham dau an 10 nam omega",
     "last_pub_year": 2026,
@@ -175,31 +193,31 @@
   },
   {
     "detail": "data/book/banana-yoshimoto-kitchen.json",
-    "search_text": "kitchen banana yoshimoto nxb ha noi nha nam luong viet dung",
+    "search_text": "banana yoshimoto kitchen nxb ha noi nha nam luong viet dung bia cung gioi han",
     "last_pub_year": 2026,
     "updated_at": "2026-08-23"
   },
   {
     "detail": "data/book/banana-yoshimoto-np.json",
-    "search_text": "np banana yoshimoto nxb ha noi nha nam luong viet dung",
+    "search_text": "banana yoshimoto np nxb ha noi nha nam luong viet dung bia cung gioi han",
     "last_pub_year": 2026,
     "updated_at": "2026-08-23"
   },
   {
     "detail": "data/book/pham-ngoc-tien-chan-dung-cua-ruou.json",
-    "search_text": "chan dung cua ruou pham ngoc tien nxb ha noi nha nam",
+    "search_text": "pham ngoc tien chan dung cua ruou nxb ha noi nha nam bia cung gioi han",
     "last_pub_year": 2026,
     "updated_at": "2026-08-23"
   },
   {
     "detail": "data/book/pham-ngoc-tien-chuyen-lien-ong-lien-ba.json",
-    "search_text": "chuyen lien ong lien ba pham ngoc tien nxb ha noi nha nam",
+    "search_text": "pham ngoc tien chuyen lien ong lien ba nxb ha noi nha nam bia cung gioi han",
     "last_pub_year": 2026,
     "updated_at": "2026-08-23"
   },
   {
     "detail": "data/book/pham-ngoc-tien-tinh-yeu-thach-sung.json",
-    "search_text": "tinh yeu thach sung pham ngoc tien nxb ha noi nha nam",
+    "search_text": "pham ngoc tien tinh yeu thach sung nxb ha noi nha nam bia cung gioi han",
     "last_pub_year": 2026,
     "updated_at": "2026-08-23"
   },
@@ -373,13 +391,13 @@
   },
   {
     "detail": "data/book/thach-lam-ha-noi-bam-sau-pho-phuong.json",
-    "search_text": "ha noi bam sau pho phuong thach lam viet nam danh tac nxb hoi nha van nha nam",
+    "search_text": "thach lam ha noi bam sau pho phuong nxb hoi nha van nha nam viet nam danh tac nha nam",
     "updated_at": "2026-07-06",
     "last_pub_year": 2026
   },
   {
     "detail": "data/book/vu-bang-mieng-ngon-ha-noi.json",
-    "search_text": "mieng ngon ha noi vu bang viet nam danh tac nxb hoi nha van nha nam",
+    "search_text": "vu bang mieng ngon ha noi nxb hoi nha van nha nam viet nam danh tac nha nam",
     "updated_at": "2026-07-06",
     "last_pub_year": 2026
   },
