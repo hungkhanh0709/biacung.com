@@ -156,14 +156,15 @@ function main() {
         return;
       }
 
-      if (navLink.getAttribute("href") === "#") {
-        event.preventDefault();
-      }
-
       if (!MOBILE_NAV_QUERY.matches) {
+        if (navLink.getAttribute("href") === "#") {
+          event.preventDefault();
+        }
         return;
       }
 
+      event.preventDefault();
+      event.stopPropagation();
       toggleSubmenu(item, navItems);
     });
   });
