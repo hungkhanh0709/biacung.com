@@ -1,0 +1,48 @@
+{
+  "id": "paul-doumer-lindo-chine-francaise",
+  "title": "Xứ Đông Dương",
+  "title_original": "L'Indo-Chine française",
+  "authors": [
+    "Paul Doumer"
+  ],
+  "awards": [],
+  "series": [
+    "Dấu Ấn 10 Năm Omega+"
+  ],
+  "editions": [
+    {
+      "id": "paul-doumer-lindo-chine-francaise-2026-omega-plus-bia-cung-445k",
+      "isbn": null,
+      "series_ids": [
+        "dau-an-10-nam-omega"
+      ],
+      "caption": "Ấn Phẩm Dấu Ấn 10 Năm Omega+",
+      "pub_year": 2026,
+      "publisher": "NXB Thế Giới",
+      "issuers": [
+        "Omega Plus"
+      ],
+      "translators": [
+        "Lưu Đình Tuân",
+        "Hiệu Constant",
+        "Lê Đình Chi",
+        "Hoàng Long",
+        "Vũ Thúy"
+      ],
+      "illustrators": [],
+      "proofreaders": [
+        "Nguyễn Thừa Hỷ"
+      ],
+      "format": "Bìa cứng",
+      "cover_price": "445k",
+      "print_run": null,
+      "page_count": 656,
+      "copy_numbering": null,
+      "size_cm": "24 x 16 x 3.5",
+      "weight_g": 1120,
+      "thumbnail": "/assets/img/books/paul-doumer-lindo-chine-francaise/10-nam-omega-thumbnail.jpeg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

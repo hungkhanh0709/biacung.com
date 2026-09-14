@@ -1,0 +1,42 @@
+{
+  "id": "siddhartha-mukherjee-the-gene-an-intimate-history",
+  "title": "Gen - Lịch Sử Và Tương Lai Của Nhân Loại",
+  "title_original": "The Gene: An Intimate History",
+  "authors": [
+    "Siddhartha Mukherjee"
+  ],
+  "awards": [],
+  "series": [
+    "Dấu Ấn 10 Năm Omega+"
+  ],
+  "editions": [
+    {
+      "id": "siddhartha-mukherjee-the-gene-an-intimate-history-2026-omega-plus-bia-cung-525k",
+      "isbn": null,
+      "series_ids": [
+        "dau-an-10-nam-omega"
+      ],
+      "caption": "Ấn Phẩm Dấu Ấn 10 Năm Omega+",
+      "pub_year": 2026,
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Omega Plus"
+      ],
+      "translators": [
+        "Bùi Thanh Châu"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "525k",
+      "print_run": null,
+      "page_count": 792,
+      "copy_numbering": null,
+      "size_cm": "24 x 16 x 4.2",
+      "weight_g": 1300,
+      "thumbnail": "/assets/img/books/siddhartha-mukherjee-the-gene-an-intimate-history/10-nam-omega-thumbnail.jpeg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

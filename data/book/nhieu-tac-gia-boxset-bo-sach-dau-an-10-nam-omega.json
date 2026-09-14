@@ -1,0 +1,44 @@
+{
+  "id": "nhieu-tac-gia-boxset-bo-sach-dau-an-10-nam-omega",
+  "title": "Boxset Bộ Sách Dấu Ấn 10 Năm Omega+",
+  "title_original": "",
+  "authors": [
+    "Nhiều Tác Giả"
+  ],
+  "awards": [],
+  "series": [
+    "Dấu Ấn 10 Năm Omega+",
+    "50 Năm Fahasa"
+  ],
+  "editions": [
+    {
+      "id": "nhieu-tac-gia-boxset-bo-sach-dau-an-10-nam-omega-2026-omega-plus-hop-10-cuon-4tr",
+      "isbn": null,
+      "series_ids": [
+        "dau-an-10-nam-omega",
+        "50-nam-fahasa"
+      ],
+      "caption": "Ấn Phẩm Dấu Ấn 10 Năm Omega+",
+      "pub_year": 2026,
+      "publisher": "NXB Thế Giới, Tri Thức, Văn Học, Dân Trí",
+      "issuers": [
+        "Omega Plus"
+      ],
+      "translators": [
+        "Nhiều Người Dịch"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Hộp 10 cuốn",
+      "cover_price": "4tr",
+      "print_run": 200,
+      "page_count": 5280,
+      "copy_numbering": null,
+      "size_cm": "37 x 26 x 25",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/nhieu-tac-gia-boxset-bo-sach-dau-an-10-nam-omega/dau-an-10-nam-omega.webp",
+      "gellery_imgs": [],
+      "detail": "Nhân dịp 50 năm thành lập, FAHASA đồng hành cùng Omega+ thực hiện phiên bản Boxset Giới hạn của Bộ sách Dấu ấn 10 năm Omega+."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "carl-gustav-jung-erinnerungen-traume-gedanken",
+  "title": "Hồi Ức, Giấc Mơ, Suy Ngẫm",
+  "title_original": "Erinnerungen, Träume, Gedanken",
+  "authors": [
+    "Carl Gustav Jung"
+  ],
+  "awards": [],
+  "series": [
+    "Dấu Ấn 10 Năm Omega+"
+  ],
+  "editions": [
+    {
+      "id": "carl-gustav-jung-erinnerungen-traume-gedanken-2026-omega-plus-bia-cung-445k",
+      "isbn": null,
+      "series_ids": [
+        "dau-an-10-nam-omega"
+      ],
+      "caption": "Ấn Phẩm Dấu Ấn 10 Năm Omega+",
+      "pub_year": 2026,
+      "publisher": "NXB Thế Giới",
+      "issuers": [
+        "Omega Plus"
+      ],
+      "translators": [
+        "Vũ Hoàng Linh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "445k",
+      "print_run": null,
+      "page_count": 528,
+      "copy_numbering": null,
+      "size_cm": "24 x 16 x 2.8",
+      "weight_g": 960,
+      "thumbnail": "/assets/img/books/carl-gustav-jung-erinnerungen-traume-gedanken/10-nam-omega-thumbnail.jpeg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}
