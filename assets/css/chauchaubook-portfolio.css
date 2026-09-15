@@ -78,7 +78,7 @@
   font-size: clamp(2.35rem, 5.5vw, 4.9rem);
   font-weight: 600;
   letter-spacing: -0.055em;
-  line-height: 1.03;
+  line-height: 1.2;
 }
 
 .chauchaubook-lead {
@@ -127,6 +127,7 @@
 }
 
 .chauchaubook-hero-art {
+  box-sizing: border-box;
   position: relative;
   inline-size: min(100%, 36rem);
   justify-self: end;
@@ -195,7 +196,7 @@
   font-size: clamp(1.9rem, 4vw, 3.2rem);
   font-weight: 600;
   letter-spacing: -0.035em;
-  line-height: 1.12;
+  line-height: 1.25;
 }
 
 .chauchaubook-story-portrait {
@@ -244,6 +245,7 @@
 }
 
 .chauchaubook-process {
+  scroll-margin-block-start: 5rem;
   background: #24212b;
   color: #f8f4ec;
 }
@@ -887,6 +889,13 @@
 
   .chauchaubook-hero {
     padding-block-start: 1.5rem;
+  }
+
+  .chauchaubook-hero-art {
+    inline-size: min(100%, 20rem);
+    margin-inline: auto;
+    padding: 0.8rem;
+    transform: rotate(0.6deg);
   }
 
   .chauchaubook-hero h1 {
