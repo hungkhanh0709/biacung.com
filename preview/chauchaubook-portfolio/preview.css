@@ -90,7 +90,7 @@
   font-size: clamp(2.35rem, 5.5vw, 4.9rem);
   font-weight: 600;
   letter-spacing: -0.055em;
-  line-height: 1.03;
+  line-height: 1.2;
 }
 
 .chauchaubook-lead {
@@ -136,6 +136,7 @@
 .chauchaubook-hero-art {
   position: relative;
   inline-size: min(100%, 36rem);
+  box-sizing: border-box;
   justify-self: end;
   margin: 0;
   padding: clamp(0.8rem, 2vw, 1.25rem);
@@ -834,6 +835,13 @@
 @media (max-width: 44rem) {
   .chauchaubook-hero {
     padding-block-start: 1.5rem;
+  }
+
+  .chauchaubook-hero-art {
+    inline-size: min(100%, 20rem);
+    margin-inline: auto;
+    padding: 0.8rem;
+    transform: rotate(0.6deg);
   }
 
   .chauchaubook-hero h1 {
