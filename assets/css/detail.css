@@ -491,7 +491,7 @@ a.detail-pill:focus-visible {
 
 .detail-focus-body {
   display: grid;
-  grid-template-columns: minmax(18rem, 0.6fr) minmax(0, 0.95fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: clamp(1rem, 2.4vw, 1.75rem);
   align-items: start;
 }
