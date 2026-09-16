@@ -1,0 +1,15 @@
+{
+  "id": "viet-nam-danh-tac-tho-nha-nam",
+  "name": "Việt Nam Danh Tác - Thơ (Nhã Nam)",
+  "description": "",
+  "thumbnail": "/assets/img/series/viet-nam-danh-tac-tho-nha-nam.jpg",
+  "work_ids": [
+    "luu-trong-lu-tieng-thu",
+    "che-lan-vien-dieu-tan",
+    "dinh-hung-me-hon-ca",
+    "nguyen-binh-lo-buoc-sang-ngang",
+    "han-mac-tu-tho-han-mac-tu",
+    "bich-khe-tinh-huyet",
+    "vu-hoang-chuong-tho-say"
+  ]
+}

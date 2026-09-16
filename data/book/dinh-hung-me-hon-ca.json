@@ -1,0 +1,40 @@
+{
+  "id": "dinh-hung-me-hon-ca",
+  "title": "Mê Hồn Ca",
+  "title_original": "",
+  "authors": [
+    "Đinh Hùng"
+  ],
+  "awards": [],
+  "series": [
+    "Việt Nam Danh Tác - Thơ (Nhã Nam)"
+  ],
+  "editions": [
+    {
+      "id": "dinh-hung-me-hon-ca-2021-nha-nam-bia-cung-ao-om-180k",
+      "isbn": null,
+      "series_ids": [
+        "viet-nam-danh-tac-tho-nha-nam"
+      ],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2021,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "180k",
+      "print_run": 555,
+      "page_count": null,
+      "copy_numbering": "001-555",
+      "size_cm": "18 x 22,5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/dinh-hung-me-hon-ca/thumbnail.jpg",
+      "gellery_imgs": [],
+      "detail": "Mỗi tập thơ trên sẽ có 555 bản bìa cứng, với quy cách riêng, được đánh số từ 1-555 và được đóng triện Nhã Nam Thư Xã, thiết kế riêng cho bộ sách Việt Nam danh tác."
+    }
+  ]
+}

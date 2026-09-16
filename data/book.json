@@ -846,6 +846,48 @@
     "last_pub_year": 2022
   },
   {
+    "detail": "data/book/bich-khe-tinh-huyet.json",
+    "search_text": "bich khe tinh huyet nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-16"
+  },
+  {
+    "detail": "data/book/che-lan-vien-dieu-tan.json",
+    "search_text": "che lan vien dieu tan nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-16"
+  },
+  {
+    "detail": "data/book/dinh-hung-me-hon-ca.json",
+    "search_text": "dinh hung me hon ca nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-16"
+  },
+  {
+    "detail": "data/book/han-mac-tu-tho-han-mac-tu.json",
+    "search_text": "han mac tu tho han mac tu nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-16"
+  },
+  {
+    "detail": "data/book/luu-trong-lu-tieng-thu.json",
+    "search_text": "luu trong lu tieng thu nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-16"
+  },
+  {
+    "detail": "data/book/nguyen-binh-lo-buoc-sang-ngang.json",
+    "search_text": "nguyen binh lo buoc sang ngang nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-16"
+  },
+  {
+    "detail": "data/book/vu-hoang-chuong-tho-say.json",
+    "search_text": "vu hoang chuong tho say nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-16"
+  },
+  {
     "detail": "data/book/dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do.json",
     "search_text": "mahabharata bang hinh thien su thi vi dai nhat cua an do dk nxb dan tri dong a le thi oanh ho anh thai",
     "last_pub_year": 2021,
