@@ -1,0 +1,4 @@
+interface:
+  display_name: "Book Image Crop Safe"
+  short_description: "Clone ảnh gốc rồi crop toàn bộ ảnh sách"
+  default_prompt: "Use $book-image-crop-safe with one bookId to clone the originals and crop every referenced book image in one run."
