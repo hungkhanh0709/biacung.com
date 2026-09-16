@@ -84,6 +84,9 @@ function normalizeUrl(value) {
 
 function buildSeriesDetailUrl(slug) {
   const value = sanitizeSlugParam(slug);
+  if (value === "chauchaubook") {
+    return "/chauchaubook/works";
+  }
   return value ? `/series?id=${encodeURIComponent(value)}` : "/series";
 }
 
@@ -574,6 +577,11 @@ function updateSeriesDetailSeo(series, books) {
 }
 
 async function main() {
+  if (seriesId === "chauchaubook") {
+    window.location.replace("/chauchaubook/works");
+    return;
+  }
+
   if (!resultsNode || !summaryNode || !emptyNode || !titleNode) {
     window.BiaCungPageLoader?.hide();
     return;

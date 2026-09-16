@@ -433,7 +433,7 @@ input:focus-visible {
   font-family: var(--font-heading);
   font-size: clamp(2.55rem, 6vw, 4.75rem);
   font-weight: 800;
-  line-height: 1.04;
+  line-height: 1.2;
   letter-spacing: -0.055em;
   text-wrap: balance;
 }
@@ -556,9 +556,9 @@ input:focus-visible {
   display: grid;
   place-items: center;
   box-sizing: border-box;
-  padding: 0.9rem;
+  padding: 0;
   border-radius: 0.85rem;
-  border: 1px solid var(--color-border);
+  border: 16px solid #fff;
   box-shadow: 0 1rem 2.4rem rgb(38 34 54 / 10%);
   background: #fff;
   overflow: hidden;
@@ -594,7 +594,7 @@ input:focus-visible {
   block-size: 100%;
   max-inline-size: 100%;
   max-block-size: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center center;
   opacity: 0;
   transition: opacity 180ms ease;
@@ -959,7 +959,6 @@ input:focus-visible {
   .book-media {
     inline-size: 8.5rem;
     block-size: 11rem;
-    padding: 0.7rem;
     border-radius: var(--radius-md);
     box-shadow: 0 0.85rem 1.6rem rgb(38 34 54 / 9%);
   }

@@ -24,6 +24,9 @@ function buildDetailUrl(bookId) {
 
 function buildSeriesDetailUrlPage(seriesId) {
   const id = normalizeText(seriesId);
+  if (id === "chauchaubook") {
+    return "/chauchaubook/works";
+  }
   return id ? `/series?id=${encodeURIComponent(id)}` : "";
 }
 

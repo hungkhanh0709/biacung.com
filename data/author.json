@@ -1045,5 +1045,33 @@
     "work_ids": [
       "yuval-noah-harari-sapiens-a-brief-history-of-mankind"
     ]
+  },
+  {
+    "id": "khai-hung",
+    "name": "Khái Hưng",
+    "work_ids": [
+      "khai-hung-doi-mua-gio"
+    ]
+  },
+  {
+    "id": "nhat-linh",
+    "name": "Nhất Linh",
+    "work_ids": [
+      "khai-hung-doi-mua-gio"
+    ]
+  },
+  {
+    "id": "kawabata-yasunari",
+    "name": "Kawabata Yasunari",
+    "work_ids": [
+      "kawabata-yasunari-co-do"
+    ]
+  },
+  {
+    "id": "han-kang",
+    "name": "Han Kang",
+    "work_ids": [
+      "han-kang-we-do-not-part"
+    ]
   }
 ]
