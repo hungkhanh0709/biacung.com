@@ -1073,5 +1073,61 @@
     "work_ids": [
       "han-kang-we-do-not-part"
     ]
+  },
+  {
+    "id": "han-mac-tu",
+    "name": "Hàn Mặc Tử",
+    "work_ids": [
+      "han-mac-tu-tho-han-mac-tu"
+    ]
+  },
+  {
+    "id": "luu-trong-lu",
+    "name": "Lưu Trọng Lư",
+    "work_ids": [
+      "luu-trong-lu-tieng-thu"
+    ]
+  },
+  {
+    "id": "che-lan-vien",
+    "name": "Chế Lan Viên",
+    "work_ids": [
+      "che-lan-vien-dieu-tan"
+    ]
+  },
+  {
+    "id": "dinh-hung",
+    "name": "Đinh Hùng",
+    "work_ids": [
+      "dinh-hung-me-hon-ca"
+    ]
+  },
+  {
+    "id": "nguyen-binh",
+    "name": "Nguyễn Bính",
+    "work_ids": [
+      "nguyen-binh-lo-buoc-sang-ngang"
+    ]
+  },
+  {
+    "id": "bich-khe",
+    "name": "Bích Khê",
+    "work_ids": [
+      "bich-khe-tinh-huyet"
+    ]
+  },
+  {
+    "id": "vu-hoang-chuong",
+    "name": "Vũ Hoàng Chương",
+    "work_ids": [
+      "vu-hoang-chuong-tho-say"
+    ]
+  },
+  {
+    "id": "sabahattin-ali",
+    "name": "Sabahattin Ali",
+    "work_ids": [
+      "sabahattin-ali-kurk-mantolu-madonna"
+    ]
   }
 ]
