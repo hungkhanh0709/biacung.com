@@ -714,6 +714,12 @@
     "last_pub_year": 2024
   },
   {
+    "detail": "data/book/tran-trong-kim-viet-nam-su-luoc.json",
+    "search_text": "tran trong kim viet nam su luoc nxb hoi nha van nxb van hoc nha nam dong a s111 an ban ki niem 100 nam ngay tac pham ra doi 1920 2020",
+    "last_pub_year": 2023,
+    "updated_at": "2026-09-19"
+  },
+  {
     "detail": "data/book/johanna-spyri-heidi.json",
     "search_text": "heidi johanna spyri dong a classic dong a classics bo tui nxb van hoc dong a thanh van elena selivanova",
     "last_pub_year": 2023,
@@ -742,12 +748,6 @@
     "search_text": "nhung nguoi khon kho les miserables victor hugo dong a classic nxb van hoc dong a huynh ly vu dinh lien le tri vien do duc hieu gustave brion emile bayard",
     "last_pub_year": 2023,
     "updated_at": "2026-07-12"
-  },
-  {
-    "detail": "data/book/tran-trong-kim-viet-nam-su-luoc.json",
-    "search_text": "viet nam su luoc tran trong kim nxb van hoc dong a",
-    "last_pub_year": 2023,
-    "updated_at": "2026-07-11"
   },
   {
     "detail": "data/book/irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo.json",
@@ -850,6 +850,78 @@
     "search_text": "fools die mario puzo nxb van hoc đong a nguyen minh",
     "updated_at": "2026-06-30",
     "last_pub_year": 2022
+  },
+  {
+    "detail": "data/book/bui-duc-tien-cac-loai-chim-viet-nam.json",
+    "search_text": "bui duc tien nguyen manh hiep tang a pau tran anh tuan cac loai chim viet nam nxb the gioi nha nam s111",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-19"
+  },
+  {
+    "detail": "data/book/ho-dzenh-que-ngoai.json",
+    "search_text": "ho dzenh que ngoai nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-19"
+  },
+  {
+    "detail": "data/book/nguyen-binh-muoi-hai-ben-nuoc.json",
+    "search_text": "nguyen binh muoi hai ben nuoc nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-19"
+  },
+  {
+    "detail": "data/book/nguyen-binh-tam-hon-toi.json",
+    "search_text": "nguyen binh tam hon toi nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-19"
+  },
+  {
+    "detail": "data/book/nguyen-nhuoc-phap-ngay-xua.json",
+    "search_text": "nguyen nhuoc phap ngay xua nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-19"
+  },
+  {
+    "detail": "data/book/bich-khe-tinh-huyet.json",
+    "search_text": "bich khe tinh huyet nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-16"
+  },
+  {
+    "detail": "data/book/che-lan-vien-dieu-tan.json",
+    "search_text": "che lan vien dieu tan nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-16"
+  },
+  {
+    "detail": "data/book/dinh-hung-me-hon-ca.json",
+    "search_text": "dinh hung me hon ca nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-16"
+  },
+  {
+    "detail": "data/book/han-mac-tu-tho-han-mac-tu.json",
+    "search_text": "han mac tu tho han mac tu nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-16"
+  },
+  {
+    "detail": "data/book/luu-trong-lu-tieng-thu.json",
+    "search_text": "luu trong lu tieng thu nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-16"
+  },
+  {
+    "detail": "data/book/nguyen-binh-lo-buoc-sang-ngang.json",
+    "search_text": "nguyen binh lo buoc sang ngang nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-16"
+  },
+  {
+    "detail": "data/book/vu-hoang-chuong-tho-say.json",
+    "search_text": "vu hoang chuong tho say nxb hoi nha van nha nam viet nam danh tac tho nha nam bia cung gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-16"
   },
   {
     "detail": "data/book/dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do.json",

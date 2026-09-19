@@ -1106,7 +1106,9 @@
     "id": "nguyen-binh",
     "name": "Nguyễn Bính",
     "work_ids": [
-      "nguyen-binh-lo-buoc-sang-ngang"
+      "nguyen-binh-lo-buoc-sang-ngang",
+      "nguyen-binh-muoi-hai-ben-nuoc",
+      "nguyen-binh-tam-hon-toi"
     ]
   },
   {
@@ -1128,6 +1130,48 @@
     "name": "Sabahattin Ali",
     "work_ids": [
       "sabahattin-ali-kurk-mantolu-madonna"
+    ]
+  },
+  {
+    "id": "nguyen-nhuoc-phap",
+    "name": "Nguyễn Nhược Pháp",
+    "work_ids": [
+      "nguyen-nhuoc-phap-ngay-xua"
+    ]
+  },
+  {
+    "id": "ho-dzenh",
+    "name": "Hồ Dzếnh",
+    "work_ids": [
+      "ho-dzenh-que-ngoai"
+    ]
+  },
+  {
+    "id": "bui-duc-tien",
+    "name": "Bùi Đức Tiến",
+    "work_ids": [
+      "bui-duc-tien-cac-loai-chim-viet-nam"
+    ]
+  },
+  {
+    "id": "nguyen-manh-hiep",
+    "name": "Nguyễn Mạnh Hiệp",
+    "work_ids": [
+      "bui-duc-tien-cac-loai-chim-viet-nam"
+    ]
+  },
+  {
+    "id": "tang-a-pau",
+    "name": "Tăng A Pẩu",
+    "work_ids": [
+      "bui-duc-tien-cac-loai-chim-viet-nam"
+    ]
+  },
+  {
+    "id": "tran-anh-tuan",
+    "name": "Trần Anh Tuấn",
+    "work_ids": [
+      "bui-duc-tien-cac-loai-chim-viet-nam"
     ]
   }
 ]

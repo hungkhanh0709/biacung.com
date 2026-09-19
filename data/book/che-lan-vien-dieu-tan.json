@@ -1,0 +1,40 @@
+{
+  "id": "che-lan-vien-dieu-tan",
+  "title": "Điêu Tàn",
+  "title_original": "",
+  "authors": [
+    "Chế Lan Viên"
+  ],
+  "awards": [],
+  "series": [
+    "Việt Nam Danh Tác - Thơ (Nhã Nam)"
+  ],
+  "editions": [
+    {
+      "id": "che-lan-vien-dieu-tan-2021-nha-nam-bia-cung-ao-om-170k",
+      "isbn": null,
+      "series_ids": [
+        "viet-nam-danh-tac-tho-nha-nam"
+      ],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2021,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "170k",
+      "print_run": 555,
+      "page_count": null,
+      "copy_numbering": "001-555",
+      "size_cm": "18 x 22,5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/che-lan-vien-dieu-tan/thumbnail.jpg",
+      "gellery_imgs": [],
+      "detail": "- Sách bìa cứng, có bìa áo (jacket). Bìa áo in giấy couché matt định lượng 150gsm, tên sách và tên tác giả được phủ bóng.\n- Sách khổ 18x22,5 cm, in 4 màu trên giấy chất lượng cao định lượng 180 gsm, đây là định lượng cao nhất từng được Nhã Nam sử dụng cho loại giấy này. \n- Mỗi cuốn kèm theo một phụ bản tranh in riêng trên giấy Brilliant White Laid định lượng 120 gsm, dán vào sách.\n- Mỗi tập thơ gồm có 555 bản bìa cứng, được đánh số từ 1-555 và được đóng triện Nhã Nam Thư Xã, thiết kế riêng cho bộ sách Việt Nam danh tác."
+    }
+  ]
+}
