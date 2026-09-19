@@ -74,22 +74,18 @@ function buildSitemapEntries(rootDir) {
   const latestSeriesDate = publicSeriesEntries.map((entry) => entry.lastmod).filter(Boolean).sort().at(-1) || latestBookDate;
 
   return [
-    { loc: `${SITE_URL}/`, lastmod: latestBookDate, changefreq: "daily", priority: "1.0" },
-    { loc: `${SITE_URL}/about`, lastmod: today, changefreq: "monthly", priority: "0.6" },
-    { loc: `${SITE_URL}/chauchaubook`, lastmod: latestBookDate, changefreq: "monthly", priority: "0.8" },
-    { loc: `${SITE_URL}/chauchaubook/works`, lastmod: latestBookDate, changefreq: "weekly", priority: "0.8" },
-    { loc: `${SITE_URL}/series`, lastmod: latestSeriesDate, changefreq: "weekly", priority: "0.8" },
+    { loc: `${SITE_URL}/`, lastmod: latestBookDate },
+    { loc: `${SITE_URL}/about` },
+    { loc: `${SITE_URL}/chauchaubook` },
+    { loc: `${SITE_URL}/chauchaubook/works`, lastmod: latestBookDate },
+    { loc: `${SITE_URL}/series`, lastmod: latestSeriesDate },
     ...publicSeriesEntries.map((entry) => ({
       loc: `${SITE_URL}/series?id=${encodeURIComponent(entry.id)}`,
-      lastmod: entry.lastmod,
-      changefreq: "weekly",
-      priority: "0.7"
+      lastmod: entry.lastmod
     })),
     ...bookEntries.map((entry) => ({
       loc: `${SITE_URL}/detail?id=${encodeURIComponent(entry.slug)}`,
-      lastmod: entry.updatedAt || latestBookDate,
-      changefreq: "weekly",
-      priority: "0.7"
+      lastmod: entry.updatedAt || latestBookDate
     }))
   ];
 }
@@ -101,9 +97,9 @@ function buildSitemapXml(rootDir) {
   entries.forEach((entry) => {
     lines.push("  <url>");
     lines.push(`    <loc>${escapeXml(entry.loc)}</loc>`);
-    lines.push(`    <lastmod>${escapeXml(entry.lastmod)}</lastmod>`);
-    lines.push(`    <changefreq>${escapeXml(entry.changefreq)}</changefreq>`);
-    lines.push(`    <priority>${escapeXml(entry.priority)}</priority>`);
+    if (entry.lastmod) {
+      lines.push(`    <lastmod>${escapeXml(entry.lastmod)}</lastmod>`);
+    }
     lines.push("  </url>");
   });
 
