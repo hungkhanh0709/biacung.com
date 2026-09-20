@@ -2,10 +2,23 @@
   "id": "viet-nam-danh-tac-nha-nam",
   "name": "Việt Nam Danh Tác (Nhã Nam)",
   "description": "Việt Nam Danh Tác là dự án văn học của Nhã Nam nhằm phục dựng và giới thiệu lại các tinh túy văn học Việt Nam nửa đầu thế kỷ XX. Tuyển tập chú trọng in ấn toàn vẹn theo bản gốc, có cả bản thường và bìa cứng đặc biệt.",
-  "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/m/i/mieng-ngon-ha-noi_1_1.jpg",
+  "thumbnail": "/assets/img/series/viet-nam-danh-tac-nha-nam.jpg",
   "work_ids": [
     "khai-hung-doi-mua-gio",
     "vu-bang-mieng-ngon-ha-noi",
-    "thach-lam-ha-noi-bam-sau-pho-phuong"
+    "thach-lam-ha-noi-bam-sau-pho-phuong",
+    "vu-trong-phung-giong-to",
+    "trong-lang-ha-noi-lam-than",
+    "ngo-tat-to-leu-chong",
+    "the-lu-vang-va-mau",
+    "lan-khai-truyen-duong-rung",
+    "nam-cao-song-mon",
+    "khai-hung-tieu-son-trang-si",
+    "nguyen-hong-bi-vo",
+    "ngo-tat-to-tat-den",
+    "hoang-ngoc-phach-to-tam",
+    "vu-bang-40-nam-noi-lao",
+    "the-lu-trai-bo-tung-linh",
+    "ho-dzenh-chan-troi-cu"
   ]
 }

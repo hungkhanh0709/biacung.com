@@ -30,10 +30,39 @@
       "print_run": 20000,
       "page_count": 2848,
       "copy_numbering": null,
-      "size_cm": "20.7x14.8x14.2",
+      "size_cm": "20.7 x 14.8 x 14.2",
       "weight_g": 3000,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/a/n/anne-copy-1.jpg",
       "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "lucy-maud-montgomery-anne-of-green-gables-2022-nha-nam-boxset-bia-cung-2tr",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2022,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Boxset, bìa cứng",
+      "cover_price": "2tr",
+      "print_run": 500,
+      "page_count": 2848,
+      "copy_numbering": null,
+      "size_cm": "20.7 x 14.8 x 14.2",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/lucy-maud-montgomery-anne-of-green-gables/nha-nam-hardcover-boxset.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/lucy-maud-montgomery-anne-of-green-gables/nha-nam-hardcover-boxset-display.jpg",
+        "/assets/img/books/lucy-maud-montgomery-anne-of-green-gables/nha-nam-hardcover-book-spines-portraits.jpg",
+        "/assets/img/books/lucy-maud-montgomery-anne-of-green-gables/nha-nam-hardcover-book-covers.jpg",
+        "/assets/img/books/lucy-maud-montgomery-anne-of-green-gables/nha-nam-hardcover-book-cover-spine-back.jpg"
+      ],
       "detail": ""
     }
   ]

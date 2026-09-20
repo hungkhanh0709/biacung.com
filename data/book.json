@@ -1,5 +1,23 @@
 [
   {
+    "detail": "data/book/jose-mauro-de-vasconcelos-meu-pe-de-laranja-lima.json",
+    "search_text": "jose mauro de vasconcelos meu pe de laranja lima cay cam ngot cua toi nxb hoi nha van nha nam nguyen bich lan to yen ly s555 bia cung gioi han",
+    "updated_at": "2026-09-20",
+    "last_pub_year": 2026
+  },
+  {
+    "detail": "data/book/lucy-maud-montgomery-anne-of-green-gables.json",
+    "search_text": "lucy maud montgomery anne of green gables anne toc do nxb hoi nha van nha nam 50 nam fahasa boxset anne toc do hop 8 tap phien ban doc quyen 50 nam fahasa bia cung gioi han",
+    "updated_at": "2026-09-20",
+    "last_pub_year": 2026
+  },
+  {
+    "detail": "data/book/thach-lam-ha-noi-bam-sau-pho-phuong.json",
+    "search_text": "thach lam ha noi bam sau pho phuong nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "updated_at": "2026-09-20",
+    "last_pub_year": 2026
+  },
+  {
     "detail": "data/book/sabahattin-ali-kurk-mantolu-madonna.json",
     "search_text": "sabahattin ali kurk mantolu madonna duc me mac ao choang long nxb van hoc dong tay dao minh hiep bia cung h365",
     "last_pub_year": 2026,
@@ -360,12 +378,6 @@
     "last_pub_year": 2026
   },
   {
-    "detail": "data/book/jose-mauro-de-vasconcelos-meu-pe-de-laranja-lima.json",
-    "search_text": "cay cam ngot cua toi meu pe de laranja lima jose mauro de vasconcelos nxb hoi nha van nha nam nguyen bich lan to yen ly",
-    "updated_at": "2026-07-06",
-    "last_pub_year": 2026
-  },
-  {
     "detail": "data/book/miguel-de-cervantes-don-quijote-de-la-mancha.json",
     "search_text": "don quixote nha quy toc tai ba xu mancha don quijote de la mancha miguel de cervantes nxb hoi nha van nha nam truong dac vy",
     "updated_at": "2026-07-06",
@@ -392,12 +404,6 @@
   {
     "detail": "data/book/stephen-king-the-dead-zone.json",
     "search_text": "vung chet the dead zone stephen king nxb ha noi 1980 books hieu van",
-    "updated_at": "2026-07-06",
-    "last_pub_year": 2026
-  },
-  {
-    "detail": "data/book/thach-lam-ha-noi-bam-sau-pho-phuong.json",
-    "search_text": "thach lam ha noi bam sau pho phuong nxb hoi nha van nha nam viet nam danh tac nha nam",
     "updated_at": "2026-07-06",
     "last_pub_year": 2026
   },
@@ -434,12 +440,6 @@
   {
     "detail": "data/book/lev-tolstoy-anna-karenina.json",
     "search_text": "anna karenina lev tolstoy nxb hoi nha van nha nam duong tuong nhi ca",
-    "updated_at": "2026-07-05",
-    "last_pub_year": 2026
-  },
-  {
-    "detail": "data/book/lucy-maud-montgomery-anne-of-green-gables.json",
-    "search_text": "anne toc do anne of green gables lucy maud montgomery 50 nam fahasa nxb hoi nha van nha nam",
     "updated_at": "2026-07-05",
     "last_pub_year": 2026
   },
@@ -804,6 +804,90 @@
     "last_pub_year": 2023
   },
   {
+    "detail": "data/book/ho-dzenh-chan-troi-cu.json",
+    "search_text": "ho dzenh chan troi cu nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/hoang-ngoc-phach-to-tam.json",
+    "search_text": "hoang ngoc phach to tam nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/khai-hung-tieu-son-trang-si.json",
+    "search_text": "khai hung tieu son trang si nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/lan-khai-truyen-duong-rung.json",
+    "search_text": "lan khai truyen duong rung nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/nam-cao-song-mon.json",
+    "search_text": "nam cao song mon nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/ngo-tat-to-leu-chong.json",
+    "search_text": "ngo tat to leu chong nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/ngo-tat-to-tat-den.json",
+    "search_text": "ngo tat to tat den nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/nguyen-hong-bi-vo.json",
+    "search_text": "nguyen hong bi vo nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/the-lu-trai-bo-tung-linh.json",
+    "search_text": "the lu trai bo tung linh nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/the-lu-vang-va-mau.json",
+    "search_text": "the lu vang va mau nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/thomas-harris-boxset-hannibal.json",
+    "search_text": "thomas harris boxset hannibal nxb hoi nha van nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/trong-lang-ha-noi-lam-than.json",
+    "search_text": "trong lang ha noi lam than nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/vu-bang-40-nam-noi-lao.json",
+    "search_text": "vu bang 40 nam noi lao nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/vu-trong-phung-giong-to.json",
+    "search_text": "vu trong phung giong to nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
     "detail": "data/book/dk-nhung-tran-chien-thay-doi-lich-su.json",
     "search_text": "nhung tran chien thay doi lich su dk nxb dan tri dong a nguyen minh",
     "last_pub_year": 2022,
@@ -854,6 +938,12 @@
   {
     "detail": "data/book/e-h-gombrich-a-little-history-of-the-world.json",
     "search_text": "e h gombrich a little history of the world luoc su the gioi nxb hong duc nha nam phan linh lan s1000",
+    "last_pub_year": 2021,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/nguyen-xuan-khanh-chuyen-ngo-ngheo.json",
+    "search_text": "nguyen xuan khanh chuyen ngo ngheo nxb hoi nha van nha nam bia cung gioi han",
     "last_pub_year": 2021,
     "updated_at": "2026-09-20"
   },
