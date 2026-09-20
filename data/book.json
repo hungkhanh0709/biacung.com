@@ -804,6 +804,18 @@
     "last_pub_year": 2023
   },
   {
+    "detail": "data/book/daniel-keyes-flowers-for-algernon.json",
+    "search_text": "daniel keyes flowers for algernon hoa tren mo algernon nxb van hoc nha nam le khanh toan bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/gabriel-garcia-marquez-cien-anos-de-soledad.json",
+    "search_text": "gabriel garcia marquez cien anos de soledad tram nam co don nxb van hoc nha nam nguyen trung duc pham dinh loi nguyen quoc dung bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
     "detail": "data/book/ho-dzenh-chan-troi-cu.json",
     "search_text": "ho dzenh chan troi cu nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
     "last_pub_year": 2022,
@@ -824,6 +836,18 @@
   {
     "detail": "data/book/lan-khai-truyen-duong-rung.json",
     "search_text": "lan khai truyen duong rung nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/mario-vargas-llosa-conversacion-en-la-catedral.json",
+    "search_text": "mario vargas llosa conversacion en la catedral tro chuyen trong quan la catedral nxb van hoc nha nam pham van bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/mario-vargas-llosa-la-ciudad-y-los-perros.json",
+    "search_text": "mario vargas llosa la ciudad y los perros thanh pho va lu cho nxb van hoc nha nam le xuan quynh bia cung gioi han",
     "last_pub_year": 2022,
     "updated_at": "2026-09-20"
   },

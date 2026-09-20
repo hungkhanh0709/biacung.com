@@ -1,0 +1,44 @@
+{
+  "id": "gabriel-garcia-marquez-cien-anos-de-soledad",
+  "title": "Trăm năm cô đơn",
+  "title_original": "Cien años de soledad",
+  "authors": [
+    "Gabriel García Márquez"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "gabriel-garcia-marquez-cien-anos-de-soledad-2022-nha-nam-bia-cung-ao-om-269k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2022,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Nguyễn Trung Đức",
+        "Phạm Đình Lợi",
+        "Nguyễn Quốc Dũng"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "269k",
+      "print_run": null,
+      "page_count": 492,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/gabriel-garcia-marquez-cien-anos-de-soledad/nha-nam-hardcover-cover-standing.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/gabriel-garcia-marquez-cien-anos-de-soledad/nha-nam-hardcover-cover-angle.jpg",
+        "/assets/img/books/gabriel-garcia-marquez-cien-anos-de-soledad/nha-nam-hardcover-endpaper.jpg",
+        "/assets/img/books/gabriel-garcia-marquez-cien-anos-de-soledad/nha-nam-hardcover-family-tree.jpg"
+      ],
+      "detail": ""
+    }
+  ]
+}
