@@ -1249,5 +1249,12 @@
     "work_ids": [
       "hoang-ngoc-phach-to-tam"
     ]
+  },
+  {
+    "id": "daniel-keyes",
+    "name": "Daniel Keyes",
+    "work_ids": [
+      "daniel-keyes-flowers-for-algernon"
+    ]
   }
 ]
