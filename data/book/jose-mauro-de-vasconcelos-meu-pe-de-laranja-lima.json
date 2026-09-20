@@ -32,6 +32,63 @@
       "weight_g": 260,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/i/m/image_217480_1.jpg",
       "gellery_imgs": [],
+      "detail": "",
+      "series_ids": []
+    },
+    {
+      "id": "jose-mauro-de-vasconcelos-meu-pe-de-laranja-lima-2021-nha-nam-bia-da-pu-620k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S555",
+      "pub_year": 2021,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Nguyễn Bích Lan",
+        "Tô Yến Ly"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da pu",
+      "cover_price": "620k",
+      "print_run": 555,
+      "page_count": 244,
+      "copy_numbering": "001-555",
+      "size_cm": "14 x 20,5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/jose-mauro-de-vasconcelos-meu-pe-de-laranja-lima/nha-nam-s555-book-set.jpg",
+      "gellery_imgs": [],
+      "detail": "- Bìa sách được làm từ da PU, màu lục sẫm (Midnight Green).\n- Bìa trước gồm minh họa cây cam ở chính giữa và minh họa mặt trời ở bốn cạnh, bìa sau có hình minh họa cậu bé Zezé, do họa sĩ thiết kế.\n- Tên sách, tên tác giả, cùng với minh họa chính, các họa tiết phụ ở bìa trước và bìa sau được ép nhũ màu cam ánh đồng với công nghệ cao tần, sắc nét, bền đẹp. \n- Gáy sách gồm tên sách, tên tác giả, logo Nhã Nam và họa tiết dây hoa cam ép nhũ màu cam đồng bộ với bìa.\n- Cạnh sách được sơn màu cam neon cả ba cạnh.\n- Sách dày 240 trang, in khổ 14 x20,5 cm, ruột được in trên giấy tốt màu ngà, định lượng 100gsm.\n- Tờ gác in họa tiết hoa cam cách điệu\n- Sách đựng trong hộp bồi thủ công trên carton 3 ly, in họa tiết hoa cam đồng bộ với tờ gác. Tên sách, tên tác giả trên hộp được ép nhũ cam ánh đồng, giống bìa sách.\n- Các ấn bản cao cấp giới hạn này sẽ chỉ in duy nhất một lần 555 bản, được đánh số từ 1-555 và được đóng triện Nhã Nam thiết kế riêng."
+    },
+    {
+      "id": "jose-mauro-de-vasconcelos-meu-pe-de-laranja-lima-2021-nha-nam-bia-cung-ao-om-150k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2021,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Nguyễn Bích Lan",
+        "Tô Yến Ly"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "150K",
+      "print_run": null,
+      "page_count": 244,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/jose-mauro-de-vasconcelos-meu-pe-de-laranja-lima/nha-nam-hardcover-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/jose-mauro-de-vasconcelos-meu-pe-de-laranja-lima/nha-nam-hardcover-lifestyle.jpg"
+      ],
       "detail": ""
     }
   ]

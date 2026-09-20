@@ -1,9 +1,9 @@
 {
-  "id": "thach-lam-ha-noi-bam-sau-pho-phuong",
-  "title": "Hà Nội Băm Sáu Phố Phường",
+  "id": "hoang-ngoc-phach-to-tam",
+  "title": "Tố Tâm",
   "title_original": "",
   "authors": [
-    "Thạch Lam"
+    "Hoàng Ngọc Phách"
   ],
   "awards": [],
   "series": [
@@ -11,33 +11,7 @@
   ],
   "editions": [
     {
-      "id": "thach-lam-ha-noi-bam-sau-pho-phuong-2026-nha-nam-bia-mem-60k",
-      "isbn": null,
-      "series_ids": [
-        "viet-nam-danh-tac-nha-nam"
-      ],
-      "caption": "",
-      "pub_year": 2026,
-      "publisher": "NXB Hội Nhà Văn",
-      "issuers": [
-        "Nhã Nam"
-      ],
-      "translators": [],
-      "illustrators": [],
-      "proofreaders": [],
-      "format": "Bìa mềm",
-      "cover_price": "60k",
-      "print_run": null,
-      "page_count": 124,
-      "copy_numbering": null,
-      "size_cm": "20.5 x 14 x 0.7",
-      "weight_g": 150,
-      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/h/a/hanoibamsauphophuong1.jpg",
-      "gellery_imgs": [],
-      "detail": ""
-    },
-    {
-      "id": "thach-lam-ha-noi-bam-sau-pho-phuong-2022-nha-nam-bia-cung-ao-om-145k",
+      "id": "hoang-ngoc-phach-to-tam-2022-nha-nam-bia-cung-ao-om-165k",
       "isbn": null,
       "series_ids": [
         "viet-nam-danh-tac-nha-nam"
@@ -52,13 +26,13 @@
       "illustrators": [],
       "proofreaders": [],
       "format": "Bìa cứng áo ôm",
-      "cover_price": "145k",
+      "cover_price": "165k",
       "print_run": 555,
-      "page_count": 120,
+      "page_count": 150,
       "copy_numbering": "001-555",
       "size_cm": "14,5 x 20,5",
       "weight_g": null,
-      "thumbnail": "/assets/img/books/thach-lam-ha-noi-bam-sau-pho-phuong/nha-nam-viet-nam-danh-tac-cover-photo.jpg",
+      "thumbnail": "/assets/img/books/hoang-ngoc-phach-to-tam/thumbnail.jpg",
       "gellery_imgs": [],
       "detail": "- Mỗi tựa sách trên sẽ có 555 bản bìa cứng, được đánh số từ 1-555 và được đóng triện Nhã Nam Thư Xã, thiết kế riêng cho bộ sách Việt Nam danh tác.\n- Sách bìa cứng, có bìa áo (jacket). Bìa áo in giấy couché matt cán mờ định lượng 150gsm, tên sách, tên tác giả và bộ Việt Nam danh tác được phủ bóng.\n- Sách khổ 14,5x20,5 cm, in trên giấy tốt định lượng 100 gsm."
     }
