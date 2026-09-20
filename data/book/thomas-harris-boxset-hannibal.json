@@ -1,0 +1,40 @@
+{
+  "id": "thomas-harris-boxset-hannibal",
+  "title": "Boxset Hannibal",
+  "title_original": "",
+  "authors": [
+    "Thomas Harris"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "thomas-harris-boxset-hannibal-2022-nha-nam-boxset-bia-cung-975k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2022,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Boxset, bìa cứng",
+      "cover_price": "975k",
+      "print_run": 300,
+      "page_count": 1400,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/thomas-harris-boxset-hannibal/nha-nam-boxset-cover-standing.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/thomas-harris-boxset-hannibal/nha-nam-boxset-cover-detail.jpg",
+        "/assets/img/books/thomas-harris-boxset-hannibal/nha-nam-boxset-book-spines.jpg",
+        "/assets/img/books/thomas-harris-boxset-hannibal/nha-nam-boxset-book-removal.jpg"
+      ],
+      "detail": "- Gồm 4 tác phẩm Sự im lặng của bầy cừu, Rồng đỏ, Hannibal, Hannibal trỗi dậy\n- Bìa cứng in trên giấy 100gsm ngà vàng"
+    }
+  ]
+}

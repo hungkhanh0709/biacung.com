@@ -1,0 +1,36 @@
+{
+  "id": "nguyen-xuan-khanh-chuyen-ngo-ngheo",
+  "title": "Chuyện Ngõ Nghèo",
+  "title_original": "",
+  "authors": [
+    "Nguyễn Xuân Khánh"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "nguyen-xuan-khanh-chuyen-ngo-ngheo-2021-nha-nam-bia-cung-ao-om-220k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2021,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "220K",
+      "print_run": null,
+      "page_count": 320,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/nguyen-xuan-khanh-chuyen-ngo-ngheo/thumbnail.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

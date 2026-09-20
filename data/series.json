@@ -60,6 +60,10 @@
     "detail": "data/series/dau-an-10-nam-omega.json"
   },
   {
+    "id": "viet-nam-danh-tac-nha-nam",
+    "detail": "data/series/viet-nam-danh-tac-nha-nam.json"
+  },
+  {
     "id": "viet-nam-danh-tac-tho-nha-nam",
     "detail": "data/series/viet-nam-danh-tac-tho-nha-nam.json"
   }

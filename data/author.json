@@ -433,7 +433,8 @@
     "name": "Thomas Harris",
     "work_ids": [
       "thomas-harris-hannibal-rising",
-      "thomas-harris-hannibal"
+      "thomas-harris-hannibal",
+      "thomas-harris-boxset-hannibal"
     ]
   },
   {
@@ -1050,7 +1051,8 @@
     "id": "khai-hung",
     "name": "Khái Hưng",
     "work_ids": [
-      "khai-hung-doi-mua-gio"
+      "khai-hung-doi-mua-gio",
+      "khai-hung-tieu-son-trang-si"
     ]
   },
   {
@@ -1179,6 +1181,70 @@
     "name": "E. H. Gombrich",
     "work_ids": [
       "e-h-gombrich-a-little-history-of-the-world"
+    ]
+  },
+  {
+    "id": "nguyen-xuan-khanh",
+    "name": "Nguyễn Xuân Khánh",
+    "work_ids": [
+      "nguyen-xuan-khanh-chuyen-ngo-ngheo"
+    ]
+  },
+  {
+    "id": "vu-trong-phung",
+    "name": "Vũ Trọng Phụng",
+    "work_ids": [
+      "vu-trong-phung-giong-to"
+    ]
+  },
+  {
+    "id": "trong-lang",
+    "name": "Trọng Lang",
+    "work_ids": [
+      "trong-lang-ha-noi-lam-than"
+    ]
+  },
+  {
+    "id": "ngo-tat-to",
+    "name": "Ngô Tất Tố",
+    "work_ids": [
+      "ngo-tat-to-leu-chong",
+      "ngo-tat-to-tat-den"
+    ]
+  },
+  {
+    "id": "the-lu",
+    "name": "Thế Lữ",
+    "work_ids": [
+      "the-lu-vang-va-mau"
+    ]
+  },
+  {
+    "id": "lan-khai",
+    "name": "Lan Khai",
+    "work_ids": [
+      "lan-khai-truyen-duong-rung"
+    ]
+  },
+  {
+    "id": "nam-cao",
+    "name": "Nam Cao",
+    "work_ids": [
+      "nam-cao-song-mon"
+    ]
+  },
+  {
+    "id": "nguyen-hong",
+    "name": "Nguyên Hồng",
+    "work_ids": [
+      "nguyen-hong-bi-vo"
+    ]
+  },
+  {
+    "id": "hoang-ngoc-phach",
+    "name": "Hoàng Ngọc Phách",
+    "work_ids": [
+      "hoang-ngoc-phach-to-tam"
     ]
   }
 ]
