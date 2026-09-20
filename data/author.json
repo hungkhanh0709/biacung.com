@@ -1173,5 +1173,12 @@
     "work_ids": [
       "bui-duc-tien-cac-loai-chim-viet-nam"
     ]
+  },
+  {
+    "id": "e-h-gombrich",
+    "name": "E. H. Gombrich",
+    "work_ids": [
+      "e-h-gombrich-a-little-history-of-the-world"
+    ]
   }
 ]
