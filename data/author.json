@@ -1256,5 +1256,20 @@
     "work_ids": [
       "daniel-keyes-flowers-for-algernon"
     ]
+  },
+  {
+    "id": "gabriel-garcia-marquez",
+    "name": "Gabriel García Márquez",
+    "work_ids": [
+      "gabriel-garcia-marquez-cien-anos-de-soledad"
+    ]
+  },
+  {
+    "id": "mario-vargas-llosa",
+    "name": "Mario Vargas Llosa",
+    "work_ids": [
+      "mario-vargas-llosa-conversacion-en-la-catedral",
+      "mario-vargas-llosa-la-ciudad-y-los-perros"
+    ]
   }
 ]
