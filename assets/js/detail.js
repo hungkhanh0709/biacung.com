@@ -131,7 +131,9 @@ function getEditionCaption(book, edition) {
 function fetchJson(url) {
   return fetch(url, { cache: "no-store" }).then((response) => {
     if (!response.ok) {
-      throw new Error(`Failed to fetch ${url}`);
+      const error = new Error(`Failed to fetch ${url}`);
+      error.status = response.status;
+      throw error;
     }
 
     return response.json();
@@ -870,6 +872,31 @@ function renderActiveEdition() {
   updateSeoMetadata(currentBook, edition);
 }
 
+function getSchemaBookFormat(edition) {
+  const value = `${normalizeText(edition?.format)} ${normalizeText(edition?.caption)}`;
+  if (/bìa cứng|hardcover/i.test(value)) {
+    return "https://schema.org/Hardcover";
+  }
+  if (/bìa mềm|paperback/i.test(value)) {
+    return "https://schema.org/Paperback";
+  }
+  return undefined;
+}
+
+function getValidIsbn13(value) {
+  const isbn = normalizeText(value).replace(/[-\s]/g, "");
+  if (!/^\d{13}$/.test(isbn)) {
+    return undefined;
+  }
+
+  const weightedSum = isbn
+    .slice(0, 12)
+    .split("")
+    .reduce((sum, digit, index) => sum + Number(digit) * (index % 2 === 0 ? 1 : 3), 0);
+  const checkDigit = (10 - (weightedSum % 10)) % 10;
+  return checkDigit === Number(isbn[12]) ? isbn : undefined;
+}
+
 function updateSeoMetadata(book, edition) {
   const seo = window.BiaCungSEO;
   if (!seo || !book || !edition) {
@@ -896,6 +923,7 @@ function updateSeoMetadata(book, edition) {
   const seriesNames = dedupeStrings(book.series);
   const publisherName = normalizeText(edition.publisher);
   const keywords = collectBookTags(book).slice(0, 24).join(", ");
+  const editions = Array.isArray(book.editions) ? book.editions : [];
 
   seo.setCanonical(pagePath);
   seo.setMetaByName("description", description);
@@ -958,7 +986,7 @@ function updateSeoMetadata(book, edition) {
           name
         })),
         bookEdition: editionName,
-        bookFormat: normalizeText(edition.format) || undefined,
+        bookFormat: getSchemaBookFormat(edition),
         datePublished: normalizeText(edition.pub_year) || undefined,
         publisher: publisherName
           ? {
@@ -966,19 +994,24 @@ function updateSeoMetadata(book, edition) {
             name: publisherName
           }
           : undefined,
-        workExample: {
+        workExample: editions.map((bookEdition, index) => ({
           "@type": "Book",
-          name: displayTitle,
-          bookEdition: editionName,
-          bookFormat: normalizeText(edition.format) || undefined,
-          datePublished: normalizeText(edition.pub_year) || undefined,
-          publisher: publisherName
+          "@id": `${seo.toAbsoluteUrl(`/detail?id=${encodeURIComponent(book.id)}`)}#edition-${encodeURIComponent(normalizeText(bookEdition.id) || index + 1)}`,
+          name: getEditionTitle(book, bookEdition),
+          url: seo.toAbsoluteUrl(getEditionPagePath(book, bookEdition)),
+          image: seo.toAbsoluteUrl(normalizeUrl(bookEdition.thumbnail)) || undefined,
+          isbn: getValidIsbn13(bookEdition.isbn),
+          bookEdition: getEditionCaption(book, bookEdition) || normalizeText(bookEdition.format) || undefined,
+          bookFormat: getSchemaBookFormat(bookEdition),
+          datePublished: normalizeText(bookEdition.pub_year) || undefined,
+          inLanguage: "vi",
+          publisher: normalizeText(bookEdition.publisher)
             ? {
               "@type": "Organization",
-              name: publisherName
+              name: normalizeText(bookEdition.publisher)
             }
             : undefined
-        }
+        }))
       }
     ]
   });
@@ -1029,6 +1062,7 @@ async function main() {
   window.BiaCungPageLoader?.handoff("Đang tải chi tiết sách...");
 
   if (!bookId) {
+    window.BiaCungSEO?.setMetaByName("robots", "noindex,follow");
     setPageState("empty");
     window.BiaCungPageLoader?.hide();
     return;
@@ -1044,6 +1078,9 @@ async function main() {
 
     renderBook(book);
   } catch (error) {
+    if (error?.status === 404) {
+      window.BiaCungSEO?.setMetaByName("robots", "noindex,follow");
+    }
     setPageState("empty");
   } finally {
     window.BiaCungPageLoader?.hide();

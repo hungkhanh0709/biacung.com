@@ -254,6 +254,8 @@ function auditSitemap(rootDir, errors) {
   pushIfMissing(errors, entries.some((entry) => entry.loc.includes("/series?id=")), "sitemap.xml does not include series detail URLs");
   pushIfMissing(errors, !entries.some((entry) => entry.loc.includes("/search")), "sitemap.xml should not include search result pages");
   pushIfMissing(errors, !entries.some((entry) => entry.loc.includes(".html")), "sitemap.xml contains legacy .html URLs");
+  pushIfMissing(errors, !current.includes("<changefreq>"), "sitemap.xml contains changefreq values ignored by Google");
+  pushIfMissing(errors, !current.includes("<priority>"), "sitemap.xml contains priority values ignored by Google");
 }
 
 function auditData(rootDir, errors, warnings) {
