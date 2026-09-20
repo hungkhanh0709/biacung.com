@@ -654,6 +654,12 @@
     "last_pub_year": 2025
   },
   {
+    "detail": "data/book/jacob-ludwig-karl-grimm-kinder-und-hausmarchen.json",
+    "search_text": "jacob ludwig karl grimm wilhelm carl grimm kinder und hausmarchen truyen co grimm nxb ha noi nxb van hoc nha nam dong a lan young huu ngoc dong a classic s300",
+    "last_pub_year": 2024,
+    "updated_at": "2026-09-20"
+  },
+  {
     "detail": "data/book/edmondo-de-amicis-cuore.json",
     "search_text": "edmondo de amicis cuore nhung tam long cao ca tam hon cao thuong nxb van hoc dong a dinh tran lien huong hoang thieu son dong a classics bo tui dong a classics bia vai",
     "last_pub_year": 2024,
@@ -668,12 +674,6 @@
   {
     "detail": "data/book/antoine-galland-nghin-le-mot-dem.json",
     "search_text": "nghin le mot dem antoine galland dong a classic nxb van hoc dong a phan quang",
-    "last_pub_year": 2024,
-    "updated_at": "2026-07-11"
-  },
-  {
-    "detail": "data/book/jacob-ludwig-karl-grimm-kinder-und-hausmarchen.json",
-    "search_text": "truyen co grimm kinder und hausmarchen jacob ludwig karl grimm wilhelm carl grimm dong a classic nxb van hoc dong a huu ngoc",
     "last_pub_year": 2024,
     "updated_at": "2026-07-11"
   },
@@ -802,6 +802,12 @@
     "search_text": "đat mau sicily the sicilian mario puzo nxb van hoc đong a đang thu",
     "updated_at": "2026-07-02",
     "last_pub_year": 2023
+  },
+  {
+    "detail": "data/book/bernard-werber-boxset-kien.json",
+    "search_text": "bernard werber boxset kien nxb hoi nha van nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
   },
   {
     "detail": "data/book/daniel-keyes-flowers-for-algernon.json",
