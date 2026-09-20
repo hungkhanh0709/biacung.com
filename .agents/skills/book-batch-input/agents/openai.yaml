@@ -1,0 +1,4 @@
+interface:
+  display_name: "Book Input with Chrome"
+  short_description: "Open book-input and fill known book fields"
+  default_prompt: "Use $book-batch-input to open book-input with Chrome MCP, fill the known fields below, and stop before saving so I can finish it."
