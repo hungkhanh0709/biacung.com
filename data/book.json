@@ -804,6 +804,18 @@
     "last_pub_year": 2023
   },
   {
+    "detail": "data/book/ho-dzenh-chan-troi-cu.json",
+    "search_text": "ho dzenh chan troi cu nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/hoang-ngoc-phach-to-tam.json",
+    "search_text": "hoang ngoc phach to tam nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
     "detail": "data/book/khai-hung-tieu-son-trang-si.json",
     "search_text": "khai hung tieu son trang si nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
     "last_pub_year": 2022,
@@ -840,6 +852,12 @@
     "updated_at": "2026-09-20"
   },
   {
+    "detail": "data/book/the-lu-trai-bo-tung-linh.json",
+    "search_text": "the lu trai bo tung linh nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
     "detail": "data/book/the-lu-vang-va-mau.json",
     "search_text": "the lu vang va mau nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
     "last_pub_year": 2022,
@@ -854,6 +872,12 @@
   {
     "detail": "data/book/trong-lang-ha-noi-lam-than.json",
     "search_text": "trong lang ha noi lam than nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-09-20"
+  },
+  {
+    "detail": "data/book/vu-bang-40-nam-noi-lao.json",
+    "search_text": "vu bang 40 nam noi lao nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
     "last_pub_year": 2022,
     "updated_at": "2026-09-20"
   },
@@ -1366,11 +1390,5 @@
     "search_text": "tong thong k thu tu the fourth k mario puzo nxb van hoc đong a orkid",
     "updated_at": "2026-06-30",
     "last_pub_year": ""
-  },
-  {
-    "detail": "data/book/hoang-ngoc-phach-to-tam.json",
-    "search_text": "hoang ngoc phach to tam nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
-    "last_pub_year": 2022,
-    "updated_at": "2026-09-20"
   }
 ]

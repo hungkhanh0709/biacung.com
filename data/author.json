@@ -526,7 +526,8 @@
     "id": "vu-bang",
     "name": "Vũ Bằng",
     "work_ids": [
-      "vu-bang-mieng-ngon-ha-noi"
+      "vu-bang-mieng-ngon-ha-noi",
+      "vu-bang-40-nam-noi-lao"
     ]
   },
   {
@@ -1145,7 +1146,8 @@
     "id": "ho-dzenh",
     "name": "Hồ Dzếnh",
     "work_ids": [
-      "ho-dzenh-que-ngoai"
+      "ho-dzenh-que-ngoai",
+      "ho-dzenh-chan-troi-cu"
     ]
   },
   {
@@ -1216,7 +1218,8 @@
     "id": "the-lu",
     "name": "Thế Lữ",
     "work_ids": [
-      "the-lu-vang-va-mau"
+      "the-lu-vang-va-mau",
+      "the-lu-trai-bo-tung-linh"
     ]
   },
   {
