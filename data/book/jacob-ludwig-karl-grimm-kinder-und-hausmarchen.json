@@ -34,7 +34,38 @@
       "weight_g": 660,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8936203364613.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
+    },
+    {
+      "id": "jacob-ludwig-karl-grimm-kinder-und-hausmarchen-2022-nha-nam-bia-da-pu-2tr3",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S300",
+      "pub_year": 2022,
+      "publisher": "NXB Hà Nội",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Lan Young"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da pu",
+      "cover_price": "2tr3",
+      "print_run": 300,
+      "page_count": 888,
+      "copy_numbering": "001-300",
+      "size_cm": "15.5 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/jacob-ludwig-karl-grimm-kinder-und-hausmarchen/nha-nam-s300-book-set-standing.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/jacob-ludwig-karl-grimm-kinder-und-hausmarchen/nha-nam-s300-front-covers-and-box.jpg",
+        "/assets/img/books/jacob-ludwig-karl-grimm-kinder-und-hausmarchen/nha-nam-s300-gilt-fore-edges-and-box.jpg",
+        "/assets/img/books/jacob-ludwig-karl-grimm-kinder-und-hausmarchen/nha-nam-s300-spines-detail.jpg"
+      ],
+      "detail": "- Bìa sách được làm từ da PU, tập 1 màu xanh biển, tập 2 màu đỏ đô, bồi trên carton 3 li\n- Bìa trước tập 1 lấy cảm hứng từ truyện “Hoàng tử ếch”, bìa sau từ truyện “Con chim vàng”, bìa trước tập 2 lấy cảm hứng từ truyện “Sáu con thiên nga”, bìa sau từ truyện “Cây bách xù”, họa tiết phụ viền bốn góc. Tên sách, tên tác giả, cùng với minh họa chính, các họa tiết phụ cùng khung viền bìa sách được ép nhũ vàng tây với công nghệ cao tần, sắc nét, bền đẹp; lồng ghép với các họa tiết dập chìm.\n- Gáy sách 2 tập được thiết kế ghép liên hoàn, tạo thành họa tiết mặt trăng ôm mặt trời, gồm tên sách, tên tác giả, minh họa, cùng logo Nhã Nam ép nhũ vàng tây, lồng ghép với các họa tiết dập chìm. \n- Cạnh sách được ép nhũ vàng tây cả ba cạnh.\n- Sách in khổ 15,5x24 cm, ruột được in 2 màu trên giấy tốt định lượng 100gsm. Tập 1 dày 464 trang, tập 2 dày 424 trang.\n- Sách đựng trong hộp bồi thủ công trên carton 3 li, in họa tiết cẩm thạch. Tên sách, tên tác giả và họa tiết mặt trời cách điệu trên hộp được ép nhũ vàng tây, đồng bộ với bìa sách.\n- Ấn bản cao cấp giới hạn này sẽ chỉ in duy nhất một lần 300 bản, được đánh số từ 1-300, tất cả đều được đóng triện Nhã Nam."
     }
   ]
 }
