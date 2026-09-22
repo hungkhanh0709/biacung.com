@@ -1271,5 +1271,12 @@
       "mario-vargas-llosa-conversacion-en-la-catedral",
       "mario-vargas-llosa-la-ciudad-y-los-perros"
     ]
+  },
+  {
+    "id": "bernard-werber",
+    "name": "Bernard Werber",
+    "work_ids": [
+      "bernard-werber-boxset-kien"
+    ]
   }
 ]
