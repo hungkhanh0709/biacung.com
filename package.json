@@ -4,9 +4,10 @@
   "version": "1.0.0",
   "scripts": {
     "sort-book": "node script/sort-book.js",
+    "generate-award-pages": "node script/generate-award-pages.js",
     "generate-sitemap": "node script/generate-sitemap.js",
     "audit:release": "node script/release-audit.js",
-    "release:check": "npm run generate-sitemap && npm run audit:release",
+    "release:check": "npm run generate-award-pages && npm run generate-sitemap && npm run audit:release",
     "book-gen-server": "node script/book-generator-server.js",
     "static-server": "node script/static-server.js"
   }
