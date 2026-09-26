@@ -165,14 +165,27 @@
             ]
         },
         "2021": {
+            "announced_on": "2021-06-11",
+            "source_url": "https://www.pulitzer.org/winners/louise-erdrich",
             "laureates": [
                 {
                     "name": "Louise Erdrich",
+                    "profile_url": "https://www.pulitzer.org/winners/louise-erdrich",
                     "work": {
                         "id": "louise-erdrich-the-night-watchman",
-                        "title": "The Night Watchman"
+                        "title": "The Night Watchman",
+                        "work_url": "https://www.pulitzer.org/winners/louise-erdrich",
+                        "publisher": "Harper",
+                        "published_year": 2020,
+                        "cover": {
+                            "src": "assets/img/awards/2021-the-night-watchman.jpg",
+                            "alt": "Bìa tiểu thuyết The Night Watchman của Louise Erdrich",
+                            "source_url": "https://www.pulitzer.org/cms/sites/default/files/content/9780062671196_a69921b1-0213-4a8d-8d9c-3126042824d9.jpg"
+                        }
                     },
                     "birth_state": "Minnesota",
+                    "prize_amount": "$15,000",
+                    "citation_vi": "Một tiểu thuyết đa thanh, tráng lệ về nỗ lực của một cộng đồng nhằm ngăn chặn kế hoạch di dời và xóa bỏ một số bộ lạc người Mỹ bản địa vào thập niên 1950, được thể hiện bằng sự khéo léo và trí tưởng tượng.",
                     "citation": "A majestic, polyphonic novel about a community's efforts to halt the proposed displacement and elimination of several Native American tribes in the 1950s, rendered with dexterity and imagination"
                 }
             ]
