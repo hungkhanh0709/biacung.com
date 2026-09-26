@@ -1,4 +1,5 @@
 {
+    "updated_at": "2026-09-26",
     "award_info": {
         "id": "us_pulitzer_fiction",
         "name": "Giải Pulitzer cho Tiểu thuyết",
@@ -15,65 +16,151 @@
         "notes": "Từ 1918-1947 gọi là 'Pulitzer Prize for the Novel'. Từ 1948 đổi tên thành 'Pulitzer Prize for Fiction' và mở rộng cho cả truyện ngắn, novella"
     },
     "laureates_by_year": {
+        "2026": {
+            "announced_on": "2026-05-04",
+            "source_url": "https://www.pulitzer.org/winners/daniel-kraus",
+            "laureates": [
+                {
+                    "name": "Daniel Kraus",
+                    "profile_url": "https://www.pulitzer.org/winners/daniel-kraus",
+                    "work": {
+                        "id": "daniel-kraus-angel-down",
+                        "title": "Angel Down",
+                        "work_url": "https://www.simonandschuster.com/books/Angel-Down-%28Pulitzer-Prize-Winner%29/Daniel-Kraus/9781668068458",
+                        "publisher": "Atria Books",
+                        "published_year": 2025,
+                        "cover": {
+                            "src": "assets/img/awards/2026-angel-down.jpg",
+                            "alt": "Bìa tiểu thuyết Angel Down của Daniel Kraus",
+                            "source_url": "https://www.simonandschuster.com/books/Angel-Down-%28Pulitzer-Prize-Winner%29/Daniel-Kraus/9781668068458"
+                        }
+                    },
+                    "citation": "A breathless novel of World War I, a stylistic tour-de-force that blends such genres as allegory, magical realism and science fiction into a cohesive whole, told in a single sentence.",
+                    "citation_vi": "Một tiểu thuyết nghẹt thở về Thế chiến thứ nhất, một màn trình diễn bậc thầy về phong cách, kết hợp ngụ ngôn, hiện thực huyền ảo và khoa học viễn tưởng thành một chỉnh thể liền mạch được kể trong một câu duy nhất.",
+                    "prize_amount": "$15,000"
+                }
+            ]
+        },
         "2025": {
+            "announced_on": "2025-05-05",
+            "source_url": "https://www.pulitzer.org/prize-winners-by-year/2025",
             "laureates": [
                 {
                     "name": "Percival Everett",
+                    "profile_url": "https://www.pulitzer.org/node/percival-everett-0",
                     "birth_state": "Georgia",
                     "work": {
                         "id": "percival-everett-james",
-                        "title": "James"
+                        "title": "James",
+                        "publisher": "Doubleday",
+                        "published_year": 2024,
+                        "cover": {
+                            "src": "assets/img/awards/2025-james.jpg",
+                            "alt": "Bìa tiểu thuyết James của Percival Everett",
+                            "source_url": "https://openlibrary.org/isbn/9780385550369"
+                        }
                     },
-                    "citation": "An accomplished reconsideration of 'Huckleberry Finn' that gives agency to Jim to illustrate the absurdity of racial supremacy and provide a new take on the search for family and freedom"
+                    "citation": "An accomplished reconsideration of 'Huckleberry Finn' that gives agency to Jim to illustrate the absurdity of racial supremacy and provide a new take on the search for family and freedom",
+                    "citation_vi": "Một cách nhìn lại đầy thuyết phục về Huckleberry Finn, trao tiếng nói chủ động cho Jim để phơi bày sự phi lý của chủ nghĩa thượng đẳng chủng tộc, đồng thời mở ra một góc nhìn mới về hành trình tìm kiếm gia đình và tự do."
                 }
             ]
         },
         "2024": {
+            "announced_on": "2024-05-06",
+            "source_url": "https://www.pulitzer.org/winners/jayne-anne-phillips",
             "laureates": [
                 {
                     "name": "Jayne Anne Phillips",
+                    "profile_url": "https://www.pulitzer.org/winners/jayne-anne-phillips",
                     "work": {
                         "id": "jayne-anne-phillips-night-watch",
-                        "title": "Night Watch"
+                        "title": "Night Watch",
+                        "work_url": "https://www.penguinrandomhouse.com/books/540650/night-watch-pulitzer-prize-winner-by-jayne-anne-phillips/",
+                        "publisher": "Knopf",
+                        "published_year": 2023,
+                        "cover": {
+                            "src": "assets/img/awards/2024-night-watch.jpg",
+                            "alt": "Bìa tiểu thuyết Night Watch của Jayne Anne Phillips",
+                            "source_url": "https://www.pulitzer.org/winners/jayne-anne-phillips"
+                        }
                     },
                     "birth_state": "West Virginia",
-                    "citation": "A beautifully rendered novel set in West Virginia's Trans-Allegheny Lunatic Asylum in the aftermath of the Civil War, where a severely wounded Union veteran, a 12-year-old girl and her mother, long abused by a Confederate soldier, struggle to heal"
+                    "citation": "A beautifully rendered novel set in West Virginia’s Trans-Allegheny Lunatic Asylum in the aftermath of the Civil War where a severely wounded Union veteran, a 12-year-old girl and her mother, long abused by a Confederate soldier, struggle to heal.",
+                    "citation_vi": "Một tiểu thuyết được khắc họa tuyệt đẹp, lấy bối cảnh Bệnh viện Tâm thần Trans-Allegheny ở Tây Virginia sau Nội chiến, nơi một cựu binh phe Liên bang bị thương nặng, một cô bé 12 tuổi và người mẹ từng bị một binh sĩ Liên minh miền Nam bạo hành trong thời gian dài cùng nỗ lực chữa lành.",
+                    "prize_amount": "$15,000"
                 }
             ]
         },
         "2023": {
+            "announced_on": "2023-05-08",
+            "source_url": "https://www.pulitzer.org/news/2023-pulitzer-prize-announcement",
             "laureates": [
                 {
                     "name": "Hernan Diaz",
+                    "profile_url": "https://www.pulitzer.org/winners/hernan-diaz",
                     "work": {
                         "id": "hernan-diaz-trust",
-                        "title": "Trust"
+                        "title": "Trust",
+                        "work_url": "https://www.penguinrandomhouse.com/books/678664/trust-pulitzer-prize-winner-by-hernan-diaz/",
+                        "publisher": "Riverhead Books",
+                        "published_year": 2022,
+                        "cover": {
+                            "src": "assets/img/awards/2023-trust.jpg",
+                            "alt": "Bìa tiểu thuyết Trust của Hernan Diaz",
+                            "source_url": "https://www.pulitzer.org/winners/hernan-diaz"
+                        }
                     },
                     "birth_state": "New York (born in Argentina)",
-                    "citation": "A riveting novel set in a bygone America that explores family, wealth and ambition through linked narratives rendered in different literary styles, a complex examination of love and power in a country where capitalism is king"
+                    "citation": "A riveting novel set in a bygone America that explores family, wealth and ambition through linked narratives rendered in different literary styles, a complex examination of love and power in a country where capitalism is king.",
+                    "citation_vi": "Một tiểu thuyết cuốn hút lấy bối cảnh nước Mỹ thuở trước, khám phá gia đình, của cải và tham vọng qua những mạch truyện liên kết được kể bằng nhiều phong cách văn chương khác nhau; một khảo sát phức tạp về tình yêu và quyền lực trong một đất nước nơi chủ nghĩa tư bản ngự trị.",
+                    "prize_amount": "$15,000"
                 },
                 {
                     "name": "Barbara Kingsolver",
+                    "profile_url": "https://www.pulitzer.org/winners/barbara-kingsolver",
                     "work": {
                         "id": "barbara-kingsolver-demon-copperhead",
-                        "title": "Demon Copperhead"
+                        "title": "Demon Copperhead",
+                        "work_url": "https://www.barbarakingsolver.com/books/demon-copperhead",
+                        "publisher": "Harper",
+                        "published_year": 2022,
+                        "cover": {
+                            "src": "assets/img/awards/2023-demon-copperhead.png",
+                            "alt": "Bìa tiểu thuyết Demon Copperhead của Barbara Kingsolver",
+                            "source_url": "https://www.pulitzer.org/winners/barbara-kingsolver"
+                        }
                     },
                     "birth_state": "Kentucky",
-                    "citation": "A masterful recasting of 'David Copperfield,' narrated by an Appalachian boy whose wise, unwavering voice relates his encounters with poverty, addiction, institutional failures and moral collapse–and his efforts to conquer them"
+                    "citation": "A masterful recasting of ‘David Copperfield,’ narrated by an Appalachian boy whose wise, unwavering voice relates his encounters with poverty, addiction, institutional failures and moral collapse–and his efforts to conquer them.",
+                    "citation_vi": "Một cách tái hiện bậc thầy David Copperfield, được kể qua lời một cậu bé vùng Appalachia; bằng giọng kể sáng suốt và kiên định, cậu thuật lại những lần đối mặt với nghèo đói, nghiện ngập, sự thất bại của các thiết chế và sự suy đồi đạo đức — cùng nỗ lực vượt qua tất cả.",
+                    "prize_amount": "$15,000"
                 }
             ],
-            "notes": "First time in Pulitzer Fiction history that two winners were named"
+            "notes": "Lần đầu tiên trong lịch sử Pulitzer Fiction có hai tác phẩm cùng đoạt giải."
         },
         "2022": {
+            "announced_on": "2022-05-09",
+            "source_url": "https://www.pulitzer.org/news/2022-pulitzer-prize-announcement",
             "laureates": [
                 {
                     "name": "Joshua Cohen",
+                    "profile_url": "https://www.pulitzer.org/winners/joshua-cohen",
                     "work": {
                         "id": "joshua-cohen-the-netanyahus",
                         "title": "The Netanyahus: An Account of a Minor and Ultimately Even Negligible Episode in the History of a Very Famous Family",
+                        "work_url": "https://www.nyrb.com/products/the-netanyahus",
+                        "publisher": "New York Review Books",
+                        "published_year": 2021,
+                        "cover": {
+                            "src": "assets/img/awards/2022-the-netanyahus.jpg",
+                            "alt": "Bìa tiểu thuyết The Netanyahus của Joshua Cohen",
+                            "source_url": "https://www.nyrb.com/products/the-netanyahus"
+                        }
                     },
                     "birth_state": "New Jersey",
-                    "citation": "A mordant, linguistically deft historical novel about the ambiguities of the Jewish American experience, presenting ideas and disputes as volatile as its tightly-wound plot"
+                    "citation": "A mordant, linguistically deft historical novel about the ambiguities of the Jewish-American experience, presenting ideas and disputes as volatile as its tightly-wound plot.",
+                    "citation_vi": "Một tiểu thuyết lịch sử sắc lạnh và điêu luyện về ngôn ngữ, khám phá những nhập nhằng của trải nghiệm Do Thái–Mỹ, trong đó các ý tưởng và tranh luận cũng biến động như cốt truyện căng chặt.",
+                    "prize_amount": "$15,000"
                 }
             ]
         },

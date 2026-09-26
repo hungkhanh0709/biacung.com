@@ -1,4 +1,5 @@
 {
+    "updated_at": "2026-09-26",
     "award_info": {
         "id": "intl_nobel_literature",
         "name": "Giải Nobel Văn chương",
@@ -31,14 +32,36 @@
         "posthumous_awards": 1
     },
     "laureates_by_year": {
+        "2026": {
+            "status": "pending",
+            "announcement_date": "2026-10-08",
+            "schedule_source_url": "https://www.nobelprize.org/prizes/about/prize-announcement-dates/",
+            "status_note": "Theo lịch Nobel Prize, thông báo được dự kiến sớm nhất lúc 13:00 CEST, tức 18:00 giờ Việt Nam.",
+            "laureates": []
+        },
         "2025": {
+            "announced_on": "2025-10-09",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2025/summary/",
             "laureates": [
                 {
                     "id": "laszlo-krasznahorkai-hungary",
                     "name": "László Krasznahorkai",
                     "country": "Hungary",
-                    "language": "Hungarian",
+                    "country_vi": "Hungary",
+                    "born_year": 1954,
+                    "born_place": "Gyula, Hungary",
                     "motivation": "for his compelling and visionary oeuvre that, in the midst of apocalyptic terror, reaffirms the power of art",
+                    "motivation_vi": "vì sự nghiệp sáng tác đầy sức cuốn hút và tầm nhìn, giữa nỗi kinh hoàng mang tính tận thế vẫn khẳng định sức mạnh của nghệ thuật",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2025/krasznahorkai/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2025-laszlo-krasznahorkai.jpg",
+                        "alt": "Chân dung nhà văn László Krasznahorkai",
+                        "creator": "Clément Morin",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2025/krasznahorkai/facts/",
+                        "license": "© Nobel Prize Outreach",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên hồ sơ Nobel Prize 2025."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -49,28 +72,61 @@
             ]
         },
         "2024": {
+            "announced_on": "2024-10-10",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2024/summary/",
             "laureates": [
                 {
                     "id": "han-kang-south-korea",
                     "name": "Han Kang",
                     "country": "South Korea",
+                    "country_vi": "Hàn Quốc",
+                    "born_year": 1970,
+                    "born_place": "Gwangju, South Korea",
                     "language": "Korean",
                     "motivation": "for her intense poetic prose that confronts historical traumas and exposes the fragility of human life",
+                    "motivation_vi": "vì văn xuôi giàu chất thơ mãnh liệt, đối diện với những chấn thương lịch sử và phơi bày sự mong manh của đời người",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2024/han/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2024-han-kang.jpg",
+                        "alt": "Chân dung nhà văn Han Kang",
+                        "creator": "Clément Morin",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2024/han/facts/",
+                        "license": "© Nobel Prize Outreach",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên hồ sơ Nobel Prize 2024."
+                    },
                     "genre": [
                         "novel",
+                        "short story",
                         "poetry"
                     ]
                 }
             ]
         },
         "2023": {
+            "announced_on": "2023-10-05",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2023/summary/",
             "laureates": [
                 {
                     "id": "jon-fosse-norway",
                     "name": "Jon Fosse",
                     "country": "Norway",
+                    "country_vi": "Na Uy",
+                    "born_year": 1959,
+                    "born_place": "Haugesund, Norway",
                     "language": "Norwegian",
                     "motivation": "for his innovative plays and prose which give voice to the unsayable",
+                    "motivation_vi": "vì những vở kịch và văn xuôi mang tính cách tân đã cất tiếng cho điều không thể nói thành lời",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2023/fosse/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2023-jon-fosse.jpg",
+                        "alt": "Chân dung nhà văn Jon Fosse",
+                        "creator": "Clément Morin",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2023/fosse/facts/",
+                        "license": "© Nobel Prize Outreach",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên hồ sơ Nobel Prize 2023."
+                    },
                     "genre": [
                         "drama",
                         "novel",
@@ -81,13 +137,29 @@
             ]
         },
         "2022": {
+            "announced_on": "2022-10-06",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2022/summary/",
             "laureates": [
                 {
                     "id": "annie-ernaux-france",
                     "name": "Annie Ernaux",
                     "country": "France",
+                    "country_vi": "Pháp",
+                    "born_year": 1940,
+                    "born_place": "Lillebonne, France",
                     "language": "French",
                     "motivation": "for the courage and clinical acuity with which she uncovers the roots, estrangements and collective restraints of personal memory",
+                    "motivation_vi": "vì lòng can đảm và sự sắc sảo mang tính lâm sàng, qua đó bà khám phá cội rễ, những xa cách và các ràng buộc tập thể của ký ức cá nhân",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2022/ernaux/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2022-annie-ernaux.jpg",
+                        "alt": "Chân dung nhà văn Annie Ernaux",
+                        "creator": "Stefan Bladh",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2022/ernaux/facts/",
+                        "license": "© Nobel Prize Outreach",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên hồ sơ Nobel Prize 2022."
+                    },
                     "genre": [
                         "memoir",
                         "novel"
