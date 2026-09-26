@@ -168,13 +168,29 @@
             ]
         },
         "2021": {
+            "announced_on": "2021-10-07",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2021/summary/",
             "laureates": [
                 {
                     "id": "abdulrazak-gurnah-tanzania-uk",
                     "name": "Abdulrazak Gurnah",
                     "country": "Tanzania/United Kingdom",
+                    "country_vi": "Tanzania/Vương quốc Anh",
+                    "born_year": 1948,
+                    "born_place": "Zanzibar",
                     "language": "English",
                     "motivation": "for his uncompromising and compassionate penetration of the effects of colonialism and the fate of the refugee in the gulf between cultures and continents",
+                    "motivation_vi": "vì sự thấu hiểu không khoan nhượng và đầy trắc ẩn đối với những hệ quả của chủ nghĩa thực dân cùng số phận người tị nạn trong khoảng cách giữa các nền văn hóa và châu lục",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2021/gurnah/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2021-abdulrazak-gurnah.jpg",
+                        "alt": "Chân dung nhà văn Abdulrazak Gurnah",
+                        "creator": "Stefan Bladh",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2021/gurnah/facts/",
+                        "license": "© Nobel Prize Outreach",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên hồ sơ Nobel Prize 2021."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -184,13 +200,29 @@
             ]
         },
         "2020": {
+            "announced_on": "2020-10-08",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2020/summary/",
             "laureates": [
                 {
                     "id": "louise-gluck-united-states",
                     "name": "Louise Glück",
                     "country": "United States",
+                    "country_vi": "Hoa Kỳ",
+                    "born_year": 1943,
+                    "born_place": "New York, NY, USA",
                     "language": "English",
                     "motivation": "for her unmistakable poetic voice that with austere beauty makes individual existence universal",
+                    "motivation_vi": "vì giọng thơ không thể nhầm lẫn, với vẻ đẹp khắc khổ, đã làm cho sự tồn tại cá nhân trở nên phổ quát",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2020/gluck/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2020-louise-gluck.jpg",
+                        "alt": "Chân dung nhà thơ Louise Glück",
+                        "creator": "Daniel Ebersole",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2020/gluck/facts/",
+                        "license": "© Nobel Prize Outreach",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trong kho ảnh Nobel Prize, ID 111767."
+                    },
                     "genre": [
                         "poetry",
                         "essay"

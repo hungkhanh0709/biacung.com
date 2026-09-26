@@ -125,6 +125,60 @@
                     "prize_amount": "£50,000"
                 }
             ]
+        },
+        "2021": {
+            "announced_on": "2021-11-03",
+            "source_url": "https://thebookerprizes.com/media-centre/press-releases/the-promise-wins-2021-booker-prize",
+            "laureates": [
+                {
+                    "name": "Damon Galgut",
+                    "country": "South Africa",
+                    "country_vi": "Nam Phi",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/damon-galgut",
+                    "work": {
+                        "id": "damon-galgut-the-promise",
+                        "title": "The Promise",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/the-promise",
+                        "publisher": "Chatto & Windus",
+                        "published_year": 2021,
+                        "cover": {
+                            "src": "assets/img/awards/2021-the-promise.jpg",
+                            "alt": "Bìa tiểu thuyết The Promise của Damon Galgut",
+                            "source_url": "https://cdn.penguin.co.uk/dam-assets/books/9781473584464/9781473584464-jacket-large.jpg"
+                        }
+                    },
+                    "citation": "Brutal emotional truths hit home in Damon Galgut’s deft, powerful story of a diminished family and a troubled land.",
+                    "citation_vi": "Những sự thật cảm xúc khắc nghiệt gây ấn tượng sâu sắc trong câu chuyện mạnh mẽ, khéo léo của Damon Galgut về một gia đình suy tàn và một vùng đất đầy biến động.",
+                    "prize_amount": "£50,000"
+                }
+            ]
+        },
+        "2020": {
+            "announced_on": "2020-11-19",
+            "source_url": "https://thebookerprizes.com/media-centre/press-releases/shuggie-bain-wins-2020-booker-prize",
+            "laureates": [
+                {
+                    "name": "Douglas Stuart",
+                    "country": "Scotland/United States",
+                    "country_vi": "Scotland/Hoa Kỳ",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/douglas-stuart",
+                    "work": {
+                        "id": "douglas-stuart-shuggie-bain",
+                        "title": "Shuggie Bain",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/shuggie-bain",
+                        "publisher": "Picador",
+                        "published_year": 2020,
+                        "cover": {
+                            "src": "assets/img/awards/2020-shuggie-bain.jpg",
+                            "alt": "Bìa tiểu thuyết Shuggie Bain của Douglas Stuart",
+                            "source_url": "https://ik.imagekit.io/panmac/edition/9781529019278.jpg"
+                        }
+                    },
+                    "citation": "Shuggie Bain is destined to be a classic — a moving, immersive and nuanced portrait of a tight-knit social world, its people and its values.",
+                    "citation_vi": "Shuggie Bain chắc chắn sẽ trở thành một tác phẩm kinh điển — bức chân dung cảm động, đầy sức cuốn hút và tinh tế về một thế giới xã hội gắn bó khăng khít, về con người và các giá trị của cộng đồng ấy.",
+                    "prize_amount": "£50,000"
+                }
+            ]
         }
     }
 }
