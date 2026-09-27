@@ -73,7 +73,7 @@ function buildSitemapEntries(rootDir) {
   const seriesEntries = getSeriesEntries(rootDir, bookEntries, latestBookDate);
   const publicSeriesEntries = seriesEntries.filter((entry) => entry.id !== "chauchaubook");
   const latestSeriesDate = publicSeriesEntries.map((entry) => entry.lastmod).filter(Boolean).sort().at(-1) || latestBookDate;
-  const awardPayloads = ["nobel_literature.json", "pulitzer_fiction.json", "booker_prize.json", "goncourt.json"]
+  const awardPayloads = ["nobel_literature.json", "pulitzer_fiction.json", "goncourt.json", "booker_prize.json", "goodreads_choice.json"]
     .map((file) => loadJson(path.join(rootDir, "data", "awards", file), {}));
   const awardUpdatedAt = awardPayloads
     .map((data) => normalizeText(data?.updated_at))

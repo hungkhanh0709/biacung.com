@@ -255,6 +255,33 @@
                     "prize_amount": "£50,000"
                 }
             ]
+        },
+        "2017": {
+            "announced_on": "2017-10-17",
+            "source_url": "https://thebookerprizes.com/the-booker-library/prize-years/2017",
+            "laureates": [
+                {
+                    "name": "George Saunders",
+                    "country": "United States",
+                    "country_vi": "Hoa Kỳ",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/george-saunders",
+                    "work": {
+                        "id": "george-saunders-lincoln-in-the-bardo",
+                        "title": "Lincoln in the Bardo",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/lincoln-in-the-bardo",
+                        "publisher": "Bloomsbury",
+                        "published_year": 2017,
+                        "cover": {
+                            "src": "assets/img/awards/2017-lincoln-in-the-bardo.jpg",
+                            "alt": "Bìa tiểu thuyết Lincoln in the Bardo của George Saunders",
+                            "source_url": "https://openlibrary.org/books/OL26987741M/Lincoln_in_the_Bardo_WINNER_OF_THE_MAN_BOOKER_PRIZE_2017"
+                        }
+                    },
+                    "citation": "For us, it really stood out because of its innovation, it’s very different styling, the way it, almost paradoxically, brought to life these almost dead souls in this other world. There was this juxtaposition of the very personal tragedy of Abraham Lincoln and the death of his very young son next to his public life, as the person who really instigated the American civil war. You’ve got this individual death, very close and personal; you’ve got this much wider issue of the political scenario and the death of hundreds of thousands of young men; and then you’ve got this weird state across the cemetery, with these souls who are not quite ready to be fully dead, as it were, trying to work out some of the things that plagued them during their lives.",
+                    "citation_vi": "Với chúng tôi, tác phẩm thực sự nổi bật nhờ tính đổi mới, phong cách rất khác biệt và cách nó, gần như nghịch lý, làm sống dậy trong một thế giới khác những linh hồn gần như đã chết. Bi kịch hết sức riêng tư của Abraham Lincoln trước cái chết của người con trai còn rất nhỏ được đặt cạnh cuộc đời công chúng của ông, người thực sự khơi mào Nội chiến Hoa Kỳ. Ở đây có một cái chết cá nhân, rất gần gũi và riêng tư; có bối cảnh chính trị rộng lớn hơn cùng cái chết của hàng trăm nghìn thanh niên; rồi lại có trạng thái kỳ lạ bao trùm nghĩa trang, nơi những linh hồn dường như chưa sẵn sàng chết hẳn đang cố tháo gỡ những điều từng ám ảnh họ khi còn sống.",
+                    "prize_amount": "£50,000"
+                }
+            ]
         }
     }
 }

@@ -842,13 +842,30 @@
             ]
         },
         "2000": {
+            "announced_on": "2000-10-12",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2000/summary/",
             "laureates": [
                 {
                     "id": "gao-xingjian-china",
                     "name": "Gao Xingjian",
-                    "country": "France/Taiwan/China",
-                    "language": "Chinese and French",
-                    "motivation": "for an oeuvre of universal validity, bitter insights and linguistic ingenuity, which has opened new paths for the Chinese novel and drama",
+                    "name_vi": "Cao Hành Kiện",
+                    "country": "France/China",
+                    "country_vi": "Pháp/Trung Quốc",
+                    "born_year": 1940,
+                    "born_place": "Ganzhou, China",
+                    "language": "Chinese",
+                    "motivation": "for an œuvre of universal validity, bitter insights and linguistic ingenuity, which has opened new paths for the Chinese novel and drama",
+                    "motivation_vi": "vì một sự nghiệp sáng tác có giá trị phổ quát, những nhận thức cay đắng và sự tài tình về ngôn ngữ, đã mở ra những con đường mới cho tiểu thuyết và kịch Trung Quốc",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2000/gao/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2000-gao-xingjian.jpg",
+                        "alt": "Chân dung nhà văn Gao Xingjian (Cao Hành Kiện)",
+                        "creator": "Céline Yang",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2000/summary/",
+                        "license": "Photo: Céline Yang. Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2000."
+                    },
                     "genre": [
                         "novel",
                         "drama",

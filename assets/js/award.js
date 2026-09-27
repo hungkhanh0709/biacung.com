@@ -22,10 +22,16 @@ const AWARD_DATASETS = [
     url: "/data/awards/goncourt.json",
     shortName: "Goncourt",
     kind: "book"
+  },
+  {
+    id: "goodreads-choice",
+    url: "/data/awards/goodreads_choice.json",
+    shortName: "Goodreads Choice Awards",
+    kind: "reader-choice"
   }
 ];
 
-const AWARD_DISPLAY_ORDER = [0, 1, 3, 2];
+const AWARD_DISPLAY_ORDER = [0, 1, 3, 2, 4];
 
 const statusNode = document.querySelector("[data-award-status]");
 const yearsNode = document.querySelector("[data-award-years]");
@@ -62,7 +68,10 @@ function formatAnnouncementDate(value) {
 function isCollectedAwardYear(entry) {
   if (!entry || typeof entry !== "object" || !Array.isArray(entry.laureates)) return false;
   if (entry.status === "pending") {
-    return /^\d{4}-\d{2}-\d{2}$/.test(normalizeText(entry.announcement_date))
+    const hasAnnouncementDate = /^\d{4}-\d{2}-\d{2}$/.test(normalizeText(entry.announcement_date));
+    const hasEligibilityWindow = /^\d{4}-\d{2}-\d{2}$/.test(normalizeText(entry.eligibility_start))
+      && /^\d{4}-\d{2}-\d{2}$/.test(normalizeText(entry.eligibility_end));
+    return (hasAnnouncementDate || hasEligibilityWindow)
       && /^https:\/\//.test(normalizeText(entry.schedule_source_url))
       && entry.laureates.length === 0;
   }
@@ -219,16 +228,81 @@ function renderBookWinner(laureate, internalBookIds) {
   return article;
 }
 
+function renderReaderChoiceWinner(laureate, internalBookIds) {
+  const work = laureate?.work || {};
+  const article = createElement("article", "reader-choice-card");
+  const figure = createElement("figure", "reader-choice-cover");
+  const cover = work?.cover || {};
+  const src = getSafeAssetUrl(cover.src);
+
+  if (src) {
+    const image = document.createElement("img");
+    image.src = src;
+    image.alt = normalizeText(cover.alt) || `Bìa sách ${normalizeText(work.title)}`;
+    image.width = 320;
+    image.height = 480;
+    image.loading = "lazy";
+    figure.append(image);
+  }
+
+  const content = createElement("div", "reader-choice-content");
+  content.append(createElement(
+    "p",
+    "reader-choice-category",
+    normalizeText(laureate.category_name_vi || laureate.category_name)
+  ));
+
+  const title = createElement("h4", "reader-choice-title");
+  const workUrl = getInternalWorkUrl(work, internalBookIds);
+  if (workUrl) {
+    const link = createElement("a", "", normalizeText(work.title));
+    link.href = workUrl;
+    title.append(link);
+  } else {
+    title.textContent = normalizeText(work.title);
+  }
+
+  content.append(
+    title,
+    createElement("p", "reader-choice-author", normalizeText(laureate.name))
+  );
+
+  if (Number.isInteger(laureate.vote_count) && laureate.vote_count > 0) {
+    const votes = new Intl.NumberFormat("vi-VN").format(laureate.vote_count);
+    content.append(createElement("p", "reader-choice-votes", `${votes} lượt bình chọn`));
+  }
+
+  article.append(figure, content);
+  return article;
+}
+
 function renderPendingAward(year) {
+  const hasEligibilityWindow = normalizeText(year.eligibility_start) && normalizeText(year.eligibility_end);
   const announced = formatAnnouncementDate(year.announcement_date);
   const article = createElement("article", "award-pending");
-  article.append(createElement("p", "award-pending-label", "Chưa công bố"));
+  if (hasEligibilityWindow) article.classList.add("award-pending--eligibility");
+  article.append(createElement(
+    "p",
+    "award-pending-label",
+    hasEligibilityWindow ? "Đang chờ lịch bình chọn" : "Chưa công bố"
+  ));
 
   const heading = createElement("h3", "award-pending-title");
-  heading.append("Chờ công bố vào ngày ");
-  const time = createElement("time", "", announced || "đang cập nhật");
-  if (normalizeText(year.announcement_date)) time.dateTime = year.announcement_date;
-  heading.append(time);
+  if (hasEligibilityWindow) {
+    const eligibilityStart = formatAnnouncementDate(year.eligibility_start);
+    const eligibilityEnd = formatAnnouncementDate(year.eligibility_end);
+    heading.append("Sách đủ điều kiện từ ");
+    const startTime = createElement("time", "", eligibilityStart || "đang cập nhật");
+    if (normalizeText(year.eligibility_start)) startTime.dateTime = year.eligibility_start;
+    const endTime = createElement("time", "", eligibilityEnd || "đang cập nhật");
+    if (normalizeText(year.eligibility_end)) endTime.dateTime = year.eligibility_end;
+    heading.append(startTime, " đến ", endTime);
+  } else {
+    heading.append("Chờ công bố vào ngày ");
+    const time = createElement("time", "", announced || "đang cập nhật");
+    if (normalizeText(year.announcement_date)) time.dateTime = year.announcement_date;
+    heading.append(time);
+  }
   article.append(heading);
 
   const note = createElement(
@@ -245,9 +319,11 @@ function renderAwardGroup(dataset, payload, yearKey, internalBookIds) {
   const year = payload?.laureates_by_year?.[yearKey] || {};
   const laureates = Array.isArray(year.laureates) ? year.laureates : [];
   const isPending = year.status === "pending";
+  const hasEligibilityWindow = normalizeText(year.eligibility_start) && normalizeText(year.eligibility_end);
   if (!isPending && !laureates.length) throw new Error(`${dataset.shortName} không có dữ liệu năm ${yearKey}`);
 
   const section = createElement("section", "award-group");
+  if (dataset.kind === "reader-choice") section.classList.add("award-group--reader-choice");
   section.id = `${dataset.id}-${yearKey}`;
   section.setAttribute("aria-labelledby", `${dataset.id}-${yearKey}-title`);
 
@@ -258,20 +334,27 @@ function renderAwardGroup(dataset, payload, yearKey, internalBookIds) {
   header.append(name);
 
   const announced = formatAnnouncementDate(isPending ? year.announcement_date : year.announced_on);
-  const detailText = isPending
+  const detailText = hasEligibilityWindow
+    ? "Lịch bình chọn đang cập nhật"
+    : isPending
     ? (announced ? `Dự kiến ${announced}` : "Đang chờ lịch công bố")
     : (announced ? `Công bố ${announced}` : "Đã công bố");
   const detail = createElement("p", "award-group-date", detailText);
   header.append(detail);
 
-  const entries = createElement("div", "award-entries");
+  const entries = createElement(
+    "div",
+    dataset.kind === "reader-choice" ? "award-entries reader-choice-grid" : "award-entries"
+  );
   if (isPending) {
     entries.append(renderPendingAward(year));
   } else {
     entries.append(...laureates.map((laureate) => (
       dataset.kind === "person"
         ? renderPersonWinner(laureate)
-        : renderBookWinner(laureate, internalBookIds)
+        : dataset.kind === "reader-choice"
+          ? renderReaderChoiceWinner(laureate, internalBookIds)
+          : renderBookWinner(laureate, internalBookIds)
     )));
   }
   section.append(header, entries);
