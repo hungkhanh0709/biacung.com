@@ -266,13 +266,29 @@
             ]
         },
         "2018": {
+            "announced_on": "2019-10-10",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2018/summary/",
             "laureates": [
                 {
                     "id": "olga-tokarczuk-poland",
                     "name": "Olga Tokarczuk",
                     "country": "Poland",
+                    "country_vi": "Ba Lan",
+                    "born_year": 1962,
+                    "born_place": "Sulechów, Poland",
                     "language": "Polish",
                     "motivation": "for a narrative imagination that with encyclopedic passion represents the crossing of boundaries as a form of life",
+                    "motivation_vi": "vì trí tưởng tượng tự sự, với niềm say mê mang tính bách khoa, đã khắc họa việc vượt qua các ranh giới như một cách sống",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2018/tokarczuk/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2018-olga-tokarczuk.jpg",
+                        "alt": "Chân dung nhà văn Olga Tokarczuk",
+                        "creator": "Alexander Mahmoud",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2018/tokarczuk/facts/",
+                        "license": "© Nobel Prize Outreach",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên hồ sơ Nobel Prize 2018."
+                    },
                     "genre": [
                         "novel",
                         "short story",

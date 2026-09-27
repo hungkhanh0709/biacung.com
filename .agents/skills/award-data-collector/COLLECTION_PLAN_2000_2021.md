@@ -32,7 +32,7 @@ Mỗi năm chỉ được đánh dấu trang hoàn tất khi:
 | 2021 | [x] | [x] | [x] | [x] | [x] |
 | 2020 | [x] | [x] | [x] | [x] | [x] |
 | 2019 | [x] | [x] | [x] | [x] | [x] |
-| 2018 | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 2018 | [x] | [ ] | [ ] | [x] | [x] |
 | 2017 | [ ] | [ ] | [ ] | [ ] | [ ] |
 | 2016 | [ ] | [ ] | [ ] | [ ] | [ ] |
 | 2015 | [ ] | [ ] | [ ] | [ ] | [ ] |
@@ -79,3 +79,5 @@ Mỗi năm chỉ được đánh dấu trang hoàn tất khi:
 - 2026-09-27: Goncourt 2021 hoàn tất; Mohamed Mbougar Sarr và La plus secrète mémoire des hommes được đối chiếu theo Académie Goncourt, ảnh bìa edition Philippe Rey/Jimsaan được lưu local và validator đạt.
 - 2026-09-27: Goncourt 2020 hoàn tất; Hervé Le Tellier và L’Anomalie được đối chiếu theo Académie Goncourt, ảnh bìa edition Gallimard được lưu local và validator đạt.
 - 2026-09-27: Goncourt 2019 hoàn tất; Jean-Paul Dubois và Tous les hommes n’habitent pas le monde de la même façon được đối chiếu theo Académie Goncourt, ảnh bìa edition Éditions de l’Olivier được lưu local và validator đạt.
+- 2026-09-27: Goncourt 2018 hoàn tất; Nicolas Mathieu và Leurs enfants après eux được đối chiếu theo Académie Goncourt, ảnh bìa edition Actes Sud được lưu local và validator đạt.
+- 2026-09-27: trang 2018 được sinh từ record Goncourt độc lập; release check đạt, HTTP 200, canonical/Open Graph/JSON-LD và sitemap đã được xác minh.
