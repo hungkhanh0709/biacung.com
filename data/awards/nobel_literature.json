@@ -266,13 +266,29 @@
             ]
         },
         "2018": {
+            "announced_on": "2019-10-10",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2018/summary/",
             "laureates": [
                 {
                     "id": "olga-tokarczuk-poland",
                     "name": "Olga Tokarczuk",
                     "country": "Poland",
+                    "country_vi": "Ba Lan",
+                    "born_year": 1962,
+                    "born_place": "Sulechów, Poland",
                     "language": "Polish",
                     "motivation": "for a narrative imagination that with encyclopedic passion represents the crossing of boundaries as a form of life",
+                    "motivation_vi": "vì trí tưởng tượng tự sự, với niềm say mê mang tính bách khoa, đã khắc họa việc vượt qua các ranh giới như một cách sống",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2018/tokarczuk/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2018-olga-tokarczuk.jpg",
+                        "alt": "Chân dung nhà văn Olga Tokarczuk",
+                        "creator": "Alexander Mahmoud",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2018/tokarczuk/facts/",
+                        "license": "© Nobel Prize Outreach",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên hồ sơ Nobel Prize 2018."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -284,13 +300,29 @@
             ]
         },
         "2017": {
+            "announced_on": "2017-10-05",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2017/summary/",
             "laureates": [
                 {
                     "id": "kazuo-ishiguro-united-kingdom",
                     "name": "Kazuo Ishiguro",
-                    "country": "United Kingdom (born in Japan)",
+                    "country": "United Kingdom",
+                    "country_vi": "Vương quốc Anh",
+                    "born_year": 1954,
+                    "born_place": "Nagasaki, Japan",
                     "language": "English",
                     "motivation": "who, in novels of great emotional force, has uncovered the abyss beneath our illusory sense of connection with the world",
+                    "motivation_vi": "người đã, trong những tiểu thuyết có sức mạnh cảm xúc mãnh liệt, phơi bày vực thẳm bên dưới cảm giác gắn kết đầy ảo tưởng của chúng ta với thế giới",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2017/ishiguro/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2017-kazuo-ishiguro.jpg",
+                        "alt": "Chân dung nhà văn Kazuo Ishiguro",
+                        "creator": "Alexander Mahmoud",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2017/summary/",
+                        "license": "© Nobel Prize Outreach",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2017; nguồn hiển thị credit A. Mahmoud."
+                    },
                     "genre": [
                         "novel",
                         "screenplay",
@@ -300,13 +332,29 @@
             ]
         },
         "2016": {
+            "announced_on": "2016-10-13",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2016/summary/",
             "laureates": [
                 {
                     "id": "bob-dylan-united-states",
                     "name": "Bob Dylan",
                     "country": "United States",
+                    "country_vi": "Hoa Kỳ",
+                    "born_year": 1941,
+                    "born_place": "Duluth, Minnesota, United States",
                     "language": "English",
                     "motivation": "for having created new poetic expressions within the great American song tradition",
+                    "motivation_vi": "vì đã sáng tạo nên những biểu đạt thi ca mới trong truyền thống ca khúc vĩ đại của Hoa Kỳ",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2016/dylan/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2016-bob-dylan.jpg",
+                        "alt": "Chân dung Bob Dylan",
+                        "creator": "William Claxton",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2016/summary/",
+                        "license": "Photo: William Claxton / Nobel Prize Outreach",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2016."
+                    },
                     "genre": [
                         "poetry",
                         "song lyrics"
@@ -315,13 +363,29 @@
             ]
         },
         "2015": {
+            "announced_on": "2015-10-08",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2015/summary/",
             "laureates": [
                 {
                     "id": "svetlana-alexievich-belarus",
                     "name": "Svetlana Alexievich",
-                    "country": "Belarus (born in Soviet Ukraine)",
+                    "country": "Belarus",
+                    "country_vi": "Belarus",
+                    "born_year": 1948,
+                    "born_place": "Ivano-Frankivsk, Ukraine",
                     "language": "Russian",
                     "motivation": "for her polyphonic writings, a monument to suffering and courage in our time",
+                    "motivation_vi": "vì những tác phẩm đa thanh của bà, một tượng đài về nỗi đau khổ và lòng can đảm trong thời đại chúng ta",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2015/alexievich/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2015-svetlana-alexievich.jpg",
+                        "alt": "Chân dung nhà văn Svetlana Alexievich",
+                        "creator": "Alexander Mahmoud",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2015/summary/",
+                        "license": "© Nobel Prize Outreach",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2015; nguồn hiển thị credit A. Mahmoud."
+                    },
                     "genre": [
                         "history",
                         "essay"
@@ -330,13 +394,29 @@
             ]
         },
         "2014": {
+            "announced_on": "2014-10-09",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2014/summary/",
             "laureates": [
                 {
                     "id": "patrick-modiano-france",
                     "name": "Patrick Modiano",
                     "country": "France",
+                    "country_vi": "Pháp",
+                    "born_year": 1945,
+                    "born_place": "Paris, France",
                     "language": "French",
-                    "motivation": "for the art of memory with which he has evoked the most ungraspable human destinies and uncovered the life-world of the Occupation",
+                    "motivation": "for the art of memory with which he has evoked the most ungraspable human destinies and uncovered the life-world of the occupation",
+                    "motivation_vi": "vì nghệ thuật của ký ức, qua đó ông đã gợi lại những số phận con người khó nắm bắt nhất và phơi mở thế giới đời sống của thời kỳ chiếm đóng",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2014/modiano/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2014-patrick-modiano.jpg",
+                        "alt": "Chân dung nhà văn Patrick Modiano",
+                        "creator": "Alexander Mahmoud",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2014/summary/",
+                        "license": "© Nobel Prize Outreach",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2014; nguồn hiển thị credit A. Mahmoud."
+                    },
                     "genre": [
                         "novel",
                         "screenplay"
@@ -345,13 +425,29 @@
             ]
         },
         "2013": {
+            "announced_on": "2013-10-10",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2013/summary/",
             "laureates": [
                 {
                     "id": "alice-munro-canada",
                     "name": "Alice Munro",
                     "country": "Canada",
+                    "country_vi": "Canada",
+                    "born_year": 1931,
+                    "born_place": "Wingham, Canada",
                     "language": "English",
                     "motivation": "master of the contemporary short story",
+                    "motivation_vi": "bậc thầy của truyện ngắn đương đại",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2013/munro/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2013-alice-munro.jpg",
+                        "alt": "Chân dung nhà văn Alice Munro",
+                        "creator": "Jenny Munro",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2013/summary/",
+                        "license": "© The Nobel Foundation",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2013; trang tóm tắt ghi credit J. Munro."
+                    },
                     "genre": [
                         "short story"
                     ]
@@ -359,26 +455,61 @@
             ]
         },
         "2012": {
+            "announced_on": "2012-10-11",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2012/summary/",
             "laureates": [
                 {
                     "id": "mo-yan-china",
                     "name": "Mo Yan",
+                    "name_vi": "Mạc Ngôn",
                     "country": "China",
+                    "country_vi": "Trung Quốc",
+                    "born_year": 1956,
+                    "born_place": "Gaomi, China",
                     "language": "Chinese",
                     "motivation": "who with hallucinatory realism merges folk tales, history and the contemporary",
+                    "motivation_vi": "người đã dùng chủ nghĩa hiện thực huyễn ảo để hòa quyện truyện dân gian, lịch sử và hiện tại",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2012/yan/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2012-mo-yan.jpg",
+                        "alt": "Chân dung nhà văn Mo Yan",
+                        "creator": "U. Montan",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2012/summary/",
+                        "license": "© The Nobel Foundation",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2012."
+                    },
                     "genre": [
                         "novel",
                         "short story"
                     ]
                 }
-            ],
-            "2011": [
+            ]
+        },
+        "2011": {
+            "announced_on": "2011-10-06",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2011/summary/",
+            "laureates": [
                 {
                     "id": "tomas-transtromer-sweden",
                     "name": "Tomas Tranströmer",
                     "country": "Sweden",
+                    "country_vi": "Thụy Điển",
+                    "born_year": 1931,
+                    "born_place": "Stockholm, Sweden",
                     "language": "Swedish",
                     "motivation": "because, through his condensed, translucent images, he gives us fresh access to reality",
+                    "motivation_vi": "bởi vì, qua những hình ảnh cô đọng và trong suốt, ông mở ra cho chúng ta một lối tiếp cận mới với hiện thực",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2011/transtromer/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2011-tomas-transtromer.jpg",
+                        "alt": "Chân dung nhà thơ Tomas Tranströmer",
+                        "creator": "U. Montan",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2011/summary/",
+                        "license": "© The Nobel Foundation",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2011."
+                    },
                     "genre": [
                         "poetry",
                         "translation"
@@ -387,13 +518,29 @@
             ]
         },
         "2010": {
+            "announced_on": "2010-10-07",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2010/summary/",
             "laureates": [
                 {
                     "id": "mario-vargas-llosa-peru-spain",
                     "name": "Mario Vargas Llosa",
                     "country": "Peru/Spain",
+                    "country_vi": "Peru/Tây Ban Nha",
+                    "born_year": 1936,
+                    "born_place": "Arequipa, Peru",
                     "language": "Spanish",
                     "motivation": "for his cartography of structures of power and his trenchant images of the individual's resistance, revolt, and defeat",
+                    "motivation_vi": "vì sự khắc họa các cấu trúc quyền lực và những hình ảnh sắc bén về sự kháng cự, nổi loạn và thất bại của cá nhân",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2010/vargas_llosa/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2010-mario-vargas-llosa.jpg",
+                        "alt": "Chân dung nhà văn Mario Vargas Llosa",
+                        "creator": "U. Montan",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2010/summary/",
+                        "license": "© The Nobel Foundation",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2010."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -402,14 +549,32 @@
                         "memoir"
                     ]
                 }
-            ],
-            "2009": [
+            ]
+        },
+        "2009": {
+            "announced_on": "2009-10-08",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2009/summary/",
+            "laureates": [
                 {
                     "id": "herta-muller-germany-romania",
                     "name": "Herta Müller",
                     "country": "Germany/Romania",
+                    "country_vi": "Đức/Romania",
+                    "born_year": 1953,
+                    "born_place": "Nitzkydorf, Banat, Romania",
                     "language": "German",
                     "motivation": "who, with the concentration of poetry and the frankness of prose, depicts the landscape of the dispossessed",
+                    "motivation_vi": "người đã dùng sự cô đọng của thơ ca và tính thẳng thắn của văn xuôi để khắc họa cảnh quan của những con người bị tước đoạt",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2009/muller/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2009-herta-muller.jpg",
+                        "alt": "Chân dung nhà văn Herta Müller",
+                        "creator": "U. Montan",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2009/summary/",
+                        "license": "© The Nobel Foundation",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2009."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -417,14 +582,32 @@
                         "essay"
                     ]
                 }
-            ],
-            "2008": [
+            ]
+        },
+        "2008": {
+            "announced_on": "2008-10-09",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2008/summary/",
+            "laureates": [
                 {
                     "id": "jean-marie-gustave-le-clezio-france-mauritius",
                     "name": "Jean-Marie Gustave Le Clézio",
                     "country": "France/Mauritius",
+                    "country_vi": "Pháp/Mauritius",
+                    "born_year": 1940,
+                    "born_place": "Nice, France",
                     "language": "French",
                     "motivation": "author of new departures, poetic adventure and sensual ecstasy, explorer of a humanity beyond and below the reigning civilization",
+                    "motivation_vi": "tác giả của những khởi hành mới, những cuộc phiêu lưu thi ca và niềm xuất thần cảm quan; người khám phá một nhân loại vượt ra ngoài và nằm dưới nền văn minh thống trị",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2008/clezio/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2008-jean-marie-gustave-le-clezio.jpg",
+                        "alt": "Chân dung nhà văn Jean-Marie Gustave Le Clézio",
+                        "creator": "U. Montan",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2008/summary/",
+                        "license": "© The Nobel Foundation",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2008."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -434,31 +617,65 @@
                 }
             ]
         },
-        "2007": [
-            {
-                "id": "doris-lessing-united-kingdom",
-                "name": "Doris Lessing",
-                "country": "United Kingdom (born in Iran)",
-                "language": "English",
-                "motivation": "that epicist of the female experience, who with scepticism, fire and visionary power has subjected a divided civilisation to scrutiny",
-                "genre": [
-                    "novel",
-                    "short story",
-                    "memoir/autobiography",
-                    "drama",
-                    "poetry",
-                    "essay"
-                ]
-            }
-        ],
+        "2007": {
+            "announced_on": "2007-10-11",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2007/summary/",
+            "laureates": [
+                {
+                    "id": "doris-lessing-united-kingdom",
+                    "name": "Doris Lessing",
+                    "country": "United Kingdom (born in Iran)",
+                    "country_vi": "Vương quốc Anh (sinh tại Iran)",
+                    "born_year": 1919,
+                    "born_place": "Kermanshah, Persia (now Iran)",
+                    "language": "English",
+                    "motivation": "that epicist of the female experience, who with scepticism, fire and visionary power has subjected a divided civilisation to scrutiny",
+                    "motivation_vi": "nhà sử thi của trải nghiệm nữ giới, người bằng tinh thần hoài nghi, ngọn lửa nhiệt huyết và sức mạnh viễn kiến đã đưa một nền văn minh chia rẽ ra khảo xét",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2007/lessing/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2007-doris-lessing.jpg",
+                        "alt": "Chân dung nhà văn Doris Lessing",
+                        "creator": "U. Montan",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2007/summary/",
+                        "license": "© The Nobel Foundation",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2007."
+                    },
+                    "genre": [
+                        "novel",
+                        "short story",
+                        "memoir/autobiography",
+                        "drama",
+                        "poetry",
+                        "essay"
+                    ]
+                }
+            ]
+        },
         "2006": {
+            "announced_on": "2006-10-12",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2006/summary/",
             "laureates": [
                 {
                     "id": "orhan-pamuk-turkey",
                     "name": "Orhan Pamuk",
                     "country": "Turkey",
+                    "country_vi": "Thổ Nhĩ Kỳ",
+                    "born_year": 1952,
+                    "born_place": "Istanbul, Turkey",
                     "language": "Turkish",
                     "motivation": "who in the quest for the melancholic soul of his native city has discovered new symbols for the clash and interlacing of cultures",
+                    "motivation_vi": "người trong hành trình tìm kiếm linh hồn u hoài của thành phố quê hương mình đã khám phá những biểu tượng mới cho sự va chạm và đan xen giữa các nền văn hóa",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2006/pamuk/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2006-orhan-pamuk.jpg",
+                        "alt": "Chân dung nhà văn Orhan Pamuk",
+                        "creator": "U. Montan",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2006/summary/",
+                        "license": "Photo credit: U. Montan",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2006; nguồn chỉ ghi Photo: U. Montan, không nêu copyright riêng cho ảnh."
+                    },
                     "genre": [
                         "novel",
                         "screenplay",
@@ -466,28 +683,64 @@
                         "essay"
                     ]
                 }
-            ],
-            "2005": [
+            ]
+        },
+        "2005": {
+            "announced_on": "2005-10-13",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2005/summary/",
+            "laureates": [
                 {
                     "id": "harold-pinter-united-kingdom",
                     "name": "Harold Pinter",
                     "country": "United Kingdom",
+                    "country_vi": "Vương quốc Anh",
+                    "born_year": 1930,
+                    "born_place": "London, United Kingdom",
                     "language": "English",
                     "motivation": "who in his plays uncovers the precipice under everyday prattle and forces entry into oppression's closed rooms",
+                    "motivation_vi": "người trong các vở kịch của mình đã phơi mở vực thẳm dưới những lời huyên thuyên thường nhật và xông vào những căn phòng khép kín của áp bức",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2005/pinter/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2005-harold-pinter.jpg",
+                        "alt": "Chân dung nhà viết kịch Harold Pinter",
+                        "creator": "U. Montan",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2005/summary/",
+                        "license": "Photo credit: U. Montan",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2005; nguồn chỉ ghi Photo: U. Montan, không nêu copyright riêng cho ảnh."
+                    },
                     "genre": [
                         "drama",
                         "screenplay",
                         "poetry"
                     ]
                 }
-            ],
-            "2004": [
+            ]
+        },
+        "2004": {
+            "announced_on": "2004-10-07",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2004/summary/",
+            "laureates": [
                 {
                     "id": "elfriede-jelinek-austria",
                     "name": "Elfriede Jelinek",
                     "country": "Austria",
+                    "country_vi": "Áo",
+                    "born_year": 1946,
+                    "born_place": "Mürzzuschlag, Austria",
                     "language": "German",
                     "motivation": "for her musical flow of voices and counter-voices in novels and plays that with extraordinary linguistic zeal reveal the absurdity of society's clichés and their subjugating power",
+                    "motivation_vi": "vì dòng chảy giàu nhạc tính của những tiếng nói và đối âm trong các tiểu thuyết và kịch phẩm, qua đó, với một nhiệt huyết ngôn ngữ phi thường, bà phơi bày sự phi lý của những khuôn sáo xã hội và sức mạnh khuất phục của chúng",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2004/jelinek/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2004-elfriede-jelinek.jpg",
+                        "alt": "Chân dung nhà văn Elfriede Jelinek",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2004/summary/",
+                        "license": "Photo from the Nobel Foundation archive.",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2004; nguồn ghi ảnh thuộc kho lưu trữ của Nobel Foundation và không nêu tên nhiếp ảnh gia."
+                    },
                     "genre": [
                         "novel",
                         "drama"
@@ -495,28 +748,62 @@
                 }
             ]
         },
-        "2003": [
-            {
-                "id": "j-m-coetzee-south-africa",
-                "name": "J. M. Coetzee",
-                "country": "South Africa",
-                "language": "English",
-                "motivation": "who in innumerable guises portrays the surprising involvement of the outsider",
-                "genre": [
-                    "novel",
-                    "essay",
-                    "translation"
-                ]
-            }
-        ],
+        "2003": {
+            "announced_on": "2003-10-02",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2003/summary/",
+            "laureates": [
+                {
+                    "id": "j-m-coetzee-south-africa",
+                    "name": "J. M. Coetzee",
+                    "country": "South Africa",
+                    "country_vi": "Nam Phi",
+                    "born_year": 1940,
+                    "born_place": "Cape Town, South Africa",
+                    "language": "English",
+                    "motivation": "who in innumerable guises portrays the surprising involvement of the outsider",
+                    "motivation_vi": "người, qua vô số dáng hình, khắc họa sự can dự đầy bất ngờ của kẻ ngoài cuộc",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2003/coetzee/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2003-j-m-coetzee.jpg",
+                        "alt": "Chân dung nhà văn J. M. Coetzee",
+                        "creator": "Ulla Montan",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2003/summary/",
+                        "license": "Photo: Ulla Montan © Nobel Foundation",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2003."
+                    },
+                    "genre": [
+                        "novel",
+                        "essay",
+                        "translation"
+                    ]
+                }
+            ]
+        },
         "2002": {
+            "announced_on": "2002-10-10",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2002/summary/",
             "laureates": [
                 {
                     "id": "imre-kertesz-hungary",
                     "name": "Imre Kertész",
                     "country": "Hungary",
+                    "country_vi": "Hungary",
+                    "born_year": 1929,
+                    "born_place": "Budapest, Hungary",
                     "language": "Hungarian",
                     "motivation": "for writing that upholds the fragile experience of the individual against the barbaric arbitrariness of history",
+                    "motivation_vi": "vì những trang viết bảo vệ trải nghiệm mong manh của cá nhân trước sự tùy tiện man rợ của lịch sử",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2002/kertesz/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2002-imre-kertesz.jpg",
+                        "alt": "Chân dung nhà văn Imre Kertész",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2002/summary/",
+                        "license": "Photo from the Nobel Foundation archive.",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2002; nguồn ghi ảnh thuộc kho lưu trữ của Nobel Foundation và không nêu tên nhiếp ảnh gia."
+                    },
                     "genre": [
                         "novel"
                     ]
@@ -524,13 +811,29 @@
             ]
         },
         "2001": {
+            "announced_on": "2001-10-11",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2001/summary/",
             "laureates": [
                 {
                     "id": "v-s-naipaul-united-kingdom",
                     "name": "V. S. Naipaul",
                     "country": "United Kingdom/Trinidad and Tobago",
+                    "country_vi": "Vương quốc Anh/Trinidad và Tobago",
+                    "born_year": 1932,
+                    "born_place": "Chaguanas, Trinidad and Tobago",
                     "language": "English",
                     "motivation": "for having united perceptive narrative and incorruptible scrutiny in works that compel us to see the presence of suppressed histories",
+                    "motivation_vi": "vì đã kết hợp lối trần thuật thấu suốt với sự khảo sát không khoan nhượng trong những tác phẩm buộc chúng ta nhìn thấy sự hiện diện của những lịch sử bị đè nén",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2001/naipaul/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2001-v-s-naipaul.jpg",
+                        "alt": "Chân dung nhà văn V. S. Naipaul",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2001/summary/",
+                        "license": "Photo from the Nobel Foundation archive.",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2001; nguồn ghi ảnh thuộc kho lưu trữ của Nobel Foundation và không nêu tên nhiếp ảnh gia."
+                    },
                     "genre": [
                         "novel",
                         "essay"

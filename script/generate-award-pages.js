@@ -2,9 +2,9 @@ const fs = require("fs");
 const path = require("path");
 
 const SITE_URL = "https://biacung.com";
-const AWARD_FILES = ["nobel_literature.json", "pulitzer_fiction.json", "booker_prize.json", "goncourt.json"];
-const AWARD_NAMES = ["Nobel Văn chương", "Pulitzer Fiction", "Booker Prize", "Prix Goncourt"];
-const AWARD_STRUCTURED_NAMES = ["Nobel Prize in Literature", "Pulitzer Prize for Fiction", "The Booker Prize", "Prix Goncourt"];
+const AWARD_FILES = ["nobel_literature.json", "pulitzer_fiction.json", "goncourt.json", "booker_prize.json"];
+const AWARD_NAMES = ["Nobel Văn chương", "Pulitzer Fiction", "Prix Goncourt", "Booker Prize"];
+const AWARD_STRUCTURED_NAMES = ["Nobel Prize in Literature", "Pulitzer Prize for Fiction", "Prix Goncourt", "The Booker Prize"];
 
 function loadJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, "utf8"));

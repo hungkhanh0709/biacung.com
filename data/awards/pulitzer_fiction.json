@@ -244,15 +244,28 @@
             ]
         },
         "2018": {
+            "announced_on": "2018-04-16",
+            "source_url": "https://www.pulitzer.org/winners/andrew-sean-greer",
             "laureates": [
                 {
                     "name": "Andrew Sean Greer",
+                    "profile_url": "https://www.pulitzer.org/winners/andrew-sean-greer",
                     "work": {
                         "id": "andrew-sean-greer-less",
-                        "title": "Less"
+                        "title": "Less",
+                        "work_url": "https://www.hachettebookgroup.com/titles/andrew-sean-greer/less-winner-of-the-pulitzer-prize/9780316316125/",
+                        "publisher": "Lee Boudreaux Books/Little, Brown and Company",
+                        "published_year": 2017,
+                        "cover": {
+                            "src": "assets/img/awards/2018-less.jpg",
+                            "alt": "Bìa tiểu thuyết Less của Andrew Sean Greer",
+                            "source_url": "https://www.hachettebookgroup.com/wp-content/uploads/2018/05/9780316316125.jpg?w=1200"
+                        }
                     },
                     "birth_state": "Washington, D.C.",
-                    "citation": "A generous book, musical in its prose and expansive in its structure and range, about growing older and the essential nature of love"
+                    "citation": "A generous book, musical in its prose and expansive in its structure and range, about growing older and the essential nature of love.",
+                    "citation_vi": "Một cuốn sách hào phóng, với văn xuôi giàu nhạc tính cùng cấu trúc và phạm vi rộng mở, viết về sự già đi và bản chất thiết yếu của tình yêu.",
+                    "prize_amount": "$15,000"
                 }
             ]
         },
