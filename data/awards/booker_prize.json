@@ -228,6 +228,33 @@
                 }
             ],
             "notes": "The £50,000 prize was split equally between the two joint winners."
+        },
+        "2018": {
+            "announced_on": "2018-10-16",
+            "source_url": "https://thebookerprizes.com/the-booker-library/prize-years/2018",
+            "laureates": [
+                {
+                    "name": "Anna Burns",
+                    "country": "Northern Ireland",
+                    "country_vi": "Bắc Ireland",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/anna-burns",
+                    "work": {
+                        "id": "anna-burns-milkman",
+                        "title": "Milkman",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/milkman",
+                        "publisher": "Faber & Faber",
+                        "published_year": 2018,
+                        "cover": {
+                            "src": "assets/img/awards/2018-milkman.jpg",
+                            "alt": "Bìa tiểu thuyết Milkman của Anna Burns",
+                            "source_url": "https://www.faber.co.uk/wp-content/uploads/2026/03/Milkman-531x815.jpg"
+                        }
+                    },
+                    "citation": "Anna Burns’s utterly distinctive voice challenges conventional thinking and form in surprising and immersive prose. It is a story of brutality, sexual encroachment and resistance threaded with mordant humour.",
+                    "citation_vi": "Giọng văn hoàn toàn khác biệt của Anna Burns thách thức lối tư duy và hình thức truyền thống bằng một lối viết bất ngờ, cuốn hút. Đây là câu chuyện về bạo lực, sự xâm phạm tình dục và sức phản kháng, đan xen chất hài hước cay đắng.",
+                    "prize_amount": "£50,000"
+                }
+            ]
         }
     }
 }

@@ -49,6 +49,7 @@ Mỗi phần tử `laureates` dùng cấu trúc:
 {
   "id": "name-country",
   "name": "Tên đúng dấu",
+  "name_vi": "Tên quen dùng trong tiếng Việt, nếu có nguồn đáng tin cậy",
   "country": "Country in English",
   "country_vi": "Quốc tịch dùng trên giao diện tiếng Việt",
   "born_year": 1900,
@@ -69,6 +70,7 @@ Mỗi phần tử `laureates` dùng cấu trúc:
 ```
 
 `language` và `genre` là metadata tùy chọn. Không suy đoán quốc tịch từ nơi sinh. Nếu Nobel trao cho nhiều người, giữ đúng thứ tự của nguồn chính thức và tạo một object cho mỗi người.
+`name_vi` là metadata tùy chọn: chỉ thêm khi tên Việt hóa/Hán–Việt đã được dùng ổn định trong xuất bản hoặc báo chí Việt Nam; luôn giữ `name` theo nguồn Nobel làm tên chính.
 
 ## Pulitzer Fiction, Booker Prize và Prix Goncourt
 

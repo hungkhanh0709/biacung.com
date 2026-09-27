@@ -112,7 +112,14 @@ function renderPersonWinner(laureate) {
   content.append(createElement("p", "laureate-label", "Người đoạt giải"));
 
   const heading = createElement("h3", "laureate-title");
-  heading.textContent = normalizeText(laureate.name);
+  const name = normalizeText(laureate.name);
+  const vietnameseName = normalizeText(laureate.name_vi);
+  heading.append(name);
+  if (vietnameseName && vietnameseName !== name) {
+    const localizedName = createElement("span", "laureate-title-local", vietnameseName);
+    localizedName.lang = "vi";
+    heading.append(localizedName);
+  }
   content.append(heading);
 
   const meta = createElement("dl", "laureate-meta");
