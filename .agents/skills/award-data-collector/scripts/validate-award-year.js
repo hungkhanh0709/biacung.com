@@ -6,7 +6,8 @@ const path = require("path");
 const DATASETS = {
   nobel: { file: "nobel_literature.json", kind: "person", officialHost: "nobelprize.org" },
   pulitzer: { file: "pulitzer_fiction.json", kind: "book", officialHost: "pulitzer.org" },
-  booker: { file: "booker_prize.json", kind: "book", officialHost: "thebookerprizes.com" }
+  booker: { file: "booker_prize.json", kind: "book", officialHost: "thebookerprizes.com" },
+  goncourt: { file: "goncourt.json", kind: "book", officialHost: "academiegoncourt.com", citationOptional: true }
 };
 
 const aliases = new Map([
@@ -15,7 +16,9 @@ const aliases = new Map([
   ["pulitzer", "pulitzer"],
   ["pulitzer-fiction", "pulitzer"],
   ["booker", "booker"],
-  ["booker-prize", "booker"]
+  ["booker-prize", "booker"],
+  ["goncourt", "goncourt"],
+  ["prix-goncourt", "goncourt"]
 ]);
 
 function required(errors, condition, message) {
@@ -68,7 +71,7 @@ function main() {
   const root = path.resolve(__dirname, "../../../..");
 
   if (!award || !/^\d{4}$/.test(year)) {
-    console.error("Usage: validate-award-year.js <nobel|pulitzer|booker> <YYYY>");
+    console.error("Usage: validate-award-year.js <nobel|pulitzer|booker|goncourt> <YYYY>");
     process.exit(2);
   }
 
@@ -88,6 +91,9 @@ function main() {
   if (entry.status === "pending") {
     required(errors, isIsoDate(entry.announcement_date), `${year}: announcement_date không hợp lệ`);
     required(errors, isOfficialUrl(entry.schedule_source_url, config.officialHost), `${year}: schedule_source_url không phải nguồn chính thức`);
+    if (entry.selection_source_url) {
+      required(errors, isOfficialUrl(entry.selection_source_url, config.officialHost), `${year}: selection_source_url không phải nguồn chính thức`);
+    }
     required(errors, entry.laureates?.length === 0, `${year}: pending phải có laureates rỗng`);
     return report(errors, award, year);
   }
@@ -119,8 +125,10 @@ function main() {
     required(errors, Boolean(work.title), `${label}: thiếu work.title`);
     required(errors, Boolean(work.publisher), `${label}: thiếu publisher`);
     required(errors, Number.isInteger(work.published_year), `${label}: published_year không hợp lệ`);
-    required(errors, Boolean(laureate.citation), `${label}: thiếu citation`);
-    required(errors, Boolean(laureate.citation_vi), `${label}: thiếu citation_vi`);
+    if (!config.citationOptional || laureate.citation || laureate.citation_vi) {
+      required(errors, Boolean(laureate.citation), `${label}: thiếu citation`);
+      required(errors, Boolean(laureate.citation_vi), `${label}: thiếu citation_vi`);
+    }
     validateLocalImage(errors, root, work.cover, `${label} cover`);
   });
 

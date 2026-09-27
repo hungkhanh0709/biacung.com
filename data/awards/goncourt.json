@@ -1,0 +1,189 @@
+{
+    "updated_at": "2026-09-27",
+    "award_info": {
+        "id": "france_goncourt",
+        "name": "Giải Goncourt",
+        "name_en": "Prix Goncourt",
+        "established_year": 1903,
+        "awarding_body": "Académie Goncourt",
+        "country": "France",
+        "language": "French",
+        "prize_amount": "€10",
+        "description": "Giải thưởng văn học danh giá của Pháp, được trao hằng năm cho một tác phẩm văn xuôi giàu sức tưởng tượng viết bằng tiếng Pháp.",
+        "website": "https://www.academiegoncourt.com/presentation-prix-goncourt"
+    },
+    "laureates_by_year": {
+        "2026": {
+            "status": "pending",
+            "announcement_date": "2026-11-03",
+            "schedule_source_url": "https://www.academiegoncourt.com/calendrier-des-reunions",
+            "selection_stage": "first_selection",
+            "selection_source_url": "https://www.academiegoncourt.com/home",
+            "status_note": "Danh sách đầu tiên đã được công bố; vòng tuyển chọn thứ hai dự kiến ngày 06/10, bốn tác phẩm chung khảo ngày 27/10 và tác phẩm đoạt giải ngày 03/11/2026.",
+            "laureates": []
+        },
+        "2025": {
+            "announced_on": "2025-11-04",
+            "source_url": "https://www.academiegoncourt.com/prix-goncourt-2025",
+            "laureates": [
+                {
+                    "name": "Laurent Mauvignier",
+                    "country": "France",
+                    "country_vi": "Pháp",
+                    "profile_url": "https://www.leseditionsdeminuit.fr/auteur-Mauvignier_Laurent-1433-1-1-0-1.html",
+                    "work": {
+                        "id": "laurent-mauvignier-la-maison-vide",
+                        "title": "La Maison vide",
+                        "work_url": "https://www.leseditionsdeminuit.fr/livre-La_Maison_vide-3486-1-1-0-1.html",
+                        "publisher": "Éditions de Minuit",
+                        "published_year": 2025,
+                        "cover": {
+                            "src": "assets/img/awards/2025-la-maison-vide.jpg",
+                            "alt": "Bìa tiểu thuyết La Maison vide của Laurent Mauvignier",
+                            "source_url": "https://www.leseditionsdeminuit.fr/images/livre_galerie_9782707356741.jpg"
+                        }
+                    },
+                    "prize_amount": "€10"
+                }
+            ]
+        },
+        "2024": {
+            "announced_on": "2024-11-04",
+            "source_url": "https://www.academiegoncourt.com/prix-goncourt-2024",
+            "laureates": [
+                {
+                    "name": "Kamel Daoud",
+                    "profile_url": "https://www.gallimard.fr/auteurs/kamel-daoud",
+                    "work": {
+                        "id": "kamel-daoud-houris",
+                        "title": "Houris",
+                        "work_url": "https://www.gallimard.fr/catalogue/houris/9782073142412",
+                        "publisher": "Gallimard",
+                        "published_year": 2024,
+                        "cover": {
+                            "src": "assets/img/awards/2024-houris.jpg",
+                            "alt": "Bìa tiểu thuyết Houris của Kamel Daoud",
+                            "source_url": "https://static.wixstatic.com/media/d5bd15_39bdbac1f1ae450c879b74827d02d91e~mv2.jpg"
+                        }
+                    },
+                    "citation": "où le lyrisme dispute au tragique, et qui donne voix aux souffrances liées à une période noire de l'Algérie, celles des femmes en particulier",
+                    "citation_vi": "Nơi chất trữ tình đọ sức với bi kịch và cất tiếng cho những đau khổ gắn với một giai đoạn đen tối của Algeria, đặc biệt là nỗi đau của phụ nữ.",
+                    "prize_amount": "€10"
+                }
+            ]
+        },
+        "2023": {
+            "announced_on": "2023-11-07",
+            "source_url": "https://www.academiegoncourt.com/prix-goncourt-et-selection-annee",
+            "laureates": [
+                {
+                    "name": "Jean-Baptiste Andrea",
+                    "profile_url": "https://www.editions-iconoclaste.fr/auteur/jean-baptiste-andrea/",
+                    "work": {
+                        "id": "jean-baptiste-andrea-veiller-sur-elle",
+                        "title": "Veiller sur elle",
+                        "work_url": "https://editions-iconoclaste.fr/livre/veiller-sur-elle/",
+                        "publisher": "L’Iconoclaste",
+                        "published_year": 2023,
+                        "cover": {
+                            "src": "assets/img/awards/2023-veiller-sur-elle.webp",
+                            "alt": "Bìa tiểu thuyết Veiller sur elle của Jean-Baptiste Andrea",
+                            "source_url": "https://www.editions-iconoclaste.fr/uploads/2025/10/jean-baptiste-andrea-veiller-sur-elle-1152x1440.png.webp"
+                        }
+                    },
+                    "prize_amount": "€10"
+                }
+            ]
+        },
+        "2022": {
+            "announced_on": "2022-11-03",
+            "source_url": "https://www.academiegoncourt.com/prix-goncourt-et-selection-annee",
+            "laureates": [
+                {
+                    "name": "Brigitte Giraud",
+                    "work": {
+                        "id": "brigitte-giraud-vivre-vite",
+                        "title": "Vivre vite",
+                        "work_url": "https://editions.flammarion.com/vivre-vite/9782080207340",
+                        "publisher": "Flammarion",
+                        "published_year": 2022,
+                        "cover": {
+                            "src": "assets/img/awards/2022-vivre-vite.jpg",
+                            "alt": "Bìa tiểu thuyết Vivre vite của Brigitte Giraud",
+                            "source_url": "https://www.bibliotheque-thoiry.fr/images/covers/VIVRE-VITE_GIRAUD-BRIGITTE-9782080207340.jpg"
+                        }
+                    },
+                    "prize_amount": "€10"
+                }
+            ]
+        },
+        "2021": {
+            "announced_on": "2021-11-03",
+            "source_url": "https://www.academiegoncourt.com/prix-goncourt-et-selection-annee",
+            "laureates": [
+                {
+                    "name": "Mohamed Mbougar Sarr",
+                    "profile_url": "https://www.philippe-rey.fr/auteur-Mohamed_Mbougar_Sarr-325-1-1-0-1.html",
+                    "work": {
+                        "id": "mohamed-mbougar-sarr-la-plus-secrete-memoire-des-hommes",
+                        "title": "La plus secrète mémoire des hommes",
+                        "work_url": "https://www.philippe-rey.fr/livre-La_plus_secr%C3%A8te_m%C3%A9moire_des_hommes-504-1-1-0-1.html",
+                        "publisher": "Philippe Rey/Jimsaan",
+                        "published_year": 2021,
+                        "cover": {
+                            "src": "assets/img/awards/2021-la-plus-secrete-memoire-des-hommes.jpg",
+                            "alt": "Bìa tiểu thuyết La plus secrète mémoire des hommes của Mohamed Mbougar Sarr",
+                            "source_url": "https://www.presenceafricaine.com/1358-large_default/la-plus-secrete-memoire-des-hommes.jpg"
+                        }
+                    },
+                    "prize_amount": "€10"
+                }
+            ]
+        },
+        "2020": {
+            "announced_on": "2020-11-30",
+            "source_url": "https://www.academiegoncourt.com/prix-goncourt-et-selection-annee",
+            "laureates": [
+                {
+                    "name": "Hervé Le Tellier",
+                    "profile_url": "https://www.gallimard.fr/auteurs/herve-le-tellier",
+                    "work": {
+                        "id": "herve-le-tellier-l-anomalie",
+                        "title": "L’Anomalie",
+                        "work_url": "https://www.gallimard.fr/Catalogue/GALLIMARD/Blanche/L-anomalie",
+                        "publisher": "Gallimard",
+                        "published_year": 2020,
+                        "cover": {
+                            "src": "assets/img/awards/2020-l-anomalie.jpg",
+                            "alt": "Bìa tiểu thuyết L’Anomalie của Hervé Le Tellier",
+                            "source_url": "https://covers.openlibrary.org/b/isbn/9782072895098-L.jpg"
+                        }
+                    },
+                    "prize_amount": "€10"
+                }
+            ]
+        },
+        "2019": {
+            "announced_on": "2019-11-04",
+            "source_url": "https://www.academiegoncourt.com/prix-goncourt-et-selection-annee",
+            "laureates": [
+                {
+                    "name": "Jean-Paul Dubois",
+                    "work": {
+                        "id": "jean-paul-dubois-tous-les-hommes-n-habitent-pas-le-monde-de-la-meme-facon",
+                        "title": "Tous les hommes n’habitent pas le monde de la même façon",
+                        "work_url": "https://www.editionsdelolivier.fr/catalogue/9782823615166-tous-les-hommes-n-habitent-pas-le-monde-de-la-meme-facon",
+                        "publisher": "Éditions de l’Olivier",
+                        "published_year": 2019,
+                        "cover": {
+                            "src": "assets/img/awards/2019-tous-les-hommes-n-habitent-pas-le-monde-de-la-meme-facon.jpg",
+                            "alt": "Bìa tiểu thuyết Tous les hommes n’habitent pas le monde de la même façon của Jean-Paul Dubois",
+                            "source_url": "https://bibliotheque-bischoffsheim.fr/images/covers/TOUS-LES-HOMMES-N-HABITENT-PAS-LE-MONDE-DE-LA-MEME-FACON_DUBOIS-JEAN-PAUL-9782823615166.jpg"
+                        }
+                    },
+                    "prize_amount": "€10"
+                }
+            ]
+        }
+    }
+}

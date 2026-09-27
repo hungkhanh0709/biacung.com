@@ -16,8 +16,16 @@ const AWARD_DATASETS = [
     url: "/data/awards/booker_prize.json",
     shortName: "Booker",
     kind: "book"
+  },
+  {
+    id: "prix-goncourt",
+    url: "/data/awards/goncourt.json",
+    shortName: "Goncourt",
+    kind: "book"
   }
 ];
+
+const AWARD_DISPLAY_ORDER = [0, 1, 3, 2];
 
 const statusNode = document.querySelector("[data-award-status]");
 const yearsNode = document.querySelector("[data-award-years]");
@@ -49,6 +57,18 @@ function formatAnnouncementDate(value) {
     year: "numeric",
     timeZone: "UTC"
   }).format(date);
+}
+
+function isCollectedAwardYear(entry) {
+  if (!entry || typeof entry !== "object" || !Array.isArray(entry.laureates)) return false;
+  if (entry.status === "pending") {
+    return /^\d{4}-\d{2}-\d{2}$/.test(normalizeText(entry.announcement_date))
+      && /^https:\/\//.test(normalizeText(entry.schedule_source_url))
+      && entry.laureates.length === 0;
+  }
+  return /^\d{4}-\d{2}-\d{2}$/.test(normalizeText(entry.announced_on))
+    && /^https:\/\//.test(normalizeText(entry.source_url))
+    && entry.laureates.length > 0;
 }
 
 function addMetaItem(list, label, value) {
@@ -253,8 +273,10 @@ function renderAwardGroup(dataset, payload, yearKey, internalBookIds) {
 
 function renderAwardYearContent(yearKey, payloads, internalBookIds) {
   const groups = createElement("div", "award-groups");
-  groups.append(...payloads.map((payload, index) => (
-    renderAwardGroup(AWARD_DATASETS[index], payload, yearKey, internalBookIds)
+  groups.append(...AWARD_DISPLAY_ORDER.flatMap((index) => (
+    isCollectedAwardYear(payloads[index]?.laureates_by_year?.[yearKey])
+      ? [renderAwardGroup(AWARD_DATASETS[index], payloads[index], yearKey, internalBookIds)]
+      : []
   )));
   return groups;
 }
@@ -317,11 +339,13 @@ function renderAwardDecade(decade, yearKeys, payloads, internalBookIds, initialY
 }
 
 function getPublishedYears(payloads) {
-  const yearSets = payloads.map((payload) => new Set(Object.keys(payload?.laureates_by_year || {})));
-  if (!yearSets.length) return [];
-  return [...yearSets[0]]
-    .filter((yearKey) => yearSets.every((years) => years.has(yearKey)))
-    .sort((a, b) => Number(b) - Number(a));
+  const years = new Set();
+  payloads.forEach((payload) => {
+    Object.entries(payload?.laureates_by_year || {}).forEach(([yearKey, entry]) => {
+      if (isCollectedAwardYear(entry)) years.add(yearKey);
+    });
+  });
+  return [...years].sort((a, b) => Number(b) - Number(a));
 }
 
 function groupYearsByDecade(yearKeys) {

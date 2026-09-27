@@ -7,8 +7,11 @@
 | Nobel | `data/awards/nobel_literature.json` | Người đoạt giải | `nobelprize.org` |
 | Pulitzer | `data/awards/pulitzer_fiction.json` | Tác phẩm đoạt giải | `pulitzer.org` |
 | Booker | `data/awards/booker_prize.json` | Tác phẩm đoạt giải | `thebookerprizes.com` |
+| Goncourt | `data/awards/goncourt.json` | Tác phẩm đoạt giải | `academiegoncourt.com` |
 
-Trang award lấy giao của các key trong `laureates_by_year` của cả ba file. Vì vậy một năm chỉ xuất hiện trên giao diện khi năm đó tồn tại trong đủ ba dataset.
+Trang award lấy hợp của các năm đã collect hợp lệ trong cả bốn dataset. Chỉ cần một giải hợp lệ là sinh `/award/<year>/`; các giải chưa collect không xuất hiện trên trang và không chặn giải khác. Object lịch sử chỉ có key năm nhưng thiếu ngày, nguồn hoặc kết quả hợp lệ không được tính là đã collect.
+
+Thứ tự hiển thị cố định: Nobel → Pulitzer → Goncourt → Booker.
 
 ## Object của năm
 
@@ -21,6 +24,8 @@ Kết quả đã công bố:
   "laureates": []
 }
 ```
+
+Khi giải đã công bố longlist/shortlist nhưng chưa có người thắng, có thể thêm `selection_stage` và `selection_source_url` để truy nguyên trạng thái hiện tại; vẫn giữ `status: "pending"` và không đưa ứng viên vào `laureates`.
 
 Kết quả chưa công bố:
 
@@ -65,7 +70,7 @@ Mỗi phần tử `laureates` dùng cấu trúc:
 
 `language` và `genre` là metadata tùy chọn. Không suy đoán quốc tịch từ nơi sinh. Nếu Nobel trao cho nhiều người, giữ đúng thứ tự của nguồn chính thức và tạo một object cho mỗi người.
 
-## Pulitzer Fiction và Booker Prize
+## Pulitzer Fiction, Booker Prize và Prix Goncourt
 
 Mỗi phần tử `laureates` dùng cấu trúc:
 
@@ -85,15 +90,17 @@ Mỗi phần tử `laureates` dùng cấu trúc:
       "source_url": "URL trực tiếp đến trang nguồn của bìa"
     }
   },
-  "citation": "Official English citation",
+  "citation": "Official citation in its source language",
   "citation_vi": "Bản dịch tiếng Việt",
   "prize_amount": "Giá trị giải nếu nguồn xác nhận"
 }
 ```
 
+Với Goncourt, `citation` và `citation_vi` chỉ bắt buộc khi Académie Goncourt thực sự công bố nhận định của hội đồng. Không dùng mô tả của nhà xuất bản thay cho citation chính thức. `prize_amount` là `€10` khi nguồn chính thức xác nhận khoản tiền thưởng tượng trưng.
+
 Không tạo `book_id`. `work.id` vừa là ID dữ liệu award vừa là ứng viên liên kết nội bộ. Để liên kết đến `/detail?id=<id>`, ID đó phải khớp filename lấy từ `detail` trong `data/book.json`; xác minh tiêu đề và tác giả trước khi dùng ID nội bộ.
 
-Với đồng giải, tạo đủ mọi laureate/work trong cùng mảng. Không nhầm Pulitzer winner với finalist, hoặc Booker winner với longlist/shortlist.
+Với đồng giải, tạo đủ mọi laureate/work trong cùng mảng. Không nhầm người thắng với finalist, longlist, shortlist hay một giải Goncourt khu vực/biến thể.
 
 ## Ảnh
 
@@ -107,7 +114,7 @@ Với đồng giải, tạo đủ mọi laureate/work trong cùng mảng. Không
 
 - JSON parse được; không có key trùng hoặc `book_id`.
 - `updated_at` và object năm trong `laureates_by_year` nhất quán.
-- Ngày, người thắng, tác phẩm, publisher, citation/motivation và số tiền đều có nguồn.
-- Mọi `photo.src`/`cover.src` tồn tại local; alt và credit hợp lệ.
-- Dữ liệu tiếng Anh và bản dịch tiếng Việt cùng tồn tại khi giao diện hiển thị song ngữ.
+- Ngày, người thắng, tác phẩm, publisher, citation/motivation (khi có) và số tiền đều có nguồn.
+- Với kết quả đã công bố, mọi `photo.src`/`cover.src` tồn tại local; alt và credit hợp lệ.
+- Nguyên văn nguồn và bản dịch tiếng Việt cùng tồn tại khi giao diện hiển thị song ngữ.
 - `validate-award-year.js` và `npm run release:check` đều pass.
