@@ -31,7 +31,7 @@ function pushIfMissing(list, condition, message) {
 }
 
 function auditStaticPages(rootDir, errors) {
-  const awardPayloads = ["nobel_literature.json", "pulitzer_fiction.json", "booker_prize.json"]
+  const awardPayloads = ["nobel_literature.json", "pulitzer_fiction.json", "booker_prize.json", "goncourt.json"]
     .map((file) => readJsonSafe(path.join(rootDir, "data", "awards", file), {}));
   const awardYears = getPublishedYears(awardPayloads);
   const awardYearPages = awardYears.map((year) => `award/${year}/index.html`);
@@ -122,13 +122,17 @@ function auditStaticPages(rootDir, errors) {
   ];
 
   awardYears.forEach((year) => {
+    const checks = [
+      `rel="canonical" href="https://biacung.com/award/${year}/"`,
+      `Giải thưởng sách và văn học ${year}`,
+      'data-award-years'
+    ];
+    if (awardPayloads[3]?.laureates_by_year?.[year]) {
+      checks.push(`Prix Goncourt ${year}`);
+    }
     pageRules.push({
       file: `award/${year}/index.html`,
-      checks: [
-        `rel="canonical" href="https://biacung.com/award/${year}/"`,
-        `Giải thưởng sách và văn học ${year}`,
-        'data-award-years'
-      ]
+      checks
     });
   });
 
@@ -247,7 +251,8 @@ function auditCoreFiles(rootDir, errors) {
     "assets/img/awards/2026-angel-down.jpg",
     "assets/img/awards/2025-james.jpg",
     "assets/img/awards/2025-flesh.jpg",
-    "data/awards/booker_prize.json"
+    "data/awards/booker_prize.json",
+    "data/awards/goncourt.json"
   ].forEach((relativePath) => {
     pushIfMissing(errors, fs.existsSync(path.join(rootDir, relativePath)), `Missing required file: ${relativePath}`);
   });
@@ -314,6 +319,7 @@ function auditData(rootDir, errors, warnings) {
   const nobelData = readJsonSafe(path.join(rootDir, "data", "awards", "nobel_literature.json"), null);
   const pulitzerData = readJsonSafe(path.join(rootDir, "data", "awards", "pulitzer_fiction.json"), null);
   const bookerData = readJsonSafe(path.join(rootDir, "data", "awards", "booker_prize.json"), null);
+  const goncourtData = readJsonSafe(path.join(rootDir, "data", "awards", "goncourt.json"), null);
   const nobel2026 = nobelData?.laureates_by_year?.["2026"];
   const nobel2025 = nobelData?.laureates_by_year?.["2025"];
   const nobel2025Laureates = Array.isArray(nobel2025?.laureates) ? nobel2025.laureates : [];
@@ -383,6 +389,14 @@ function auditData(rootDir, errors, warnings) {
       && fs.existsSync(path.join(rootDir, normalizeText(bookerWinner.work.cover.src))),
     "Booker Prize 2025 cover is missing"
   );
+
+  const goncourt2026 = goncourtData?.laureates_by_year?.["2026"];
+  pushIfMissing(errors, Boolean(goncourtData), "Invalid JSON: data/awards/goncourt.json");
+  pushIfMissing(errors, /^\d{4}-\d{2}-\d{2}$/.test(normalizeText(goncourtData?.updated_at)), "Prix Goncourt data is missing updated_at");
+  pushIfMissing(errors, goncourt2026?.status === "pending", "Prix Goncourt 2026 must be marked as pending");
+  pushIfMissing(errors, goncourt2026?.announcement_date === "2026-11-03", "Prix Goncourt 2026 announcement date is missing or incorrect");
+  pushIfMissing(errors, normalizeText(goncourt2026?.schedule_source_url).startsWith("https://www.academiegoncourt.com/"), "Prix Goncourt 2026 is missing its official schedule URL");
+  pushIfMissing(errors, Array.isArray(goncourt2026?.laureates) && goncourt2026.laureates.length === 0, "Pending Prix Goncourt 2026 must have an empty laureates list");
 
   (Array.isArray(bookIndex) ? bookIndex : []).forEach((entry) => {
     const detail = normalizeText(entry?.detail);

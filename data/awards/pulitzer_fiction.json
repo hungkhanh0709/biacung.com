@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-09-27",
     "award_info": {
         "id": "us_pulitzer_fiction",
         "name": "Giải Pulitzer cho Tiểu thuyết",
@@ -191,29 +191,55 @@
             ]
         },
         "2020": {
+            "announced_on": "2020-05-04",
+            "source_url": "https://www.pulitzer.org/winners/colson-whitehead-0",
             "laureates": [
                 {
                     "name": "Colson Whitehead",
+                    "profile_url": "https://www.pulitzer.org/winners/colson-whitehead-0",
                     "work": {
                         "id": "colson-whitehead-the-nickel-boys",
-                        "title": "The Nickel Boys"
+                        "title": "The Nickel Boys",
+                        "work_url": "https://www.pulitzer.org/winners/colson-whitehead-0",
+                        "publisher": "Doubleday",
+                        "published_year": 2019,
+                        "cover": {
+                            "src": "assets/img/awards/2020-the-nickel-boys.jpeg",
+                            "alt": "Bìa tiểu thuyết The Nickel Boys của Colson Whitehead",
+                            "source_url": "https://www.pulitzer.org/cms/sites/default/files/content/9780385537070.jpeg"
+                        }
                     },
                     "birth_state": "New York",
-                    "citation": "A spare and devastating exploration of abuse at a reform school in Jim Crow-era Florida that is ultimately a powerful tale of human perseverance, dignity and redemption",
+                    "citation": "A spare and devastating exploration of abuse at a reform school in Jim Crow-era Florida that is ultimately a powerful tale of human perseverance, dignity and redemption.",
+                    "citation_vi": "Một cuộc khám phá tiết chế mà tàn khốc về sự ngược đãi tại một trường giáo dưỡng ở Florida thời Jim Crow, cuối cùng trở thành câu chuyện đầy sức mạnh về nghị lực, phẩm giá và sự cứu chuộc của con người.",
+                    "prize_amount": "$15,000",
                     "notes": "Second Pulitzer Prize for Colson Whitehead"
                 }
             ]
         },
         "2019": {
+            "announced_on": "2019-04-15",
+            "source_url": "https://www.pulitzer.org/winners/richard-powers",
             "laureates": [
                 {
                     "name": "Richard Powers",
+                    "profile_url": "https://www.pulitzer.org/winners/richard-powers",
                     "work": {
                         "id": "richard-powers-the-overstory",
-                        "title": "The Overstory"
+                        "title": "The Overstory",
+                        "work_url": "https://www.pulitzer.org/winners/richard-powers",
+                        "publisher": "W.W. Norton",
+                        "published_year": 2018,
+                        "cover": {
+                            "src": "assets/img/awards/2019-the-overstory.jpeg",
+                            "alt": "Bìa tiểu thuyết The Overstory của Richard Powers",
+                            "source_url": "https://www.pulitzer.org/cms/sites/default/files/content/9780393356687_300.jpeg"
+                        }
                     },
                     "birth_state": "Illinois",
-                    "citation": "An ingeniously structured narrative that branches and canopies like the trees at the core of the story whose wonder and connectivity echo those of the humans living amongst them"
+                    "citation": "An ingeniously structured narrative that branches and canopies like the trees at the core of the story whose wonder and connectivity echo those of the humans living amongst them",
+                    "citation_vi": "Một câu chuyện được cấu trúc đầy sáng tạo, phân nhánh và xòe tán như những cái cây ở trung tâm tác phẩm, mà sự kỳ diệu và tính kết nối của chúng vang vọng nơi những con người sống giữa chúng.",
+                    "prize_amount": "$15,000"
                 }
             ]
         },

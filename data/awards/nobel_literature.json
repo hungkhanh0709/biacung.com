@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-09-27",
     "award_info": {
         "id": "intl_nobel_literature",
         "name": "Giải Nobel Văn chương",
@@ -231,13 +231,29 @@
             ]
         },
         "2019": {
+            "announced_on": "2019-10-10",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2019/summary/",
             "laureates": [
                 {
                     "id": "peter-handke-austria",
                     "name": "Peter Handke",
                     "country": "Austria",
+                    "country_vi": "Áo",
+                    "born_year": 1942,
+                    "born_place": "Griffen, Austria",
                     "language": "German",
                     "motivation": "for an influential work that with linguistic ingenuity has explored the periphery and the specificity of human experience",
+                    "motivation_vi": "vì một sự nghiệp sáng tác có sức ảnh hưởng, với sự tài tình về ngôn ngữ đã khám phá vùng ngoại biên và tính đặc thù của trải nghiệm con người",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2019/handke/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2019-peter-handke.jpg",
+                        "alt": "Chân dung nhà văn Peter Handke",
+                        "creator": "A. Mahmoud",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2019/summary/",
+                        "license": "© Nobel Media",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung chính thức trên trang Nobel Prize 2019."
+                    },
                     "genre": [
                         "novel",
                         "short story",

@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-09-27",
     "award_info": {
         "id": "uk_booker_prize",
         "name": "Giải Booker",
@@ -179,6 +179,55 @@
                     "prize_amount": "£50,000"
                 }
             ]
+        },
+        "2019": {
+            "announced_on": "2019-10-14",
+            "source_url": "https://thebookerprizes.com/the-booker-library/prize-years/2019",
+            "laureates": [
+                {
+                    "name": "Margaret Atwood",
+                    "country": "Canada",
+                    "country_vi": "Canada",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/margaret-atwood",
+                    "work": {
+                        "id": "margaret-atwood-the-testaments",
+                        "title": "The Testaments",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/the-testaments",
+                        "publisher": "Chatto & Windus",
+                        "published_year": 2019,
+                        "cover": {
+                            "src": "assets/img/awards/2019-the-testaments.jpg",
+                            "alt": "Bìa tiểu thuyết The Testaments của Margaret Atwood",
+                            "source_url": "https://cdn.penguin.co.uk/dam-assets/books/9781784708214/9781784708214-jacket-large.jpg"
+                        }
+                    },
+                    "citation": "It is a savage and beautiful novel that speaks to us today with conviction and power. The bar is set unusually high for Atwood. She soars.",
+                    "citation_vi": "Một tiểu thuyết dữ dội và đẹp đẽ, cất tiếng nói với chúng ta hôm nay bằng niềm tin xác quyết và sức mạnh. Tiêu chuẩn dành cho Atwood được đặt cao khác thường, và bà đã vươn lên vượt qua.",
+                    "prize_amount": "£25,000"
+                },
+                {
+                    "name": "Bernardine Evaristo",
+                    "country": "United Kingdom",
+                    "country_vi": "Vương quốc Anh",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/bernadine-evaristo",
+                    "work": {
+                        "id": "bernardine-evaristo-girl-woman-other",
+                        "title": "Girl, Woman, Other",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/girl-woman-other",
+                        "publisher": "Hamish Hamilton",
+                        "published_year": 2019,
+                        "cover": {
+                            "src": "assets/img/awards/2019-girl-woman-other.jpg",
+                            "alt": "Bìa tiểu thuyết Girl, Woman, Other của Bernardine Evaristo",
+                            "source_url": "https://cdn.penguin.co.uk/dam-assets/books/9780241984994/9780241984994-jacket-large.jpg"
+                        }
+                    },
+                    "citation": "A must-read about modern Britain and womanhood. This is an impressive, fierce novel about the lives of black British families, their struggles, pains, laughter, longings and loves.",
+                    "citation_vi": "Một tác phẩm phải đọc về nước Anh hiện đại và thân phận phụ nữ. Đây là một tiểu thuyết ấn tượng, mạnh mẽ về cuộc đời của các gia đình người Anh da đen — những cuộc đấu tranh, nỗi đau, tiếng cười, khát vọng và tình yêu của họ.",
+                    "prize_amount": "£25,000"
+                }
+            ],
+            "notes": "The £50,000 prize was split equally between the two joint winners."
         }
     }
 }
