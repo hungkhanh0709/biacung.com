@@ -207,6 +207,30 @@
                     "prize_amount": "€10"
                 }
             ]
+        },
+        "2017": {
+            "announced_on": "2017-11-06",
+            "source_url": "https://www.academiegoncourt.com/prix-goncourt-et-selection-annee",
+            "laureates": [
+                {
+                    "name": "Éric Vuillard",
+                    "country": "France",
+                    "country_vi": "Pháp",
+                    "work": {
+                        "id": "eric-vuillard-l-ordre-du-jour",
+                        "title": "L’Ordre du jour",
+                        "work_url": "https://www.laprocure.com/product/83659/vuillard-eric-l-ordre-du-jour-recit",
+                        "publisher": "Actes Sud",
+                        "published_year": 2017,
+                        "cover": {
+                            "src": "assets/img/awards/2017-l-ordre-du-jour.jpg",
+                            "alt": "Bìa tác phẩm L’Ordre du jour của Éric Vuillard",
+                            "source_url": "https://covers.openlibrary.org/b/isbn/9782330078973-L.jpg"
+                        }
+                    },
+                    "prize_amount": "€10"
+                }
+            ]
         }
     }
 }

@@ -31,7 +31,7 @@ function pushIfMissing(list, condition, message) {
 }
 
 function auditStaticPages(rootDir, errors) {
-  const awardPayloads = ["nobel_literature.json", "pulitzer_fiction.json", "booker_prize.json", "goncourt.json"]
+  const awardPayloads = ["nobel_literature.json", "pulitzer_fiction.json", "goncourt.json", "booker_prize.json"]
     .map((file) => readJsonSafe(path.join(rootDir, "data", "awards", file), {}));
   const awardYears = getPublishedYears(awardPayloads);
   const awardYearPages = awardYears.map((year) => `award/${year}/index.html`);
@@ -127,7 +127,7 @@ function auditStaticPages(rootDir, errors) {
       `Giải thưởng sách và văn học ${year}`,
       'data-award-years'
     ];
-    if (awardPayloads[3]?.laureates_by_year?.[year]) {
+    if (awardPayloads[2]?.laureates_by_year?.[year]) {
       checks.push(`Prix Goncourt ${year}`);
     }
     pageRules.push({

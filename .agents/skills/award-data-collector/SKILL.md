@@ -26,6 +26,7 @@ Nếu đầu vào chỉ gồm tên giải và năm thì tự thực hiện toàn
 6. Nếu là giải cho tác phẩm, kiểm tra `data/book.json`. Khi sách đã có trong thư viện, dùng đúng ID nội bộ làm `work.id`; khi chưa có, tạo ID ổn định dạng `author-title`. Không thêm sách vào thư viện và không tạo field `book_id`.
 7. Dịch `motivation` hoặc `citation` sang tiếng Việt sát nghĩa, tự nhiên, không thêm diễn giải chưa có trong nguồn. Giữ nguyên văn nguồn trong field gốc. Với Goncourt, không tự tạo `citation` khi Académie Goncourt không công bố nhận định của hội đồng.
 8. Chạy validator của skill rồi chạy `npm run release:check`. Sửa mọi lỗi thuộc phạm vi dữ liệu vừa cập nhật. Ngay khi một giải/năm đạt validator, kiểm tra trang `/award/<year>/`; không chờ các giải còn lại.
+9. Nếu giải/năm có trong [checklist thu thập](COLLECTION_PLAN_2000_2021.md), chỉ đánh dấu hoàn tất sau khi các kiểm tra tương ứng đạt. Checklist chỉ lưu trạng thái, không thêm nhật ký phiên làm việc.
 
 ```bash
 node .agents/skills/award-data-collector/scripts/validate-award-year.js <nobel|pulitzer|booker|goncourt> <year>

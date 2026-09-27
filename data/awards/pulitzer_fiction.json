@@ -270,15 +270,28 @@
             ]
         },
         "2017": {
+            "announced_on": "2017-04-10",
+            "source_url": "https://www.pulitzer.org/winners/colson-whitehead",
             "laureates": [
                 {
                     "name": "Colson Whitehead",
+                    "profile_url": "https://www.pulitzer.org/winners/colson-whitehead",
                     "work": {
                         "id": "colson-whitehead-the-underground-railroad",
-                        "title": "The Underground Railroad"
+                        "title": "The Underground Railroad",
+                        "work_url": "https://www.penguinrandomhouse.com/books/232365/the-underground-railroad-pulitzer-prize-winner-by-colson-whitehead/9780385542364/",
+                        "publisher": "Doubleday",
+                        "published_year": 2016,
+                        "cover": {
+                            "src": "assets/img/awards/2017-the-underground-railroad.jpg",
+                            "alt": "Bìa tiểu thuyết The Underground Railroad của Colson Whitehead",
+                            "source_url": "https://images.penguinrandomhouse.com/cover/9780385542364"
+                        }
                     },
                     "birth_state": "New York",
-                    "citation": "For a smart melding of realism and allegory that combines the violence of slavery and the drama of escape in a myth that speaks to contemporary America",
+                    "citation": "For a smart melding of realism and allegory that combines the violence of slavery and the drama of escape in a myth that speaks to contemporary America.",
+                    "citation_vi": "Vì sự hòa trộn thông minh giữa chủ nghĩa hiện thực và ngụ ngôn, kết hợp bạo lực của chế độ nô lệ với kịch tính của cuộc đào thoát trong một huyền thoại có sức cộng hưởng với nước Mỹ đương đại.",
+                    "prize_amount": "$15,000",
                     "notes": "First Pulitzer Prize for Colson Whitehead"
                 }
             ]
