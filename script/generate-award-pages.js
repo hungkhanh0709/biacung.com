@@ -2,9 +2,9 @@ const fs = require("fs");
 const path = require("path");
 
 const SITE_URL = "https://biacung.com";
-const AWARD_FILES = ["nobel_literature.json", "pulitzer_fiction.json", "goncourt.json", "booker_prize.json"];
-const AWARD_NAMES = ["Nobel Văn chương", "Pulitzer Fiction", "Prix Goncourt", "Booker Prize"];
-const AWARD_STRUCTURED_NAMES = ["Nobel Prize in Literature", "Pulitzer Prize for Fiction", "Prix Goncourt", "The Booker Prize"];
+const AWARD_FILES = ["nobel_literature.json", "pulitzer_fiction.json", "goncourt.json", "booker_prize.json", "goodreads_choice.json"];
+const AWARD_NAMES = ["Nobel Văn chương", "Pulitzer Fiction", "Prix Goncourt", "Booker Prize", "Goodreads Choice Awards"];
+const AWARD_STRUCTURED_NAMES = ["Nobel Prize in Literature", "Pulitzer Prize for Fiction", "Prix Goncourt", "The Booker Prize", "Goodreads Choice Awards"];
 
 function loadJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, "utf8"));
@@ -34,7 +34,9 @@ function isIsoDate(value) {
 function isCollectedAwardYear(entry) {
   if (!entry || typeof entry !== "object" || !Array.isArray(entry.laureates)) return false;
   if (entry.status === "pending") {
-    return isIsoDate(entry.announcement_date)
+    const hasSchedule = isIsoDate(entry.announcement_date)
+      || (isIsoDate(entry.eligibility_start) && isIsoDate(entry.eligibility_end));
+    return hasSchedule
       && /^https:\/\//.test(String(entry.schedule_source_url || ""))
       && entry.laureates.length === 0;
   }

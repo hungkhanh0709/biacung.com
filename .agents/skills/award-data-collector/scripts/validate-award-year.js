@@ -7,7 +7,15 @@ const DATASETS = {
   nobel: { file: "nobel_literature.json", kind: "person", officialHost: "nobelprize.org" },
   pulitzer: { file: "pulitzer_fiction.json", kind: "book", officialHost: "pulitzer.org" },
   booker: { file: "booker_prize.json", kind: "book", officialHost: "thebookerprizes.com" },
-  goncourt: { file: "goncourt.json", kind: "book", officialHost: "academiegoncourt.com", citationOptional: true }
+  goncourt: { file: "goncourt.json", kind: "book", officialHost: "academiegoncourt.com", citationOptional: true },
+  goodreads: {
+    file: "goodreads_choice.json",
+    kind: "reader-choice",
+    officialHost: "goodreads.com",
+    citationOptional: true,
+    allowsEligibilityWindow: true,
+    categories: ["fiction", "historical-fiction", "mystery-thriller", "romance", "fantasy", "nonfiction"]
+  }
 };
 
 const aliases = new Map([
@@ -18,7 +26,10 @@ const aliases = new Map([
   ["booker", "booker"],
   ["booker-prize", "booker"],
   ["goncourt", "goncourt"],
-  ["prix-goncourt", "goncourt"]
+  ["prix-goncourt", "goncourt"],
+  ["goodreads", "goodreads"],
+  ["goodreads-choice", "goodreads"],
+  ["goodreads-choice-awards", "goodreads"]
 ]);
 
 function required(errors, condition, message) {
@@ -71,7 +82,7 @@ function main() {
   const root = path.resolve(__dirname, "../../../..");
 
   if (!award || !/^\d{4}$/.test(year)) {
-    console.error("Usage: validate-award-year.js <nobel|pulitzer|booker|goncourt> <YYYY>");
+    console.error("Usage: validate-award-year.js <nobel|pulitzer|booker|goncourt|goodreads> <YYYY>");
     process.exit(2);
   }
 
@@ -89,7 +100,14 @@ function main() {
   required(errors, !JSON.stringify(entry).includes('"book_id"'), `${year}: không được dùng book_id`);
 
   if (entry.status === "pending") {
-    required(errors, isIsoDate(entry.announcement_date), `${year}: announcement_date không hợp lệ`);
+    const hasAnnouncementDate = isIsoDate(entry.announcement_date);
+    const hasEligibilityWindow = config.allowsEligibilityWindow
+      && isIsoDate(entry.eligibility_start)
+      && isIsoDate(entry.eligibility_end);
+    required(errors, hasAnnouncementDate || hasEligibilityWindow, `${year}: thiếu ngày công bố hoặc cửa sổ eligibility chính thức`);
+    if (hasEligibilityWindow) {
+      required(errors, entry.eligibility_start <= entry.eligibility_end, `${year}: cửa sổ eligibility không hợp lệ`);
+    }
     required(errors, isOfficialUrl(entry.schedule_source_url, config.officialHost), `${year}: schedule_source_url không phải nguồn chính thức`);
     if (entry.selection_source_url) {
       required(errors, isOfficialUrl(entry.selection_source_url, config.officialHost), `${year}: selection_source_url không phải nguồn chính thức`);
@@ -102,9 +120,26 @@ function main() {
   required(errors, isOfficialUrl(entry.source_url, config.officialHost), `${year}: source_url không phải nguồn chính thức`);
   required(errors, entry.laureates?.length > 0, `${year}: thiếu người hoặc tác phẩm đoạt giải`);
 
+  if (config.kind === "reader-choice") {
+    required(errors, Number.isInteger(entry.total_votes_cast) && entry.total_votes_cast > 0, `${year}: total_votes_cast không hợp lệ`);
+    required(errors, entry.laureates?.length === config.categories.length, `${year}: phải có đúng sáu hạng mục Goodreads`);
+    required(
+      errors,
+      config.categories.every((category, index) => entry.laureates?.[index]?.category === category),
+      `${year}: thiếu sáu hạng mục Goodreads hoặc sai thứ tự`
+    );
+  }
+
   (entry.laureates || []).forEach((laureate, index) => {
     const label = `${year} laureate ${index + 1}`;
     required(errors, Boolean(laureate.name), `${label}: thiếu name`);
+
+    if (config.kind === "reader-choice") {
+      required(errors, Boolean(laureate.category_name), `${label}: thiếu category_name`);
+      required(errors, Boolean(laureate.category_name_vi), `${label}: thiếu category_name_vi`);
+      required(errors, isOfficialUrl(laureate.category_source_url, config.officialHost), `${label}: category_source_url không phải nguồn chính thức`);
+      required(errors, Number.isInteger(laureate.vote_count) && laureate.vote_count > 0, `${label}: vote_count không hợp lệ`);
+    }
 
     if (config.kind === "person") {
       required(errors, /^[a-z0-9-]+$/.test(laureate.id || ""), `${label}: id không hợp lệ`);

@@ -6,6 +6,7 @@ Quy ước:
 
 - `[x]`: đã đạt đầy đủ tiêu chuẩn hoàn tất.
 - `[ ]`: chưa thu thập, chưa kiểm tra hoặc record cũ chưa đạt schema hiện tại.
+- `[-]`: không áp dụng vì giải chưa tồn tại trong năm đó.
 - Mỗi ô giải thưởng độc lập; không chờ các giải khác trong cùng năm.
 - `Trang năm` có thể hoàn tất ngay khi ít nhất một giải của năm đã hợp lệ.
 
@@ -18,6 +19,8 @@ Chỉ đánh dấu một ô giải thưởng `[x]` sau khi:
 - Ảnh có nguồn và credit rõ ràng, được lưu local đúng định dạng và mở được.
 - Giải trao cho tác phẩm đã đối chiếu `data/book.json`; chỉ liên kết khi ID, tiêu đề và tác giả cùng khớp.
 - Validator của đúng giải/năm đạt.
+
+Riêng `Goodreads`, một năm chỉ hoàn tất khi có đủ sáu hạng mục được theo dõi: **Fiction, Historical Fiction, Mystery & Thriller, Romance, Fantasy và Nonfiction**. Ghi lại số phiếu của từng tác phẩm; không dùng mô tả biên tập của Goodreads làm citation.
 
 Chỉ đánh dấu `Trang năm` `[x]` sau khi:
 
@@ -54,36 +57,36 @@ Trước khi thêm cột mới vào checklist:
 3. Xác định vị trí hiển thị của giải trong trang.
 4. Thêm cột trước `Trang năm`, khởi tạo các ô là `[ ]` rồi backfill độc lập.
 
-Thứ tự hiện tại: **Nobel → Pulitzer → Goncourt → Booker**.
+Thứ tự hiện tại: **Nobel → Pulitzer → Goncourt → Booker → Goodreads (Lựa chọn của độc giả)**.
 
 ## Tiến độ 2000–2026
 
-| Năm | Nobel | Pulitzer | Goncourt | Booker | Trang năm |
-|---:|:---:|:---:|:---:|:---:|:---:|
-| 2026 | [x] | [x] | [x] | [x] | [x] |
-| 2025 | [x] | [x] | [x] | [x] | [x] |
-| 2024 | [x] | [x] | [x] | [x] | [x] |
-| 2023 | [x] | [x] | [x] | [x] | [x] |
-| 2022 | [x] | [x] | [x] | [x] | [x] |
-| 2021 | [x] | [x] | [x] | [x] | [x] |
-| 2020 | [x] | [x] | [x] | [x] | [x] |
-| 2019 | [x] | [x] | [x] | [x] | [x] |
-| 2018 | [x] | [x] | [x] | [x] | [x] |
-| 2017 | [x] | [x] | [x] | [x] | [x] |
-| 2016 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2015 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2014 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2013 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2012 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2011 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2010 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2009 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2008 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2007 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2006 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2005 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2004 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2003 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2002 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2001 | [x] | [ ] | [ ] | [ ] | [x] |
-| 2000 | [x] | [ ] | [ ] | [ ] | [x] |
+| Năm | Nobel | Pulitzer | Goncourt | Booker | Goodreads | Trang năm |
+|---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 2026 | [x] | [x] | [x] | [x] | [x] | [x] |
+| 2025 | [x] | [x] | [x] | [x] | [x] | [x] |
+| 2024 | [x] | [x] | [x] | [x] | [ ] | [x] |
+| 2023 | [x] | [x] | [x] | [x] | [ ] | [x] |
+| 2022 | [x] | [x] | [x] | [x] | [ ] | [x] |
+| 2021 | [x] | [x] | [x] | [x] | [ ] | [x] |
+| 2020 | [x] | [x] | [x] | [x] | [ ] | [x] |
+| 2019 | [x] | [x] | [x] | [x] | [ ] | [x] |
+| 2018 | [x] | [x] | [x] | [x] | [ ] | [x] |
+| 2017 | [x] | [x] | [x] | [x] | [ ] | [x] |
+| 2016 | [x] | [ ] | [ ] | [ ] | [ ] | [x] |
+| 2015 | [x] | [ ] | [ ] | [ ] | [ ] | [x] |
+| 2014 | [x] | [ ] | [ ] | [ ] | [ ] | [x] |
+| 2013 | [x] | [ ] | [ ] | [ ] | [ ] | [x] |
+| 2012 | [x] | [ ] | [ ] | [ ] | [ ] | [x] |
+| 2011 | [x] | [ ] | [ ] | [ ] | [ ] | [x] |
+| 2010 | [x] | [ ] | [ ] | [ ] | [ ] | [x] |
+| 2009 | [x] | [ ] | [ ] | [ ] | [ ] | [x] |
+| 2008 | [x] | [ ] | [ ] | [ ] | [-] | [x] |
+| 2007 | [x] | [ ] | [ ] | [ ] | [-] | [x] |
+| 2006 | [x] | [ ] | [ ] | [ ] | [-] | [x] |
+| 2005 | [x] | [ ] | [ ] | [ ] | [-] | [x] |
+| 2004 | [x] | [ ] | [ ] | [ ] | [-] | [x] |
+| 2003 | [x] | [ ] | [ ] | [ ] | [-] | [x] |
+| 2002 | [x] | [ ] | [ ] | [ ] | [-] | [x] |
+| 2001 | [x] | [ ] | [ ] | [ ] | [-] | [x] |
+| 2000 | [x] | [ ] | [ ] | [ ] | [-] | [x] |
