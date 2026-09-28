@@ -1,0 +1,158 @@
+{
+    "updated_at": "2026-09-28",
+    "award_info": {
+        "id": "goodreads_choice_awards",
+        "name": "Goodreads Choice Awards",
+        "name_en": "Goodreads Choice Awards",
+        "established_year": 2009,
+        "awarding_body": "Goodreads readers",
+        "country": "United States",
+        "description": "Lựa chọn của độc giả Goodreads trong sáu hạng mục được Bìa Cứng theo dõi: Fiction, Historical Fiction, Mystery & Thriller, Romance, Fantasy và Nonfiction.",
+        "website": "https://www.goodreads.com/choiceawards"
+    },
+    "tracked_categories": [
+        "fiction",
+        "historical-fiction",
+        "mystery-thriller",
+        "romance",
+        "fantasy",
+        "nonfiction"
+    ],
+    "laureates_by_year": {
+        "2026": {
+            "status": "pending",
+            "eligibility_start": "2025-11-12",
+            "eligibility_end": "2026-11-10",
+            "schedule_source_url": "https://www.goodreads.com/choiceawards/2025/rules",
+            "status_note": "Goodreads đã công bố khoảng thời gian sách đủ điều kiện cho mùa 2026; lịch hai vòng bình chọn và ngày công bố kết quả chưa được công bố chính thức.",
+            "laureates": []
+        },
+        "2025": {
+            "announced_on": "2025-12-04",
+            "source_url": "https://www.goodreads.com/choiceawards/best-books-2025",
+            "total_votes_cast": 7516397,
+            "laureates": [
+                {
+                    "category": "fiction",
+                    "category_name": "Fiction",
+                    "category_name_vi": "Tiểu thuyết",
+                    "category_source_url": "https://www.goodreads.com/choiceawards/readers-favorite-fiction-books-2025",
+                    "vote_count": 167509,
+                    "name": "Fredrik Backman",
+                    "work": {
+                        "id": "fredrik-backman-my-friends",
+                        "title": "My Friends",
+                        "work_url": "https://www.simonandschuster.com/books/My-Friends/Fredrik-Backman/9781982112820",
+                        "publisher": "Atria Books",
+                        "published_year": 2025,
+                        "cover": {
+                            "src": "assets/img/awards/2025-goodreads-my-friends.jpg",
+                            "alt": "Bìa tiểu thuyết My Friends của Fredrik Backman",
+                            "source_url": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982112820/my-friends-9781982112820_hr.jpg"
+                        }
+                    }
+                },
+                {
+                    "category": "historical-fiction",
+                    "category_name": "Historical Fiction",
+                    "category_name_vi": "Tiểu thuyết lịch sử",
+                    "category_source_url": "https://www.goodreads.com/choiceawards/readers-favorite-historical-fiction-books-2025",
+                    "vote_count": 254774,
+                    "name": "Taylor Jenkins Reid",
+                    "work": {
+                        "id": "taylor-jenkins-reid-atmosphere",
+                        "title": "Atmosphere",
+                        "work_url": "https://www.penguinrandomhouse.com/books/646858/atmosphere-a-gma-book-club-pick-by-taylor-jenkins-reid/9780593158722/",
+                        "publisher": "Ballantine Books",
+                        "published_year": 2025,
+                        "cover": {
+                            "src": "assets/img/awards/2025-goodreads-atmosphere.jpg",
+                            "alt": "Bìa tiểu thuyết Atmosphere của Taylor Jenkins Reid",
+                            "source_url": "https://openlibrary.org/isbn/9780593158715"
+                        }
+                    }
+                },
+                {
+                    "category": "mystery-thriller",
+                    "category_name": "Mystery & Thriller",
+                    "category_name_vi": "Trinh thám & giật gân",
+                    "category_source_url": "https://www.goodreads.com/choiceawards/readers-favorite-mystery-thriller-books-2025",
+                    "vote_count": 77149,
+                    "name": "Holly Jackson",
+                    "work": {
+                        "id": "holly-jackson-not-quite-dead-yet",
+                        "title": "Not Quite Dead Yet",
+                        "work_url": "https://www.penguinrandomhouse.com/books/777389/not-quite-dead-yet-a-gma-book-club-pick-by-holly-jackson/9780593977057/",
+                        "publisher": "Bantam",
+                        "published_year": 2025,
+                        "cover": {
+                            "src": "assets/img/awards/2025-goodreads-not-quite-dead-yet.jpg",
+                            "alt": "Bìa tiểu thuyết Not Quite Dead Yet của Holly Jackson",
+                            "source_url": "https://openlibrary.org/isbn/9780593977057"
+                        }
+                    }
+                },
+                {
+                    "category": "romance",
+                    "category_name": "Romance",
+                    "category_name_vi": "Lãng mạn",
+                    "category_source_url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025",
+                    "vote_count": 117054,
+                    "name": "Emily Henry",
+                    "work": {
+                        "id": "emily-henry-great-big-beautiful-life",
+                        "title": "Great Big Beautiful Life",
+                        "work_url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025",
+                        "publisher": "Berkley",
+                        "published_year": 2025,
+                        "cover": {
+                            "src": "assets/img/awards/2025-goodreads-great-big-beautiful-life.jpg",
+                            "alt": "Bìa tiểu thuyết Great Big Beautiful Life của Emily Henry",
+                            "source_url": "https://openlibrary.org/isbn/9780593441299"
+                        }
+                    }
+                },
+                {
+                    "category": "fantasy",
+                    "category_name": "Fantasy",
+                    "category_name_vi": "Kỳ ảo",
+                    "category_source_url": "https://www.goodreads.com/choiceawards/readers-favorite-fantasy-books-2025",
+                    "vote_count": 102408,
+                    "name": "V.E. Schwab",
+                    "work": {
+                        "id": "ve-schwab-bury-our-bones-in-the-midnight-soil",
+                        "title": "Bury Our Bones in the Midnight Soil",
+                        "work_url": "https://us.macmillan.com/books/9781250320520/buryourbonesinthemidnightsoil/",
+                        "publisher": "Tor Books",
+                        "published_year": 2025,
+                        "cover": {
+                            "src": "assets/img/awards/2025-goodreads-bury-our-bones-in-the-midnight-soil.jpg",
+                            "alt": "Bìa tiểu thuyết Bury Our Bones in the Midnight Soil của V.E. Schwab",
+                            "source_url": "https://openlibrary.org/isbn/9781250320520"
+                        }
+                    }
+                },
+                {
+                    "category": "nonfiction",
+                    "category_name": "Nonfiction",
+                    "category_name_vi": "Phi hư cấu",
+                    "category_source_url": "https://www.goodreads.com/choiceawards/readers-favorite-nonfiction-books-2025",
+                    "vote_count": 114142,
+                    "name": "John Green",
+                    "work": {
+                        "id": "john-green-everything-is-tuberculosis",
+                        "title": "Everything Is Tuberculosis",
+                        "work_url": "https://www.johngreenbooks.com/everything-is-tuberculosis",
+                        "publisher": "Crash Course Books",
+                        "published_year": 2025,
+                        "cover": {
+                            "src": "assets/img/awards/2025-goodreads-everything-is-tuberculosis.jpg",
+                            "alt": "Bìa sách Everything Is Tuberculosis của John Green",
+                            "source_url": "https://openlibrary.org/isbn/9780525556572"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

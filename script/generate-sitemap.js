@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { getPublishedYears } = require("./generate-award-pages");
 
 const SITE_URL = "https://biacung.com";
 
@@ -72,10 +73,20 @@ function buildSitemapEntries(rootDir) {
   const seriesEntries = getSeriesEntries(rootDir, bookEntries, latestBookDate);
   const publicSeriesEntries = seriesEntries.filter((entry) => entry.id !== "chauchaubook");
   const latestSeriesDate = publicSeriesEntries.map((entry) => entry.lastmod).filter(Boolean).sort().at(-1) || latestBookDate;
+  const awardPayloads = ["nobel_literature.json", "pulitzer_fiction.json", "goncourt.json", "booker_prize.json", "goodreads_choice.json"]
+    .map((file) => loadJson(path.join(rootDir, "data", "awards", file), {}));
+  const awardUpdatedAt = awardPayloads
+    .map((data) => normalizeText(data?.updated_at))
+    .filter(Boolean)
+    .sort()
+    .at(-1) || today;
+  const awardYears = getPublishedYears(awardPayloads);
 
   return [
     { loc: `${SITE_URL}/`, lastmod: latestBookDate },
     { loc: `${SITE_URL}/about` },
+    { loc: `${SITE_URL}/award/`, lastmod: awardUpdatedAt },
+    ...awardYears.map((year) => ({ loc: `${SITE_URL}/award/${year}/`, lastmod: awardUpdatedAt })),
     { loc: `${SITE_URL}/chauchaubook` },
     { loc: `${SITE_URL}/chauchaubook/works`, lastmod: latestBookDate },
     { loc: `${SITE_URL}/series`, lastmod: latestSeriesDate },

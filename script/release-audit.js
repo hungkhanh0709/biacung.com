@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const { buildSitemapXml, buildSitemapEntries } = require("./generate-sitemap");
+const { buildYearPage, getPublishedYears, isCollectedAwardYear } = require("./generate-award-pages");
 const { resolveRequestPath } = require("./static-server");
 
 function normalizeText(value) {
@@ -30,6 +31,10 @@ function pushIfMissing(list, condition, message) {
 }
 
 function auditStaticPages(rootDir, errors) {
+  const awardPayloads = ["nobel_literature.json", "pulitzer_fiction.json", "goncourt.json", "booker_prize.json", "goodreads_choice.json"]
+    .map((file) => readJsonSafe(path.join(rootDir, "data", "awards", file), {}));
+  const awardYears = getPublishedYears(awardPayloads);
+  const awardYearPages = awardYears.map((year) => `award/${year}/index.html`);
   const navPages = [
     "index.html",
     "about.html",
@@ -38,7 +43,8 @@ function auditStaticPages(rootDir, errors) {
     "detail.html",
     "award/index.html",
     "chauchaubook.html",
-    "chauchaubook/works/index.html"
+    "chauchaubook/works/index.html",
+    ...awardYearPages
   ];
   const pageRules = [
     {
@@ -106,9 +112,32 @@ function auditStaticPages(rootDir, errors) {
     },
     {
       file: "award/index.html",
-      checks: ['meta name="robots" content="noindex,follow"']
+      checks: [
+        'meta name="robots" content="index,follow,max-image-preview:large"',
+        'type="application/ld+json"',
+        'rel="canonical" href="https://biacung.com/award/"',
+        'data-award-years'
+      ]
     }
   ];
+
+  awardYears.forEach((year) => {
+    const checks = [
+      `rel="canonical" href="https://biacung.com/award/${year}/"`,
+      `Giải thưởng sách và văn học ${year}`,
+      'data-award-years'
+    ];
+    if (isCollectedAwardYear(awardPayloads[2]?.laureates_by_year?.[year])) {
+      checks.push(`Prix Goncourt ${year}`);
+    }
+    if (isCollectedAwardYear(awardPayloads[4]?.laureates_by_year?.[year])) {
+      checks.push(`Goodreads Choice Awards ${year}`);
+    }
+    pageRules.push({
+      file: `award/${year}/index.html`,
+      checks
+    });
+  });
 
   pageRules.forEach((rule) => {
     const content = readFileSafe(path.join(rootDir, rule.file));
@@ -119,6 +148,11 @@ function auditStaticPages(rootDir, errors) {
 
   navPages.forEach((file) => {
     const content = readFileSafe(path.join(rootDir, file));
+    pushIfMissing(
+      errors,
+      content.includes('href="/award/"'),
+      `${file} is missing award navigation link`
+    );
     pushIfMissing(
       errors,
       content.includes('href="/chauchaubook" aria-haspopup="true">Chauchaubook</a>'),
@@ -164,7 +198,7 @@ function auditStaticPages(rootDir, errors) {
     { file: "search.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/search.css?v='] },
     { file: "series.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/search.css?v='] },
     { file: "detail.html", snippets: ['assets/css/tokens.css?v=', 'assets/css/home.css?v=', 'assets/css/detail.css?v='] },
-    { file: "award/index.html", snippets: ['../assets/css/tokens.css?v=', '../assets/css/home.css?v=', '../assets/css/award.css?v='] }
+    { file: "award/index.html", snippets: ['/assets/css/tokens.css?v=', '/assets/css/home.css?v=', '/assets/css/award.css?v='] }
   ];
 
   cssVersionChecks.forEach((rule) => {
@@ -182,7 +216,7 @@ function auditStaticPages(rootDir, errors) {
     { file: "search.html", snippets: ['assets/js/nav.js?v=', 'assets/js/search.js?v='] },
     { file: "series.html", snippets: ['assets/js/nav.js?v=', 'assets/js/series.js?v='] },
     { file: "detail.html", snippets: ['assets/js/nav.js?v=', 'assets/js/detail.js?v='] },
-    { file: "award/index.html", snippets: ['../assets/js/nav.js?v='] }
+    { file: "award/index.html", snippets: ['/assets/js/nav.js?v=', '/assets/js/award.js?v='] }
   ];
 
   jsVersionChecks.forEach((rule) => {
@@ -190,6 +224,13 @@ function auditStaticPages(rootDir, errors) {
     rule.snippets.forEach((snippet) => {
       pushIfMissing(errors, content.includes(snippet), `${rule.file} is missing JS cache-busting version: ${snippet}`);
     });
+  });
+
+  const awardTemplate = readFileSafe(path.join(rootDir, "award", "index.html"));
+  awardYears.forEach((year) => {
+    const generated = readFileSafe(path.join(rootDir, "award", year, "index.html"));
+    const expected = buildYearPage(awardTemplate, awardPayloads, year);
+    pushIfMissing(errors, generated === expected, `award/${year}/index.html is stale. Run npm run generate-award-pages.`);
   });
 }
 
@@ -199,6 +240,8 @@ function auditCoreFiles(rootDir, errors) {
     "sitemap.xml",
     "site.webmanifest",
     "assets/css/chauchaubook-portfolio.css",
+    "assets/css/award.css",
+    "assets/js/award.js",
     "assets/js/seo.js",
     "script/static-server.js",
     "assets/img/favicon/apple-touch-icon.png",
@@ -206,7 +249,14 @@ function auditCoreFiles(rootDir, errors) {
     "assets/img/favicon/android-chrome-512x512.png",
     "assets/img/favicon/favicon-16x16.png",
     "assets/img/favicon/favicon-32x32.png",
-    "assets/img/favicon/favicon.ico"
+    "assets/img/favicon/favicon.ico",
+    "assets/img/awards/2025-laszlo-krasznahorkai.jpg",
+    "assets/img/awards/2026-angel-down.jpg",
+    "assets/img/awards/2025-james.jpg",
+    "assets/img/awards/2025-flesh.jpg",
+    "data/awards/booker_prize.json",
+    "data/awards/goncourt.json",
+    "data/awards/goodreads_choice.json"
   ].forEach((relativePath) => {
     pushIfMissing(errors, fs.existsSync(path.join(rootDir, relativePath)), `Missing required file: ${relativePath}`);
   });
@@ -227,6 +277,10 @@ function auditLocalRoutes(rootDir, errors) {
     ["/detail", "detail.html"],
     ["/award", "award/index.html"],
     ["/award/", "award/index.html"],
+    ["/award/2025", "award/2025/index.html"],
+    ["/award/2025/", "award/2025/index.html"],
+    ["/award/2026", "award/2026/index.html"],
+    ["/award/2026/", "award/2026/index.html"],
     ["/about.html", "about.html"],
     ["/detail.html", "detail.html"]
   ];
@@ -248,6 +302,9 @@ function auditSitemap(rootDir, errors) {
 
   const entries = buildSitemapEntries(rootDir);
   pushIfMissing(errors, entries.some((entry) => entry.loc === "https://biacung.com/chauchaubook"), "sitemap.xml does not include Chauchaubook page");
+  pushIfMissing(errors, entries.some((entry) => entry.loc === "https://biacung.com/award/"), "sitemap.xml does not include award page");
+  pushIfMissing(errors, entries.some((entry) => entry.loc === "https://biacung.com/award/2025/"), "sitemap.xml does not include award year 2025");
+  pushIfMissing(errors, entries.some((entry) => entry.loc === "https://biacung.com/award/2026/"), "sitemap.xml does not include award year 2026");
   pushIfMissing(errors, entries.some((entry) => entry.loc === "https://biacung.com/chauchaubook/works"), "sitemap.xml does not include Chauchaubook works page");
   pushIfMissing(errors, !entries.some((entry) => entry.loc === "https://biacung.com/series?id=chauchaubook"), "sitemap.xml includes duplicate Chauchaubook series page");
   pushIfMissing(errors, entries.some((entry) => entry.loc.includes("/detail?id=")), "sitemap.xml does not include book detail URLs");
@@ -263,6 +320,130 @@ function auditData(rootDir, errors, warnings) {
   const seriesIndex = readJsonSafe(path.join(rootDir, "data", "series.json"), []);
   const seriesById = new Map();
   const taggedBooksBySeriesId = new Map();
+  const nobelData = readJsonSafe(path.join(rootDir, "data", "awards", "nobel_literature.json"), null);
+  const pulitzerData = readJsonSafe(path.join(rootDir, "data", "awards", "pulitzer_fiction.json"), null);
+  const bookerData = readJsonSafe(path.join(rootDir, "data", "awards", "booker_prize.json"), null);
+  const goncourtData = readJsonSafe(path.join(rootDir, "data", "awards", "goncourt.json"), null);
+  const goodreadsData = readJsonSafe(path.join(rootDir, "data", "awards", "goodreads_choice.json"), null);
+  const nobel2026 = nobelData?.laureates_by_year?.["2026"];
+  const nobel2025 = nobelData?.laureates_by_year?.["2025"];
+  const nobel2025Laureates = Array.isArray(nobel2025?.laureates) ? nobel2025.laureates : [];
+
+  pushIfMissing(errors, Boolean(nobelData), "Invalid JSON: data/awards/nobel_literature.json");
+  pushIfMissing(errors, /^\d{4}-\d{2}-\d{2}$/.test(normalizeText(nobelData?.updated_at)), "Nobel literature data is missing updated_at");
+  pushIfMissing(errors, nobel2026?.status === "pending", "Nobel literature 2026 must be marked as pending");
+  pushIfMissing(errors, nobel2026?.announcement_date === "2026-10-08", "Nobel literature 2026 announcement date is missing or incorrect");
+  pushIfMissing(errors, normalizeText(nobel2026?.schedule_source_url).startsWith("https://www.nobelprize.org/"), "Nobel literature 2026 is missing its official schedule URL");
+  pushIfMissing(errors, nobel2025?.announced_on === "2025-10-09", "Nobel literature 2025 announcement date is missing or incorrect");
+  pushIfMissing(errors, normalizeText(nobel2025?.source_url).startsWith("https://www.nobelprize.org/"), "Nobel literature 2025 is missing its official source URL");
+  pushIfMissing(errors, nobel2025Laureates.length === 1, "Nobel literature 2025 must contain exactly one laureate");
+
+  const nobel2025Laureate = nobel2025Laureates[0] || {};
+  pushIfMissing(errors, nobel2025Laureate.name === "László Krasznahorkai", "Nobel literature 2025 laureate is incorrect");
+  pushIfMissing(errors, Boolean(normalizeText(nobel2025Laureate.motivation)), "Nobel literature 2025 is missing the official motivation");
+  pushIfMissing(errors, Boolean(normalizeText(nobel2025Laureate.motivation_vi)), "Nobel literature 2025 is missing the Vietnamese motivation");
+  pushIfMissing(
+    errors,
+    Boolean(normalizeText(nobel2025Laureate?.photo?.src))
+      && fs.existsSync(path.join(rootDir, normalizeText(nobel2025Laureate.photo.src))),
+    "Nobel literature 2025 portrait is missing"
+  );
+  pushIfMissing(errors, nobel2025Laureate?.photo?.creator === "Clément Morin", "Nobel literature 2025 portrait credit is missing or incorrect");
+  pushIfMissing(errors, nobel2025Laureate?.photo?.license === "© Nobel Prize Outreach", "Nobel literature 2025 portrait copyright is missing or incorrect");
+
+  const pulitzer2026 = pulitzerData?.laureates_by_year?.["2026"];
+  const pulitzer2026Winner = Array.isArray(pulitzer2026?.laureates) ? pulitzer2026.laureates[0] : null;
+  const pulitzer2025 = pulitzerData?.laureates_by_year?.["2025"];
+  const pulitzerWinner = Array.isArray(pulitzer2025?.laureates) ? pulitzer2025.laureates[0] : null;
+  pushIfMissing(errors, Boolean(pulitzerData), "Invalid JSON: data/awards/pulitzer_fiction.json");
+  pushIfMissing(errors, pulitzer2026?.announced_on === "2026-05-04", "Pulitzer Fiction 2026 announcement date is missing or incorrect");
+  pushIfMissing(errors, pulitzer2026Winner?.name === "Daniel Kraus", "Pulitzer Fiction 2026 winner is incorrect");
+  pushIfMissing(errors, pulitzer2026Winner?.work?.title === "Angel Down", "Pulitzer Fiction 2026 winning work is incorrect");
+  pushIfMissing(errors, Boolean(normalizeText(pulitzer2026Winner?.citation_vi)), "Pulitzer Fiction 2026 is missing the Vietnamese citation");
+  pushIfMissing(
+    errors,
+    Boolean(normalizeText(pulitzer2026Winner?.work?.cover?.src))
+      && fs.existsSync(path.join(rootDir, normalizeText(pulitzer2026Winner.work.cover.src))),
+    "Pulitzer Fiction 2026 cover is missing"
+  );
+  pushIfMissing(errors, pulitzer2025?.announced_on === "2025-05-05", "Pulitzer Fiction 2025 announcement date is missing or incorrect");
+  pushIfMissing(errors, pulitzerWinner?.name === "Percival Everett", "Pulitzer Fiction 2025 winner is incorrect");
+  pushIfMissing(errors, pulitzerWinner?.work?.title === "James", "Pulitzer Fiction 2025 winning work is incorrect");
+  pushIfMissing(errors, Boolean(normalizeText(pulitzerWinner?.citation_vi)), "Pulitzer Fiction 2025 is missing the Vietnamese citation");
+  pushIfMissing(
+    errors,
+    Boolean(normalizeText(pulitzerWinner?.work?.cover?.src))
+      && fs.existsSync(path.join(rootDir, normalizeText(pulitzerWinner.work.cover.src))),
+    "Pulitzer Fiction 2025 cover is missing"
+  );
+
+  const booker2026 = bookerData?.laureates_by_year?.["2026"];
+  const booker2025 = bookerData?.laureates_by_year?.["2025"];
+  const bookerWinner = Array.isArray(booker2025?.laureates) ? booker2025.laureates[0] : null;
+  pushIfMissing(errors, Boolean(bookerData), "Invalid JSON: data/awards/booker_prize.json");
+  pushIfMissing(errors, booker2026?.status === "pending", "Booker Prize 2026 must be marked as pending");
+  pushIfMissing(errors, booker2026?.announcement_date === "2026-11-09", "Booker Prize 2026 announcement date is missing or incorrect");
+  pushIfMissing(errors, normalizeText(booker2026?.schedule_source_url).startsWith("https://thebookerprizes.com/"), "Booker Prize 2026 is missing its official schedule URL");
+  pushIfMissing(errors, booker2025?.announced_on === "2025-11-10", "Booker Prize 2025 announcement date is missing or incorrect");
+  pushIfMissing(errors, bookerWinner?.name === "David Szalay", "Booker Prize 2025 winner is incorrect");
+  pushIfMissing(errors, bookerWinner?.work?.title === "Flesh", "Booker Prize 2025 winning work is incorrect");
+  pushIfMissing(errors, Boolean(normalizeText(bookerWinner?.citation_vi)), "Booker Prize 2025 is missing the Vietnamese citation");
+  pushIfMissing(
+    errors,
+    Boolean(normalizeText(bookerWinner?.work?.cover?.src))
+      && fs.existsSync(path.join(rootDir, normalizeText(bookerWinner.work.cover.src))),
+    "Booker Prize 2025 cover is missing"
+  );
+
+  const goncourt2026 = goncourtData?.laureates_by_year?.["2026"];
+  pushIfMissing(errors, Boolean(goncourtData), "Invalid JSON: data/awards/goncourt.json");
+  pushIfMissing(errors, /^\d{4}-\d{2}-\d{2}$/.test(normalizeText(goncourtData?.updated_at)), "Prix Goncourt data is missing updated_at");
+  pushIfMissing(errors, goncourt2026?.status === "pending", "Prix Goncourt 2026 must be marked as pending");
+  pushIfMissing(errors, goncourt2026?.announcement_date === "2026-11-03", "Prix Goncourt 2026 announcement date is missing or incorrect");
+  pushIfMissing(errors, normalizeText(goncourt2026?.schedule_source_url).startsWith("https://www.academiegoncourt.com/"), "Prix Goncourt 2026 is missing its official schedule URL");
+  pushIfMissing(errors, Array.isArray(goncourt2026?.laureates) && goncourt2026.laureates.length === 0, "Pending Prix Goncourt 2026 must have an empty laureates list");
+
+  const goodreads2026 = goodreadsData?.laureates_by_year?.["2026"];
+  const goodreads2025 = goodreadsData?.laureates_by_year?.["2025"];
+  const goodreads2025Winners = Array.isArray(goodreads2025?.laureates) ? goodreads2025.laureates : [];
+  const expectedGoodreadsCategories = [
+    "fiction",
+    "historical-fiction",
+    "mystery-thriller",
+    "romance",
+    "fantasy",
+    "nonfiction"
+  ];
+  pushIfMissing(errors, Boolean(goodreadsData), "Invalid JSON: data/awards/goodreads_choice.json");
+  pushIfMissing(errors, goodreads2026?.status === "pending", "Goodreads Choice Awards 2026 must be marked as pending");
+  pushIfMissing(errors, goodreads2026?.eligibility_start === "2025-11-12", "Goodreads Choice Awards 2026 eligibility start date is missing or incorrect");
+  pushIfMissing(errors, goodreads2026?.eligibility_end === "2026-11-10", "Goodreads Choice Awards 2026 eligibility end date is missing or incorrect");
+  pushIfMissing(errors, normalizeText(goodreads2026?.schedule_source_url) === "https://www.goodreads.com/choiceawards/2025/rules", "Goodreads Choice Awards 2026 is missing its official schedule source URL");
+  pushIfMissing(errors, !normalizeText(goodreads2026?.announcement_date), "Goodreads Choice Awards 2026 must not contain an unconfirmed announcement date");
+  pushIfMissing(errors, Array.isArray(goodreads2026?.laureates) && goodreads2026.laureates.length === 0, "Goodreads Choice Awards 2026 must have an empty laureates list before results are announced");
+  pushIfMissing(errors, goodreads2025?.announced_on === "2025-12-04", "Goodreads Choice Awards 2025 announcement date is missing or incorrect");
+  pushIfMissing(errors, normalizeText(goodreads2025?.source_url).startsWith("https://www.goodreads.com/choiceawards/"), "Goodreads Choice Awards 2025 is missing its official source URL");
+  pushIfMissing(errors, goodreads2025?.total_votes_cast === 7516397, "Goodreads Choice Awards 2025 total vote count is missing or incorrect");
+  pushIfMissing(errors, goodreads2025Winners.length === 6, "Goodreads Choice Awards 2025 must contain the six tracked category winners");
+  pushIfMissing(
+    errors,
+    expectedGoodreadsCategories.every((category, index) => goodreads2025Winners[index]?.category === category),
+    "Goodreads Choice Awards 2025 categories are missing or out of order"
+  );
+  goodreads2025Winners.forEach((winner) => {
+    const label = `Goodreads Choice Awards 2025 ${normalizeText(winner?.category) || "winner"}`;
+    pushIfMissing(errors, Number.isInteger(winner?.vote_count) && winner.vote_count > 0, `${label} vote count is missing`);
+    pushIfMissing(errors, normalizeText(winner?.category_name_vi), `${label} Vietnamese category name is missing`);
+    pushIfMissing(errors, normalizeText(winner?.category_source_url).startsWith("https://www.goodreads.com/choiceawards/"), `${label} official category source is missing`);
+    pushIfMissing(errors, normalizeText(winner?.work?.title), `${label} work title is missing`);
+    pushIfMissing(errors, normalizeText(winner?.work?.publisher), `${label} publisher is missing`);
+    pushIfMissing(
+      errors,
+      Boolean(normalizeText(winner?.work?.cover?.src))
+        && fs.existsSync(path.join(rootDir, normalizeText(winner.work.cover.src))),
+      `${label} cover is missing`
+    );
+  });
 
   (Array.isArray(bookIndex) ? bookIndex : []).forEach((entry) => {
     const detail = normalizeText(entry?.detail);

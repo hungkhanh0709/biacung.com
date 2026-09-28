@@ -1,4 +1,5 @@
 {
+    "updated_at": "2026-09-27",
     "award_info": {
         "id": "us_pulitzer_fiction",
         "name": "Giải Pulitzer cho Tiểu thuyết",
@@ -15,131 +16,282 @@
         "notes": "Từ 1918-1947 gọi là 'Pulitzer Prize for the Novel'. Từ 1948 đổi tên thành 'Pulitzer Prize for Fiction' và mở rộng cho cả truyện ngắn, novella"
     },
     "laureates_by_year": {
+        "2026": {
+            "announced_on": "2026-05-04",
+            "source_url": "https://www.pulitzer.org/winners/daniel-kraus",
+            "laureates": [
+                {
+                    "name": "Daniel Kraus",
+                    "profile_url": "https://www.pulitzer.org/winners/daniel-kraus",
+                    "work": {
+                        "id": "daniel-kraus-angel-down",
+                        "title": "Angel Down",
+                        "work_url": "https://www.simonandschuster.com/books/Angel-Down-%28Pulitzer-Prize-Winner%29/Daniel-Kraus/9781668068458",
+                        "publisher": "Atria Books",
+                        "published_year": 2025,
+                        "cover": {
+                            "src": "assets/img/awards/2026-angel-down.jpg",
+                            "alt": "Bìa tiểu thuyết Angel Down của Daniel Kraus",
+                            "source_url": "https://www.simonandschuster.com/books/Angel-Down-%28Pulitzer-Prize-Winner%29/Daniel-Kraus/9781668068458"
+                        }
+                    },
+                    "citation": "A breathless novel of World War I, a stylistic tour-de-force that blends such genres as allegory, magical realism and science fiction into a cohesive whole, told in a single sentence.",
+                    "citation_vi": "Một tiểu thuyết nghẹt thở về Thế chiến thứ nhất, một màn trình diễn bậc thầy về phong cách, kết hợp ngụ ngôn, hiện thực huyền ảo và khoa học viễn tưởng thành một chỉnh thể liền mạch được kể trong một câu duy nhất.",
+                    "prize_amount": "$15,000"
+                }
+            ]
+        },
         "2025": {
+            "announced_on": "2025-05-05",
+            "source_url": "https://www.pulitzer.org/prize-winners-by-year/2025",
             "laureates": [
                 {
                     "name": "Percival Everett",
+                    "profile_url": "https://www.pulitzer.org/node/percival-everett-0",
                     "birth_state": "Georgia",
                     "work": {
                         "id": "percival-everett-james",
-                        "title": "James"
+                        "title": "James",
+                        "publisher": "Doubleday",
+                        "published_year": 2024,
+                        "cover": {
+                            "src": "assets/img/awards/2025-james.jpg",
+                            "alt": "Bìa tiểu thuyết James của Percival Everett",
+                            "source_url": "https://openlibrary.org/isbn/9780385550369"
+                        }
                     },
-                    "citation": "An accomplished reconsideration of 'Huckleberry Finn' that gives agency to Jim to illustrate the absurdity of racial supremacy and provide a new take on the search for family and freedom"
+                    "citation": "An accomplished reconsideration of 'Huckleberry Finn' that gives agency to Jim to illustrate the absurdity of racial supremacy and provide a new take on the search for family and freedom",
+                    "citation_vi": "Một cách nhìn lại đầy thuyết phục về Huckleberry Finn, trao tiếng nói chủ động cho Jim để phơi bày sự phi lý của chủ nghĩa thượng đẳng chủng tộc, đồng thời mở ra một góc nhìn mới về hành trình tìm kiếm gia đình và tự do."
                 }
             ]
         },
         "2024": {
+            "announced_on": "2024-05-06",
+            "source_url": "https://www.pulitzer.org/winners/jayne-anne-phillips",
             "laureates": [
                 {
                     "name": "Jayne Anne Phillips",
+                    "profile_url": "https://www.pulitzer.org/winners/jayne-anne-phillips",
                     "work": {
                         "id": "jayne-anne-phillips-night-watch",
-                        "title": "Night Watch"
+                        "title": "Night Watch",
+                        "work_url": "https://www.penguinrandomhouse.com/books/540650/night-watch-pulitzer-prize-winner-by-jayne-anne-phillips/",
+                        "publisher": "Knopf",
+                        "published_year": 2023,
+                        "cover": {
+                            "src": "assets/img/awards/2024-night-watch.jpg",
+                            "alt": "Bìa tiểu thuyết Night Watch của Jayne Anne Phillips",
+                            "source_url": "https://www.pulitzer.org/winners/jayne-anne-phillips"
+                        }
                     },
                     "birth_state": "West Virginia",
-                    "citation": "A beautifully rendered novel set in West Virginia's Trans-Allegheny Lunatic Asylum in the aftermath of the Civil War, where a severely wounded Union veteran, a 12-year-old girl and her mother, long abused by a Confederate soldier, struggle to heal"
+                    "citation": "A beautifully rendered novel set in West Virginia’s Trans-Allegheny Lunatic Asylum in the aftermath of the Civil War where a severely wounded Union veteran, a 12-year-old girl and her mother, long abused by a Confederate soldier, struggle to heal.",
+                    "citation_vi": "Một tiểu thuyết được khắc họa tuyệt đẹp, lấy bối cảnh Bệnh viện Tâm thần Trans-Allegheny ở Tây Virginia sau Nội chiến, nơi một cựu binh phe Liên bang bị thương nặng, một cô bé 12 tuổi và người mẹ từng bị một binh sĩ Liên minh miền Nam bạo hành trong thời gian dài cùng nỗ lực chữa lành.",
+                    "prize_amount": "$15,000"
                 }
             ]
         },
         "2023": {
+            "announced_on": "2023-05-08",
+            "source_url": "https://www.pulitzer.org/news/2023-pulitzer-prize-announcement",
             "laureates": [
                 {
                     "name": "Hernan Diaz",
+                    "profile_url": "https://www.pulitzer.org/winners/hernan-diaz",
                     "work": {
                         "id": "hernan-diaz-trust",
-                        "title": "Trust"
+                        "title": "Trust",
+                        "work_url": "https://www.penguinrandomhouse.com/books/678664/trust-pulitzer-prize-winner-by-hernan-diaz/",
+                        "publisher": "Riverhead Books",
+                        "published_year": 2022,
+                        "cover": {
+                            "src": "assets/img/awards/2023-trust.jpg",
+                            "alt": "Bìa tiểu thuyết Trust của Hernan Diaz",
+                            "source_url": "https://www.pulitzer.org/winners/hernan-diaz"
+                        }
                     },
                     "birth_state": "New York (born in Argentina)",
-                    "citation": "A riveting novel set in a bygone America that explores family, wealth and ambition through linked narratives rendered in different literary styles, a complex examination of love and power in a country where capitalism is king"
+                    "citation": "A riveting novel set in a bygone America that explores family, wealth and ambition through linked narratives rendered in different literary styles, a complex examination of love and power in a country where capitalism is king.",
+                    "citation_vi": "Một tiểu thuyết cuốn hút lấy bối cảnh nước Mỹ thuở trước, khám phá gia đình, của cải và tham vọng qua những mạch truyện liên kết được kể bằng nhiều phong cách văn chương khác nhau; một khảo sát phức tạp về tình yêu và quyền lực trong một đất nước nơi chủ nghĩa tư bản ngự trị.",
+                    "prize_amount": "$15,000"
                 },
                 {
                     "name": "Barbara Kingsolver",
+                    "profile_url": "https://www.pulitzer.org/winners/barbara-kingsolver",
                     "work": {
                         "id": "barbara-kingsolver-demon-copperhead",
-                        "title": "Demon Copperhead"
+                        "title": "Demon Copperhead",
+                        "work_url": "https://www.barbarakingsolver.com/books/demon-copperhead",
+                        "publisher": "Harper",
+                        "published_year": 2022,
+                        "cover": {
+                            "src": "assets/img/awards/2023-demon-copperhead.png",
+                            "alt": "Bìa tiểu thuyết Demon Copperhead của Barbara Kingsolver",
+                            "source_url": "https://www.pulitzer.org/winners/barbara-kingsolver"
+                        }
                     },
                     "birth_state": "Kentucky",
-                    "citation": "A masterful recasting of 'David Copperfield,' narrated by an Appalachian boy whose wise, unwavering voice relates his encounters with poverty, addiction, institutional failures and moral collapse–and his efforts to conquer them"
+                    "citation": "A masterful recasting of ‘David Copperfield,’ narrated by an Appalachian boy whose wise, unwavering voice relates his encounters with poverty, addiction, institutional failures and moral collapse–and his efforts to conquer them.",
+                    "citation_vi": "Một cách tái hiện bậc thầy David Copperfield, được kể qua lời một cậu bé vùng Appalachia; bằng giọng kể sáng suốt và kiên định, cậu thuật lại những lần đối mặt với nghèo đói, nghiện ngập, sự thất bại của các thiết chế và sự suy đồi đạo đức — cùng nỗ lực vượt qua tất cả.",
+                    "prize_amount": "$15,000"
                 }
             ],
-            "notes": "First time in Pulitzer Fiction history that two winners were named"
+            "notes": "Lần đầu tiên trong lịch sử Pulitzer Fiction có hai tác phẩm cùng đoạt giải."
         },
         "2022": {
+            "announced_on": "2022-05-09",
+            "source_url": "https://www.pulitzer.org/news/2022-pulitzer-prize-announcement",
             "laureates": [
                 {
                     "name": "Joshua Cohen",
+                    "profile_url": "https://www.pulitzer.org/winners/joshua-cohen",
                     "work": {
                         "id": "joshua-cohen-the-netanyahus",
                         "title": "The Netanyahus: An Account of a Minor and Ultimately Even Negligible Episode in the History of a Very Famous Family",
+                        "work_url": "https://www.nyrb.com/products/the-netanyahus",
+                        "publisher": "New York Review Books",
+                        "published_year": 2021,
+                        "cover": {
+                            "src": "assets/img/awards/2022-the-netanyahus.jpg",
+                            "alt": "Bìa tiểu thuyết The Netanyahus của Joshua Cohen",
+                            "source_url": "https://www.nyrb.com/products/the-netanyahus"
+                        }
                     },
                     "birth_state": "New Jersey",
-                    "citation": "A mordant, linguistically deft historical novel about the ambiguities of the Jewish American experience, presenting ideas and disputes as volatile as its tightly-wound plot"
+                    "citation": "A mordant, linguistically deft historical novel about the ambiguities of the Jewish-American experience, presenting ideas and disputes as volatile as its tightly-wound plot.",
+                    "citation_vi": "Một tiểu thuyết lịch sử sắc lạnh và điêu luyện về ngôn ngữ, khám phá những nhập nhằng của trải nghiệm Do Thái–Mỹ, trong đó các ý tưởng và tranh luận cũng biến động như cốt truyện căng chặt.",
+                    "prize_amount": "$15,000"
                 }
             ]
         },
         "2021": {
+            "announced_on": "2021-06-11",
+            "source_url": "https://www.pulitzer.org/winners/louise-erdrich",
             "laureates": [
                 {
                     "name": "Louise Erdrich",
+                    "profile_url": "https://www.pulitzer.org/winners/louise-erdrich",
                     "work": {
                         "id": "louise-erdrich-the-night-watchman",
-                        "title": "The Night Watchman"
+                        "title": "The Night Watchman",
+                        "work_url": "https://www.pulitzer.org/winners/louise-erdrich",
+                        "publisher": "Harper",
+                        "published_year": 2020,
+                        "cover": {
+                            "src": "assets/img/awards/2021-the-night-watchman.jpg",
+                            "alt": "Bìa tiểu thuyết The Night Watchman của Louise Erdrich",
+                            "source_url": "https://www.pulitzer.org/cms/sites/default/files/content/9780062671196_a69921b1-0213-4a8d-8d9c-3126042824d9.jpg"
+                        }
                     },
                     "birth_state": "Minnesota",
+                    "prize_amount": "$15,000",
+                    "citation_vi": "Một tiểu thuyết đa thanh, tráng lệ về nỗ lực của một cộng đồng nhằm ngăn chặn kế hoạch di dời và xóa bỏ một số bộ lạc người Mỹ bản địa vào thập niên 1950, được thể hiện bằng sự khéo léo và trí tưởng tượng.",
                     "citation": "A majestic, polyphonic novel about a community's efforts to halt the proposed displacement and elimination of several Native American tribes in the 1950s, rendered with dexterity and imagination"
                 }
             ]
         },
         "2020": {
+            "announced_on": "2020-05-04",
+            "source_url": "https://www.pulitzer.org/winners/colson-whitehead-0",
             "laureates": [
                 {
                     "name": "Colson Whitehead",
+                    "profile_url": "https://www.pulitzer.org/winners/colson-whitehead-0",
                     "work": {
                         "id": "colson-whitehead-the-nickel-boys",
-                        "title": "The Nickel Boys"
+                        "title": "The Nickel Boys",
+                        "work_url": "https://www.pulitzer.org/winners/colson-whitehead-0",
+                        "publisher": "Doubleday",
+                        "published_year": 2019,
+                        "cover": {
+                            "src": "assets/img/awards/2020-the-nickel-boys.jpeg",
+                            "alt": "Bìa tiểu thuyết The Nickel Boys của Colson Whitehead",
+                            "source_url": "https://www.pulitzer.org/cms/sites/default/files/content/9780385537070.jpeg"
+                        }
                     },
                     "birth_state": "New York",
-                    "citation": "A spare and devastating exploration of abuse at a reform school in Jim Crow-era Florida that is ultimately a powerful tale of human perseverance, dignity and redemption",
+                    "citation": "A spare and devastating exploration of abuse at a reform school in Jim Crow-era Florida that is ultimately a powerful tale of human perseverance, dignity and redemption.",
+                    "citation_vi": "Một cuộc khám phá tiết chế mà tàn khốc về sự ngược đãi tại một trường giáo dưỡng ở Florida thời Jim Crow, cuối cùng trở thành câu chuyện đầy sức mạnh về nghị lực, phẩm giá và sự cứu chuộc của con người.",
+                    "prize_amount": "$15,000",
                     "notes": "Second Pulitzer Prize for Colson Whitehead"
                 }
             ]
         },
         "2019": {
+            "announced_on": "2019-04-15",
+            "source_url": "https://www.pulitzer.org/winners/richard-powers",
             "laureates": [
                 {
                     "name": "Richard Powers",
+                    "profile_url": "https://www.pulitzer.org/winners/richard-powers",
                     "work": {
                         "id": "richard-powers-the-overstory",
-                        "title": "The Overstory"
+                        "title": "The Overstory",
+                        "work_url": "https://www.pulitzer.org/winners/richard-powers",
+                        "publisher": "W.W. Norton",
+                        "published_year": 2018,
+                        "cover": {
+                            "src": "assets/img/awards/2019-the-overstory.jpeg",
+                            "alt": "Bìa tiểu thuyết The Overstory của Richard Powers",
+                            "source_url": "https://www.pulitzer.org/cms/sites/default/files/content/9780393356687_300.jpeg"
+                        }
                     },
                     "birth_state": "Illinois",
-                    "citation": "An ingeniously structured narrative that branches and canopies like the trees at the core of the story whose wonder and connectivity echo those of the humans living amongst them"
+                    "citation": "An ingeniously structured narrative that branches and canopies like the trees at the core of the story whose wonder and connectivity echo those of the humans living amongst them",
+                    "citation_vi": "Một câu chuyện được cấu trúc đầy sáng tạo, phân nhánh và xòe tán như những cái cây ở trung tâm tác phẩm, mà sự kỳ diệu và tính kết nối của chúng vang vọng nơi những con người sống giữa chúng.",
+                    "prize_amount": "$15,000"
                 }
             ]
         },
         "2018": {
+            "announced_on": "2018-04-16",
+            "source_url": "https://www.pulitzer.org/winners/andrew-sean-greer",
             "laureates": [
                 {
                     "name": "Andrew Sean Greer",
+                    "profile_url": "https://www.pulitzer.org/winners/andrew-sean-greer",
                     "work": {
                         "id": "andrew-sean-greer-less",
-                        "title": "Less"
+                        "title": "Less",
+                        "work_url": "https://www.hachettebookgroup.com/titles/andrew-sean-greer/less-winner-of-the-pulitzer-prize/9780316316125/",
+                        "publisher": "Lee Boudreaux Books/Little, Brown and Company",
+                        "published_year": 2017,
+                        "cover": {
+                            "src": "assets/img/awards/2018-less.jpg",
+                            "alt": "Bìa tiểu thuyết Less của Andrew Sean Greer",
+                            "source_url": "https://www.hachettebookgroup.com/wp-content/uploads/2018/05/9780316316125.jpg?w=1200"
+                        }
                     },
                     "birth_state": "Washington, D.C.",
-                    "citation": "A generous book, musical in its prose and expansive in its structure and range, about growing older and the essential nature of love"
+                    "citation": "A generous book, musical in its prose and expansive in its structure and range, about growing older and the essential nature of love.",
+                    "citation_vi": "Một cuốn sách hào phóng, với văn xuôi giàu nhạc tính cùng cấu trúc và phạm vi rộng mở, viết về sự già đi và bản chất thiết yếu của tình yêu.",
+                    "prize_amount": "$15,000"
                 }
             ]
         },
         "2017": {
+            "announced_on": "2017-04-10",
+            "source_url": "https://www.pulitzer.org/winners/colson-whitehead",
             "laureates": [
                 {
                     "name": "Colson Whitehead",
+                    "profile_url": "https://www.pulitzer.org/winners/colson-whitehead",
                     "work": {
                         "id": "colson-whitehead-the-underground-railroad",
-                        "title": "The Underground Railroad"
+                        "title": "The Underground Railroad",
+                        "work_url": "https://www.penguinrandomhouse.com/books/232365/the-underground-railroad-pulitzer-prize-winner-by-colson-whitehead/9780385542364/",
+                        "publisher": "Doubleday",
+                        "published_year": 2016,
+                        "cover": {
+                            "src": "assets/img/awards/2017-the-underground-railroad.jpg",
+                            "alt": "Bìa tiểu thuyết The Underground Railroad của Colson Whitehead",
+                            "source_url": "https://images.penguinrandomhouse.com/cover/9780385542364"
+                        }
                     },
                     "birth_state": "New York",
-                    "citation": "For a smart melding of realism and allegory that combines the violence of slavery and the drama of escape in a myth that speaks to contemporary America",
+                    "citation": "For a smart melding of realism and allegory that combines the violence of slavery and the drama of escape in a myth that speaks to contemporary America.",
+                    "citation_vi": "Vì sự hòa trộn thông minh giữa chủ nghĩa hiện thực và ngụ ngôn, kết hợp bạo lực của chế độ nô lệ với kịch tính của cuộc đào thoát trong một huyền thoại có sức cộng hưởng với nước Mỹ đương đại.",
+                    "prize_amount": "$15,000",
                     "notes": "First Pulitzer Prize for Colson Whitehead"
                 }
             ]

@@ -19,6 +19,7 @@
 - `/chauchaubook`: Chauchaubook portfolio (`chauchaubook.html`)
 - `/chauchaubook/works`: Chauchaubook works collection (`chauchaubook/works/index.html`)
 - `/award/`: awards page (`award/index.html`)
+- `/award/<year>/`: generated award archive for a specific year, such as `/award/2025/`
 
 ## Project structure
 

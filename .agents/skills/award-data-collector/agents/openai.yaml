@@ -1,0 +1,4 @@
+interface:
+  display_name: "Award Data Collector"
+  short_description: "Thu thập dữ liệu giải thưởng văn học theo năm"
+  default_prompt: "Use $award-data-collector to collect and update one award year, for example Nobel 2024."

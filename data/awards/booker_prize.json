@@ -1,0 +1,287 @@
+{
+    "updated_at": "2026-09-27",
+    "award_info": {
+        "id": "uk_booker_prize",
+        "name": "Giải Booker",
+        "name_en": "The Booker Prize",
+        "established_year": 1969,
+        "awarding_body": "Booker Prize Foundation",
+        "country": "United Kingdom",
+        "description": "Giải thưởng thường niên dành cho tiểu thuyết dài viết bằng tiếng Anh và xuất bản tại Vương quốc Anh hoặc Ireland.",
+        "website": "https://thebookerprizes.com/the-booker-library/prize-years"
+    },
+    "laureates_by_year": {
+        "2026": {
+            "status": "pending",
+            "announcement_date": "2026-11-09",
+            "schedule_source_url": "https://thebookerprizes.com/booker-prize/enter-the-booker-prize",
+            "status_note": "Danh sách rút gọn đã được công bố; tác phẩm thắng giải sẽ được xướng tên vào ngày 09/11/2026.",
+            "laureates": []
+        },
+        "2025": {
+            "announced_on": "2025-11-10",
+            "source_url": "https://thebookerprizes.com/media-centre/press-releases/flesh-by-david-szalay-wins-the-booker-prize-2025",
+            "laureates": [
+                {
+                    "name": "David Szalay",
+                    "country": "Hungary/United Kingdom",
+                    "country_vi": "Hungary/Vương quốc Anh",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/david-szalay",
+                    "work": {
+                        "id": "david-szalay-flesh",
+                        "title": "Flesh",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/flesh",
+                        "publisher": "Jonathan Cape",
+                        "published_year": 2025,
+                        "cover": {
+                            "src": "assets/img/awards/2025-flesh.jpg",
+                            "alt": "Bìa tiểu thuyết Flesh của David Szalay",
+                            "source_url": "https://www.penguin.com.au/books/flesh-9780224099783"
+                        }
+                    },
+                    "citation": "an extraordinary, singular novel",
+                    "citation_vi": "Một tiểu thuyết khác thường và độc đáo, theo dấu cuộc đời István từ khu nhà ở tại Hungary đến thế giới của giới siêu giàu London.",
+                    "prize_amount": "£50,000"
+                }
+            ]
+        },
+        "2024": {
+            "announced_on": "2024-11-12",
+            "source_url": "https://thebookerprizes.com/media-centre/press-releases/orbital-by-samantha-harvey-wins-the-booker-prize-2024",
+            "laureates": [
+                {
+                    "name": "Samantha Harvey",
+                    "country": "United Kingdom",
+                    "country_vi": "Vương quốc Anh",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/samantha-harvey",
+                    "work": {
+                        "id": "samantha-harvey-orbital",
+                        "title": "Orbital",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/orbital",
+                        "publisher": "Jonathan Cape",
+                        "published_year": 2023,
+                        "cover": {
+                            "src": "assets/img/awards/2024-orbital.jpg",
+                            "alt": "Bìa tiểu thuyết Orbital của Samantha Harvey",
+                            "source_url": "https://cdn.penguin.co.uk/dam-assets/books/9781787334342/9781787334342-jacket-large.jpg"
+                        }
+                    },
+                    "citation": "Compact yet beautifully expansive, this is a love letter to our planet.",
+                    "citation_vi": "Cô đọng nhưng mở ra một không gian rộng lớn tuyệt đẹp, đây là một bức thư tình gửi tới hành tinh của chúng ta.",
+                    "prize_amount": "£50,000"
+                }
+            ]
+        },
+        "2023": {
+            "announced_on": "2023-11-26",
+            "source_url": "https://thebookerprizes.com/media-centre/press-releases/prophet-song-paul-lynch-wins-booker-prize-2023",
+            "laureates": [
+                {
+                    "name": "Paul Lynch",
+                    "country": "Ireland",
+                    "country_vi": "Ireland",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/paul-lynch",
+                    "work": {
+                        "id": "paul-lynch-prophet-song",
+                        "title": "Prophet Song",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/prophet-song",
+                        "publisher": "Oneworld",
+                        "published_year": 2023,
+                        "cover": {
+                            "src": "assets/img/awards/2023-prophet-song.jpg",
+                            "alt": "Bìa tiểu thuyết Prophet Song của Paul Lynch",
+                            "source_url": "https://www.simonandschuster.co.uk/books/Prophet-Song/Paul-Lynch/9780861545902"
+                        }
+                    },
+                    "citation": "Prophet Song captures the social and political anxieties of our current moment. Readers will find it soul-shattering and true, and will not soon forget its warnings.",
+                    "citation_vi": "Prophet Song nắm bắt những nỗi bất an xã hội và chính trị của thời đại chúng ta. Tác phẩm khiến người đọc tan nát cõi lòng bởi sự chân thực và những lời cảnh báo của nó sẽ còn ám ảnh rất lâu.",
+                    "prize_amount": "£50,000"
+                }
+            ]
+        },
+        "2022": {
+            "announced_on": "2022-10-17",
+            "source_url": "https://thebookerprizes.com/media-centre/press-releases/the-seven-moons-of-maali-almeida-wins-the-booker-prize-2022",
+            "laureates": [
+                {
+                    "name": "Shehan Karunatilaka",
+                    "country": "Sri Lanka",
+                    "country_vi": "Sri Lanka",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/shehan-karunatilaka",
+                    "work": {
+                        "id": "shehan-karunatilaka-the-seven-moons-of-maali-almeida",
+                        "title": "The Seven Moons of Maali Almeida",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/the-seven-moons-of-maali-almeida",
+                        "publisher": "Sort Of Books",
+                        "published_year": 2022,
+                        "cover": {
+                            "src": "assets/img/awards/2022-the-seven-moons-of-maali-almeida.webp",
+                            "alt": "Bìa tiểu thuyết The Seven Moons of Maali Almeida của Shehan Karunatilaka",
+                            "source_url": "https://sortof.co.uk/shehan-karunatilaka-the-seven-moons-of-maali-almeida"
+                        }
+                    },
+                    "citation": "Life after death in Sri Lanka: an afterlife noir, with nods to Dante and Buddha and yet unpretentious. Fizzes with energy, imagery and ideas against a broad, surreal vision of the Sri Lankan civil wars. Slyly, angrily comic.",
+                    "citation_vi": "Sự sống sau cái chết ở Sri Lanka: một truyện noir chốn hậu thế, phảng phất Dante và Đức Phật mà vẫn không hề kiểu cách. Tác phẩm sôi sục năng lượng, hình ảnh và ý tưởng trên nền một tầm nhìn rộng lớn, siêu thực về các cuộc nội chiến Sri Lanka. Hài hước kín đáo mà giận dữ.",
+                    "prize_amount": "£50,000"
+                }
+            ]
+        },
+        "2021": {
+            "announced_on": "2021-11-03",
+            "source_url": "https://thebookerprizes.com/media-centre/press-releases/the-promise-wins-2021-booker-prize",
+            "laureates": [
+                {
+                    "name": "Damon Galgut",
+                    "country": "South Africa",
+                    "country_vi": "Nam Phi",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/damon-galgut",
+                    "work": {
+                        "id": "damon-galgut-the-promise",
+                        "title": "The Promise",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/the-promise",
+                        "publisher": "Chatto & Windus",
+                        "published_year": 2021,
+                        "cover": {
+                            "src": "assets/img/awards/2021-the-promise.jpg",
+                            "alt": "Bìa tiểu thuyết The Promise của Damon Galgut",
+                            "source_url": "https://cdn.penguin.co.uk/dam-assets/books/9781473584464/9781473584464-jacket-large.jpg"
+                        }
+                    },
+                    "citation": "Brutal emotional truths hit home in Damon Galgut’s deft, powerful story of a diminished family and a troubled land.",
+                    "citation_vi": "Những sự thật cảm xúc khắc nghiệt gây ấn tượng sâu sắc trong câu chuyện mạnh mẽ, khéo léo của Damon Galgut về một gia đình suy tàn và một vùng đất đầy biến động.",
+                    "prize_amount": "£50,000"
+                }
+            ]
+        },
+        "2020": {
+            "announced_on": "2020-11-19",
+            "source_url": "https://thebookerprizes.com/media-centre/press-releases/shuggie-bain-wins-2020-booker-prize",
+            "laureates": [
+                {
+                    "name": "Douglas Stuart",
+                    "country": "Scotland/United States",
+                    "country_vi": "Scotland/Hoa Kỳ",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/douglas-stuart",
+                    "work": {
+                        "id": "douglas-stuart-shuggie-bain",
+                        "title": "Shuggie Bain",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/shuggie-bain",
+                        "publisher": "Picador",
+                        "published_year": 2020,
+                        "cover": {
+                            "src": "assets/img/awards/2020-shuggie-bain.jpg",
+                            "alt": "Bìa tiểu thuyết Shuggie Bain của Douglas Stuart",
+                            "source_url": "https://ik.imagekit.io/panmac/edition/9781529019278.jpg"
+                        }
+                    },
+                    "citation": "Shuggie Bain is destined to be a classic — a moving, immersive and nuanced portrait of a tight-knit social world, its people and its values.",
+                    "citation_vi": "Shuggie Bain chắc chắn sẽ trở thành một tác phẩm kinh điển — bức chân dung cảm động, đầy sức cuốn hút và tinh tế về một thế giới xã hội gắn bó khăng khít, về con người và các giá trị của cộng đồng ấy.",
+                    "prize_amount": "£50,000"
+                }
+            ]
+        },
+        "2019": {
+            "announced_on": "2019-10-14",
+            "source_url": "https://thebookerprizes.com/the-booker-library/prize-years/2019",
+            "laureates": [
+                {
+                    "name": "Margaret Atwood",
+                    "country": "Canada",
+                    "country_vi": "Canada",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/margaret-atwood",
+                    "work": {
+                        "id": "margaret-atwood-the-testaments",
+                        "title": "The Testaments",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/the-testaments",
+                        "publisher": "Chatto & Windus",
+                        "published_year": 2019,
+                        "cover": {
+                            "src": "assets/img/awards/2019-the-testaments.jpg",
+                            "alt": "Bìa tiểu thuyết The Testaments của Margaret Atwood",
+                            "source_url": "https://cdn.penguin.co.uk/dam-assets/books/9781784708214/9781784708214-jacket-large.jpg"
+                        }
+                    },
+                    "citation": "It is a savage and beautiful novel that speaks to us today with conviction and power. The bar is set unusually high for Atwood. She soars.",
+                    "citation_vi": "Một tiểu thuyết dữ dội và đẹp đẽ, cất tiếng nói với chúng ta hôm nay bằng niềm tin xác quyết và sức mạnh. Tiêu chuẩn dành cho Atwood được đặt cao khác thường, và bà đã vươn lên vượt qua.",
+                    "prize_amount": "£25,000"
+                },
+                {
+                    "name": "Bernardine Evaristo",
+                    "country": "United Kingdom",
+                    "country_vi": "Vương quốc Anh",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/bernadine-evaristo",
+                    "work": {
+                        "id": "bernardine-evaristo-girl-woman-other",
+                        "title": "Girl, Woman, Other",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/girl-woman-other",
+                        "publisher": "Hamish Hamilton",
+                        "published_year": 2019,
+                        "cover": {
+                            "src": "assets/img/awards/2019-girl-woman-other.jpg",
+                            "alt": "Bìa tiểu thuyết Girl, Woman, Other của Bernardine Evaristo",
+                            "source_url": "https://cdn.penguin.co.uk/dam-assets/books/9780241984994/9780241984994-jacket-large.jpg"
+                        }
+                    },
+                    "citation": "A must-read about modern Britain and womanhood. This is an impressive, fierce novel about the lives of black British families, their struggles, pains, laughter, longings and loves.",
+                    "citation_vi": "Một tác phẩm phải đọc về nước Anh hiện đại và thân phận phụ nữ. Đây là một tiểu thuyết ấn tượng, mạnh mẽ về cuộc đời của các gia đình người Anh da đen — những cuộc đấu tranh, nỗi đau, tiếng cười, khát vọng và tình yêu của họ.",
+                    "prize_amount": "£25,000"
+                }
+            ],
+            "notes": "The £50,000 prize was split equally between the two joint winners."
+        },
+        "2018": {
+            "announced_on": "2018-10-16",
+            "source_url": "https://thebookerprizes.com/the-booker-library/prize-years/2018",
+            "laureates": [
+                {
+                    "name": "Anna Burns",
+                    "country": "Northern Ireland",
+                    "country_vi": "Bắc Ireland",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/anna-burns",
+                    "work": {
+                        "id": "anna-burns-milkman",
+                        "title": "Milkman",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/milkman",
+                        "publisher": "Faber & Faber",
+                        "published_year": 2018,
+                        "cover": {
+                            "src": "assets/img/awards/2018-milkman.jpg",
+                            "alt": "Bìa tiểu thuyết Milkman của Anna Burns",
+                            "source_url": "https://www.faber.co.uk/wp-content/uploads/2026/03/Milkman-531x815.jpg"
+                        }
+                    },
+                    "citation": "Anna Burns’s utterly distinctive voice challenges conventional thinking and form in surprising and immersive prose. It is a story of brutality, sexual encroachment and resistance threaded with mordant humour.",
+                    "citation_vi": "Giọng văn hoàn toàn khác biệt của Anna Burns thách thức lối tư duy và hình thức truyền thống bằng một lối viết bất ngờ, cuốn hút. Đây là câu chuyện về bạo lực, sự xâm phạm tình dục và sức phản kháng, đan xen chất hài hước cay đắng.",
+                    "prize_amount": "£50,000"
+                }
+            ]
+        },
+        "2017": {
+            "announced_on": "2017-10-17",
+            "source_url": "https://thebookerprizes.com/the-booker-library/prize-years/2017",
+            "laureates": [
+                {
+                    "name": "George Saunders",
+                    "country": "United States",
+                    "country_vi": "Hoa Kỳ",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/george-saunders",
+                    "work": {
+                        "id": "george-saunders-lincoln-in-the-bardo",
+                        "title": "Lincoln in the Bardo",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/lincoln-in-the-bardo",
+                        "publisher": "Bloomsbury",
+                        "published_year": 2017,
+                        "cover": {
+                            "src": "assets/img/awards/2017-lincoln-in-the-bardo.jpg",
+                            "alt": "Bìa tiểu thuyết Lincoln in the Bardo của George Saunders",
+                            "source_url": "https://openlibrary.org/books/OL26987741M/Lincoln_in_the_Bardo_WINNER_OF_THE_MAN_BOOKER_PRIZE_2017"
+                        }
+                    },
+                    "citation": "For us, it really stood out because of its innovation, it’s very different styling, the way it, almost paradoxically, brought to life these almost dead souls in this other world. There was this juxtaposition of the very personal tragedy of Abraham Lincoln and the death of his very young son next to his public life, as the person who really instigated the American civil war. You’ve got this individual death, very close and personal; you’ve got this much wider issue of the political scenario and the death of hundreds of thousands of young men; and then you’ve got this weird state across the cemetery, with these souls who are not quite ready to be fully dead, as it were, trying to work out some of the things that plagued them during their lives.",
+                    "citation_vi": "Với chúng tôi, tác phẩm thực sự nổi bật nhờ tính đổi mới, phong cách rất khác biệt và cách nó, gần như nghịch lý, làm sống dậy trong một thế giới khác những linh hồn gần như đã chết. Bi kịch hết sức riêng tư của Abraham Lincoln trước cái chết của người con trai còn rất nhỏ được đặt cạnh cuộc đời công chúng của ông, người thực sự khơi mào Nội chiến Hoa Kỳ. Ở đây có một cái chết cá nhân, rất gần gũi và riêng tư; có bối cảnh chính trị rộng lớn hơn cùng cái chết của hàng trăm nghìn thanh niên; rồi lại có trạng thái kỳ lạ bao trùm nghĩa trang, nơi những linh hồn dường như chưa sẵn sàng chết hẳn đang cố tháo gỡ những điều từng ám ảnh họ khi còn sống.",
+                    "prize_amount": "£50,000"
+                }
+            ]
+        }
+    }
+}
