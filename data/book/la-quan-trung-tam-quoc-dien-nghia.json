@@ -1,0 +1,44 @@
+{
+  "id": "la-quan-trung-tam-quoc-dien-nghia",
+  "title": "Tam Quốc Diễn Nghĩa",
+  "title_original": "三國演義",
+  "authors": [
+    "La Quán Trung"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "la-quan-trung-tam-quoc-dien-nghia-2026-dong-a-bia-cung-ao-om-1tr",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Phan Kế Bính"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "1tr",
+      "print_run": null,
+      "page_count": 1898,
+      "copy_numbering": null,
+      "size_cm": "24 x 16 x 15",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/thumbnail.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/dong-a-three-volume-set-front-covers.webp",
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/dong-a-three-volume-set-painted-fore-edge.webp",
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/dong-a-three-volume-set-with-map.webp",
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/volume-one-dust-jacket.webp",
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/volume-one-red-hardcover.webp"
+      ],
+      "detail": "Lần này Đông A giới thiệu phiên bản bìa cứng có bìa áo và in tranh trên cạnh sách, tái hiện những trường đoạn nổi bật trong tác phẩm. \nKhi các tập được xếp đúng thứ tự, hình ảnh trên cạnh từng tập sẽ nối liền thành một bức tranh hoàn chỉnh."
+    }
+  ]
+}

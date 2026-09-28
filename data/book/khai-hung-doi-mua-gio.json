@@ -33,8 +33,10 @@
       "copy_numbering": "001-555",
       "size_cm": "14,5 x 20,5",
       "weight_g": 500,
-      "thumbnail": "/assets/img/books/khai-hung-doi-mua-gio/thumbnail.jpeg",
-      "gellery_imgs": [],
+      "thumbnail": "/assets/img/books/khai-hung-doi-mua-gio/thumbnail.webp",
+      "gellery_imgs": [
+        "/assets/img/books/khai-hung-doi-mua-gio/nha-nam-viet-nam-danh-tac-cover-in-hand.jpg"
+      ],
       "detail": "- Bìa cứng, đánh số giới hạn 555 bản\n- Giấy bãi bằng 100gsm"
     }
   ]
