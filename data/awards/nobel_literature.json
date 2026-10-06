@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-27",
+    "updated_at": "2026-10-06",
     "award_info": {
         "id": "intl_nobel_literature",
         "name": "Giải Nobel Văn chương",
@@ -875,12 +875,29 @@
             ]
         },
         "1999": {
+            "announced_on": "1999-09-30",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1999/press-release/",
             "laureates": [
                 {
+                    "id": "gunter-grass-germany",
                     "name": "Günter Grass",
                     "country": "Germany",
+                    "country_vi": "Đức",
+                    "born_year": 1927,
+                    "born_place": "Danzig, Free City of Danzig (now Gdansk, Poland)",
                     "language": "German",
                     "motivation": "whose frolicsome black fables portray the forgotten face of history",
+                    "motivation_vi": "vì những truyện ngụ ngôn đen đầy chất tinh nghịch của ông khắc họa gương mặt bị lãng quên của lịch sử",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1999/grass/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1999-gunter-grass.jpg",
+                        "alt": "Chân dung nhà văn Günter Grass",
+                        "creator": "H. Grunert",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1999/grass/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung trên hồ sơ Nobel Prize 1999; nguồn ghi credit H. Grunert, không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "drama",
@@ -891,12 +908,29 @@
             ]
         },
         "1998": {
+            "announced_on": "1998-10-08",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1998/press-release/",
             "laureates": [
                 {
+                    "id": "jose-saramago-portugal",
                     "name": "José Saramago",
                     "country": "Portugal",
+                    "country_vi": "Bồ Đào Nha",
+                    "born_year": 1922,
+                    "born_place": "Azinhaga, Portugal",
                     "language": "Portuguese",
                     "motivation": "who with parables sustained by imagination, compassion and irony continually enables us once again to apprehend an elusory reality",
+                    "motivation_vi": "vì qua những dụ ngôn giàu trí tưởng tượng, lòng trắc ẩn và chất mỉa mai, ông không ngừng giúp chúng ta nhận thức lại một thực tại khó nắm bắt",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1998/saramago/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1998-jose-saramago.jpg",
+                        "alt": "Chân dung nhà văn José Saramago",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1998/saramago/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung từ kho lưu trữ Nobel Foundation; trang nguồn không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "drama",
@@ -906,12 +940,29 @@
             ]
         },
         "1997": {
+            "announced_on": "1997-10-09",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1997/press-release/",
             "laureates": [
                 {
+                    "id": "dario-fo-italy",
                     "name": "Dario Fo",
                     "country": "Italy",
+                    "country_vi": "Ý",
+                    "born_year": 1926,
+                    "born_place": "Leggiuno-Sangiano, Italy",
                     "language": "Italian",
                     "motivation": "who emulates the jesters of the Middle Ages in scourging authority and upholding the dignity of the downtrodden",
+                    "motivation_vi": "vì ông noi theo các nghệ sĩ hề thời Trung cổ để đả kích giới cầm quyền và bảo vệ phẩm giá của những người bị áp bức",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1997/fo/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1997-dario-fo.jpg",
+                        "alt": "Chân dung nhà soạn kịch Dario Fo",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1997/fo/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung từ kho lưu trữ Nobel Foundation; trang nguồn không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "drama",
                         "song lyrics"
@@ -920,12 +971,29 @@
             ]
         },
         "1996": {
+            "announced_on": "1996-10-03",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1996/press-release/",
             "laureates": [
                 {
+                    "id": "wislawa-szymborska-poland",
                     "name": "Wisława Szymborska",
                     "country": "Poland",
+                    "country_vi": "Ba Lan",
+                    "born_year": 1923,
+                    "born_place": "Bnin (now Kórnik), Poland",
                     "language": "Polish",
                     "motivation": "for poetry that with ironic precision allows the historical and biological context to come to light in fragments of human reality",
+                    "motivation_vi": "vì thơ ca, với sự chính xác đầy chất mỉa mai, đã làm hiện rõ bối cảnh lịch sử và sinh học trong những mảnh ghép của hiện thực con người",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1996/szymborska/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1996-wislawa-szymborska.jpg",
+                        "alt": "Chân dung nhà thơ Wisława Szymborska",
+                        "creator": "Jurek Holzer/Scanpix",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1996/szymborska/facts/",
+                        "license": "Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Credit theo hồ sơ Nobel Prize: Photo: Jurek Holzer/Scanpix. Nobel Foundation archive; không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry",
                         "essay",
@@ -935,12 +1003,29 @@
             ]
         },
         "1995": {
+            "announced_on": "1995-10-05",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1995/press-release/",
             "laureates": [
                 {
+                    "id": "seamus-heaney-ireland",
                     "name": "Seamus Heaney",
                     "country": "Ireland",
+                    "country_vi": "Ai-len",
+                    "born_year": 1939,
+                    "born_place": "Mossbawn, near Castledawson, County Derry, Northern Ireland",
                     "language": "English",
                     "motivation": "for works of lyrical beauty and ethical depth, which exalt everyday miracles and the living past",
+                    "motivation_vi": "vì những tác phẩm giàu vẻ đẹp trữ tình và chiều sâu đạo đức, tôn vinh những điều kỳ diệu thường ngày và quá khứ vẫn sống động",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1995/heaney/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1995-seamus-heaney.jpg",
+                        "alt": "Chân dung nhà thơ Seamus Heaney",
+                        "creator": "Jack Mikrut/TT",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1995/heaney/facts/",
+                        "license": "Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Hồ sơ Nobel ghi credit ảnh Jack Mikrut/TT và nguồn kho lưu trữ Nobel Foundation; không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry",
                         "drama",
@@ -951,12 +1036,29 @@
             ]
         },
         "1994": {
+            "announced_on": "1994-10-13",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1994/press-release/",
             "laureates": [
                 {
+                    "id": "kenzaburo-oe-japan",
                     "name": "Kenzaburō Ōe",
                     "country": "Japan",
+                    "country_vi": "Nhật Bản",
+                    "born_year": 1935,
+                    "born_place": "Uchiko, Japan",
                     "language": "Japanese",
                     "motivation": "who with poetic force creates an imagined world, where life and myth condense to form a disconcerting picture of the human predicament today",
+                    "motivation_vi": "vì với sức mạnh thi ca, ông tạo nên một thế giới tưởng tượng, nơi đời sống và huyền thoại kết tụ thành bức tranh gây bất an về thân phận con người hôm nay",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1994/oe/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1994-kenzaburo-oe.jpg",
+                        "alt": "Chân dung nhà văn Kenzaburō Ōe",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1994/oe/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung từ kho lưu trữ Nobel Foundation; trang nguồn không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -966,12 +1068,29 @@
             ]
         },
         "1993": {
+            "announced_on": "1993-10-07",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1993/press-release/",
             "laureates": [
                 {
+                    "id": "toni-morrison-united-states",
                     "name": "Toni Morrison",
                     "country": "United States",
+                    "country_vi": "Hoa Kỳ",
+                    "born_year": 1931,
+                    "born_place": "Lorain, Ohio, United States",
                     "language": "English",
                     "motivation": "who in novels characterized by visionary force and poetic import, gives life to an essential aspect of American reality",
+                    "motivation_vi": "vì trong những tiểu thuyết đầy sức mạnh viễn kiến và chất thơ, bà đem lại sức sống cho một khía cạnh thiết yếu của hiện thực nước Mỹ",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1993/morrison/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1993-toni-morrison.jpg",
+                        "alt": "Chân dung nhà văn Toni Morrison",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1993/morrison/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung từ kho lưu trữ Nobel Foundation; trang nguồn không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "essay"
