@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-10-07",
+    "updated_at": "2026-10-08",
     "award_info": {
         "id": "intl_nobel_literature",
         "name": "Giải Nobel Văn chương",
@@ -7,14 +7,14 @@
         "established_year": 1901,
         "awarding_body": "Swedish Academy",
         "country": "Sweden",
-        "total_times_awarded": 118,
-        "total_laureates": 122,
+        "total_times_awarded": 119,
+        "total_laureates": 123,
         "years_not_awarded": 7,
         "description": "Giải thưởng văn học danh giá nhất thế giới, được trao hàng năm cho tác giả có đóng góp xuất sắc cho văn học thế giới",
         "website": "https://www.nobelprize.org/prizes/literature/"
     },
     "statistics": {
-        "years_awarded": 118,
+        "years_awarded": 119,
         "not_awarded_years": [
             1914,
             1918,
@@ -24,8 +24,8 @@
             1942,
             1943
         ],
-        "total_laureates": 122,
-        "female_laureates": 18,
+        "total_laureates": 123,
+        "female_laureates": 19,
         "male_laureates": 104,
         "shared_prizes": 4,
         "declined_prizes": 2,
@@ -33,11 +33,31 @@
     },
     "laureates_by_year": {
         "2026": {
-            "status": "pending",
-            "announcement_date": "2026-10-08",
-            "schedule_source_url": "https://www.nobelprize.org/prizes/about/prize-announcement-dates/",
-            "status_note": "Theo lịch Nobel Prize, thông báo được dự kiến sớm nhất lúc 13:00 CEST, tức 18:00 giờ Việt Nam.",
-            "laureates": []
+            "announced_on": "2026-10-08",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2026/press-release/",
+            "laureates": [
+                {
+                    "id": "anne-carson-canada",
+                    "name": "Anne Carson",
+                    "country": "Canada",
+                    "country_vi": "Canada",
+                    "born_year": 1950,
+                    "born_place": "Toronto, Canada",
+                    "language": "English",
+                    "motivation": "for her bold and inventive oeuvre that, in playful dialogue with the classical tradition, has created new forms for contemporary literature",
+                    "motivation_vi": "vì sự nghiệp sáng tác táo bạo và giàu sáng tạo của bà, qua cuộc đối thoại đầy tinh thần vui chơi với truyền thống cổ điển, đã tạo ra những hình thức mới cho văn học đương đại",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2026/carson/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2026-anne-carson.jpg",
+                        "alt": "Chân dung minh họa nhà văn Anne Carson",
+                        "creator": "Niklas Elmehed",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2026/carson/facts/",
+                        "license": "Ill. Niklas Elmehed © Nobel Prize Outreach",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Chân dung minh họa chính thức trên hồ sơ Nobel 2026; không phải ảnh chụp."
+                    }
+                }
+            ]
         },
         "2025": {
             "announced_on": "2025-10-09",
