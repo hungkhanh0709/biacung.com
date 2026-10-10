@@ -1,5 +1,11 @@
 [
   {
+    "detail": "data/book/thach-lam-ha-noi-bam-sau-pho-phuong.json",
+    "search_text": "thach lam ha noi bam sau pho phuong nxb ha noi nxb hoi nha van nha nam viet nam danh tac nha nam viet nam danh tac artbook nha nam bia cung gioi han vietnamdanhtacnhanam",
+    "updated_at": "2026-10-10",
+    "last_pub_year": 2026
+  },
+  {
     "detail": "data/book/la-quan-trung-tam-quoc-dien-nghia.json",
     "search_text": "la quan trung tam quoc dien nghia nxb van hoc dong a phan ke binh",
     "last_pub_year": 2026,
@@ -14,12 +20,6 @@
   {
     "detail": "data/book/lucy-maud-montgomery-anne-of-green-gables.json",
     "search_text": "lucy maud montgomery anne of green gables anne toc do nxb hoi nha van nha nam 50 nam fahasa boxset anne toc do hop 8 tap phien ban doc quyen 50 nam fahasa bia cung gioi han",
-    "updated_at": "2026-09-20",
-    "last_pub_year": 2026
-  },
-  {
-    "detail": "data/book/thach-lam-ha-noi-bam-sau-pho-phuong.json",
-    "search_text": "thach lam ha noi bam sau pho phuong nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
     "updated_at": "2026-09-20",
     "last_pub_year": 2026
   },
