@@ -1278,5 +1278,12 @@
     "work_ids": [
       "bernard-werber-boxset-kien"
     ]
+  },
+  {
+    "id": "la-quan-trung",
+    "name": "La Quán Trung",
+    "work_ids": [
+      "la-quan-trung-tam-quoc-dien-nghia"
+    ]
   }
 ]

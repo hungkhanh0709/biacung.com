@@ -30,8 +30,10 @@
       "copy_numbering": null,
       "size_cm": "20.5 x 14",
       "weight_g": null,
-      "thumbnail": "/assets/img/books/han-kang-we-do-not-part/thumbnail.jpeg",
-      "gellery_imgs": [],
+      "thumbnail": "/assets/img/books/han-kang-we-do-not-part/thumbnail.webp",
+      "gellery_imgs": [
+        "/assets/img/books/han-kang-we-do-not-part/nha-nam-signed-edition-cover-in-hand.jpg"
+      ],
       "detail": "- Bản bìa cứng giới hạn 300 bản"
     }
   ]

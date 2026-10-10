@@ -1,0 +1,51 @@
+{
+  "id": "la-quan-trung-tam-quoc-dien-nghia",
+  "title": "Tam Quốc Diễn Nghĩa",
+  "title_original": "三國演義",
+  "authors": [
+    "La Quán Trung"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "la-quan-trung-tam-quoc-dien-nghia-2026-dong-a-bia-cung-ao-om-1tr",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Phan Kế Bính"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "1tr",
+      "print_run": null,
+      "page_count": 1898,
+      "copy_numbering": null,
+      "size_cm": "24 x 16 x 15",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/thumbnail.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/three-volume-front-covers.jpg",
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/painted-fore-edge-banquet.jpg",
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/painted-fore-edge-battle.jpg",
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/painted-fore-edge-figures.jpg",
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/volume-three-jacket-and-painted-edges.jpg",
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/three-volume-stack-volume-three-jacket.jpg",
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/three-volume-stack-volume-one-jacket.jpg",
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/red-hardcover-spines-detail.jpg",
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/red-hardcover-and-painted-edges.jpg",
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/jacket-flap-author-la-quan-trung.jpg",
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/jacket-flap-translator-phan-ke-binh.jpg",
+        "/assets/img/books/la-quan-trung-tam-quoc-dien-nghia/title-page.jpg"
+      ],
+      "detail": "Lần này Đông A giới thiệu phiên bản bìa cứng có bìa áo và in tranh trên cạnh sách, tái hiện những trường đoạn nổi bật trong tác phẩm. \nKhi các tập được xếp đúng thứ tự, hình ảnh trên cạnh từng tập sẽ nối liền thành một bức tranh hoàn chỉnh."
+    }
+  ]
+}

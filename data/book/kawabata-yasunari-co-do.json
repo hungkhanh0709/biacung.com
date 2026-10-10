@@ -30,8 +30,10 @@
       "copy_numbering": null,
       "size_cm": "20.5 x 14",
       "weight_g": null,
-      "thumbnail": "/assets/img/books/kawabata-yasunari-co-do/thumbnail.jpeg",
-      "gellery_imgs": [],
+      "thumbnail": "/assets/img/books/kawabata-yasunari-co-do/thumbnail.webp",
+      "gellery_imgs": [
+        "/assets/img/books/kawabata-yasunari-co-do/nha-nam-signed-edition-cover-in-hand.jpg"
+      ],
       "detail": "- Có chữ ký dịch giả\n- Bìa cứng, giới hạn 300 bản"
     }
   ]

@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-27",
+    "updated_at": "2026-10-08",
     "award_info": {
         "id": "intl_nobel_literature",
         "name": "Giải Nobel Văn chương",
@@ -7,14 +7,14 @@
         "established_year": 1901,
         "awarding_body": "Swedish Academy",
         "country": "Sweden",
-        "total_times_awarded": 118,
-        "total_laureates": 122,
+        "total_times_awarded": 119,
+        "total_laureates": 123,
         "years_not_awarded": 7,
         "description": "Giải thưởng văn học danh giá nhất thế giới, được trao hàng năm cho tác giả có đóng góp xuất sắc cho văn học thế giới",
         "website": "https://www.nobelprize.org/prizes/literature/"
     },
     "statistics": {
-        "years_awarded": 118,
+        "years_awarded": 119,
         "not_awarded_years": [
             1914,
             1918,
@@ -24,8 +24,8 @@
             1942,
             1943
         ],
-        "total_laureates": 122,
-        "female_laureates": 18,
+        "total_laureates": 123,
+        "female_laureates": 19,
         "male_laureates": 104,
         "shared_prizes": 4,
         "declined_prizes": 2,
@@ -33,11 +33,31 @@
     },
     "laureates_by_year": {
         "2026": {
-            "status": "pending",
-            "announcement_date": "2026-10-08",
-            "schedule_source_url": "https://www.nobelprize.org/prizes/about/prize-announcement-dates/",
-            "status_note": "Theo lịch Nobel Prize, thông báo được dự kiến sớm nhất lúc 13:00 CEST, tức 18:00 giờ Việt Nam.",
-            "laureates": []
+            "announced_on": "2026-10-08",
+            "source_url": "https://www.nobelprize.org/prizes/literature/2026/press-release/",
+            "laureates": [
+                {
+                    "id": "anne-carson-canada",
+                    "name": "Anne Carson",
+                    "country": "Canada",
+                    "country_vi": "Canada",
+                    "born_year": 1950,
+                    "born_place": "Toronto, Canada",
+                    "language": "English",
+                    "motivation": "for her bold and inventive oeuvre that, in playful dialogue with the classical tradition, has created new forms for contemporary literature",
+                    "motivation_vi": "vì sự nghiệp sáng tác táo bạo và giàu sáng tạo của bà, qua cuộc đối thoại đầy tinh thần vui chơi với truyền thống cổ điển, đã tạo ra những hình thức mới cho văn học đương đại",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/2026/carson/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/2026-anne-carson.jpg",
+                        "alt": "Chân dung minh họa nhà văn Anne Carson",
+                        "creator": "Niklas Elmehed",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/2026/carson/facts/",
+                        "license": "Ill. Niklas Elmehed © Nobel Prize Outreach",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Chân dung minh họa chính thức trên hồ sơ Nobel 2026; không phải ảnh chụp."
+                    }
+                }
+            ]
         },
         "2025": {
             "announced_on": "2025-10-09",
@@ -875,12 +895,29 @@
             ]
         },
         "1999": {
+            "announced_on": "1999-09-30",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1999/press-release/",
             "laureates": [
                 {
+                    "id": "gunter-grass-germany",
                     "name": "Günter Grass",
                     "country": "Germany",
+                    "country_vi": "Đức",
+                    "born_year": 1927,
+                    "born_place": "Danzig, Free City of Danzig (now Gdansk, Poland)",
                     "language": "German",
                     "motivation": "whose frolicsome black fables portray the forgotten face of history",
+                    "motivation_vi": "vì những truyện ngụ ngôn đen đầy chất tinh nghịch của ông khắc họa gương mặt bị lãng quên của lịch sử",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1999/grass/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1999-gunter-grass.jpg",
+                        "alt": "Chân dung nhà văn Günter Grass",
+                        "creator": "H. Grunert",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1999/grass/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung trên hồ sơ Nobel Prize 1999; nguồn ghi credit H. Grunert, không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "drama",
@@ -891,12 +928,29 @@
             ]
         },
         "1998": {
+            "announced_on": "1998-10-08",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1998/press-release/",
             "laureates": [
                 {
+                    "id": "jose-saramago-portugal",
                     "name": "José Saramago",
                     "country": "Portugal",
+                    "country_vi": "Bồ Đào Nha",
+                    "born_year": 1922,
+                    "born_place": "Azinhaga, Portugal",
                     "language": "Portuguese",
                     "motivation": "who with parables sustained by imagination, compassion and irony continually enables us once again to apprehend an elusory reality",
+                    "motivation_vi": "vì qua những dụ ngôn giàu trí tưởng tượng, lòng trắc ẩn và chất mỉa mai, ông không ngừng giúp chúng ta nhận thức lại một thực tại khó nắm bắt",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1998/saramago/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1998-jose-saramago.jpg",
+                        "alt": "Chân dung nhà văn José Saramago",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1998/saramago/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung từ kho lưu trữ Nobel Foundation; trang nguồn không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "drama",
@@ -906,12 +960,29 @@
             ]
         },
         "1997": {
+            "announced_on": "1997-10-09",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1997/press-release/",
             "laureates": [
                 {
+                    "id": "dario-fo-italy",
                     "name": "Dario Fo",
                     "country": "Italy",
+                    "country_vi": "Ý",
+                    "born_year": 1926,
+                    "born_place": "Leggiuno-Sangiano, Italy",
                     "language": "Italian",
                     "motivation": "who emulates the jesters of the Middle Ages in scourging authority and upholding the dignity of the downtrodden",
+                    "motivation_vi": "vì ông noi theo các nghệ sĩ hề thời Trung cổ để đả kích giới cầm quyền và bảo vệ phẩm giá của những người bị áp bức",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1997/fo/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1997-dario-fo.jpg",
+                        "alt": "Chân dung nhà soạn kịch Dario Fo",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1997/fo/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung từ kho lưu trữ Nobel Foundation; trang nguồn không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "drama",
                         "song lyrics"
@@ -920,12 +991,29 @@
             ]
         },
         "1996": {
+            "announced_on": "1996-10-03",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1996/press-release/",
             "laureates": [
                 {
+                    "id": "wislawa-szymborska-poland",
                     "name": "Wisława Szymborska",
                     "country": "Poland",
+                    "country_vi": "Ba Lan",
+                    "born_year": 1923,
+                    "born_place": "Bnin (now Kórnik), Poland",
                     "language": "Polish",
                     "motivation": "for poetry that with ironic precision allows the historical and biological context to come to light in fragments of human reality",
+                    "motivation_vi": "vì thơ ca, với sự chính xác đầy chất mỉa mai, đã làm hiện rõ bối cảnh lịch sử và sinh học trong những mảnh ghép của hiện thực con người",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1996/szymborska/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1996-wislawa-szymborska.jpg",
+                        "alt": "Chân dung nhà thơ Wisława Szymborska",
+                        "creator": "Jurek Holzer/Scanpix",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1996/szymborska/facts/",
+                        "license": "Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Credit theo hồ sơ Nobel Prize: Photo: Jurek Holzer/Scanpix. Nobel Foundation archive; không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry",
                         "essay",
@@ -935,12 +1023,29 @@
             ]
         },
         "1995": {
+            "announced_on": "1995-10-05",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1995/press-release/",
             "laureates": [
                 {
+                    "id": "seamus-heaney-ireland",
                     "name": "Seamus Heaney",
                     "country": "Ireland",
+                    "country_vi": "Ai-len",
+                    "born_year": 1939,
+                    "born_place": "Mossbawn, near Castledawson, County Derry, Northern Ireland",
                     "language": "English",
                     "motivation": "for works of lyrical beauty and ethical depth, which exalt everyday miracles and the living past",
+                    "motivation_vi": "vì những tác phẩm giàu vẻ đẹp trữ tình và chiều sâu đạo đức, tôn vinh những điều kỳ diệu thường ngày và quá khứ vẫn sống động",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1995/heaney/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1995-seamus-heaney.jpg",
+                        "alt": "Chân dung nhà thơ Seamus Heaney",
+                        "creator": "Jack Mikrut/TT",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1995/heaney/facts/",
+                        "license": "Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Hồ sơ Nobel ghi credit ảnh Jack Mikrut/TT và nguồn kho lưu trữ Nobel Foundation; không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry",
                         "drama",
@@ -951,12 +1056,29 @@
             ]
         },
         "1994": {
+            "announced_on": "1994-10-13",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1994/press-release/",
             "laureates": [
                 {
+                    "id": "kenzaburo-oe-japan",
                     "name": "Kenzaburō Ōe",
                     "country": "Japan",
+                    "country_vi": "Nhật Bản",
+                    "born_year": 1935,
+                    "born_place": "Uchiko, Japan",
                     "language": "Japanese",
                     "motivation": "who with poetic force creates an imagined world, where life and myth condense to form a disconcerting picture of the human predicament today",
+                    "motivation_vi": "vì với sức mạnh thi ca, ông tạo nên một thế giới tưởng tượng, nơi đời sống và huyền thoại kết tụ thành bức tranh gây bất an về thân phận con người hôm nay",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1994/oe/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1994-kenzaburo-oe.jpg",
+                        "alt": "Chân dung nhà văn Kenzaburō Ōe",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1994/oe/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung từ kho lưu trữ Nobel Foundation; trang nguồn không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -966,12 +1088,29 @@
             ]
         },
         "1993": {
+            "announced_on": "1993-10-07",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1993/press-release/",
             "laureates": [
                 {
+                    "id": "toni-morrison-united-states",
                     "name": "Toni Morrison",
                     "country": "United States",
+                    "country_vi": "Hoa Kỳ",
+                    "born_year": 1931,
+                    "born_place": "Lorain, Ohio, United States",
                     "language": "English",
                     "motivation": "who in novels characterized by visionary force and poetic import, gives life to an essential aspect of American reality",
+                    "motivation_vi": "vì trong những tiểu thuyết đầy sức mạnh viễn kiến và chất thơ, bà đem lại sức sống cho một khía cạnh thiết yếu của hiện thực nước Mỹ",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1993/morrison/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1993-toni-morrison.jpg",
+                        "alt": "Chân dung nhà văn Toni Morrison",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1993/morrison/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung từ kho lưu trữ Nobel Foundation; trang nguồn không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "essay"
@@ -980,12 +1119,29 @@
             ]
         },
         "1992": {
+            "announced_on": "1992-10-08",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1992/press-release/",
             "laureates": [
                 {
+                    "id": "derek-walcott-saint-lucia",
                     "name": "Derek Walcott",
                     "country": "Saint Lucia",
+                    "country_vi": "Saint Lucia",
+                    "born_year": 1930,
+                    "born_place": "Castries, Saint Lucia",
                     "language": "English",
                     "motivation": "for a poetic oeuvre of great luminosity, sustained by a historical vision, the outcome of a multicultural commitment",
+                    "motivation_vi": "vì một sự nghiệp thơ ca rực sáng, được nâng đỡ bởi nhãn quan lịch sử và kết tinh từ sự dấn thân cho đa văn hóa",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1992/walcott/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1992-derek-walcott.jpg",
+                        "alt": "Chân dung nhà thơ Derek Walcott",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1992/walcott/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung từ kho lưu trữ Nobel Foundation; trang nguồn không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry",
                         "drama"
@@ -994,12 +1150,29 @@
             ]
         },
         "1991": {
+            "announced_on": "1991-10-03",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1991/press-release/",
             "laureates": [
                 {
+                    "id": "nadine-gordimer-south-africa",
                     "name": "Nadine Gordimer",
                     "country": "South Africa",
+                    "country_vi": "Nam Phi",
+                    "born_year": 1923,
+                    "born_place": "Springs, South Africa",
                     "language": "English",
                     "motivation": "who through her magnificent epic writing has – in the words of Alfred Nobel – been of very great benefit to humanity",
+                    "motivation_vi": "người, qua những sáng tác mang tầm vóc sử thi xuất sắc, đã — theo lời Alfred Nobel — mang lại lợi ích rất lớn cho nhân loại",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1991/gordimer/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1991-nadine-gordimer.jpg",
+                        "alt": "Chân dung nhà văn Nadine Gordimer",
+                        "creator": "David Goldblatt",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1991/gordimer/facts/",
+                        "license": "Photo: © David Goldblatt. Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Credit theo trang NobelPrize.org; trang nguồn không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -1010,12 +1183,29 @@
             ]
         },
         "1990": {
+            "announced_on": "1990-10-11",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1990/press-release/",
             "laureates": [
                 {
+                    "id": "octavio-paz-mexico",
                     "name": "Octavio Paz",
                     "country": "Mexico",
+                    "country_vi": "Mexico",
+                    "born_year": 1914,
+                    "born_place": "Mexico City, Mexico",
                     "language": "Spanish",
                     "motivation": "for impassioned writing with wide horizons, characterized by sensuous intelligence and humanistic integrity",
+                    "motivation_vi": "vì những sáng tác đầy nhiệt huyết với tầm nhìn rộng mở, nổi bật bởi trí tuệ giàu cảm quan và sự chính trực nhân văn",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1990/paz/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1990-octavio-paz.jpg",
+                        "alt": "Chân dung nhà thơ Octavio Paz",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1990/paz/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung từ kho lưu trữ Nobel Foundation; trang nguồn không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry",
                         "essay"
@@ -1024,12 +1214,29 @@
             ]
         },
         "1989": {
+            "announced_on": "1989-10-19",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1989/press-release/",
             "laureates": [
                 {
+                    "id": "camilo-jose-cela-spain",
                     "name": "Camilo José Cela",
                     "country": "Spain",
+                    "country_vi": "Tây Ban Nha",
+                    "born_year": 1916,
+                    "born_place": "Iria Flavia, Spain",
                     "language": "Spanish",
                     "motivation": "for a rich and intensive prose, which with restrained compassion forms a challenging vision of man's vulnerability",
+                    "motivation_vi": "vì lối văn xuôi phong phú và mãnh liệt, với lòng trắc ẩn tiết chế, đã khắc họa một góc nhìn đầy thách thức về sự mong manh của con người",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1989/cela/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1989-camilo-jose-cela.jpg",
+                        "alt": "Chân dung nhà văn Camilo José Cela",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1989/cela/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung từ kho lưu trữ Nobel Foundation; trang nguồn không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -1040,12 +1247,29 @@
             ]
         },
         "1988": {
+            "announced_on": "1988-10-13",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1988/press-release/",
             "laureates": [
                 {
+                    "id": "naguib-mahfouz-egypt",
                     "name": "Naguib Mahfouz",
                     "country": "Egypt",
+                    "country_vi": "Ai Cập",
+                    "born_year": 1911,
+                    "born_place": "Cairo, Egypt",
                     "language": "Arabic",
                     "motivation": "who, through works rich in nuance – now clear-sightedly realistic, now evocatively ambiguous – has formed an Arabian narrative art that applies to all mankind",
+                    "motivation_vi": "người, qua những tác phẩm giàu sắc thái — khi hiện thực sắc sảo, khi gợi mở đa nghĩa — đã tạo dựng một nghệ thuật tự sự Ả Rập có ý nghĩa với toàn nhân loại",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1988/mahfouz/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1988-naguib-mahfouz.jpg",
+                        "alt": "Chân dung nhà văn Naguib Mahfouz",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1988/mahfouz/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung từ kho lưu trữ Nobel Foundation; trang nguồn không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story"
@@ -1054,12 +1278,29 @@
             ]
         },
         "1987": {
+            "announced_on": "1987-10-22",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1987/press-release/",
             "laureates": [
                 {
+                    "id": "joseph-brodsky-united-states-soviet-union",
                     "name": "Joseph Brodsky",
                     "country": "United States/Soviet Union",
+                    "country_vi": "Hoa Kỳ/Liên Xô",
+                    "born_year": 1940,
+                    "born_place": "Leningrad, USSR (now St. Petersburg, Russia)",
                     "language": "Russian and English",
                     "motivation": "for an all-embracing authorship, imbued with clarity of thought and poetic intensity",
+                    "motivation_vi": "vì sự nghiệp sáng tác bao quát, thấm đẫm tư tưởng sáng rõ và chất thơ mãnh liệt",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1987/brodsky/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1987-joseph-brodsky.jpg",
+                        "alt": "Chân dung nhà thơ Joseph Brodsky",
+                        "creator": "Willem Diepraam",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1987/brodsky/facts/",
+                        "license": "Photo: Willem Diepraam. Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Credit theo trang NobelPrize.org; trang nguồn không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry",
                         "essay"
@@ -1068,12 +1309,29 @@
             ]
         },
         "1986": {
+            "announced_on": "1986-10-16",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1986/press-release/",
             "laureates": [
                 {
+                    "id": "wole-soyinka-nigeria",
                     "name": "Wole Soyinka",
                     "country": "Nigeria",
+                    "country_vi": "Nigeria",
+                    "born_year": 1934,
+                    "born_place": "Abeokuta, Nigeria",
                     "language": "English",
                     "motivation": "who in a wide cultural perspective and with poetic overtones fashions the drama of existence",
+                    "motivation_vi": "người, từ nhãn quan văn hóa rộng mở và với âm hưởng thi ca, đã khắc họa tấn kịch của kiếp người",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1986/soyinka/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1986-wole-soyinka.jpg",
+                        "alt": "Chân dung nhà văn Wole Soyinka",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1986/soyinka/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung từ kho lưu trữ Nobel Foundation; trang nguồn không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "drama",
                         "novel",
@@ -1084,12 +1342,29 @@
             ]
         },
         "1985": {
+            "announced_on": "1985-10-17",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1985/press-release/",
             "laureates": [
                 {
+                    "id": "claude-simon-france",
                     "name": "Claude Simon",
                     "country": "France",
+                    "country_vi": "Pháp",
+                    "born_year": 1913,
+                    "born_place": "Tananarive (now Antananarivo), Madagascar",
                     "language": "French",
                     "motivation": "who in his novel combines the poet's and the painter's creativeness with a deepened awareness of time in the depiction of the human condition",
+                    "motivation_vi": "người, trong tiểu thuyết của mình, kết hợp sức sáng tạo của nhà thơ và họa sĩ với ý thức sâu sắc về thời gian khi khắc họa thân phận con người",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1985/simon/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1985-claude-simon.jpg",
+                        "alt": "Chân dung nhà văn Claude Simon",
+                        "creator": "Börje Thuresson",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1985/simon/facts/",
+                        "license": "Photo: Börje Thuresson. Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Credit theo trang NobelPrize.org; trang nguồn không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "essay"
@@ -1098,12 +1373,29 @@
             ]
         },
         "1984": {
+            "announced_on": "1984-10-11",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1984/press-release/",
             "laureates": [
                 {
+                    "id": "jaroslav-seifert-czechoslovakia",
                     "name": "Jaroslav Seifert",
                     "country": "Czechoslovakia",
+                    "country_vi": "Tiệp Khắc",
+                    "born_year": 1901,
+                    "born_place": "Prague, Austria-Hungary (now Czech Republic)",
                     "language": "Czech",
-                    "motivation": "for his poetry, which endowed with freshness, and rich inventiveness provides a liberating image of the indomitable spirit and versatility of man",
+                    "motivation": "for his poetry which endowed with freshness, sensuality and rich inventiveness provides a liberating image of the indomitable spirit and versatility of man",
+                    "motivation_vi": "vì thơ ông, với vẻ tươi mới, sức gợi cảm và óc sáng tạo phong phú, đã đem đến hình ảnh khai phóng về tinh thần bất khuất và năng lực muôn vẻ của con người",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1984/seifert/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1984-jaroslav-seifert.jpg",
+                        "alt": "Chân dung nhà thơ Jaroslav Seifert",
+                        "creator": "M. Jankovič",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1984/seifert/facts/",
+                        "license": "Photo: M. Jankovič. Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Credit theo trang NobelPrize.org; trang nguồn không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry"
                     ]
@@ -1111,12 +1403,29 @@
             ]
         },
         "1983": {
+            "announced_on": "1983-10-06",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1983/press-release/",
             "laureates": [
                 {
+                    "id": "william-golding-united-kingdom",
                     "name": "William Golding",
                     "country": "United Kingdom",
+                    "country_vi": "Vương quốc Anh",
+                    "born_year": 1911,
+                    "born_place": "Newquay, United Kingdom",
                     "language": "English",
-                    "motivation": "for his novels, which with the perspicuity of realistic narrative art and the diversity and universality of myth, illuminate the human condition in the world of today",
+                    "motivation": "for his novels which, with the perspicuity of realistic narrative art and the diversity and universality of myth, illuminate the human condition in the world of today",
+                    "motivation_vi": "vì những tiểu thuyết của ông, bằng sự sáng rõ của nghệ thuật tự sự hiện thực cùng tính đa dạng và phổ quát của thần thoại, đã soi rọi thân phận con người trong thế giới ngày nay",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1983/golding/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1983-william-golding.jpg",
+                        "alt": "Chân dung nhà văn William Golding",
+                        "creator": "Mark Gerson",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1983/golding/facts/",
+                        "license": "Photo: Mark Gerson. Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Credit theo trang NobelPrize.org; trang nguồn không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "poetry",
@@ -1126,12 +1435,29 @@
             ]
         },
         "1982": {
+            "announced_on": "1982-10-21",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1982/press-release/",
             "laureates": [
                 {
+                    "id": "gabriel-garcia-marquez-colombia",
                     "name": "Gabriel García Márquez",
                     "country": "Colombia",
+                    "country_vi": "Colombia",
+                    "born_year": 1927,
+                    "born_place": "Aracataca, Colombia",
                     "language": "Spanish",
                     "motivation": "for his novels and short stories, in which the fantastic and the realistic are combined in a richly composed world of imagination, reflecting a continent's life and conflicts",
+                    "motivation_vi": "vì những tiểu thuyết và truyện ngắn của ông, nơi yếu tố kỳ ảo và hiện thực hòa quyện trong một thế giới tưởng tượng được kiến tạo phong phú, phản ánh đời sống và những xung đột của một châu lục",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1982/marquez/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1982-gabriel-garcia-marquez.jpg",
+                        "alt": "Chân dung nhà văn Gabriel García Márquez",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1982/marquez/facts/",
+                        "license": "Nguồn: NobelPrize.org",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh chân dung từ kho lưu trữ Nobel Foundation; trang nguồn không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -1141,12 +1467,29 @@
             ]
         },
         "1981": {
+            "announced_on": "1981-10-15",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1981/press-release/",
             "laureates": [
                 {
+                    "id": "elias-canetti-united-kingdom-bulgaria",
                     "name": "Elias Canetti",
                     "country": "United Kingdom/Bulgaria",
+                    "country_vi": "Vương quốc Anh/Bulgaria",
+                    "born_year": 1905,
+                    "born_place": "Ruse, Bulgaria",
                     "language": "German",
                     "motivation": "for writings marked by a broad outlook, a wealth of ideas and artistic power",
+                    "motivation_vi": "vì những tác phẩm thể hiện tầm nhìn rộng, tư tưởng phong phú và sức mạnh nghệ thuật",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1981/canetti/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1981-elias-canetti.jpg",
+                        "alt": "Chân dung nhà văn Elias Canetti",
+                        "creator": "Dutch National Archives",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1981/canetti/facts/",
+                        "license": "Photo: Dutch National Archives",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi nguồn ảnh là Dutch National Archives; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "drama",
@@ -1157,12 +1500,29 @@
             ]
         },
         "1980": {
+            "announced_on": "1980-10-09",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1980/press-release/",
             "laureates": [
                 {
+                    "id": "czeslaw-milosz-poland-united-states",
                     "name": "Czesław Miłosz",
-                    "country": "Poland",
+                    "country": "Poland/United States",
+                    "country_vi": "Ba Lan/Hoa Kỳ",
+                    "born_year": 1911,
+                    "born_place": "Śeteniai, Russian Empire (now Lithuania)",
                     "language": "Polish",
                     "motivation": "who with uncompromising clear-sightedness voices man's exposed condition in a world of severe conflicts",
+                    "motivation_vi": "người đã bằng cái nhìn sáng suốt không khoan nhượng diễn tả thân phận dễ bị tổn thương của con người trong một thế giới đầy những xung đột dữ dội",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1980/milosz/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1980-czeslaw-milosz.jpg",
+                        "alt": "Chân dung nhà văn Czesław Miłosz",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1980/milosz/facts/",
+                        "license": "Photo from the Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry",
                         "novel",
@@ -1172,12 +1532,29 @@
             ]
         },
         "1979": {
+            "announced_on": "1979-10-18",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1979/press-release/",
             "laureates": [
                 {
-                    "name": "Odysseas Elytis",
+                    "id": "odysseus-elytis-greece",
+                    "name": "Odysseus Elytis",
                     "country": "Greece",
+                    "country_vi": "Hy Lạp",
+                    "born_year": 1911,
+                    "born_place": "Iráklion, Crete (now Greece)",
                     "language": "Greek",
                     "motivation": "for his poetry, which, against the background of Greek tradition, depicts with sensuous strength and intellectual clear-sightedness modern man's struggle for freedom and creativeness",
+                    "motivation_vi": "vì thơ ca của ông, trên nền truyền thống Hy Lạp, đã khắc họa bằng sức mạnh cảm quan và cái nhìn trí tuệ sáng suốt cuộc đấu tranh của con người hiện đại cho tự do và sáng tạo",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1979/elytis/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1979-odysseus-elytis.jpg",
+                        "alt": "Chân dung nhà thơ Odysseus Elytis",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1979/elytis/facts/",
+                        "license": "Photo from the Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry",
                         "essay"

@@ -326,14 +326,27 @@ function auditData(rootDir, errors, warnings) {
   const goncourtData = readJsonSafe(path.join(rootDir, "data", "awards", "goncourt.json"), null);
   const goodreadsData = readJsonSafe(path.join(rootDir, "data", "awards", "goodreads_choice.json"), null);
   const nobel2026 = nobelData?.laureates_by_year?.["2026"];
+  const nobel2026Laureates = Array.isArray(nobel2026?.laureates) ? nobel2026.laureates : [];
   const nobel2025 = nobelData?.laureates_by_year?.["2025"];
   const nobel2025Laureates = Array.isArray(nobel2025?.laureates) ? nobel2025.laureates : [];
 
   pushIfMissing(errors, Boolean(nobelData), "Invalid JSON: data/awards/nobel_literature.json");
   pushIfMissing(errors, /^\d{4}-\d{2}-\d{2}$/.test(normalizeText(nobelData?.updated_at)), "Nobel literature data is missing updated_at");
-  pushIfMissing(errors, nobel2026?.status === "pending", "Nobel literature 2026 must be marked as pending");
-  pushIfMissing(errors, nobel2026?.announcement_date === "2026-10-08", "Nobel literature 2026 announcement date is missing or incorrect");
-  pushIfMissing(errors, normalizeText(nobel2026?.schedule_source_url).startsWith("https://www.nobelprize.org/"), "Nobel literature 2026 is missing its official schedule URL");
+  pushIfMissing(errors, nobel2026?.announced_on === "2026-10-08", "Nobel literature 2026 announcement date is missing or incorrect");
+  pushIfMissing(errors, nobel2026?.source_url === "https://www.nobelprize.org/prizes/literature/2026/press-release/", "Nobel literature 2026 is missing its official source URL");
+  pushIfMissing(errors, nobel2026Laureates.length === 1, "Nobel literature 2026 must contain exactly one laureate");
+  const nobel2026Laureate = nobel2026Laureates[0] || {};
+  pushIfMissing(errors, nobel2026Laureate.name === "Anne Carson", "Nobel literature 2026 laureate is incorrect");
+  pushIfMissing(errors, Boolean(normalizeText(nobel2026Laureate.motivation)), "Nobel literature 2026 is missing the official motivation");
+  pushIfMissing(errors, Boolean(normalizeText(nobel2026Laureate.motivation_vi)), "Nobel literature 2026 is missing the Vietnamese motivation");
+  pushIfMissing(
+    errors,
+    Boolean(normalizeText(nobel2026Laureate?.photo?.src))
+      && fs.existsSync(path.join(rootDir, normalizeText(nobel2026Laureate.photo.src))),
+    "Nobel literature 2026 portrait is missing"
+  );
+  pushIfMissing(errors, nobel2026Laureate?.photo?.creator === "Niklas Elmehed", "Nobel literature 2026 portrait credit is missing or incorrect");
+  pushIfMissing(errors, nobel2026Laureate?.photo?.license === "Ill. Niklas Elmehed © Nobel Prize Outreach", "Nobel literature 2026 portrait copyright is missing or incorrect");
   pushIfMissing(errors, nobel2025?.announced_on === "2025-10-09", "Nobel literature 2025 announcement date is missing or incorrect");
   pushIfMissing(errors, normalizeText(nobel2025?.source_url).startsWith("https://www.nobelprize.org/"), "Nobel literature 2025 is missing its official source URL");
   pushIfMissing(errors, nobel2025Laureates.length === 1, "Nobel literature 2025 must contain exactly one laureate");
