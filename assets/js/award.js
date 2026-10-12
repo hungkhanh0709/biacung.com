@@ -75,6 +75,12 @@ function isCollectedAwardYear(entry) {
       && /^https:\/\//.test(normalizeText(entry.schedule_source_url))
       && entry.laureates.length === 0;
   }
+  if (entry.status === "not_awarded") {
+    return /^\d{4}-\d{2}-\d{2}$/.test(normalizeText(entry.announced_on))
+      && /^https:\/\//.test(normalizeText(entry.source_url))
+      && Boolean(normalizeText(entry.status_note))
+      && entry.laureates.length === 0;
+  }
   return /^\d{4}-\d{2}-\d{2}$/.test(normalizeText(entry.announced_on))
     && /^https:\/\//.test(normalizeText(entry.source_url))
     && entry.laureates.length > 0;
@@ -315,12 +321,23 @@ function renderPendingAward(year) {
   return article;
 }
 
+function renderNotAwarded(year) {
+  const article = createElement("article", "award-pending award-not-awarded");
+  article.append(
+    createElement("p", "award-pending-label", "Kết quả chính thức"),
+    createElement("h3", "award-pending-title", "Không trao giải"),
+    createElement("p", "award-pending-note", normalizeText(year.status_note))
+  );
+  return article;
+}
+
 function renderAwardGroup(dataset, payload, yearKey, internalBookIds) {
   const year = payload?.laureates_by_year?.[yearKey] || {};
   const laureates = Array.isArray(year.laureates) ? year.laureates : [];
   const isPending = year.status === "pending";
+  const isNotAwarded = year.status === "not_awarded";
   const hasEligibilityWindow = normalizeText(year.eligibility_start) && normalizeText(year.eligibility_end);
-  if (!isPending && !laureates.length) throw new Error(`${dataset.shortName} không có dữ liệu năm ${yearKey}`);
+  if (!isPending && !isNotAwarded && !laureates.length) throw new Error(`${dataset.shortName} không có dữ liệu năm ${yearKey}`);
 
   const section = createElement("section", "award-group");
   if (dataset.kind === "reader-choice") section.classList.add("award-group--reader-choice");
@@ -348,6 +365,8 @@ function renderAwardGroup(dataset, payload, yearKey, internalBookIds) {
   );
   if (isPending) {
     entries.append(renderPendingAward(year));
+  } else if (isNotAwarded) {
+    entries.append(renderNotAwarded(year));
   } else {
     entries.append(...laureates.map((laureate) => (
       dataset.kind === "person"

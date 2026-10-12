@@ -116,6 +116,14 @@ function main() {
     return report(errors, award, year);
   }
 
+  if (entry.status === "not_awarded") {
+    required(errors, isIsoDate(entry.announced_on), `${year}: announced_on không hợp lệ`);
+    required(errors, isOfficialUrl(entry.source_url, config.officialHost), `${year}: source_url không phải nguồn chính thức`);
+    required(errors, Boolean(String(entry.status_note || "").trim()), `${year}: thiếu status_note tiếng Việt`);
+    required(errors, entry.laureates?.length === 0, `${year}: not_awarded phải có laureates rỗng`);
+    return report(errors, award, year);
+  }
+
   required(errors, isIsoDate(entry.announced_on), `${year}: announced_on không hợp lệ`);
   required(errors, isOfficialUrl(entry.source_url, config.officialHost), `${year}: source_url không phải nguồn chính thức`);
   required(errors, entry.laureates?.length > 0, `${year}: thiếu người hoặc tác phẩm đoạt giải`);

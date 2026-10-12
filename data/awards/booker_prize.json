@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-27",
+    "updated_at": "2026-10-12",
     "award_info": {
         "id": "uk_booker_prize",
         "name": "Giải Booker",
@@ -279,6 +279,145 @@
                     },
                     "citation": "For us, it really stood out because of its innovation, it’s very different styling, the way it, almost paradoxically, brought to life these almost dead souls in this other world. There was this juxtaposition of the very personal tragedy of Abraham Lincoln and the death of his very young son next to his public life, as the person who really instigated the American civil war. You’ve got this individual death, very close and personal; you’ve got this much wider issue of the political scenario and the death of hundreds of thousands of young men; and then you’ve got this weird state across the cemetery, with these souls who are not quite ready to be fully dead, as it were, trying to work out some of the things that plagued them during their lives.",
                     "citation_vi": "Với chúng tôi, tác phẩm thực sự nổi bật nhờ tính đổi mới, phong cách rất khác biệt và cách nó, gần như nghịch lý, làm sống dậy trong một thế giới khác những linh hồn gần như đã chết. Bi kịch hết sức riêng tư của Abraham Lincoln trước cái chết của người con trai còn rất nhỏ được đặt cạnh cuộc đời công chúng của ông, người thực sự khơi mào Nội chiến Hoa Kỳ. Ở đây có một cái chết cá nhân, rất gần gũi và riêng tư; có bối cảnh chính trị rộng lớn hơn cùng cái chết của hàng trăm nghìn thanh niên; rồi lại có trạng thái kỳ lạ bao trùm nghĩa trang, nơi những linh hồn dường như chưa sẵn sàng chết hẳn đang cố tháo gỡ những điều từng ám ảnh họ khi còn sống.",
+                    "prize_amount": "£50,000"
+                }
+            ]
+        },
+        "2016": {
+            "announced_on": "2016-10-25",
+            "source_url": "https://thebookerprizes.com/the-booker-library/prize-years/2016",
+            "laureates": [
+                {
+                    "name": "Paul Beatty",
+                    "country": "United States",
+                    "country_vi": "Hoa Kỳ",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/paul-beatty",
+                    "work": {
+                        "id": "paul-beatty-the-sellout",
+                        "title": "The Sellout",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/the-sellout",
+                        "publisher": "Oneworld Publications",
+                        "published_year": 2016,
+                        "publication_source_url": "https://www.simonandschuster.co.uk/books/The-Sellout/Paul-Beatty/9781786070166",
+                        "cover": {
+                            "src": "assets/img/awards/2016-the-sellout.webp",
+                            "alt": "Bìa tiểu thuyết The Sellout của Paul Beatty",
+                            "source_url": "https://thebookerprizes.com/sites/default/files/styles/2_3_media_uncropped_x_huge_800x1200/public/images/the_sellout.jpg?itok=ROV-4l4p"
+                        }
+                    },
+                    "citation": "The Sellout is in a league of its own. It’s so timeless. And that is actually the mark of a really superlative and outstanding novel.",
+                    "citation_vi": "The Sellout ở một đẳng cấp riêng. Tác phẩm thực sự vượt thời gian, và đó chính là dấu hiệu của một tiểu thuyết xuất chúng.",
+                    "citation_source_url": "https://thebookerprizes.com/the-booker-library/features/an-oral-history-of-paul-beattys-the-sellout-10-years-on",
+                    "prize_amount": "£50,000"
+                }
+            ]
+        },
+        "2015": {
+            "announced_on": "2015-10-13",
+            "source_url": "https://thebookerprizes.com/the-booker-library/prize-years/2015",
+            "laureates": [
+                {
+                    "name": "Marlon James",
+                    "country": "Jamaica",
+                    "country_vi": "Jamaica",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/marlon-james",
+                    "work": {
+                        "id": "marlon-james-a-brief-history-of-seven-killings",
+                        "title": "A Brief History of Seven Killings",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/a-brief-history-of-seven-killings",
+                        "publisher": "Oneworld Publications",
+                        "published_year": 2014,
+                        "cover": {
+                            "src": "assets/img/awards/2015-a-brief-history-of-seven-killings.webp",
+                            "alt": "Bìa tiểu thuyết A Brief History of Seven Killings của Marlon James",
+                            "source_url": "https://thebookerprizes.com/sites/default/files/styles/2_3_media_uncropped_x_huge_800x1200/public/images/a_brief_history_of_seven_killings.jpg?itok=KVZRAYrr"
+                        }
+                    },
+                    "citation": "This book is startling in its range of voices and registers…",
+                    "citation_vi": "Cuốn sách gây sửng sốt bởi sự đa dạng của các giọng kể và sắc thái ngôn ngữ…",
+                    "citation_source_url": "https://thebookerprizes.com/the-booker-library/books/a-brief-history-of-seven-killings",
+                    "prize_amount": "£50,000"
+                }
+            ]
+        },
+        "2014": {
+            "announced_on": "2014-10-14",
+            "source_url": "https://thebookerprizes.com/the-booker-library/prize-years/2014",
+            "laureates": [
+                {
+                    "name": "Richard Flanagan",
+                    "country": "Australia",
+                    "country_vi": "Úc",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/richard-flanagan",
+                    "work": {
+                        "id": "richard-flanagan-the-narrow-road-to-the-deep-north",
+                        "title": "The Narrow Road to the Deep North",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/the-narrow-road-to-the-deep-north",
+                        "publisher": "Chatto & Windus",
+                        "published_year": 2014,
+                        "cover": {
+                            "src": "assets/img/awards/2014-the-narrow-road-to-the-deep-north.jpg",
+                            "alt": "Bìa tiểu thuyết The Narrow Road to the Deep North của Richard Flanagan",
+                            "source_url": "https://thebookerprizes.com/sites/default/files/styles/2_3_media_uncropped_x_huge_800x1200/public/images/the_narrow_road_to_the_deep_north.jpg?itok=CStkVZ4B"
+                        }
+                    },
+                    "citation": "Written in prose of extraordinary elegance and force, it bridges East and West, past and present, with a story of guilt and heroism.",
+                    "citation_vi": "Được viết bằng lối văn thanh nhã và mạnh mẽ khác thường, tác phẩm nối liền Đông và Tây, quá khứ và hiện tại, qua câu chuyện về tội lỗi và lòng quả cảm.",
+                    "citation_source_url": "https://thebookerprizes.com/the-booker-library/books/the-narrow-road-to-the-deep-north",
+                    "prize_amount": "£50,000"
+                }
+            ]
+        },
+        "2013": {
+            "announced_on": "2013-10-15",
+            "source_url": "https://thebookerprizes.com/the-booker-library/prize-years/2013",
+            "laureates": [
+                {
+                    "name": "Eleanor Catton",
+                    "country": "New Zealand",
+                    "country_vi": "New Zealand",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/eleanor-catton",
+                    "work": {
+                        "id": "eleanor-catton-the-luminaries",
+                        "title": "The Luminaries",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/the-luminaries",
+                        "publisher": "Granta",
+                        "published_year": 2013,
+                        "cover": {
+                            "src": "assets/img/awards/2013-the-luminaries.webp",
+                            "alt": "Bìa tiểu thuyết The Luminaries của Eleanor Catton",
+                            "source_url": "https://thebookerprizes.com/sites/default/files/styles/2_3_media_uncropped_x_huge_800x1200/public/images/the_luminaries.jpg?itok=OoC2nFBw"
+                        }
+                    },
+                    "citation": "You read every sentence and you are astonished by its knowledge and its poise.",
+                    "citation_vi": "Đọc từng câu văn, ta đều kinh ngạc trước sự uyên bác và vẻ điềm tĩnh của nó.",
+                    "citation_source_url": "https://thebookerprizes.com/the-booker-library/books/the-luminaries",
+                    "prize_amount": "£50,000"
+                }
+            ]
+        },
+        "2012": {
+            "announced_on": "2012-10-16",
+            "source_url": "https://thebookerprizes.com/the-booker-library/prize-years/2012",
+            "laureates": [
+                {
+                    "name": "Hilary Mantel",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/hilary-mantel",
+                    "work": {
+                        "id": "hilary-mantel-bring-up-the-bodies",
+                        "title": "Bring Up the Bodies",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/bring-up-the-bodies",
+                        "publisher": "4th Estate",
+                        "published_year": 2012,
+                        "cover": {
+                            "src": "assets/img/awards/2012-bring-up-the-bodies.jpg",
+                            "alt": "Bìa tiểu thuyết Bring Up the Bodies của Hilary Mantel",
+                            "source_url": "https://thebookerprizes.com/sites/default/files/styles/2_3_media_uncropped_x_huge_800x1200/public/images/bring_up_the_bodies.jpg?itok=gwtHl9JG"
+                        }
+                    },
+                    "citation": "She uses her power of prose to create moral ambiguity and the real uncertainty of political life.",
+                    "citation_vi": "Bà dùng sức mạnh ngôn từ để tạo nên sự mơ hồ về đạo đức và tính bất định thực sự của đời sống chính trị.",
+                    "citation_source_url": "https://thebookerprizes.com/the-booker-library/books/bring-up-the-bodies",
                     "prize_amount": "£50,000"
                 }
             ]

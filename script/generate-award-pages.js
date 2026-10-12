@@ -40,6 +40,12 @@ function isCollectedAwardYear(entry) {
       && /^https:\/\//.test(String(entry.schedule_source_url || ""))
       && entry.laureates.length === 0;
   }
+  if (entry.status === "not_awarded") {
+    return isIsoDate(entry.announced_on)
+      && /^https:\/\//.test(String(entry.source_url || ""))
+      && Boolean(String(entry.status_note || "").trim())
+      && entry.laureates.length === 0;
+  }
   return isIsoDate(entry.announced_on)
     && /^https:\/\//.test(String(entry.source_url || ""))
     && entry.laureates.length > 0;
