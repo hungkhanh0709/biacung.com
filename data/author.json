@@ -1285,5 +1285,12 @@
     "work_ids": [
       "la-quan-trung-tam-quoc-dien-nghia"
     ]
+  },
+  {
+    "id": "y-nhi",
+    "name": "Ý Nhi",
+    "work_ids": [
+      "y-nhi-con-ngua-tren-bai-bien"
+    ]
   }
 ]
