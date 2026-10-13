@@ -5,36 +5,39 @@
   "authors": [
     "Thạch Lam"
   ],
-  "awards": [],
+  "awards": [
+    "viet-nam-danh-tac-nha-nam"
+  ],
   "series": [
-    "Việt Nam Danh Tác (Nhã Nam)"
+    "Việt Nam Danh Tác (Nhã Nam)",
+    "Việt Nam Danh Tác Artbook (Nhã Nam)"
   ],
   "editions": [
     {
-      "id": "thach-lam-ha-noi-bam-sau-pho-phuong-2026-nha-nam-bia-mem-60k",
+      "id": "thach-lam-ha-noi-bam-sau-pho-phuong-2026-nha-nam-bia-cung-ao-om-236k",
       "isbn": null,
       "series_ids": [
-        "viet-nam-danh-tac-nha-nam"
+        "viet-nam-danh-tac-artbook-nha-nam"
       ],
       "caption": "",
       "pub_year": 2026,
-      "publisher": "NXB Hội Nhà Văn",
+      "publisher": "NXB Hà Nội",
       "issuers": [
         "Nhã Nam"
       ],
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
-      "cover_price": "60k",
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "236k",
       "print_run": null,
-      "page_count": 124,
+      "page_count": 160,
       "copy_numbering": null,
-      "size_cm": "20.5 x 14 x 0.7",
-      "weight_g": 150,
-      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/h/a/hanoibamsauphophuong1.jpg",
+      "size_cm": "17 x 22.5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/thach-lam-ha-noi-bam-sau-pho-phuong/nha-nam-viet-nam-danh-tac-artbook-cover-display.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "Được thực hiện theo quy cách của một cuốn artbook, bồ sung thêm 13 bức tranh lụa mới hoàn toàn."
     },
     {
       "id": "thach-lam-ha-noi-bam-sau-pho-phuong-2022-nha-nam-bia-cung-ao-om-145k",

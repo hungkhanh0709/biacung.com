@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-27",
+    "updated_at": "2026-10-12",
     "award_info": {
         "id": "us_pulitzer_fiction",
         "name": "Giải Pulitzer cho Tiểu thuyết",
@@ -297,71 +297,139 @@
             ]
         },
         "2016": {
+            "announced_on": "2016-04-18",
+            "source_url": "https://www.pulitzer.org/winners/viet-thanh-nguyen",
             "laureates": [
                 {
                     "name": "Viet Thanh Nguyen",
+                    "profile_url": "https://www.pulitzer.org/winners/viet-thanh-nguyen",
                     "work": {
                         "id": "viet-thanh-nguyen-the-sympathizer",
-                        "title": "The Sympathizer"
+                        "title": "The Sympathizer",
+                        "work_url": "https://groveatlantic.com/book/the-sympathizer/",
+                        "publisher": "Grove Press",
+                        "published_year": 2015,
+                        "cover": {
+                            "src": "assets/img/awards/2016-the-sympathizer.jpg",
+                            "alt": "Bìa tiểu thuyết The Sympathizer của Viet Thanh Nguyen",
+                            "source_url": "https://www.pulitzer.org/cms/sites/default/files/content/2016/thesympathizercover200.jpg"
+                        }
                     },
-                    "birth_state": "California (born in Buôn Ma Thuột, Vietnam)",
-                    "citation": "A layered immigrant tale told in the wry, confessional voice of a 'man of two minds' -- and two countries, Vietnam and the United States"
+                    "citation": "A layered immigrant tale told in the wry, confessional voice of a \"man of two minds\" -- and two countries, Vietnam and the United States.",
+                    "citation_vi": "Một câu chuyện nhiều lớp về người nhập cư, được kể bằng giọng tự bạch châm biếm của một “người mang hai tâm trí” — và gắn với hai quốc gia: Việt Nam và Hoa Kỳ.",
+                    "prize_amount": "$10,000"
                 }
             ]
         },
         "2015": {
+            "announced_on": "2015-04-20",
+            "source_url": "https://www.pulitzer.org/winners/anthony-doerr",
             "laureates": [
                 {
                     "name": "Anthony Doerr",
+                    "profile_url": "https://www.pulitzer.org/winners/anthony-doerr",
                     "work": {
                         "id": "anthony-doerr-all-the-light-we-cannot-see",
-                        "title": "All the Light We Cannot See"
+                        "title": "All the Light We Cannot See",
+                        "work_url": "https://www.simonandschuster.com/books/All-the-Light-We-Cannot-See/Anthony-Doerr/9781476746586",
+                        "publisher": "Scribner",
+                        "published_year": 2014,
+                        "cover": {
+                            "src": "assets/img/awards/2015-all-the-light-we-cannot-see.jpg",
+                            "alt": "Bìa tiểu thuyết All the Light We Cannot See của Anthony Doerr",
+                            "source_url": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781476746586/all-the-light-we-cannot-see-9781476746586_hr.jpg"
+                        }
                     },
                     "birth_state": "Ohio",
-                    "citation": "An imaginative and intricate novel inspired by the horrors of World War II and written in short, elegant chapters that explore human nature and the contradictory power of technology"
+                    "citation": "An imaginative and intricate novel inspired by the horrors of World War II and written in short, elegant chapters that explore human nature and the contradictory power of technology.",
+                    "citation_vi": "Một tiểu thuyết giàu tưởng tượng và có kết cấu tinh vi, lấy cảm hứng từ những nỗi kinh hoàng của Thế chiến II, được viết thành những chương ngắn, thanh nhã để khám phá bản chất con người và sức mạnh đầy mâu thuẫn của công nghệ.",
+                    "prize_amount": "$10,000"
                 }
             ]
         },
         "2014": {
+            "announced_on": "2014-04-14",
+            "source_url": "https://www.pulitzer.org/winners/donna-tartt",
             "laureates": [
                 {
                     "name": "Donna Tartt",
+                    "profile_url": "https://www.pulitzer.org/winners/donna-tartt",
                     "work": {
                         "id": "donna-tartt-the-goldfinch",
-                        "title": "The Goldfinch"
+                        "title": "The Goldfinch",
+                        "work_url": "https://www.hachettebookgroup.com/titles/donna-tartt/the-goldfinch/9780316055437/?lens=little-brown",
+                        "publisher": "Little, Brown and Company",
+                        "published_year": 2013,
+                        "cover": {
+                            "src": "assets/img/awards/2014-the-goldfinch.jpg",
+                            "alt": "Bìa tiểu thuyết The Goldfinch của Donna Tartt",
+                            "source_url": "https://www.hachettebookgroup.com/wp-content/uploads/2017/06/9780316055437.jpg"
+                        }
                     },
                     "birth_state": "Mississippi",
-                    "citation": "A beautifully written coming-of-age novel with exquisitely drawn characters that follows a grieving boy's entanglement with a small famous painting that has eluded destruction, a book that stimulates the mind and touches the heart"
+                    "citation": "A beautifully written coming-of-age novel with exquisitely drawn characters that follows a grieving boy's entanglement with a small famous painting that has eluded destruction, a book that stimulates the mind and touches the heart.",
+                    "citation_vi": "Một tiểu thuyết về tuổi trưởng thành được viết tuyệt đẹp, với những nhân vật được khắc họa tinh tế, theo chân một cậu bé đang đau buồn bị cuốn vào câu chuyện về một bức họa nhỏ nổi tiếng đã thoát khỏi sự hủy diệt; cuốn sách khơi gợi suy tư và lay động trái tim.",
+                    "prize_amount": "$10,000"
                 }
             ]
         },
         "2013": {
+            "announced_on": "2013-04-15",
+            "source_url": "https://www.pulitzer.org/winners/adam-johnson",
             "laureates": [
                 {
                     "name": "Adam Johnson",
+                    "profile_url": "https://www.pulitzer.org/winners/adam-johnson",
                     "work": {
                         "id": "adam-johnson-the-orphan-masters-son",
-                        "title": "The Orphan Master's Son"
+                        "title": "The Orphan Master's Son",
+                        "work_url": "https://www.penguinrandomhouse.com/books/212862/the-orphan-masters-son-by-adam-johnson/",
+                        "publisher": "Random House",
+                        "published_year": 2012,
+                        "cover": {
+                            "src": "assets/img/awards/2013-the-orphan-masters-son.jpg",
+                            "alt": "Bìa tiểu thuyết The Orphan Master's Son của Adam Johnson",
+                            "source_url": "https://images4.penguinrandomhouse.com/cover/9780812992793"
+                        }
                     },
                     "birth_state": "South Dakota",
-                    "citation": "An exquisitely crafted novel that carries the reader on an adventuresome journey into the depths of totalitarian North Korea and into the most intimate spaces of the human heart"
+                    "citation": "An exquisitely crafted novel that carries the reader on an adventuresome journey into the depths of totalitarian North Korea and into the most intimate spaces of the human heart.",
+                    "citation_vi": "Một tiểu thuyết được viết đầy tinh xảo, đưa người đọc vào hành trình phiêu lưu đến tận cùng chế độ toàn trị ở Triều Tiên và những miền sâu kín nhất của trái tim con người.",
+                    "prize_amount": "$10,000"
                 }
             ]
         },
         "2012": {
+            "status": "not_awarded",
+            "announced_on": "2012-04-16",
+            "source_url": "https://www.pulitzer.org/prize-winners-by-year/2012",
+            "status_note": "Giải Pulitzer Fiction năm 2012 không được trao. Train Dreams, Swamplandia! và The Pale King là ba tác phẩm vào chung khảo.",
             "laureates": [],
             "notes": "No award was given this year. Finalists were: Karen Russell (Swamplandia!), David Foster Wallace (The Pale King, posthumously), Denis Johnson (Train Dreams)"
         },
         "2011": {
+            "announced_on": "2011-04-18",
+            "source_url": "https://www.pulitzer.org/winners/jennifer-egan",
             "laureates": [
                 {
                     "name": "Jennifer Egan",
+                    "profile_url": "https://www.pulitzer.org/winners/jennifer-egan",
                     "work": {
                         "id": "jennifer-egan-a-visit-from-the-goon-squad",
-                        "title": "A Visit from the Goon Squad"
+                        "title": "A Visit from the Goon Squad",
+                        "work_url": "https://www.penguinrandomhouse.com/books/201020/a-visit-from-the-goon-squad-by-jennifer-egan/",
+                        "publisher": "Alfred A. Knopf",
+                        "published_year": 2010,
+                        "cover": {
+                            "src": "assets/img/awards/2011-a-visit-from-the-goon-squad.jpg",
+                            "alt": "Bìa tiểu thuyết A Visit from the Goon Squad của Jennifer Egan",
+                            "source_url": "https://www.pulitzer.org/cms/sites/default/files/content/egancover2011.jpg"
+                        }
                     },
                     "birth_state": "Illinois",
-                    "citation": "An inventive investigation of growing up and growing old in the digital age, displaying a big-hearted curiosity about cultural change at warp speed"
+                    "citation": "An inventive investigation of growing up and growing old in the digital age, displaying a big-hearted curiosity about cultural change at warp speed.",
+                    "citation_vi": "Một cuộc khảo sát đầy sáng tạo về việc lớn lên và già đi trong thời đại số, bộc lộ sự tò mò rộng mở trước những biến chuyển văn hóa nhanh đến chóng mặt.",
+                    "prize_amount": "$10,000"
                 }
             ]
         },
