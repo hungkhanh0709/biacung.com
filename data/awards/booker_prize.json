@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-10-12",
+    "updated_at": "2026-10-13",
     "award_info": {
         "id": "uk_booker_prize",
         "name": "Giải Booker",
@@ -418,6 +418,33 @@
                     "citation": "She uses her power of prose to create moral ambiguity and the real uncertainty of political life.",
                     "citation_vi": "Bà dùng sức mạnh ngôn từ để tạo nên sự mơ hồ về đạo đức và tính bất định thực sự của đời sống chính trị.",
                     "citation_source_url": "https://thebookerprizes.com/the-booker-library/books/bring-up-the-bodies",
+                    "prize_amount": "£50,000"
+                }
+            ]
+        },
+        "2011": {
+            "announced_on": "2011-10-18",
+            "source_url": "https://thebookerprizes.com/the-booker-library/prize-years/2011",
+            "laureates": [
+                {
+                    "name": "Julian Barnes",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/julian-barnes",
+                    "work": {
+                        "id": "julian-barnes-the-sense-of-an-ending",
+                        "title": "The Sense of an Ending",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/the-sense-of-an-ending",
+                        "publisher": "Jonathan Cape",
+                        "published_year": 2011,
+                        "cover": {
+                            "src": "assets/img/awards/2011-the-sense-of-an-ending.jpg",
+                            "alt": "Bìa tiểu thuyết The Sense of an Ending của Julian Barnes, ấn bản Jonathan Cape 2011",
+                            "source_url": "https://bibliography.julianbarnes.com/wp-content/uploads/photo-gallery/TSoaE/IMG_5740.JPG",
+                            "note": "Ảnh bìa ấn bản Jonathan Cape 2011; thiết kế áo sách: Suzanne Dean."
+                        }
+                    },
+                    "citation": "Exquisitely written, subtly plotted and reveals new depths with each reading. We thought it was a book that spoke to the humankind in the 21st Century.",
+                    "citation_vi": "Được viết tinh tế, với cốt truyện được dàn dựng khéo léo và mỗi lần đọc lại đều hé lộ những chiều sâu mới. Chúng tôi cho rằng đây là cuốn sách chạm đến con người ở thế kỷ XXI.",
+                    "citation_source_url": "https://thebookerprizes.com/the-booker-library/books/the-sense-of-an-ending",
                     "prize_amount": "£50,000"
                 }
             ]
