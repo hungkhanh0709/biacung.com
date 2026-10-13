@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-27",
+    "updated_at": "2026-10-12",
     "award_info": {
         "id": "france_goncourt",
         "name": "Giải Goncourt",
@@ -226,6 +226,144 @@
                             "src": "assets/img/awards/2017-l-ordre-du-jour.jpg",
                             "alt": "Bìa tác phẩm L’Ordre du jour của Éric Vuillard",
                             "source_url": "https://covers.openlibrary.org/b/isbn/9782330078973-L.jpg"
+                        }
+                    },
+                    "prize_amount": "€10"
+                }
+            ]
+        },
+        "2016": {
+            "announced_on": "2016-11-03",
+            "source_url": "https://www.academiegoncourt.com/prix-goncourt-et-selection-annee",
+            "laureates": [
+                {
+                    "name": "Leïla Slimani",
+                    "profile_url": "https://www.cercle-enseignement.com/Contributeurs/Leila-Slimani",
+                    "work": {
+                        "id": "leila-slimani-chanson-douce",
+                        "title": "Chanson douce",
+                        "work_url": "https://www.cercle-enseignement.com/Ouvrages/Gallimard/Blanche/Chanson-douce",
+                        "publisher": "Gallimard",
+                        "published_year": 2016,
+                        "cover": {
+                            "src": "assets/img/awards/2016-chanson-douce.png",
+                            "alt": "Bìa tiểu thuyết Chanson douce của Leïla Slimani",
+                            "source_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Chanson_douce_%28Le%C3%AFla_Slimani%29.png/500px-Chanson_douce_%28Le%C3%AFla_Slimani%29.png",
+                            "creator": "Éditions Gallimard, Collection Blanche",
+                            "license": "PD-textlogo (Wikimedia Commons); trademarked",
+                            "license_url": "https://commons.wikimedia.org/wiki/File:Chanson_douce_(Le%C3%AFla_Slimani).png"
+                        }
+                    },
+                    "prize_amount": "€10"
+                }
+            ]
+        },
+        "2015": {
+            "announced_on": "2015-11-03",
+            "source_url": "https://www.academiegoncourt.com/prix-goncourt-et-selection-annee",
+            "laureates": [
+                {
+                    "name": "Mathias Enard",
+                    "profile_url": "https://actes-sud.fr/auteurs/mathias-enard-006040",
+                    "work": {
+                        "id": "mathias-enard-boussole",
+                        "title": "Boussole",
+                        "work_url": "https://actes-sud.fr/catalogue/boussole-013926",
+                        "publisher": "Actes Sud",
+                        "published_year": 2015,
+                        "cover": {
+                            "src": "assets/img/awards/2015-boussole.jpg",
+                            "alt": "Bìa tiểu thuyết Boussole của Mathias Enard",
+                            "source_url": "https://actes-sud.fr/media/image/cover/9782330053123.jpg"
+                        }
+                    },
+                    "prize_amount": "€10"
+                }
+            ]
+        },
+        "2014": {
+            "announced_on": "2014-11-05",
+            "source_url": "https://www.academiegoncourt.com/prix-goncourt-et-selection-annee",
+            "laureates": [
+                {
+                    "name": "Lydie Salvayre",
+                    "work": {
+                        "id": "lydie-salvayre-pas-pleurer",
+                        "title": "Pas pleurer",
+                        "work_url": "https://www.seuil.com/ouvrage/pas-pleurer-lydie-salvayre/9782021116199",
+                        "publisher": "Éditions du Seuil",
+                        "published_year": 2014,
+                        "cover": {
+                            "src": "assets/img/awards/2014-pas-pleurer.jpg",
+                            "alt": "Bìa tiểu thuyết Pas pleurer của Lydie Salvayre",
+                            "source_url": "https://ref.lamartinieregroupe.com/media/9782021116199/hd/111619_couverture_Hres_0.jpg"
+                        }
+                    },
+                    "prize_amount": "€10"
+                }
+            ]
+        },
+        "2013": {
+            "announced_on": "2013-11-04",
+            "source_url": "https://www.academiegoncourt.com/prix-goncourt-et-selection-annee",
+            "laureates": [
+                {
+                    "name": "Pierre Lemaitre",
+                    "profile_url": "https://www.albin-michel.fr/pierre-lemaitre",
+                    "work": {
+                        "id": "pierre-lemaitre-au-revoir-la-haut",
+                        "title": "Au revoir là-haut",
+                        "work_url": "https://www.albin-michel.fr/au-revoir-la-haut-9782226249678",
+                        "publisher": "Albin Michel",
+                        "published_year": 2013,
+                        "cover": {
+                            "src": "assets/img/awards/2013-au-revoir-la-haut.jpg",
+                            "alt": "Bìa tiểu thuyết Au revoir là-haut của Pierre Lemaitre",
+                            "source_url": "https://www.albin-michel.fr/sites/default/files/couvertures/albin/Article/Image/2013/9782226249678-j.jpg"
+                        }
+                    },
+                    "prize_amount": "€10"
+                }
+            ]
+        },
+        "2012": {
+            "announced_on": "2012-11-07",
+            "source_url": "https://www.academiegoncourt.com/prix-goncourt-et-selection-annee",
+            "laureates": [
+                {
+                    "name": "Jérôme Ferrari",
+                    "work": {
+                        "id": "jerome-ferrari-le-sermon-sur-la-chute-de-rome",
+                        "title": "Le sermon sur la chute de Rome",
+                        "work_url": "https://www.bnfa.fr/livre?biblionumber=20322",
+                        "publisher": "Actes Sud",
+                        "published_year": 2012,
+                        "cover": {
+                            "src": "assets/img/awards/2012-le-sermon-sur-la-chute-de-rome.jpg",
+                            "alt": "Bìa tiểu thuyết Le sermon sur la chute de Rome của Jérôme Ferrari",
+                            "source_url": "https://actes-sud.fr/media/image/cover/9782330012595.jpg"
+                        }
+                    },
+                    "prize_amount": "€10"
+                }
+            ]
+        },
+        "2011": {
+            "announced_on": "2011-11-02",
+            "source_url": "https://www.academiegoncourt.com/prix-goncourt-et-selection-annee",
+            "laureates": [
+                {
+                    "name": "Alexis Jenni",
+                    "work": {
+                        "id": "alexis-jenni-l-art-francais-de-la-guerre",
+                        "title": "L'Art français de la guerre",
+                        "work_url": "https://www.fnac.com/a3557991/Alexis-Jenni-L-art-francais-de-la-guerre",
+                        "publisher": "Gallimard",
+                        "published_year": 2011,
+                        "cover": {
+                            "src": "assets/img/awards/2011-l-art-francais-de-la-guerre.jpg",
+                            "alt": "Bìa tiểu thuyết L'Art français de la guerre của Alexis Jenni",
+                            "source_url": "https://static.fnac-static.com/multimedia/Images/FR/NR/4d/ef/32/3338061/1540-1/tsp20230707075808/L-art-francais-de-la-guerre.jpg"
                         }
                     },
                     "prize_amount": "€10"

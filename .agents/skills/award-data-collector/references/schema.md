@@ -26,6 +26,20 @@ Kết quả đã công bố:
 }
 ```
 
+Khi nguồn chính thức xác nhận giải không được trao trong năm đó, dùng trạng thái riêng (không đưa tác phẩm vào chung khảo vào `laureates`):
+
+```json
+{
+  "status": "not_awarded",
+  "announced_on": "YYYY-MM-DD",
+  "source_url": "https://official.example/...",
+  "status_note": "Thông báo ngắn bằng tiếng Việt về kết quả không trao giải.",
+  "laureates": []
+}
+```
+
+Có thể giữ `notes` nguyên văn từ dữ liệu lịch sử. `not_awarded` là kết quả đã công bố, không phải `pending`.
+
 Khi giải đã công bố longlist/shortlist nhưng chưa có người thắng, có thể thêm `selection_stage` và `selection_source_url` để truy nguyên trạng thái hiện tại; vẫn giữ `status: "pending"` và không đưa ứng viên vào `laureates`.
 
 Kết quả chưa công bố:
