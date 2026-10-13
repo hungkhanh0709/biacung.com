@@ -1,5 +1,11 @@
 [
   {
+    "detail": "data/book/y-nhi-con-ngua-tren-bai-bien.json",
+    "search_text": "y nhi con ngua tren bai bien nxb dan tri dong a van moi dong a",
+    "last_pub_year": 2026,
+    "updated_at": "2026-10-13"
+  },
+  {
     "detail": "data/book/thach-lam-ha-noi-bam-sau-pho-phuong.json",
     "search_text": "thach lam ha noi bam sau pho phuong nxb ha noi nxb hoi nha van nha nam viet nam danh tac nha nam viet nam danh tac artbook nha nam bia cung gioi han vietnamdanhtacnhanam",
     "updated_at": "2026-10-10",
@@ -157,7 +163,7 @@
   },
   {
     "detail": "data/book/hao-nguyen-bo-suu-tap-mu-suong.json",
-    "search_text": "bo suu tap mu suong hao nguyen van moi dong a nxb dan tri dong a",
+    "search_text": "hao nguyen bo suu tap mu suong nxb dan tri dong a van moi dong a",
     "last_pub_year": 2026,
     "updated_at": "2026-08-26"
   },

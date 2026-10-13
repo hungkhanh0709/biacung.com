@@ -36,7 +36,10 @@
         "/assets/img/books/hao-nguyen-bo-suu-tap-mu-suong/van-moi-dong-a-cover-photo-3.jpg",
         "/assets/img/books/hao-nguyen-bo-suu-tap-mu-suong/van-moi-dong-a-cover-photo-4.jpg"
       ],
-      "detail": ""
+      "detail": "",
+      "series_ids": [
+        "van-moi-dong-a"
+      ]
     }
   ]
 }
