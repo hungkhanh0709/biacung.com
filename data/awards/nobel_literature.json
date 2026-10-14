@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-10-13",
+    "updated_at": "2026-10-14",
     "award_info": {
         "id": "intl_nobel_literature",
         "name": "Giải Nobel Văn chương",
@@ -1867,12 +1867,29 @@
             ]
         },
         "1969": {
+            "announced_on": "1969-10-23",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1969/summary/",
             "laureates": [
                 {
+                    "id": "samuel-beckett-ireland",
                     "name": "Samuel Beckett",
                     "country": "Ireland",
+                    "country_vi": "Ai-len",
+                    "born_year": 1906,
+                    "born_place": "Dublin, Ireland",
                     "language": "French and English",
-                    "motivation": "for his writing, which – in new forms for the novel and drama – in the destitution of modern man acquires its elevation",
+                    "motivation": "for his writing, which - in new forms for the novel and drama - in the destitution of modern man acquires its elevation",
+                    "motivation_vi": "vì sáng tác của ông, qua những hình thức mới cho tiểu thuyết và kịch, tìm thấy sự cao cả trong cảnh khốn cùng của con người hiện đại",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1969/beckett/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1969-samuel-beckett.jpg",
+                        "alt": "Chân dung nhà văn Samuel Beckett",
+                        "creator": "Jerry Bauer",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1969/beckett/facts/",
+                        "license": "Photo: Jerry Bauer. Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh được Nobel ghi công Jerry Bauer và thuộc kho lưu trữ Nobel Foundation; không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "drama",
@@ -1882,12 +1899,29 @@
             ]
         },
         "1968": {
+            "announced_on": "1968-10-17",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1968/summary/",
             "laureates": [
                 {
+                    "id": "yasunari-kawabata-japan",
                     "name": "Yasunari Kawabata",
                     "country": "Japan",
+                    "country_vi": "Nhật Bản",
+                    "born_year": 1899,
+                    "born_place": "Osaka, Japan",
                     "language": "Japanese",
                     "motivation": "for his narrative mastery, which with great sensibility expresses the essence of the Japanese mind",
+                    "motivation_vi": "vì tài nghệ tự sự bậc thầy, thể hiện tinh túy tâm hồn Nhật Bản bằng cảm quan sâu sắc",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1968/kawabata/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1968-yasunari-kawabata.jpg",
+                        "alt": "Chân dung nhà văn Yasunari Kawabata",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1968/kawabata/facts/",
+                        "license": "Photo from the Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story"
@@ -1896,12 +1930,29 @@
             ]
         },
         "1967": {
+            "announced_on": "1967-10-19",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1967/summary/",
             "laureates": [
                 {
+                    "id": "miguel-angel-asturias-guatemala",
                     "name": "Miguel Ángel Asturias",
                     "country": "Guatemala",
+                    "country_vi": "Guatemala",
+                    "born_year": 1899,
+                    "born_place": "Guatemala City, Guatemala",
                     "language": "Spanish",
                     "motivation": "for his vivid literary achievement, deep-rooted in the national traits and traditions of Indian peoples of Latin America",
+                    "motivation_vi": "vì thành tựu văn chương sống động của ông, bắt rễ sâu trong bản sắc dân tộc và truyền thống của các dân tộc bản địa Mỹ Latinh",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1967/asturias/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1967-miguel-angel-asturias.jpg",
+                        "alt": "Chân dung nhà văn Miguel Ángel Asturias",
+                        "creator": "Dominique Roger",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Miguel_Angel_Asturias.jpg",
+                        "license": "CC BY-SA 3.0 IGO",
+                        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
+                        "note": "Ảnh do Dominique Roger chụp tại studio UNESCO ngày 8/2/1968; lưu bản gốc không chỉnh sửa."
+                    },
                     "genre": [
                         "novel",
                         "poetry"
@@ -1910,22 +1961,54 @@
             ]
         },
         "1966": {
+            "announced_on": "1966-10-20",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1966/summary/",
             "laureates": [
                 {
+                    "id": "shmuel-yosef-agnon-israel",
                     "name": "Shmuel Yosef Agnon",
                     "country": "Israel",
+                    "country_vi": "Israel",
+                    "born_year": 1888,
+                    "born_place": "Buczacz, Austria-Hungary (now Buchach, Ukraine)",
                     "language": "Hebrew",
                     "motivation": "for his profoundly characteristic narrative art with motifs from the life of the Jewish people",
+                    "motivation_vi": "vì nghệ thuật tự sự mang nét riêng sâu sắc, với những mô típ từ đời sống của người Do Thái",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1966/agnon/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1966-shmuel-yosef-agnon.jpg",
+                        "alt": "Chân dung nhà văn Shmuel Yosef Agnon",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1966/agnon/facts/",
+                        "license": "Photo from the Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story"
                     ]
                 },
                 {
+                    "id": "nelly-sachs-sweden",
                     "name": "Nelly Sachs",
-                    "country": "West Germany/Sweden",
+                    "country": "Sweden",
+                    "country_vi": "Thụy Điển",
+                    "born_year": 1891,
+                    "born_place": "Berlin, Germany",
                     "language": "German",
                     "motivation": "for her outstanding lyrical and dramatic writing, which interprets Israel's destiny with touching strength",
+                    "motivation_vi": "vì những sáng tác trữ tình và kịch xuất sắc, diễn giải vận mệnh của Israel bằng sức mạnh lay động lòng người",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1966/sachs/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1966-nelly-sachs.jpg",
+                        "alt": "Chân dung nhà văn Nelly Sachs",
+                        "creator": "Anna Riwkin",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1966/sachs/facts/",
+                        "license": "Photo: Anna Riwkin. Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh được Nobel ghi công Anna Riwkin và thuộc kho lưu trữ Nobel Foundation; không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry",
                         "drama"
@@ -1934,12 +2017,29 @@
             ]
         },
         "1965": {
+            "announced_on": "1965-10-15",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1965/summary/",
             "laureates": [
                 {
+                    "id": "mikhail-sholokhov-soviet-union",
                     "name": "Mikhail Sholokhov",
                     "country": "Soviet Union",
+                    "country_vi": "Liên Xô",
+                    "born_year": 1905,
+                    "born_place": "Veshenskaya, Russia",
                     "language": "Russian",
                     "motivation": "for the artistic power and integrity with which, in his epic of the Don, he has given expression to a historic phase in the life of the Russian people",
+                    "motivation_vi": "vì sức mạnh nghệ thuật và sự chân thực mà qua thiên sử thi về sông Đông, ông đã thể hiện một giai đoạn lịch sử trong đời sống của nhân dân Nga",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1965/sholokhov/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1965-mikhail-sholokhov.jpg",
+                        "alt": "Chân dung nhà văn Mikhail Sholokhov",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1965/sholokhov/facts/",
+                        "license": "Photo from the Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel"
                     ]
@@ -1947,12 +2047,29 @@
             ]
         },
         "1964": {
+            "announced_on": "1964-10-22",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1964/summary/",
             "laureates": [
                 {
+                    "id": "jean-paul-sartre-france",
                     "name": "Jean-Paul Sartre",
                     "country": "France",
+                    "country_vi": "Pháp",
+                    "born_year": 1905,
+                    "born_place": "Paris, France",
                     "language": "French",
-                    "motivation": "for his work, which rich in ideas and filled with the spirit of freedom and the quest for truth, has exerted a far-reaching influence on our age",
+                    "motivation": "for his work which, rich in ideas and filled with the spirit of freedom and the quest for truth, has exerted a far-reaching influence on our age",
+                    "motivation_vi": "vì sáng tác của ông, vốn giàu tư tưởng, thấm đẫm tinh thần tự do và khát vọng tìm kiếm chân lý, đã có ảnh hưởng sâu rộng đến thời đại chúng ta",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1964/sartre/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1964-jean-paul-sartre.jpg",
+                        "alt": "Chân dung nhà văn Jean-Paul Sartre",
+                        "creator": "Lütfi Özkök",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1964/sartre/facts/",
+                        "license": "Photo: © Lütfi Özkök. Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi bản quyền ảnh của Lütfi Özkök và lưu tại Nobel Foundation archive; không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "philosophy",
                         "novel",
@@ -1967,12 +2084,29 @@
             "notes": "Declined the prize"
         },
         "1963": {
+            "announced_on": "1963-10-24",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1963/summary/",
             "laureates": [
                 {
+                    "id": "giorgos-seferis-greece",
                     "name": "Giorgos Seferis",
                     "country": "Greece",
+                    "country_vi": "Hy Lạp",
+                    "born_year": 1900,
+                    "born_place": "Smyrna, Ottoman Empire (now Izmir, Turkey)",
                     "language": "Greek",
                     "motivation": "for his eminent lyrical writing, inspired by a deep feeling for the Hellenic world of culture",
+                    "motivation_vi": "vì những sáng tác trữ tình xuất sắc, được khơi nguồn từ tình cảm sâu sắc dành cho thế giới văn hóa Hy Lạp",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1963/seferis/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1963-giorgos-seferis.jpg",
+                        "alt": "Chân dung nhà thơ Giorgos Seferis",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1963/seferis/facts/",
+                        "license": "Photo from the Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry",
                         "essay",
@@ -1982,12 +2116,29 @@
             ]
         },
         "1962": {
+            "announced_on": "1962-10-25",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1962/summary/",
             "laureates": [
                 {
+                    "id": "john-steinbeck-united-states",
                     "name": "John Steinbeck",
                     "country": "United States",
+                    "country_vi": "Hoa Kỳ",
+                    "born_year": 1902,
+                    "born_place": "Salinas, CA, USA",
                     "language": "English",
                     "motivation": "for his realistic and imaginative writings, combining as they do sympathetic humour and keen social perception",
+                    "motivation_vi": "vì những sáng tác vừa hiện thực vừa giàu trí tưởng tượng, kết hợp sự hài hước giàu cảm thông với cái nhìn xã hội sắc sảo",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1962/steinbeck/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1962-john-steinbeck.jpg",
+                        "alt": "Chân dung nhà văn John Steinbeck",
+                        "creator": "Paul Farber",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1962/steinbeck/facts/",
+                        "license": "Photo: Paul Farber. Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh được Nobel ghi công Paul Farber và thuộc kho lưu trữ Nobel Foundation; không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -1997,12 +2148,29 @@
             ]
         },
         "1961": {
+            "announced_on": "1961-10-26",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1961/summary/",
             "laureates": [
                 {
+                    "id": "ivo-andric-yugoslavia",
                     "name": "Ivo Andrić",
                     "country": "Yugoslavia",
+                    "country_vi": "Nam Tư",
+                    "born_year": 1892,
+                    "born_place": "Dolac, Bosnia (now Bosnia and Herzegovina)",
                     "language": "Serbo-Croatian",
                     "motivation": "for the epic force with which he has traced themes and depicted human destinies drawn from the history of his country",
+                    "motivation_vi": "vì sức mạnh sử thi trong cách ông triển khai các chủ đề và khắc họa số phận con người từ lịch sử đất nước mình",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1961/andric/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1961-ivo-andric.jpg",
+                        "alt": "Chân dung nhà văn Ivo Andrić",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1961/andric/facts/",
+                        "license": "Photo from the Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story"
@@ -2011,12 +2179,29 @@
             ]
         },
         "1960": {
+            "announced_on": "1960-10-26",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1960/summary/",
             "laureates": [
                 {
+                    "id": "saint-john-perse-france",
                     "name": "Saint-John Perse",
                     "country": "France",
+                    "country_vi": "Pháp",
+                    "born_year": 1887,
+                    "born_place": "Pointe-à-Pitre, Guadeloupe, France",
                     "language": "French",
-                    "motivation": "for the soaring flight and the evocative imagery of his poetry, which in a visionary fashion reflects the conditions of our time",
+                    "motivation": "for the soaring flight and the evocative imagery of his poetry which in a visionary fashion reflects the conditions of our time",
+                    "motivation_vi": "vì sức bay bổng cao vút và hình ảnh giàu sức gợi trong thơ ông, phản ánh thực tại thời đại chúng ta bằng nhãn quan viễn kiến",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1960/perse/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1960-saint-john-perse.jpg",
+                        "alt": "Chân dung nhà thơ Saint-John Perse",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1960/perse/facts/",
+                        "license": "Photo from the Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry"
                     ]
