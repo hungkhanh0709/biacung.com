@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-10-14",
+    "updated_at": "2026-10-15",
     "award_info": {
         "id": "intl_nobel_literature",
         "name": "Giải Nobel Văn chương",
@@ -2209,12 +2209,29 @@
             ]
         },
         "1959": {
+            "announced_on": "1959-10-22",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1959/summary/",
             "laureates": [
                 {
+                    "id": "salvatore-quasimodo-italy",
                     "name": "Salvatore Quasimodo",
                     "country": "Italy",
+                    "country_vi": "Ý",
+                    "born_year": 1901,
+                    "born_place": "Modica, Italy",
                     "language": "Italian",
                     "motivation": "for his lyrical poetry, which with classical fire expresses the tragic experience of life in our own times",
+                    "motivation_vi": "vì thơ trữ tình của ông, với ngọn lửa cổ điển, diễn tả trải nghiệm bi kịch của đời sống trong thời đại chúng ta",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1959/quasimodo/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1959-salvatore-quasimodo.jpg",
+                        "alt": "Chân dung nhà thơ Salvatore Quasimodo",
+                        "creator": "Mario De Biasi/Mondadori",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1959/quasimodo/facts/",
+                        "license": "Photo: Mario De Biasi/Mondadori. Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh được Nobel ghi công Mario De Biasi/Mondadori và lưu tại Nobel Foundation archive; không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry"
                     ]
@@ -2222,12 +2239,29 @@
             ]
         },
         "1958": {
+            "announced_on": "1958-10-23",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1958/summary/",
             "laureates": [
                 {
+                    "id": "boris-pasternak-soviet-union",
                     "name": "Boris Pasternak",
                     "country": "Soviet Union",
+                    "country_vi": "Liên Xô",
+                    "born_year": 1890,
+                    "born_place": "Moscow, Russia",
                     "language": "Russian",
                     "motivation": "for his important achievement both in contemporary lyrical poetry and in the field of the great Russian epic tradition",
+                    "motivation_vi": "vì những thành tựu quan trọng của ông trong cả thơ trữ tình đương đại lẫn truyền thống sử thi vĩ đại của Nga",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1958/pasternak/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1958-boris-pasternak.jpg",
+                        "alt": "Chân dung nhà văn Boris Pasternak",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1958/pasternak/facts/",
+                        "license": "Photo from the Nobel Foundation archive.",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "poetry",
@@ -2239,12 +2273,29 @@
             "notes": "Forced to decline by Soviet authorities"
         },
         "1957": {
+            "announced_on": "1957-10-17",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1957/summary/",
             "laureates": [
                 {
+                    "id": "albert-camus-france",
                     "name": "Albert Camus",
-                    "country": "France (born in French Algeria)",
+                    "country": "France",
+                    "country_vi": "Pháp",
+                    "born_year": 1913,
+                    "born_place": "Mondovi, French Algeria (now Algeria)",
                     "language": "French",
                     "motivation": "for his important literary production, which with clear-sighted earnestness illuminates the problems of the human conscience in our times",
+                    "motivation_vi": "vì sự nghiệp sáng tác văn học quan trọng của ông, với sự nghiêm cẩn sáng suốt, đã soi sáng những vấn đề của lương tâm con người trong thời đại chúng ta",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1957/camus/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1957-albert-camus.jpg",
+                        "alt": "Chân dung nhà văn Albert Camus",
+                        "creator": "The New York Times",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1957/camus/facts/",
+                        "license": "Photo: The New York Times. Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Ảnh trên trang Nobel ghi công The New York Times và lưu tại Nobel Foundation archive; không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -2256,12 +2307,29 @@
             ]
         },
         "1956": {
+            "announced_on": "1956-10-25",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1956/summary/",
             "laureates": [
                 {
+                    "id": "juan-ramon-jimenez-spain",
                     "name": "Juan Ramón Jiménez",
                     "country": "Spain",
+                    "country_vi": "Tây Ban Nha",
+                    "born_year": 1881,
+                    "born_place": "Moguer, Spain",
                     "language": "Spanish",
                     "motivation": "for his lyrical poetry, which in Spanish language constitutes an example of high spirit and artistical purity",
+                    "motivation_vi": "vì thơ trữ tình bằng tiếng Tây Ban Nha của ông là một mẫu mực của tinh thần cao cả và sự thuần khiết trong nghệ thuật",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1956/jimenez/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1956-juan-ramon-jimenez.jpg",
+                        "alt": "Chân dung nhà thơ Juan Ramón Jiménez",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1956/jimenez/facts/",
+                        "license": "Photo from the Nobel Foundation archive.",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry",
                         "novel"
@@ -2270,12 +2338,29 @@
             ]
         },
         "1955": {
+            "announced_on": "1955-10-27",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1955/summary/",
             "laureates": [
                 {
+                    "id": "halldor-laxness-iceland",
                     "name": "Halldór Laxness",
                     "country": "Iceland",
+                    "country_vi": "Iceland",
+                    "born_year": 1902,
+                    "born_place": "Reykjavik, Iceland",
                     "language": "Icelandic",
-                    "motivation": "for his vivid epic power, which has renewed the great narrative art of Iceland",
+                    "motivation": "for his vivid epic power which has renewed the great narrative art of Iceland",
+                    "motivation_vi": "vì bút lực sử thi sống động của ông đã làm mới nghệ thuật tự sự vĩ đại của Iceland",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1955/laxness/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1955-halldor-laxness.jpg",
+                        "alt": "Chân dung nhà văn Halldór Laxness",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1955/laxness/facts/",
+                        "license": "Photo from the Nobel Foundation archive.",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -2286,12 +2371,29 @@
             ]
         },
         "1954": {
+            "announced_on": "1954-10-28",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1954/summary/",
             "laureates": [
                 {
+                    "id": "ernest-hemingway-united-states",
                     "name": "Ernest Hemingway",
                     "country": "United States",
+                    "country_vi": "Hoa Kỳ",
+                    "born_year": 1899,
+                    "born_place": "Oak Park, IL, USA",
                     "language": "English",
                     "motivation": "for his mastery of the art of narrative, most recently demonstrated in The Old Man and the Sea, and for the influence that he has exerted on contemporary style",
+                    "motivation_vi": "vì tài nghệ bậc thầy trong nghệ thuật kể chuyện, gần đây nhất thể hiện qua Ông già và biển cả, cùng ảnh hưởng của ông đối với văn phong đương đại",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1954/hemingway/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1954-ernest-hemingway.jpg",
+                        "alt": "Chân dung nhà văn Ernest Hemingway",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1954/hemingway/facts/",
+                        "license": "Photo from the Nobel Foundation archive.",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -2301,12 +2403,29 @@
             ]
         },
         "1953": {
+            "announced_on": "1953-10-15",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1953/summary/",
             "laureates": [
                 {
+                    "id": "winston-churchill-united-kingdom",
                     "name": "Winston Churchill",
                     "country": "United Kingdom",
+                    "country_vi": "Vương quốc Anh",
+                    "born_year": 1874,
+                    "born_place": "Woodstock, United Kingdom",
                     "language": "English",
                     "motivation": "for his mastery of historical and biographical description as well as for brilliant oratory in defending exalted human values",
+                    "motivation_vi": "vì tài nghệ bậc thầy trong việc khắc họa lịch sử và tiểu sử, cũng như tài hùng biện xuất sắc khi bảo vệ những giá trị nhân văn cao cả",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1953/churchill/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1953-winston-churchill.jpg",
+                        "alt": "Chân dung nhà văn Winston Churchill",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1953/churchill/facts/",
+                        "license": "Photo from the Nobel Foundation archive.",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "history",
                         "essay",
@@ -2316,12 +2435,29 @@
             ]
         },
         "1952": {
+            "announced_on": "1952-11-06",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1952/summary/",
             "laureates": [
                 {
+                    "id": "francois-mauriac-france",
                     "name": "François Mauriac",
                     "country": "France",
+                    "country_vi": "Pháp",
+                    "born_year": 1885,
+                    "born_place": "Bordeaux, France",
                     "language": "French",
                     "motivation": "for the deep spiritual insight and the artistic intensity with which he has in his novels penetrated the drama of human life",
+                    "motivation_vi": "vì cái nhìn tinh thần sâu sắc và sức biểu đạt nghệ thuật mãnh liệt, nhờ đó ông đi sâu vào bi kịch đời người trong các tiểu thuyết của mình",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1952/mauriac/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1952-francois-mauriac.jpg",
+                        "alt": "Chân dung nhà văn François Mauriac",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1952/mauriac/facts/",
+                        "license": "Photo from the Nobel Foundation archive.",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story"
@@ -2330,12 +2466,29 @@
             ]
         },
         "1951": {
+            "announced_on": "1951-11-15",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1951/summary/",
             "laureates": [
                 {
+                    "id": "par-lagerkvist-sweden",
                     "name": "Pär Lagerkvist",
                     "country": "Sweden",
+                    "country_vi": "Thụy Điển",
+                    "born_year": 1891,
+                    "born_place": "Växjö, Sweden",
                     "language": "Swedish",
                     "motivation": "for the artistic vigour and true independence of mind with which he endeavours in his poetry to find answers to the eternal questions confronting mankind",
+                    "motivation_vi": "vì sức mạnh nghệ thuật và tinh thần độc lập đích thực mà ông thể hiện khi nỗ lực tìm lời giải trong thơ ca cho những câu hỏi muôn thuở đặt ra trước nhân loại",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1951/lagerkvist/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1951-par-lagerkvist.jpg",
+                        "alt": "Chân dung nhà văn Pär Lagerkvist",
+                        "creator": "Ateljé Uggla",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1951/lagerkvist/facts/",
+                        "license": "Photo: Ateljé Uggla. Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh của Ateljé Uggla từ kho lưu trữ Nobel Foundation; không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry",
                         "novel",
@@ -2346,12 +2499,29 @@
             ]
         },
         "1950": {
+            "announced_on": "1950-11-10",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1950/summary/",
             "laureates": [
                 {
+                    "id": "bertrand-russell-united-kingdom",
                     "name": "Bertrand Russell",
                     "country": "United Kingdom",
+                    "country_vi": "Vương quốc Anh",
+                    "born_year": 1872,
+                    "born_place": "Trelleck, United Kingdom",
                     "language": "English",
                     "motivation": "in recognition of his varied and significant writings in which he champions humanitarian ideals and freedom of thought",
+                    "motivation_vi": "để ghi nhận những trước tác đa dạng và có ý nghĩa quan trọng của ông, qua đó ông bảo vệ những lý tưởng nhân đạo và quyền tự do tư tưởng",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1950/russell/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1950-bertrand-russell.jpg",
+                        "alt": "Chân dung nhà triết học Bertrand Russell",
+                        "creator": "Jane Brown",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1950/russell/facts/",
+                        "license": "Photo: Jane Brown. Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh của Jane Brown từ kho lưu trữ Nobel Foundation; không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "philosophy",
                         "essay"
@@ -2360,12 +2530,30 @@
             ]
         },
         "1949": {
+            "announced_on": "1950-11-10",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1949/summary/",
+            "notes": "Giải Nobel Văn chương 1949 được bảo lưu và trao vào năm 1950.",
             "laureates": [
                 {
+                    "id": "william-faulkner-united-states",
                     "name": "William Faulkner",
                     "country": "United States",
+                    "country_vi": "Hoa Kỳ",
+                    "born_year": 1897,
+                    "born_place": "New Albany, MS, USA",
                     "language": "English",
                     "motivation": "for his powerful and artistically unique contribution to the modern American novel",
+                    "motivation_vi": "vì đóng góp mạnh mẽ và độc đáo về nghệ thuật của ông cho tiểu thuyết Mỹ hiện đại",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1949/faulkner/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1949-william-faulkner.jpg",
+                        "alt": "Chân dung nhà văn William Faulkner",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1949/faulkner/facts/",
+                        "license": "Photo from the Nobel Foundation archive.",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story"
@@ -2374,12 +2562,29 @@
             ]
         },
         "1948": {
+            "announced_on": "1948-11-04",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1948/summary/",
             "laureates": [
                 {
+                    "id": "t-s-eliot-united-kingdom",
                     "name": "T. S. Eliot",
-                    "country": "United Kingdom (born in the United States)",
+                    "country": "United Kingdom",
+                    "country_vi": "Vương quốc Anh",
+                    "born_year": 1888,
+                    "born_place": "St. Louis, MO, USA",
                     "language": "English",
                     "motivation": "for his outstanding, pioneer contribution to present-day poetry",
+                    "motivation_vi": "vì đóng góp xuất sắc và tiên phong của ông cho thơ ca đương thời",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1948/eliot/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1948-t-s-eliot.jpg",
+                        "alt": "Chân dung nhà thơ T. S. Eliot",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1948/eliot/facts/",
+                        "license": "Photo from the Nobel Foundation archive.",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry",
                         "essay",
@@ -2389,12 +2594,29 @@
             ]
         },
         "1947": {
+            "announced_on": "1947-11-13",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1947/summary/",
             "laureates": [
                 {
+                    "id": "andre-gide-france",
                     "name": "André Gide",
                     "country": "France",
+                    "country_vi": "Pháp",
+                    "born_year": 1869,
+                    "born_place": "Paris, France",
                     "language": "French",
                     "motivation": "for his comprehensive and artistically significant writings, in which human problems and conditions have been presented with a fearless love of truth and keen psychological insight",
+                    "motivation_vi": "vì các tác phẩm phong phú và có giá trị nghệ thuật nổi bật, qua đó ông khắc họa những vấn đề và cảnh ngộ của con người với tình yêu sự thật không chút sợ hãi và cái nhìn tâm lý sắc sảo",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1947/gide/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1947-andre-gide.jpg",
+                        "alt": "Chân dung nhà văn André Gide",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1947/gide/facts/",
+                        "license": "Photo from the Nobel Foundation archive.",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "essay",
@@ -2405,12 +2627,29 @@
             ]
         },
         "1946": {
+            "announced_on": "1946-11-14",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1946/summary/",
             "laureates": [
                 {
+                    "id": "hermann-hesse-switzerland",
                     "name": "Hermann Hesse",
-                    "country": "Germany/Switzerland",
+                    "country": "Switzerland",
+                    "country_vi": "Thụy Sĩ",
+                    "born_year": 1877,
+                    "born_place": "Calw, Germany",
                     "language": "German",
-                    "motivation": "for his inspired writings, which while growing in boldness and penetration, exemplify the classical humanitarian ideals and high qualities of style",
+                    "motivation": "for his inspired writings which, while growing in boldness and penetration, exemplify the classical humanitarian ideals and high qualities of style",
+                    "motivation_vi": "vì những trước tác giàu cảm hứng, ngày càng táo bạo và sâu sắc, đồng thời tiêu biểu cho các lý tưởng nhân văn cổ điển và phẩm chất văn phong cao quý",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1946/hesse/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1946-hermann-hesse.jpg",
+                        "alt": "Chân dung nhà văn Hermann Hesse",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1946/hesse/facts/",
+                        "license": "Photo from the Nobel Foundation archive.",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "poetry"
@@ -2419,12 +2658,29 @@
             ]
         },
         "1945": {
+            "announced_on": "1945-11-15",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1945/summary/",
             "laureates": [
                 {
+                    "id": "gabriela-mistral-chile",
                     "name": "Gabriela Mistral",
                     "country": "Chile",
+                    "country_vi": "Chile",
+                    "born_year": 1889,
+                    "born_place": "Vicuña, Chile",
                     "language": "Spanish",
-                    "motivation": "for her lyric poetry, which inspired by powerful emotions, has made her name a symbol of the idealistic aspirations of the entire Latin American world",
+                    "motivation": "for her lyric poetry which, inspired by powerful emotions, has made her name a symbol of the idealistic aspirations of the entire Latin American world",
+                    "motivation_vi": "vì thơ trữ tình của bà, được khơi nguồn từ những cảm xúc mãnh liệt, đã khiến tên tuổi bà trở thành biểu tượng cho những khát vọng lý tưởng của cả thế giới Mỹ Latinh",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1945/mistral/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1945-gabriela-mistral.jpg",
+                        "alt": "Chân dung nhà thơ Gabriela Mistral",
+                        "creator": "Anna Riwkin-Brick",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1945/mistral/facts/",
+                        "license": "Photo: Anna Riwkin-Brick. Nobel Foundation archive",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh của Anna Riwkin-Brick từ kho lưu trữ Nobel Foundation; không nêu giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "poetry"
                     ]
@@ -2432,12 +2688,29 @@
             ]
         },
         "1944": {
+            "announced_on": "1944-11-09",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1944/summary/",
             "laureates": [
                 {
+                    "id": "johannes-v-jensen-denmark",
                     "name": "Johannes V. Jensen",
                     "country": "Denmark",
+                    "country_vi": "Đan Mạch",
+                    "born_year": 1873,
+                    "born_place": "Farsø, Denmark",
                     "language": "Danish",
                     "motivation": "for the rare strength and fertility of his poetic imagination with which is combined an intellectual curiosity of wide scope and a bold, freshly creative style",
+                    "motivation_vi": "vì sức mạnh hiếm có và sự sung mãn của trí tưởng tượng thi ca, kết hợp với tinh thần ham hiểu biết sâu rộng cùng phong cách táo bạo, mới mẻ và giàu sáng tạo",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1944/jensen/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1944-johannes-v-jensen.jpg",
+                        "alt": "Chân dung nhà văn Johannes V. Jensen",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1944/jensen/facts/",
+                        "license": "Photo from the Nobel Foundation archive.",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel",
                         "short story"
@@ -2446,18 +2719,34 @@
             ]
         },
         "1943": {
+            "status": "not_awarded",
+            "announced_on": "1943-10-22",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1943/summary/",
+            "status_note": "Giải Nobel Văn chương năm 1943 không được trao do những gián đoạn của Thế chiến II.",
             "laureates": [],
             "notes": "No Nobel Prize in Literature was awarded this year due to World War II"
         },
         "1942": {
+            "status": "not_awarded",
+            "announced_on": "1942-10-17",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1942/summary/",
+            "status_note": "Giải Nobel Văn chương năm 1942 không được trao do những gián đoạn của Thế chiến II.",
             "laureates": [],
             "notes": "No Nobel Prize in Literature was awarded this year due to World War II"
         },
         "1941": {
+            "status": "not_awarded",
+            "announced_on": "1941-10-17",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1941/summary/",
+            "status_note": "Giải Nobel Văn chương năm 1941 không được trao do những gián đoạn của Thế chiến II.",
             "laureates": [],
             "notes": "No Nobel Prize in Literature was awarded this year due to World War II"
         },
         "1940": {
+            "status": "not_awarded",
+            "announced_on": "1941-10-17",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1940/summary/",
+            "status_note": "Giải Nobel Văn chương năm 1940 không được trao do những gián đoạn của Thế chiến II; việc xét giải từng được hoãn sang năm 1941.",
             "laureates": [],
             "notes": "No Nobel Prize in Literature was awarded this year due to World War II and the German occupation of Norway"
         },
