@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-10-15",
+    "updated_at": "2026-10-18",
     "award_info": {
         "id": "intl_nobel_literature",
         "name": "Giải Nobel Văn chương",
@@ -2751,12 +2751,29 @@
             "notes": "No Nobel Prize in Literature was awarded this year due to World War II and the German occupation of Norway"
         },
         "1939": {
+            "announced_on": "1939-11-10",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1939/summary/",
             "laureates": [
                 {
+                    "id": "frans-eemil-sillanpaa-finland",
                     "name": "Frans Eemil Sillanpää",
                     "country": "Finland",
+                    "country_vi": "Phần Lan",
+                    "born_year": 1888,
+                    "born_place": "Hämeenkyrö, Russian Empire (now Finland)",
                     "language": "Finnish",
                     "motivation": "for his deep understanding of his country's peasantry and the exquisite art with which he has portrayed their way of life and their relationship with Nature",
+                    "motivation_vi": "vì sự thấu hiểu sâu sắc của ông về nông dân quê hương và nghệ thuật tinh tế khi khắc họa cuộc sống của họ cùng mối quan hệ với thiên nhiên",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1939/sillanpaa/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1939-frans-eemil-sillanpaa.jpg",
+                        "alt": "Chân dung nhà văn Frans Eemil Sillanpää",
+                        "creator": "Nobel Foundation archive",
+                        "source_url": "https://www.nobelprize.org/prizes/literature/1939/sillanpaa/facts/",
+                        "license": "Photo from the Nobel Foundation archive.",
+                        "license_url": "https://www.nobelprize.org/about/copyright-information/",
+                        "note": "Trang Nobel ghi ảnh từ kho lưu trữ Nobel Foundation; không nêu tên nhiếp ảnh gia hoặc giấy phép tái sử dụng riêng."
+                    },
                     "genre": [
                         "novel"
                     ]
@@ -2764,12 +2781,29 @@
             ]
         },
         "1938": {
+            "announced_on": "1938-11-10",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1938/summary/",
             "laureates": [
                 {
+                    "id": "pearl-s-buck-united-states",
                     "name": "Pearl S. Buck",
                     "country": "United States",
+                    "country_vi": "Hoa Kỳ",
+                    "born_year": 1892,
+                    "born_place": "Hillsboro, WV, USA",
                     "language": "English",
                     "motivation": "for her rich and truly epic descriptions of peasant life in China and for her biographical masterpieces",
+                    "motivation_vi": "vì những miêu tả phong phú, thực sự mang tầm vóc sử thi về đời sống nông dân Trung Quốc và những tác phẩm tiểu sử xuất sắc của bà",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1938/buck/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1938-pearl-buck.jpg",
+                        "alt": "Chân dung nhà văn Pearl S. Buck",
+                        "creator": "Arnold Genthe",
+                        "source_url": "https://www.loc.gov/pictures/item/2004671931/",
+                        "license": "Public domain (Wikimedia Commons).",
+                        "license_url": "https://commons.wikimedia.org/wiki/File:Pearl_Buck.jpg",
+                        "note": "Ảnh khoảng năm 1932, tải từ Library of Congress, mã cph.3a12720."
+                    },
                     "genre": [
                         "novel",
                         "biography"
@@ -2778,12 +2812,29 @@
             ]
         },
         "1937": {
+            "announced_on": "1937-11-11",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1937/summary/",
             "laureates": [
                 {
+                    "id": "roger-martin-du-gard-france",
                     "name": "Roger Martin du Gard",
                     "country": "France",
+                    "country_vi": "Pháp",
+                    "born_year": 1881,
+                    "born_place": "Neuilly-sur-Seine, France",
                     "language": "French",
-                    "motivation": "for the artistic power and truth with which he has depicted human conflict as well as some fundamental aspects of contemporary life in his novel cycle Les Thibault",
+                    "motivation": "for the artistic power and truth with which he has depicted human conflict as well as some fundamental aspects of contemporary life in his novel-cycle Les Thibault",
+                    "motivation_vi": "vì sức mạnh nghệ thuật và tính chân thực khi ông khắc họa những xung đột của con người cùng một số khía cạnh cơ bản của đời sống đương thời trong bộ tiểu thuyết Les Thibault",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1937/gard/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1937-roger-martin-du-gard.jpg",
+                        "alt": "Chân dung nhà văn Roger Martin du Gard",
+                        "creator": "Nobel Foundation",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Roger_Martin_du_Gard_1937.jpg",
+                        "license": "Public domain in Sweden (Wikimedia Commons).",
+                        "license_url": "https://commons.wikimedia.org/wiki/File:Roger_Martin_du_Gard_1937.jpg",
+                        "note": "Ảnh năm 1937 từ trang Nobel, được Wikimedia Commons lưu trữ; không nêu tên nhiếp ảnh gia."
+                    },
                     "genre": [
                         "novel"
                     ]
@@ -2791,12 +2842,29 @@
             ]
         },
         "1936": {
+            "announced_on": "1936-11-12",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1936/summary/",
             "laureates": [
                 {
+                    "id": "eugene-oneill-united-states",
                     "name": "Eugene O'Neill",
                     "country": "United States",
+                    "country_vi": "Hoa Kỳ",
+                    "born_year": 1888,
+                    "born_place": "New York City, NY, USA",
                     "language": "English",
                     "motivation": "for the power, honesty and deep-felt emotions of his dramatic works, which embody an original concept of tragedy",
+                    "motivation_vi": "vì sức mạnh, sự chân thực và những cảm xúc sâu sắc trong các tác phẩm kịch của ông, thể hiện một quan niệm độc đáo về bi kịch",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1936/oneill/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1936-eugene-oneill.jpg",
+                        "alt": "Chân dung nhà viết kịch Eugene O'Neill",
+                        "creator": "Carl Van Vechten",
+                        "source_url": "https://www.loc.gov/item/2004663425/",
+                        "license": "Library of Congress believes this photograph is in the public domain.",
+                        "license_url": "https://wwws.loc.gov/rr/print/res/079_vanv.html",
+                        "note": "Ảnh chụp ngày 5/9/1933, bộ sưu tập Carl Van Vechten của Library of Congress, mã LC-USZ62-103692; giữ nguyên ảnh và ghi công tác giả."
+                    },
                     "genre": [
                         "drama"
                     ]
@@ -2804,16 +2872,37 @@
             ]
         },
         "1935": {
+            "status": "not_awarded",
+            "announced_on": "1936-11-12",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1935/summary/",
+            "status_note": "Giải Nobel Văn chương năm 1935 được để dành sang năm 1936 nhưng cuối cùng không trao; tiền thưởng được phân bổ vào quỹ chính và quỹ riêng của hạng mục.",
             "laureates": [],
             "notes": "No Nobel Prize in Literature was awarded this year as no candidate was deemed suitable by the Swedish Academy"
         },
         "1934": {
+            "announced_on": "1934-11-08",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1934/summary/",
             "laureates": [
                 {
+                    "id": "luigi-pirandello-italy",
                     "name": "Luigi Pirandello",
                     "country": "Italy",
+                    "country_vi": "Ý",
+                    "born_year": 1867,
+                    "born_place": "Agrigento, Sicily, Italy",
                     "language": "Italian",
                     "motivation": "for his bold and ingenious revival of dramatic and scenic art",
+                    "motivation_vi": "vì đã hồi sinh nghệ thuật kịch và sân khấu một cách táo bạo, tài tình",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1934/pirandello/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1934-luigi-pirandello.jpg",
+                        "alt": "Chân dung nhà văn Luigi Pirandello tại Berlin năm 1930",
+                        "creator": "Không rõ tác giả",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Luigi_Pirandello_1930.jpg",
+                        "license": "Public domain tại Ý và Hoa Kỳ (PD-Italy, PD-1996 theo Wikimedia Commons)",
+                        "license_url": "https://commons.wikimedia.org/wiki/File:Luigi_Pirandello_1930.jpg",
+                        "note": "Ảnh chụp Luigi Pirandello tại Berlin năm 1930; tải bản gốc từ Wikimedia Commons."
+                    },
                     "genre": [
                         "drama",
                         "novel",
@@ -2823,12 +2912,29 @@
             ]
         },
         "1933": {
+            "announced_on": "1933-11-09",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1933/summary/",
             "laureates": [
                 {
+                    "id": "ivan-bunin-stateless",
                     "name": "Ivan Bunin",
                     "country": "Stateless (born in Russian Empire)",
+                    "country_vi": "Không quốc tịch (sinh tại Đế quốc Nga)",
+                    "born_year": 1870,
+                    "born_place": "Voronezh, Russian Empire",
                     "language": "Russian",
                     "motivation": "for the strict artistry with which he has carried on the classical Russian traditions in prose writing",
+                    "motivation_vi": "vì nghệ thuật viết văn nghiêm cẩn, qua đó ông tiếp nối truyền thống văn xuôi cổ điển Nga",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1933/bunin/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1933-ivan-bunin.jpg",
+                        "alt": "Chân dung nhà văn Ivan Bunin năm 1901",
+                        "creator": "Maxim Petrovich Dmitriev",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Ivan_Bunin-1901.jpg",
+                        "license": "Public domain tại Nga và Hoa Kỳ (theo Wikimedia Commons)",
+                        "license_url": "https://commons.wikimedia.org/wiki/File:Ivan_Bunin-1901.jpg",
+                        "note": "Ảnh chụp tại Nizhny Novgorod năm 1901; dùng bản ảnh đã được Wikimedia Commons cắt cúp để tập trung vào nhân vật."
+                    },
                     "genre": [
                         "short story",
                         "poetry",
@@ -2838,12 +2944,29 @@
             ]
         },
         "1932": {
+            "announced_on": "1932-11-10",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1932/summary/",
             "laureates": [
                 {
+                    "id": "john-galsworthy-united-kingdom",
                     "name": "John Galsworthy",
                     "country": "United Kingdom",
+                    "country_vi": "Vương quốc Anh",
+                    "born_year": 1867,
+                    "born_place": "Kingston Hill, Surrey, England",
                     "language": "English",
                     "motivation": "for his distinguished art of narration, which takes its highest form in The Forsyte Saga",
+                    "motivation_vi": "vì nghệ thuật tự sự xuất sắc của ông, đạt đến đỉnh cao trong bộ tiểu thuyết The Forsyte Saga",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1932/galsworthy/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1932-john-galsworthy.jpg",
+                        "alt": "Chân dung nhà văn John Galsworthy do Alvin Langdon Coburn chụp năm 1909",
+                        "creator": "Alvin Langdon Coburn",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:John_Galsworthy_by_Alvin_Langdon_Coburn,_October_18,_1909,_photogravure,_from_the_National_Portrait_Gallery_-_NPG-S-NPG_87_288_w.jpg",
+                        "license": "CC0 1.0; National Portrait Gallery, Smithsonian Institution",
+                        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+                        "note": "Bản in ảnh ngày 18/10/1909 thuộc National Portrait Gallery; tải bản JPEG 960 px từ Wikimedia Commons."
+                    },
                     "genre": [
                         "novel"
                     ]
