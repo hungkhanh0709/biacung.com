@@ -2875,7 +2875,7 @@
             "status": "not_awarded",
             "announced_on": "1936-11-12",
             "source_url": "https://www.nobelprize.org/prizes/literature/1935/summary/",
-            "status_note": "Giải Nobel Văn chương năm 1935 được để dành sang năm 1936 nhưng cuối cùng không trao; tiền thưởng được phân bổ vào quỹ chính và quỹ riêng của hạng mục.",
+            "status_note": "Giải Nobel Văn chương năm 1935 được để dành sang năm 1936 nhưng cuối cùng không trao.",
             "laureates": [],
             "notes": "No Nobel Prize in Literature was awarded this year as no candidate was deemed suitable by the Swedish Academy"
         },
@@ -2974,12 +2974,29 @@
             ]
         },
         "1931": {
+            "announced_on": "1931-10-09",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1931/summary/",
             "laureates": [
                 {
+                    "id": "erik-axel-karlfeldt-sweden",
                     "name": "Erik Axel Karlfeldt",
                     "country": "Sweden",
+                    "country_vi": "Thụy Điển",
+                    "born_year": 1864,
+                    "born_place": "Karlbo, Dalekarlia, Sweden",
                     "language": "Swedish",
                     "motivation": "The poetry of Erik Axel Karlfeldt",
+                    "motivation_vi": "Thơ ca của Erik Axel Karlfeldt",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1931/karlfeldt/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1931-erik-axel-karlfeldt.jpg",
+                        "alt": "Chân dung nhà thơ Erik Axel Karlfeldt, ảnh in trong sách năm 1921",
+                        "creator": "Nhiếp ảnh gia không rõ tên; bản số hóa do Janee tải lên Wikimedia Commons",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Erik_Axel_Karlfeldt_1864-1931.jpg",
+                        "license": "CC BY-SA 4.0",
+                        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+                        "note": "Ảnh chân dung khoảng năm 1900, in trong Sveriges national-litteratur 1500-1920 (1921); dùng bản JPEG 960 px từ Wikimedia Commons, không chỉnh sửa."
+                    },
                     "genre": [
                         "poetry"
                     ],
@@ -2989,12 +3006,29 @@
             "notes": "Posthumous award"
         },
         "1930": {
+            "announced_on": "1930-11-05",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1930/summary/",
             "laureates": [
                 {
+                    "id": "sinclair-lewis-united-states",
                     "name": "Sinclair Lewis",
                     "country": "United States",
+                    "country_vi": "Hoa Kỳ",
+                    "born_year": 1885,
+                    "born_place": "Sauk Centre, Minnesota, United States",
                     "language": "English",
                     "motivation": "for his vigorous and graphic art of description and his ability to create, with wit and humour, new types of characters",
+                    "motivation_vi": "vì nghệ thuật miêu tả mạnh mẽ, giàu hình ảnh cùng khả năng tạo nên những kiểu nhân vật mới bằng sự sắc sảo và óc hài hước",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1930/lewis/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1930-sinclair-lewis.jpg",
+                        "alt": "Chân dung nhà văn Sinclair Lewis do Harris & Ewing chụp",
+                        "creator": "Harris & Ewing",
+                        "source_url": "https://www.loc.gov/pictures/item/2016862641/",
+                        "license": "Public domain; Library of Congress: no known restrictions on publication",
+                        "license_url": "https://www.loc.gov/rr/print/res/140_harr.html",
+                        "note": "Ảnh từ bộ sưu tập Harris & Ewing của Library of Congress, mã hec.21596; dùng bản JPEG 820 × 1024 px. Năm chụp chưa được xác minh."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -3004,12 +3038,29 @@
             ]
         },
         "1929": {
+            "announced_on": "1929-11-12",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1929/summary/",
             "laureates": [
                 {
+                    "id": "thomas-mann-germany",
                     "name": "Thomas Mann",
                     "country": "Germany",
+                    "country_vi": "Đức",
+                    "born_year": 1875,
+                    "born_place": "Lübeck, Germany",
                     "language": "German",
                     "motivation": "principally for his great novel, Buddenbrooks, which has won steadily increased recognition as one of the classic works of contemporary literature",
+                    "motivation_vi": "chủ yếu vì tiểu thuyết xuất sắc Buddenbrooks của ông, tác phẩm ngày càng được công nhận là một trong những tác phẩm kinh điển của văn học đương đại",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1929/mann/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1929-thomas-mann.jpg",
+                        "alt": "Chân dung nhà văn Thomas Mann trên hồ sơ Nobel Văn chương 1929",
+                        "creator": "Nhiếp ảnh gia không rõ tên; Nobel Foundation (nguồn ảnh)",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Thomas_Mann_1929.jpg",
+                        "license": "Public domain tại Thụy Điển và Hoa Kỳ theo Wikimedia Commons",
+                        "license_url": "https://commons.wikimedia.org/wiki/File:Thomas_Mann_1929.jpg",
+                        "note": "Ảnh từ hồ sơ Nobel 1929, bản JPEG 464 × 696 px lưu trên Wikimedia Commons; không chỉnh sửa."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -3019,12 +3070,29 @@
             ]
         },
         "1928": {
+            "announced_on": "1928-11-13",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1928/summary/",
             "laureates": [
                 {
+                    "id": "sigrid-undset-norway",
                     "name": "Sigrid Undset",
-                    "country": "Norway/Denmark",
+                    "country": "Norway",
+                    "country_vi": "Na Uy",
+                    "born_year": 1882,
+                    "born_place": "Kalundborg, Denmark",
                     "language": "Norwegian",
                     "motivation": "principally for her powerful descriptions of Northern life during the Middle Ages",
+                    "motivation_vi": "chủ yếu vì những khắc họa mạnh mẽ của bà về đời sống Bắc Âu thời Trung cổ",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1928/undset/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1928-sigrid-undset.jpg",
+                        "alt": "Chân dung nhà văn Sigrid Undset do Alvilde Torp chụp năm 1928",
+                        "creator": "Alvilde Torp",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Portrett_av_Sigrid_Undset,_1928.jpg",
+                        "license": "CC BY 2.0; National Library of Norway",
+                        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+                        "note": "Ảnh chụp tại Lillehammer năm 1928, lưu tại Nasjonalbiblioteket (mã blds_01124); dùng bản JPEG 960 × 1377 px từ Wikimedia Commons, không chỉnh sửa."
+                    },
                     "genre": [
                         "novel"
                     ]
@@ -3032,53 +3100,124 @@
             ]
         },
         "1927": {
+            "announced_on": "1928-11-13",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1927/summary/",
             "laureates": [
                 {
+                    "id": "henri-bergson-france",
                     "name": "Henri Bergson",
                     "country": "France",
+                    "country_vi": "Pháp",
+                    "born_year": 1859,
+                    "born_place": "Paris, France",
                     "language": "French",
                     "motivation": "in recognition of his rich and vitalizing ideas and the brilliant skill with which they have been presented",
+                    "motivation_vi": "để ghi nhận những tư tưởng phong phú, giàu sức sống của ông cùng tài nghệ xuất sắc trong cách trình bày những tư tưởng ấy",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1927/bergson/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1927-henri-bergson.jpg",
+                        "alt": "Chân dung nhà triết học Henri Bergson từ bộ sưu tập George Grantham Bain",
+                        "creator": "Bain News Service",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Henri_Bergson_LCCN2014718527.jpg",
+                        "license": "Public domain; Library of Congress ghi nhận không có hạn chế bản quyền đã biết",
+                        "license_url": "https://commons.wikimedia.org/wiki/File:Henri_Bergson_LCCN2014718527.jpg",
+                        "note": "Ảnh từ bộ sưu tập George Grantham Bain, Library of Congress (LCCN 2014718527); tải bản JPEG 762 × 1024 px, không chỉnh sửa."
+                    },
                     "genre": [
                         "philosophy"
                     ]
                 }
-            ]
+            ],
+            "notes": "Giải Nobel Văn chương 1927 được bảo lưu và trao cho Henri Bergson vào năm 1928."
         },
         "1926": {
+            "announced_on": "1927-11-10",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1926/summary/",
             "laureates": [
                 {
+                    "id": "grazia-deledda-italy",
                     "name": "Grazia Deledda",
                     "country": "Italy",
+                    "country_vi": "Ý",
+                    "born_year": 1871,
+                    "born_place": "Nuoro, Sardinia, Italy",
                     "language": "Italian",
-                    "motivation": "for her idealistically inspired writings, which with plastic clarity picture the life on her native island and with depth and sympathy deal with human problems in general",
+                    "motivation": "for her idealistically inspired writings which with plastic clarity picture the life on her native island and with depth and sympathy deal with human problems in general",
+                    "motivation_vi": "vì những sáng tác được khơi nguồn từ lý tưởng, khắc họa đời sống trên hòn đảo quê hương bà một cách rõ nét, giàu tính tạo hình, đồng thời đề cập đến những vấn đề chung của con người với chiều sâu và sự cảm thông",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1926/deledda/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1926-grazia-deledda.jpg",
+                        "alt": "Chân dung nhà văn Grazia Deledda năm 1926 từ kho lưu trữ Nobel Foundation",
+                        "creator": "Nhiếp ảnh gia không rõ tên; Nobel Foundation (nguồn ảnh)",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Grazia_Deledda_1926.jpg",
+                        "license": "Public domain tại Thụy Điển theo Wikimedia Commons",
+                        "license_url": "https://commons.wikimedia.org/wiki/File:Grazia_Deledda_1926.jpg",
+                        "note": "Ảnh từ kho lưu trữ Nobel Foundation, bản JPEG 800 × 1131 px lưu trên Wikimedia Commons; không chỉnh sửa."
+                    },
                     "genre": [
                         "poetry",
                         "novel"
                     ]
                 }
-            ]
+            ],
+            "notes": "Giải Nobel Văn chương 1926 được bảo lưu và trao cho Grazia Deledda vào năm 1927."
         },
         "1925": {
+            "announced_on": "1926-11-11",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1925/summary/",
             "laureates": [
                 {
+                    "id": "george-bernard-shaw-united-kingdom",
                     "name": "George Bernard Shaw",
-                    "country": "United Kingdom/Ireland",
+                    "country": "United Kingdom",
+                    "country_vi": "Vương quốc Anh",
+                    "born_year": 1856,
+                    "born_place": "Dublin, Ireland",
                     "language": "English",
                     "motivation": "for his work which is marked by both idealism and humanity, its stimulating satire often being infused with a singular poetic beauty",
+                    "motivation_vi": "vì những tác phẩm mang cả lý tưởng và tinh thần nhân văn của ông, trong đó lối châm biếm giàu sức gợi thường hòa quyện với vẻ đẹp thi ca độc đáo",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1925/shaw/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1925-george-bernard-shaw.jpg",
+                        "alt": "Chân dung nhà viết kịch George Bernard Shaw do Alvin Langdon Coburn chụp khoảng năm 1905",
+                        "creator": "Alvin Langdon Coburn",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_George_Bernard_Shaw_LCCN2004674432.jpg",
+                        "license": "Public domain; Library of Congress ghi nhận không có hạn chế bản quyền đã biết",
+                        "license_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_George_Bernard_Shaw_LCCN2004674432.jpg",
+                        "note": "Ảnh chụp khoảng năm 1905, Library of Congress (LCCN 2004674432); tải bản JPEG 816 × 1024 px, không chỉnh sửa."
+                    },
                     "genre": [
                         "drama",
                         "essay"
                     ]
                 }
-            ]
+            ],
+            "notes": "Giải Nobel Văn chương 1925 được bảo lưu và trao cho George Bernard Shaw vào năm 1926."
         },
         "1924": {
+            "announced_on": "1924-11-13",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1924/summary/",
             "laureates": [
                 {
-                    "name": "Władysław Reymont",
+                    "id": "wladyslaw-stanislaw-reymont-poland",
+                    "name": "Władysław Stanisław Reymont",
                     "country": "Poland",
+                    "country_vi": "Ba Lan",
+                    "born_year": 1867,
+                    "born_place": "Kobiele Wielkie, Poland",
                     "language": "Polish",
                     "motivation": "for his great national epic, The Peasants",
+                    "motivation_vi": "vì thiên sử thi dân tộc vĩ đại Nông dân của ông",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1924/reymont/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1924-wladyslaw-reymont.jpg",
+                        "alt": "Chân dung nhà văn Władysław Stanisław Reymont trên tạp chí Nowości Illustrowane năm 1925",
+                        "creator": "Nhiếp ảnh gia không rõ tên",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:W%C5%82adys%C5%82aw_Reymont_(1925).jpg",
+                        "license": "Public domain tại Ba Lan và Hoa Kỳ theo Wikimedia Commons",
+                        "license_url": "https://commons.wikimedia.org/wiki/File:W%C5%82adys%C5%82aw_Reymont_(1925).jpg",
+                        "note": "Ảnh đăng trong Nowości Illustrowane số 34/1925, bản JPEG 824 × 1185 px lưu trên Wikimedia Commons; không chỉnh sửa."
+                    },
                     "genre": [
                         "novel"
                     ]
@@ -3086,12 +3225,29 @@
             ]
         },
         "1923": {
+            "announced_on": "1923-11-14",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1923/summary/",
             "laureates": [
                 {
+                    "id": "william-butler-yeats-ireland",
                     "name": "William Butler Yeats",
                     "country": "Ireland",
+                    "country_vi": "Ireland",
+                    "born_year": 1865,
+                    "born_place": "Dublin, Ireland",
                     "language": "English",
                     "motivation": "for his always inspired poetry, which in a highly artistic form gives expression to the spirit of a whole nation",
+                    "motivation_vi": "vì thơ ca luôn đầy cảm hứng của ông, thể hiện tinh thần của cả một dân tộc bằng hình thức nghệ thuật bậc cao",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1923/yeats/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1923-william-butler-yeats.jpg",
+                        "alt": "Chân dung nhà thơ William Butler Yeats trước năm 1920",
+                        "creator": "Bain News Service (nhà phát hành; nhiếp ảnh gia không rõ)",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:William_Butler_Yeats_1.jpg",
+                        "license": "Không có hạn chế bản quyền đã biết theo Library of Congress",
+                        "license_url": "https://www.loc.gov/rr/print/res/274_bain.html",
+                        "note": "Ảnh từ bộ sưu tập George Grantham Bain tại Library of Congress; bản JPEG 960 × 1213 px tải qua Wikimedia Commons."
+                    },
                     "genre": [
                         "poetry"
                     ]
@@ -3099,12 +3255,29 @@
             ]
         },
         "1922": {
+            "announced_on": "1922-11-09",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1922/summary/",
             "laureates": [
                 {
+                    "id": "jacinto-benavente-spain",
                     "name": "Jacinto Benavente",
                     "country": "Spain",
+                    "country_vi": "Tây Ban Nha",
+                    "born_year": 1866,
+                    "born_place": "Madrid, Spain",
                     "language": "Spanish",
                     "motivation": "for the happy manner in which he has continued the illustrious traditions of the Spanish drama",
+                    "motivation_vi": "vì ông đã tiếp nối một cách tài tình truyền thống lẫy lừng của kịch nghệ Tây Ban Nha",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1922/benavente/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1922-jacinto-benavente.jpg",
+                        "alt": "Chân dung nhà viết kịch Jacinto Benavente năm 1923",
+                        "creator": "Bain News Service",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Jacinto_Benavente_y_Martinez.jpg",
+                        "license": "No known restrictions on publication (Library of Congress)",
+                        "license_url": "https://www.loc.gov/rr/print/res/274_bain.html",
+                        "note": "Ảnh chụp năm 1923, thuộc bộ sưu tập George Grantham Bain tại Library of Congress; bản Commons đã được tăng tương phản."
+                    },
                     "genre": [
                         "drama"
                     ]
@@ -3112,12 +3285,29 @@
             ]
         },
         "1921": {
+            "announced_on": "1921-11-10",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1921/summary/",
             "laureates": [
                 {
+                    "id": "anatole-france-france",
                     "name": "Anatole France",
                     "country": "France",
+                    "country_vi": "Pháp",
+                    "born_year": 1844,
+                    "born_place": "Paris, France",
                     "language": "French",
                     "motivation": "in recognition of his brilliant literary achievements, characterized as they are by a nobility of style, a profound human sympathy, grace, and a true Gallic temperament",
+                    "motivation_vi": "để ghi nhận những thành tựu văn chương xuất sắc của ông, nổi bật bởi phong cách cao quý, lòng cảm thông sâu sắc với con người, vẻ duyên dáng và khí chất Pháp đích thực",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1921/france/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1921-anatole-france.jpg",
+                        "alt": "Chân dung nhà văn Anatole France khoảng năm 1920",
+                        "creator": "Henri Manuel",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Anatole_France_-_photo_Henri_Manuel.jpg",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Ảnh chụp khoảng năm 1920, bản JPEG 970 × 1500 px lưu trên Wikimedia Commons; không chỉnh sửa."
+                    },
                     "genre": [
                         "novel",
                         "poetry"
@@ -3126,12 +3316,29 @@
             ]
         },
         "1920": {
+            "announced_on": "1920-11-11",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1920/summary/",
             "laureates": [
                 {
+                    "id": "knut-hamsun-norway",
                     "name": "Knut Hamsun",
                     "country": "Norway",
+                    "country_vi": "Na Uy",
+                    "born_year": 1859,
+                    "born_place": "Gudbrandsdalen, Norway",
                     "language": "Norwegian",
                     "motivation": "for his monumental work, Growth of the Soil",
+                    "motivation_vi": "vì tác phẩm đồ sộ Phúc lành của đất (Growth of the Soil) của ông",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1920/hamsun/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1920-knut-hamsun.jpg",
+                        "alt": "Chân dung nhà văn Knut Hamsun do Anders Beer Wilse chụp năm 1914",
+                        "creator": "Anders Beer Wilse",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Portrett_av_Knut_Hamsun_(1859-1952),_1914.jpg",
+                        "license": "Public domain tại Na Uy và Hoa Kỳ theo Wikimedia Commons",
+                        "license_url": "https://commons.wikimedia.org/wiki/File:Portrett_av_Knut_Hamsun_(1859-1952),_1914.jpg",
+                        "note": "Ảnh chụp tháng 4/1914 thuộc bộ sưu tập Thư viện Quốc gia Na Uy; bản JPEG 960 × 1340 px tải từ Wikimedia Commons, giữ nguyên viền ảnh gốc."
+                    },
                     "genre": [
                         "novel"
                     ]
@@ -3139,12 +3346,30 @@
             ]
         },
         "1919": {
+            "announced_on": "1920-11-11",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1919/summary/",
+            "notes": "The 1919 prize was reserved and awarded in 1920.",
             "laureates": [
                 {
+                    "id": "carl-spitteler-switzerland",
                     "name": "Carl Spitteler",
                     "country": "Switzerland",
+                    "country_vi": "Thụy Sĩ",
+                    "born_year": 1845,
+                    "born_place": "Liestal, Switzerland",
                     "language": "German",
                     "motivation": "in special appreciation of his epic, Olympian Spring",
+                    "motivation_vi": "đặc biệt ghi nhận thiên sử thi Mùa xuân Olympia (Olympian Spring) của ông",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1919/spitteler/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1919-carl-spitteler.jpg",
+                        "alt": "Chân dung nhà thơ Carl Spitteler do Rudolf Dührkoop chụp trước năm 1916",
+                        "creator": "Rudolf Dührkoop",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Rudolf_D%C3%BChrkoop_Carl_Spitteler.jpg",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Ảnh xuất bản trong sách của Albert Soergel năm 1916; bản JPEG 1391 × 1875 px lưu trên Wikimedia Commons, không chỉnh sửa."
+                    },
                     "genre": [
                         "poetry"
                     ]
@@ -3152,25 +3377,61 @@
             ]
         },
         "1918": {
+            "status": "not_awarded",
+            "announced_on": "1919-11-13",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1918/summary/",
+            "status_note": "Trong bối cảnh Thế chiến I, giải năm 1918 được bảo lưu rồi không trao.",
             "laureates": [],
             "notes": "No Nobel Prize in Literature was awarded this year due to World War I"
         },
         "1917": {
+            "announced_on": "1917-11-08",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1917/summary/",
             "laureates": [
                 {
+                    "id": "karl-gjellerup-denmark",
                     "name": "Karl Gjellerup",
                     "country": "Denmark",
+                    "country_vi": "Đan Mạch",
+                    "born_year": 1857,
+                    "born_place": "Roholte, Denmark",
                     "language": "Danish and German",
                     "motivation": "for his varied and rich poetry, which is inspired by lofty ideals",
+                    "motivation_vi": "vì thơ ca đa dạng và phong phú của ông, được khơi nguồn từ những lý tưởng cao cả",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1917/gjellerup/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1917-karl-gjellerup.png",
+                        "alt": "Tranh chân dung nhà văn Karl Gjellerup do Peder Severin Krøyer vẽ năm 1897",
+                        "creator": "Peder Severin Krøyer",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:P_S_Kr%C3%B8yer_-_Karl_Gjellerup_-_1897.png",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Tranh vẽ cho sách Konvolutten (1897); bản PNG 1078 × 1213 px từ Wikimedia Commons, không chỉnh sửa."
+                    },
                     "genre": [
                         "poetry"
                     ]
                 },
                 {
+                    "id": "henrik-pontoppidan-denmark",
                     "name": "Henrik Pontoppidan",
                     "country": "Denmark",
+                    "country_vi": "Đan Mạch",
+                    "born_year": 1857,
+                    "born_place": "Fredericia, Denmark",
                     "language": "Danish",
                     "motivation": "for his authentic descriptions of present-day life in Denmark",
+                    "motivation_vi": "vì những miêu tả chân thực của ông về đời sống đương thời ở Đan Mạch",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1917/pontoppidan/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1917-henrik-pontoppidan.jpg",
+                        "alt": "Tranh chân dung nhà văn Henrik Pontoppidan do Michael Ancher vẽ năm 1908",
+                        "creator": "Michael Ancher",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Henrik_pontopidan_(Michael_Ancher_painting).jpg",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Tranh sơn dầu năm 1908; bản JPEG 1000 × 1206 px từ Wikimedia Commons, không chỉnh sửa."
+                    },
                     "genre": [
                         "novel"
                     ]
@@ -3205,6 +3466,10 @@
             ]
         },
         "1914": {
+            "status": "not_awarded",
+            "announced_on": "1915-12-09",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1914/summary/",
+            "status_note": "Trong bối cảnh Thế chiến I, giải năm 1914 được để dành sang năm 1915 rồi không trao; tiền thưởng chuyển vào Quỹ đặc biệt của hạng mục.",
             "laureates": [],
             "notes": "No Nobel Prize in Literature was awarded this year due to World War I"
         },
@@ -3314,12 +3579,29 @@
             ]
         },
         "1906": {
+            "announced_on": "1906-11-08",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1906/summary/",
             "laureates": [
                 {
+                    "id": "giosue-carducci-italy",
                     "name": "Giosuè Carducci",
                     "country": "Italy",
+                    "country_vi": "Ý",
+                    "born_year": 1835,
+                    "born_place": "Val di Castello, Tuscany (now Italy)",
                     "language": "Italian",
                     "motivation": "not only in consideration of his deep learning and critical research, but above all as a tribute to the creative energy, freshness of style, and lyrical force which characterize his poetic masterpieces",
+                    "motivation_vi": "không chỉ xét đến vốn học vấn uyên thâm và công trình nghiên cứu phê bình của ông, mà trên hết là để tôn vinh sức sáng tạo, sự tươi mới trong phong cách và sức mạnh trữ tình làm nên những kiệt tác thi ca của ông",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1906/carducci/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1906-giosue-carducci.jpg",
+                        "alt": "Chân dung nhà thơ Giosuè Carducci",
+                        "creator": "R. Borghi",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Giosu%C3%A8_Carducci2.jpg",
+                        "license": "Public domain",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Ảnh chụp khoảng năm 1900; bản trên Wikimedia Commons đã được cắt và khử nhiễu."
+                    },
                     "genre": [
                         "poetry"
                     ]
