@@ -3439,12 +3439,29 @@
             ]
         },
         "1916": {
+            "announced_on": "1916-11-09",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1916/summary/",
             "laureates": [
                 {
+                    "id": "verner-von-heidenstam-sweden",
                     "name": "Verner von Heidenstam",
                     "country": "Sweden",
+                    "country_vi": "Thụy Điển",
+                    "born_year": 1859,
+                    "born_place": "Olshammar, Sweden",
                     "language": "Swedish",
                     "motivation": "in recognition of his significance as the leading representative of a new era in our literature",
+                    "motivation_vi": "để ghi nhận tầm quan trọng của ông với tư cách là người đại diện hàng đầu cho một thời kỳ mới trong nền văn học của chúng ta",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1916/heidenstam/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1916-verner-von-heidenstam.jpg",
+                        "alt": "Chân dung nghiêng của nhà văn Verner von Heidenstam, khoảng năm 1910",
+                        "creator": "Bain News Service (nhà phát hành; nhiếp ảnh gia không rõ)",
+                        "source_url": "https://www.loc.gov/pictures/item/2014700628/",
+                        "license": "Không có hạn chế bản quyền được biết đến theo Library of Congress",
+                        "license_url": "https://www.loc.gov/rr/print/res/274_bain.html",
+                        "note": "Âm bản kính thuộc George Grantham Bain Collection; bản JPEG 742 × 1024 px tải từ Library of Congress, không chỉnh sửa."
+                    },
                     "genre": [
                         "poetry",
                         "novel"
@@ -3453,12 +3470,29 @@
             ]
         },
         "1915": {
+            "announced_on": "1916-11-09",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1915/summary/",
             "laureates": [
                 {
+                    "id": "romain-rolland-france",
                     "name": "Romain Rolland",
                     "country": "France",
+                    "country_vi": "Pháp",
+                    "born_year": 1866,
+                    "born_place": "Clamecy, France",
                     "language": "French",
                     "motivation": "as a tribute to the lofty idealism of his literary production and to the sympathy and love of truth with which he has described different types of human beings",
+                    "motivation_vi": "để tôn vinh lý tưởng cao cả trong sáng tác văn học của ông, cùng sự đồng cảm và tình yêu sự thật thể hiện trong cách ông khắc họa nhiều kiểu người khác nhau",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1915/rolland/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1915-romain-rolland.jpg",
+                        "alt": "Ảnh chân dung nhà văn Romain Rolland do Agence de presse Meurisse thực hiện năm 1914",
+                        "creator": "Agence de presse Meurisse",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Romain_Rolland,_Meurisse,_1914.jpg",
+                        "license": "Public domain tại Pháp và Hoa Kỳ theo Wikimedia Commons",
+                        "license_url": "https://commons.wikimedia.org/wiki/File:Romain_Rolland,_Meurisse,_1914.jpg",
+                        "note": "Ảnh báo chí năm 1914 từ bộ sưu tập Gallica của Bibliothèque nationale de France; bản JPEG 3944 × 4992 px trên Wikimedia Commons, không chỉnh sửa tại dự án."
+                    },
                     "genre": [
                         "novel"
                     ]
@@ -3474,12 +3508,29 @@
             "notes": "No Nobel Prize in Literature was awarded this year due to World War I"
         },
         "1913": {
+            "announced_on": "1913-11-13",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1913/summary/",
             "laureates": [
                 {
+                    "id": "rabindranath-tagore-india",
                     "name": "Rabindranath Tagore",
                     "country": "India (British Raj)",
+                    "country_vi": "Ấn Độ (thời thuộc Anh)",
+                    "born_year": 1861,
+                    "born_place": "Calcutta, India",
                     "language": "Bengali and English",
                     "motivation": "because of his profoundly sensitive, fresh and beautiful verse, by which, with consummate skill, he has made his poetic thought, expressed in his own English words, a part of the literature of the West",
+                    "motivation_vi": "vì những vần thơ vô cùng tinh tế, tươi mới và đẹp đẽ của ông; bằng tài nghệ điêu luyện, ông đã đưa tư tưởng thi ca do chính mình diễn đạt bằng tiếng Anh trở thành một phần của văn học phương Tây",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1913/tagore/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1913-rabindranath-tagore.jpg",
+                        "alt": "Chân dung nhà thơ Rabindranath Tagore ngồi cầm sách, chụp năm 1916",
+                        "creator": "Nhiếp ảnh gia không rõ (Library of Congress)",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Rabindranath_Tagore,_full-length_portrait,_seated,_facing_front_LCCN99403031_(cropped).jpg",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Ảnh năm 1916 từ Library of Congress; bản cắt JPEG 1595 × 2129 px trên Wikimedia Commons, không chỉnh sửa tại dự án."
+                    },
                     "genre": [
                         "poetry",
                         "novel",
@@ -3492,12 +3543,29 @@
             ]
         },
         "1912": {
+            "announced_on": "1912-11-14",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1912/summary/",
             "laureates": [
                 {
+                    "id": "gerhart-hauptmann-germany",
                     "name": "Gerhart Hauptmann",
                     "country": "Germany",
+                    "country_vi": "Đức",
+                    "born_year": 1862,
+                    "born_place": "Bad Salzbrunn, Prussia (now Poland)",
                     "language": "German",
                     "motivation": "primarily in recognition of his fruitful, varied and outstanding production in the realm of dramatic art",
+                    "motivation_vi": "chủ yếu để ghi nhận những sáng tác phong phú, đa dạng và xuất sắc của ông trong lĩnh vực nghệ thuật kịch",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1912/hauptmann/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1912-gerhart-hauptmann.jpg",
+                        "alt": "Chân dung nhà văn Gerhart Hauptmann do Jacob Hilsdorf chụp khoảng năm 1910",
+                        "creator": "Jacob Hilsdorf",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Hilsdorf,_Jacob_-_Gerhart_Hauptmann_(Zeno_Fotografie).jpg",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Ảnh chụp khoảng năm 1910 từ bộ sưu tập Zeno.org; bản JPEG 1576 × 2101 px trên Wikimedia Commons, không chỉnh sửa tại dự án."
+                    },
                     "genre": [
                         "drama",
                         "novel"
@@ -3506,12 +3574,29 @@
             ]
         },
         "1911": {
+            "announced_on": "1911-11-09",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1911/summary/",
             "laureates": [
                 {
+                    "id": "maurice-maeterlinck-belgium",
                     "name": "Maurice Maeterlinck",
                     "country": "Belgium",
+                    "country_vi": "Bỉ",
+                    "born_year": 1862,
+                    "born_place": "Ghent, Belgium",
                     "language": "French",
                     "motivation": "in appreciation of his many-sided literary activities, and especially of his dramatic works, which are distinguished by a wealth of imagination and by a poetic fancy, which reveals, sometimes in the guise of a fairy tale, a deep inspiration, while in a mysterious way they appeal to the readers' own feelings and stimulate their imaginations",
+                    "motivation_vi": "để ghi nhận hoạt động văn học đa dạng của ông, đặc biệt là những tác phẩm kịch nổi bật bởi trí tưởng tượng phong phú và sự bay bổng thi ca, đôi khi bộc lộ nguồn cảm hứng sâu sắc dưới dáng dấp truyện cổ tích, đồng thời tác động một cách bí ẩn đến cảm xúc và khơi dậy trí tưởng tượng của người đọc",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1911/maeterlinck/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1911-maurice-maeterlinck.jpg",
+                        "alt": "Chân dung nhà văn Maurice Maeterlinck đăng trên tạp chí Le Théâtre năm 1910",
+                        "creator": "Nhiếp ảnh gia không rõ",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Maurice_Maeterlinck_Le_Th%C3%A9atre_1910.jpg",
+                        "license": "Public domain tại Hoa Kỳ và Liên minh châu Âu theo Wikimedia Commons",
+                        "license_url": "https://commons.wikimedia.org/wiki/File:Maurice_Maeterlinck_Le_Th%C3%A9atre_1910.jpg",
+                        "note": "Ảnh đăng trong Le Théâtre số 279, tháng 8/1910; bản quét JPEG 1233 × 1822 px trên Wikimedia Commons, không chỉnh sửa tại dự án."
+                    },
                     "genre": [
                         "drama",
                         "poetry",
@@ -3521,12 +3606,29 @@
             ]
         },
         "1910": {
+            "announced_on": "1910-11-10",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1910/summary/",
             "laureates": [
                 {
+                    "id": "paul-heyse-germany",
                     "name": "Paul Heyse",
                     "country": "Germany",
+                    "country_vi": "Đức",
+                    "born_year": 1830,
+                    "born_place": "Berlin, Prussia (now Germany)",
                     "language": "German",
                     "motivation": "as a tribute to the consummate artistry, permeated with idealism, which he has demonstrated during his long productive career as a lyric poet, dramatist, novelist and writer of world-renowned short stories",
+                    "motivation_vi": "để tôn vinh nghệ thuật bậc thầy thấm đượm chủ nghĩa lý tưởng mà ông đã thể hiện trong sự nghiệp sáng tác lâu dài và phong phú với tư cách là nhà thơ trữ tình, nhà viết kịch, tiểu thuyết gia và tác giả của những truyện ngắn nổi tiếng thế giới",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1910/heyse/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1910-paul-heyse.jpg",
+                        "alt": "Chân dung nhà văn Paul Heyse do Franz Hanfstaengl chụp khoảng năm 1860",
+                        "creator": "Franz Hanfstaengl",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Paul_Heyse.jpg",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Ảnh chụp khoảng năm 1860; bản quét JPEG 2099 × 2639 px trên Wikimedia Commons, không chỉnh sửa tại dự án."
+                    },
                     "genre": [
                         "poetry",
                         "drama",
@@ -3537,12 +3639,29 @@
             ]
         },
         "1909": {
+            "announced_on": "1909-11-11",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1909/summary/",
             "laureates": [
                 {
+                    "id": "selma-lagerlof-sweden",
                     "name": "Selma Lagerlöf",
                     "country": "Sweden",
+                    "country_vi": "Thụy Điển",
+                    "born_year": 1858,
+                    "born_place": "Mårbacka, Sweden",
                     "language": "Swedish",
                     "motivation": "in appreciation of the lofty idealism, vivid imagination and spiritual perception that characterize her writings",
+                    "motivation_vi": "để ghi nhận lý tưởng cao đẹp, trí tưởng tượng sống động và cảm quan tinh thần thể hiện trong các tác phẩm của bà",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1909/lagerlof/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1909-selma-lagerlof.jpg",
+                        "alt": "Chân dung nhà văn Selma Lagerlöf ngồi trên ghế, tay chống cằm",
+                        "creator": "Aron Jonason",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Selma_Lagerl%C3%B6f_seated.jpg",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Ngày chụp chưa rõ; ảnh được in trong Les Prix Nobel năm 1909. Bản JPEG 960 × 1255 px do Wikimedia Commons cung cấp, không chỉnh sửa tại dự án."
+                    },
                     "genre": [
                         "novel",
                         "short story"
@@ -3551,12 +3670,29 @@
             ]
         },
         "1908": {
+            "announced_on": "1908-11-12",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1908/summary/",
             "laureates": [
                 {
+                    "id": "rudolf-eucken-germany",
                     "name": "Rudolf Eucken",
                     "country": "Germany",
+                    "country_vi": "Đức",
+                    "born_year": 1846,
+                    "born_place": "Aurich, East Friesland (now Germany)",
                     "language": "German",
                     "motivation": "in recognition of his earnest search for truth, his penetrating power of thought, his wide range of vision, and the warmth and strength in presentation with which in his numerous works he has vindicated and developed an idealistic philosophy of life",
+                    "motivation_vi": "ghi nhận nỗ lực nghiêm túc tìm kiếm chân lý, sức tư duy sắc bén, tầm nhìn rộng, cùng lối trình bày nồng ấm và mạnh mẽ mà ông dùng trong nhiều tác phẩm để bảo vệ và phát triển một triết lý sống duy tâm",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1908/eucken/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1908-rudolf-eucken.jpg",
+                        "alt": "Chân dung nhà triết học Rudolf Eucken",
+                        "creator": "Rudolf Dührkoop",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Rudolf_Eucken.jpg",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Ảnh của Rudolf Dührkoop được in trong hồi ký Lebenserinnerungen (1921) của Eucken; ngày chụp chưa rõ. Bản JPEG 1280 × 1957 px do Wikimedia Commons cung cấp."
+                    },
                     "genre": [
                         "philosophy"
                     ]
@@ -3564,12 +3700,29 @@
             ]
         },
         "1907": {
+            "announced_on": "1907-11-07",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1907/summary/",
             "laureates": [
                 {
+                    "id": "rudyard-kipling-united-kingdom",
                     "name": "Rudyard Kipling",
                     "country": "United Kingdom",
+                    "country_vi": "Vương quốc Anh",
+                    "born_year": 1865,
+                    "born_place": "Bombay, British India (now Mumbai, India)",
                     "language": "English",
-                    "motivation": "in consideration of the power of observation, originality of imagination, virility of ideas and remarkable talent for narration that characterize the creations of this world-famous author",
+                    "motivation": "in consideration of the power of observation, originality of imagination, virility of ideas and remarkable talent for narration which characterize the creations of this world-famous author",
+                    "motivation_vi": "xét đến khả năng quan sát, trí tưởng tượng độc đáo, tư tưởng mạnh mẽ và tài kể chuyện xuất sắc vốn là nét đặc trưng trong sáng tác của nhà văn nổi tiếng khắp thế giới này",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1907/kipling/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1907-rudyard-kipling.jpg",
+                        "alt": "Chân dung nhà văn Rudyard Kipling năm 1907",
+                        "creator": "Elliott & Fry",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Rudyard_Kipling_by_Eliott_%26_Fry,_1907.jpg",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Ảnh chân dung dạng cabinet card năm 1907 của studio Elliott & Fry, nguồn tư liệu Bonhams; bản JPEG 2384 × 3307 px trên Wikimedia Commons."
+                    },
                     "genre": [
                         "novel",
                         "short story",
@@ -3609,12 +3762,29 @@
             ]
         },
         "1905": {
+            "announced_on": "1905-11-09",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1905/summary/",
             "laureates": [
                 {
+                    "id": "henryk-sienkiewicz-poland",
                     "name": "Henryk Sienkiewicz",
                     "country": "Poland",
+                    "country_vi": "Ba Lan",
+                    "born_year": 1846,
+                    "born_place": "Wola Okrzejska, Poland",
                     "language": "Polish",
                     "motivation": "because of his outstanding merits as an epic writer",
+                    "motivation_vi": "vì những đóng góp xuất sắc của ông với tư cách một nhà văn sử thi",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1905/sienkiewicz/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1905-henryk-sienkiewicz.jpg",
+                        "alt": "Chân dung nhà văn Henryk Sienkiewicz nhìn nghiêng",
+                        "creator": "Bernhard Wahtl",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Bernhard_Wahtl,_Henryk_Sienkiewicz,_portret,_MHF_48272_F_(MuFo).jpg",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Ảnh chụp khoảng năm 1894–1901, thuộc bộ sưu tập của Bảo tàng Nhiếp ảnh Kraków; bản JPEG 1023 × 1500 px trên Wikimedia Commons."
+                    },
                     "genre": [
                         "novel"
                     ]
@@ -3622,22 +3792,54 @@
             ]
         },
         "1904": {
+            "announced_on": "1904-11-17",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1904/summary/",
             "laureates": [
                 {
+                    "id": "frederic-mistral-france",
                     "name": "Frédéric Mistral",
                     "country": "France",
+                    "country_vi": "Pháp",
+                    "born_year": 1830,
+                    "born_place": "Maillane, France",
                     "language": "Provençal",
                     "motivation": "in recognition of the fresh originality and true inspiration of his poetic production, which faithfully reflects the natural scenery and native spirit of his people, and, in addition, his significant work as a Provençal philologist",
+                    "motivation_vi": "ghi nhận nét độc đáo mới mẻ và cảm hứng chân thực trong thơ ông, phản ánh trung thành cảnh sắc thiên nhiên và tinh thần quê hương của đồng bào ông, cùng những đóng góp quan trọng của ông trong nghiên cứu ngữ văn Provence",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1904/mistral/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1904-frederic-mistral.jpg",
+                        "alt": "Chân dung nhà thơ Frédéric Mistral tại nhà năm 1909",
+                        "creator": "Agence Rol",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Fr%C3%A9d%C3%A9ric_Mistral,_1er_avril_1909_-_btv1b53109712j.jpg",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Ảnh báo chí ngày 1/4/1909 từ bộ sưu tập của Bibliothèque nationale de France; bản JPEG 1280 × 1743 px do Wikimedia Commons cung cấp."
+                    },
                     "genre": [
                         "poetry",
                         "philology"
                     ]
                 },
                 {
+                    "id": "jose-echegaray-spain",
                     "name": "José Echegaray",
                     "country": "Spain",
+                    "country_vi": "Tây Ban Nha",
+                    "born_year": 1832,
+                    "born_place": "Madrid, Spain",
                     "language": "Spanish",
                     "motivation": "in recognition of the numerous and brilliant compositions which, in an individual and original manner, have revived the great traditions of the Spanish drama",
+                    "motivation_vi": "ghi nhận hàng loạt tác phẩm xuất sắc đã làm sống lại những truyền thống lớn của kịch nghệ Tây Ban Nha theo cách riêng và đầy sáng tạo",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1904/eizaguirre/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1904-jose-echegaray.jpg",
+                        "alt": "Chân dung nhà viết kịch José Echegaray năm 1904",
+                        "creator": "Nhiếp ảnh gia không rõ",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Jos%C3%A9_Echegaray_y_Eizaguirre.jpg",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Ảnh năm 1904 từ lưu trữ Nobel Foundation; bản JPEG 496 × 744 px trên Wikimedia Commons."
+                    },
                     "genre": [
                         "drama"
                     ]
@@ -3645,12 +3847,29 @@
             ]
         },
         "1903": {
+            "announced_on": "1903-11-19",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1903/summary/",
             "laureates": [
                 {
+                    "id": "bjornstjerne-bjornson-norway",
                     "name": "Bjørnstjerne Bjørnson",
                     "country": "Norway",
+                    "country_vi": "Na Uy",
+                    "born_year": 1832,
+                    "born_place": "Kvikne, Norway",
                     "language": "Norwegian",
                     "motivation": "as a tribute to his noble, magnificent and versatile poetry, which has always been distinguished by both the freshness of its inspiration and the rare purity of its spirit",
+                    "motivation_vi": "để tôn vinh thơ ca cao quý, tráng lệ và đa dạng của ông, luôn nổi bật bởi nguồn cảm hứng tươi mới cùng tinh thần trong sáng hiếm có",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1903/bjornson/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1903-bjornstjerne-bjornson.jpg",
+                        "alt": "Chân dung nhà văn Bjørnstjerne Bjørnson",
+                        "creator": "Karl Anderson",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Portrett_av_Bj%C3%B8rnstjerne_Bj%C3%B8rnson,_ca_1903_-_no-nb_digifoto_20150129_00041_bldsa_BB0803.jpg",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Ảnh lưu tại Thư viện Quốc gia Na Uy, nhan đề ghi khoảng năm 1903 nhưng ngày chụp chưa xác định; bản JPEG 2299 × 3550 px trên Wikimedia Commons đã được cắt từ bản số gốc."
+                    },
                     "genre": [
                         "poetry",
                         "novel",
@@ -3660,12 +3879,29 @@
             ]
         },
         "1902": {
+            "announced_on": "1902-11-13",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1902/summary/",
             "laureates": [
                 {
+                    "id": "theodor-mommsen-germany",
                     "name": "Theodor Mommsen",
                     "country": "Germany",
+                    "country_vi": "Đức",
+                    "born_year": 1817,
+                    "born_place": "Garding, Schleswig (now Germany)",
                     "language": "German",
-                    "motivation": "the greatest living master of the art of historical writing, with special reference to his monumental work A History of Rome",
+                    "motivation": "the greatest living master of the art of historical writing, with special reference to his monumental work, A history of Rome",
+                    "motivation_vi": "bậc thầy vĩ đại nhất đương thời của nghệ thuật viết sử, đặc biệt xét đến công trình đồ sộ Lịch sử La Mã của ông",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1902/mommsen/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1902-theodor-mommsen.jpg",
+                        "alt": "Chân dung nhà sử học Theodor Mommsen khoảng năm 1870",
+                        "creator": "Nhiếp ảnh gia không rõ",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Theodor_Mommsen.jpg",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Ảnh khoảng năm 1870 từ Zeno.org; bản JPEG 1269 × 1841 px trên Wikimedia Commons, không chỉnh sửa tại dự án."
+                    },
                     "genre": [
                         "history",
                         "law"
@@ -3674,12 +3910,29 @@
             ]
         },
         "1901": {
+            "announced_on": "1901-11-14",
+            "source_url": "https://www.nobelprize.org/prizes/literature/1901/summary/",
             "laureates": [
                 {
+                    "id": "sully-prudhomme-france",
                     "name": "Sully Prudhomme",
                     "country": "France",
+                    "country_vi": "Pháp",
+                    "born_year": 1839,
+                    "born_place": "Paris, France",
                     "language": "French",
                     "motivation": "in special recognition of his poetic composition, which gives evidence of lofty idealism, artistic perfection and a rare combination of the qualities of both heart and intellect",
+                    "motivation_vi": "đặc biệt ghi nhận những sáng tác thơ của ông, thể hiện lý tưởng cao đẹp, sự hoàn mỹ về nghệ thuật và sự kết hợp hiếm có giữa tình cảm và trí tuệ",
+                    "profile_url": "https://www.nobelprize.org/prizes/literature/1901/prudhomme/facts/",
+                    "photo": {
+                        "src": "assets/img/awards/1901-sully-prudhomme.jpg",
+                        "alt": "Chân dung nhà thơ Sully Prudhomme khoảng năm 1880",
+                        "creator": "Nhiếp ảnh gia không rõ; Jebulon phục chế bản số",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Sully_Prudhomme,_Ren%C3%A9-Fran%C3%A7ois-Armand,_BNF_Gallica.jpg",
+                        "license": "Public domain theo Wikimedia Commons",
+                        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+                        "note": "Ảnh khoảng năm 1880 từ Gallica của Bibliothèque nationale de France; bản JPEG 1025 × 1619 px do Jebulon cắt, làm sạch và chỉnh mức sáng trên Wikimedia Commons."
+                    },
                     "genre": [
                         "poetry",
                         "essay"
