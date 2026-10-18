@@ -14,6 +14,9 @@
     {
       "id": "van-moi-10-nam-2015-2025-dong-a-2025-dong-a-bia-mem-290k",
       "isbn": "978-632-618-828-8",
+      "series_ids": [
+        "van-moi-dong-a"
+      ],
       "caption": "",
       "pub_year": 2025,
       "publisher": "NXB Hội Nhà Văn",
