@@ -1,11 +1,5 @@
 [
   {
-    "detail": "data/book/george-bernard-shaw-pygmalion.json",
-    "search_text": "george bernard shaw pygmalion nxb van hoc dong a tran tien cao dang dong phong tram nam nobel bia buckram",
-    "updated_at": "2026-10-18",
-    "last_pub_year": 2026
-  },
-  {
     "detail": "data/book/y-nhi-con-ngua-tren-bai-bien.json",
     "search_text": "y nhi con ngua tren bai bien nxb dan tri dong a van moi dong a",
     "last_pub_year": 2026,
@@ -556,6 +550,12 @@
     "search_text": "ton tu binh phap ton tu nxb dan tri dong a ngo van trien",
     "last_pub_year": 2026,
     "updated_at": "2026-07-01"
+  },
+  {
+    "detail": "data/book/george-bernard-shaw-pygmalion.json",
+    "search_text": "george bernard shaw pygmalion nxb van hoc dong a tran tien cao dang dong phong tram nam nobel bia buckram",
+    "updated_at": "2026-10-18",
+    "last_pub_year": 2025
   },
   {
     "detail": "data/book/henryk-sienkiewicz-lao-boc-hania-selim-mirza.json",
