@@ -11,12 +11,12 @@
   ],
   "editions": [
     {
-      "id": "antoine-de-saint-exupery-le-petit-prince-2026-dong-a-bia-cung-boc-vai-ma-vang-canh-sach-190k",
+      "id": "antoine-de-saint-exupery-le-petit-prince-2026-dong-a-bia-vai-190k",
       "isbn": "978-632-631-952-1",
       "series_ids": [
         "dong-a-classics-bia-vai"
       ],
-      "caption": "Hoàng Tử Bé (bìa vải)",
+      "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -29,7 +29,7 @@
         "Antoine De Saint-Exupéry"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng bọc vải, mạ vàng cạnh sách",
+      "format": "Bìa vải",
       "cover_price": "190k",
       "print_run": 1000,
       "page_count": 116,

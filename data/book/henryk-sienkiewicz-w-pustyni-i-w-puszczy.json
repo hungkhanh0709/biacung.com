@@ -12,12 +12,12 @@
   ],
   "editions": [
     {
-      "id": "henryk-sienkiewicz-w-pustyni-i-w-puszczy-2024-dong-a-bia-cung-boc-vai-ma-vang-canh-sach-420k",
+      "id": "henryk-sienkiewicz-w-pustyni-i-w-puszczy-2024-dong-a-bia-vai-420k",
       "isbn": "978-604-140-3",
       "series_ids": [
         "dong-a-classics-bia-vai"
       ],
-      "caption": "Bìa Vải",
+      "caption": "",
       "pub_year": 2024,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -30,7 +30,7 @@
         "Đức Lâm"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng bọc vải, mạ vàng cạnh sách",
+      "format": "Bìa vải",
       "cover_price": "420k",
       "print_run": null,
       "page_count": 580,

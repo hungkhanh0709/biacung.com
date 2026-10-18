@@ -47,8 +47,9 @@
     },
     {
       "id": "hector-malot-romain-kalbris-2025-dong-a-bia-mem-100k",
+      "series_ids": [],
       "isbn": "978-632-606-722-4",
-      "caption": "Bìa Mềm, Có Bìa Áo",
+      "caption": "",
       "pub_year": 2025,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -61,7 +62,7 @@
         "Émile Bayard"
       ],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": "Bìa mềm, có bìa áo",
       "cover_price": "100k",
       "print_run": null,
       "page_count": 316,
