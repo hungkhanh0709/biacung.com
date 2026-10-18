@@ -1,0 +1,57 @@
+{
+  "id": "sully-prudhomme-thi-khuc-thi-pham",
+  "title": "Thi Khúc & Thi Phẩm",
+  "title_original": "",
+  "authors": [
+    "Sully Prudhomme"
+  ],
+  "awards": [],
+  "series": [
+    "Trăm năm Nobel"
+  ],
+  "editions": [
+    {
+      "id": "sully-prudhomme-thi-khuc-thi-pham-2021-dong-a-bia-cung-boc-buckram-1tr1",
+      "isbn": null,
+      "series_ids": [
+        "tram-nam-nobel"
+      ],
+      "caption": "Bìa Buckram",
+      "pub_year": 2021,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Trân Châu",
+        "Đạt Nhân",
+        "Khắc Đỗ"
+      ],
+      "illustrators": [
+        "Julian-Damazy"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng bọc buckram",
+      "cover_price": "1tr1",
+      "print_run": 1223,
+      "page_count": 392,
+      "copy_numbering": "SP0001 - SP1200",
+      "size_cm": "16 x 24",
+      "weight_g": 1800,
+      "thumbnail": "/assets/img/books/sully-prudhomme-thi-khuc-thi-pham/front-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/sully-prudhomme-thi-khuc-thi-pham/standing-cover.jpg",
+        "/assets/img/books/sully-prudhomme-thi-khuc-thi-pham/cover-with-flowers.jpg",
+        "/assets/img/books/sully-prudhomme-thi-khuc-thi-pham/cover-festive.jpg",
+        "/assets/img/books/sully-prudhomme-thi-khuc-thi-pham/cover-detail.jpg",
+        "/assets/img/books/sully-prudhomme-thi-khuc-thi-pham/slipcase-reveal.jpg",
+        "/assets/img/books/sully-prudhomme-thi-khuc-thi-pham/spine-with-slipcase.jpg",
+        "/assets/img/books/sully-prudhomme-thi-khuc-thi-pham/spine-detail.jpg",
+        "/assets/img/books/sully-prudhomme-thi-khuc-thi-pham/book-in-slipcase.jpg",
+        "/assets/img/books/sully-prudhomme-thi-khuc-thi-pham/gilt-edge.jpg",
+        "/assets/img/books/sully-prudhomme-thi-khuc-thi-pham/numbered-page.jpg"
+      ],
+      "detail": "- Sách được in hai màu bằng công nghệ mực vi sinh trên giấy mỹ thuật Festival #101 Ivory định lượng 120 gsm với minh họa bằng tranh khắc a-xít của Julian-Damazy. \n- Sách được mạ cạnh bằng nhũ vàng và in dấu Limited Edition của Đông A.\n- Bìa sách là bìa cứng với chất liệu bọc bìa là Heritage Library Buckram được nhập từ hãng Ratchford, Anh Quốc."
+    }
+  ]
+}

@@ -1292,5 +1292,19 @@
     "work_ids": [
       "y-nhi-con-ngua-tren-bai-bien"
     ]
+  },
+  {
+    "id": "sully-prudhomme",
+    "name": "Sully Prudhomme",
+    "work_ids": [
+      "sully-prudhomme-thi-khuc-thi-pham"
+    ]
+  },
+  {
+    "id": "anatole-france",
+    "name": "Anatole France",
+    "work_ids": [
+      "anatole-france-toi-ac-cua-sylvestre-bonnard-dao-chim-canh-cut"
+    ]
   }
 ]
