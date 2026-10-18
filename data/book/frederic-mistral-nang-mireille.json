@@ -6,12 +6,16 @@
     "Frédéric Mistral"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Trăm năm Nobel"
+  ],
   "editions": [
     {
       "id": "frederic-mistral-nang-mireille-2024-dong-a-bia-cung-boc-buckram-800k",
       "isbn": "978-604-496-905-3",
-      "series_ids": [],
+      "series_ids": [
+        "tram-nam-nobel"
+      ],
       "caption": "Bìa Buckram",
       "pub_year": 2024,
       "publisher": "NXB Văn Học",
@@ -32,8 +36,13 @@
       "copy_numbering": null,
       "size_cm": "16 x 24",
       "weight_g": 1000,
-      "thumbnail": "https://product.hstatic.net/1000328521/product/2_9ad5235d57f7440cb98265db37dab926_master.jpg",
-      "gellery_imgs": [],
+      "thumbnail": "/assets/img/books/frederic-mistral-nang-mireille/front-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/frederic-mistral-nang-mireille/cover-with-slipcase.jpg",
+        "/assets/img/books/frederic-mistral-nang-mireille/cover-with-flowers.jpg",
+        "/assets/img/books/frederic-mistral-nang-mireille/title-page.jpg",
+        "/assets/img/books/frederic-mistral-nang-mireille/interior-illustration.jpg"
+      ],
       "detail": "- Bìa sách là bìa cứng với chất liệu bọc bìa là Heritage Library Buckram được nhập từ hãng Ratchford, Anh Quốc.\n- Sách in 4 màu trên giấy GV76-BB 100 gsm đều được in bằng máy in Heidelberg, Đức.\n- Sách được mạ cạnh bằng nhũ vàng và in dấu Limited Edition của Đông A.\n- Hộp sách bằng carton."
     }
   ]
