@@ -528,12 +528,6 @@
     "last_pub_year": 2026
   },
   {
-    "detail": "data/book/george-bernard-shaw-pygmalion.json",
-    "search_text": "pygmalion george bernard shaw nxb van hoc dong a tran tien cao dang",
-    "updated_at": "2026-07-03",
-    "last_pub_year": 2026
-  },
-  {
     "detail": "data/book/tran-dai-thang-layers-of-memory.json",
     "search_text": "nhung tang ky uc layers of memory tran đai thang nxb dan tri đong a jesse peterson",
     "updated_at": "2026-07-03",
@@ -556,6 +550,18 @@
     "search_text": "ton tu binh phap ton tu nxb dan tri dong a ngo van trien",
     "last_pub_year": 2026,
     "updated_at": "2026-07-01"
+  },
+  {
+    "detail": "data/book/george-bernard-shaw-pygmalion.json",
+    "search_text": "george bernard shaw pygmalion nxb van hoc dong a tran tien cao dang dong phong tram nam nobel bia buckram",
+    "updated_at": "2026-10-18",
+    "last_pub_year": 2025
+  },
+  {
+    "detail": "data/book/henryk-sienkiewicz-lao-boc-hania-selim-mirza.json",
+    "search_text": "henryk sienkiewicz lao boc hania selim mirza nxb van hoc dong a nguyen huu dung trieu yen vy tram nam nobel bia buckram",
+    "updated_at": "2026-10-18",
+    "last_pub_year": 2025
   },
   {
     "detail": "data/book/johann-david-wyss-der-schweizerische-robinson.json",
@@ -666,6 +672,30 @@
     "last_pub_year": 2025
   },
   {
+    "detail": "data/book/frederic-mistral-nang-mireille.json",
+    "search_text": "frederic mistral nang mireille nxb van hoc dong a nguyen thi thuy an frederic montenard tram nam nobel bia buckram",
+    "updated_at": "2026-10-18",
+    "last_pub_year": 2024
+  },
+  {
+    "detail": "data/book/jose-echegaray-dien-ro-hay-than-thanh.json",
+    "search_text": "jose echegaray dien ro hay than thanh nxb van hoc dong a thanh loan tat sy tram nam nobel bia buckram",
+    "updated_at": "2026-10-18",
+    "last_pub_year": 2024
+  },
+  {
+    "detail": "data/book/theodor-mommsen-the-history-of-rome-vol-3.json",
+    "search_text": "theodor mommsen the history of rome vol 3 lich su la ma tap ii quyen iii nxb van hoc dong a nguyen qui hien tram nam nobel bia buckram",
+    "last_pub_year": 2024,
+    "updated_at": "2026-10-18"
+  },
+  {
+    "detail": "data/book/wadysaw-stanisaw-reymont-nong-dan.json",
+    "search_text": "wadysaw stanisaw reymont nong dan nxb van hoc dong a nguyen van thai le tri tram nam nobel bia buckram",
+    "last_pub_year": 2024,
+    "updated_at": "2026-10-18"
+  },
+  {
     "detail": "data/book/jacob-ludwig-karl-grimm-kinder-und-hausmarchen.json",
     "search_text": "jacob ludwig karl grimm wilhelm carl grimm kinder und hausmarchen truyen co grimm nxb ha noi nxb van hoc nha nam dong a lan young huu ngoc dong a classic s300",
     "last_pub_year": 2024,
@@ -714,16 +744,16 @@
     "last_pub_year": 2024
   },
   {
-    "detail": "data/book/frederic-mistral-nang-mireille.json",
-    "search_text": "nang mireille frederic mistral nxb van hoc dong a nguyen thi thuy an",
-    "updated_at": "2026-07-04",
-    "last_pub_year": 2024
+    "detail": "data/book/bjrnstjerne-bjrnson-bi-mat-cua-synnve-chuyen-tinh-chang-arne-cau-trai-vui-ve-cua-bjrnstjerne-bjrnson.json",
+    "search_text": "bjrnstjerne bjrnson bi mat cua synnve chuyen tinh chang arne cau trai vui ve cua bjrnstjerne bjrnson nxb van hoc dong a minh khoa pham ngoc tan tram nam nobel bia buckram",
+    "last_pub_year": 2023,
+    "updated_at": "2026-10-18"
   },
   {
-    "detail": "data/book/jose-echegaray-dien-ro-hay-than-thanh.json",
-    "search_text": "dien ro hay than thanh jose echegaray tram nam nobel nxb van hoc dong a thanh loan",
-    "updated_at": "2026-07-04",
-    "last_pub_year": 2024
+    "detail": "data/book/william-butler-yeats-tuyen-tap-tho-william-butler-yeats.json",
+    "search_text": "william butler yeats tuyen tap tho william butler yeats nxb van hoc dong a cao hi trieu yen vi tram nam nobel bia buckram",
+    "last_pub_year": 2023,
+    "updated_at": "2026-10-18"
   },
   {
     "detail": "data/book/tran-trong-kim-viet-nam-su-luoc.json",
@@ -814,6 +844,18 @@
     "search_text": "đat mau sicily the sicilian mario puzo nxb van hoc đong a đang thu",
     "updated_at": "2026-07-02",
     "last_pub_year": 2023
+  },
+  {
+    "detail": "data/book/jacinto-benavente-tuyen-tap-kich-jacinto-benavente.json",
+    "search_text": "jacinto benavente tuyen tap kich jacinto benavente nxb van hoc dong a nguyen tuan linh le tri tram nam nobel bia buckram",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-18"
+  },
+  {
+    "detail": "data/book/theodor-mommsen-the-history-of-rome-vol-1.json",
+    "search_text": "theodor mommsen the history of rome vol 1 lich su la ma tap i quyen i ii nxb van hoc dong a nguyen qui hien tram nam nobel bia buckram",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-18"
   },
   {
     "detail": "data/book/bernard-werber-boxset-kien.json",
@@ -976,6 +1018,18 @@
     "search_text": "fools die mario puzo nxb van hoc đong a nguyen minh",
     "updated_at": "2026-06-30",
     "last_pub_year": 2022
+  },
+  {
+    "detail": "data/book/anatole-france-toi-ac-cua-sylvestre-bonnard-dao-chim-canh-cut.json",
+    "search_text": "anatole france le crime de sylvestre bonnard lile des pingouins toi ac cua sylvestre bonnard dao chim canh cut nxb van hoc dong a tran chau paul destez frank c pape tram nam nobel bia buckram",
+    "last_pub_year": 2021,
+    "updated_at": "2026-10-18"
+  },
+  {
+    "detail": "data/book/sully-prudhomme-thi-khuc-thi-pham.json",
+    "search_text": "sully prudhomme thi khuc thi pham nxb van hoc dong a tran chau dat nhan khac do juliandamazy tram nam nobel bia buckram",
+    "last_pub_year": 2021,
+    "updated_at": "2026-10-18"
   },
   {
     "detail": "data/book/e-h-gombrich-a-little-history-of-the-world.json",
@@ -1413,12 +1467,6 @@
     "detail": "data/book/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam.json",
     "search_text": "kho tang truyen co tich viet nam nguyen dong chi nxb hoi nha van dong a",
     "updated_at": "2026-07-04",
-    "last_pub_year": ""
-  },
-  {
-    "detail": "data/book/henryk-sienkiewicz-lao-boc-hania-selim-mirza.json",
-    "search_text": "lao boc hania selim mirza henryk sienkiewicz tram nam nobel nxb van hoc dong a nguyen huu dung",
-    "updated_at": "2026-07-03",
     "last_pub_year": ""
   },
   {

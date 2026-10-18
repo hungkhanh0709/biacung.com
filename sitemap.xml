@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://biacung.com/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/about</loc>
@@ -396,11 +396,11 @@
   </url>
   <url>
     <loc>https://biacung.com/chauchaubook/works</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=50-nam-fahasa</loc>
@@ -424,7 +424,7 @@
   </url>
   <url>
     <loc>https://biacung.com/series?id=moi-nha-van-mot-tac-pham</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=sach-tet-dong-a</loc>
@@ -432,7 +432,7 @@
   </url>
   <url>
     <loc>https://biacung.com/series?id=tram-nam-nobel</loc>
-    <lastmod>2026-07-04</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=tu-sach-thanh-nien</loc>
@@ -823,10 +823,6 @@
     <lastmod>2026-07-03</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=george-bernard-shaw-pygmalion</loc>
-    <lastmod>2026-07-03</lastmod>
-  </url>
-  <url>
     <loc>https://biacung.com/detail?id=tran-dai-thang-layers-of-memory</loc>
     <lastmod>2026-07-03</lastmod>
   </url>
@@ -841,6 +837,14 @@
   <url>
     <loc>https://biacung.com/detail?id=ton-tu-ton-tu-binh-phap</loc>
     <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=george-bernard-shaw-pygmalion</loc>
+    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=henryk-sienkiewicz-lao-boc-hania-selim-mirza</loc>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=johann-david-wyss-der-schweizerische-robinson</loc>
@@ -915,6 +919,22 @@
     <lastmod>2026-07-02</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=frederic-mistral-nang-mireille</loc>
+    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=jose-echegaray-dien-ro-hay-than-thanh</loc>
+    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=theodor-mommsen-the-history-of-rome-vol-3</loc>
+    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=wadysaw-stanisaw-reymont-nong-dan</loc>
+    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=jacob-ludwig-karl-grimm-kinder-und-hausmarchen</loc>
     <lastmod>2026-09-20</lastmod>
   </url>
@@ -947,12 +967,12 @@
     <lastmod>2026-07-05</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=frederic-mistral-nang-mireille</loc>
-    <lastmod>2026-07-04</lastmod>
+    <loc>https://biacung.com/detail?id=bjrnstjerne-bjrnson-bi-mat-cua-synnve-chuyen-tinh-chang-arne-cau-trai-vui-ve-cua-bjrnstjerne-bjrnson</loc>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=jose-echegaray-dien-ro-hay-than-thanh</loc>
-    <lastmod>2026-07-04</lastmod>
+    <loc>https://biacung.com/detail?id=william-butler-yeats-tuyen-tap-tho-william-butler-yeats</loc>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=tran-trong-kim-viet-nam-su-luoc</loc>
@@ -1013,6 +1033,14 @@
   <url>
     <loc>https://biacung.com/detail?id=mario-puzo-the-sicilian</loc>
     <lastmod>2026-07-02</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=jacinto-benavente-tuyen-tap-kich-jacinto-benavente</loc>
+    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=theodor-mommsen-the-history-of-rome-vol-1</loc>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=bernard-werber-boxset-kien</loc>
@@ -1121,6 +1149,14 @@
   <url>
     <loc>https://biacung.com/detail?id=mario-puzo-fools-die</loc>
     <lastmod>2026-06-30</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=anatole-france-toi-ac-cua-sylvestre-bonnard-dao-chim-canh-cut</loc>
+    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=sully-prudhomme-thi-khuc-thi-pham</loc>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=e-h-gombrich-a-little-history-of-the-world</loc>
@@ -1413,10 +1449,6 @@
   <url>
     <loc>https://biacung.com/detail?id=nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam</loc>
     <lastmod>2026-07-04</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=henryk-sienkiewicz-lao-boc-hania-selim-mirza</loc>
-    <lastmod>2026-07-03</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=nguyen-dinh-dang-ky-thuat-ve-son-dau</loc>

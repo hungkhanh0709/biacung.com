@@ -1292,5 +1292,62 @@
     "work_ids": [
       "y-nhi-con-ngua-tren-bai-bien"
     ]
+  },
+  {
+    "id": "sully-prudhomme",
+    "name": "Sully Prudhomme",
+    "work_ids": [
+      "sully-prudhomme-thi-khuc-thi-pham"
+    ]
+  },
+  {
+    "id": "anatole-france",
+    "name": "Anatole France",
+    "work_ids": [
+      "anatole-france-toi-ac-cua-sylvestre-bonnard-dao-chim-canh-cut"
+    ]
+  },
+  {
+    "id": "george-bernard-shaw",
+    "name": "George Bernard Shaw",
+    "work_ids": [
+      "george-bernard-shaw-pygmalion"
+    ]
+  },
+  {
+    "id": "theodor-mommsen",
+    "name": "Theodor Mommsen",
+    "work_ids": [
+      "theodor-mommsen-the-history-of-rome-vol-1",
+      "theodor-mommsen-the-history-of-rome-vol-3"
+    ]
+  },
+  {
+    "id": "jacinto-benavente",
+    "name": "Jacinto Benavente",
+    "work_ids": [
+      "jacinto-benavente-tuyen-tap-kich-jacinto-benavente"
+    ]
+  },
+  {
+    "id": "bjrnstjerne-bjrnson",
+    "name": "Bjørnstjerne Bjørnson",
+    "work_ids": [
+      "bjrnstjerne-bjrnson-bi-mat-cua-synnve-chuyen-tinh-chang-arne-cau-trai-vui-ve-cua-bjrnstjerne-bjrnson"
+    ]
+  },
+  {
+    "id": "william-butler-yeats",
+    "name": "William Butler Yeats",
+    "work_ids": [
+      "william-butler-yeats-tuyen-tap-tho-william-butler-yeats"
+    ]
+  },
+  {
+    "id": "wadysaw-stanisaw-reymont",
+    "name": "Władysław Stanisław Reymont",
+    "work_ids": [
+      "wadysaw-stanisaw-reymont-nong-dan"
+    ]
   }
 ]

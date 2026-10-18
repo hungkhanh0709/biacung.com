@@ -1,0 +1,50 @@
+{
+  "id": "jacinto-benavente-tuyen-tap-kich-jacinto-benavente",
+  "title": "Tuyển tập kịch Jacinto Benavente",
+  "title_original": "",
+  "authors": [
+    "Jacinto Benavente"
+  ],
+  "awards": [],
+  "series": [
+    "Trăm năm Nobel"
+  ],
+  "editions": [
+    {
+      "id": "jacinto-benavente-tuyen-tap-kich-jacinto-benavente-2022-dong-a-bia-cung-boc-buckram-1000k",
+      "isbn": "978-604-372-763-0",
+      "series_ids": [
+        "tram-nam-nobel"
+      ],
+      "caption": "Bìa Buckram",
+      "pub_year": 2022,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Tuấn Linh"
+      ],
+      "illustrators": [
+        "Lê Trí"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng bọc buckram",
+      "cover_price": "1000k",
+      "print_run": null,
+      "page_count": 580,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 1500,
+      "thumbnail": "/assets/img/books/jacinto-benavente-tuyen-tap-kich-jacinto-benavente/front-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/jacinto-benavente-tuyen-tap-kich-jacinto-benavente/cover-with-slipcase.jpg",
+        "/assets/img/books/jacinto-benavente-tuyen-tap-kich-jacinto-benavente/spines-with-slipcases.jpg",
+        "/assets/img/books/jacinto-benavente-tuyen-tap-kich-jacinto-benavente/ex-libris.jpg",
+        "/assets/img/books/jacinto-benavente-tuyen-tap-kich-jacinto-benavente/title-page.jpg",
+        "/assets/img/books/jacinto-benavente-tuyen-tap-kich-jacinto-benavente/interior-illustration.jpg"
+      ],
+      "detail": "- Được in theo quy cách ấn bản giới hạn. \n- Bìa sách là bìa cứng với chất liệu bọc bìa là Heritage Library Buckram được nhập từ hãng Ratchford, Anh Quốc.\n- Khổ 16 x 24 cm, in 2 màu bằng công nghệ mực vi sinh trên giấy GV76-BB 100 gsm.\n- Sách được mạ cạnh bằng nhũ vàng và in dấu Limited Edition của Đông A."
+    }
+  ]
+}

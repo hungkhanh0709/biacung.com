@@ -1,0 +1,49 @@
+{
+  "id": "theodor-mommsen-the-history-of-rome-vol-1",
+  "title": "Lịch sử La Mã - Tập I (Quyển I – II)",
+  "title_original": "The History of Rome, Vol 1",
+  "authors": [
+    "Theodor Mommsen"
+  ],
+  "awards": [],
+  "series": [
+    "Trăm năm Nobel"
+  ],
+  "editions": [
+    {
+      "id": "theodor-mommsen-the-history-of-rome-vol-1-2022-dong-a-bia-cung-boc-buckram-1200k",
+      "isbn": "978-604-372-693-0",
+      "series_ids": [
+        "tram-nam-nobel"
+      ],
+      "caption": "Bìa Buckram",
+      "pub_year": 2022,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Quí Hiển"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng bọc buckram",
+      "cover_price": "1200k",
+      "print_run": null,
+      "page_count": 860,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 1500,
+      "thumbnail": "/assets/img/books/theodor-mommsen-the-history-of-rome-vol-1/front-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/theodor-mommsen-the-history-of-rome-vol-1/cover-with-slipcase.jpg",
+        "/assets/img/books/theodor-mommsen-the-history-of-rome-vol-1/spine-with-slipcase.jpg",
+        "/assets/img/books/theodor-mommsen-the-history-of-rome-vol-1/spine-detail.jpg",
+        "/assets/img/books/theodor-mommsen-the-history-of-rome-vol-1/ex-libris.jpg",
+        "/assets/img/books/theodor-mommsen-the-history-of-rome-vol-1/title-page.jpg",
+        "/assets/img/books/theodor-mommsen-the-history-of-rome-vol-1/binding-detail.jpg"
+      ],
+      "detail": "- Được in theo quy cách ấn bản giới hạn. \n- Bìa sách là bìa cứng với chất liệu bọc bìa là Heritage Library Buckram được nhập từ hãng Ratchford, Anh Quốc.\n- Khổ 16 x 24 cm, in 2 màu bằng công nghệ mực vi sinh trên giấy GV76-BB 100 gsm.\n- Sách được mạ cạnh bằng nhũ vàng và in dấu Limited Edition của Đông A."
+    }
+  ]
+}
