@@ -6,12 +6,16 @@
     "Frédéric Mistral"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Trăm năm Nobel"
+  ],
   "editions": [
     {
       "id": "frederic-mistral-nang-mireille-2024-dong-a-bia-cung-boc-buckram-800k",
       "isbn": "978-604-496-905-3",
-      "series_ids": [],
+      "series_ids": [
+        "tram-nam-nobel"
+      ],
       "caption": "Bìa Buckram",
       "pub_year": 2024,
       "publisher": "NXB Văn Học",

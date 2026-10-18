@@ -6,12 +6,17 @@
     "George Bernard Shaw"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Trăm năm Nobel"
+  ],
   "editions": [
     {
-      "id": "george-bernard-shaw-pygmalion-2026-dong-a-bia-cung-boc-bang-buckram-co-hop-600k",
+      "id": "george-bernard-shaw-pygmalion-2026-dong-a-bia-cung-boc-buckram-600k",
       "isbn": "978-632-624-587-5",
-      "caption": "",
+      "series_ids": [
+        "tram-nam-nobel"
+      ],
+      "caption": "Bìa Buckram",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -24,7 +29,7 @@
         "Đông Phong"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng bọc bằng buckram, có hộp",
+      "format": "Bìa cứng bọc buckram",
       "cover_price": "600k",
       "print_run": null,
       "page_count": 172,

@@ -1,0 +1,44 @@
+{
+  "id": "wadysaw-stanisaw-reymont-nong-dan",
+  "title": "Nông dân",
+  "title_original": "",
+  "authors": [
+    "Władysław Stanisław Reymont"
+  ],
+  "awards": [],
+  "series": [
+    "Trăm năm Nobel"
+  ],
+  "editions": [
+    {
+      "id": "wadysaw-stanisaw-reymont-nong-dan-2024-dong-a-bia-cung-boc-buckram-2tr",
+      "isbn": null,
+      "series_ids": [
+        "tram-nam-nobel"
+      ],
+      "caption": "Bìa Buckram",
+      "pub_year": 2024,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Văn Thái"
+      ],
+      "illustrators": [
+        "Lê Trí"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng bọc buckram",
+      "cover_price": "2tr",
+      "print_run": 599,
+      "page_count": 1720,
+      "copy_numbering": "ND001-ND581",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/combo_90b4e575079c4fa29bff7e19d7a53eb8_master.jpg",
+      "gellery_imgs": [],
+      "detail": "- Bìa sách là bìa cứng với chất liệu bọc bìa là Heritage Library Buckram được nhập từ hãng Ratchford, Anh Quốc.\n- Sách in trên giấy GV76-BB 100 gsm.\n- Sách được mạ cạnh bằng nhũ vàng và in dấu Limited Edition của Đông A.\n- Hộp sách bằng carton"
+    }
+  ]
+}
