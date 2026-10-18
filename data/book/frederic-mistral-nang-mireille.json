@@ -9,9 +9,10 @@
   "series": [],
   "editions": [
     {
-      "id": "frederic-mistral-nang-mireille-2024-dong-a-bia-buckram-800k",
+      "id": "frederic-mistral-nang-mireille-2024-dong-a-bia-cung-boc-buckram-800k",
       "isbn": "978-604-496-905-3",
-      "caption": "Bìa Cứng Bọc Bằng Buckram, Có Hộp",
+      "series_ids": [],
+      "caption": "Bìa Buckram",
       "pub_year": 2024,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -24,7 +25,7 @@
         "Frédéric Montenard"
       ],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": "Bìa cứng bọc buckram",
       "cover_price": "800k",
       "print_run": null,
       "page_count": 264,
