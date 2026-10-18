@@ -1,4 +1,4 @@
 interface:
   display_name: "Book Input with Chrome"
-  short_description: "Open book-input and fill known book fields"
-  default_prompt: "Use $book-batch-input to open book-input with Chrome MCP, fill the known fields below, and stop before saving so I can finish it."
+  short_description: "Nhập, lưu và kiểm tra dữ liệu sách"
+  default_prompt: "Use $book-batch-input to nhập các sách dưới đây, lưu vào workspace và kiểm tra các file đã tạo."

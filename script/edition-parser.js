@@ -44,6 +44,9 @@
         if (!text) return '';
 
         const normalized = normalizeWhitespace(text.replace(/\s+/g, ''));
+        if (/^\d+(?:tr\d*|k)$/i.test(normalized)) {
+            return normalized.toLowerCase();
+        }
         const explicitCurrency = /(?:đ|₫|vnd|vnđ)/i.test(normalized);
 
         if (explicitCurrency) {
@@ -110,7 +113,9 @@
     }
 
     function parsePageCount(text) {
-        const m = String(text || '').match(/(\b\d{2,4}\b)\s*(trang|pages|page)?/i);
+        const source = String(text || '').trim();
+        const m = source.match(/\b(\d{1,4})\s*(?:trang|pages?)\b/i)
+            || source.match(/^(\d{1,4})$/);
         return m ? Number(m[1]) : null;
     }
 
@@ -121,12 +126,17 @@
 
     function parseAuthors(line) {
         // split by comma or 'và' or 'and'
-        return String(line || '').split(/[,;]|\band\b|\bvà\b/gi).map(s => normalizeWhitespace(s)).filter(Boolean);
+        return String(line || '').split(/[,;]|\s+(?:and|và)\s+/gi)
+            .map(s => normalizeWhitespace(s).replace(/\s*\(\s*(?:18|19|20)\d{2}\s*[-–—]\s*(?:(?:18|19|20)\d{2})?\s*\)$/, ''))
+            .filter(Boolean);
     }
 
     function extractPublisherFromText(text) {
         const source = String(text || '').trim();
         if (!source) {
+            return null;
+        }
+        if (!/(?:NXB|Nhà xuất bản)/i.test(source)) {
             return null;
         }
 
@@ -149,12 +159,7 @@
             return formatPublisher(fallbackMatch[1]);
         }
 
-        let candidate = source.replace(/^(?:NXB|Nhà xuất bản)\s*/i, '').trim();
-        candidate = candidate.replace(/\s+(?:và|and)\s+.+$/i, '').trim();
-        candidate = candidate.replace(/\b(?:liên kết|ấn hành|phối hợp|phát hành|bởi|công ty|cty|cổ phần|văn hóa)\b/gi, ' ').trim();
-        candidate = normalizeWhitespace(candidate);
-
-        return candidate || null;
+        return null;
     }
 
     function extractIssuersFromText(text) {
@@ -212,6 +217,7 @@
             weight_g: null,
             size_cm: null,
             page_count: null,
+            print_run: null,
             format: null,
             cover_price: null,
             detail: null
@@ -219,9 +225,12 @@
 
         // try labels
         const easyLabel = (labels) => {
-            for (const lbl of labels) {
-                const v = findByLabel(lines, new RegExp('^\\s*' + lbl + '[:\s]*', 'i'));
-                if (v) return v;
+            for (const line of lines) {
+                for (const label of labels) {
+                    const escaped = label.replace(/[:：]+$/, '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                    const match = line.match(new RegExp(`^\\s*${escaped}\\s*[:：-]\\s*(.+)$`, 'i'));
+                    if (match) return cleanInlineText(match[1]);
+                }
             }
             return null;
         };
@@ -235,15 +244,17 @@
         const isbnLabel = easyLabel(['Mã ISBN', 'ISBN', 'Mã sách']);
         result.isbn = isbnLabel || parseISBN(raw);
 
-        const titleLine = lines.find(l => /^(Tựa đề|Tên|Title|Cha con|\S.+)$/i.test(l) && !/Tác giả|Người dịch|NXB|Năm|Số trang|Kích thước|Giá bìa|Mã sản phẩm|ISBN|Bìa|Hình thức|Giá/i.test(l));
-        if (titleLine) {
-            // if contains colon, split
-            result.title = cleanInlineText(titleLine.replace(/^(Tựa đề|Title|Tên|Tên sách|Mã sản phẩm)[:\s-]*/i, ''));
-            // avoid detecting long description lines; prefer first non-label line
+        const titleLabel = easyLabel(['Tựa đề', 'Tên sách', 'Title', 'Tên']);
+        const firstLine = lines[0] || '';
+        if (titleLabel) {
+            result.title = titleLabel;
+        } else if (firstLine.length <= 100 && !/[:：.!?]$/.test(firstLine)
+            && !/^(?:thông tin chung|mô tả|chi tiết|tác giả|người dịch|dịch giả|nxb|nhà xuất bản|năm|số trang|kích thước|giá|bìa|hình thức|isbn)\b/i.test(firstLine)) {
+            result.title = cleanInlineText(firstLine);
         }
 
         // Authors
-        const authorsLabel = easyLabel(['Tác giả', 'Tác giả:', 'Tác giả\:', 'Author', 'Tác giả|Người viết']);
+        const authorsLabel = easyLabel(['Tác giả', 'Author', 'Người viết']);
         if (authorsLabel) {
             result.authors = parseAuthors(authorsLabel);
         } else {
@@ -252,18 +263,13 @@
         }
 
         // Translators
-        const trLabel = easyLabel(['Người Dịch', 'Người dịch', 'Người dịch:', 'Dịch giả']);
+        const trLabel = easyLabel(['Người dịch', 'Dịch giả']);
         if (trLabel) result.translators = parseAuthors(trLabel);
 
         // Illustrators
-        const illustratorLabel = easyLabel(['Minh họa', 'Minh họa:', 'Illustrator', 'Illustrators']);
+        const illustratorLabel = easyLabel(['Minh họa', 'Illustrator', 'Illustrators']);
         if (illustratorLabel) {
             result.illustrators = parseAuthors(illustratorLabel);
-        } else {
-            const illLine = lines.find(l => /Minh họa|Illustrator|Illustrators/i.test(l));
-            if (illLine) {
-                result.illustrators = parseAuthors(illLine.replace(/.*?:/, '').trim());
-            }
         }
 
         // Proofreaders
@@ -277,21 +283,20 @@
             }
         }
 
-        // Publisher: prefer the full raw text so explicit 'NXB ...' phrases are detected,
-        // then fall back to the extracted label value when needed.
+        // An explicit label is safer than extracting a publisher from prose.
         const pubLabel = easyLabel(['NXB', 'NXB:', 'Nhà Xuất Bản', 'Nhà xuất bản', 'Nhà xuất bản:']);
-        result.publisher = extractPublisherFromText(raw);
-        if (!result.publisher && pubLabel) {
-            result.publisher = extractPublisherFromText(pubLabel);
-        }
+        result.publisher = pubLabel
+            ? (/^(?:NXB|Nhà xuất bản)\b/i.test(pubLabel) ? pubLabel : `NXB ${pubLabel}`)
+            : extractPublisherFromText(raw);
 
         // Issuers / Suppliers
         const issuerLabel = easyLabel(['Nhà Cung Cấp', 'Nhà cung cấp', 'Cty phát hành', 'Công ty', 'Sách do', 'Phát hành bởi', 'Phát hành']);
         result.issuers = extractIssuersFromText(issuerLabel || raw);
 
         // Year
-        const yearLabel = easyLabel(['Năm XB', 'Năm xuất bản', 'Phát hành', 'Phát hành:']);
-        result.pub_year = parseYear(yearLabel || raw);
+        const yearLabel = easyLabel(['Năm XB', 'Năm xuất bản', 'Năm phát hành']);
+        const yearPhrase = raw.match(/(?:năm\s+(?:xuất bản|xb|phát hành)|phát hành năm)\s*[:：-]?\s*((?:19|20)\d{2})/i);
+        result.pub_year = parseYear(yearLabel || yearPhrase?.[1] || '');
 
         // Language
         const lang = easyLabel(['Ngôn Ngữ', 'Ngôn ngữ', 'Language']);
@@ -306,20 +311,25 @@
         result.size_cm = parseSize(sizeLine || raw);
 
         // Pages
-        const pagesLine = easyLabel(['Số trang', 'Số trang:', 'Pages', 'Số trang:']) || findByLabel(lines, /số trang[:\s]*/i);
+        const pagesLine = easyLabel(['Số trang', 'Pages']) || findByLabel(lines, /^số trang\s+/i);
         result.page_count = parsePageCount(pagesLine || raw);
 
+        const printRunLabel = easyLabel(['Số lượng in', 'Số bản in', 'Số lượng phát hành']);
+        const printRunPhrase = raw.match(/(?:số lượng giới hạn|in giới hạn)\s*[:：-]?\s*([\d.,]+)\s*(?:cuốn|bản)/i);
+        const printRunMatch = (printRunLabel || printRunPhrase?.[1] || '').match(/[\d.,]+/);
+        result.print_run = printRunMatch ? Number(printRunMatch[0].replace(/[.,]/g, '')) : null;
+
         // Format
-        const fmt = easyLabel(['Hình thức', 'Hình thức bìa', 'Hình thức:', 'Bìa']);
+        const fmt = easyLabel(['Hình thức bìa', 'Hình thức', 'Bìa']);
         if (fmt) result.format = normalizeWhitespace(fmt);
         else {
-            const fmtLine = lines.find(l => /Bìa Mềm|Bìa mềm|Bìa cứng|Hardcover|paperback|hình thức|Hình thức/i.test(l));
-            if (fmtLine) result.format = fmtLine.replace(/.*?:/, '').trim();
+            const formatMatch = raw.match(/\b(?:bìa\s+(?:cứng|mềm)|hardcover|paperback)\b/i);
+            if (formatMatch) result.format = formatMatch[0];
         }
 
         // Price
         const priceLabel = easyLabel(['Giá bìa', 'Giá bìa:', 'Giá', 'Giá bán']);
-        result.cover_price = parsePrice(priceLabel || raw);
+        result.cover_price = priceLabel ? parsePrice(priceLabel) : null;
 
         // ISBN fallback
         if (!result.isbn) {

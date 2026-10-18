@@ -68,7 +68,7 @@ function getApiBaseUrl() {
         return normalizeText(window.BOOK_GENERATOR_API_BASE);
     }
 
-    return 'http://127.0.0.1:3000';
+    return window.location.origin;
 }
 
 function apiUrl(pathname) {
@@ -687,7 +687,8 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
     };
 
     const setParsedFieldValue = (fieldName, value) => {
-        if (Array.isArray(value) ? value.length > 0 : normalizeText(value) !== '') {
+        const target = form?.querySelector(`[name="${fieldName}"]`);
+        if (target && !normalizeText(target.value) && (Array.isArray(value) ? value.length > 0 : normalizeText(value) !== '')) {
             setFieldValue(fieldName, value);
         }
     };
@@ -751,7 +752,7 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
                     }
 
                     const authorsField = form?.querySelector('[name="authors"]');
-                    if (authorsField && Array.isArray(parsed.authors) && parsed.authors.length) {
+                    if (authorsField && !normalizeText(authorsField.value) && Array.isArray(parsed.authors) && parsed.authors.length) {
                         authorsField.value = parsed.authors.join(', ');
                     }
 
@@ -778,6 +779,7 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
                     setParsedFieldValue(`edition-proofreaders-${index}`, formatCommaSeparatedNames(parsed.proofreaders || []));
                     setParsedFieldValue(`edition-format-${index}`, normalizeFormatValue(parsed.format || ''));
                     setParsedFieldValue(`edition-cover-price-${index}`, parsed.cover_price || '');
+                    setParsedFieldValue(`edition-print-run-${index}`, parsed.print_run ?? '');
                     setParsedFieldValue(`edition-page-count-${index}`, parsed.page_count ?? '');
                     setParsedFieldValue(`edition-weight-${index}`, parsed.weight_g ?? '');
                     setParsedFieldValue(`edition-size-${index}`, normalizeSizeValue(parsed.size_cm || ''));
@@ -1517,6 +1519,10 @@ function populateFormFromBookDetail(detail) {
 
     hydratedBookSlug = detail.id || '';
     blockedAutoLoadSlug = '';
+    if (pendingLookupTimer) {
+        window.clearTimeout(pendingLookupTimer);
+    }
+    lookupVersion += 1;
     setFormStatus(`Đã load dữ liệu cho ${detail.id || 'sách hiện có'}. Bạn có thể chỉnh sửa hoặc thêm phiên bản mới.`, true);
     renderOutputs();
 }
@@ -1630,14 +1636,15 @@ function scheduleLookup(force = false) {
 
     pendingLookupTimer = window.setTimeout(async () => {
         const existingBook = await loadExistingBookBySlug(slug);
-        if (currentLookupVersion !== lookupVersion && !force) {
+        if (currentLookupVersion !== lookupVersion) {
+            return;
+        }
+        if (slug === hydratedBookSlug) {
             return;
         }
 
         if (existingBook) {
-            const currentDetail = buildBookDetailPayload(new FormData(form));
-            const mergedDetail = mergeBookDetails(currentDetail, existingBook);
-            populateFormFromBookDetail(mergedDetail);
+            setFormStatus(`Sách ${slug} đã tồn tại. Bấm Tải dữ liệu nếu bạn muốn chỉnh sửa.`, false);
             return;
         }
 
@@ -1646,9 +1653,29 @@ function scheduleLookup(force = false) {
 }
 
 async function persistGeneratedFiles(formData) {
+    let apiReady = false;
+    try {
+        const { response, payload } = await fetchJson('/api/index-state', { cache: 'no-store' });
+        apiReady = response.ok && Array.isArray(payload?.bookIndex)
+            && Array.isArray(payload?.authors) && Array.isArray(payload?.series);
+    } catch (error) {
+        // The page may have been opened through a static server.
+    }
+    if (!apiReady) {
+        throw new Error(`Máy chủ tại ${getApiBaseUrl()} không có API lưu sách. Hãy mở form bằng URL do npm run book-input-server cung cấp; dữ liệu trong form vẫn được giữ nguyên.`);
+    }
+
     await refreshExistingIndexState(true);
 
     const bookId = getBookSlugFromFormData(formData);
+    const existingResponse = await fetch(apiUrl(`/api/books/${encodeURIComponent(bookId)}`), { cache: 'no-store' });
+    if (existingResponse.ok && bookId !== hydratedBookSlug) {
+        throw new Error(`Sách ${bookId} đã tồn tại. Bấm Tải dữ liệu trước khi lưu thay đổi.`);
+    }
+    if (!existingResponse.ok && existingResponse.status !== 404) {
+        throw new Error(`Không kiểm tra được sách ${bookId} trước khi lưu (HTTP ${existingResponse.status}).`);
+    }
+
     const bookDetailPayload = buildBookDetailPayload(formData);
     const bookIndexPayload = buildBookIndexReviewPayload(formData);
     const authorPayload = buildAuthorReviewPayload(formData);
@@ -1670,7 +1697,7 @@ async function persistGeneratedFiles(formData) {
 
     if (!response.ok) {
         const errorPayload = await response.json().catch(() => ({}));
-        throw new Error(errorPayload.error || 'Không thể lưu dữ liệu vào workspace.');
+        throw new Error(errorPayload.error || `Không thể lưu dữ liệu vào workspace (HTTP ${response.status}).`);
     }
 
     return {
@@ -1743,6 +1770,10 @@ if (authorSlugSuggestions) {
 
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
+    if (pendingLookupTimer) {
+        window.clearTimeout(pendingLookupTimer);
+    }
+    lookupVersion += 1;
     sanitizeFormValues(form);
     if (!form.reportValidity()) {
         setFormStatus('Vui lòng điền đủ tựa đề và tác giả.', false);
@@ -1773,23 +1804,11 @@ form.addEventListener('submit', async (event) => {
         });
         setFormStatus(`Đang lưu ${bookId}...`, true);
         const persisted = await persistGeneratedFiles(formData);
+        hydratedBookSlug = persisted.bookDetailPayload.id;
         await refreshExistingIndexState(true);
         setFormStatus(`Đã cập nhật file cho ${persisted.bookDetailPayload.id}.`, true);
     } catch (error) {
-        setFormStatus(error.message || 'Không thể lưu trực tiếp vào workspace. Đã chuyển sang tải file JSON.', false);
-        const bookId = getBookSlugFromFormData(formData);
-        const baseName = bookId || 'book';
-        downloadJson(`${baseName}.book-index.json`, buildBookIndexPayload(formData));
-        downloadJson(getDownloadFileNameFromSlug(baseName), buildBookDetailPayload(formData));
-        downloadJson(`${baseName}.authors.json`, buildAuthorPayload(formData));
-        const seriesEntries = await buildSeriesReviewEntries(formData);
-        if (!seriesEntries.length) {
-            downloadJson('series.json', buildSeriesPayload(formData));
-        } else {
-            seriesEntries.forEach((entry) => {
-                downloadJson(getDownloadFileNameFromSlug(entry.id), entry.payload);
-            });
-        }
+        setFormStatus(error.message || 'Không thể lưu dữ liệu vào workspace. Dữ liệu trong form vẫn được giữ nguyên.', false);
     } finally {
         submitButtons.forEach((button) => {
             button.disabled = false;

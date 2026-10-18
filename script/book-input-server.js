@@ -573,10 +573,25 @@ const server = http.createServer((req, res) => {
 });
 
 if (require.main === module) {
-    const port = Number.parseInt(process.env.PORT || '3000', 10);
-    server.listen(port, () => {
+    const requestedPort = Number.parseInt(process.env.PORT || '3000', 10);
+    const maxPort = process.env.PORT ? requestedPort : requestedPort + 10;
+    let port = requestedPort;
+
+    server.on('error', (error) => {
+        if (error.code === 'EADDRINUSE' && port < maxPort) {
+            port += 1;
+            server.listen(port, '127.0.0.1');
+            return;
+        }
+        console.error(`Book input server could not listen on 127.0.0.1:${port}: ${error.message}`);
+        process.exitCode = 1;
+    });
+
+    server.on('listening', () => {
         console.log(`Book input server listening on http://127.0.0.1:${port}`);
     });
+
+    server.listen(port, '127.0.0.1');
 }
 
 module.exports = {

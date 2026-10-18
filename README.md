@@ -74,7 +74,7 @@ Chạy server nhập liệu (server này cung cấp cả trang và API lưu file
 npm run book-input-server
 ```
 
-Sau đó mở `http://127.0.0.1:3000/book-input.html`. Luồng chính của công cụ là tải sách theo slug, nhập hoặc chỉnh dữ liệu, xem trước JSON và lưu vào workspace.
+Mở URL được in trong log rồi thêm `/book-input.html` (ví dụ `http://127.0.0.1:3001/book-input.html` nếu cổng 3000 đã được static-server dùng). Form và API lưu file phải cùng origin. Kiểm tra `/api/index-state` trả JSON trước khi nhập; việc trang HTML mở được chưa đủ để xác nhận có thể lưu. Luồng chính là tải sách theo slug, nhập hoặc chỉnh dữ liệu, xem trước JSON và lưu vào workspace.
 
 ## Release workflow
 
