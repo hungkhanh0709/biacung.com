@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-28",
+    "updated_at": "2026-10-18",
     "award_info": {
         "id": "goodreads_choice_awards",
         "name": "Goodreads Choice Awards",
@@ -24,7 +24,7 @@
             "eligibility_start": "2025-11-12",
             "eligibility_end": "2026-11-10",
             "schedule_source_url": "https://www.goodreads.com/choiceawards/2025/rules",
-            "status_note": "Goodreads đã công bố khoảng thời gian sách đủ điều kiện cho mùa 2026; lịch hai vòng bình chọn và ngày công bố kết quả chưa được công bố chính thức.",
+            "status_note": "Theo quy định của Goodreads, sách xuất bản từ 12/11/2025 đến 10/11/2026 đủ điều kiện cho mùa 2026; lịch bình chọn và ngày công bố kết quả chưa được công bố chính thức.",
             "laureates": []
         },
         "2025": {
