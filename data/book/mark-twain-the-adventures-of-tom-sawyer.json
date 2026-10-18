@@ -35,8 +35,13 @@
       "copy_numbering": null,
       "size_cm": "13 x 20,5",
       "weight_g": 500,
-      "thumbnail": "https://cdn.hstatic.net/products/1000328521/0w5a1155_da_2e142b6a39124c65849f0ee6c489bc61_master.jpg",
-      "gellery_imgs": [],
+      "thumbnail": "/assets/img/books/mark-twain-the-adventures-of-tom-sawyer/dong-a-classics-bia-vai-cover-and-gilded-edges.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/mark-twain-the-adventures-of-tom-sawyer/dong-a-classics-bia-vai-cover.jpg",
+        "/assets/img/books/mark-twain-the-adventures-of-tom-sawyer/dong-a-classics-bia-vai-cover-in-hand.jpg",
+        "/assets/img/books/mark-twain-the-adventures-of-tom-sawyer/dong-a-classics-bia-vai-spine-detail.jpg",
+        "/assets/img/books/mark-twain-the-adventures-of-tom-sawyer/dong-a-classics-bia-vai-back-cover-detail.jpg"
+      ],
       "detail": ""
     },
     {

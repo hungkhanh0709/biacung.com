@@ -36,8 +36,13 @@
       "copy_numbering": null,
       "size_cm": "13 x 20,5",
       "weight_g": 700,
-      "thumbnail": "https://product.hstatic.net/1000328521/product/vevoigd_da_e08533aed52845c1891324bde8af2fd9_master.jpg",
-      "gellery_imgs": [],
+      "thumbnail": "/assets/img/books/hector-malot-romain-kalbris/dong-a-classics-bia-vai-cover-flat-lay.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/hector-malot-romain-kalbris/dong-a-classics-bia-vai-cover.jpg",
+        "/assets/img/books/hector-malot-romain-kalbris/dong-a-classics-bia-vai-gilded-edges-detail.jpg",
+        "/assets/img/books/hector-malot-romain-kalbris/dong-a-classics-bia-vai-endpapers.jpg",
+        "/assets/img/books/hector-malot-romain-kalbris/dong-a-classics-bia-vai-title-page.jpg"
+      ],
       "detail": ""
     },
     {
