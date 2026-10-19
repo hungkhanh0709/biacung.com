@@ -8,13 +8,16 @@
   "awards": [],
   "series": [
     "Đông A Classics (bỏ túi)",
-    "Đông A Classics (bìa vải)"
+    "Đông A Classics (bìa vải)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
     {
       "id": "johann-david-wyss-der-schweizerische-robinson-2025-dong-a-bia-mem-120k",
       "isbn": "978-632-617-163-1",
-      "series_ids": [],
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
       "caption": "",
       "pub_year": 2025,
       "publisher": "NXB Văn Học",

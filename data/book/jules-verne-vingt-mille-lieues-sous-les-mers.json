@@ -7,12 +7,15 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classic",
+    "Đông A Classic (hoa văn)",
     "Đông A Classics (bỏ túi)"
   ],
   "editions": [
     {
       "id": "jules-verne-vingt-mille-lieues-sous-les-mers-2023-dong-a-bia-mem-110k",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2023,

@@ -7,11 +7,14 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classic"
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
     {
       "id": "antoine-galland-nghin-le-mot-dem-2024-dong-a-bia-mem-100k",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
       "isbn": null,
       "caption": "Những Truyện Hay Chọn Lọc",
       "pub_year": 2024,

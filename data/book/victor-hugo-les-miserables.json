@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "victor-hugo-les-miserables-2023-dong-a-boxset-bia-mem-660k",
+      "series_ids": [
+        "dong-a-classic"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2023,

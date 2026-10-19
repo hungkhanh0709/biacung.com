@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "irving-stone-lust-for-life-2020-dong-a-bia-mem-195k",
+      "series_ids": [
+        "dong-a-classic"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2020,

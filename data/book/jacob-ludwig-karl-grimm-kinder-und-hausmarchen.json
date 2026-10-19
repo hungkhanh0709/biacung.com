@@ -8,7 +8,7 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classic"
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
     {
@@ -35,7 +35,9 @@
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8936203364613.jpg",
       "gellery_imgs": [],
       "detail": "",
-      "series_ids": []
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ]
     },
     {
       "id": "jacob-ludwig-karl-grimm-kinder-und-hausmarchen-2022-nha-nam-bia-da-pu-2tr3",
