@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://biacung.com/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/about</loc>
@@ -520,11 +520,11 @@
   </url>
   <url>
     <loc>https://biacung.com/chauchaubook/works</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=50-nam-fahasa</loc>
@@ -540,11 +540,11 @@
   </url>
   <url>
     <loc>https://biacung.com/series?id=dong-a-classic</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=dong-a-classic-hoa-van</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=khai-luoc-nhung-tu-tuong-lon</loc>
@@ -552,7 +552,7 @@
   </url>
   <url>
     <loc>https://biacung.com/series?id=moi-nha-van-mot-tac-pham</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=sach-tet-dong-a</loc>
@@ -576,11 +576,11 @@
   </url>
   <url>
     <loc>https://biacung.com/series?id=dong-a-classics-bo-tui</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=dong-a-classics-bia-vai</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=dau-an-10-nam-omega</loc>
@@ -597,6 +597,14 @@
   <url>
     <loc>https://biacung.com/series?id=viet-nam-danh-tac-artbook-nha-nam</loc>
     <lastmod>2026-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=hector-malot-sans-famille</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=jack-london-the-call-of-the-wild</loc>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=y-nhi-con-ngua-tren-bai-bien</loc>
@@ -621,10 +629,6 @@
   <url>
     <loc>https://biacung.com/detail?id=sabahattin-ali-kurk-mantolu-madonna</loc>
     <lastmod>2026-09-19</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=hector-malot-sans-famille</loc>
-    <lastmod>2026-09-16</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=rf-kuang-babel</loc>
@@ -692,10 +696,6 @@
   </url>
   <url>
     <loc>https://biacung.com/detail?id=antoine-de-saint-exupery-le-petit-prince</loc>
-    <lastmod>2026-09-06</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=jack-london-the-call-of-the-wild</loc>
     <lastmod>2026-09-06</lastmod>
   </url>
   <url>
@@ -967,20 +967,32 @@
     <lastmod>2026-07-01</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=frances-hodgson-burnett-the-secret-garden</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=hector-malot-en-famille</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=hector-malot-romain-kalbris</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=johann-david-wyss-der-schweizerische-robinson</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=mark-twain-the-adventures-of-tom-sawyer</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=george-bernard-shaw-pygmalion</loc>
     <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=henryk-sienkiewicz-lao-boc-hania-selim-mirza</loc>
     <lastmod>2026-10-18</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=johann-david-wyss-der-schweizerische-robinson</loc>
-    <lastmod>2026-09-06</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=mark-twain-the-adventures-of-tom-sawyer</loc>
-    <lastmod>2026-08-26</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=erich-maria-remarque-im-westen-nichts-neues</loc>
@@ -1019,18 +1031,6 @@
     <lastmod>2026-07-04</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=frances-hodgson-burnett-the-secret-garden</loc>
-    <lastmod>2026-07-04</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=hector-malot-en-famille</loc>
-    <lastmod>2026-07-04</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=hector-malot-romain-kalbris</loc>
-    <lastmod>2026-07-04</lastmod>
-  </url>
-  <url>
     <loc>https://biacung.com/detail?id=sach-tet-binh-ngo-dong-a-2026</loc>
     <lastmod>2026-07-04</lastmod>
   </url>
@@ -1045,6 +1045,22 @@
   <url>
     <loc>https://biacung.com/detail?id=percival-everett-james</loc>
     <lastmod>2026-07-02</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=antoine-galland-nghin-le-mot-dem</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=edmondo-de-amicis-cuore</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=jacob-ludwig-karl-grimm-kinder-und-hausmarchen</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=kenneth-grahame-the-wind-in-the-willows</loc>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=frederic-mistral-nang-mireille</loc>
@@ -1063,20 +1079,8 @@
     <lastmod>2026-10-18</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=jacob-ludwig-karl-grimm-kinder-und-hausmarchen</loc>
-    <lastmod>2026-09-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=edmondo-de-amicis-cuore</loc>
-    <lastmod>2026-09-06</lastmod>
-  </url>
-  <url>
     <loc>https://biacung.com/detail?id=henryk-sienkiewicz-w-pustyni-i-w-puszczy</loc>
-    <lastmod>2026-09-06</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=antoine-galland-nghin-le-mot-dem</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=jose-mauro-de-vasconcelos-vamos-aquecer-o-sol</loc>
@@ -1095,6 +1099,42 @@
     <lastmod>2026-07-05</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=anna-sewell-black-beauty</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ernest-seton-thompson-wild-animals-i-have-known</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=frances-hodgson-burnett-a-little-princess</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=gavriil-troyepolsky-con-bim-trang-tai-den</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=johanna-spyri-heidi</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=jules-verne-vingt-mille-lieues-sous-les-mers</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=lazar-lagin-ong-gia-khottabych</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=lewis-carroll-alices-adventures-in-wonderland</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=rudyard-kipling-just-so-stories</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=bjrnstjerne-bjrnson-bi-mat-cua-synnve-chuyen-tinh-chang-arne-cau-trai-vui-ve-cua-bjrnstjerne-bjrnson</loc>
     <lastmod>2026-10-18</lastmod>
   </url>
@@ -1105,18 +1145,6 @@
   <url>
     <loc>https://biacung.com/detail?id=tran-trong-kim-viet-nam-su-luoc</loc>
     <lastmod>2026-09-19</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=johanna-spyri-heidi</loc>
-    <lastmod>2026-08-26</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=jules-verne-vingt-mille-lieues-sous-les-mers</loc>
-    <lastmod>2026-08-26</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=lazar-lagin-ong-gia-khottabych</loc>
-    <lastmod>2026-08-26</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=dao-duy-anh-viet-nam-van-hoa-su-cuong</loc>
@@ -1347,6 +1375,14 @@
     <lastmod>2026-07-11</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=e-nesbit-the-railway-children</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=robert-louis-stevenson-treasure-island</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=alexandre-dumas-les-trois-mousquetaires</loc>
     <lastmod>2026-07-12</lastmod>
   </url>
@@ -1419,36 +1455,16 @@
     <lastmod>2026-07-05</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=anna-sewell-black-beauty</loc>
-    <lastmod>2026-08-26</lastmod>
-  </url>
-  <url>
     <loc>https://biacung.com/detail?id=charles-dickens-oliver-twist</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=e-nesbit-the-enchanted-castle</loc>
     <lastmod>2026-08-26</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=e-nesbit-the-railway-children</loc>
-    <lastmod>2026-08-26</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=ernest-seton-thompson-wild-animals-i-have-known</loc>
-    <lastmod>2026-08-26</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=frances-hodgson-burnett-a-little-princess</loc>
-    <lastmod>2026-08-26</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=gavriil-troyepolsky-con-bim-trang-tai-den</loc>
-    <lastmod>2026-08-26</lastmod>
-  </url>
-  <url>
     <loc>https://biacung.com/detail?id=harriet-beecher-stowe-uncle-toms-cabin</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=iar-larri-cuoc-phieu-luu-ki-la-cua-karik-va-valia</loc>
@@ -1456,26 +1472,14 @@
   </url>
   <url>
     <loc>https://biacung.com/detail?id=jack-london-white-fang</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=jonathan-swift-gullivers-travels</loc>
     <lastmod>2026-08-26</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=lewis-carroll-alices-adventures-in-wonderland</loc>
-    <lastmod>2026-08-26</lastmod>
-  </url>
-  <url>
     <loc>https://biacung.com/detail?id=mark-twain-the-adventures-of-huckleberry-finn</loc>
-    <lastmod>2026-08-26</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=robert-louis-stevenson-treasure-island</loc>
-    <lastmod>2026-08-26</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=rudyard-kipling-just-so-stories</loc>
     <lastmod>2026-08-26</lastmod>
   </url>
   <url>

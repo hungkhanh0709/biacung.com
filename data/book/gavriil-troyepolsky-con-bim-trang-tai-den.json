@@ -7,9 +7,39 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classics (bỏ túi)"
+    "Đông A Classics (bỏ túi)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
+    {
+      "id": "gavriil-troyepolsky-con-bim-trang-tai-den-2023-dong-a-bia-mem-100k",
+      "isbn": "978-604-477-507-4",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
+      "caption": "",
+      "pub_year": 2023,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Tuân Nguyễn",
+        "Trần Thư"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "100k",
+      "print_run": null,
+      "page_count": 320,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": null,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/con_bim_da_e338dc1c8767427cac2581f05c79bf66_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
     {
       "id": "gavriil-troyepolsky-con-bim-trang-tai-den-2013-dong-a-bia-mem-48k",
       "series_ids": [

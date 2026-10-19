@@ -7,7 +7,8 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classics (bỏ túi)"
+    "Đông A Classics (bỏ túi)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
     {
@@ -38,6 +39,34 @@
       "gellery_imgs": [
         "/assets/img/books/charles-dickens-oliver-twist/dong-a-classics-volume-2.jpg"
       ],
+      "detail": ""
+    },
+    {
+      "id": "charles-dickens-oliver-twist-dong-a-bia-mem-150k",
+      "isbn": "978-604-323-729-0",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
+      "caption": "",
+      "pub_year": null,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Phan Ngọc"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "150k",
+      "print_run": null,
+      "page_count": 652,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": 500,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/oliver_twist_da_f7b44409dd124cd49a4ff000ce6d5bef_master.jpg",
+      "gellery_imgs": [],
       "detail": ""
     }
   ]

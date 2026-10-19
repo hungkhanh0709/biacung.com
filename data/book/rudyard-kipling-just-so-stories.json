@@ -7,9 +7,38 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classics (bỏ túi)"
+    "Đông A Classics (bỏ túi)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
+    {
+      "id": "rudyard-kipling-just-so-stories-2023-dong-a-bia-mem-70k",
+      "isbn": "978-604-477-509-8",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
+      "caption": "",
+      "pub_year": 2023,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Lê Hà"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "70k",
+      "print_run": null,
+      "page_count": 184,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": null,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/su_tich_cac_loai_vat-01_da_04b2fbf6eacc41bf9785652ae3c63ed3_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
     {
       "id": "rudyard-kipling-just-so-stories-2013-dong-a-bia-mem-24k",
       "series_ids": [

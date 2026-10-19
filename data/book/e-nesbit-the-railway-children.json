@@ -7,9 +7,38 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classics (bỏ túi)"
+    "Đông A Classics (bỏ túi)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
+    {
+      "id": "e-nesbit-the-railway-children-2020-dong-a-bia-mem-90k",
+      "isbn": null,
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
+      "caption": "",
+      "pub_year": 2020,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Đăng Thư"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "90k",
+      "print_run": null,
+      "page_count": 272,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": null,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/lu_tre_duong_ray_da_5ce4ad4dfd7f424fb1f4b87a1f9d264d_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
     {
       "id": "e-nesbit-the-railway-children-2013-dong-a-bia-mem-45k",
       "series_ids": [

@@ -1,0 +1,42 @@
+{
+  "id": "kenneth-grahame-the-wind-in-the-willows",
+  "title": "Gió đùa trong liễu",
+  "title_original": "The Wind in the Willows",
+  "authors": [
+    "Kenneth Grahame"
+  ],
+  "awards": [],
+  "series": [
+    "Đông A Classic (hoa văn)"
+  ],
+  "editions": [
+    {
+      "id": "kenneth-grahame-the-wind-in-the-willows-2024-dong-a-bia-mem-100k",
+      "isbn": "978-604-477-803-7",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
+      "caption": "",
+      "pub_year": 2024,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Thị Cẩm Linh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "100k",
+      "print_run": null,
+      "page_count": 260,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": 300,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/1_da_0f49936d80494b7d969ff36491502f82_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}
