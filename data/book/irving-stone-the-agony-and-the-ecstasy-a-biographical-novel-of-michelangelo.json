@@ -12,6 +12,9 @@
   "editions": [
     {
       "id": "irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo-2023-dong-a-bia-cung-500k",
+      "series_ids": [
+        "dong-a-classic"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2023,

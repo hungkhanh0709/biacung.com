@@ -7,7 +7,7 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classic",
+    "Đông A Classic (hoa văn)",
     "Đông A Classics (bỏ túi)",
     "Chauchaubook"
   ],
@@ -50,7 +50,10 @@
     },
     {
       "id": "hector-malot-sans-famille-2023-dong-a-bia-mem-180k",
-      "isbn": null,
+      "isbn": "978-604-477-515-9",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
       "caption": "",
       "pub_year": 2023,
       "publisher": "NXB Văn Học",
@@ -67,9 +70,9 @@
       "print_run": null,
       "page_count": 764,
       "copy_numbering": null,
-      "size_cm": "20.5 x 14 x 3.8",
-      "weight_g": 784,
-      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8936203364248.jpg",
+      "size_cm": "13,5 x 20,5",
+      "weight_g": null,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/ko_gia_dinh_da_1aed8c9277d54fb586d0a3520fa612f7_master.jpg",
       "gellery_imgs": [],
       "detail": ""
     },

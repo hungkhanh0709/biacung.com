@@ -7,9 +7,39 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classics (bỏ túi)"
+    "Đông A Classics (bỏ túi)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
+    {
+      "id": "lewis-carroll-alices-adventures-in-wonderland-2023-dong-a-bia-mem-100k",
+      "title": "Alice ở xứ sở diệu kì & Alice ở xứ sở trong gương",
+      "isbn": "978-604-477-578-4",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
+      "caption": "",
+      "pub_year": 2023,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Lê Thị Oanh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "100k",
+      "print_run": null,
+      "page_count": 324,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": 200,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/alice_o_xu_so_dieu_ki___trong_guong_da_eb408252b4964191b328f98788082417_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
     {
       "id": "lewis-carroll-alices-adventures-in-wonderland-2013-dong-a-bia-mem-50k",
       "series_ids": [

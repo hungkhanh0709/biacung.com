@@ -7,13 +7,16 @@
   ],
   "awards": [],
   "series": [
-    "Đông a Classic",
+    "Đông A Classic (hoa văn)",
     "Đông A Classics (bỏ túi)"
   ],
   "editions": [
     {
       "id": "lazar-lagin-ong-gia-khottabych-2023-dong-a-bia-mem-120k",
-      "isbn": null,
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
+      "isbn": "978-604-394-338-2",
       "caption": "",
       "pub_year": 2023,
       "publisher": "NXB Văn Học",
@@ -30,9 +33,9 @@
       "print_run": null,
       "page_count": 436,
       "copy_numbering": null,
-      "size_cm": "20.5 x 13.5 x 2.1",
-      "weight_g": 450,
-      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/o/n/ong-gia-khottabit---bia-1-1.jpg",
+      "size_cm": "13.5 x 20.5",
+      "weight_g": 400,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/ong_gia_khottabit_da_7734e637fd094efcaad5c1841aae0b69_master.jpg",
       "gellery_imgs": [],
       "detail": ""
     },

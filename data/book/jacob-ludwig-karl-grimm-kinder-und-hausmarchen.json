@@ -8,12 +8,15 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classic"
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
     {
       "id": "jacob-ludwig-karl-grimm-kinder-und-hausmarchen-2024-dong-a-bia-mem-180k",
-      "isbn": null,
+      "isbn": "978-604-491-352-0",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
       "caption": "",
       "pub_year": 2024,
       "publisher": "NXB Văn Học",
@@ -30,12 +33,11 @@
       "print_run": null,
       "page_count": 648,
       "copy_numbering": null,
-      "size_cm": "20.5 x 14 x 3.2",
-      "weight_g": 660,
-      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8936203364613.jpg",
+      "size_cm": "13,5 x 20,5",
+      "weight_g": 700,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/grimm_da_16ed61fb7fba47868ee6ea18509b345f_master.jpg",
       "gellery_imgs": [],
-      "detail": "",
-      "series_ids": []
+      "detail": ""
     },
     {
       "id": "jacob-ludwig-karl-grimm-kinder-und-hausmarchen-2022-nha-nam-bia-da-pu-2tr3",

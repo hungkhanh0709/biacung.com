@@ -7,9 +7,38 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classics (bỏ túi)"
+    "Đông A Classics (bỏ túi)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
+    {
+      "id": "harriet-beecher-stowe-uncle-toms-cabin-2021-dong-a-bia-mem-120k",
+      "isbn": "978-604-323-727-6",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
+      "caption": "",
+      "pub_year": 2021,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Đỗ Đức Hiểu"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "120k",
+      "print_run": null,
+      "page_count": 456,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": 300,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/tup_leu_bac_tom-01_da_332f200a35a44f319e75f8547a20d4e8_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
     {
       "id": "harriet-beecher-stowe-uncle-toms-cabin-2013-dong-a-bia-mem-77k",
       "series_ids": [

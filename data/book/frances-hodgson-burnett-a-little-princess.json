@@ -7,9 +7,38 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classics (bỏ túi)"
+    "Đông A Classics (bỏ túi)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
+    {
+      "id": "frances-hodgson-burnett-a-little-princess-2023-dong-a-bia-mem-100k",
+      "isbn": "978-604-477-512-8",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
+      "caption": "",
+      "pub_year": 2023,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Thị Nga"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "100k",
+      "print_run": null,
+      "page_count": 316,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": null,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/cong_chua_nho_da_a6b4290f2ca247faac56065f0d5ca931_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
     {
       "id": "frances-hodgson-burnett-a-little-princess-2013-dong-a-bia-mem-50k",
       "series_ids": [

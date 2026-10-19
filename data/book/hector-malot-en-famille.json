@@ -7,11 +7,14 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classic"
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
     {
-      "id": "hector-malot-en-famille-2025-dong-a-bia-mem-co-bia-ao-120k",
+      "id": "hector-malot-en-famille-2025-dong-a-bia-mem-120k",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
       "isbn": "978-604-69-8175-6",
       "caption": "",
       "pub_year": 2025,
@@ -25,7 +28,7 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm, có bìa áo",
+      "format": "Bìa mềm",
       "cover_price": "120k",
       "print_run": null,
       "page_count": 428,

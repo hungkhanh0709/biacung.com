@@ -1349,5 +1349,12 @@
     "work_ids": [
       "wadysaw-stanisaw-reymont-nong-dan"
     ]
+  },
+  {
+    "id": "kenneth-grahame",
+    "name": "Kenneth Grahame",
+    "work_ids": [
+      "kenneth-grahame-the-wind-in-the-willows"
+    ]
   }
 ]

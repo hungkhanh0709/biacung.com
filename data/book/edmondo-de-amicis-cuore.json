@@ -8,11 +8,12 @@
   "awards": [],
   "series": [
     "Đông A Classics (bỏ túi)",
-    "Đông A Classics (bìa vải)"
+    "Đông A Classics (bìa vải)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
     {
-      "id": "edmondo-de-amicis-cuore-2024-dong-a-bia-cung-boc-vai-ma-vang-canh-sach-400k",
+      "id": "edmondo-de-amicis-cuore-2024-dong-a-bia-vai-400k",
       "title": "Tâm Hồn Cao Thượng",
       "isbn": "978-604-491-136-6",
       "series_ids": [
@@ -29,15 +30,25 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng bọc vải, mạ vàng cạnh sách",
+      "format": "Bìa vải",
       "cover_price": "400k",
       "print_run": null,
       "page_count": 554,
       "copy_numbering": null,
       "size_cm": "13 x 20,5",
       "weight_g": 1100,
-      "thumbnail": "https://product.hstatic.net/1000328521/product/1_da_2bfaeedc57594c1b98617198ac4ce32b_master.jpg",
-      "gellery_imgs": [],
+      "thumbnail": "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-bia-vai-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-bia-vai-cover.jpg",
+        "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-bia-vai-cover-and-gilded-edges.jpg",
+        "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-bia-vai-cover-detail.jpg",
+        "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-bia-vai-gilded-edges-detail.jpg",
+        "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-bia-vai-spine-detail.jpg",
+        "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-bia-vai-back-cover-detail.jpg",
+        "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-bia-vai-endpapers.jpg",
+        "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-bia-vai-interior-illustration-classroom.jpg",
+        "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-bia-vai-interior-illustration-exams.jpg"
+      ],
       "detail": "- Sách có bìa cứng, bọc bằng vải\n- Các họa tiết được in nhũ sắc nét trên bìa vải. \n- Trang gác in họa tiết vintage như mời gọi bạn lật mở từng trang sách. \n- Bụng sách được nhũ vàng tăng tính thẩm mỹ và thời gian bảo quản. \n- Ruột sách khổ 13,5 x 20,5cm, in trên giấy Bãi Bằng 100 gsm."
     },
     {
@@ -65,6 +76,34 @@
       "size_cm": "",
       "weight_g": null,
       "thumbnail": "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-cover.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "edmondo-de-amicis-cuore-dong-a-bia-mem-110k",
+      "isbn": "978-604-496-901-5",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
+      "caption": "",
+      "pub_year": null,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Hoàng Thiếu Sơn"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "110k",
+      "print_run": null,
+      "page_count": 332,
+      "copy_numbering": null,
+      "size_cm": "13.5 x 20.5",
+      "weight_g": 200,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/nhung_tam_long_cao_ca_da_e1b2699837ab45c8b534d132e8222f6b_master.jpg",
       "gellery_imgs": [],
       "detail": ""
     }

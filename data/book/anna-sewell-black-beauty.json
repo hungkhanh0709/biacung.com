@@ -7,9 +7,38 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classics (bỏ túi)"
+    "Đông A Classics (bỏ túi)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
+    {
+      "id": "anna-sewell-black-beauty-2023-dong-a-bia-mem-100k",
+      "isbn": "978-604-477-508-1",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
+      "caption": "",
+      "pub_year": 2023,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Thanh Vân"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "100k",
+      "print_run": null,
+      "page_count": 292,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": null,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/ngua_o_yeu_dau_da_ee7e3aeb06ec45d9be1e9c752147c1a9_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
     {
       "id": "anna-sewell-black-beauty-2013-dong-a-bia-mem-42k",
       "series_ids": [

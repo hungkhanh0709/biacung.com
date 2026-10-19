@@ -16,6 +16,10 @@
     "detail": "data/series/dong-a-classic.json"
   },
   {
+    "id": "dong-a-classic-hoa-van",
+    "detail": "data/series/dong-a-classic-hoa-van.json"
+  },
+  {
     "id": "khai-luoc-nhung-tu-tuong-lon",
     "detail": "data/series/khai-luoc-nhung-tu-tuong-lon.json"
   },

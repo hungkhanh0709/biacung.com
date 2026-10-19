@@ -8,11 +8,43 @@
   "awards": [],
   "series": [
     "Đông A Classic",
-    "Đông A Classics (bỏ túi)"
+    "Đông A Classics (bỏ túi)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
     {
+      "id": "johanna-spyri-heidi-2023-dong-a-bia-mem-100k",
+      "isbn": "978-604-477-514-2",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
+      "caption": "",
+      "pub_year": 2023,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Thanh Vân"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "100k",
+      "print_run": null,
+      "page_count": 324,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": null,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/heidi_da_aa08721674c848bbb45b3ceb3613a4e7_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
       "id": "johanna-spyri-heidi-2023-dong-a-bia-cung-280k",
+      "series_ids": [
+        "dong-a-classic"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2023,

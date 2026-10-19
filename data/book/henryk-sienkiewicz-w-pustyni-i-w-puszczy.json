@@ -8,16 +8,17 @@
   "awards": [],
   "series": [
     "Đông A Classics (bỏ túi)",
-    "Đông A Classics (bìa vải)"
+    "Đông A Classics (bìa vải)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
     {
-      "id": "henryk-sienkiewicz-w-pustyni-i-w-puszczy-2024-dong-a-bia-cung-boc-vai-ma-vang-canh-sach-420k",
+      "id": "henryk-sienkiewicz-w-pustyni-i-w-puszczy-2024-dong-a-bia-vai-420k",
       "isbn": "978-604-140-3",
       "series_ids": [
         "dong-a-classics-bia-vai"
       ],
-      "caption": "Bìa Vải",
+      "caption": "",
       "pub_year": 2024,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -30,15 +31,24 @@
         "Đức Lâm"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng bọc vải, mạ vàng cạnh sách",
+      "format": "Bìa vải",
       "cover_price": "420k",
       "print_run": null,
       "page_count": 580,
       "copy_numbering": null,
       "size_cm": "13 x 20,5",
       "weight_g": 1200,
-      "thumbnail": "https://product.hstatic.net/1000328521/product/1_da_a844834097414bc1bd81c8a5a27b4034_master.jpg",
-      "gellery_imgs": [],
+      "thumbnail": "/assets/img/books/henryk-sienkiewicz-w-pustyni-i-w-puszczy/dong-a-classics-bia-vai-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/henryk-sienkiewicz-w-pustyni-i-w-puszczy/dong-a-classics-bia-vai-cover.jpg",
+        "/assets/img/books/henryk-sienkiewicz-w-pustyni-i-w-puszczy/dong-a-classics-bia-vai-cover-and-gilded-edges.jpg",
+        "/assets/img/books/henryk-sienkiewicz-w-pustyni-i-w-puszczy/dong-a-classics-bia-vai-cover-detail.jpg",
+        "/assets/img/books/henryk-sienkiewicz-w-pustyni-i-w-puszczy/dong-a-classics-bia-vai-spine-detail.jpg",
+        "/assets/img/books/henryk-sienkiewicz-w-pustyni-i-w-puszczy/dong-a-classics-bia-vai-back-cover-detail.jpg",
+        "/assets/img/books/henryk-sienkiewicz-w-pustyni-i-w-puszczy/dong-a-classics-bia-vai-endpapers.jpg",
+        "/assets/img/books/henryk-sienkiewicz-w-pustyni-i-w-puszczy/dong-a-classics-bia-vai-title-page.jpg",
+        "/assets/img/books/henryk-sienkiewicz-w-pustyni-i-w-puszczy/dong-a-classics-bia-vai-interior-illustration.jpg"
+      ],
       "detail": "- Sách có bìa cứng, bọc bằng vải\n- Các họa tiết được in nhũ sắc nét trên bìa vải. \n- Trang gác in họa tiết vintage như mời gọi bạn lật mở từng trang sách. \n- Bụng sách được nhũ vàng tăng tính thẩm mỹ và thời gian bảo quản. \n- Ruột sách khổ 13,5 x 20,5cm, in trên giấy Bãi Bằng 100 gsm."
     },
     {
@@ -69,6 +79,36 @@
       "gellery_imgs": [
         "/assets/img/books/henryk-sienkiewicz-w-pustyni-i-w-puszczy/dong-a-classics-volume-2.jpg"
       ],
+      "detail": ""
+    },
+    {
+      "id": "henryk-sienkiewicz-w-pustyni-i-w-puszczy-dong-a-bia-mem-120k",
+      "isbn": null,
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
+      "caption": "",
+      "pub_year": null,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Hữu Dũng"
+      ],
+      "illustrators": [
+        "Đức Lâm"
+      ],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "120k",
+      "print_run": null,
+      "page_count": 504,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": null,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/tren_sa_mac_va_trong_rung_tham_da_190afbdc4e19476cabefe0ab41e5acf2_master.jpg",
+      "gellery_imgs": [],
       "detail": ""
     }
   ]
