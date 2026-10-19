@@ -7,7 +7,7 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classic",
+    "Đông A Classic (hoa văn)",
     "Đông A Classics (bỏ túi)",
     "Chauchaubook"
   ],
@@ -50,6 +50,9 @@
     },
     {
       "id": "hector-malot-sans-famille-2023-dong-a-bia-mem-180k",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2023,

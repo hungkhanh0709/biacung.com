@@ -13,6 +13,9 @@
   "editions": [
     {
       "id": "johanna-spyri-heidi-2023-dong-a-bia-cung-280k",
+      "series_ids": [
+        "dong-a-classic"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2023,

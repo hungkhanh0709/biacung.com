@@ -7,7 +7,8 @@
   ],
   "awards": [],
   "series": [
-    "Đông A Classics (bìa vải)"
+    "Đông A Classics (bìa vải)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
     {
@@ -36,14 +37,22 @@
       "copy_numbering": null,
       "size_cm": "13 x 20,5",
       "weight_g": 700,
-      "thumbnail": "https://product.hstatic.net/1000328521/product/vevoigd_da_e08533aed52845c1891324bde8af2fd9_master.jpg",
-      "gellery_imgs": [],
+      "thumbnail": "/assets/img/books/hector-malot-romain-kalbris/dong-a-classics-bia-vai-cover-flat-lay.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/hector-malot-romain-kalbris/dong-a-classics-bia-vai-cover.jpg",
+        "/assets/img/books/hector-malot-romain-kalbris/dong-a-classics-bia-vai-gilded-edges-detail.jpg",
+        "/assets/img/books/hector-malot-romain-kalbris/dong-a-classics-bia-vai-endpapers.jpg",
+        "/assets/img/books/hector-malot-romain-kalbris/dong-a-classics-bia-vai-title-page.jpg"
+      ],
       "detail": ""
     },
     {
       "id": "hector-malot-romain-kalbris-2025-dong-a-bia-mem-100k",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
       "isbn": "978-632-606-722-4",
-      "caption": "Bìa Mềm, Có Bìa Áo",
+      "caption": "",
       "pub_year": 2025,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -56,7 +65,7 @@
         "Émile Bayard"
       ],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": "Bìa mềm, có bìa áo",
       "cover_price": "100k",
       "print_run": null,
       "page_count": 316,

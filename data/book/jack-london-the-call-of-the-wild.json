@@ -12,12 +12,13 @@
   ],
   "editions": [
     {
-      "id": "jack-london-the-call-of-the-wild-2026-dong-a-bia-cung-boc-vai-ma-vang-canh-sach-220k",
+      "id": "jack-london-the-call-of-the-wild-2026-dong-a-bia-vai-220k",
       "series_ids": [
         "dong-a-classics-bia-vai"
       ],
+      "title": "Tiếng Gọi Nơi Hoang Dã",
       "isbn": null,
-      "caption": "Tiếng Gọi Nơi Hoang Dã (bìa vải)",
+      "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -30,19 +31,18 @@
         "Đức Lâm"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng bọc vải, mạ vàng cạnh sách",
+      "format": "Bìa vải",
       "cover_price": "220k",
       "print_run": 1000,
       "page_count": 156,
       "copy_numbering": null,
       "size_cm": "13 x 20,5c",
       "weight_g": 400,
-      "thumbnail": "/assets/img/books/jack-london-the-call-of-the-wild/dong-a-classics-bia-vai-cover.webp",
+      "thumbnail": "/assets/img/books/jack-london-the-call-of-the-wild/dong-a-classics-bia-vai-cover-photo.jpg",
       "gellery_imgs": [
         "/assets/img/books/jack-london-the-call-of-the-wild/dong-a-classics-bia-vai-interior-1.jpg",
         "/assets/img/books/jack-london-the-call-of-the-wild/dong-a-classics-bia-vai-interior-2.jpg",
-        "/assets/img/books/jack-london-the-call-of-the-wild/dong-a-classics-bia-vai-interior-3.jpg",
-        "/assets/img/books/jack-london-the-call-of-the-wild/dong-a-classics-bia-vai-cover-photo.jpg"
+        "/assets/img/books/jack-london-the-call-of-the-wild/dong-a-classics-bia-vai-interior-3.jpg"
       ],
       "detail": "- Bìa cứng bọc vải, sang trọng và bền đẹp.\n- Mạ vàng cạnh sách, tạo điểm nhấn tinh tế.\n- Bản dịch mới của dịch giả Nguyễn Minh.\n- Minh họa của họa sĩ Đức Lâm."
     },

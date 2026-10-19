@@ -8,13 +8,16 @@
   "awards": [],
   "series": [
     "Đông A Classics (bỏ túi)",
-    "Đông A Classics (bìa vải)"
+    "Đông A Classics (bìa vải)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
     {
       "id": "johann-david-wyss-der-schweizerische-robinson-2025-dong-a-bia-mem-120k",
       "isbn": "978-632-617-163-1",
-      "series_ids": [],
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
       "caption": "",
       "pub_year": 2025,
       "publisher": "NXB Văn Học",
@@ -38,7 +41,7 @@
       "detail": ""
     },
     {
-      "id": "johann-david-wyss-der-schweizerische-robinson-2024-dong-a-bia-cung-boc-vai-ma-vang-canh-sach-350k",
+      "id": "johann-david-wyss-der-schweizerische-robinson-2024-dong-a-bia-vai-350k",
       "isbn": "978-604-491-137-3",
       "series_ids": [
         "dong-a-classics-bia-vai"
@@ -54,24 +57,34 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng bọc vải, mạ vàng cạnh sách",
+      "format": "Bìa vải",
       "cover_price": "350k",
       "print_run": null,
       "page_count": 456,
       "copy_numbering": null,
       "size_cm": "13,5 x 20,5",
       "weight_g": 1000,
-      "thumbnail": "https://product.hstatic.net/1000328521/product/0_da_4a1c415bd3914ce99a1dee0de0be2de9_master.jpg",
-      "gellery_imgs": [],
+      "thumbnail": "/assets/img/books/johann-david-wyss-der-schweizerische-robinson/dong-a-classics-bia-vai-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/johann-david-wyss-der-schweizerische-robinson/dong-a-classics-bia-vai-cover.jpg",
+        "/assets/img/books/johann-david-wyss-der-schweizerische-robinson/dong-a-classics-bia-vai-cover-and-gilded-edges.jpg",
+        "/assets/img/books/johann-david-wyss-der-schweizerische-robinson/dong-a-classics-bia-vai-cover-detail.jpg",
+        "/assets/img/books/johann-david-wyss-der-schweizerische-robinson/dong-a-classics-bia-vai-gilded-edges-detail.jpg",
+        "/assets/img/books/johann-david-wyss-der-schweizerische-robinson/dong-a-classics-bia-vai-spine-detail.jpg",
+        "/assets/img/books/johann-david-wyss-der-schweizerische-robinson/dong-a-classics-bia-vai-back-cover-detail.jpg",
+        "/assets/img/books/johann-david-wyss-der-schweizerische-robinson/dong-a-classics-bia-vai-endpapers.jpg",
+        "/assets/img/books/johann-david-wyss-der-schweizerische-robinson/dong-a-classics-bia-vai-title-page.jpg"
+      ],
       "detail": "- Sách có bìa cứng, bọc bằng vải\n- Các họa tiết được in nhũ sắc nét trên bìa vải. \n- Trang gác in họa tiết vintage như mời gọi bạn lật mở từng trang sách. \n- Bụng sách được nhũ vàng tăng tính thẩm mỹ và thời gian bảo quản. \n- Ruột sách khổ 13,5 x 20,5cm, in trên giấy Bãi Bằng 100 gsm."
     },
     {
       "id": "johann-david-wyss-der-schweizerische-robinson-2013-dong-a-bia-mem-56k",
+      "title": "Lớn Lên Trên Đảo Vắng",
       "isbn": null,
       "series_ids": [
         "dong-a-classics-bo-tui"
       ],
-      "caption": "Lớn Lên Trên Đảo Vắng",
+      "caption": "",
       "pub_year": 2013,
       "publisher": "NXB Văn Học",
       "issuers": [

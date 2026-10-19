@@ -7,12 +7,15 @@
   ],
   "awards": [],
   "series": [
-    "Đông a Classic",
+    "Đông A Classic (hoa văn)",
     "Đông A Classics (bỏ túi)"
   ],
   "editions": [
     {
       "id": "lazar-lagin-ong-gia-khottabych-2023-dong-a-bia-mem-120k",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2023,
