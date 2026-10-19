@@ -8,7 +8,8 @@
   "awards": [],
   "series": [
     "Đông A Classics (bỏ túi)",
-    "Đông A Classics (bìa vải)"
+    "Đông A Classics (bìa vải)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
     {
@@ -75,6 +76,34 @@
       "size_cm": "",
       "weight_g": null,
       "thumbnail": "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-cover.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "edmondo-de-amicis-cuore-dong-a-bia-mem-110k",
+      "isbn": "978-604-496-901-5",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
+      "caption": "",
+      "pub_year": null,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Hoàng Thiếu Sơn"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "110k",
+      "print_run": null,
+      "page_count": 332,
+      "copy_numbering": null,
+      "size_cm": "13.5 x 20.5",
+      "weight_g": 200,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/nhung_tam_long_cao_ca_da_e1b2699837ab45c8b534d132e8222f6b_master.jpg",
       "gellery_imgs": [],
       "detail": ""
     }

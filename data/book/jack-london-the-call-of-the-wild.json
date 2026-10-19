@@ -8,15 +8,16 @@
   "awards": [],
   "series": [
     "Đông A Classics (bỏ túi)",
-    "Đông A Classics (bìa vải)"
+    "Đông A Classics (bìa vải)",
+    "Đông A Classic (hoa văn)"
   ],
   "editions": [
     {
       "id": "jack-london-the-call-of-the-wild-2026-dong-a-bia-vai-220k",
+      "title": "Tiếng Gọi Nơi Hoang Dã",
       "series_ids": [
         "dong-a-classics-bia-vai"
       ],
-      "title": "Tiếng Gọi Nơi Hoang Dã",
       "isbn": null,
       "caption": "",
       "pub_year": 2026,
@@ -45,6 +46,36 @@
         "/assets/img/books/jack-london-the-call-of-the-wild/dong-a-classics-bia-vai-interior-3.jpg"
       ],
       "detail": "- Bìa cứng bọc vải, sang trọng và bền đẹp.\n- Mạ vàng cạnh sách, tạo điểm nhấn tinh tế.\n- Bản dịch mới của dịch giả Nguyễn Minh.\n- Minh họa của họa sĩ Đức Lâm."
+    },
+    {
+      "id": "jack-london-the-call-of-the-wild-2025-dong-a-bia-mem-90k",
+      "isbn": "978-604-323-715-3",
+      "series_ids": [
+        "dong-a-classic-hoa-van"
+      ],
+      "caption": "",
+      "pub_year": 2025,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Mạnh Chương",
+        "Lâm Hoài",
+        "Võ Quang"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "90k",
+      "print_run": null,
+      "page_count": 260,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": 200,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/da_f32fc80c37f543f2a66d7917bf4e0b79_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
     },
     {
       "id": "jack-london-the-call-of-the-wild-2013-dong-a-bia-mem-43k",
