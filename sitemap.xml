@@ -535,10 +535,6 @@
     <lastmod>2026-07-05</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/series?id=caraval</loc>
-    <lastmod>2026-07-05</lastmod>
-  </url>
-  <url>
     <loc>https://biacung.com/series?id=dong-a-classic</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
@@ -572,7 +568,7 @@
   </url>
   <url>
     <loc>https://biacung.com/series?id=viet-nam-danh-tac-nha-nam</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=dong-a-classics-bo-tui</loc>
@@ -588,7 +584,7 @@
   </url>
   <url>
     <loc>https://biacung.com/series?id=viet-nam-danh-tac-nha-nam</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=viet-nam-danh-tac-tho-nha-nam</loc>
@@ -597,6 +593,10 @@
   <url>
     <loc>https://biacung.com/series?id=viet-nam-danh-tac-artbook-nha-nam</loc>
     <lastmod>2026-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/series?id=van-chuong-va-my-thuat</loc>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=herman-koch-het-diner</loc>
@@ -971,6 +971,14 @@
     <lastmod>2026-07-01</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-drei-kameraden</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-liebe-deinen-nachsten</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=frances-hodgson-burnett-the-secret-garden</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
@@ -1195,6 +1203,22 @@
     <lastmod>2026-07-02</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=nam-cao-doi-lua-xung-doi-nua-dem-cuoi</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=nguyen-hong-bi-vo</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=nguyen-trong-thuat-qua-dua-do</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=jacinto-benavente-tuyen-tap-kich-jacinto-benavente</loc>
     <lastmod>2026-10-18</lastmod>
   </url>
@@ -1248,10 +1272,6 @@
   </url>
   <url>
     <loc>https://biacung.com/detail?id=ngo-tat-to-tat-den</loc>
-    <lastmod>2026-09-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=nguyen-hong-bi-vo</loc>
     <lastmod>2026-09-20</lastmod>
   </url>
   <url>
@@ -1309,6 +1329,14 @@
   <url>
     <loc>https://biacung.com/detail?id=mario-puzo-fools-die</loc>
     <lastmod>2026-06-30</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=kim-lan-nguoi-kep-gia</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=vu-bang-thuong-nho-muoi-hai</loc>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=harriet-beecher-stowe-uncle-toms-cabin</loc>
@@ -1383,6 +1411,10 @@
     <lastmod>2026-07-11</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=vu-trong-phung-so-do</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=e-nesbit-the-railway-children</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
@@ -1423,8 +1455,36 @@
     <lastmod>2026-07-04</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-schatten-im-paradies</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=thomas-mann-der-tod-in-venedig</loc>
     <lastmod>2026-07-04</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-arc-de-triomphe</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-der-funke-leben</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-der-schwarze-obelisk</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-der-weg-zuruck</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-die-nacht-von-lissabon</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-zeit-zu-leben-und-zeit-zu-sterben</loc>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=dk-lich-su-the-gioi-lich-su-the-gioi-chan-dung-nhan-loai-theo-dong-su-kien</loc>
@@ -1593,41 +1653,5 @@
   <url>
     <loc>https://biacung.com/detail?id=mario-puzo-the-fourth-k</loc>
     <lastmod>2026-06-30</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=erich-maria-remarque-der-weg-zuruck</loc>
-    <lastmod>2026-10-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=erich-maria-remarque-drei-kameraden</loc>
-    <lastmod>2026-10-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=erich-maria-remarque-liebe-deinen-nachsten</loc>
-    <lastmod>2026-10-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=erich-maria-remarque-arc-de-triomphe</loc>
-    <lastmod>2026-10-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=erich-maria-remarque-der-funke-leben</loc>
-    <lastmod>2026-10-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=erich-maria-remarque-zeit-zu-leben-und-zeit-zu-sterben</loc>
-    <lastmod>2026-10-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=erich-maria-remarque-der-schwarze-obelisk</loc>
-    <lastmod>2026-10-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=erich-maria-remarque-die-nacht-von-lissabon</loc>
-    <lastmod>2026-10-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=erich-maria-remarque-schatten-im-paradies</loc>
-    <lastmod>2026-10-20</lastmod>
   </url>
 </urlset>

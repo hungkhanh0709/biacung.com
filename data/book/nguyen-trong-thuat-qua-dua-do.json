@@ -1,0 +1,46 @@
+{
+  "id": "nguyen-trong-thuat-qua-dua-do",
+  "title": "Quả Dưa Đỏ",
+  "title_original": "",
+  "authors": [
+    "Nguyễn Trọng Thuật"
+  ],
+  "awards": [],
+  "series": [
+    "Văn chương và Mỹ thuật"
+  ],
+  "editions": [
+    {
+      "id": "nguyen-trong-thuat-qua-dua-do-2022-dong-a-bia-cung-390k",
+      "isbn": "978-604-372-355-7",
+      "series_ids": [
+        "van-chuong-va-my-thuat"
+      ],
+      "caption": "",
+      "pub_year": 2022,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Tạ Huy Long"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "390k",
+      "print_run": null,
+      "page_count": 320,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/bia_da_d5972c2a44ff42b2891617730043aa0d_master.jpg",
+      "gellery_imgs": [
+        "https://product.hstatic.net/1000328521/product/1_9116cf983ad740d182ec0914ac7fb7ac_master.jpg",
+        "https://product.hstatic.net/1000328521/product/2_190e66c9b35a46d7baa1a5cc14f05d16_master.jpg",
+        "https://product.hstatic.net/1000328521/product/3_b9a526f0be3f4175bce06a1fbba44b54_master.jpg"
+      ],
+      "detail": "In màu toàn bộ. Có 12 minh họa màu nước của Tạ Huy Long."
+    }
+  ]
+}

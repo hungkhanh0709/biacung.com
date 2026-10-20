@@ -1,0 +1,46 @@
+{
+  "id": "kim-lan-nguoi-kep-gia",
+  "title": "Người Kép Già",
+  "title_original": "",
+  "authors": [
+    "Kim Lân"
+  ],
+  "awards": [],
+  "series": [
+    "Văn chương và Mỹ thuật"
+  ],
+  "editions": [
+    {
+      "id": "kim-lan-nguoi-kep-gia-2021-dong-a-bia-cung-360k",
+      "isbn": "978-604-319-410-4",
+      "series_ids": [
+        "van-chuong-va-my-thuat"
+      ],
+      "caption": "",
+      "pub_year": 2021,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Thành Chương"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "360k",
+      "print_run": null,
+      "page_count": 340,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/nguoi_kep_gia_3d_da_b850ca884c284e4a82a2b607769d5ba1_master.jpg",
+      "gellery_imgs": [
+        "https://product.hstatic.net/1000328521/product/112-113_a7bcb8c4719645ef91aca444e81e4fff_master.png",
+        "https://product.hstatic.net/1000328521/product/24-25_a0860a2de7c8420f96736609828b078f_master.png",
+        "https://product.hstatic.net/1000328521/product/214-215_fbeacf7d43b84373be4cbde28c3543ef_master.png"
+      ],
+      "detail": "Truyện ngắn và vừa Kim Lân. Có 18 minh họa của Thành Chương."
+    }
+  ]
+}
