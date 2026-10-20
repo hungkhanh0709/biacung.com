@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://biacung.com/</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/about</loc>
@@ -520,11 +520,11 @@
   </url>
   <url>
     <loc>https://biacung.com/chauchaubook/works</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=50-nam-fahasa</loc>
@@ -552,7 +552,7 @@
   </url>
   <url>
     <loc>https://biacung.com/series?id=moi-nha-van-mot-tac-pham</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=sach-tet-dong-a</loc>
@@ -597,6 +597,10 @@
   <url>
     <loc>https://biacung.com/series?id=viet-nam-danh-tac-artbook-nha-nam</loc>
     <lastmod>2026-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=herman-koch-het-diner</loc>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=hector-malot-sans-famille</loc>
@@ -1055,6 +1059,10 @@
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=henryk-sienkiewicz-w-pustyni-i-w-puszczy</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=jacob-ludwig-karl-grimm-kinder-und-hausmarchen</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
@@ -1077,10 +1085,6 @@
   <url>
     <loc>https://biacung.com/detail?id=wadysaw-stanisaw-reymont-nong-dan</loc>
     <lastmod>2026-10-18</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=henryk-sienkiewicz-w-pustyni-i-w-puszczy</loc>
-    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=jose-mauro-de-vasconcelos-vamos-aquecer-o-sol</loc>
@@ -1307,6 +1311,10 @@
     <lastmod>2026-06-30</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=harriet-beecher-stowe-uncle-toms-cabin</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=anatole-france-toi-ac-cua-sylvestre-bonnard-dao-chim-canh-cut</loc>
     <lastmod>2026-10-18</lastmod>
   </url>
@@ -1459,20 +1467,16 @@
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=jack-london-white-fang</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=e-nesbit-the-enchanted-castle</loc>
     <lastmod>2026-08-26</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=harriet-beecher-stowe-uncle-toms-cabin</loc>
-    <lastmod>2026-10-19</lastmod>
-  </url>
-  <url>
     <loc>https://biacung.com/detail?id=iar-larri-cuoc-phieu-luu-ki-la-cua-karik-va-valia</loc>
     <lastmod>2026-08-26</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=jack-london-white-fang</loc>
-    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=jonathan-swift-gullivers-travels</loc>
@@ -1589,5 +1593,41 @@
   <url>
     <loc>https://biacung.com/detail?id=mario-puzo-the-fourth-k</loc>
     <lastmod>2026-06-30</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-der-weg-zuruck</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-drei-kameraden</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-liebe-deinen-nachsten</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-arc-de-triomphe</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-der-funke-leben</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-zeit-zu-leben-und-zeit-zu-sterben</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-der-schwarze-obelisk</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-die-nacht-von-lissabon</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=erich-maria-remarque-schatten-im-paradies</loc>
+    <lastmod>2026-10-20</lastmod>
   </url>
 </urlset>

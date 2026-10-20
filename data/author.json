@@ -681,7 +681,16 @@
     "id": "erich-maria-remarque",
     "name": "Erich Maria Remarque",
     "work_ids": [
-      "erich-maria-remarque-im-westen-nichts-neues"
+      "erich-maria-remarque-im-westen-nichts-neues",
+      "erich-maria-remarque-der-weg-zuruck",
+      "erich-maria-remarque-drei-kameraden",
+      "erich-maria-remarque-liebe-deinen-nachsten",
+      "erich-maria-remarque-arc-de-triomphe",
+      "erich-maria-remarque-der-funke-leben",
+      "erich-maria-remarque-zeit-zu-leben-und-zeit-zu-sterben",
+      "erich-maria-remarque-der-schwarze-obelisk",
+      "erich-maria-remarque-die-nacht-von-lissabon",
+      "erich-maria-remarque-schatten-im-paradies"
     ]
   },
   {
@@ -1355,6 +1364,13 @@
     "name": "Kenneth Grahame",
     "work_ids": [
       "kenneth-grahame-the-wind-in-the-willows"
+    ]
+  },
+  {
+    "id": "herman-koch",
+    "name": "Herman Koch",
+    "work_ids": [
+      "herman-koch-het-diner"
     ]
   }
 ]

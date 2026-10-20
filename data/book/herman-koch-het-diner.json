@@ -1,0 +1,41 @@
+{
+  "id": "herman-koch-het-diner",
+  "title": "Bữa tối",
+  "title_original": "Het diner",
+  "authors": [
+    "Herman Koch"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "herman-koch-het-diner-2026-nha-nam-bia-cung-335k",
+      "isbn": "978-632-639-075-9",
+      "series_ids": [],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Đoàn Hương Giang"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "335k",
+      "print_run": 200,
+      "page_count": 380,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/herman-koch-het-diner/nha-nam-bia-cung-cover.jpeg",
+      "gellery_imgs": [
+        "/assets/img/books/herman-koch-het-diner/nha-nam-bia-cung-signing.jpeg",
+        "/assets/img/books/herman-koch-het-diner/nha-nam-bia-cung-signed-title-page.jpeg"
+      ],
+      "detail": ""
+    }
+  ]
+}

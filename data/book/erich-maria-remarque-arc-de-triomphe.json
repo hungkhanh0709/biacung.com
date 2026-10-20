@@ -1,0 +1,38 @@
+{
+  "id": "erich-maria-remarque-arc-de-triomphe",
+  "title": "Khải Hoàn Môn",
+  "title_original": "Arc de Triomphe",
+  "authors": [
+    "Erich Maria Remarque"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "erich-maria-remarque-arc-de-triomphe-2017-dong-a-bia-mem-120k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2017,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Cao Xuân Hạo"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "120k",
+      "print_run": null,
+      "page_count": 632,
+      "copy_numbering": null,
+      "size_cm": "14.5 x 20.5",
+      "weight_g": 650,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/3d_khai_hoan_mon_da_da55dd02c9d3448899319d813af6cf81_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}
