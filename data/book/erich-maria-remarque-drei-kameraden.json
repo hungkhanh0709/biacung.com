@@ -1,0 +1,38 @@
+{
+  "id": "erich-maria-remarque-drei-kameraden",
+  "title": "Ba Người Bạn",
+  "title_original": "Drei Kameraden",
+  "authors": [
+    "Erich Maria Remarque"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "erich-maria-remarque-drei-kameraden-2025-dong-a-bia-mem-150k",
+      "isbn": "978-604-69-9557-9",
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2025,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Vũ Hương Giang"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "150k",
+      "print_run": null,
+      "page_count": 532,
+      "copy_numbering": null,
+      "size_cm": "14.5 x 20.5",
+      "weight_g": 500,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/3d_ba_nguoi_ban_da_6f574734b0e5418aa894841406335f67_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}
