@@ -527,14 +527,16 @@
     "name": "Vũ Bằng",
     "work_ids": [
       "vu-bang-mieng-ngon-ha-noi",
-      "vu-bang-40-nam-noi-lao"
+      "vu-bang-40-nam-noi-lao",
+      "vu-bang-thuong-nho-muoi-hai"
     ]
   },
   {
     "id": "thach-lam",
     "name": "Thạch Lam",
     "work_ids": [
-      "thach-lam-ha-noi-bam-sau-pho-phuong"
+      "thach-lam-ha-noi-bam-sau-pho-phuong",
+      "thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong"
     ]
   },
   {
@@ -681,7 +683,16 @@
     "id": "erich-maria-remarque",
     "name": "Erich Maria Remarque",
     "work_ids": [
-      "erich-maria-remarque-im-westen-nichts-neues"
+      "erich-maria-remarque-im-westen-nichts-neues",
+      "erich-maria-remarque-der-weg-zuruck",
+      "erich-maria-remarque-drei-kameraden",
+      "erich-maria-remarque-liebe-deinen-nachsten",
+      "erich-maria-remarque-arc-de-triomphe",
+      "erich-maria-remarque-der-funke-leben",
+      "erich-maria-remarque-zeit-zu-leben-und-zeit-zu-sterben",
+      "erich-maria-remarque-der-schwarze-obelisk",
+      "erich-maria-remarque-die-nacht-von-lissabon",
+      "erich-maria-remarque-schatten-im-paradies"
     ]
   },
   {
@@ -1196,7 +1207,8 @@
     "id": "vu-trong-phung",
     "name": "Vũ Trọng Phụng",
     "work_ids": [
-      "vu-trong-phung-giong-to"
+      "vu-trong-phung-giong-to",
+      "vu-trong-phung-so-do"
     ]
   },
   {
@@ -1233,7 +1245,8 @@
     "id": "nam-cao",
     "name": "Nam Cao",
     "work_ids": [
-      "nam-cao-song-mon"
+      "nam-cao-song-mon",
+      "nam-cao-doi-lua-xung-doi-nua-dem-cuoi"
     ]
   },
   {
@@ -1355,6 +1368,27 @@
     "name": "Kenneth Grahame",
     "work_ids": [
       "kenneth-grahame-the-wind-in-the-willows"
+    ]
+  },
+  {
+    "id": "herman-koch",
+    "name": "Herman Koch",
+    "work_ids": [
+      "herman-koch-het-diner"
+    ]
+  },
+  {
+    "id": "nguyen-trong-thuat",
+    "name": "Nguyễn Trọng Thuật",
+    "work_ids": [
+      "nguyen-trong-thuat-qua-dua-do"
+    ]
+  },
+  {
+    "id": "kim-lan",
+    "name": "Kim Lân",
+    "work_ids": [
+      "kim-lan-nguoi-kep-gia"
     ]
   }
 ]

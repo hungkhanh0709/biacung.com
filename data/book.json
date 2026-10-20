@@ -1,5 +1,11 @@
 [
   {
+    "detail": "data/book/herman-koch-het-diner.json",
+    "search_text": "herman koch het diner bua toi nxb van hoc nha nam doan huong giang bia cung gioi han",
+    "last_pub_year": 2026,
+    "updated_at": "2026-10-20"
+  },
+  {
     "detail": "data/book/hector-malot-sans-famille.json",
     "search_text": "hector malot sans famille khong gia dinh nxb van hoc dong a huy hoang huynh ly nhu phong dong a classic hoa van dong a classics bo tui chauchaubook bia ve tay boi chau chau book bo 2 tap",
     "updated_at": "2026-10-19",
@@ -487,7 +493,7 @@
   },
   {
     "detail": "data/book/stephanie-garber-legendary.json",
-    "search_text": "legendary stephanie garber goodreads choice award caraval nxb van hoc az viet nam han nhat minh",
+    "search_text": "legendary stephanie garber goodreads choice award nxb van hoc az viet nam han nhat minh",
     "updated_at": "2026-07-05",
     "last_pub_year": 2026
   },
@@ -550,6 +556,18 @@
     "search_text": "ton tu binh phap ton tu nxb dan tri dong a ngo van trien",
     "last_pub_year": 2026,
     "updated_at": "2026-07-01"
+  },
+  {
+    "detail": "data/book/erich-maria-remarque-drei-kameraden.json",
+    "search_text": "erich maria remarque drei kameraden ba nguoi ban nxb van hoc dong a vu huong giang",
+    "last_pub_year": 2025,
+    "updated_at": "2026-10-20"
+  },
+  {
+    "detail": "data/book/erich-maria-remarque-liebe-deinen-nachsten.json",
+    "search_text": "erich maria remarque liebe deinen nachsten ban du ca cuoi cung nxb van hoc dong a vu kim thu",
+    "last_pub_year": 2025,
+    "updated_at": "2026-10-20"
   },
   {
     "detail": "data/book/frances-hodgson-burnett-the-secret-garden.json",
@@ -888,6 +906,30 @@
     "last_pub_year": 2023
   },
   {
+    "detail": "data/book/nam-cao-doi-lua-xung-doi-nua-dem-cuoi.json",
+    "search_text": "nam cao doi lua xung doi nua dem cuoi nxb van hoc dong a dang xuan hoa van chuong va my thuat",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-20"
+  },
+  {
+    "detail": "data/book/nguyen-hong-bi-vo.json",
+    "search_text": "nguyen hong bi vo nxb van hoc nxb hoi nha van dong a nha nam hoang phuong vy viet nam danh tac nha nam van chuong va my thuat bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-20"
+  },
+  {
+    "detail": "data/book/nguyen-trong-thuat-qua-dua-do.json",
+    "search_text": "nguyen trong thuat qua dua do nxb van hoc dong a ta huy long van chuong va my thuat",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-20"
+  },
+  {
+    "detail": "data/book/thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong.json",
+    "search_text": "thach lam gio dau mua ha noi bam sau pho phuong nxb van hoc dong a dao hai phong van chuong va my thuat",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-20"
+  },
+  {
     "detail": "data/book/jacinto-benavente-tuyen-tap-kich-jacinto-benavente.json",
     "search_text": "jacinto benavente tuyen tap kich jacinto benavente nxb van hoc dong a nguyen tuan linh le tri tram nam nobel bia buckram",
     "last_pub_year": 2022,
@@ -968,12 +1010,6 @@
   {
     "detail": "data/book/ngo-tat-to-tat-den.json",
     "search_text": "ngo tat to tat den nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
-    "last_pub_year": 2022,
-    "updated_at": "2026-09-20"
-  },
-  {
-    "detail": "data/book/nguyen-hong-bi-vo.json",
-    "search_text": "nguyen hong bi vo nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
     "last_pub_year": 2022,
     "updated_at": "2026-09-20"
   },
@@ -1060,6 +1096,18 @@
     "search_text": "fools die mario puzo nxb van hoc đong a nguyen minh",
     "updated_at": "2026-06-30",
     "last_pub_year": 2022
+  },
+  {
+    "detail": "data/book/kim-lan-nguoi-kep-gia.json",
+    "search_text": "kim lan nguoi kep gia nxb hoi nha van dong a thanh chuong van chuong va my thuat",
+    "last_pub_year": 2021,
+    "updated_at": "2026-10-20"
+  },
+  {
+    "detail": "data/book/vu-bang-thuong-nho-muoi-hai.json",
+    "search_text": "vu bang thuong nho muoi hai nxb van hoc dong a duy hung van chuong va my thuat",
+    "last_pub_year": 2021,
+    "updated_at": "2026-10-20"
   },
   {
     "detail": "data/book/harriet-beecher-stowe-uncle-toms-cabin.json",
@@ -1170,6 +1218,12 @@
     "updated_at": "2026-07-11"
   },
   {
+    "detail": "data/book/vu-trong-phung-so-do.json",
+    "search_text": "vu trong phung so do nxb van hoc dong a thanh phong van chuong va my thuat",
+    "last_pub_year": 2020,
+    "updated_at": "2026-10-20"
+  },
+  {
     "detail": "data/book/e-nesbit-the-railway-children.json",
     "search_text": "e nesbit the railway children lu tre duong ray nxb van hoc dong a dang thu dong a classics bo tui dong a classic hoa van",
     "last_pub_year": 2020,
@@ -1230,10 +1284,52 @@
     "last_pub_year": 2019
   },
   {
+    "detail": "data/book/erich-maria-remarque-schatten-im-paradies.json",
+    "search_text": "erich maria remarque schatten im paradies bong toi thien duong nxb van hoc dong a to hoang",
+    "last_pub_year": 2018,
+    "updated_at": "2026-10-20"
+  },
+  {
     "detail": "data/book/thomas-mann-der-tod-in-venedig.json",
     "search_text": "chet o venice der tod in venedig thomas mann nxb tre nguyen hong van",
     "updated_at": "2026-07-04",
     "last_pub_year": 2018
+  },
+  {
+    "detail": "data/book/erich-maria-remarque-arc-de-triomphe.json",
+    "search_text": "erich maria remarque arc de triomphe khai hoan mon nxb van hoc dong a cao xuan hao",
+    "last_pub_year": 2017,
+    "updated_at": "2026-10-20"
+  },
+  {
+    "detail": "data/book/erich-maria-remarque-der-funke-leben.json",
+    "search_text": "erich maria remarque der funke leben lua thuong yeu lua nguc tu nxb van hoc dong a vu kim thu",
+    "last_pub_year": 2017,
+    "updated_at": "2026-10-20"
+  },
+  {
+    "detail": "data/book/erich-maria-remarque-der-schwarze-obelisk.json",
+    "search_text": "erich maria remarque der schwarze obelisk bia mo den nxb van hoc dong a vu kim thu",
+    "last_pub_year": 2017,
+    "updated_at": "2026-10-20"
+  },
+  {
+    "detail": "data/book/erich-maria-remarque-der-weg-zuruck.json",
+    "search_text": "erich maria remarque der weg zuruck duong ve nxb van hoc dong a vu huong giang",
+    "last_pub_year": 2017,
+    "updated_at": "2026-10-20"
+  },
+  {
+    "detail": "data/book/erich-maria-remarque-die-nacht-von-lissabon.json",
+    "search_text": "erich maria remarque die nacht von lissabon dem lisbon nxb van hoc dong a le khanh",
+    "last_pub_year": 2017,
+    "updated_at": "2026-10-20"
+  },
+  {
+    "detail": "data/book/erich-maria-remarque-zeit-zu-leben-und-zeit-zu-sterben.json",
+    "search_text": "erich maria remarque zeit zu leben und zeit zu sterben thoi gian de song va thoi gian de chet nxb van hoc dong a le phat",
+    "last_pub_year": 2017,
+    "updated_at": "2026-10-20"
   },
   {
     "detail": "data/book/dk-lich-su-the-gioi-lich-su-the-gioi-chan-dung-nhan-loai-theo-dong-su-kien.json",

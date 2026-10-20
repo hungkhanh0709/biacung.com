@@ -8,10 +8,6 @@
     "detail": "data/series/canh-cua-mo-rong.json"
   },
   {
-    "id": "caraval",
-    "detail": "data/series/caraval.json"
-  },
-  {
     "id": "dong-a-classic",
     "detail": "data/series/dong-a-classic.json"
   },
@@ -74,5 +70,9 @@
   {
     "id": "viet-nam-danh-tac-artbook-nha-nam",
     "detail": "data/series/viet-nam-danh-tac-artbook-nha-nam.json"
+  },
+  {
+    "id": "van-chuong-va-my-thuat",
+    "detail": "data/series/van-chuong-va-my-thuat.json"
   }
 ]

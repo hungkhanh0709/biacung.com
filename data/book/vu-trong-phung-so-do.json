@@ -1,0 +1,45 @@
+{
+  "id": "vu-trong-phung-so-do",
+  "title": "Số Đỏ",
+  "title_original": "",
+  "authors": [
+    "Vũ Trọng Phụng"
+  ],
+  "awards": [],
+  "series": [
+    "Văn chương và Mỹ thuật"
+  ],
+  "editions": [
+    {
+      "id": "vu-trong-phung-so-do-2020-dong-a-bia-cung-320k",
+      "isbn": "978-604-9952-51-7",
+      "series_ids": [
+        "van-chuong-va-my-thuat"
+      ],
+      "caption": "",
+      "pub_year": 2020,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Thành Phong"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "320k",
+      "print_run": null,
+      "page_count": 280,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 700,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/so_do_da_b61caff7015243bf9b55da8958465046_master.jpg",
+      "gellery_imgs": [
+        "https://product.hstatic.net/1000328521/product/sodo-20-21_10f96c96a93a48edbee177e6da25bf2e_master.jpg",
+        "https://product.hstatic.net/1000328521/product/sodo-176-177_90e90a2c8a2146309d15438659cabf02_master.jpg"
+      ],
+      "detail": "In màu toàn bộ. Theo bản in của Lê Cường Editeur năm 1938."
+    }
+  ]
+}

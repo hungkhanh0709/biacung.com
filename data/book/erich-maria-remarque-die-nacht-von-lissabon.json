@@ -1,0 +1,38 @@
+{
+  "id": "erich-maria-remarque-die-nacht-von-lissabon",
+  "title": "Đêm Lisbon",
+  "title_original": "Die Nacht von Lissabon",
+  "authors": [
+    "Erich Maria Remarque"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "erich-maria-remarque-die-nacht-von-lissabon-2017-dong-a-bia-mem-70k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2017,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Lê Khánh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "70k",
+      "print_run": null,
+      "page_count": 328,
+      "copy_numbering": null,
+      "size_cm": "14.5 x 20.5",
+      "weight_g": 500,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/3d_dem_lisbon_da_71c4881eec8644a89aa884b8f6f1a8aa_master.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}
