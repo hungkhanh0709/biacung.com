@@ -7,7 +7,8 @@
   ],
   "awards": [],
   "series": [
-    "Việt Nam Danh Tác (Nhã Nam)"
+    "Việt Nam Danh Tác (Nhã Nam)",
+    "Văn chương và Mỹ thuật"
   ],
   "editions": [
     {
@@ -35,6 +36,38 @@
       "thumbnail": "/assets/img/books/nguyen-hong-bi-vo/thumbnail.jpg",
       "gellery_imgs": [],
       "detail": "- Mỗi tựa sách trên sẽ có 555 bản bìa cứng, được đánh số từ 1-555 và được đóng triện Nhã Nam Thư Xã, thiết kế riêng cho bộ sách Việt Nam danh tác.\n- Sách bìa cứng, có bìa áo (jacket). Bìa áo in giấy couché matt cán mờ định lượng 150gsm, tên sách, tên tác giả và bộ Việt Nam danh tác được phủ bóng.\n- Sách khổ 14,5x20,5 cm, in trên giấy tốt định lượng 100 gsm."
+    },
+    {
+      "id": "nguyen-hong-bi-vo-2021-dong-a-bia-cung-320k",
+      "isbn": "978-604-323-864-8",
+      "series_ids": [
+        "van-chuong-va-my-thuat"
+      ],
+      "caption": "",
+      "pub_year": 2021,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Hoàng Phượng Vỹ"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "320k",
+      "print_run": null,
+      "page_count": 256,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 800,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/thumb___logo_94940c9e62e1418d8e3bca7180e1df30_master.jpg",
+      "gellery_imgs": [
+        "https://product.hstatic.net/1000328521/product/thumb_ruot_bi_vo_2_9333c4902bb64431b74d3a78b333b1d4_master.jpg",
+        "https://product.hstatic.net/1000328521/product/thumb_ruot_bi_vo_3_ff83cbfd72344380966eebd44a06c9a1_master.jpg",
+        "https://product.hstatic.net/1000328521/product/thumb_ruot_bi_vo_4_b8090ff4de004001a472706bffd858bd_master.jpg"
+      ],
+      "detail": "In màu toàn bộ. Có 12 minh họa của Hoàng Phượng Vỹ."
     }
   ]
 }

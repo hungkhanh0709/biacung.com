@@ -1,0 +1,46 @@
+{
+  "id": "thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong",
+  "title": "Gió Đầu Mùa & Hà Nội Băm Sáu Phố Phường",
+  "title_original": "",
+  "authors": [
+    "Thạch Lam"
+  ],
+  "awards": [],
+  "series": [
+    "Văn chương và Mỹ thuật"
+  ],
+  "editions": [
+    {
+      "id": "thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong-2022-dong-a-bia-mem-160k",
+      "isbn": "978-604-372-352-6",
+      "series_ids": [
+        "van-chuong-va-my-thuat"
+      ],
+      "caption": "",
+      "pub_year": 2022,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Đào Hải Phong"
+      ],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "160k",
+      "print_run": null,
+      "page_count": 252,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 500,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/gdm_da_ec9f6ce2f4804a3195ef724a8b0df7e8_master.jpg",
+      "gellery_imgs": [
+        "https://product.hstatic.net/1000328521/product/1_98efec1a7124458990f09498fa625243_master.jpg",
+        "https://product.hstatic.net/1000328521/product/2_d9537bb75ef849fbafcf75486f834b6e_master.jpg",
+        "https://product.hstatic.net/1000328521/product/3_4a45f5892d27473a9e146b4765be0a5f_master.jpg"
+      ],
+      "detail": ""
+    }
+  ]
+}

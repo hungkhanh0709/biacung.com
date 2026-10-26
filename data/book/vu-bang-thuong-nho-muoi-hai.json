@@ -1,0 +1,46 @@
+{
+  "id": "vu-bang-thuong-nho-muoi-hai",
+  "title": "Thương Nhớ Mười Hai",
+  "title_original": "",
+  "authors": [
+    "Vũ Bằng"
+  ],
+  "awards": [],
+  "series": [
+    "Văn chương và Mỹ thuật"
+  ],
+  "editions": [
+    {
+      "id": "vu-bang-thuong-nho-muoi-hai-2021-dong-a-bia-cung-350k",
+      "isbn": "978-604-323-818-1",
+      "series_ids": [
+        "van-chuong-va-my-thuat"
+      ],
+      "caption": "",
+      "pub_year": 2021,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Duy Hưng"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "350k",
+      "print_run": null,
+      "page_count": 300,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 800,
+      "thumbnail": "https://product.hstatic.net/1000328521/product/thuong_nho_12_da_9e0856283a16485d97fbbb6deb60f7fc_master.jpg",
+      "gellery_imgs": [
+        "https://product.hstatic.net/1000328521/product/thumb_ruot_thuong_nho_12_38-39_fcb2ac8d70cb41299497f8161a050bae_master.jpg",
+        "https://product.hstatic.net/1000328521/product/thumb_ruot_thuong_nho_12_1_6c2709728c5d4d83a1f36c4c2dff06d5_master.jpg",
+        "https://product.hstatic.net/1000328521/product/thumb_ruot_thuong_nho_12_2_fe8828d084634c5ba8d1621130cc56ac_master.jpg"
+      ],
+      "detail": "In màu toàn bộ. Có minh họa cho 13 chương của Duy Hưng."
+    }
+  ]
+}
