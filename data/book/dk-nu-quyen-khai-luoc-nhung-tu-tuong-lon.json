@@ -6,13 +6,18 @@
     "DK"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Khái lược những tư tưởng lớn"
+  ],
   "editions": [
     {
-      "id": "dk-nu-quyen-khai-luoc-nhung-tu-tuong-lon-2022-dong-a-bia-cung-390",
-      "isbn": "978-604-344-999-0",
+      "id": "dk-nu-quyen-khai-luoc-nhung-tu-tuong-lon-dong-a-bia-cung-450k",
+      "isbn": "978-604-88-8774-2",
+      "series_ids": [
+        "khai-luoc-nhung-tu-tuong-lon"
+      ],
       "caption": "",
-      "pub_year": 2022,
+      "pub_year": null,
       "publisher": "NXB Dân Trí",
       "issuers": [
         "Đông A"
@@ -23,7 +28,7 @@
       "illustrators": [],
       "proofreaders": [],
       "format": "Bìa cứng",
-      "cover_price": "390",
+      "cover_price": "450k",
       "print_run": null,
       "page_count": 352,
       "copy_numbering": null,
@@ -31,7 +36,7 @@
       "weight_g": 1200,
       "thumbnail": "https://product.hstatic.net/1000328521/product/111_4bdfcb3951d448e2a422e13c250b1205_master.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "Bìa cứng, có áo, in màu toàn bộ."
     }
   ]
 }
