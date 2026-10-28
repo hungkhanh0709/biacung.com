@@ -1,0 +1,40 @@
+{
+  "id": "nguyen-huy-thiep-tuong-ve-huu",
+  "title": "Tướng về hưu",
+  "title_original": "",
+  "authors": [
+    "Nguyễn Huy Thiệp"
+  ],
+  "awards": [],
+  "series": [
+    "Việt Nam Danh Tác (Nhã Nam)"
+  ],
+  "editions": [
+    {
+      "id": "nguyen-huy-thiep-tuong-ve-huu-2026-nha-nam-bia-cung-ao-om-228k",
+      "isbn": null,
+      "series_ids": [
+        "viet-nam-danh-tac-nha-nam"
+      ],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2026,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "228k",
+      "print_run": 555,
+      "page_count": 320,
+      "copy_numbering": "001-555",
+      "size_cm": "14.5 x 20.5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/nguyen-huy-thiep-tuong-ve-huu/nha-nam-viet-nam-danh-tac-cover-photo.jpg",
+      "gellery_imgs": [],
+      "detail": "- Ấn bản bìa cứng giới hạn 555 bản, đánh số từ 001-555.\n- Khổ sách 14,5 x 20,5 cm.\n- Kiểu đóng: Khâu chỉ vào keo nhiệt.\n- Giấy Bãi bằng 100gsm; độ trắng 76-78; màu in 1/1.\n- Bìa áo: C180 cán mờ gấp mép phủ UV; màu in 4/0.\n- Bìa cứng: C180 cán mờ bồi vào carton; màu in 4/0.\n- Tờ gác: Offset140; màu in 4/4."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "thach-lam-nang-trong-vuon",
+  "title": "Nắng trong vườn",
+  "title_original": "",
+  "authors": [
+    "Thạch Lam"
+  ],
+  "awards": [],
+  "series": [
+    "Việt Nam Danh Tác (Nhã Nam)"
+  ],
+  "editions": [
+    {
+      "id": "thach-lam-nang-trong-vuon-2023-nha-nam-bia-cung-ao-om-170k",
+      "isbn": null,
+      "series_ids": [
+        "viet-nam-danh-tac-nha-nam"
+      ],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2023,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "170k",
+      "print_run": 555,
+      "page_count": 170,
+      "copy_numbering": "001-555",
+      "size_cm": "14.5 x 20.5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/thach-lam-nang-trong-vuon/nha-nam-viet-nam-danh-tac-cover-photo.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/thach-lam-nang-trong-vuon/nha-nam-viet-nam-danh-tac-title-pages.jpg"
+      ],
+      "detail": "- Ấn bản bìa cứng giới hạn 555 bản, đánh số từ 001-555.\n- Đóng triện Nhã Nam Thư Xã, thiết kế riêng cho bộ sách Việt Nam Danh Tác.\n- Sách có bìa áo (jacket). Bìa áo in giấy couché matt cán mờ định lượng 150gsm; tên sách, tên tác giả và tên bộ sách được phủ bóng.\n- Khổ sách 14,5 x 20,5 cm; ruột in trên giấy tốt định lượng 100gsm."
+    }
+  ]
+}
