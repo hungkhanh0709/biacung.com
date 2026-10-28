@@ -6,11 +6,16 @@
     "DK"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Khái lược những tư tưởng lớn"
+  ],
   "editions": [
     {
-      "id": "dk-kinh-te-hoc-khai-luoc-nhung-tu-tuong-lon-2023-dong-a-450k",
+      "id": "dk-kinh-te-hoc-khai-luoc-nhung-tu-tuong-lon-2023-dong-a-bia-cung-450k",
       "isbn": null,
+      "series_ids": [
+        "khai-luoc-nhung-tu-tuong-lon"
+      ],
       "caption": "",
       "pub_year": 2023,
       "publisher": "NXB Dân Trí",

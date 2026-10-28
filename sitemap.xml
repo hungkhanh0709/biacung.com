@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://biacung.com/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/about</loc>
@@ -520,11 +520,11 @@
   </url>
   <url>
     <loc>https://biacung.com/chauchaubook/works</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=50-nam-fahasa</loc>
@@ -548,7 +548,7 @@
   </url>
   <url>
     <loc>https://biacung.com/series?id=moi-nha-van-mot-tac-pham</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=sach-tet-dong-a</loc>
@@ -568,7 +568,7 @@
   </url>
   <url>
     <loc>https://biacung.com/series?id=viet-nam-danh-tac-nha-nam</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=dong-a-classics-bo-tui</loc>
@@ -583,20 +583,28 @@
     <lastmod>2026-09-14</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/series?id=viet-nam-danh-tac-nha-nam</loc>
-    <lastmod>2026-10-20</lastmod>
-  </url>
-  <url>
     <loc>https://biacung.com/series?id=viet-nam-danh-tac-tho-nha-nam</loc>
     <lastmod>2026-09-19</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=viet-nam-danh-tac-artbook-nha-nam</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=van-chuong-va-my-thuat</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=khai-hung-doi-mua-gio</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=nguyen-huy-thiep-tuong-ve-huu</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=thach-lam-ha-noi-bam-sau-pho-phuong</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=herman-koch-het-diner</loc>
@@ -613,10 +621,6 @@
   <url>
     <loc>https://biacung.com/detail?id=y-nhi-con-ngua-tren-bai-bien</loc>
     <lastmod>2026-10-13</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=thach-lam-ha-noi-bam-sau-pho-phuong</loc>
-    <lastmod>2026-10-10</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=la-quan-trung-tam-quoc-dien-nghia</loc>
@@ -644,10 +648,6 @@
   </url>
   <url>
     <loc>https://biacung.com/detail?id=kawabata-yasunari-co-do</loc>
-    <lastmod>2026-09-14</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=khai-hung-doi-mua-gio</loc>
     <lastmod>2026-09-14</lastmod>
   </url>
   <url>
@@ -883,10 +883,6 @@
     <lastmod>2026-07-06</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=vu-bang-mieng-ngon-ha-noi</loc>
-    <lastmod>2026-07-06</lastmod>
-  </url>
-  <url>
     <loc>https://biacung.com/detail?id=hoang-nam-tien-sach-thu-cho-em</loc>
     <lastmod>2026-07-05</lastmod>
   </url>
@@ -1111,6 +1107,54 @@
     <lastmod>2026-07-05</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=khai-hung-ganh-hang-hoa</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ngo-tat-to-viec-lang</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=nguyen-hong-nhung-ngay-tho-au</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=nguyen-tuan-chiec-lu-dong-mat-cua</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=nhat-linh-buom-trang</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=tchya-ai-hat-giua-rung-khuya</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=thach-lam-gio-dau-mua</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=thach-lam-nang-trong-vuon</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=thach-lam-ngay-moi</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=thach-lam-soi-toc</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=vu-bang-mieng-ngon-ha-noi</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=vu-trong-phung-so-do</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=anna-sewell-black-beauty</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
@@ -1203,11 +1247,87 @@
     <lastmod>2026-07-02</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=nam-cao-doi-lua-xung-doi-nua-dem-cuoi</loc>
-    <lastmod>2026-10-20</lastmod>
+    <loc>https://biacung.com/detail?id=bui-hien-nam-va</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ho-dzenh-chan-troi-cu</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=hoang-ngoc-phach-to-tam</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=khai-hung-hon-buom-mo-tien</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=khai-hung-tieu-son-trang-si</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=lan-khai-truyen-duong-rung</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=nam-cao-song-mon</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ngo-tat-to-leu-chong</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ngo-tat-to-tat-den</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=nguyen-dinh-lap-ngoai-o</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=nguyen-hong-bi-vo</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=nguyen-tuan-chua-dan</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=nguyen-tuan-vang-bong-mot-thoi</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=the-lu-trai-bo-tung-linh</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=the-lu-vang-va-mau</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=trong-lang-ha-noi-lam-than</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=vu-bang-40-nam-noi-lao</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=vu-bang-phu-dung-oi-vinh-biet</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=vu-bang-thuong-nho-muoi-hai</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=vu-trong-phung-giong-to</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=nam-cao-doi-lua-xung-doi-nua-dem-cuoi</loc>
     <lastmod>2026-10-20</lastmod>
   </url>
   <url>
@@ -1239,22 +1359,6 @@
     <lastmod>2026-09-20</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=ho-dzenh-chan-troi-cu</loc>
-    <lastmod>2026-09-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=hoang-ngoc-phach-to-tam</loc>
-    <lastmod>2026-09-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=khai-hung-tieu-son-trang-si</loc>
-    <lastmod>2026-09-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=lan-khai-truyen-duong-rung</loc>
-    <lastmod>2026-09-20</lastmod>
-  </url>
-  <url>
     <loc>https://biacung.com/detail?id=mario-vargas-llosa-conversacion-en-la-catedral</loc>
     <lastmod>2026-09-20</lastmod>
   </url>
@@ -1263,39 +1367,7 @@
     <lastmod>2026-09-20</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=nam-cao-song-mon</loc>
-    <lastmod>2026-09-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=ngo-tat-to-leu-chong</loc>
-    <lastmod>2026-09-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=ngo-tat-to-tat-den</loc>
-    <lastmod>2026-09-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=the-lu-trai-bo-tung-linh</loc>
-    <lastmod>2026-09-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=the-lu-vang-va-mau</loc>
-    <lastmod>2026-09-20</lastmod>
-  </url>
-  <url>
     <loc>https://biacung.com/detail?id=thomas-harris-boxset-hannibal</loc>
-    <lastmod>2026-09-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=trong-lang-ha-noi-lam-than</loc>
-    <lastmod>2026-09-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=vu-bang-40-nam-noi-lao</loc>
-    <lastmod>2026-09-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=vu-trong-phung-giong-to</loc>
     <lastmod>2026-09-20</lastmod>
   </url>
   <url>
@@ -1319,10 +1391,6 @@
     <lastmod>2026-07-05</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=dk-nu-quyen-khai-luoc-nhung-tu-tuong-lon</loc>
-    <lastmod>2026-07-04</lastmod>
-  </url>
-  <url>
     <loc>https://biacung.com/detail?id=dk-van-hoc-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
   </url>
@@ -1332,10 +1400,6 @@
   </url>
   <url>
     <loc>https://biacung.com/detail?id=kim-lan-nguoi-kep-gia</loc>
-    <lastmod>2026-10-20</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=vu-bang-thuong-nho-muoi-hai</loc>
     <lastmod>2026-10-20</lastmod>
   </url>
   <url>
@@ -1409,10 +1473,6 @@
   <url>
     <loc>https://biacung.com/detail?id=dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do</loc>
     <lastmod>2026-07-11</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=vu-trong-phung-so-do</loc>
-    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=e-nesbit-the-railway-children</loc>
@@ -1608,6 +1668,10 @@
   </url>
   <url>
     <loc>https://biacung.com/detail?id=dk-nghe-thuat-khai-luoc-nhung-tu-tuong-lon</loc>
+    <lastmod>2026-07-04</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=dk-nu-quyen-khai-luoc-nhung-tu-tuong-lon</loc>
     <lastmod>2026-07-04</lastmod>
   </url>
   <url>

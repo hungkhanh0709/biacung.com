@@ -6,11 +6,16 @@
     "DK"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Khái lược những tư tưởng lớn"
+  ],
   "editions": [
     {
-      "id": "dk-ton-giao-khai-luoc-nhung-tu-tuong-lon-2019-dong-a-390k",
+      "id": "dk-ton-giao-khai-luoc-nhung-tu-tuong-lon-2019-dong-a-bia-cung-390k",
       "isbn": "978-604-88-6431-6",
+      "series_ids": [
+        "khai-luoc-nhung-tu-tuong-lon"
+      ],
       "caption": "",
       "pub_year": 2019,
       "publisher": "NXB Dân Trí",

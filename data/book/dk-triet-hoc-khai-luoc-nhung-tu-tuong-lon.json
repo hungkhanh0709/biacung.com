@@ -6,11 +6,16 @@
     "DK"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Khái lược những tư tưởng lớn"
+  ],
   "editions": [
     {
-      "id": "dk-triet-hoc-khai-luoc-nhung-tu-tuong-lon-2019-dong-a-390k",
+      "id": "dk-triet-hoc-khai-luoc-nhung-tu-tuong-lon-2019-dong-a-bia-cung-390k",
       "isbn": "978-604-88-6430-9",
+      "series_ids": [
+        "khai-luoc-nhung-tu-tuong-lon"
+      ],
       "caption": "",
       "pub_year": 2019,
       "publisher": "NXB Dân Trí",
@@ -22,7 +27,7 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "",
+      "format": "Bìa cứng",
       "cover_price": "390k",
       "print_run": null,
       "page_count": 352,
