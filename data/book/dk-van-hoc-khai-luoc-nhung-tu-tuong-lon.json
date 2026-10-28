@@ -6,11 +6,16 @@
     "DK"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Khái lược những tư tưởng lớn"
+  ],
   "editions": [
     {
-      "id": "dk-van-hoc-khai-luoc-nhung-tu-tuong-lon-2022-dong-a-bia-cung-390",
+      "id": "dk-van-hoc-khai-luoc-nhung-tu-tuong-lon-2022-dong-a-bia-cung-390k",
       "isbn": "978-604-331-457-1",
+      "series_ids": [
+        "khai-luoc-nhung-tu-tuong-lon"
+      ],
       "caption": "",
       "pub_year": 2022,
       "publisher": "NXB Dân Trí",
@@ -25,7 +30,7 @@
       "illustrators": [],
       "proofreaders": [],
       "format": "Bìa cứng",
-      "cover_price": "390",
+      "cover_price": "390k",
       "print_run": null,
       "page_count": 352,
       "copy_numbering": null,
@@ -33,7 +38,7 @@
       "weight_g": null,
       "thumbnail": "https://product.hstatic.net/1000328521/product/1111_fc147b9c685f4ae888426ab28f010c16_master.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "Bìa cứng, có áo, in màu toàn bộ."
     }
   ]
 }

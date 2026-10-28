@@ -6,11 +6,16 @@
     "DK"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Khái lược những tư tưởng lớn"
+  ],
   "editions": [
     {
       "id": "dk-xa-hoi-hoc-khai-luoc-nhung-tu-tuong-lon-dong-a-bia-cung-450k",
       "isbn": null,
+      "series_ids": [
+        "khai-luoc-nhung-tu-tuong-lon"
+      ],
       "caption": "",
       "pub_year": null,
       "publisher": "NXB Dân Trí",
@@ -31,7 +36,7 @@
       "weight_g": 1200,
       "thumbnail": "https://product.hstatic.net/1000328521/product/1_a8d615bfb58249b3a6b09f4c5055491c_master.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "Bìa cứng, có áo, in màu toàn bộ."
     }
   ]
 }

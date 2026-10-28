@@ -6,11 +6,16 @@
     "DK"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Khái lược những tư tưởng lớn"
+  ],
   "editions": [
     {
-      "id": "dk-tam-li-hoc-khai-luoc-nhung-tu-tuong-lon-dong-a-450k",
+      "id": "dk-tam-li-hoc-khai-luoc-nhung-tu-tuong-lon-dong-a-bia-cung-450k",
       "isbn": "978-604-88-6733-1",
+      "series_ids": [
+        "khai-luoc-nhung-tu-tuong-lon"
+      ],
       "caption": "",
       "pub_year": null,
       "publisher": "NXB Dân Trí",
@@ -22,7 +27,7 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "",
+      "format": "Bìa cứng",
       "cover_price": "450k",
       "print_run": null,
       "page_count": 352,

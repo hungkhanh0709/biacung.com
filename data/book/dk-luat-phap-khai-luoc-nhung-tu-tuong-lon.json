@@ -6,11 +6,16 @@
     "DK"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Khái lược những tư tưởng lớn"
+  ],
   "editions": [
     {
       "id": "dk-luat-phap-khai-luoc-nhung-tu-tuong-lon-dong-a-bia-cung-450k",
       "isbn": "978-604-9996-33-7",
+      "series_ids": [
+        "khai-luoc-nhung-tu-tuong-lon"
+      ],
       "caption": "",
       "pub_year": null,
       "publisher": "NXB Dân Trí",
@@ -31,7 +36,7 @@
       "weight_g": 700,
       "thumbnail": "https://product.hstatic.net/1000328521/product/0-00_9d7d87d4f5364c9680c2e88bad031a78_master.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "Bìa cứng, in màu toàn bộ."
     }
   ]
 }

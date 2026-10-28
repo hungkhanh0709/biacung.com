@@ -6,11 +6,16 @@
     "DK"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Khái lược những tư tưởng lớn"
+  ],
   "editions": [
     {
       "id": "dk-khoa-hoc-khai-luoc-nhung-tu-tuong-lon-2023-dong-a-bia-cung-450k",
       "isbn": null,
+      "series_ids": [
+        "khai-luoc-nhung-tu-tuong-lon"
+      ],
       "caption": "",
       "pub_year": 2023,
       "publisher": "NXB Dân Trí",
@@ -31,7 +36,7 @@
       "weight_g": null,
       "thumbnail": "https://product.hstatic.net/1000328521/product/11_794e5c41ad284a189dcfe706570e0864_master.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "Bìa cứng, có áo, in màu toàn bộ."
     }
   ]
 }
