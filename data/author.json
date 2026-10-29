@@ -528,7 +528,8 @@
     "work_ids": [
       "vu-bang-mieng-ngon-ha-noi",
       "vu-bang-40-nam-noi-lao",
-      "vu-bang-thuong-nho-muoi-hai"
+      "vu-bang-thuong-nho-muoi-hai",
+      "vu-bang-phu-dung-oi-vinh-biet"
     ]
   },
   {
@@ -536,7 +537,11 @@
     "name": "Thạch Lam",
     "work_ids": [
       "thach-lam-ha-noi-bam-sau-pho-phuong",
-      "thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong"
+      "thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong",
+      "thach-lam-ngay-moi",
+      "thach-lam-gio-dau-mua",
+      "thach-lam-nang-trong-vuon",
+      "thach-lam-soi-toc"
     ]
   },
   {
@@ -1064,14 +1069,18 @@
     "name": "Khái Hưng",
     "work_ids": [
       "khai-hung-doi-mua-gio",
-      "khai-hung-tieu-son-trang-si"
+      "khai-hung-tieu-son-trang-si",
+      "khai-hung-ganh-hang-hoa",
+      "khai-hung-hon-buom-mo-tien"
     ]
   },
   {
     "id": "nhat-linh",
     "name": "Nhất Linh",
     "work_ids": [
-      "khai-hung-doi-mua-gio"
+      "khai-hung-doi-mua-gio",
+      "khai-hung-ganh-hang-hoa",
+      "nhat-linh-buom-trang"
     ]
   },
   {
@@ -1223,7 +1232,8 @@
     "name": "Ngô Tất Tố",
     "work_ids": [
       "ngo-tat-to-leu-chong",
-      "ngo-tat-to-tat-den"
+      "ngo-tat-to-tat-den",
+      "ngo-tat-to-viec-lang"
     ]
   },
   {
@@ -1253,7 +1263,8 @@
     "id": "nguyen-hong",
     "name": "Nguyên Hồng",
     "work_ids": [
-      "nguyen-hong-bi-vo"
+      "nguyen-hong-bi-vo",
+      "nguyen-hong-nhung-ngay-tho-au"
     ]
   },
   {
@@ -1389,6 +1400,43 @@
     "name": "Kim Lân",
     "work_ids": [
       "kim-lan-nguoi-kep-gia"
+    ]
+  },
+  {
+    "id": "nguyen-huy-thiep",
+    "name": "Nguyễn Huy Thiệp",
+    "work_ids": [
+      "nguyen-huy-thiep-tuong-ve-huu"
+    ]
+  },
+  {
+    "id": "tchya",
+    "name": "Tchya",
+    "work_ids": [
+      "tchya-ai-hat-giua-rung-khuya"
+    ]
+  },
+  {
+    "id": "nguyen-tuan",
+    "name": "Nguyễn Tuân",
+    "work_ids": [
+      "nguyen-tuan-chiec-lu-dong-mat-cua",
+      "nguyen-tuan-vang-bong-mot-thoi",
+      "nguyen-tuan-chua-dan"
+    ]
+  },
+  {
+    "id": "bui-hien",
+    "name": "Bùi Hiển",
+    "work_ids": [
+      "bui-hien-nam-va"
+    ]
+  },
+  {
+    "id": "nguyen-dinh-lap",
+    "name": "Nguyễn Đình Lạp",
+    "work_ids": [
+      "nguyen-dinh-lap-ngoai-o"
     ]
   }
 ]

@@ -1,5 +1,23 @@
 [
   {
+    "detail": "data/book/khai-hung-doi-mua-gio.json",
+    "search_text": "khai hung nhat linh doi mua gio nxb ha noi nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2026,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/nguyen-huy-thiep-tuong-ve-huu.json",
+    "search_text": "nguyen huy thiep tuong ve huu nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2026,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/thach-lam-ha-noi-bam-sau-pho-phuong.json",
+    "search_text": "thach lam ha noi bam sau pho phuong nxb ha noi nxb hoi nha van nha nam viet nam danh tac nha nam viet nam danh tac artbook nha nam bia cung gioi han",
+    "updated_at": "2026-10-28",
+    "last_pub_year": 2026
+  },
+  {
     "detail": "data/book/herman-koch-het-diner.json",
     "search_text": "herman koch het diner bua toi nxb van hoc nha nam doan huong giang bia cung gioi han",
     "last_pub_year": 2026,
@@ -22,12 +40,6 @@
     "search_text": "y nhi con ngua tren bai bien nxb dan tri dong a van moi dong a",
     "last_pub_year": 2026,
     "updated_at": "2026-10-13"
-  },
-  {
-    "detail": "data/book/thach-lam-ha-noi-bam-sau-pho-phuong.json",
-    "search_text": "thach lam ha noi bam sau pho phuong nxb ha noi nxb hoi nha van nha nam viet nam danh tac nha nam viet nam danh tac artbook nha nam bia cung gioi han vietnamdanhtacnhanam",
-    "updated_at": "2026-10-10",
-    "last_pub_year": 2026
   },
   {
     "detail": "data/book/la-quan-trung-tam-quoc-dien-nghia.json",
@@ -68,12 +80,6 @@
   {
     "detail": "data/book/kawabata-yasunari-co-do.json",
     "search_text": "kawabata yasunari co do nxb ha noi nha nam ngoc chan bia cung gioi han",
-    "last_pub_year": 2026,
-    "updated_at": "2026-09-14"
-  },
-  {
-    "detail": "data/book/khai-hung-doi-mua-gio.json",
-    "search_text": "khai hung nhat linh doi mua gio nxb ha noi nha nam viet nam danh tac nha nam bia cung gioi han",
     "last_pub_year": 2026,
     "updated_at": "2026-09-14"
   },
@@ -426,12 +432,6 @@
     "last_pub_year": 2026
   },
   {
-    "detail": "data/book/vu-bang-mieng-ngon-ha-noi.json",
-    "search_text": "vu bang mieng ngon ha noi nxb hoi nha van nha nam viet nam danh tac nha nam",
-    "updated_at": "2026-07-06",
-    "last_pub_year": 2026
-  },
-  {
     "detail": "data/book/hoang-nam-tien-sach-thu-cho-em.json",
     "search_text": "thu cho em hoang nam tien 50 nam fahasa nxb hoi nha van nha nam",
     "updated_at": "2026-07-05",
@@ -768,6 +768,78 @@
     "last_pub_year": 2024
   },
   {
+    "detail": "data/book/khai-hung-ganh-hang-hoa.json",
+    "search_text": "khai hung nhat linh ganh hang hoa nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2023,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/ngo-tat-to-viec-lang.json",
+    "search_text": "ngo tat to viec lang nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2023,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/nguyen-hong-nhung-ngay-tho-au.json",
+    "search_text": "nguyen hong nhung ngay tho au nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2023,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/nguyen-tuan-chiec-lu-dong-mat-cua.json",
+    "search_text": "nguyen tuan chiec lu dong mat cua nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2023,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/nhat-linh-buom-trang.json",
+    "search_text": "nhat linh buom trang nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2023,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/tchya-ai-hat-giua-rung-khuya.json",
+    "search_text": "tchya ai hat giua rung khuya nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2023,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/thach-lam-gio-dau-mua.json",
+    "search_text": "thach lam gio dau mua nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2023,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/thach-lam-nang-trong-vuon.json",
+    "search_text": "thach lam nang trong vuon nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2023,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/thach-lam-ngay-moi.json",
+    "search_text": "thach lam ngay moi nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2023,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/thach-lam-soi-toc.json",
+    "search_text": "thach lam soi toc nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2023,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/vu-bang-mieng-ngon-ha-noi.json",
+    "search_text": "vu bang mieng ngon ha noi nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "updated_at": "2026-10-28",
+    "last_pub_year": 2023
+  },
+  {
+    "detail": "data/book/vu-trong-phung-so-do.json",
+    "search_text": "vu trong phung so do nxb van hoc nxb hoi nha van dong a nha nam thanh phong van chuong va my thuat viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2023,
+    "updated_at": "2026-10-28"
+  },
+  {
     "detail": "data/book/anna-sewell-black-beauty.json",
     "search_text": "anna sewell black beauty ngua o yeu dau nxb van hoc dong a thanh van dong a classics bo tui dong a classic hoa van",
     "last_pub_year": 2023,
@@ -906,14 +978,128 @@
     "last_pub_year": 2023
   },
   {
-    "detail": "data/book/nam-cao-doi-lua-xung-doi-nua-dem-cuoi.json",
-    "search_text": "nam cao doi lua xung doi nua dem cuoi nxb van hoc dong a dang xuan hoa van chuong va my thuat",
+    "detail": "data/book/bui-hien-nam-va.json",
+    "search_text": "bui hien nam va nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
     "last_pub_year": 2022,
-    "updated_at": "2026-10-20"
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/ho-dzenh-chan-troi-cu.json",
+    "search_text": "ho dzenh chan troi cu nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/hoang-ngoc-phach-to-tam.json",
+    "search_text": "hoang ngoc phach to tam nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/khai-hung-hon-buom-mo-tien.json",
+    "search_text": "khai hung hon buom mo tien nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/khai-hung-tieu-son-trang-si.json",
+    "search_text": "khai hung tieu son trang si nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/lan-khai-truyen-duong-rung.json",
+    "search_text": "lan khai truyen duong rung nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/nam-cao-song-mon.json",
+    "search_text": "nam cao song mon nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/ngo-tat-to-leu-chong.json",
+    "search_text": "ngo tat to leu chong nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/ngo-tat-to-tat-den.json",
+    "search_text": "ngo tat to tat den nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/nguyen-dinh-lap-ngoai-o.json",
+    "search_text": "nguyen dinh lap ngoai o nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
   },
   {
     "detail": "data/book/nguyen-hong-bi-vo.json",
-    "search_text": "nguyen hong bi vo nxb van hoc nxb hoi nha van dong a nha nam hoang phuong vy viet nam danh tac nha nam van chuong va my thuat bia cung gioi han",
+    "search_text": "nguyen hong bi vo nxb hoi nha van nxb van hoc nha nam dong a hoang phuong vy viet nam danh tac nha nam van chuong va my thuat bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/nguyen-tuan-chua-dan.json",
+    "search_text": "nguyen tuan chua dan nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/nguyen-tuan-vang-bong-mot-thoi.json",
+    "search_text": "nguyen tuan vang bong mot thoi nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/the-lu-trai-bo-tung-linh.json",
+    "search_text": "the lu trai bo tung linh nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/the-lu-vang-va-mau.json",
+    "search_text": "the lu vang va mau nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/trong-lang-ha-noi-lam-than.json",
+    "search_text": "trong lang ha noi lam than nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/vu-bang-40-nam-noi-lao.json",
+    "search_text": "vu bang 40 nam noi lao nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/vu-bang-phu-dung-oi-vinh-biet.json",
+    "search_text": "vu bang phu dung oi vinh biet nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/vu-bang-thuong-nho-muoi-hai.json",
+    "search_text": "vu bang thuong nho muoi hai nxb van hoc nxb hoi nha van dong a nha nam duy hung van chuong va my thuat viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/vu-trong-phung-giong-to.json",
+    "search_text": "vu trong phung giong to nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-10-28"
+  },
+  {
+    "detail": "data/book/nam-cao-doi-lua-xung-doi-nua-dem-cuoi.json",
+    "search_text": "nam cao doi lua xung doi nua dem cuoi nxb van hoc dong a dang xuan hoa van chuong va my thuat",
     "last_pub_year": 2022,
     "updated_at": "2026-10-20"
   },
@@ -960,30 +1146,6 @@
     "updated_at": "2026-09-20"
   },
   {
-    "detail": "data/book/ho-dzenh-chan-troi-cu.json",
-    "search_text": "ho dzenh chan troi cu nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
-    "last_pub_year": 2022,
-    "updated_at": "2026-09-20"
-  },
-  {
-    "detail": "data/book/hoang-ngoc-phach-to-tam.json",
-    "search_text": "hoang ngoc phach to tam nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
-    "last_pub_year": 2022,
-    "updated_at": "2026-09-20"
-  },
-  {
-    "detail": "data/book/khai-hung-tieu-son-trang-si.json",
-    "search_text": "khai hung tieu son trang si nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
-    "last_pub_year": 2022,
-    "updated_at": "2026-09-20"
-  },
-  {
-    "detail": "data/book/lan-khai-truyen-duong-rung.json",
-    "search_text": "lan khai truyen duong rung nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
-    "last_pub_year": 2022,
-    "updated_at": "2026-09-20"
-  },
-  {
     "detail": "data/book/mario-vargas-llosa-conversacion-en-la-catedral.json",
     "search_text": "mario vargas llosa conversacion en la catedral tro chuyen trong quan la catedral nxb van hoc nha nam pham van bia cung gioi han",
     "last_pub_year": 2022,
@@ -996,56 +1158,8 @@
     "updated_at": "2026-09-20"
   },
   {
-    "detail": "data/book/nam-cao-song-mon.json",
-    "search_text": "nam cao song mon nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
-    "last_pub_year": 2022,
-    "updated_at": "2026-09-20"
-  },
-  {
-    "detail": "data/book/ngo-tat-to-leu-chong.json",
-    "search_text": "ngo tat to leu chong nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
-    "last_pub_year": 2022,
-    "updated_at": "2026-09-20"
-  },
-  {
-    "detail": "data/book/ngo-tat-to-tat-den.json",
-    "search_text": "ngo tat to tat den nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
-    "last_pub_year": 2022,
-    "updated_at": "2026-09-20"
-  },
-  {
-    "detail": "data/book/the-lu-trai-bo-tung-linh.json",
-    "search_text": "the lu trai bo tung linh nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
-    "last_pub_year": 2022,
-    "updated_at": "2026-09-20"
-  },
-  {
-    "detail": "data/book/the-lu-vang-va-mau.json",
-    "search_text": "the lu vang va mau nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
-    "last_pub_year": 2022,
-    "updated_at": "2026-09-20"
-  },
-  {
     "detail": "data/book/thomas-harris-boxset-hannibal.json",
     "search_text": "thomas harris boxset hannibal nxb hoi nha van nha nam bia cung gioi han",
-    "last_pub_year": 2022,
-    "updated_at": "2026-09-20"
-  },
-  {
-    "detail": "data/book/trong-lang-ha-noi-lam-than.json",
-    "search_text": "trong lang ha noi lam than nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
-    "last_pub_year": 2022,
-    "updated_at": "2026-09-20"
-  },
-  {
-    "detail": "data/book/vu-bang-40-nam-noi-lao.json",
-    "search_text": "vu bang 40 nam noi lao nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
-    "last_pub_year": 2022,
-    "updated_at": "2026-09-20"
-  },
-  {
-    "detail": "data/book/vu-trong-phung-giong-to.json",
-    "search_text": "vu trong phung giong to nxb hoi nha van nha nam viet nam danh tac nha nam bia cung gioi han",
     "last_pub_year": 2022,
     "updated_at": "2026-09-20"
   },
@@ -1080,12 +1194,6 @@
     "last_pub_year": 2022
   },
   {
-    "detail": "data/book/dk-nu-quyen-khai-luoc-nhung-tu-tuong-lon.json",
-    "search_text": "nu quyen khai luoc nhung tu tuong lon dk nxb dan tri dong a kim oanh",
-    "updated_at": "2026-07-04",
-    "last_pub_year": 2022
-  },
-  {
     "detail": "data/book/dk-van-hoc-khai-luoc-nhung-tu-tuong-lon.json",
     "search_text": "van hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a ngoc tan yen nhi hong vy",
     "updated_at": "2026-07-04",
@@ -1100,12 +1208,6 @@
   {
     "detail": "data/book/kim-lan-nguoi-kep-gia.json",
     "search_text": "kim lan nguoi kep gia nxb hoi nha van dong a thanh chuong van chuong va my thuat",
-    "last_pub_year": 2021,
-    "updated_at": "2026-10-20"
-  },
-  {
-    "detail": "data/book/vu-bang-thuong-nho-muoi-hai.json",
-    "search_text": "vu bang thuong nho muoi hai nxb van hoc dong a duy hung van chuong va my thuat",
     "last_pub_year": 2021,
     "updated_at": "2026-10-20"
   },
@@ -1216,12 +1318,6 @@
     "search_text": "mahabharata bang hinh thien su thi vi dai nhat cua an do dk nxb dan tri dong a le thi oanh ho anh thai",
     "last_pub_year": 2021,
     "updated_at": "2026-07-11"
-  },
-  {
-    "detail": "data/book/vu-trong-phung-so-do.json",
-    "search_text": "vu trong phung so do nxb van hoc dong a thanh phong van chuong va my thuat",
-    "last_pub_year": 2020,
-    "updated_at": "2026-10-20"
   },
   {
     "detail": "data/book/e-nesbit-the-railway-children.json",
@@ -1514,6 +1610,12 @@
   {
     "detail": "data/book/dk-nghe-thuat-khai-luoc-nhung-tu-tuong-lon.json",
     "search_text": "nghe thuat khai luoc nhung tu tuong lon dk nxb dan tri dong a thanh loan",
+    "updated_at": "2026-07-04",
+    "last_pub_year": ""
+  },
+  {
+    "detail": "data/book/dk-nu-quyen-khai-luoc-nhung-tu-tuong-lon.json",
+    "search_text": "nu quyen khai luoc nhung tu tuong lon dk nxb dan tri dong a kim oanh",
     "updated_at": "2026-07-04",
     "last_pub_year": ""
   },
