@@ -1,0 +1,77 @@
+{
+  "id": "ho-anh-thai-sach-tet-giap-thin-2024",
+  "title": "Sách Tết Giáp Thìn 2024",
+  "title_original": "",
+  "authors": [
+    "Hồ Anh Thái (tuyển chọn)"
+  ],
+  "awards": [],
+  "series": [
+    "Sách Tết Đông A"
+  ],
+  "editions": [
+    {
+      "id": "ho-anh-thai-sach-tet-giap-thin-2024-2024-dong-a-bia-cung-1200k",
+      "isbn": null,
+      "series_ids": [
+        "sach-tet-dong-a"
+      ],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2024,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "1200k",
+      "print_run": 500,
+      "page_count": null,
+      "copy_numbering": "ST 0001 - ST 0500",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/ho-anh-thai-sach-tet-giap-thin-2024/dong-a-bia-cung-set.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/ho-anh-thai-sach-tet-giap-thin-2024/dong-a-bia-cung-cover-on-box.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-giap-thin-2024/dong-a-interior-illustration.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-giap-thin-2024/dong-a-interior-illustration-2.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-giap-thin-2024/dong-a-bia-cung-box.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-giap-thin-2024/dong-a-bia-cung-artwork.jpg"
+      ],
+      "detail": "- Hợp tuyển văn thơ nhạc họa chủ đề mùa xuân và ngày Tết.\n- Hồ Anh Thái tuyển chọn.\n- Bản giới hạn bìa cứng, số lượng 500 bản.\n- Đánh số nhảy từ ST 0001 đến ST 0500; mỗi bản phát hành là duy nhất.\n- Kèm hộp sơn mài.\n- Tặng kèm tranh sơn mài."
+    },
+    {
+      "id": "ho-anh-thai-sach-tet-giap-thin-2024-2024-dong-a-bia-mem-399k",
+      "isbn": "978-604-477-763-4",
+      "series_ids": [
+        "sach-tet-dong-a"
+      ],
+      "caption": "Bản Phổ Thông",
+      "pub_year": 2024,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "399k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": "Mỗi cuốn được đánh số thứ tự riêng",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/ho-anh-thai-sach-tet-giap-thin-2024/dong-a-bia-mem-cover-standing.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/ho-anh-thai-sach-tet-giap-thin-2024/dong-a-cover-promo.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-giap-thin-2024/dong-a-cover-and-postcard-promo.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-giap-thin-2024/dong-a-interior-illustration.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-giap-thin-2024/dong-a-interior-illustration-2.jpg"
+      ],
+      "detail": "- Hợp tuyển văn thơ nhạc họa chủ đề mùa xuân và ngày Tết.\n- Hồ Anh Thái tuyển chọn.\n- Bản phổ thông bìa mềm, có bìa áo, in màu toàn bộ.\n- Sách gồm 296 trang, khổ 16,5 x 24 cm.\n- Mỗi cuốn được đánh số thứ tự riêng.\n- Tặng kèm 1 postcard thiết kế đồng bộ."
+    }
+  ]
+}

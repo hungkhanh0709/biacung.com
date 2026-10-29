@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://biacung.com/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/about</loc>
@@ -520,11 +520,11 @@
   </url>
   <url>
     <loc>https://biacung.com/chauchaubook/works</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=50-nam-fahasa</loc>
@@ -548,11 +548,11 @@
   </url>
   <url>
     <loc>https://biacung.com/series?id=moi-nha-van-mot-tac-pham</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=sach-tet-dong-a</loc>
-    <lastmod>2026-07-04</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=tram-nam-nobel</loc>
@@ -593,6 +593,10 @@
   <url>
     <loc>https://biacung.com/series?id=van-chuong-va-my-thuat</loc>
     <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-binh-ngo-2026</loc>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=khai-hung-doi-mua-gio</loc>
@@ -967,6 +971,10 @@
     <lastmod>2026-07-01</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-at-ty-2025</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=erich-maria-remarque-drei-kameraden</loc>
     <lastmod>2026-10-20</lastmod>
   </url>
@@ -1039,10 +1047,6 @@
     <lastmod>2026-07-04</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=sach-tet-binh-ngo-dong-a-2026</loc>
-    <lastmod>2026-07-04</lastmod>
-  </url>
-  <url>
     <loc>https://biacung.com/detail?id=van-moi-10-nam-2015-2025-dong-a</loc>
     <lastmod>2026-07-04</lastmod>
   </url>
@@ -1053,6 +1057,10 @@
   <url>
     <loc>https://biacung.com/detail?id=percival-everett-james</loc>
     <lastmod>2026-07-02</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-giap-thin-2024</loc>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=antoine-galland-nghin-le-mot-dem</loc>
@@ -1105,6 +1113,10 @@
   <url>
     <loc>https://biacung.com/detail?id=thomas-mann-der-zauberberg</loc>
     <lastmod>2026-07-05</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-quy-mao-2023</loc>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=khai-hung-ganh-hang-hoa</loc>
@@ -1245,6 +1257,10 @@
   <url>
     <loc>https://biacung.com/detail?id=mario-puzo-the-sicilian</loc>
     <lastmod>2026-07-02</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-nham-dan-2022</loc>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=bui-hien-nam-va</loc>
@@ -1399,6 +1415,10 @@
     <lastmod>2026-06-30</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-tan-suu-2021</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=kim-lan-nguoi-kep-gia</loc>
     <lastmod>2026-10-20</lastmod>
   </url>
@@ -1475,6 +1495,10 @@
     <lastmod>2026-07-11</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-canh-ty-2020</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=e-nesbit-the-railway-children</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
@@ -1493,6 +1517,10 @@
   <url>
     <loc>https://biacung.com/detail?id=michael-collins-remarkable-books</loc>
     <lastmod>2026-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-ky-hoi-2019</loc>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=dk-lich-su-quan-su-bach-khoa-thu-cac-loai-vu-khi-dinh-hinh-the-gioi</loc>

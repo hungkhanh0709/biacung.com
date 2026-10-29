@@ -2,8 +2,15 @@
     "id": "sach-tet-dong-a",
     "name": "Sách Tết Đông A",
     "description": "",
-    "thumbnail": "https://media.vneconomy.vn/images/upload/2025/01/15/sach-1.jpg",
+    "thumbnail": "/assets/img/series/sach-tet-dong-a.jpg",
     "work_ids": [
-        "sach-tet-binh-ngo-dong-a-2026"
+        "ho-anh-thai-sach-tet-binh-ngo-2026",
+        "ho-anh-thai-sach-tet-at-ty-2025",
+        "ho-anh-thai-sach-tet-giap-thin-2024",
+        "ho-anh-thai-sach-tet-quy-mao-2023",
+        "ho-anh-thai-sach-tet-nham-dan-2022",
+        "ho-anh-thai-sach-tet-tan-suu-2021",
+        "ho-anh-thai-sach-tet-canh-ty-2020",
+        "ho-anh-thai-sach-tet-ky-hoi-2019"
     ]
 }
