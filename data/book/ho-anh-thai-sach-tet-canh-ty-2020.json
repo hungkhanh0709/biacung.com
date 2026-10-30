@@ -1,0 +1,70 @@
+{
+  "id": "ho-anh-thai-sach-tet-canh-ty-2020",
+  "title": "Sách Tết Canh Tý 2020",
+  "title_original": "",
+  "authors": [
+    "Hồ Anh Thái (tuyển chọn)"
+  ],
+  "awards": [],
+  "series": [
+    "Sách Tết Đông A"
+  ],
+  "editions": [
+    {
+      "id": "ho-anh-thai-sach-tet-canh-ty-2020-2020-dong-a-bia-cung-888k",
+      "isbn": null,
+      "series_ids": [
+        "sach-tet-dong-a"
+      ],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2020,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "888k",
+      "print_run": 100,
+      "page_count": null,
+      "copy_numbering": "ST 0001 - ST 0100",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/ho-anh-thai-sach-tet-canh-ty-2020/dong-a-bia-cung-set-display.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/ho-anh-thai-sach-tet-canh-ty-2020/dong-a-interior-illustration-2.jpg"
+      ],
+      "detail": "- Hợp tuyển văn thơ nhạc họa chủ đề mùa xuân và ngày Tết.\n- Bìa cứng, giới hạn 100 bản.\n- Đánh số từ ST 0001 đến ST 0100.\n- Kèm hộp sơn mài truyền thống.\n- Kèm tranh sơn mài “Đám cưới chuột”."
+    },
+    {
+      "id": "ho-anh-thai-sach-tet-canh-ty-2020-2020-dong-a-bia-mem-288k",
+      "isbn": "978-604-9877-31-5",
+      "series_ids": [
+        "sach-tet-dong-a"
+      ],
+      "caption": "Bản Phổ Thông",
+      "pub_year": 2020,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "288k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": "Mỗi cuốn được đánh số thứ tự riêng",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/ho-anh-thai-sach-tet-canh-ty-2020/dong-a-bia-mem-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/ho-anh-thai-sach-tet-canh-ty-2020/dong-a-interior-illustration-2.jpg"
+      ],
+      "detail": "- Hợp tuyển văn thơ nhạc họa chủ đề mùa xuân và ngày Tết.\n- Bản phổ thông bìa mềm, có bìa áo.\n- Mỗi cuốn được đánh số thứ tự riêng.\n- Sách gồm 284 trang, khổ 16,5 x 24 cm."
+    }
+  ]
+}

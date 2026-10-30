@@ -1,0 +1,70 @@
+{
+  "id": "ho-anh-thai-sach-tet-ky-hoi-2019",
+  "title": "Sách Tết Kỷ Hợi 2019",
+  "title_original": "",
+  "authors": [
+    "Hồ Anh Thái (tuyển chọn)"
+  ],
+  "awards": [],
+  "series": [
+    "Sách Tết Đông A"
+  ],
+  "editions": [
+    {
+      "id": "ho-anh-thai-sach-tet-ky-hoi-2019-2019-dong-a-bia-cung-1200k",
+      "isbn": null,
+      "series_ids": [
+        "sach-tet-dong-a"
+      ],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2019,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "1200k",
+      "print_run": 100,
+      "page_count": null,
+      "copy_numbering": "ĐA - 001 đến ĐA - 100",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/ho-anh-thai-sach-tet-ky-hoi-2019/dong-a-bia-cung-set.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/ho-anh-thai-sach-tet-ky-hoi-2019/dong-a-bia-cung-set-open.jpg"
+      ],
+      "detail": "- Hợp tuyển văn thơ nhạc họa chủ đề mùa xuân và ngày Tết.\n- Bìa cứng, in trên giấy Tant White 120 gsm.\n- Giới hạn 100 bản, đánh số từ ĐA - 001 đến ĐA - 100.\n- Đóng dấu đỏ của Đông A.\n- Kèm hộp sơn mài truyền thống.\n- Kèm 1 tranh sơn mài xuân Kỷ Hợi khổ 17,5 x 24,5 cm.\n- Kèm 1 bookmark sơn mài."
+    },
+    {
+      "id": "ho-anh-thai-sach-tet-ky-hoi-2019-2019-dong-a-bia-mem-268k",
+      "isbn": null,
+      "series_ids": [
+        "sach-tet-dong-a"
+      ],
+      "caption": "Bản Phổ Thông",
+      "pub_year": 2019,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "268k",
+      "print_run": 1900,
+      "page_count": null,
+      "copy_numbering": "ST 0001 - ST 1900",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/ho-anh-thai-sach-tet-ky-hoi-2019/dong-a-bia-mem-cover-standing.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/ho-anh-thai-sach-tet-ky-hoi-2019/dong-a-bia-mem-cover.jpg"
+      ],
+      "detail": "- Hợp tuyển văn thơ nhạc họa chủ đề mùa xuân và ngày Tết.\n- Bản phổ thông bìa mềm, số lượng 1.900 bản.\n- Đánh số nhảy từ ST 0001 - ST 1900."
+    }
+  ]
+}

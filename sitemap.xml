@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://biacung.com/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/about</loc>
@@ -520,15 +520,15 @@
   </url>
   <url>
     <loc>https://biacung.com/chauchaubook/works</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=50-nam-fahasa</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=canh-cua-mo-rong</loc>
@@ -548,11 +548,11 @@
   </url>
   <url>
     <loc>https://biacung.com/series?id=moi-nha-van-mot-tac-pham</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=sach-tet-dong-a</loc>
-    <lastmod>2026-07-04</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=tram-nam-nobel</loc>
@@ -580,7 +580,7 @@
   </url>
   <url>
     <loc>https://biacung.com/series?id=dau-an-10-nam-omega</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/series?id=viet-nam-danh-tac-tho-nha-nam</loc>
@@ -593,6 +593,18 @@
   <url>
     <loc>https://biacung.com/series?id=van-chuong-va-my-thuat</loc>
     <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=masashi-kishimoto-naruto</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-binh-ngo-2026</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=mario-puzo-the-godfather</loc>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=khai-hung-doi-mua-gio</loc>
@@ -632,7 +644,7 @@
   </url>
   <url>
     <loc>https://biacung.com/detail?id=lucy-maud-montgomery-anne-of-green-gables</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=sabahattin-ali-kurk-mantolu-madonna</loc>
@@ -652,7 +664,7 @@
   </url>
   <url>
     <loc>https://biacung.com/detail?id=nhieu-tac-gia-boxset-bo-sach-dau-an-10-nam-omega</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=carl-gustav-jung-erinnerungen-traume-gedanken</loc>
@@ -704,10 +716,6 @@
   </url>
   <url>
     <loc>https://biacung.com/detail?id=keigo-higashino-dieu-ky-dieu-cua-tiem-tap-hoa-namiya</loc>
-    <lastmod>2026-09-06</lastmod>
-  </url>
-  <url>
-    <loc>https://biacung.com/detail?id=mario-puzo-the-godfather</loc>
     <lastmod>2026-09-06</lastmod>
   </url>
   <url>
@@ -792,7 +800,7 @@
   </url>
   <url>
     <loc>https://biacung.com/detail?id=nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=homere-odyssee</loc>
@@ -836,15 +844,15 @@
   </url>
   <url>
     <loc>https://biacung.com/detail?id=jk-rowling-harry-potter</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=nguyen-dinh-chieu-luc-van-tien</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=nguyen-du-truyen-kieu</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=emily-jane-bronte-wuthering-heights</loc>
@@ -884,11 +892,11 @@
   </url>
   <url>
     <loc>https://biacung.com/detail?id=hoang-nam-tien-sach-thu-cho-em</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=jose-mauro-de-vasconcelos-boxset-cay-cam-ngot-cua-toi-suoi-am-mat-troi</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=khaled-hosseini-the-kite-runner</loc>
@@ -908,7 +916,7 @@
   </url>
   <url>
     <loc>https://biacung.com/detail?id=nguyen-nhat-anh-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=nguyen-nhat-anh-chuyen-tinh-thi-tran</loc>
@@ -965,6 +973,10 @@
   <url>
     <loc>https://biacung.com/detail?id=ton-tu-ton-tu-binh-phap</loc>
     <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-at-ty-2025</loc>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=erich-maria-remarque-drei-kameraden</loc>
@@ -1039,10 +1051,6 @@
     <lastmod>2026-07-04</lastmod>
   </url>
   <url>
-    <loc>https://biacung.com/detail?id=sach-tet-binh-ngo-dong-a-2026</loc>
-    <lastmod>2026-07-04</lastmod>
-  </url>
-  <url>
     <loc>https://biacung.com/detail?id=van-moi-10-nam-2015-2025-dong-a</loc>
     <lastmod>2026-07-04</lastmod>
   </url>
@@ -1053,6 +1061,10 @@
   <url>
     <loc>https://biacung.com/detail?id=percival-everett-james</loc>
     <lastmod>2026-07-02</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-giap-thin-2024</loc>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=antoine-galland-nghin-le-mot-dem</loc>
@@ -1105,6 +1117,10 @@
   <url>
     <loc>https://biacung.com/detail?id=thomas-mann-der-zauberberg</loc>
     <lastmod>2026-07-05</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-quy-mao-2023</loc>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=khai-hung-ganh-hang-hoa</loc>
@@ -1245,6 +1261,10 @@
   <url>
     <loc>https://biacung.com/detail?id=mario-puzo-the-sicilian</loc>
     <lastmod>2026-07-02</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-nham-dan-2022</loc>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=bui-hien-nam-va</loc>
@@ -1399,6 +1419,10 @@
     <lastmod>2026-06-30</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-tan-suu-2021</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=kim-lan-nguoi-kep-gia</loc>
     <lastmod>2026-10-20</lastmod>
   </url>
@@ -1475,6 +1499,10 @@
     <lastmod>2026-07-11</lastmod>
   </url>
   <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-canh-ty-2020</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
     <loc>https://biacung.com/detail?id=e-nesbit-the-railway-children</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
@@ -1493,6 +1521,10 @@
   <url>
     <loc>https://biacung.com/detail?id=michael-collins-remarkable-books</loc>
     <lastmod>2026-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://biacung.com/detail?id=ho-anh-thai-sach-tet-ky-hoi-2019</loc>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://biacung.com/detail?id=dk-lich-su-quan-su-bach-khoa-thu-cac-loai-vu-khi-dinh-hinh-the-gioi</loc>

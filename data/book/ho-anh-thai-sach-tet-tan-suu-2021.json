@@ -1,0 +1,70 @@
+{
+  "id": "ho-anh-thai-sach-tet-tan-suu-2021",
+  "title": "Sách Tết Tân Sửu 2021",
+  "title_original": "",
+  "authors": [
+    "Hồ Anh Thái (tuyển chọn)"
+  ],
+  "awards": [],
+  "series": [
+    "Sách Tết Đông A"
+  ],
+  "editions": [
+    {
+      "id": "ho-anh-thai-sach-tet-tan-suu-2021-2021-dong-a-bia-cung-999k",
+      "isbn": null,
+      "series_ids": [
+        "sach-tet-dong-a"
+      ],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2021,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "999k",
+      "print_run": 365,
+      "page_count": null,
+      "copy_numbering": "ST 0001 - ST 0365",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/ho-anh-thai-sach-tet-tan-suu-2021/dong-a-bia-cung-set.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/ho-anh-thai-sach-tet-tan-suu-2021/dong-a-interior-illustration.jpg"
+      ],
+      "detail": "- Bản S365.\n- Bản giới hạn bìa cứng, có bìa áo, số lượng 365 bản.\n- In bằng công nghệ mực vi sinh trên giấy trắng mịn Thái Lan định lượng 120 gsm.\n- Đánh số nhảy từ ST 0001 đến ST 0365; mỗi bản phát hành là duy nhất.\n- Kèm hộp đựng sơn mài.\n- Kèm tranh sơn mài kích thước 17,5 x 24,5 cm."
+    },
+    {
+      "id": "ho-anh-thai-sach-tet-tan-suu-2021-2021-dong-a-bia-mem-328k",
+      "isbn": null,
+      "series_ids": [
+        "sach-tet-dong-a"
+      ],
+      "caption": "Bản Phổ Thông",
+      "pub_year": 2021,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "328k",
+      "print_run": 1656,
+      "page_count": null,
+      "copy_numbering": "ST 0366 - ST 2021",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/ho-anh-thai-sach-tet-tan-suu-2021/dong-a-cover-promo.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/ho-anh-thai-sach-tet-tan-suu-2021/dong-a-interior-illustration.jpg"
+      ],
+      "detail": "- Bản phổ thông bìa mềm, có bìa áo, số lượng 1.656 bản.\n- Sách gồm 292 trang.\n- In bằng công nghệ mực vi sinh trên giấy trắng mịn Thái Lan định lượng 120 gsm.\n- Đánh số nhảy từ ST 0366 đến ST 2021."
+    }
+  ]
+}

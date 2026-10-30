@@ -1,0 +1,77 @@
+{
+  "id": "ho-anh-thai-sach-tet-nham-dan-2022",
+  "title": "Sách Tết Nhâm Dần 2022",
+  "title_original": "",
+  "authors": [
+    "Hồ Anh Thái (tuyển chọn)"
+  ],
+  "awards": [],
+  "series": [
+    "Sách Tết Đông A"
+  ],
+  "editions": [
+    {
+      "id": "ho-anh-thai-sach-tet-nham-dan-2022-2022-dong-a-bia-cung-1100k",
+      "isbn": null,
+      "series_ids": [
+        "sach-tet-dong-a"
+      ],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2022,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "1100k",
+      "print_run": 500,
+      "page_count": null,
+      "copy_numbering": "ST 0001 - ST 0500",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/ho-anh-thai-sach-tet-nham-dan-2022/dong-a-bia-cung-cover-standing.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/ho-anh-thai-sach-tet-nham-dan-2022/dong-a-bia-cung-set-open.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-nham-dan-2022/dong-a-bia-cung-box.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-nham-dan-2022/dong-a-bia-cung-artwork.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-nham-dan-2022/dong-a-bia-cung-interior-illustration.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-nham-dan-2022/dong-a-bia-cung-interior-art-section.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-nham-dan-2022/dong-a-bia-cung-interior-music-section.jpg"
+      ],
+      "detail": "- Hợp tuyển văn thơ nhạc họa chủ đề mùa xuân và ngày Tết.\n- Bản giới hạn bìa cứng, số lượng 500 bản.\n- Đánh số nhảy từ ST 0001 đến ST 0500; mỗi bản phát hành là duy nhất.\n- Kèm hộp sơn mài.\n- Tặng kèm tranh sơn mài."
+    },
+    {
+      "id": "ho-anh-thai-sach-tet-nham-dan-2022-2022-dong-a-bia-mem-359k",
+      "isbn": "978-604-349-096-1",
+      "series_ids": [
+        "sach-tet-dong-a"
+      ],
+      "caption": "Bản Phổ Thông",
+      "pub_year": 2022,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "359k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": "Mỗi cuốn được đánh số thứ tự riêng",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/ho-anh-thai-sach-tet-nham-dan-2022/dong-a-cover-photo.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/ho-anh-thai-sach-tet-nham-dan-2022/dong-a-interior-van.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-nham-dan-2022/dong-a-interior-tho.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-nham-dan-2022/dong-a-interior-music.jpg"
+      ],
+      "detail": "- Hợp tuyển văn thơ nhạc họa chủ đề mùa xuân và ngày Tết.\n- Bản phổ thông bìa mềm, có bìa áo, in màu toàn bộ.\n- Sách gồm 304 trang, khổ 16,5 x 24 cm.\n- Mỗi cuốn được đánh số thứ tự riêng."
+    }
+  ]
+}
