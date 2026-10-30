@@ -102,7 +102,7 @@
       "series_ids": [
         "50-nam-fahasa"
       ],
-      "caption": "Ấn Bản Giới Hạn - Bìa Vải - Phiên Bản Độc Quyền 50 Năm Fahasa",
+      "caption": "Kỉ Niệm 50 Năm Fahasa",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -139,7 +139,7 @@
     {
       "id": "mario-puzo-the-godfather-2026-dong-a-bia-cung-990k",
       "isbn": null,
-      "caption": "Bố Già - Ấn Bản Cao Cấp - Bìa Cứng - Phiên Bản Độc Quyền 50 Năm Fahasa",
+      "caption": "Kỉ Niệm 50 Năm Fahasa",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -163,7 +163,10 @@
       "gellery_imgs": [
         "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5161.jpg"
       ],
-      "detail": "Ấn bản cao cấp lần này được thực hiện với khổ lớn 25 x 30 cm, bìa cứng kèm bìa áo, ruột in bốn màu trên giấy Ford 150 gsm và bổ sung 15 minh họa của họa sĩ Art Werger. Tác phẩm sử dụng bản dịch nổi tiếng của Ngọc Thứ Lang, vốn đã gắn bó với nhiều thế hệ độc giả Việt Nam."
+      "detail": "Ấn bản cao cấp lần này được thực hiện với khổ lớn 25 x 30 cm, bìa cứng kèm bìa áo, ruột in bốn màu trên giấy Ford 150 gsm và bổ sung 15 minh họa của họa sĩ Art Werger. Tác phẩm sử dụng bản dịch nổi tiếng của Ngọc Thứ Lang, vốn đã gắn bó với nhiều thế hệ độc giả Việt Nam.",
+      "series_ids": [
+        "50-nam-fahasa"
+      ]
     },
     {
       "id": "mario-puzo-the-godfather-2024-dong-a-bia-mem-200",

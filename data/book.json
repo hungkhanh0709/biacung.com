@@ -1,7 +1,7 @@
 [
   {
     "detail": "data/book/masashi-kishimoto-naruto.json",
-    "search_text": "masashi kishimoto naruto nxb kim dong 50 nam fahasa ban ki niem 50 nam fahasa",
+    "search_text": "masashi kishimoto naruto nxb kim dong boxset 50 nam fahasa ki niem 50 nam fahasa",
     "last_pub_year": 2026,
     "updated_at": "2026-10-30"
   },
@@ -13,8 +13,8 @@
   },
   {
     "detail": "data/book/mario-puzo-the-godfather.json",
-    "search_text": "mario puzo the godfather bo gia nxb van hoc nxb dan tri nxb hoi nha van dong a ngoc thu lang nguyen minh ngoc thu lan art werger 50 nam fahasa s500 phien ban trung thu bia den bia trang an ban gioi han bia vai phien ban doc quyen 50 nam fahasa bo gia an ban cao cap bia cung phien ban doc quyen 50 nam fahasa bo gia an ban ki niem 55 nam xuat ban lan dau bo gia bia cung",
-    "updated_at": "2026-10-29",
+    "search_text": "mario puzo the godfather bo gia nxb dan tri dong a nguyen minh art werger bia mem bia bia cung kem bia ao nxb van hoc ngoc thu lang bia vai ngoc thu lan bia cung nxb hoi nha van 50 nam fahasa phien ban trung thu bia den bia trang ki niem 50 nam fahasa bo gia an ban ki niem 55 nam xuat ban lan dau bo gia bia cung s500",
+    "updated_at": "2026-10-30",
     "last_pub_year": 2026
   },
   {
@@ -73,8 +73,8 @@
   },
   {
     "detail": "data/book/lucy-maud-montgomery-anne-of-green-gables.json",
-    "search_text": "lucy maud montgomery anne of green gables anne toc do nxb hoi nha van nha nam 50 nam fahasa boxset anne toc do hop 8 tap phien ban doc quyen 50 nam fahasa bia cung gioi han",
-    "updated_at": "2026-09-20",
+    "search_text": "lucy maud montgomery anne of green gables anne toc do nxb hoi nha van nha nam boxset bia mem boxset bia cung 50 nam fahasa ki niem 50 nam fahasa bia cung gioi han",
+    "updated_at": "2026-10-30",
     "last_pub_year": 2026
   },
   {
@@ -103,9 +103,9 @@
   },
   {
     "detail": "data/book/nhieu-tac-gia-boxset-bo-sach-dau-an-10-nam-omega.json",
-    "search_text": "nhieu tac gia boxset bo sach dau an 10 nam omega nxb the gioi tri thuc van hoc dan tri omega plus nhieu nguoi dich dau an 10 nam omega 50 nam fahasa an pham dau an 10 nam omega",
+    "search_text": "nhieu tac gia boxset bo sach dau an 10 nam omega nxb the gioi tri thuc van hoc dan tri omega plus nhieu nguoi dich hop 10 cuon dau an 10 nam omega 50 nam fahasa ki niem 50 nam fahasa",
     "last_pub_year": 2026,
-    "updated_at": "2026-09-14"
+    "updated_at": "2026-10-30"
   },
   {
     "detail": "data/book/carl-gustav-jung-erinnerungen-traume-gedanken.json",
@@ -307,8 +307,8 @@
   },
   {
     "detail": "data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json",
-    "search_text": "thep da toi the day how the steel was tempered nikolai alekseyevich ostrovsky chauchaubook nxb van hoc dong a thep moi huy van tri viet",
-    "updated_at": "2026-08-12",
+    "search_text": "nikolai alekseyevich ostrovsky how the steel was tempered thep da toi the day nxb van hoc chauchaubook dong a thep moi huy van bia vai bia cung tri viet bia mem 50 nam fahasa bia ve tay boi chau chau book ki niem 50 nam fahasa",
+    "updated_at": "2026-10-30",
     "last_pub_year": 2026
   },
   {
@@ -373,20 +373,20 @@
   },
   {
     "detail": "data/book/jk-rowling-harry-potter.json",
-    "search_text": "harry potter jk rowling 50 nam fahasa nxb tre ly lan",
-    "updated_at": "2026-07-09",
+    "search_text": "jk rowling harry potter nxb tre ly lan boxset bia cung 50 nam fahasa ki niem 50 nam fahasa",
+    "updated_at": "2026-10-30",
     "last_pub_year": 2026
   },
   {
     "detail": "data/book/nguyen-dinh-chieu-luc-van-tien.json",
-    "search_text": "luc van tien nguyen dinh chieu 50 nam fahasa nxb van hoc dong a nguyen thach giang nguyen cong hoan",
-    "updated_at": "2026-07-09",
+    "search_text": "nguyen dinh chieu luc van tien nxb van hoc dong a nguyen thach giang nguyen cong hoan bia vai bia cung 50 nam fahasa ki niem 50 nam fahasa",
+    "updated_at": "2026-10-30",
     "last_pub_year": 2026
   },
   {
     "detail": "data/book/nguyen-du-truyen-kieu.json",
-    "search_text": "truyen kieu nguyen du 50 nam fahasa nxb van hoc dong a nguyen thach giang dang xuan hoa nxb dan tri tazano",
-    "updated_at": "2026-07-09",
+    "search_text": "nguyen du truyen kieu nxb van hoc dong a nguyen thach giang dang xuan hoa bia vai bia cung nxb dan tri tazano bia mem 50 nam fahasa ki niem 50 nam fahasa",
+    "updated_at": "2026-10-30",
     "last_pub_year": 2026
   },
   {
@@ -445,14 +445,14 @@
   },
   {
     "detail": "data/book/hoang-nam-tien-sach-thu-cho-em.json",
-    "search_text": "thu cho em hoang nam tien 50 nam fahasa nxb hoi nha van nha nam",
-    "updated_at": "2026-07-05",
+    "search_text": "hoang nam tien thu cho em nxb hoi nha van nha nam bia cung bia mem 50 nam fahasa ki niem 50 nam fahasa",
+    "updated_at": "2026-10-30",
     "last_pub_year": 2026
   },
   {
     "detail": "data/book/jose-mauro-de-vasconcelos-boxset-cay-cam-ngot-cua-toi-suoi-am-mat-troi.json",
-    "search_text": "boxset cay cam ngot cua toi suoi am mat troi jose mauro de vasconcelos 50 nam fahasa nxb hoi nha van nha nam nguyen bich lan to yen ly dang bao kim",
-    "updated_at": "2026-07-05",
+    "search_text": "jose mauro de vasconcelos boxset cay cam ngot cua toi suoi am mat troi nxb hoi nha van nha nam nguyen bich lan to yen ly dang bao kim boxset bia cung 50 nam fahasa ki niem 50 nam fahasa",
+    "updated_at": "2026-10-30",
     "last_pub_year": 2026
   },
   {
@@ -481,8 +481,8 @@
   },
   {
     "detail": "data/book/nguyen-nhat-anh-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim.json",
-    "search_text": "sach boxset nguyen nhat anh da chuyen the thanh phim nguyen nhat anh 50 nam fahasa nxb tre",
-    "updated_at": "2026-07-05",
+    "search_text": "nguyen nhat anh sach boxset nguyen nhat anh da chuyen the thanh phim nxb tre boxset bia cung 50 nam fahasa ki niem 50 nam fahasa",
+    "updated_at": "2026-10-30",
     "last_pub_year": 2026
   },
   {
