@@ -1,8 +1,20 @@
 [
   {
+    "detail": "data/book/masashi-kishimoto-naruto.json",
+    "search_text": "masashi kishimoto naruto nxb kim dong 50 nam fahasa ban ki niem 50 nam fahasa",
+    "last_pub_year": 2026,
+    "updated_at": "2026-10-30"
+  },
+  {
     "detail": "data/book/ho-anh-thai-sach-tet-binh-ngo-2026.json",
     "search_text": "ho anh thai tuyen chon sach tet binh ngo 2026 nxb van hoc dong a sach tet dong a bia cung gioi han ban pho thong",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-29",
+    "last_pub_year": 2026
+  },
+  {
+    "detail": "data/book/mario-puzo-the-godfather.json",
+    "search_text": "mario puzo the godfather bo gia nxb van hoc nxb dan tri nxb hoi nha van dong a ngoc thu lang nguyen minh ngoc thu lan art werger 50 nam fahasa s500 phien ban trung thu bia den bia trang an ban gioi han bia vai phien ban doc quyen 50 nam fahasa bo gia an ban cao cap bia cung phien ban doc quyen 50 nam fahasa bo gia an ban ki niem 55 nam xuat ban lan dau bo gia bia cung",
+    "updated_at": "2026-10-29",
     "last_pub_year": 2026
   },
   {
@@ -172,12 +184,6 @@
     "search_text": "keigo higashino dieu ky dieu cua tiem tap hoa namiya nxb hoi nha van nha nam phuong nam chauchaubook bia ve tay boi chau chau book",
     "last_pub_year": 2026,
     "updated_at": "2026-09-06"
-  },
-  {
-    "detail": "data/book/mario-puzo-the-godfather.json",
-    "search_text": "bo gia the godfather mario puzo 50 nam fahasa nxb dan tri dong a nguyen minh art werger nxb van hoc ngoc thu lang ngoc thu lan nxb hoi nha van",
-    "updated_at": "2026-09-06",
-    "last_pub_year": 2026
   },
   {
     "detail": "data/book/hao-nguyen-bo-suu-tap-mu-suong.json",

@@ -122,8 +122,18 @@
       "copy_numbering": "FG001-FG500",
       "size_cm": "30 x 25 x 3.4",
       "weight_g": 2000,
-      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/_/n/_n_b_n_gi_i_h_n_b_gi_.jpg",
-      "gellery_imgs": [],
+      "thumbnail": "/assets/img/books/mario-puzo-the-godfather/dong-a-2026-fahasa-50th-cover.jpeg",
+      "gellery_imgs": [
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2026-fahasa-50th-set.jpeg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2026-fahasa-50th-author-detail.jpeg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2026-fahasa-50th-title-detail.jpeg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2026-fahasa-50th-cover-illustration-detail.jpeg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2026-fahasa-50th-spine-and-clamshell.jpeg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2026-fahasa-50th-spine-label-detail.jpeg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2026-fahasa-50th-gilt-edges-detail.jpeg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2026-fahasa-50th-clamshell-open.jpeg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2026-fahasa-50th-interior-illustration.jpeg"
+      ],
       "detail": "- Ấn phẩm lần này được ấn hành nhân kỷ niệm 50 năm thành lập Fahasa.\n- 500 cuốn giới hạn, bìa vải, đựng trong hộp vỏ sò.\n- Ký hiệu từ FG 001 đến FG 500.\n- Mạ cạnh sách bằng nhũ vàng.\n- Đóng dấu chìm Limited Edition của Đông A.\n- In bốn màu trên giấy Ford định lượng 150 gsm."
     },
     {
@@ -206,6 +216,37 @@
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/2/z2611575615164_9f60c133cfed1c7bb3f59b247f-600.jpg",
       "gellery_imgs": [],
       "detail": ""
+    },
+    {
+      "id": "mario-puzo-the-godfather-2019-dong-a-bia-vai-500k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S500",
+      "pub_year": 2019,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Ngọc Thứ Lang"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa vải",
+      "cover_price": "500k",
+      "print_run": 500,
+      "page_count": null,
+      "copy_numbering": "ĐA 001 - ĐA 500",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/mario-puzo-the-godfather/dong-a-2019-s500-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2019-s500-set.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2019-s500-cover-detail.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2019-s500-slipcase-and-gilt-edges.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2019-s500-gilt-edges-detail.jpg"
+      ],
+      "detail": "- Bản giới hạn bìa cứng, số lượng 500 bản.\n- Hộp và bìa áo in trên giấy đen mỹ thuật.\n- Ép cạnh vàng.\n- Đóng dấu Đông A, đánh số từ ĐA 001 đến ĐA 500; mỗi bản là duy nhất.\n- Minh họa của 12 họa sĩ đương đại Việt Nam.\n- In tên bạn đọc đăng ký đặt sách vào cuối sách.\n- Chỉ phát hành cho 500 bạn đọc đăng ký trước, không qua các kênh phân phối khác."
     }
   ]
 }
