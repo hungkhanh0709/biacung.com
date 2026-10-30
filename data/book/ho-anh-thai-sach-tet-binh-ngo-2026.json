@@ -1,0 +1,78 @@
+{
+  "id": "ho-anh-thai-sach-tet-binh-ngo-2026",
+  "title": "Sách Tết Bính Ngọ 2026",
+  "title_original": "",
+  "authors": [
+    "Hồ Anh Thái (tuyển chọn)"
+  ],
+  "awards": [],
+  "series": [
+    "Sách Tết Đông A"
+  ],
+  "editions": [
+    {
+      "id": "ho-anh-thai-sach-tet-binh-ngo-2026-2026-dong-a-bia-cung-1400k",
+      "isbn": null,
+      "series_ids": [
+        "sach-tet-dong-a"
+      ],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "1400k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/ho-anh-thai-sach-tet-binh-ngo-2026/dong-a-bia-cung-set.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/ho-anh-thai-sach-tet-binh-ngo-2026/dong-a-bia-cung-box.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-binh-ngo-2026/dong-a-bia-cung-box-open.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-binh-ngo-2026/dong-a-bia-cung-title-page.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-binh-ngo-2026/dong-a-bia-cung-interior-fish-illustration.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-binh-ngo-2026/dong-a-bia-cung-interior-horse-illustration.jpg"
+      ],
+      "detail": "- Hợp tuyển văn thơ nhạc họa chủ đề mùa xuân và ngày Tết.\n- Bản giới hạn bìa cứng, đánh số nhảy; mỗi bản phát hành là duy nhất.\n- Kèm hộp sơn mài.\n- Tặng kèm tranh sơn mài."
+    },
+    {
+      "id": "ho-anh-thai-sach-tet-binh-ngo-2026-2026-dong-a-bia-mem-419k",
+      "isbn": "978-632-00-0779-0",
+      "series_ids": [
+        "sach-tet-dong-a"
+      ],
+      "caption": "Bản Phổ Thông",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "419k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": "Mỗi cuốn được đánh số thứ tự riêng",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/ho-anh-thai-sach-tet-binh-ngo-2026/dong-a-bia-mem-cover-standing.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/ho-anh-thai-sach-tet-binh-ngo-2026/dong-a-bia-mem-cover-and-postcard-photo.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-binh-ngo-2026/dong-a-interior-introduction.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-binh-ngo-2026/dong-a-bia-mem-interior-music.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-binh-ngo-2026/dong-a-interior-illustration.jpg",
+        "/assets/img/books/ho-anh-thai-sach-tet-binh-ngo-2026/dong-a-bia-mem-interior-spring-story.jpg"
+      ],
+      "detail": "- Hợp tuyển văn thơ nhạc họa chủ đề mùa xuân và ngày Tết.\n- Bản phổ thông bìa mềm, có bìa áo, in màu toàn bộ.\n- Sách gồm 292 trang, khổ 16,5 x 24 cm.\n- Mỗi cuốn được đánh số thứ tự riêng.\n- Tặng kèm 1 postcard thiết kế đồng bộ."
+    }
+  ]
+}
