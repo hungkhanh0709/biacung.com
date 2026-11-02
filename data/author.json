@@ -1452,5 +1452,12 @@
     "work_ids": [
       "masashi-kishimoto-naruto"
     ]
+  },
+  {
+    "id": "rabindranath-tagore",
+    "name": "Rabindranath Tagore",
+    "work_ids": [
+      "rabindranath-tagore-muoi-tap-tho"
+    ]
   }
 ]
