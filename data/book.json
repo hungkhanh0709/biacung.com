@@ -1,5 +1,11 @@
 [
   {
+    "detail": "data/book/fyodor-dostoevsky-toi-ac-va-trung-phat.json",
+    "search_text": "fyodor dostoevsky toi ac va trung phat nxb van hoc huy hoang nhat phi bia cung",
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-03"
+  },
+  {
     "detail": "data/book/rabindranath-tagore-muoi-tap-tho.json",
     "search_text": "rabindranath tagore muoi tap tho dong tay nxb van hoc bui xuan bia cung gioi han",
     "last_pub_year": 2026,

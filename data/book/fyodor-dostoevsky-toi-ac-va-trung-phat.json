@@ -1,0 +1,38 @@
+{
+  "id": "fyodor-dostoevsky-toi-ac-va-trung-phat",
+  "title": "Tội ác và trừng phạt",
+  "title_original": "Преступление и наказание",
+  "authors": [
+    "Fyodor Dostoevsky"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "fyodor-dostoevsky-toi-ac-va-trung-phat-2026-huy-hoang-bia-cung-380k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Huy Hoàng"
+      ],
+      "translators": [
+        "Nhật Phi"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "380k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/huy-hoang-bia-cung-cover.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}
