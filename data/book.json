@@ -1,5 +1,23 @@
 [
   {
+    "detail": "data/book/dan-brown-angels-demons.json",
+    "search_text": "dan brown angels demons thien than va ac quy nxb lao dong bach viet nguyen quang huy an an an ban gioi han bia cung",
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-05"
+  },
+  {
+    "detail": "data/book/han-kang-ban-chat-cua-nguoi.json",
+    "search_text": "han kang ban chat cua nguoi nxb ha noi nha nam kim ngan bia cung gioi han nobel van chuong",
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-05"
+  },
+  {
+    "detail": "data/book/han-kang-we-do-not-part.json",
+    "search_text": "han kang we do not part khong tu biet nxb ha noi nha nam kim ngan bia cung gioi han nobel van chuong",
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-05"
+  },
+  {
     "detail": "data/book/fyodor-dostoevsky-toi-ac-va-trung-phat.json",
     "search_text": "fyodor dostoevsky toi ac va trung phat nxb van hoc huy hoang nhat phi bia cung",
     "last_pub_year": 2026,
@@ -148,12 +166,6 @@
     "search_text": "r.f. kuang babel babel hay su can thiet cua bao luc nxb lao dong rainbow lam vu chauchaubook bia ve tay boi chau chau book",
     "last_pub_year": 2026,
     "updated_at": "2026-09-15"
-  },
-  {
-    "detail": "data/book/han-kang-we-do-not-part.json",
-    "search_text": "han kang we do not part khong tu biet nxb ha noi nha nam kim ngan bia cung gioi han",
-    "last_pub_year": 2026,
-    "updated_at": "2026-09-14"
   },
   {
     "detail": "data/book/kawabata-yasunari-co-do.json",
@@ -580,6 +592,12 @@
     "search_text": "ton tu binh phap ton tu nxb dan tri dong a ngo van trien",
     "last_pub_year": 2026,
     "updated_at": "2026-07-01"
+  },
+  {
+    "detail": "data/book/han-kang-nguoi-an-chay.json",
+    "search_text": "han kang nguoi an chay nxb ha noi nha nam kim ngan bia cung gioi han nobel van chuong international booker prize",
+    "last_pub_year": 2025,
+    "updated_at": "2026-11-05"
   },
   {
     "detail": "data/book/ho-anh-thai-sach-tet-at-ty-2025.json",

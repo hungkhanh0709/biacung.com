@@ -131,7 +131,8 @@
     "id": "dan-brown",
     "name": "Dan Brown",
     "work_ids": [
-      "dan-brown-the-secret-of-secrets"
+      "dan-brown-the-secret-of-secrets",
+      "dan-brown-angels-demons"
     ]
   },
   {
@@ -1102,7 +1103,9 @@
     "id": "han-kang",
     "name": "Han Kang",
     "work_ids": [
-      "han-kang-we-do-not-part"
+      "han-kang-we-do-not-part",
+      "han-kang-ban-chat-cua-nguoi",
+      "han-kang-nguoi-an-chay"
     ]
   },
   {
