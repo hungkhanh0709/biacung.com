@@ -1,0 +1,4 @@
+interface:
+  display_name: "Book Intake"
+  short_description: "Nhập trọn sách từ tin phát hành và ảnh có sẵn"
+  default_prompt: "Dùng $book-intake để nhập trọn một tựa sách mới từ nội dung tôi cung cấp và ảnh trong data/_raw/, ưu tiên Goodreads cho title_original, lưu, kiểm tra UI rồi dọn _raw."
