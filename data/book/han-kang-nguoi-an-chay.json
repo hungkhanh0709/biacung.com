@@ -1,0 +1,45 @@
+{
+  "id": "han-kang-nguoi-an-chay",
+  "title": "Người Ăn Chay",
+  "title_original": "채식주의자",
+  "authors": [
+    "Han Kang"
+  ],
+  "awards": [
+    "Nobel Văn Chương",
+    "International Booker Prize"
+  ],
+  "series": [],
+  "editions": [
+    {
+      "id": "han-kang-nguoi-an-chay-2025-nha-nam-bia-cung-240k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2025,
+      "publisher": "NXB Hà Nội",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Kim Ngân"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "240k",
+      "print_run": 300,
+      "page_count": 232,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/han-kang-nguoi-an-chay/nha-nam-gioi-han-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/han-kang-nguoi-an-chay/nha-nam-gioi-han-endpaper-bookmark.jpg",
+        "/assets/img/books/han-kang-nguoi-an-chay/nha-nam-gioi-han-jacket-bookmark.jpg",
+        "/assets/img/books/han-kang-nguoi-an-chay/nha-nam-gioi-han-cover-angle.jpg"
+      ],
+      "detail": "\n- In trên giấy BB 100gsm.\n- Bìa áo: C180 cán mờ, gấp mép, phủ UV.\n- Bìa cứng: C180 cán mờ, bồi vào carton.\n- Tặng bookmark C350gsm cán mờ."
+    }
+  ]
+}
