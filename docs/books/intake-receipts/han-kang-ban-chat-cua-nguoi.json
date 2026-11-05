@@ -1,0 +1,336 @@
+{
+  "bookId": "han-kang-ban-chat-cua-nguoi",
+  "completed_at": "2026-11-05T15:22:41.871Z",
+  "draft": "data/_raw",
+  "source_sha256": "37aec34a51b8d80910dee78523b9a09be5bcbdc81cb6aadc934ebd79627819da",
+  "source_inventory": {
+    "draft": "data/_raw",
+    "image_count": 1,
+    "registered_image_count": 1,
+    "images": [
+      {
+        "source": "886843536_28632896343077690_6983983442741229288_n.jpg",
+        "sha256": "2c81dc238a05db4e5c0b4f210eec5b254cc81da0a75bbc42d1074d57c796492a",
+        "bytes": 141659,
+        "absolute_path": "/Users/khanhto/Documents/Projects/biacung.com/data/_raw/886843536_28632896343077690_6983983442741229288_n.jpg",
+        "present": true
+      }
+    ],
+    "errors": [],
+    "assets": [
+      "assets/img/books/han-kang-ban-chat-cua-nguoi/nha-nam-gioi-han-cover.jpg"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "title": {
+        "value": "Bản Chất Của Người",
+        "source": "source.md",
+        "locator": "Tựa/tác giả trong chat, đối chiếu bìa",
+        "confidence": "confirmed",
+        "corroborated_by": [
+          {
+            "source": "886843536_28632896343077690_6983983442741229288_n.jpg",
+            "locator": "Tựa in trên bìa và heading quảng bá"
+          }
+        ]
+      },
+      "title_original": {
+        "value": "소년이 온다",
+        "source": "https://han-kang.net/Human-Acts-Korean",
+        "locator": "Heading 소년이 온다 | Human Acts; Korean. Đối chiếu bản Việt tại https://han-kang.net/Human-Acts-Vietnamese. Goodreads mở 403.",
+        "confidence": "confirmed"
+      },
+      "authors": {
+        "value": [
+          "Han Kang"
+        ],
+        "source": "source.md",
+        "locator": "Tựa/tác giả trong chat, đối chiếu bìa",
+        "confidence": "confirmed",
+        "corroborated_by": [
+          {
+            "source": "886843536_28632896343077690_6983983442741229288_n.jpg",
+            "locator": "Tên HAN KANG dọc mép phải bìa"
+          }
+        ]
+      },
+      "editions[0].caption": {
+        "value": "Bìa Cứng Giới Hạn",
+        "source": "source.md",
+        "locator": "In giới hạn 300c, bìa cứng; keyword vocabulary",
+        "confidence": "confirmed",
+        "corroborated_by": [
+          {
+            "source": "886843536_28632896343077690_6983983442741229288_n.jpg",
+            "locator": "Dòng 300 ẤN BẢN BÌA CỨNG"
+          }
+        ]
+      },
+      "editions[0].pub_year": {
+        "value": 2026,
+        "source": "source.md",
+        "locator": "Sách phát hành 25/11/2026",
+        "confidence": "confirmed"
+      },
+      "editions[0].publisher": {
+        "value": "NXB Hà Nội",
+        "source": "source.md",
+        "locator": "nxb Hà Nội; đối chiếu logo chân bìa",
+        "confidence": "confirmed",
+        "corroborated_by": [
+          {
+            "source": "886843536_28632896343077690_6983983442741229288_n.jpg",
+            "locator": "Logo NHÀ XUẤT BẢN HÀ NỘI ở chân bìa"
+          }
+        ]
+      },
+      "editions[0].issuers": {
+        "value": [
+          "Nhã Nam"
+        ],
+        "source": "source.md",
+        "locator": "Nhã Nam; đối chiếu logo chân bìa",
+        "confidence": "confirmed",
+        "corroborated_by": [
+          {
+            "source": "886843536_28632896343077690_6983983442741229288_n.jpg",
+            "locator": "Logo Nhã Nam ở chân bìa"
+          }
+        ]
+      },
+      "editions[0].translators": {
+        "value": [
+          "Kim Ngân"
+        ],
+        "source": "source.md",
+        "locator": "người dịch: Kim Ngân; chữ Kim Ngân dịch dưới tên tác giả trên bìa",
+        "confidence": "confirmed",
+        "corroborated_by": [
+          {
+            "source": "886843536_28632896343077690_6983983442741229288_n.jpg",
+            "locator": "Kim Ngân dịch ở gần góc phải dưới bìa"
+          }
+        ]
+      },
+      "editions[0].format": {
+        "value": "Bìa cứng áo ôm",
+        "source": "source.md",
+        "locator": "bìa cứng, có áo; keyword Bìa cứng áo ôm",
+        "confidence": "confirmed"
+      },
+      "editions[0].cover_price": {
+        "value": "255k",
+        "source": "source.md",
+        "locator": "giá bìa: 255k",
+        "confidence": "confirmed"
+      },
+      "editions[0].print_run": {
+        "value": 300,
+        "source": "source.md",
+        "locator": "In giới hạn 300c; đối chiếu ảnh dòng 300 ẤN BẢN BÌA CỨNG",
+        "confidence": "confirmed",
+        "corroborated_by": [
+          {
+            "source": "886843536_28632896343077690_6983983442741229288_n.jpg",
+            "locator": "Dòng 300 ẤN BẢN BÌA CỨNG dưới ảnh sách"
+          }
+        ]
+      },
+      "editions[0].page_count": {
+        "value": 248,
+        "source": "source.md",
+        "locator": "Số trang: 248 trang",
+        "confidence": "confirmed"
+      },
+      "editions[0].size_cm": {
+        "value": "14 x 20.5",
+        "source": "source.md",
+        "locator": "14 x 20,5 cm; chuẩn hóa dấu thập phân",
+        "confidence": "confirmed"
+      },
+      "editions[0].detail": {
+        "value": "- Bản bìa cứng có áo, in giới hạn 300 bản\n- Tặng kèm bookmark\n- Ngày phát hành: 25/11/2026",
+        "source": "source.md",
+        "locator": "Quy cách giới hạn, có áo, bookmark và ngày phát hành nguyên văn nguồn chat",
+        "confidence": "confirmed",
+        "corroborated_by": [
+          {
+            "source": "886843536_28632896343077690_6983983442741229288_n.jpg",
+            "locator": "Dòng TẶNG KÈM BOOKMARK ở cuối ảnh"
+          }
+        ]
+      },
+      "id": {
+        "value": "han-kang-ban-chat-cua-nguoi",
+        "source": "derived",
+        "locator": "Quy tắc form: tên tác giả + tựa Việt vì tựa Hàn không có ký tự ASCII để tạo slug",
+        "confidence": "derived"
+      },
+      "editions[0].id": {
+        "value": "han-kang-ban-chat-cua-nguoi-2026-nha-nam-bia-cung-ao-om-255k",
+        "source": "derived",
+        "locator": "bookId + 2026 + Nhã Nam + Bìa cứng áo ôm + 255k",
+        "confidence": "derived"
+      }
+    },
+    "searches": [
+      {
+        "query": "site.goodreads.com \"Human Acts\" \"Original title\" Han Kang; site.han-kang.net \"Human Acts\" \"소년이\"; site.nhanam.vn \"Bản chất của người\"",
+        "url": "https://nhanam.vn/ban-chat-cua-nguoi-nha-nam-tai-ban",
+        "result": "Kết quả Nhã Nam xác nhận tựa/tác giả/dịch giả/NXB/khổ/số trang, nhưng bản phổ thông 2024 giá 129k; mở trang 404. Không dùng năm/giá/ISBN cho bản giới hạn."
+      },
+      {
+        "query": "site.goodreads.com/book/show \"Human Acts\" \"Han Kang\" \"소년이 온다\"",
+        "url": "https://www.goodreads.com/en/book/show/215088191-korean-novel-human-acts-special-edition-there-comes-a-boy",
+        "result": "Tìm được edition tiếng Hàn, mở trang 403 Forbidden; kết thúc sau hai vòng tìm tên nguyên tác, đối chiếu website tác giả."
+      },
+      {
+        "query": "Mở nguồn tác giả để đối chiếu nguyên tác và tựa Việt",
+        "url": "https://han-kang.net/Human-Acts-Korean",
+        "result": "Đã mở: 소년이 온다 | Human Acts, Korean, 2014. Đây là năm nguyên tác, không dùng làm năm edition Việt."
+      },
+      {
+        "query": "Mở bản tiếng Việt trên website tác giả",
+        "url": "https://han-kang.net/Human-Acts-Vietnamese",
+        "result": "Đã mở heading BẢN CHẤT CỦA NGƯỜI | Human Acts, Vietnamese, dẫn nguồn Nhã Nam; khớp tác phẩm."
+      }
+    ],
+    "conflicts": [],
+    "image_reviews": [
+      {
+        "source": "886843536_28632896343077690_6983983442741229288_n.jpg",
+        "sha256": "2c81dc238a05db4e5c0b4f210eec5b254cc81da0a75bbc42d1074d57c796492a",
+        "reviewed_at": "2026-11-05T22:19:09.751946+07:00",
+        "observations": "Ảnh quảng bá 1122×1402: sách vàng bên trái, chân dung Han Kang bên phải, tiêu đề lớn phía trên. Bìa đọc được BẢN CHẤT CỦA NGƯỜI, HAN KANG, Kim Ngân dịch, logo Nhã Nam/NXB Hà Nội; dưới ảnh ghi 300 ẤN BẢN BÌA CỨNG, TẶNG KÈM BOOKMARK. Nobel 2024 và Man Booker 2016 là thông tin tác giả, không đưa vào awards của tác phẩm.",
+        "extracted_fields": [
+          "title",
+          "authors",
+          "editions[0].translators",
+          "editions[0].publisher",
+          "editions[0].issuers",
+          "editions[0].print_run",
+          "editions[0].detail"
+        ],
+        "decision": "website",
+        "reason": "Đúng bản giới hạn 300 cuốn. Người dùng yêu cầu rõ tách phần sách, loại chân dung và chữ quảng bá; xuất duy nhất một ảnh crop từ nguồn, không tạo gallery hay clone.",
+        "edition_ids": [
+          "han-kang-ban-chat-cua-nguoi-2026-nha-nam-bia-cung-ao-om-255k"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "source": "886843536_28632896343077690_6983983442741229288_n.jpg",
+        "asset": "assets/img/books/han-kang-ban-chat-cua-nguoi/nha-nam-gioi-han-cover.jpg",
+        "edition_id": "han-kang-ban-chat-cua-nguoi-2026-nha-nam-bia-cung-ao-om-255k",
+        "role": "thumbnail",
+        "source_sha256": "2c81dc238a05db4e5c0b4f210eec5b254cc81da0a75bbc42d1074d57c796492a",
+        "asset_sha256": "f629faf566700903646a07957b01976287527953f996cfe27c7e294eb87018c1",
+        "size_before": [
+          1122,
+          1402
+        ],
+        "size_after": [
+          512,
+          740
+        ],
+        "bytes_before": 141659,
+        "bytes_after": 82634,
+        "quality": 88,
+        "action": "cropped-on-explicit-user-request",
+        "crop": [
+          125,
+          408,
+          512,
+          740
+        ],
+        "reason": "Giữ trọn bìa/gáy/logo; loại chân dung và toàn bộ chữ quảng bá bên ngoài cuốn sách. Không ép tỷ lệ 3:4 làm mất cạnh sách."
+      }
+    ]
+  },
+  "verification": {
+    "checked_at": "2026-11-05T22:22:41.802824+07:00",
+    "browser": "Google Chrome headless, phiên profile riêng /tmp/biacung-han-kang-chrome qua CDP vì Chrome MCP profile đang bị khóa; không đóng phiên khác. Đã xem screenshot home/detail và đọc DOM render thực tế.",
+    "home": {
+      "url": "http://127.0.0.1:3000/",
+      "visible": true,
+      "note": "Đã tải lại home, thấy card thứ hai Bản Chất Của Người – Han Kang, một phiên bản; href detail đúng; ảnh 512×740 complete và naturalWidth > 0."
+    },
+    "detail": {
+      "url": "http://127.0.0.1:3000/detail?id=han-kang-ban-chat-cua-nguoi",
+      "metadata_matches": true,
+      "images_load": true,
+      "note": "Đã xem một edition: 2026, NXB Hà Nội, Nhã Nam, Kim Ngân, Bìa cứng áo ôm, 255k, 248 trang, 300 bản, bookmark, 25/11/2026. Tựa gốc 소년이 온다 đúng. Ảnh đã tách không có chân dung/chữ quảng bá, ba vị trí hiển thị dùng cùng URL đều decode/complete 512×740. Khổ 14 x 20.5 lưu JSON; UI hiện không render trường size_cm."
+    },
+    "author": {
+      "url": "http://127.0.0.1:3000/search?q=Han%20Kang",
+      "visible": true,
+      "note": "Đã theo URL từ liên kết Han Kang của detail, Chrome hiển thị hai sách: Bản Chất Của Người và Không Từ Biệt. Không có series để kiểm tra."
+    }
+  },
+  "image_report": {
+    "book_id": "han-kang-ban-chat-cua-nguoi",
+    "explicit_user_request": "Tách hình sách, loại bỏ chân dung tác giả và các thông tin khác; ngoại lệ crop do người dùng yêu cầu rõ.",
+    "implementation": "Pillow crop trực tiếp từ nguồn sau khi xem ảnh; công cụ mặc định chỉ resize và từ chối crop, nên xử lý riêng cho yêu cầu rõ của người dùng. Không sửa công cụ; không vẽ lại/chỉnh chữ trên bìa.",
+    "images": [
+      {
+        "source": "886843536_28632896343077690_6983983442741229288_n.jpg",
+        "asset": "assets/img/books/han-kang-ban-chat-cua-nguoi/nha-nam-gioi-han-cover.jpg",
+        "edition_id": "han-kang-ban-chat-cua-nguoi-2026-nha-nam-bia-cung-ao-om-255k",
+        "role": "thumbnail",
+        "source_sha256": "2c81dc238a05db4e5c0b4f210eec5b254cc81da0a75bbc42d1074d57c796492a",
+        "asset_sha256": "f629faf566700903646a07957b01976287527953f996cfe27c7e294eb87018c1",
+        "size_before": [
+          1122,
+          1402
+        ],
+        "size_after": [
+          512,
+          740
+        ],
+        "bytes_before": 141659,
+        "bytes_after": 82634,
+        "quality": 88,
+        "action": "cropped-on-explicit-user-request",
+        "crop": [
+          125,
+          408,
+          512,
+          740
+        ],
+        "reason": "Giữ trọn bìa/gáy/logo; loại chân dung và toàn bộ chữ quảng bá bên ngoài cuốn sách. Không ép tỷ lệ 3:4 làm mất cạnh sách.",
+        "preview": "previews/nha-nam-gioi-han-cover.jpg",
+        "preview_sha256": "f629faf566700903646a07957b01976287527953f996cfe27c7e294eb87018c1"
+      }
+    ]
+  },
+  "validation": {
+    "errors": [],
+    "missing": [],
+    "warnings": [],
+    "duplicateCandidates": [
+      "han-kang-ban-chat-cua-nguoi"
+    ],
+    "homePosition": 2,
+    "imageFiles": [
+      "assets/img/books/han-kang-ban-chat-cua-nguoi/nha-nam-gioi-han-cover.jpg"
+    ]
+  },
+  "draft_files": {
+    "886843536_28632896343077690_6983983442741229288_n.jpg": "2c81dc238a05db4e5c0b4f210eec5b254cc81da0a75bbc42d1074d57c796492a",
+    "book.json": "d74c0ec0cfc9948e4fd09fc6d17afd564648accb164c528d91bba331b8da0c6b",
+    "draft.md": "a5ec3e0f4cd6fb15294bb4ca8aad4e2f534862d38aabe4d91751d1ef21763db1",
+    "evidence.json": "0cc98fca3ebfc5d37e7e0e5c14945465338bef08649a6cc43d66c2ed3a0f1607",
+    "image-plan.json": "739fd782cead8201ed0aecf0e4e4f0cb6f7d7f8738813653d9246751deafa15d",
+    "image-report.json": "a695dd3961cb5ae0a6872abc8a7525823fdf2c51ddb4b2e86ad0f488ca89bec3",
+    "previews/nha-nam-gioi-han-cover.jpg": "f629faf566700903646a07957b01976287527953f996cfe27c7e294eb87018c1",
+    "source-inventory.json": "c75acdfabd6ba302ff296d982cce02b29ecfc490ae2515c71f95beb3e9bbc088",
+    "source.md": "37aec34a51b8d80910dee78523b9a09be5bcbdc81cb6aadc934ebd79627819da",
+    "verification.json": "fcb2e72d33e9bea8ea57f39a5d13e024b164cabfcb77a4d99a67f15f722defe9"
+  },
+  "retained_files": {
+    "data/book/han-kang-ban-chat-cua-nguoi.json": "d74c0ec0cfc9948e4fd09fc6d17afd564648accb164c528d91bba331b8da0c6b",
+    "assets/img/books/han-kang-ban-chat-cua-nguoi/nha-nam-gioi-han-cover.jpg": "f629faf566700903646a07957b01976287527953f996cfe27c7e294eb87018c1"
+  }
+}
