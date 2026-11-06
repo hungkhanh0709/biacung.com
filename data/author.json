@@ -1463,5 +1463,12 @@
     "work_ids": [
       "rabindranath-tagore-muoi-tap-tho"
     ]
+  },
+  {
+    "id": "kim-dung",
+    "name": "Kim Dung",
+    "work_ids": [
+      "kim-dung-thien-long-bat-bo"
+    ]
   }
 ]

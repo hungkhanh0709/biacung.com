@@ -6,8 +6,42 @@
     "Quốc Sử Quán Triều Nguyễn"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "50 Năm Fahasa"
+  ],
   "editions": [
+    {
+      "id": "quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc-2026-dong-a-bia-vai-3900k",
+      "series_ids": [
+        "50-nam-fahasa"
+      ],
+      "isbn": "978-632-635-289-4",
+      "caption": "Ấn Bản Giới Hạn S365 - Bìa Vải",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Hoa Bằng",
+        "Phạm Trọng Điềm",
+        "Trần Văn Giáp"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa vải",
+      "cover_price": "3900k",
+      "print_run": 365,
+      "page_count": 1364,
+      "copy_numbering": "CM 001-CM 365",
+      "size_cm": "25 x 30",
+      "weight_g": 5000,
+      "thumbnail": "/assets/img/books/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc/dong-a-s365-fahasa-bia-vai-mockup.webp",
+      "gellery_imgs": [
+        "/assets/img/books/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc/dong-a-s365-fahasa-bia-vai-photo.jpg"
+      ],
+      "detail": "- Phiên bản độc quyền kỷ niệm 50 năm Fahasa.\n- 365 bản giới hạn, ký hiệu từ CM 001 đến CM 365.\n- Bìa cứng bọc vải buckram, đựng trong hộp vỏ sò.\n- Ba cạnh sách mạ nhũ vàng; đóng dấu chìm Limited Edition của Đông A.\n- Kích thước bao bì: 30 x 25 x 9 cm.\n- Ruột in hai màu trên giấy Ford kem Nhật Kinmari định lượng 72,3 gsm."
+    },
     {
       "id": "quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc-2026-dong-a-bia-cung-ao-om-1900k",
       "isbn": "978-632-635-289-4",
@@ -33,7 +67,8 @@
       "weight_g": null,
       "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_25a86aae9a4847f29948688852137b5f_master.jpg",
       "gellery_imgs": [],
-      "detail": "- Tác giả: Quốc sử quán triều Nguyễn\n- Dịch giả: Hoa Bằng, Phạm Trọng Điềm, Trần Văn Giáp biên dịch và chú giải\n- Ở lần xuất bản này, nội dung được đối chiếu với các bản in của Nhà xuất bản Văn Sử Địa (1957–1960) và Nhà xuất bản Giáo Dục (2007), hiệu đính các lỗi chính tả, lỗi đánh máy, cập nhật chú thích địa danh và bổ sung cước chú khi cần thiết, đồng thời tôn trọng nguyên vẹn nội dung bản dịch."
+      "detail": "- Tác giả: Quốc sử quán triều Nguyễn\n- Dịch giả: Hoa Bằng, Phạm Trọng Điềm, Trần Văn Giáp biên dịch và chú giải\n- Ở lần xuất bản này, nội dung được đối chiếu với các bản in của Nhà xuất bản Văn Sử Địa (1957–1960) và Nhà xuất bản Giáo Dục (2007), hiệu đính các lỗi chính tả, lỗi đánh máy, cập nhật chú thích địa danh và bổ sung cước chú khi cần thiết, đồng thời tôn trọng nguyên vẹn nội dung bản dịch.",
+      "series_ids": []
     }
   ]
 }
