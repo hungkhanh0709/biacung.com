@@ -1,5 +1,23 @@
 [
   {
+    "detail": "data/book/kim-dung-thien-long-bat-bo.json",
+    "search_text": "kim dung thien long bat bo nxb dan tri dong a nguyen duy chinh dinh diep ban pho thong",
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-07"
+  },
+  {
+    "detail": "data/book/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc.json",
+    "search_text": "quoc su quan trieu nguyen kham dinh viet su thong giam cuong muc nxb van hoc dong a hoa bang pham trong diem tran van giap 50 nam fahasa an ban gioi han s365 bia vai",
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-07"
+  },
+  {
+    "detail": "data/book/dan-brown-the-secret-of-secrets.json",
+    "search_text": "dan brown the secret of secrets bi mat toi thuong nxb dan tri bach viet le dinh chi leo bui an ban gioi han ban pho thong bia cung ao om",
+    "updated_at": "2026-11-06",
+    "last_pub_year": 2026
+  },
+  {
     "detail": "data/book/dan-brown-angels-demons.json",
     "search_text": "dan brown angels demons thien than va ac quy nxb lao dong bach viet nguyen quang huy an an an ban gioi han bia cung",
     "last_pub_year": 2026,
@@ -360,12 +378,6 @@
     "updated_at": "2026-08-21"
   },
   {
-    "detail": "data/book/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc.json",
-    "search_text": "kham dinh viet su thong giam cuong muc quoc su quan trieu nguyen nxb van hoc dong a hoa bang pham trong diem tran van giap",
-    "last_pub_year": 2026,
-    "updated_at": "2026-08-20"
-  },
-  {
     "detail": "data/book/jrr-tolkien-the-lord-of-the-rings.json",
     "search_text": "chua nhan the lord of the rings jrr tolkien nxb van hoc nha nam dang tran viet an ly tam thuy tung lam ngoc diep",
     "last_pub_year": 2026,
@@ -375,12 +387,6 @@
     "detail": "data/book/homere-odyssee.json",
     "search_text": "anh hung ca odyssee odyssee homere s100 nxb the gioi omega plus do khanh hoan nxb van hoc dong a hoang huu dan john flaxman",
     "updated_at": "2026-07-30",
-    "last_pub_year": 2026
-  },
-  {
-    "detail": "data/book/dan-brown-the-secret-of-secrets.json",
-    "search_text": "bi mat toi thuong the secret of secrets dan brown nxb dan tri bach viet le dinh chi",
-    "updated_at": "2026-07-12",
     "last_pub_year": 2026
   },
   {
