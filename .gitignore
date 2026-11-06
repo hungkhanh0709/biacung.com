@@ -1,3 +1,3 @@
-# Local intake sources and previews; retained assets/receipts live elsewhere.
+# Local intake sources, drafts and previews; only website data/assets are retained.
 data/_raw/*
 !data/_raw/.gitkeep

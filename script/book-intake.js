@@ -343,39 +343,18 @@ function finish(root, folder) {
         || new URL(ui.home.url).origin !== new URL(ui.detail.url).origin) {
         throw new Error('Chưa có xác minh Chrome: home.visible, detail.metadata_matches, detail.images_load và URL local/checked_at. Giữ nháp khi UI chưa xác nhận.');
     }
-    // Raw sources stay until the reviewed website assets and UI have been verified.
-    const files = inventory(folder);
-    const watched = [savedPath, ...result.imageFiles.map((f) => path.join(root, f)),
-        ...sourceReview.assets.map((file) => path.join(root, file))];
-    const receipt = {
-        bookId: book.id, completed_at: new Date().toISOString(), draft: path.relative(root, folder),
-        source_sha256: hash(path.join(folder, 'source.md')), source_inventory: sourceReview, evidence, verification: ui,
-        ...(fs.existsSync(path.join(folder, 'image-report.json')) ? { image_report: read(path.join(folder, 'image-report.json')) } : {}),
-        validation: result, draft_files: files,
-        retained_files: Object.fromEntries([...new Set(watched)].map((f) => [path.relative(root, f), hash(f)]))
-    };
-    const receiptPath = path.join(root, `docs/books/intake-receipts/${book.id}.json`);
-    write(receiptPath, receipt);
-    return { receipt: path.relative(root, receiptPath), ...result };
+    return { bookId: book.id, verified: true, ...result };
 }
 function cleanup(root, folder) {
     folder = draftPath(root, folder);
-    const { id } = read(path.join(folder, 'book.json'));
-    if (!SLUG.test(id || '')) throw new Error('Book id không hợp lệ.');
-    const receipt = read(path.join(root, `docs/books/intake-receipts/${id}.json`));
-    if (receipt.draft !== path.relative(root, folder) || JSON.stringify(inventory(folder)) !== JSON.stringify(receipt.draft_files)) throw new Error('Nháp đã thay đổi sau finish; kiểm tra và finish lại trước khi dọn.');
-    for (const [file, digest] of Object.entries(receipt.retained_files)) {
-        const target = path.resolve(root, file);
-        if (!within(root, target) || hash(target) !== digest) throw new Error(`File giữ lại đã đổi/mất: ${file}`);
-    }
-    const result = validate(root, read(path.join(root, `data/book/${id}.json`)), { relations: true, images: true, allowExisting: true });
-    if (result.errors.length) throw new Error(result.errors.join('\n'));
+    // Recheck current sources, saved data, asset hashes and UI before deleting raw.
+    const { bookId } = finish(root, folder);
     // Empty the verified raw input; keep its reusable directory and tracked placeholder.
     for (const name of fs.readdirSync(folder)) {
         if (name !== '.gitkeep') fs.rmSync(path.join(folder, name), { recursive: true });
     }
     fs.writeFileSync(path.join(folder, '.gitkeep'), '', { flag: 'a' });
-    return { cleaned: path.relative(root, folder), bookId: id };
+    return { cleaned: path.relative(root, folder), bookId };
 }
 function main(args) {
     const [command, ...rest] = args;
