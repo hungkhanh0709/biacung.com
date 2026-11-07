@@ -13,6 +13,38 @@
   ],
   "editions": [
     {
+      "id": "edmondo-de-amicis-cuore-2026-thai-ha-bia-cung-299k",
+      "series_ids": [],
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Thái Hà"
+      ],
+      "translators": [
+        "Hoàng Thiếu Sơn"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "299k",
+      "print_run": null,
+      "page_count": 456,
+      "copy_numbering": null,
+      "size_cm": "13 x 19",
+      "weight_g": 700,
+      "thumbnail": "/assets/img/books/edmondo-de-amicis-cuore/thai-ha-bia-cung-cover.webp",
+      "gellery_imgs": [
+        "/assets/img/books/edmondo-de-amicis-cuore/thai-ha-bia-cung-pair.webp",
+        "/assets/img/books/edmondo-de-amicis-cuore/thai-ha-bia-cung-printed-edges.webp",
+        "/assets/img/books/edmondo-de-amicis-cuore/thai-ha-bia-cung-cover-closeup.webp",
+        "/assets/img/books/edmondo-de-amicis-cuore/thai-ha-bia-cung-cover-standing.webp",
+        "/assets/img/books/edmondo-de-amicis-cuore/thai-ha-bia-cung-endpapers.webp"
+      ],
+      "detail": "- Bìa cứng lăn vân.\n- Chi tiết bế chìm hình ảnh thầy trò.\n- Bụng sách in hoa văn."
+    },
+    {
       "id": "edmondo-de-amicis-cuore-2024-dong-a-bia-vai-400k",
       "title": "Tâm Hồn Cao Thượng",
       "isbn": "978-604-491-136-6",
@@ -39,7 +71,6 @@
       "weight_g": 1100,
       "thumbnail": "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-bia-vai-cover.jpg",
       "gellery_imgs": [
-        "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-bia-vai-cover.jpg",
         "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-bia-vai-cover-and-gilded-edges.jpg",
         "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-bia-vai-cover-detail.jpg",
         "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classics-bia-vai-gilded-edges-detail.jpg",
@@ -103,7 +134,7 @@
       "copy_numbering": null,
       "size_cm": "13.5 x 20.5",
       "weight_g": 200,
-      "thumbnail": "https://product.hstatic.net/1000328521/product/nhung_tam_long_cao_ca_da_e1b2699837ab45c8b534d132e8222f6b_master.jpg",
+      "thumbnail": "/assets/img/books/edmondo-de-amicis-cuore/dong-a-classic-hoa-van-cover.jpg",
       "gellery_imgs": [],
       "detail": ""
     }
