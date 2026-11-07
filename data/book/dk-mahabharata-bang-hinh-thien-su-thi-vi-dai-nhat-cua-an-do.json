@@ -23,7 +23,7 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng, áo ôm",
+      "format": "Bìa cứng áo ôm",
       "cover_price": "720k",
       "print_run": null,
       "page_count": 512,
@@ -32,7 +32,8 @@
       "weight_g": 800,
       "thumbnail": "https://product.hstatic.net/1000328521/product/maha_da_ccb3c25f7d2c43228a0c915975dd74d6_master.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }

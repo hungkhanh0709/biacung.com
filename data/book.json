@@ -115,7 +115,7 @@
   },
   {
     "detail": "data/book/mario-puzo-the-godfather.json",
-    "search_text": "mario puzo the godfather bo gia nxb dan tri dong a nguyen minh art werger bia mem bia bia cung kem bia ao nxb van hoc ngoc thu lang bia vai ngoc thu lan bia cung nxb hoi nha van 50 nam fahasa s500 an ban gioi han",
+    "search_text": "mario puzo the godfather bo gia nxb dan tri dong a nguyen minh art werger bia mem bia cung ao om nxb van hoc ngoc thu lang bia vai ngoc thu lan bia cung nxb hoi nha van 50 nam fahasa s500 an ban gioi han",
     "updated_at": "2026-10-30",
     "last_pub_year": 2026
   },
@@ -145,7 +145,7 @@
   },
   {
     "detail": "data/book/nhieu-tac-gia-boxset-bo-sach-dau-an-10-nam-omega.json",
-    "search_text": "nhieu tac gia boxset bo sach dau an 10 nam omega nxb the gioi tri thuc van hoc dan tri omega plus nhieu nguoi dich hop 10 cuon dau an 10 nam omega 50 nam fahasa an ban gioi han",
+    "search_text": "nhieu tac gia boxset bo sach dau an 10 nam omega nxb the gioi tri thuc van hoc dan tri omega plus nhieu nguoi dich dau an 10 nam omega 50 nam fahasa an ban gioi han",
     "last_pub_year": 2026,
     "updated_at": "2026-10-30"
   },
@@ -211,7 +211,7 @@
   },
   {
     "detail": "data/book/jose-mauro-de-vasconcelos-meu-pe-de-laranja-lima.json",
-    "search_text": "jose mauro de vasconcelos meu pe de laranja lima cay cam ngot cua toi nxb hoi nha van nha nam nguyen bich lan to yen ly s555 an ban gioi han bia cung",
+    "search_text": "jose mauro de vasconcelos meu pe de laranja lima cay cam ngot cua toi nxb hoi nha van nha nam nguyen bich lan to yen ly s555 an ban gioi han bia cung bia mem bia da nhan tao",
     "updated_at": "2026-09-20",
     "last_pub_year": 2026
   },
@@ -319,7 +319,7 @@
   },
   {
     "detail": "data/book/sir-arthur-conan-doyle-the-complete-sherlock-holmes.json",
-    "search_text": "sherlock holmes toan tap the complete sherlock holmes sir arthur conan doyle nxb van hoc dong a dang thu le quang toan thien nga sidney paget d h friston f h townsend josef friedrich frank wiles arthur twidle h m brock r i joseph simpson r b a walter paget alec ball a gilbert howard elcock",
+    "search_text": "sherlock holmes toan tap the complete sherlock holmes sir arthur conan doyle nxb van hoc dong a dang thu le quang toan thien nga sidney paget d h friston f h townsend josef friedrich frank wiles arthur twidle h m brock r i joseph simpson r b a walter paget alec ball a gilbert howard elcock boxset bia cung bia mem ao om",
     "last_pub_year": 2026,
     "updated_at": "2026-08-26"
   },
@@ -421,13 +421,13 @@
   },
   {
     "detail": "data/book/jrr-tolkien-the-lord-of-the-rings.json",
-    "search_text": "chua nhan the lord of the rings jrr tolkien nxb van hoc nha nam dang tran viet an ly tam thuy tung lam ngoc diep n333",
+    "search_text": "chua nhan the lord of the rings jrr tolkien nxb van hoc nha nam dang tran viet an ly tam thuy tung lam ngoc diep n333 boxset bia cung",
     "last_pub_year": 2026,
     "updated_at": "2026-08-13"
   },
   {
     "detail": "data/book/homere-odyssee.json",
-    "search_text": "anh hung ca odyssee odyssee homere s100 nxb the gioi omega plus do khanh hoan nxb van hoc dong a hoang huu dan john flaxman s365 bia vai bia da that",
+    "search_text": "anh hung ca odyssee odyssee homere s100 nxb the gioi omega plus do khanh hoan nxb van hoc dong a hoang huu dan john flaxman s365 bia vai bia da that boxset bia cung",
     "updated_at": "2026-07-30",
     "last_pub_year": 2026
   },
@@ -445,7 +445,7 @@
   },
   {
     "detail": "data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json",
-    "search_text": "dai viet su ky toan thu nhieu tac gia nxb van hoc dong a ngo duc tho hoang van lau s895 bia da bo bia buckram",
+    "search_text": "dai viet su ky toan thu nhieu tac gia nxb van hoc dong a ngo duc tho hoang van lau s895 bia da that bia buckram boxset bia cung",
     "last_pub_year": 2026,
     "updated_at": "2026-07-11"
   },
@@ -463,25 +463,25 @@
   },
   {
     "detail": "data/book/marai-sandor-a-gyertyak-csonkig-egnek.json",
-    "search_text": "nhung ngon nen chay tan a gyertyak csonkig egnek marai sandor nxb ha noi dong tay giap van chung h365",
+    "search_text": "nhung ngon nen chay tan a gyertyak csonkig egnek marai sandor nxb ha noi dong tay giap van chung h365 bia cung ao om",
     "updated_at": "2026-07-10",
     "last_pub_year": 2026
   },
   {
     "detail": "data/book/mikhail-bulgacov-nghe-nhan-va-margarita.json",
-    "search_text": "nghe nhan va margarita mikhail bulgacov nxb lao dong dong tay doan tu huyen h365",
+    "search_text": "nghe nhan va margarita mikhail bulgacov nxb lao dong dong tay doan tu huyen h365 bia cung ao om",
     "updated_at": "2026-07-10",
     "last_pub_year": 2026
   },
   {
     "detail": "data/book/mikhail-prishvin-giot-rung.json",
-    "search_text": "giot rung mikhail prishvin nxb van hoc dong tay doan tu huyen h666",
+    "search_text": "giot rung mikhail prishvin nxb van hoc dong tay doan tu huyen h666 bia cung ao om",
     "updated_at": "2026-07-10",
     "last_pub_year": 2026
   },
   {
     "detail": "data/book/nhieu-tac-gia-doan-tu-huyen-mot-nghe-nhan.json",
-    "search_text": "doan tu huyen mot nghe nhan nhieu tac gia nxb lao dong dong tay h365",
+    "search_text": "doan tu huyen mot nghe nhan nhieu tac gia nxb lao dong dong tay h365 bia cung ao om",
     "updated_at": "2026-07-10",
     "last_pub_year": 2026
   },
@@ -601,19 +601,19 @@
   },
   {
     "detail": "data/book/nguyen-dinh-dang-60-bi-quyet-ve-son-dau.json",
-    "search_text": "60 bi quyet ve son dau nguyen dinh dang nxb dan tri dong a an ban gioi han",
+    "search_text": "60 bi quyet ve son dau nguyen dinh dang nxb dan tri dong a an ban gioi han bia vai bia mem ao om",
     "updated_at": "2026-07-04",
     "last_pub_year": 2026
   },
   {
     "detail": "data/book/charlotte-bronte-jane-eyre.json",
-    "search_text": "jane eyre charlotte bronte nxb van hoc đong a thanh loan",
+    "search_text": "jane eyre charlotte bronte nxb van hoc đong a thanh loan bia mem",
     "updated_at": "2026-07-03",
     "last_pub_year": 2026
   },
   {
     "detail": "data/book/craig-silvey-runt.json",
-    "search_text": "chu cho runt runt craig silvey nxb van hoc dong a nguyen thi cam linh sara acton",
+    "search_text": "chu cho runt runt craig silvey nxb van hoc dong a nguyen thi cam linh sara acton bia mem",
     "updated_at": "2026-07-03",
     "last_pub_year": 2026
   },
@@ -625,13 +625,13 @@
   },
   {
     "detail": "data/book/tran-dai-thang-toi-ke-tat-ca-deu-tu-sach.json",
-    "search_text": "toi ke tat ca deu tu sach tran dai thang nxb dan tri dong a",
+    "search_text": "toi ke tat ca deu tu sach tran dai thang nxb dan tri dong a bia mem",
     "updated_at": "2026-07-03",
     "last_pub_year": 2026
   },
   {
     "detail": "data/book/tran-tien-tran-tien-nguoi-hat-tho-minh-ca-khuc-nhung-cau-chuyen.json",
-    "search_text": "tran tien nguoi hat tho minh ca khuc nhung cau chuyen tran tien nxb hoi nha van dong a s365 bia cung boc vai",
+    "search_text": "tran tien nguoi hat tho minh ca khuc nhung cau chuyen tran tien nxb hoi nha van dong a s365 bia cung bia vai",
     "updated_at": "2026-07-03",
     "last_pub_year": 2026
   },
@@ -751,13 +751,13 @@
   },
   {
     "detail": "data/book/son-tung-bup-sen-xanh.json",
-    "search_text": "bup sen xanh son tung nxb kim dong",
+    "search_text": "bup sen xanh son tung nxb kim dong bia cung",
     "updated_at": "2026-07-07",
     "last_pub_year": 2025
   },
   {
     "detail": "data/book/dong-a-ho-chi-minh-tieu-su-bang-hinh.json",
-    "search_text": "ho chi minh tieu su bang hinh dong a bien soan nxb dai hoc su pham dong a an ban gioi han",
+    "search_text": "ho chi minh tieu su bang hinh dong a bien soan nxb dai hoc su pham dong a an ban gioi han bia vai bia cung ao om",
     "updated_at": "2026-07-04",
     "last_pub_year": 2025
   },
@@ -775,7 +775,7 @@
   },
   {
     "detail": "data/book/percival-everett-james.json",
-    "search_text": "james percival everett pulitzer nxb vintage penguin books",
+    "search_text": "james percival everett pulitzer nxb vintage penguin books bia mem",
     "updated_at": "2026-07-02",
     "last_pub_year": 2025
   },
@@ -787,7 +787,7 @@
   },
   {
     "detail": "data/book/antoine-galland-nghin-le-mot-dem.json",
-    "search_text": "antoine galland nghin le mot dem nxb van hoc dong a phan quang dong a classic hoa van",
+    "search_text": "antoine galland nghin le mot dem nxb van hoc dong a phan quang dong a classic hoa van bia mem bia cung ao om",
     "last_pub_year": 2024,
     "updated_at": "2026-10-19"
   },
@@ -799,7 +799,7 @@
   },
   {
     "detail": "data/book/jacob-ludwig-karl-grimm-kinder-und-hausmarchen.json",
-    "search_text": "jacob ludwig karl grimm wilhelm carl grimm kinder und hausmarchen truyen co grimm nxb van hoc nxb ha noi dong a nha nam huu ngoc lan young dong a classic hoa van s300",
+    "search_text": "jacob ludwig karl grimm wilhelm carl grimm kinder und hausmarchen truyen co grimm nxb van hoc nxb ha noi dong a nha nam huu ngoc lan young dong a classic hoa van s300 bia mem bia da nhan tao",
     "last_pub_year": 2024,
     "updated_at": "2026-10-19"
   },
@@ -967,7 +967,7 @@
   },
   {
     "detail": "data/book/jules-verne-vingt-mille-lieues-sous-les-mers.json",
-    "search_text": "jules verne vingt mille lieues sous les mers hai van dam duoi bien nxb van hoc dong a do ca son le anh dong a classic hoa van dong a classics bo tui",
+    "search_text": "jules verne vingt mille lieues sous les mers hai van dam duoi bien nxb van hoc dong a do ca son le anh dong a classic hoa van dong a classics bo tui bia mem",
     "last_pub_year": 2023,
     "updated_at": "2026-10-19"
   },
@@ -1003,7 +1003,7 @@
   },
   {
     "detail": "data/book/tran-trong-kim-viet-nam-su-luoc.json",
-    "search_text": "tran trong kim viet nam su luoc nxb hoi nha van nxb van hoc nha nam dong a s111",
+    "search_text": "tran trong kim viet nam su luoc nxb hoi nha van nxb van hoc nha nam dong a s111 bia cung bia da that",
     "last_pub_year": 2023,
     "updated_at": "2026-09-19"
   },
@@ -1015,7 +1015,7 @@
   },
   {
     "detail": "data/book/victor-hugo-les-miserables.json",
-    "search_text": "nhung nguoi khon kho les miserables victor hugo dong a classic nxb van hoc dong a huynh ly vu dinh lien le tri vien do duc hieu gustave brion emile bayard",
+    "search_text": "nhung nguoi khon kho les miserables victor hugo dong a classic nxb van hoc dong a huynh ly vu dinh lien le tri vien do duc hieu gustave brion emile bayard boxset bia mem",
     "last_pub_year": 2023,
     "updated_at": "2026-07-12"
   },
@@ -1057,19 +1057,19 @@
   },
   {
     "detail": "data/book/mario-puzo-omerta.json",
-    "search_text": "luat im lang omerta mario puzo nxb van hoc đong a luong le giang an ban gioi han",
+    "search_text": "luat im lang omerta mario puzo nxb van hoc đong a luong le giang an ban gioi han bia mem bia da nhan tao",
     "updated_at": "2026-07-02",
     "last_pub_year": 2023
   },
   {
     "detail": "data/book/mario-puzo-the-family.json",
-    "search_text": "cha con giao hoang the family mario puzo nxb van hoc đong a phan quang đinh",
+    "search_text": "cha con giao hoang the family mario puzo nxb van hoc đong a phan quang đinh bia da nhan tao bia mem",
     "updated_at": "2026-07-02",
     "last_pub_year": 2023
   },
   {
     "detail": "data/book/mario-puzo-the-sicilian.json",
-    "search_text": "đat mau sicily the sicilian mario puzo nxb van hoc đong a đang thu an ban gioi han",
+    "search_text": "đat mau sicily the sicilian mario puzo nxb van hoc đong a đang thu an ban gioi han bia da nhan tao bia mem",
     "updated_at": "2026-07-02",
     "last_pub_year": 2023
   },
@@ -1339,7 +1339,7 @@
   },
   {
     "detail": "data/book/e-h-gombrich-a-little-history-of-the-world.json",
-    "search_text": "e h gombrich a little history of the world luoc su the gioi nxb hong duc nha nam phan linh lan s1000",
+    "search_text": "e h gombrich a little history of the world luoc su the gioi nxb hong duc nha nam phan linh lan s1000 bia da nhan tao",
     "last_pub_year": 2021,
     "updated_at": "2026-09-20"
   },
@@ -1351,7 +1351,7 @@
   },
   {
     "detail": "data/book/bui-duc-tien-cac-loai-chim-viet-nam.json",
-    "search_text": "bui duc tien nguyen manh hiep tang a pau tran anh tuan cac loai chim viet nam nxb the gioi nha nam s111",
+    "search_text": "bui duc tien nguyen manh hiep tang a pau tran anh tuan cac loai chim viet nam nxb the gioi nha nam s111 bia da that",
     "last_pub_year": 2021,
     "updated_at": "2026-09-19"
   },
@@ -1423,7 +1423,7 @@
   },
   {
     "detail": "data/book/dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do.json",
-    "search_text": "mahabharata bang hinh thien su thi vi dai nhat cua an do dk nxb dan tri dong a le thi oanh ho anh thai",
+    "search_text": "mahabharata bang hinh thien su thi vi dai nhat cua an do dk nxb dan tri dong a le thi oanh ho anh thai bia cung ao om",
     "last_pub_year": 2021,
     "updated_at": "2026-07-11"
   },
@@ -1627,7 +1627,7 @@
   },
   {
     "detail": "data/book/jonathan-swift-gullivers-travels.json",
-    "search_text": "gulliver du ki gullivers travels jonathan swift dong a classics bo tui nxb van hoc dong a do duc hieu",
+    "search_text": "gulliver du ki gullivers travels jonathan swift dong a classics bo tui nxb van hoc dong a do duc hieu bia mem",
     "last_pub_year": 2013,
     "updated_at": "2026-08-26"
   },
@@ -1789,7 +1789,7 @@
   },
   {
     "detail": "data/book/nguyen-dinh-dang-ky-thuat-ve-son-dau.json",
-    "search_text": "ky thuat ve son dau nguyen đinh đang nxb dan tri đong a",
+    "search_text": "ky thuat ve son dau nguyen đinh đang nxb dan tri đong a bia mem",
     "updated_at": "2026-07-03",
     "last_pub_year": ""
   },

@@ -9,7 +9,7 @@
   "series": [],
   "editions": [
     {
-      "id": "nhieu-tac-gia-dai-viet-su-ky-toan-thu-2026-dong-a-bia-da-bo-6tr",
+      "id": "nhieu-tac-gia-dai-viet-su-ky-toan-thu-2026-dong-a-bia-da-that-6tr",
       "isbn": null,
       "caption": "S895",
       "pub_year": 2026,
@@ -23,7 +23,7 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da bò",
+      "format": "Bìa da thật",
       "cover_price": "6tr",
       "print_run": 895,
       "page_count": null,
@@ -55,7 +55,7 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa Buckram",
+      "format": "Bìa buckram",
       "cover_price": "5tr",
       "print_run": 895,
       "page_count": null,
@@ -72,7 +72,7 @@
       "series_ids": []
     },
     {
-      "id": "nhieu-tac-gia-dai-viet-su-ky-toan-thu-2022-dong-a-boxset-bia-cung-ao-om-2510k",
+      "id": "nhieu-tac-gia-dai-viet-su-ky-toan-thu-2022-dong-a-boxset-bia-cung-2510k",
       "isbn": null,
       "caption": "",
       "pub_year": 2022,
@@ -86,7 +86,7 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Boxset, bìa cứng, áo ôm",
+      "format": "Boxset, bìa cứng",
       "cover_price": "2510k",
       "print_run": null,
       "page_count": 1768,
@@ -95,7 +95,7 @@
       "weight_g": 8780,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8936203361834_1.jpg",
       "gellery_imgs": [],
-      "detail": "",
+      "detail": "- Có bìa áo.",
       "series_ids": []
     }
   ]
