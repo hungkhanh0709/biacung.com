@@ -72,7 +72,11 @@ Schema sống là `data/template/book-detail.json`. Công cụ tạo default the
 
 Optional không tìm được không chặn lưu: awards, series, isbn, print_run, page_count, copy_numbering, size_cm, weight_g, detail và vai trò đóng góp chưa biết. title_original/pub_year/publisher được ưu tiên nghiên cứu; sau tra cứu hợp lý vẫn thiếu thì dùng default và ghi rõ, không bịa hoặc hỏi vô tận. Hoàn tất toàn workflow vẫn cần ảnh, quan hệ và UI đạt.
 
+Khi người dùng yêu cầu gộp nhiều tập thành một edition, cộng giá bìa và số trang nếu đủ dữ kiện từng tập; giữ giá và số trang từng tập trong detail, ghi phép tính vào evidence. Ví dụ 258k + 217k → cover_price `475k`, 612 + 516 → page_count `1128`; không ghi phép cộng vào cover_price hoặc ID edition. Nếu các tập cùng khổ thì dùng khổ chung; không ghép ISBN riêng thành ISBN của bộ. Khi chuẩn hóa một edition bộ đã có, lưu giá trị trước/sau trong nháp, sinh ID theo form và kiểm tra tham chiếu ID cũ trước khi lưu qua API hiện có.
+
 Keyword do agent đối chiếu với quy ước người dùng và các edition tương tự trong data/book/*.json. Lệnh vocab chỉ đếm giá trị/tần suất, không phải whitelist hoặc nguồn chuẩn độc lập; dữ liệu cũ có thể chứa biến thể sai. Ưu tiên nhãn đúng nghĩa đã chốt, giữ hoa/thường, đưa quy cách phụ vào detail. Nếu chưa rõ thì agent ghi thiếu/đối chiếu thêm, không thay logic lưu của ứng dụng vì một danh sách mới.
+
+Khi kiểm tra tìm kiếm, thử đúng tên tác giả có dấu và dấu gạch nối như trên detail. Nếu index do form sinh làm mất ký tự hoặc nối các phần tên khiến truy vấn không khớp, giữ từ khóa cũ và bổ sung nguyên tên tác giả đã có nguồn vào search_text của riêng sách qua endpoint review index hiện có; xác minh lại trên Chrome. Ví dụ `Tadeusz Dołęga-Mostowicz` cần giữ chữ `ł` và ranh giới các phần tên cho bộ tìm kiếm hiện tại. Đây là xử lý dữ liệu của workflow, không đổi logic chuẩn hóa của form/API.
 
 Nobel trao cho tác giả: sách của đúng tác giả được gắn `Nobel Văn Chương` để hiển thị/tìm kiếm theo quy ước dự án, không khẳng định từng cuốn đoạt Nobel. Năm giải lưu trong evidence/dữ liệu giải, không ghép năm vào keyword. Giải tác phẩm như International Booker chỉ áp dụng cho đúng tác phẩm đã xác minh, không lan sang các sách khác cùng tác giả; phân biệt International Booker với Booker và ghi rõ ngôn ngữ/dịch giả nếu giải gắn bản dịch.
 
