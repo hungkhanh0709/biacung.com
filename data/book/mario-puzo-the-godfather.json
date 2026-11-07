@@ -13,7 +13,7 @@
     {
       "id": "mario-puzo-the-godfather-2026-dong-a-bia-mem-250k",
       "isbn": null,
-      "caption": "Phiên Bản Trung Thu",
+      "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Dân Trí",
       "issuers": [
@@ -38,12 +38,13 @@
         "/assets/img/books/mario-puzo-the-godfather/dong-a-mid-autumn-paperback-back-cover.jpg",
         "/assets/img/books/mario-puzo-the-godfather/dong-a-mid-autumn-paperback-spine-angle.jpg"
       ],
-      "detail": ""
+      "detail": "- Phiên Bản Trung Thu.",
+      "series_ids": []
     },
     {
       "id": "mario-puzo-the-godfather-2026-dong-a-bia-bia-cung-kem-bia-ao-599k",
       "isbn": "978-632-00-6088-7",
-      "caption": "Bìa Đen",
+      "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Dân Trí",
       "issuers": [
@@ -65,36 +66,11 @@
       "weight_g": 600,
       "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_a0c1dd0702774985b7e67edd82fbea79_master.jpg",
       "gellery_imgs": [
+        "https://cdn.hstatic.net/products/1000328521/2_da_33e2b8a3b9d14b6bb7cb46ca51c300ea_master.jpg",
         "https://cdn.hstatic.net/products/1000328521/b_a_trong_3644934af07142adaebf9ad9be63c027_master.jpg"
       ],
-      "detail": ""
-    },
-    {
-      "id": "mario-puzo-the-godfather-2026-dong-a-bia-bia-cung-kem-bia-ao-599k",
-      "isbn": "978-632-00-6088-7",
-      "caption": "Bìa Trắng",
-      "pub_year": 2026,
-      "publisher": "NXB Dân Trí",
-      "issuers": [
-        "Đông A"
-      ],
-      "translators": [
-        "Nguyễn Minh"
-      ],
-      "illustrators": [
-        "Art Werger"
-      ],
-      "proofreaders": [],
-      "format": "Bìa bìa cứng, kèm bìa áo",
-      "cover_price": "599k",
-      "print_run": null,
-      "page_count": 560,
-      "copy_numbering": null,
-      "size_cm": "",
-      "weight_g": 600,
-      "thumbnail": "https://cdn.hstatic.net/products/1000328521/2_da_33e2b8a3b9d14b6bb7cb46ca51c300ea_master.jpg",
-      "gellery_imgs": [],
-      "detail": ""
+      "detail": "- Có hai phiên bản bìa: Trắng / Đen.",
+      "series_ids": []
     },
     {
       "id": "mario-puzo-the-godfather-2026-dong-a-bia-vai-2tr4",
@@ -102,7 +78,7 @@
       "series_ids": [
         "50-nam-fahasa"
       ],
-      "caption": "Kỉ Niệm 50 Năm Fahasa",
+      "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -139,7 +115,7 @@
     {
       "id": "mario-puzo-the-godfather-2026-dong-a-bia-cung-990k",
       "isbn": null,
-      "caption": "Kỉ Niệm 50 Năm Fahasa",
+      "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -163,7 +139,7 @@
       "gellery_imgs": [
         "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5161.jpg"
       ],
-      "detail": "Ấn bản cao cấp lần này được thực hiện với khổ lớn 25 x 30 cm, bìa cứng kèm bìa áo, ruột in bốn màu trên giấy Ford 150 gsm và bổ sung 15 minh họa của họa sĩ Art Werger. Tác phẩm sử dụng bản dịch nổi tiếng của Ngọc Thứ Lang, vốn đã gắn bó với nhiều thế hệ độc giả Việt Nam.",
+      "detail": "Ấn bản cao cấp lần này được thực hiện với khổ lớn 25 x 30 cm, bìa cứng kèm bìa áo, ruột in bốn màu trên giấy Ford 150 gsm và bổ sung 15 minh họa của họa sĩ Art Werger. Tác phẩm sử dụng bản dịch nổi tiếng của Ngọc Thứ Lang, vốn đã gắn bó với nhiều thế hệ độc giả Việt Nam.\n- Kỉ niệm 50 năm Fahasa.",
       "series_ids": [
         "50-nam-fahasa"
       ]
@@ -171,7 +147,7 @@
     {
       "id": "mario-puzo-the-godfather-2024-dong-a-bia-mem-200",
       "isbn": null,
-      "caption": "Bố Già - Ấn Bản Kỉ Niệm 55 Năm Xuất Bản Lần Đầu",
+      "caption": "",
       "pub_year": 2024,
       "publisher": "NXB Hội Nhà Văn",
       "issuers": [
@@ -193,12 +169,13 @@
       "weight_g": 600,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/s/_/s_ch-_-bm.jpg",
       "gellery_imgs": [],
-      "detail": "Để ghi dấu 55 năm từ khi tác phẩm ra mắt bạn đọc, và để đưa đến cho bạn đọc những trải nghiệm mới, lần này, chúng tôi giới thiệu bản dịch mới do dịch giả Nguyễn Minh chuyển ngữ. Bản dịch này được thực hiện với quan điểm: dịch thì phải phóng, song chỉ dừng ở mức phóng dịch, chứ không đến mức gần như phóng tác. Ngoài ra, các bản dịch Bố Già trước đây đều chưa đầy đủ, bị lược bớt nhiều đoạn. Bản dịch mới này chủ trương giữ đúng tinh thần tác phẩm nên không giảm nhẹ, không né tránh, cũng không cắt bỏ. Bởi xét cho cùng, một cuốn tiểu thuyết đặc tả về xã hội đen thì lẽ tất nhiên phải… đen."
+      "detail": "Để ghi dấu 55 năm từ khi tác phẩm ra mắt bạn đọc, và để đưa đến cho bạn đọc những trải nghiệm mới, lần này, chúng tôi giới thiệu bản dịch mới do dịch giả Nguyễn Minh chuyển ngữ. Bản dịch này được thực hiện với quan điểm: dịch thì phải phóng, song chỉ dừng ở mức phóng dịch, chứ không đến mức gần như phóng tác. Ngoài ra, các bản dịch Bố Già trước đây đều chưa đầy đủ, bị lược bớt nhiều đoạn. Bản dịch mới này chủ trương giữ đúng tinh thần tác phẩm nên không giảm nhẹ, không né tránh, cũng không cắt bỏ. Bởi xét cho cùng, một cuốn tiểu thuyết đặc tả về xã hội đen thì lẽ tất nhiên phải… đen.",
+      "series_ids": []
     },
     {
-      "id": "mario-puzo-the-godfather-2024-dong-a-250",
+      "id": "mario-puzo-the-godfather-2024-dong-a-bia-cung-250",
       "isbn": null,
-      "caption": "Bố Già - Bìa Cứng",
+      "caption": "",
       "pub_year": 2024,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -209,7 +186,7 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "",
+      "format": "Bìa cứng",
       "cover_price": "250",
       "print_run": null,
       "page_count": 536,
@@ -218,7 +195,8 @@
       "weight_g": 890,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/2/z2611575615164_9f60c133cfed1c7bb3f59b247f-600.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     },
     {
       "id": "mario-puzo-the-godfather-2019-dong-a-bia-vai-500k",

@@ -11,12 +11,12 @@
   ],
   "editions": [
     {
-      "id": "anatole-france-toi-ac-cua-sylvestre-bonnard-dao-chim-canh-cut-2021-dong-a-bia-cung-boc-buckram-1tr5",
+      "id": "anatole-france-toi-ac-cua-sylvestre-bonnard-dao-chim-canh-cut-2021-dong-a-bia-buckram-1tr5",
       "isbn": null,
       "series_ids": [
         "tram-nam-nobel"
       ],
-      "caption": "Bìa Buckram",
+      "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2021,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -30,7 +30,7 @@
         "Frank C. Papé"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng bọc buckram",
+      "format": "Bìa buckram",
       "cover_price": "1tr5",
       "print_run": null,
       "page_count": 724,

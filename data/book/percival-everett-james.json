@@ -13,7 +13,7 @@
     {
       "id": "percival-everett-james-2025-rainbow-bia-mem-208k",
       "isbn": null,
-      "caption": "Bản Dịch Tiếng Việt",
+      "caption": "",
       "pub_year": 2025,
       "publisher": "NXB Lao Động",
       "issuers": [
@@ -33,12 +33,13 @@
       "weight_g": 420,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/6/z6503173972316_6b80a8cc8db332d3650f8e45f2d368ec.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "- Bản Dịch Tiếng Việt.",
+      "series_ids": []
     },
     {
       "id": "percival-everett-james-penguin-books-bia-mem",
       "isbn": null,
-      "caption": "Bản Gốc Tiếng Anh",
+      "caption": "",
       "pub_year": null,
       "publisher": "NXB Vintage",
       "issuers": [
@@ -56,7 +57,8 @@
       "weight_g": 215,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/9/7/9798217007394.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "- Bản Gốc Tiếng Anh.",
+      "series_ids": []
     }
   ]
 }

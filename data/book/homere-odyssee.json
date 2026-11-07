@@ -12,8 +12,8 @@
   "editions": [
     {
       "id": "homere-odyssee-2026-omega-plus-boxset-bia-cung-589k",
-      "isbn": null,
       "title": "Boxset Odyssêy - Iliad",
+      "isbn": null,
       "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Thế Giới",
@@ -45,12 +45,13 @@
         "/assets/img/books/homere-odyssee/omega-plus-boxset-side.jpg",
         "/assets/img/books/homere-odyssee/omega-plus-boxset-spines.jpg"
       ],
-      "detail": "- Có hộp đựng 2 cuốn.\n- Bìa sách được thiết kế mới phong cách typo và in ép nhũ họa tiết chữ O và I."
+      "detail": "- Có hộp đựng 2 cuốn.\n- Bìa sách được thiết kế mới phong cách typo và in ép nhũ họa tiết chữ O và I.",
+      "series_ids": []
     },
     {
       "id": "homere-odyssee-2026-dong-a-bia-da-that",
       "isbn": null,
-      "caption": "Ấn Bản Giới Hạn S100 Bìa Da Thật",
+      "caption": "S100",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -76,12 +77,13 @@
         "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-5.jpeg",
         "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-6.jpeg"
       ],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     },
     {
       "id": "homere-odyssee-2026-dong-a-bia-vai-2tr5",
       "isbn": null,
-      "caption": "Ấn Bản Giới Hạn S365 - Bìa Vải",
+      "caption": "S365",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -94,7 +96,7 @@
         "John Flaxman"
       ],
       "proofreaders": [],
-      "format": "Bìa vải",
+      "format": "Bìa Vải",
       "cover_price": "2tr5",
       "print_run": 365,
       "page_count": 576,
@@ -109,7 +111,8 @@
         "https://cdn.hstatic.net/products/1000328521/5_a67eadd136564e039f7d17805e38c1ac_master.jpg",
         "https://cdn.hstatic.net/products/1000328521/6_84de215d27de4db4ba814188838844e3_master.jpg"
       ],
-      "detail": "- 365 bản giới hạn, đánh số nhảy từ ODS 001 đến ODS 365.\n- Bìa cứng bọc vải.\n- Ruột in trên giấy GV76-BB định lượng 100 gsm, khổ 25 x 30 cm, 576 trang.\n- Hộp vỏ sò bọc vải, lót nhung."
+      "detail": "- 365 bản giới hạn, đánh số nhảy từ ODS 001 đến ODS 365.\n- Bìa cứng bọc vải.\n- Ruột in trên giấy GV76-BB định lượng 100 gsm, khổ 25 x 30 cm, 576 trang.\n- Hộp vỏ sò bọc vải, lót nhung.",
+      "series_ids": []
     }
   ]
 }

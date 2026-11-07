@@ -11,7 +11,7 @@
     {
       "id": "dino-buzzati-dino-buzzati-tuyen-tap-tac-pham-2025-dong-tay-bia-cung",
       "isbn": null,
-      "caption": "Bìa Cứng - H365",
+      "caption": "H365",
       "pub_year": 2025,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -29,7 +29,8 @@
       "weight_g": null,
       "thumbnail": "https://dongtay.vn/upload/images/20000/scan-20251112-155820.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }

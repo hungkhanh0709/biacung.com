@@ -11,7 +11,7 @@
     {
       "id": "miguel-de-cervantes-don-quijote-de-la-mancha-2026-nha-nam-bia-mem-420k",
       "isbn": null,
-      "caption": "Bộ 2 Tập",
+      "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Hội Nhà Văn",
       "issuers": [
@@ -31,7 +31,8 @@
       "weight_g": null,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8935235236097_1.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "- Bộ 2 tập.",
+      "series_ids": []
     }
   ]
 }

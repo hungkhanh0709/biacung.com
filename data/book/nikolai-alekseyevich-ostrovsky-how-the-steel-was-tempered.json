@@ -47,7 +47,7 @@
         "50-nam-fahasa"
       ],
       "isbn": null,
-      "caption": "Kỉ Niệm 50 Năm Fahasa",
+      "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -76,7 +76,7 @@
         "50-nam-fahasa"
       ],
       "isbn": null,
-      "caption": "Kỉ Niệm 50 Năm Fahasa",
+      "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -97,7 +97,7 @@
       "weight_g": 2000,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5499.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "- Kỉ niệm 50 năm Fahasa."
     },
     {
       "id": "nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered-2026-tri-viet-bia-mem-178k",
@@ -120,7 +120,8 @@
       "weight_g": 610,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8935230012757.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     },
     {
       "id": "nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered-2026-dong-a-bia-mem-190k",
@@ -146,7 +147,8 @@
       "weight_g": 900,
       "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_e416eed37eb54926831a711391e69905_master.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }

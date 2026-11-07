@@ -1,6 +1,6 @@
 {
   "id": "mario-puzo-fools-die",
-  "title": "",
+  "title": "Dại thì chết",
   "title_original": "Fools Die",
   "authors": [
     "Mario Puzo"
@@ -9,8 +9,9 @@
   "series": [],
   "editions": [
     {
+      "id": "mario-puzo-fools-die-2022-dong-a-bia-mem-250",
       "isbn": null,
-      "caption": "Dại thì chết (Sách dành cho độc giả trên 18 tuổi)",
+      "caption": "",
       "pub_year": 2022,
       "publisher": "NXB Văn học",
       "issuers": [
@@ -30,7 +31,8 @@
       "weight_g": 900,
       "thumbnail": "https://product.hstatic.net/1000328521/product/thumb___logo_c2c2fc54d0bb4b6082b899af87dfeae5_master.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "- Sách dành cho độc giả trên 18 tuổi.",
+      "series_ids": []
     }
   ]
 }

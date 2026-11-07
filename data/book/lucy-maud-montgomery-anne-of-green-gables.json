@@ -16,7 +16,7 @@
         "50-nam-fahasa"
       ],
       "isbn": null,
-      "caption": "Kỉ Niệm 50 Năm Fahasa",
+      "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2026,
       "publisher": "NXB Hội Nhà Văn",
       "issuers": [
@@ -34,13 +34,13 @@
       "weight_g": 3000,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/a/n/anne-copy-1.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "- Kỉ niệm 50 năm Fahasa."
     },
     {
-      "id": "lucy-maud-montgomery-anne-of-green-gables-2022-nha-nam-boxset-bia-cung-2tr",
+      "id": "lucy-maud-montgomery-anne-of-green-gables-2022-nha-nam-bia-cung-2tr",
       "isbn": null,
       "series_ids": [],
-      "caption": "Bìa Cứng Giới Hạn",
+      "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2022,
       "publisher": "NXB Hội Nhà Văn",
       "issuers": [
@@ -49,7 +49,7 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Boxset, bìa cứng",
+      "format": "Bìa cứng",
       "cover_price": "2tr",
       "print_run": 500,
       "page_count": 2848,

@@ -11,7 +11,7 @@
     {
       "id": "nguyen-dinh-dang-ky-thuat-ve-son-dau-dong-a-bia-mem-450k",
       "isbn": "978-604-304-647-2",
-      "caption": "Kỹ Thuật Vẽ Sơn Dầu",
+      "caption": "",
       "pub_year": null,
       "publisher": "NXB Dân Trí",
       "issuers": [
@@ -29,7 +29,8 @@
       "weight_g": 1200,
       "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_bb00ea56636442aca3ce9ecf2a9fcd0c_master.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }

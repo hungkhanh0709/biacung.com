@@ -13,7 +13,7 @@
     {
       "id": "r-f-kuang-yellowface-2026-rainbow-bia-mem-205k",
       "isbn": null,
-      "caption": "Tái Bản 2026",
+      "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Lao Động",
       "issuers": [
@@ -33,7 +33,8 @@
       "weight_g": 500,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/7/z7965837234777_ee26cc7d6600e7607339ec00a673a295.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }

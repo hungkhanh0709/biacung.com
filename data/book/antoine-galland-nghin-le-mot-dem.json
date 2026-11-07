@@ -16,7 +16,7 @@
       "series_ids": [
         "dong-a-classic-hoa-van"
       ],
-      "caption": "Những Truyện Hay Chọn Lọc",
+      "caption": "",
       "pub_year": 2024,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -36,7 +36,7 @@
       "weight_g": 500,
       "thumbnail": "https://product.hstatic.net/1000328521/product/nghin_le_mot_dem_da_50c143d070d546359001819669154028_master.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "- Những Truyện Hay Chọn Lọc."
     },
     {
       "id": "antoine-galland-nghin-le-mot-dem-2021-dong-a-bia-cung-ao-om-990k",
@@ -61,7 +61,8 @@
       "weight_g": 2675,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/i/m/image_244718_1_1842.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }

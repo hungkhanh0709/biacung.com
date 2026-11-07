@@ -9,6 +9,36 @@
   "series": [],
   "editions": [
     {
+      "id": "niccolo-machiavelli-il-principe-2026-omega-plus-bia-cung-168k",
+      "title": "Quân Vương - Thuật Cai Trị",
+      "series_ids": [],
+      "isbn": null,
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Thế Giới",
+      "issuers": [
+        "Omega Plus"
+      ],
+      "translators": [
+        "Vũ Thái Hà"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "168k",
+      "print_run": null,
+      "page_count": 200,
+      "copy_numbering": null,
+      "size_cm": "14 x 20.5",
+      "weight_g": 420,
+      "thumbnail": "/assets/img/books/niccolo-machiavelli-il-principe/omega-plus-fahasa-bia-cung-cover.jpeg",
+      "gellery_imgs": [
+        "/assets/img/books/niccolo-machiavelli-il-principe/omega-plus-fahasa-bia-cung-endpapers.jpeg",
+        "/assets/img/books/niccolo-machiavelli-il-principe/omega-plus-fahasa-bia-cung-spine-top.jpeg"
+      ],
+      "detail": "- Ấn bản bìa cứng số lượng giới hạn, Fahasa độc quyền phát hành.\n- Bìa vàng hoàng kim, chữ đen và chữ Q khổ lớn; thiết kế tối giản kết hợp tinh thần cổ điển.\n- Tờ gác in họa tiết hình học.\n- Ấn bản có dấu kỷ niệm 10 năm Omega+ và 50 năm Fahasa."
+    },
+    {
       "id": "niccolo-machiavelli-il-principe-2006-dong-a-bia-mem-99k",
       "isbn": "978-632-635-296-2",
       "caption": "",
@@ -31,7 +61,8 @@
       "weight_g": 700,
       "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_a8334223742c4557be19510579ae8810_master.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }
