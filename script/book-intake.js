@@ -47,6 +47,7 @@ function vocabulary(root) {
     }
     return {
         source: 'data/book/*.json', advisory_only: true,
+        canonical_reference: '.agents/skills/book-intake/references/caption-format.md',
         ...Object.fromEntries(Object.entries(counts).map(([field, values]) => [field,
             [...values].map(([value, count]) => ({ value, count }))
                 .sort((a, b) => b.count - a.count || a.value.localeCompare(b.value, 'vi'))]))
@@ -92,7 +93,6 @@ function validate(root, book, { relations = false, images = false, allowExisting
     const errors = [], missing = [], warnings = [];
     const bad = (message) => errors.push(message);
     const template = read(path.join(root, 'data/template/book-detail.json'));
-    const vocab = vocabulary(root);
     if (!book || typeof book !== 'object' || Array.isArray(book)) return { errors: ['Book phải là object.'], missing, warnings };
     if (typeof book.id !== 'string' || !SLUG.test(book.id)) bad('id phải là kebab-case.');
     if (!text(book.title)) bad('Thiếu title.');
@@ -130,15 +130,6 @@ function validate(root, book, { relations = false, images = false, allowExisting
         if (edition.pub_year !== null && (!Number.isInteger(edition.pub_year) || edition.pub_year < 1000 || edition.pub_year > 9999)) bad(`${at}.pub_year phải là năm 4 chữ số.`);
         for (const field of ['isbn', 'copy_numbering']) if (edition[field] !== null && !text(edition[field])) bad(`${at}.${field} phải là string hoặc null.`);
         if (text(edition.cover_price) && !/^\d+(?:\.\d+)?k$/.test(edition.cover_price)) bad(`${at}.cover_price phải có dạng 280k.`);
-        for (const field of ['caption', 'format']) {
-            if (!text(edition[field])) continue;
-            if (!vocab[field].some((entry) => entry.value === edition[field])) {
-                const similar = vocab[field].find((entry) => key(entry.value) === key(edition[field]));
-                warnings.push(similar
-                    ? `${at}.${field}: dữ liệu hiện có thường dùng ${JSON.stringify(similar.value)}; agent đối chiếu quy ước người dùng.`
-                    : `${at}.${field}: chưa thấy ${JSON.stringify(edition[field])} trong dữ liệu hiện có; agent rà lại nguồn và quy ước. Đây là gợi ý, không phải whitelist.`);
-            }
-        }
         for (const field of ['pub_year', 'publisher', 'format', 'cover_price', 'thumbnail']) {
             if (edition[field] == null || edition[field] === '') missing.push(`${at}.${field}`);
         }

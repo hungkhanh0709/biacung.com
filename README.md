@@ -77,10 +77,11 @@ npm run book-input-server
 Mở URL được in trong log rồi thêm `/book-input.html` (ví dụ `http://127.0.0.1:3001/book-input.html` nếu cổng 3000 đã được static-server dùng). Form và API lưu file phải cùng origin. Kiểm tra `/api/index-state` trả JSON trước khi nhập; việc trang HTML mở được chưa đủ để xác nhận có thể lưu. Luồng chính là tải sách theo slug, nhập hoặc chỉnh dữ liệu, xem trước JSON và lưu vào workspace.
 
 Quy trình nhập trọn từ nội dung tự nhiên và ảnh: dùng `$book-intake`, xem
-[hướng dẫn](docs/books/book-intake-workflow.md). Nháp nằm ở
+[hướng dẫn](.agents/skills/book-intake/references/book-intake-workflow.md). Nháp nằm ở
 `data/_raw/`, một tựa sách mỗi lượt; có thể đặt ảnh trực tiếp vào đây.
-Agent ưu tiên Goodreads để tra `title_original`, tự bổ sung phần thiếu,
-điền form hiện có, chuẩn hóa ảnh, kiểm tra liên kết/UI rồi dọn nội dung
+Agent tra `title_original` theo [quy trình tra tên nguyên tác](.agents/skills/book-intake/references/book-intake-workflow.md#tra-tên-nguyên-tác),
+ưu tiên trang bản quyền và nguồn tác giả/NXB/thư viện; Goodreads chỉ là nguồn bổ sung nếu truy cập được.
+Agent tự bổ sung phần thiếu, điền form hiện có, chuẩn hóa ảnh, kiểm tra liên kết/UI rồi dọn nội dung
 `data/_raw/` sau khi hoàn tất để dùng lại cho sách tiếp theo.
 
 Agent bắt đầu bằng `node script/book-intake.js sources` để thấy cả ảnh bị gitignore,

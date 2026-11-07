@@ -16,12 +16,13 @@ Giữ nguyên mọi dữ liệu không thuộc phạm vi Chauchaubook. Field `ge
 
 Nếu có trong repository, dùng `fredrik-backman-en-man-som-heter-ove` làm mẫu về cấu trúc JSON, đường dẫn ảnh local và cách đặt tên. Không sao chép dữ liệu riêng của cuốn sách mẫu.
 
-Metadata chuẩn:
+Đọc [nguồn chuẩn Caption/Format tập trung](../book-intake/references/caption-format.md) và dùng nhãn tương ứng cho edition bìa vẽ tay Chauchaubook. Không duy trì bản sao keyword Caption/Format trong skill này.
+
+Metadata series và mô tả:
 
 ```yaml
 series: Chauchaubook
 series_ids: chauchaubook
-caption: Bìa Vẽ Tay Bởi Châu Châu Book
 detail: Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic.
 ```
 
@@ -33,7 +34,6 @@ Trong JSON, `series` và `series_ids` là mảng:
   "editions": [
     {
       "series_ids": ["chauchaubook"],
-      "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
       "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
     }
   ]
@@ -119,7 +119,7 @@ Trong cùng một nhóm, ưu tiên ảnh toàn cảnh trước ảnh cận cản
 
 - Ở cấp sách, bảo đảm mảng `series` chứa đúng một giá trị `Chauchaubook`; giữ lại các series khác và thứ tự hiện có.
 - Với mỗi edition đã xác định là Chauchaubook, bảo đảm mảng `series_ids` chứa đúng một `chauchaubook`; giữ các ID khác.
-- Đặt `caption` chính xác là `Bìa Vẽ Tay Bởi Châu Châu Book`.
+- Đặt `caption` theo nhãn bìa vẽ tay Chauchaubook trong [nguồn chuẩn tập trung](../book-intake/references/caption-format.md#caption).
 - Đặt `detail` chính xác là `Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic.`
 - Không tự suy đoán ISBN, năm, nhà xuất bản, đơn vị phát hành, dịch giả, giá hoặc thông số khác.
 
