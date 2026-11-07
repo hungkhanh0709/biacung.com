@@ -1,0 +1,4 @@
+interface:
+  display_name: "Check Book New"
+  short_description: "Điểm tin sách mới trong ngày từ các fanpage"
+  default_prompt: "Dùng $check-book-new để duyệt các fanpage theo danh sách và lập bảng sách mới hôm nay."
