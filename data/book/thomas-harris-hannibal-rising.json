@@ -11,7 +11,7 @@
     {
       "id": "thomas-harris-hannibal-rising-2026-nha-nam-bia-mem-155k",
       "isbn": null,
-      "caption": "Tái Bản 2026",
+      "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Hội Nhà Văn",
       "issuers": [
@@ -31,7 +31,8 @@
       "weight_g": 420,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/h/a/hannibal-troi-day-01_1.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }

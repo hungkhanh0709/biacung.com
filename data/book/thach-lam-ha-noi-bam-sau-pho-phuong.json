@@ -38,12 +38,12 @@
       "detail": "Được thực hiện theo quy cách của một cuốn artbook, bồ sung thêm 13 bức tranh lụa mới hoàn toàn."
     },
     {
-      "id": "thach-lam-ha-noi-bam-sau-pho-phuong-2022-nha-nam-bia-cung-ao-om-145k",
+      "id": "thach-lam-ha-noi-bam-sau-pho-phuong-2022-nha-nam-bia-cung-145k",
       "isbn": null,
       "series_ids": [
         "viet-nam-danh-tac-nha-nam"
       ],
-      "caption": "Bìa Cứng Giới Hạn",
+      "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2022,
       "publisher": "NXB Hội Nhà Văn",
       "issuers": [
@@ -52,7 +52,7 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng áo ôm",
+      "format": "Bìa cứng",
       "cover_price": "145k",
       "print_run": 555,
       "page_count": 120,

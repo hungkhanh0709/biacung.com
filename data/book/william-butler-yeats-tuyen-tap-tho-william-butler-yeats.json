@@ -11,12 +11,12 @@
   ],
   "editions": [
     {
-      "id": "william-butler-yeats-tuyen-tap-tho-william-butler-yeats-2023-dong-a-bia-cung-boc-buckram-1tr",
+      "id": "william-butler-yeats-tuyen-tap-tho-william-butler-yeats-2023-dong-a-bia-buckram-1tr",
       "isbn": "978-604-477-275-2",
       "series_ids": [
         "tram-nam-nobel"
       ],
-      "caption": "Bìa Buckram",
+      "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2023,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -29,7 +29,7 @@
         "Triệu Yến Vi"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng bọc buckram",
+      "format": "Bìa buckram",
       "cover_price": "1tr",
       "print_run": null,
       "page_count": 332,

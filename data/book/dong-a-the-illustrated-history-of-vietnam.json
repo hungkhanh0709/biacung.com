@@ -11,7 +11,7 @@
     {
       "id": "dong-a-the-illustrated-history-of-vietnam-2025-dong-a-bia-cung-ao-om-65usd",
       "isbn": "978-632-601-812-7",
-      "caption": "Lịch Sử Việt Nam Bằng Hình – Phiên Bản Tiếng Anh",
+      "caption": "",
       "pub_year": 2025,
       "publisher": "NXB Đại Học Sư Phạm",
       "issuers": [
@@ -33,7 +33,8 @@
         "https://cdn.hstatic.net/products/1000328521/3d_-_lsvn_bang_hinh_tieng_anh_2_867bbf4158c14ca989c8163e737da109_master.jpg",
         "https://cdn.hstatic.net/products/1000328521/2_c655a540725e48b8aebd5acc1076f6ef_master.jpg"
       ],
-      "detail": "Sách do Đông A tổ chức bản thảo và được PGS.TS. Trần Đức Cường - Chủ tịch Hội Khoa học Lịch sử Việt Nam, PGS.TS. Nguyễn Bá Cường, TS. Vũ Đức Liêm, PGS.TS. Phan Ngọc Huyền cố vấn nội dung.\nCuốn sách cũng nhận được sự góp ý, bổ sung thông tin từ nhiều nhà nghiên cứu, nhà sưu tập, họa sĩ, dịch giả."
+      "detail": "Sách do Đông A tổ chức bản thảo và được PGS.TS. Trần Đức Cường - Chủ tịch Hội Khoa học Lịch sử Việt Nam, PGS.TS. Nguyễn Bá Cường, TS. Vũ Đức Liêm, PGS.TS. Phan Ngọc Huyền cố vấn nội dung.\nCuốn sách cũng nhận được sự góp ý, bổ sung thông tin từ nhiều nhà nghiên cứu, nhà sưu tập, họa sĩ, dịch giả.\n- Phiên bản tiếng Anh.",
+      "series_ids": []
     },
     {
       "id": "dong-a-the-illustrated-history-of-vietnam-2024-dong-a-bia-cung-ao-om-900k",
@@ -56,7 +57,8 @@
       "weight_g": 2900,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/u/n/untitled-2_28.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }

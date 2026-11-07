@@ -40,12 +40,12 @@
       "detail": ""
     },
     {
-      "id": "jules-verne-vingt-mille-lieues-sous-les-mers-2013-dong-a-72k",
+      "id": "jules-verne-vingt-mille-lieues-sous-les-mers-2013-dong-a-bia-mem-72k",
       "series_ids": [
         "dong-a-classics-bo-tui"
       ],
       "isbn": null,
-      "caption": "Bộ 2 Tập",
+      "caption": "",
       "pub_year": 2013,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -56,7 +56,7 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "",
+      "format": "Bìa mềm",
       "cover_price": "72k",
       "print_run": null,
       "page_count": null,
@@ -67,7 +67,7 @@
       "gellery_imgs": [
         "/assets/img/books/jules-verne-vingt-mille-lieues-sous-les-mers/dong-a-classics-volume-2.jpg"
       ],
-      "detail": ""
+      "detail": "- Bộ 2 tập."
     }
   ]
 }

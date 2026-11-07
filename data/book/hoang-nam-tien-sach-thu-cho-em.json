@@ -16,7 +16,7 @@
         "50-nam-fahasa"
       ],
       "isbn": null,
-      "caption": "Kỉ Niệm 50 Năm Fahasa",
+      "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2026,
       "publisher": "NXB Hội Nhà Văn",
       "issuers": [
@@ -34,7 +34,7 @@
       "weight_g": 550,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/7/z7848504858500_4ddef93c1b7aee67242442c5eb30adf5.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "- Kỉ niệm 50 năm Fahasa."
     },
     {
       "id": "hoang-nam-tien-thu-cho-em-2024-nha-nam-bia-mem-140k",
@@ -57,7 +57,8 @@
       "weight_g": 330,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8935235241015.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }

@@ -11,7 +11,7 @@
   ],
   "editions": [
     {
-      "id": "thomas-harris-hannibal-2026-nha-nam",
+      "id": "thomas-harris-hannibal-2026-nha-nam-chauchaubook",
       "isbn": null,
       "series_ids": [
         "chauchaubook"
@@ -27,7 +27,7 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "",
+      "format": "Chauchaubook",
       "cover_price": "",
       "print_run": null,
       "page_count": 432,

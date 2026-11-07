@@ -11,7 +11,7 @@
     {
       "id": "nguyen-nhat-anh-dao-mong-mo-2026-dong-a-bia-mem-tai-ban-lan-39-75k",
       "isbn": null,
-      "caption": "Tái Bản Lần Thứ 39",
+      "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Trẻ",
       "issuers": [
@@ -31,12 +31,13 @@
       "weight_g": 350,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/b/i/bia_daomongmotb39-02.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "- Tái Bản Lần Thứ 39.",
+      "series_ids": []
     },
     {
       "id": "nguyen-nhat-anh-dao-mong-mo-2026-dong-a-bia-mem-tai-ban-lan-38-75k",
       "isbn": null,
-      "caption": "Tái Bản Lần Thứ 38",
+      "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Trẻ",
       "issuers": [
@@ -56,7 +57,8 @@
       "weight_g": 350,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/1/-/1-1_1_19.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "- Tái Bản Lần Thứ 38.",
+      "series_ids": []
     }
   ]
 }

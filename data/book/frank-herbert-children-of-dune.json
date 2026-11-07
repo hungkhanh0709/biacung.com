@@ -13,7 +13,7 @@
     {
       "id": "frank-herbert-children-of-dune-2026-nha-nam-bia-cung-458k",
       "isbn": null,
-      "caption": "300 Bản Bìa Cứng Có Chữ Ký Dịch Giả Hải Stark",
+      "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2026,
       "publisher": "NXB Thế Giới",
       "issuers": [
@@ -36,7 +36,8 @@
         "/assets/img/books/frank-herbert-children-of-dune/book.webp",
         "/assets/img/books/frank-herbert-children-of-dune/detail.webp"
       ],
-      "detail": ""
+      "detail": "- 300 Bản Bìa Cứng Có Chữ Ký Dịch Giả Hải Stark.",
+      "series_ids": []
     }
   ]
 }
