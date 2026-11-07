@@ -12,6 +12,12 @@
     "updated_at": "2026-11-07"
   },
   {
+    "detail": "data/book/jeffrey-archer-kane-and-abel.json",
+    "search_text": "jeffrey archer kane and abel hai so phan nxb van hoc huy hoang nguyen viet hai",
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-07"
+  },
+  {
     "detail": "data/book/kim-dung-thien-long-bat-bo.json",
     "search_text": "kim dung thien long bat bo nxb dan tri dong a nguyen duy chinh dinh diep ban pho thong",
     "last_pub_year": 2026,
@@ -32,6 +38,12 @@
   {
     "detail": "data/book/tadeusz-doega-mostowicz-znachor.json",
     "search_text": "tadeusz doegamostowicz znachor thay lang nxb dan tri dong a nguyen huu dung bia mem Tadeusz Dołęga-Mostowicz",
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-07"
+  },
+  {
+    "detail": "data/book/yukio-mishima-utage-no-ato.json",
+    "search_text": "yukio mishima khi tiec tan nxb phu nu viet nam tao dan nhu y bia cung gioi han",
     "last_pub_year": 2026,
     "updated_at": "2026-11-07"
   },

@@ -1484,5 +1484,19 @@
     "work_ids": [
       "tadeusz-doega-mostowicz-znachor"
     ]
+  },
+  {
+    "id": "jeffrey-archer",
+    "name": "Jeffrey Archer",
+    "work_ids": [
+      "jeffrey-archer-kane-and-abel"
+    ]
+  },
+  {
+    "id": "yukio-mishima",
+    "name": "Yukio Mishima",
+    "work_ids": [
+      "yukio-mishima-utage-no-ato"
+    ]
   }
 ]

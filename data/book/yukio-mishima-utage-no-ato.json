@@ -1,0 +1,38 @@
+{
+  "id": "yukio-mishima-utage-no-ato",
+  "title": "Khi Tiệc Tàn",
+  "title_original": "宴のあと",
+  "authors": [
+    "Yukio Mishima"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "yukio-mishima-utage-no-ato-2026-tao-dan-bia-cung-200k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bìa Cứng Giới Hạn",
+      "pub_year": 2026,
+      "publisher": "NXB Phụ Nữ Việt Nam",
+      "issuers": [
+        "Tao Đàn"
+      ],
+      "translators": [
+        "Như Ý"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "200k",
+      "print_run": 200,
+      "page_count": 342,
+      "copy_numbering": "1-200",
+      "size_cm": "14 x 20.5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/yukio-mishima-utage-no-ato/tao-dan-bia-cung-gioi-han-cover.jpeg",
+      "gellery_imgs": [],
+      "detail": "- Ấn bản bìa cứng giới hạn 200 bản, đánh số từ 1-200."
+    }
+  ]
+}
