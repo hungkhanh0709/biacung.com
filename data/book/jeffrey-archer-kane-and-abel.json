@@ -1,0 +1,38 @@
+{
+  "id": "jeffrey-archer-kane-and-abel",
+  "title": "Hai Số Phận",
+  "title_original": "Kane and Abel",
+  "authors": [
+    "Jeffrey Archer"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "jeffrey-archer-kane-and-abel-2026-huy-hoang-bia-cung-315k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Huy Hoàng"
+      ],
+      "translators": [
+        "Nguyễn Việt Hải"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "315k",
+      "print_run": null,
+      "page_count": 656,
+      "copy_numbering": null,
+      "size_cm": "24 x 16 x 3.5",
+      "weight_g": 1100,
+      "thumbnail": "/assets/img/books/jeffrey-archer-kane-and-abel/huy-hoang-bia-cung-cover.jpeg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}
