@@ -426,7 +426,7 @@
     "id": "lev-tolstoy-anna-karenina",
     "name": "Lev Tolstoy",
     "work_ids": [
-      "lev-tolstoy"
+      "lev-tolstoy-anna-karenina"
     ]
   },
   {
@@ -1469,6 +1469,20 @@
     "name": "Kim Dung",
     "work_ids": [
       "kim-dung-thien-long-bat-bo"
+    ]
+  },
+  {
+    "id": "do-am-son",
+    "name": "Độ Âm Sơn",
+    "work_ids": [
+      "do-am-son-thanh-cat-tu-han-y-chi-chinh-phuc-the-gioi"
+    ]
+  },
+  {
+    "id": "tadeusz-doega-mostowicz",
+    "name": "Tadeusz Dołęga-Mostowicz",
+    "work_ids": [
+      "tadeusz-doega-mostowicz-znachor"
     ]
   }
 ]

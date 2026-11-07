@@ -1,0 +1,38 @@
+{
+  "id": "tadeusz-doega-mostowicz-znachor",
+  "title": "Thầy lang",
+  "title_original": "Znachor",
+  "authors": [
+    "Tadeusz Dołęga-Mostowicz"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "tadeusz-doega-mostowicz-znachor-2026-dong-a-bia-mem-150k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Hữu Dũng"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "150k",
+      "print_run": null,
+      "page_count": 360,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 500,
+      "thumbnail": "/assets/img/books/tadeusz-doega-mostowicz-znachor/dong-a-bia-mem-cover.jpeg",
+      "gellery_imgs": [],
+      "detail": "- Nguyễn Hữu Dũng dịch từ nguyên tác tiếng Ba Lan.\n- Phát hành tháng 11/2026."
+    }
+  ]
+}

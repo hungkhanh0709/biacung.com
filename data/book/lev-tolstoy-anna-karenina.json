@@ -9,7 +9,35 @@
   "series": [],
   "editions": [
     {
-      "id": "lev-tolstoy-2026-nha-nam-bia-mem-220k190k",
+      "id": "lev-tolstoy-anna-karenina-2026-nxb-phu-nu-viet-nam-bia-mem-475k",
+      "series_ids": [],
+      "isbn": null,
+      "caption": "Bộ 2 Tập",
+      "pub_year": 2026,
+      "publisher": "NXB Phụ Nữ Việt Nam",
+      "issuers": [
+        "NXB Phụ Nữ Việt Nam"
+      ],
+      "translators": [
+        "Lê Đức Mẫn"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "475k",
+      "print_run": null,
+      "page_count": 1128,
+      "copy_numbering": null,
+      "size_cm": "15,5 x 23,5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/lev-tolstoy-anna-karenina/phu-nu-viet-nam-bia-mem-bo-2-tap-cover.webp",
+      "gellery_imgs": [
+        "/assets/img/books/lev-tolstoy-anna-karenina/phu-nu-viet-nam-bia-mem-bo-2-tap-picnic.jpeg"
+      ],
+      "detail": "- Bộ 2 tập, Lê Đức Mẫn dịch trực tiếp từ nguyên bản tiếng Nga.\n- Tập 1: 612 trang; giá bìa 258k.\n- Tập 2: 516 trang; giá bìa 217k.\n- Tổng cộng: 1.128 trang; giá bìa bộ 475k."
+    },
+    {
+      "id": "lev-tolstoy-anna-karenina-2026-nha-nam-bia-mem-410k",
       "isbn": null,
       "caption": "Bộ 2 Tập",
       "pub_year": 2026,
@@ -24,15 +52,19 @@
       "illustrators": [],
       "proofreaders": [],
       "format": "Bìa mềm",
-      "cover_price": "220k+190k",
+      "cover_price": "410k",
       "print_run": null,
       "page_count": null,
       "copy_numbering": null,
       "size_cm": "",
       "weight_g": null,
-      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8935235248496.jpg",
-      "gellery_imgs": [],
-      "detail": ""
+      "thumbnail": "/assets/img/books/lev-tolstoy-anna-karenina/nha-nam-bia-mem-bo-2-tap-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/lev-tolstoy-anna-karenina/nha-nam-bia-mem-tap-1-photo.jpg",
+        "/assets/img/books/lev-tolstoy-anna-karenina/nha-nam-bia-mem-bo-2-tap-photo.jpg"
+      ],
+      "detail": "- Bộ 2 tập.\n- Giá bìa: tập 1 220k; tập 2 190k.",
+      "series_ids": []
     }
   ]
 }

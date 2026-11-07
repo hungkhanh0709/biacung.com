@@ -1,13 +1,37 @@
 [
   {
+    "detail": "data/book/do-am-son-thanh-cat-tu-han-y-chi-chinh-phuc-the-gioi.json",
+    "search_text": "do am son thanh cat tu han y chi chinh phuc the gioi nxb dan tri dong a tran hoai thu bia mem",
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-07"
+  },
+  {
+    "detail": "data/book/edmondo-de-amicis-cuore.json",
+    "search_text": "edmondo de amicis cuore nhung tam long cao ca tam hon cao thuong nxb van hoc thai ha dong a hoang thieu son dinh tran lien huong dong a classics bo tui dong a classics bia vai dong a classic hoa van bia cung",
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-07"
+  },
+  {
     "detail": "data/book/kim-dung-thien-long-bat-bo.json",
     "search_text": "kim dung thien long bat bo nxb dan tri dong a nguyen duy chinh dinh diep ban pho thong",
     "last_pub_year": 2026,
     "updated_at": "2026-11-07"
   },
   {
+    "detail": "data/book/lev-tolstoy-anna-karenina.json",
+    "search_text": "lev tolstoy anna karenina nxb phu nu viet nam nxb hoi nha van nha nam le duc man duong tuong nhi ca bo 2 tap bia mem",
+    "updated_at": "2026-11-07",
+    "last_pub_year": 2026
+  },
+  {
     "detail": "data/book/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc.json",
     "search_text": "quoc su quan trieu nguyen kham dinh viet su thong giam cuong muc nxb van hoc dong a hoa bang pham trong diem tran van giap 50 nam fahasa an ban gioi han s365 bia vai",
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-07"
+  },
+  {
+    "detail": "data/book/tadeusz-doega-mostowicz-znachor.json",
+    "search_text": "tadeusz doegamostowicz znachor thay lang nxb dan tri dong a nguyen huu dung bia mem Tadeusz Dołęga-Mostowicz",
     "last_pub_year": 2026,
     "updated_at": "2026-11-07"
   },
@@ -504,12 +528,6 @@
     "last_pub_year": 2026
   },
   {
-    "detail": "data/book/lev-tolstoy-anna-karenina.json",
-    "search_text": "anna karenina lev tolstoy nxb hoi nha van nha nam duong tuong nhi ca",
-    "updated_at": "2026-07-05",
-    "last_pub_year": 2026
-  },
-  {
     "detail": "data/book/matt-haig-the-midnight-library.json",
     "search_text": "thu vien nua dem the midnight library matt haig goodreads choice award nxb hoi nha van nha nam matryoshka",
     "updated_at": "2026-07-05",
@@ -746,12 +764,6 @@
   {
     "detail": "data/book/antoine-galland-nghin-le-mot-dem.json",
     "search_text": "antoine galland nghin le mot dem nxb van hoc dong a phan quang dong a classic hoa van nhung truyen hay chon loc",
-    "last_pub_year": 2024,
-    "updated_at": "2026-10-19"
-  },
-  {
-    "detail": "data/book/edmondo-de-amicis-cuore.json",
-    "search_text": "edmondo de amicis cuore nhung tam long cao ca tam hon cao thuong nxb van hoc dong a hoang thieu son dinh tran lien huong dong a classics bo tui dong a classics bia vai dong a classic hoa van",
     "last_pub_year": 2024,
     "updated_at": "2026-10-19"
   },
