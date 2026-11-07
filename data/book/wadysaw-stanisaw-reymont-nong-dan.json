@@ -11,12 +11,12 @@
   ],
   "editions": [
     {
-      "id": "wadysaw-stanisaw-reymont-nong-dan-2024-dong-a-bia-cung-boc-buckram-2tr",
+      "id": "wadysaw-stanisaw-reymont-nong-dan-2024-dong-a-bia-buckram-2tr",
       "isbn": null,
       "series_ids": [
         "tram-nam-nobel"
       ],
-      "caption": "Bìa Buckram",
+      "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2024,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -29,7 +29,7 @@
         "Lê Trí"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng bọc buckram",
+      "format": "Bìa buckram",
       "cover_price": "2tr",
       "print_run": 599,
       "page_count": 1720,

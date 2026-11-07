@@ -11,7 +11,7 @@
     {
       "id": "phong-tu-khai-tung-bach-dan-suong-truc-chiu-han-2026-nha-nam-bia-cung-ao-om-275k",
       "isbn": null,
-      "caption": "Có Ký Tặng Và Triện Son Của Dịch Giả Nhượng Lê",
+      "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Hà Nội",
       "issuers": [
@@ -22,7 +22,7 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng, áo ôm",
+      "format": "Bìa cứng áo ôm",
       "cover_price": "275k",
       "print_run": 300,
       "page_count": 372,
@@ -34,7 +34,8 @@
         "/assets/img/books/phong-tu-khai-tung-bach-dan-suong-truc-chiu-han/signed.jpeg",
         "/assets/img/books/phong-tu-khai-tung-bach-dan-suong-truc-chiu-han/hardcover-jacket.jpeg"
       ],
-      "detail": ""
+      "detail": "- Có Ký Tặng Và Triện Son Của Dịch Giả Nhượng Lê.",
+      "series_ids": []
     }
   ]
 }

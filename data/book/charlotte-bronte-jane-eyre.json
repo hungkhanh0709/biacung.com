@@ -22,7 +22,7 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa Mềm",
+      "format": "Bìa mềm",
       "cover_price": "220k",
       "print_run": null,
       "page_count": 624,
@@ -31,7 +31,8 @@
       "weight_g": 800,
       "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_a9ea61d98b0b43eca905621a51b3d37f_master.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }

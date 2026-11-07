@@ -11,12 +11,12 @@
   ],
   "editions": [
     {
-      "id": "ho-dzenh-que-ngoai-2021-nha-nam-bia-cung-ao-om-170k",
+      "id": "ho-dzenh-que-ngoai-2021-nha-nam-bia-cung-170k",
       "isbn": null,
       "series_ids": [
         "viet-nam-danh-tac-tho-nha-nam"
       ],
-      "caption": "Bìa Cứng Giới Hạn",
+      "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2021,
       "publisher": "NXB Hội Nhà Văn",
       "issuers": [
@@ -25,7 +25,7 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng áo ôm",
+      "format": "Bìa cứng",
       "cover_price": "170k",
       "print_run": 555,
       "page_count": null,

@@ -11,7 +11,7 @@
     {
       "id": "nguyen-du-truyen-kieu-hoi-ban-2026-thai-ha-bia-cung-3tr8",
       "isbn": null,
-      "caption": "Ấn Bản Khảm Trai",
+      "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Hà Nội",
       "issuers": [
@@ -32,7 +32,8 @@
       "weight_g": 800,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/7/z7750498447469_06a67dd2302a51f95ef0154730be9a54.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "- Ấn Bản Khảm Trai.",
+      "series_ids": []
     }
   ]
 }

@@ -11,7 +11,7 @@
     {
       "id": "mikhail-bulgakov-nhung-qua-trung-dinh-menh-2026-dong-tay-bia-cung-118k",
       "isbn": null,
-      "caption": "Bìa Cứng - H666",
+      "caption": "H666",
       "pub_year": 2025,
       "publisher": "NXB Hà Nội",
       "issuers": [
@@ -31,7 +31,8 @@
       "weight_g": null,
       "thumbnail": "https://dongtay.vn/upload/images/20000/6.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }

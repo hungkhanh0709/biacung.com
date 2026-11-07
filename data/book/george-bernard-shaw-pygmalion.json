@@ -11,12 +11,12 @@
   ],
   "editions": [
     {
-      "id": "george-bernard-shaw-pygmalion-2025-dong-a-bia-cung-boc-buckram-600k",
+      "id": "george-bernard-shaw-pygmalion-2025-dong-a-bia-buckram-600k",
       "isbn": "978-632-624-587-5",
       "series_ids": [
         "tram-nam-nobel"
       ],
-      "caption": "Bìa Buckram",
+      "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2025,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -29,7 +29,7 @@
         "Đông Phong"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng bọc buckram",
+      "format": "Bìa buckram",
       "cover_price": "600k",
       "print_run": null,
       "page_count": 172,

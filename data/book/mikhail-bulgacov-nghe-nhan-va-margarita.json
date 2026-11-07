@@ -11,7 +11,7 @@
     {
       "id": "mikhail-bulgacov-nghe-nhan-va-margarita-2026-dong-tay-bia-cung-ao-om-389k",
       "isbn": null,
-      "caption": "Bìa Cứng - H365",
+      "caption": "H365",
       "pub_year": 2026,
       "publisher": "NXB Lao Động",
       "issuers": [
@@ -22,7 +22,7 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng, áo ôm",
+      "format": "Bìa cứng áo ôm",
       "cover_price": "389k",
       "print_run": 365,
       "page_count": 648,
@@ -31,7 +31,8 @@
       "weight_g": null,
       "thumbnail": "/assets/img/books/mikhail-bulgacov-nghe-nhan-va-margarita/cover.jpg",
       "gellery_imgs": [],
-      "detail": "- Giấy bãi bằng 70/76\n- Tờ gác thiết kế riêng\n- Kèm phiếu phát hành"
+      "detail": "- Giấy bãi bằng 70/76\n- Tờ gác thiết kế riêng\n- Kèm phiếu phát hành",
+      "series_ids": []
     }
   ]
 }

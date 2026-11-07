@@ -14,7 +14,7 @@
     {
       "id": "nguyen-van-thac-mai-mai-tuoi-hai-muoi-2025-bia-cung-135k",
       "isbn": null,
-      "caption": "Bìa Cứng - Độc Quyền Fahasa",
+      "caption": "",
       "pub_year": 2025,
       "publisher": "NXB Kim Đồng",
       "issuers": [],
@@ -30,7 +30,8 @@
       "weight_g": 560,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/z/6/z6923363964831_c6d0801298a97c228cf13c4609936b6a-1_1.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }

@@ -9,7 +9,7 @@
   "series": [],
   "editions": [
     {
-      "id": "nguyen-dinh-dang-60-bi-quyet-ve-son-dau-2026-dong-a-bia-cung-boc-vai-co-hop-vo-so-1tr2",
+      "id": "nguyen-dinh-dang-60-bi-quyet-ve-son-dau-2026-dong-a-bia-vai-1tr2",
       "isbn": "",
       "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2026,
@@ -20,7 +20,7 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng bọc vải, có hộp vỏ sò",
+      "format": "Bìa vải",
       "cover_price": "1tr2",
       "print_run": null,
       "page_count": 312,
@@ -33,10 +33,11 @@
         "https://cdn1.fahasa.com/media/catalog/product/3/_/3_15_38.jpg",
         "https://cdn1.fahasa.com/media/catalog/product/5/_/5_13_57.jpg"
       ],
-      "detail": "Sách được làm theo số lượng độc giả đăng ký trước."
+      "detail": "Sách được làm theo số lượng độc giả đăng ký trước.\n- Bìa cứng bọc vải, có hộp vỏ sò.",
+      "series_ids": []
     },
     {
-      "id": "nguyen-dinh-dang-60-bi-quyet-ve-son-dau-2025-dong-a-bia-mem-co-bia-ao-320k",
+      "id": "nguyen-dinh-dang-60-bi-quyet-ve-son-dau-2025-dong-a-bia-mem-ao-om-320k",
       "isbn": "987-632-00-2226-7",
       "caption": "",
       "pub_year": 2025,
@@ -47,7 +48,7 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm, có bìa áo",
+      "format": "Bìa mềm áo ôm",
       "cover_price": "320k",
       "print_run": null,
       "page_count": 312,
@@ -56,7 +57,8 @@
       "weight_g": null,
       "thumbnail": "https://cdn.hstatic.net/products/1000328521/0_da_ffebe14e0c1c4f9288e7e2d5dc079d59_master.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }

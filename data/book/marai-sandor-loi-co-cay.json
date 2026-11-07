@@ -11,7 +11,7 @@
     {
       "id": "marai-sandor-loi-co-cay-2025-dong-tay-bia-cung-128k",
       "isbn": null,
-      "caption": "Bìa Cứng - H666",
+      "caption": "H666",
       "pub_year": 2025,
       "publisher": "NXB Lao Động",
       "issuers": [
@@ -31,7 +31,8 @@
       "weight_g": null,
       "thumbnail": "https://dongtay.vn/upload/images/20000/scan-20251120-103023_1.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }
