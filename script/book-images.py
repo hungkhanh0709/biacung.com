@@ -46,6 +46,10 @@ def context(root, draft, plan_name):
     if not SLUG.fullmatch(plan.get("book_id", "")):
         raise ValueError("book_id không hợp lệ.")
     book_file = root / f"data/book/{plan['book_id']}.json"
+    # New books need their assets ready before the first form/API save.
+    # Work only on the draft until that save creates the official detail.
+    if not book_file.exists():
+        book_file = child(folder, "book.json")
     book = load(book_file)
     if book.get("id") != plan["book_id"]:
         raise ValueError("ID file sách không khớp.")
@@ -174,7 +178,8 @@ def apply(root, draft="data/_raw", plan_name="image-plan.json"):
         edition = editions[edition_id]
         edition["gellery_imgs"] = [url for url in edition.get("gellery_imgs", []) if url != edition.get("thumbnail")]
     write(book_file, book)
-    write(folder / "book.json", book)
+    if book_file != folder / "book.json":
+        write(folder / "book.json", book)
     evidence["images"] = [m for m in evidence.get("images", []) if m["source"] not in {e["source"] for e in mappings}] + mappings
     write(evidence_file, evidence)
     return {"book_id": book["id"], "imported": mappings}
