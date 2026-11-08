@@ -11,6 +11,38 @@
   ],
   "editions": [
     {
+      "id": "mario-puzo-the-godfather-2026-dong-a-bia-cung-ao-om-599k",
+      "isbn": "978-632-00-6088-7",
+      "caption": "",
+      "pub_year": 2026,
+      "pub_date": "2026-07-18",
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Minh"
+      ],
+      "illustrators": [
+        "Art Werger"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "599k",
+      "print_run": null,
+      "page_count": 560,
+      "copy_numbering": null,
+      "size_cm": "18.5 x 26.5",
+      "weight_g": 600,
+      "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_a0c1dd0702774985b7e67edd82fbea79_master.jpg",
+      "gellery_imgs": [
+        "https://cdn.hstatic.net/products/1000328521/2_da_33e2b8a3b9d14b6bb7cb46ca51c300ea_master.jpg",
+        "https://cdn.hstatic.net/products/1000328521/b_a_trong_3644934af07142adaebf9ad9be63c027_master.jpg"
+      ],
+      "detail": "- Có hai phiên bản bìa: Trắng / Đen.",
+      "series_ids": []
+    },
+    {
       "id": "mario-puzo-the-godfather-2026-dong-a-bia-mem-250k",
       "isbn": null,
       "caption": "",
@@ -39,37 +71,6 @@
         "/assets/img/books/mario-puzo-the-godfather/dong-a-mid-autumn-paperback-spine-angle.jpg"
       ],
       "detail": "- Phiên Bản Trung Thu.",
-      "series_ids": []
-    },
-    {
-      "id": "mario-puzo-the-godfather-2026-dong-a-bia-cung-ao-om-599k",
-      "isbn": "978-632-00-6088-7",
-      "caption": "",
-      "pub_year": 2026,
-      "publisher": "NXB Dân Trí",
-      "issuers": [
-        "Đông A"
-      ],
-      "translators": [
-        "Nguyễn Minh"
-      ],
-      "illustrators": [
-        "Art Werger"
-      ],
-      "proofreaders": [],
-      "format": "Bìa cứng áo ôm",
-      "cover_price": "599k",
-      "print_run": null,
-      "page_count": 560,
-      "copy_numbering": null,
-      "size_cm": "",
-      "weight_g": 600,
-      "thumbnail": "https://cdn.hstatic.net/products/1000328521/1_da_a0c1dd0702774985b7e67edd82fbea79_master.jpg",
-      "gellery_imgs": [
-        "https://cdn.hstatic.net/products/1000328521/2_da_33e2b8a3b9d14b6bb7cb46ca51c300ea_master.jpg",
-        "https://cdn.hstatic.net/products/1000328521/b_a_trong_3644934af07142adaebf9ad9be63c027_master.jpg"
-      ],
-      "detail": "- Có hai phiên bản bìa: Trắng / Đen.",
       "series_ids": []
     },
     {

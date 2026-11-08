@@ -1,3 +1,4 @@
+const publication = window.BiaCungPublication;
 const BOOK_FALLBACK_COVER = "assets/img/core/book-cover.png.avif";
 const MAX_BOOK_ID_LENGTH = 120;
 const SAFE_BOOK_ID = /^[a-z0-9-]+$/;
@@ -417,9 +418,9 @@ function buildEditionSummaryLines(edition) {
   const lines = [];
   const isArtwork = isChauchaubookEdition(edition);
 
-  if (normalizeText(edition.pub_year)) {
-    const yearLabel = isArtwork ? "Năm thực hiện" : "Năm phát hành";
-    lines.push(`${yearLabel}: ${normalizeText(edition.pub_year)}`);
+  const publicationText = publication.formatPublicationDate(edition);
+  if (publicationText) {
+    lines.push(`Phát hành: ${publicationText}`);
   }
 
   if (normalizeText(edition.format) && !isArtwork) {
@@ -790,7 +791,7 @@ function renderEditions(book) {
     meta.className = "detail-edition-meta";
 
     const metaParts = [
-      formatValue(edition.pub_year),
+      publication.formatPublicationDate(edition),
       normalizeText(edition.cover_price)
     ].filter(Boolean);
 
@@ -987,7 +988,7 @@ function updateSeoMetadata(book, edition) {
         })),
         bookEdition: editionName,
         bookFormat: getSchemaBookFormat(edition),
-        datePublished: normalizeText(edition.pub_year) || undefined,
+        datePublished: publication.publicationDateForSchema(edition) || undefined,
         publisher: publisherName
           ? {
             "@type": "Organization",
@@ -1003,7 +1004,7 @@ function updateSeoMetadata(book, edition) {
           isbn: getValidIsbn13(bookEdition.isbn),
           bookEdition: getEditionCaption(book, bookEdition) || normalizeText(bookEdition.format) || undefined,
           bookFormat: getSchemaBookFormat(bookEdition),
-          datePublished: normalizeText(bookEdition.pub_year) || undefined,
+          datePublished: publication.publicationDateForSchema(bookEdition) || undefined,
           inLanguage: "vi",
           publisher: normalizeText(bookEdition.publisher)
             ? {
@@ -1018,6 +1019,7 @@ function updateSeoMetadata(book, edition) {
 }
 
 function renderBook(book) {
+  book = { ...book, editions: publication.sortEditions(book.editions) };
   currentBook = book;
   const editions = Array.isArray(book?.editions) ? book.editions : [];
   const requestedIndex = requestedEditionId

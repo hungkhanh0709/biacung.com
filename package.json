@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
+    "test": "node --test script/*.test.js",
     "sort-book": "node script/sort-book.js",
     "generate-award-pages": "node script/generate-award-pages.js",
     "generate-sitemap": "node script/generate-sitemap.js",

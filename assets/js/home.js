@@ -1,3 +1,4 @@
+const publication = window.BiaCungPublication;
 const HOME_DATA_URL = "data/home.json";
 const BOOK_INDEX_URL = "data/book.json";
 const BOOK_DETAIL_FALLBACK = "assets/img/core/book-cover.png.avif";
@@ -75,7 +76,7 @@ function buildSeriesDetailUrl(seriesId) {
 }
 
 async function loadRecentBooks(bookIndex, limit) {
-  const entries = Array.isArray(bookIndex) ? bookIndex : [];
+  const entries = publication.sortBookEntries(bookIndex);
   const maxItems = limit > 0 ? limit : entries.length;
   const books = [];
 
@@ -231,7 +232,7 @@ async function renderRecentSection(sectionConfig, sectionElement) {
 
   grid.replaceChildren();
   validBooks.forEach((book) => {
-    const editions = Array.isArray(book.editions) ? book.editions : [];
+    const editions = publication.sortEditions(book.editions);
     const firstEdition = editions[0] || {};
     const authors = Array.isArray(book.authors) ? book.authors.join(", ") : "";
     const meta = editions.length ? `(${editions.length} phiên bản)` : "";

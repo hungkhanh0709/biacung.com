@@ -1,3 +1,4 @@
+const publication = window.BiaCungPublication;
 const HOME_DATA_URL = "data/home.json";
 const BOOK_INDEX_URL = "data/book.json";
 const BOOK_FALLBACK_COVER = "assets/img/core/book-cover.png.avif";
@@ -128,7 +129,7 @@ function matchesAnyNeedle(value, needles) {
 }
 
 function getMatchingEditions(book, needles) {
-  const editions = Array.isArray(book?.editions) ? book.editions : [];
+  const editions = publication.sortEditions(book?.editions);
   if (!needles.length) {
     return [];
   }
@@ -145,6 +146,7 @@ function getMatchingEditions(book, needles) {
       ...(Array.isArray(edition?.proofreaders) ? edition.proofreaders : []),
       edition?.format,
       edition?.pub_year,
+      edition?.pub_date,
       edition?.cover_price,
       edition?.isbn
     ];
@@ -331,7 +333,7 @@ async function loadBookMatches(searchNeedles) {
   const bookIndex = await fetchJson(BOOK_INDEX_URL);
   const needles = Array.isArray(searchNeedles) ? searchNeedles.filter(Boolean) : [];
   const matchedEntries = Array.isArray(bookIndex)
-    ? bookIndex
+    ? publication.sortBookEntries(bookIndex)
       .map((entry) => {
         const searchableText = normalizeSearchText(entry?.search_text);
         if (needles.length && !needles.some((needle) => searchableText.includes(needle))) {
@@ -359,7 +361,7 @@ async function loadBookMatches(searchNeedles) {
         return null;
       }
 
-      const editions = Array.isArray(book.editions) ? book.editions : [];
+      const editions = publication.sortEditions(book.editions);
       const firstEdition = editions[0] || {};
       const matchingEditions = getMatchingEditions(book, needles);
       const selectedEdition = matchingEditions[0] || firstEdition;

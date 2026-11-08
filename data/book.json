@@ -3,7 +3,15 @@
     "detail": "data/book/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc.json",
     "search_text": "quoc su quan trieu nguyen kham dinh viet su thong giam cuong muc nxb van hoc dong a hoa bang pham trong diem tran van giap 50 nam fahasa s365 bia buckram",
     "last_pub_year": 2026,
-    "updated_at": "2026-11-08"
+    "updated_at": "2026-11-08",
+    "last_pub_date": "2026-11-16"
+  },
+  {
+    "detail": "data/book/mario-puzo-the-godfather.json",
+    "search_text": "mario puzo the godfather bo gia nxb dan tri dong a nguyen minh art werger bia mem bia cung ao om nxb van hoc ngoc thu lang bia vai ngoc thu lan bia cung nxb hoi nha van 50 nam fahasa s500 an ban gioi han bo gia 55 ky niem 55 nam bia da that da de bia buckram",
+    "updated_at": "2026-11-08",
+    "last_pub_year": 2026,
+    "last_pub_date": "2026-07-18"
   },
   {
     "detail": "data/book/do-am-son-thanh-cat-tu-han-y-chi-chinh-phuc-the-gioi.json",
@@ -110,12 +118,6 @@
   {
     "detail": "data/book/lucy-maud-montgomery-anne-of-green-gables.json",
     "search_text": "lucy maud montgomery anne of green gables anne toc do nxb hoi nha van nha nam boxset bia mem bia cung 50 nam fahasa an ban gioi han an ban gioi han",
-    "updated_at": "2026-10-30",
-    "last_pub_year": 2026
-  },
-  {
-    "detail": "data/book/mario-puzo-the-godfather.json",
-    "search_text": "mario puzo the godfather bo gia nxb dan tri dong a nguyen minh art werger bia mem bia cung ao om nxb van hoc ngoc thu lang bia vai ngoc thu lan bia cung nxb hoi nha van 50 nam fahasa s500 an ban gioi han bo gia 55 ky niem 55 nam bia da that da de bia buckram",
     "updated_at": "2026-10-30",
     "last_pub_year": 2026
   },

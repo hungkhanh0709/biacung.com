@@ -2,6 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const publication = require('../assets/js/publication-date');
 
 const ROOT = path.resolve(__dirname, '..');
 const RAW = 'data/_raw';
@@ -56,7 +57,7 @@ function vocabulary(root) {
 function emptyBook(root) {
     const template = read(path.join(root, 'data/template/book-detail.json'));
     const arrayFields = new Set(['authors', 'awards', 'series', 'series_ids', 'issuers', 'translators', 'illustrators', 'proofreaders', 'gellery_imgs']);
-    const nullFields = new Set(['isbn', 'pub_year', 'print_run', 'page_count', 'copy_numbering', 'weight_g']);
+    const nullFields = new Set(['isbn', 'pub_date', 'pub_year', 'print_run', 'page_count', 'copy_numbering', 'weight_g']);
     function blank(object) {
         return Object.fromEntries(Object.keys(object).filter((field) => field !== 'title' || object === template).map((field) => {
             if (field === 'editions') return [field, [blank(template.editions[0])]];
@@ -126,10 +127,11 @@ function validate(root, book, { relations = false, images = false, allowExisting
     const imageFiles = new Set();
     for (const [i, edition] of (Array.isArray(book.editions) ? book.editions : []).entries()) {
         const at = `editions[${i}]`;
-        const previous = allowExisting && baseline?.id === book.id ? baseline.editions?.[i] : null;
+        const previous = allowExisting && baseline?.id === book.id
+            ? (baseline.editions?.find((entry) => entry.id === edition?.id) || baseline.editions?.[i]) : null;
         if (!edition || typeof edition !== 'object' || Array.isArray(edition)) { bad(`${at} phải là object.`); continue; }
         for (const field of Object.keys(template.editions[0])) {
-            if (field !== 'title' && !(field in edition)) bad(`${at}.${field} thiếu key (dùng default khi chưa rõ).`);
+            if (field !== 'title' && (field !== 'pub_date' || !allowExisting) && !(field in edition)) bad(`${at}.${field} thiếu key (dùng default khi chưa rõ).`);
         }
         for (const field of Object.keys(edition)) if (!(field in template.editions[0])) bad(`${at}.${field} ngoài schema.`);
         if (typeof edition.id !== 'string' || !SLUG.test(edition.id) || !edition.id.startsWith(`${book.id}-`)) bad(`${at}.id không có prefix bookId hợp lệ.`);
@@ -146,6 +148,11 @@ function validate(root, book, { relations = false, images = false, allowExisting
             if (edition[field] !== null && (!Number.isFinite(edition[field]) || edition[field] <= 0)) bad(`${at}.${field} phải là số dương hoặc null.`);
         }
         if (edition.pub_year !== null && (!Number.isInteger(edition.pub_year) || edition.pub_year < 1000 || edition.pub_year > 9999)) bad(`${at}.pub_year phải là năm 4 chữ số.`);
+        if ('pub_date' in edition && edition.pub_date !== null && !publication.isIsoDate(edition.pub_date)) bad(`${at}.pub_date phải là ngày YYYY-MM-DD có thật hoặc null.`);
+        if (publication.isIsoDate(edition.pub_date) && edition.pub_year !== Number(edition.pub_date.slice(0, 4))) bad(`${at}.pub_year phải khớp năm của pub_date.`);
+        if (!('pub_date' in edition)) warnings.push(`${at} chưa có pub_date (dữ liệu cũ, chưa chuyển đổi).`);
+        else if (edition.pub_date === null) missing.push(`${at}.pub_date`);
+        if (i > 0 && publication.compareEditions(book.editions[i - 1], edition) > 0) warnings.push(`${at}: thứ tự edition chưa giảm dần theo ngày phát hành.`);
         for (const field of ['isbn', 'copy_numbering']) if (edition[field] !== null && !text(edition[field])) bad(`${at}.${field} phải là string hoặc null.`);
         if (text(edition.cover_price) && !isCoverPrice(edition.cover_price)
             && previous?.cover_price !== edition.cover_price) bad(`${at}.cover_price phải có dạng 900k, 3tr900k hoặc 3tr.`);
@@ -188,10 +195,10 @@ function validate(root, book, { relations = false, images = false, allowExisting
         const index = read(path.join(root, 'data/book.json'));
         const entries = index.filter((e) => e.detail === `data/book/${book.id}.json`);
         if (entries.length !== 1) bad('book.json phải có đúng một liên kết tới sách.');
-        const years = (Array.isArray(book.editions) ? book.editions : []).map((e) => e?.pub_year).filter(Number.isFinite);
-        const latestYear = years.length ? Math.max(...years) : '';
-        if (entries.length === 1 && entries[0].last_pub_year !== latestYear) bad('last_pub_year chưa khớp; chạy npm run sort-book.');
-        if (entries.length === 1 && (!text(entries[0].search_text) || !/^\d{4}-\d{2}-\d{2}$/.test(entries[0].updated_at || ''))) bad('Index thiếu search_text hoặc updated_at hợp lệ.');
+        const summary = publication.getPublicationSummary(book);
+        if (entries.length === 1 && (entries[0].last_pub_year !== summary.last_pub_year
+            || (entries[0].last_pub_date || '') !== (summary.last_pub_date || ''))) bad('last_pub_date/last_pub_year chưa khớp; chạy npm run sort-book.');
+        if (entries.length === 1 && !text(entries[0].search_text)) bad('Index thiếu search_text.');
         const authors = read(path.join(root, 'data/author.json'));
         const linkedAuthors = authors.filter((a) => a.work_ids?.includes(book.id));
         for (const name of Array.isArray(book.authors) ? book.authors : []) {
@@ -220,7 +227,7 @@ function validate(root, book, { relations = false, images = false, allowExisting
             const file = path.join(root, `data/series/${entry.id}.json`);
             if (fs.existsSync(file) && read(file).work_ids?.includes(book.id) && !seriesIds.has(entry.id)) bad(`Series ${entry.id} có liên kết ngược dư.`);
         }
-        homePosition = index.findIndex((e) => e.detail === `data/book/${book.id}.json`) + 1;
+        homePosition = publication.sortBookEntries(index).findIndex((e) => e.detail === `data/book/${book.id}.json`) + 1;
         const home = read(path.join(root, 'data/home.json'));
         const recent = (Array.isArray(home) ? home : home.sections || []).find((s) => s.id === 'recently-archived');
         if (recent?.limit && homePosition > recent.limit) warnings.push(`Sách ở vị trí ${homePosition}, ngoài ${recent.limit} sách ở home; không sửa năm xuất bản để đẩy lên.`);

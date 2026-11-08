@@ -70,4 +70,4 @@ Có **59 mục có tên sách**: **42 mục đã có hồ sơ tựa**, **17 mụ
 | 56 | ☑ | [Lục Vân Tiên](../../../data/book/nguyen-dinh-chieu-luc-van-tien.json) | 26/07/2026 | S500 | 2.200.000đ |  |
 | 57 | ☑ | [Thép đã tôi thế đấy](../../../data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json) | 15/07/2026 | S500 | 2.300.000đ |  |
 | 58 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | 26/07/2026 | S500 | 2.400.000đ |  |
-| 59 | ☑ | [Khâm định Việt sử thông giám cương mục](../../../data/book/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc.json) | 16/09/2026 | S365 | 3.900.000đ |  |
+| 59 | ☑ | [Khâm định Việt sử thông giám cương mục](../../../data/book/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc.json) | 16/11/2026 | S365 | 3.900.000đ |  |

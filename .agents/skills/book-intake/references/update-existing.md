@@ -10,7 +10,7 @@ Chỉ đổi sách/trường người dùng yêu cầu, qua form/API hiện có.
 4. Chuẩn hóa edition: giữ số lượng/thứ tự/dữ kiện ngoài phạm vi; ghi nguồn và baseline chưa đối chứng. Đổi năm/format/giá thì sinh ID theo form, rà tham chiếu cũ. Chất liệu giữ trong detail; giá bìa theo [quy cách giá](book-intake-workflow.md#giá-bìa), ví dụ `3900k` → `3tr900k`, không lấy giá sale. Mâu thuẫn trang/ISBN ưu tiên nguồn đơn vị phát hành.
 5. Nếu cần chuyển thumbnail ngoài về local, tải đúng URL hiện có, xem ảnh/codec và theo skill ảnh một nguồn → một asset. Không xử lý lại ảnh ngoài phạm vi.
 
-Khi thêm edition hoặc đổi năm, chèn vào vị trí theo năm phát hành giảm dần; giữ thứ tự tương đối của các edition cùng năm và không đổi dữ kiện/ID chỉ để sắp xếp. Đối chiếu preview và mảng edition đã lưu trước khi hoàn tất.
+Khi thêm edition hoặc đổi ngày/năm, chèn vào vị trí theo ngày phát hành giảm dần (`pub_date`, fallback `pub_year` → 01/01); giữ thứ tự tương đối của các edition cùng ngày và không đổi dữ kiện/ID chỉ để sắp xếp. Đối chiếu preview và mảng edition đã lưu trước khi hoàn tất.
 
 ## Lưu qua ứng dụng
 
@@ -24,7 +24,7 @@ POST /api/books/save/book-index-review
 { "bookIndexReview": <entry riêng của sách> }
 ```
 
-- Giữ metadata/search_text cũ, bổ sung keyword mới không trùng theo cách form chuẩn hóa; đồng bộ caption/format/awards cuối. updated_at dùng ngày local; last_pub_year giữ nguyên nếu không đổi năm edition.
+- Giữ metadata/search_text cũ, bổ sung keyword mới không trùng theo cách form chuẩn hóa; đồng bộ caption/format/awards cuối. `updated_at` là ngày sửa dữ liệu cho sitemap, không dùng để sort. API tự suy `last_pub_date`/`last_pub_year` từ edition mới nhất, kể cả khi xóa/sửa ngày. Chỉ thêm `pub_date` cho edition đã đối chứng trong phạm vi; giữ edition cũ thiếu key nếu chưa tra.
 - Chỉ sửa awards thì không POST author/series. Trước mỗi lần ghi, đọc lại so baseline để tránh đè thay đổi mới.
 - Hai endpoint không phải transaction: lỗi thì đọc lại, xác định phần đã lưu và chỉ chạy phần còn thiếu. Sai payload/quy tắc thì sửa nháp/hướng dẫn rồi lưu lại, không vá output.
 

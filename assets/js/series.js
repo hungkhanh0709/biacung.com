@@ -1,3 +1,4 @@
+const publication = window.BiaCungPublication;
 const SERIES_INDEX_URL = "data/series.json";
 const BOOK_FALLBACK_COVER = "assets/img/core/book-cover.png.avif";
 const SEARCH_PAGE_SIZE = 16;
@@ -148,7 +149,7 @@ function getMatchingSeriesEditions(editions, seriesSlug) {
 }
 
 function getEditionMeta(edition) {
-  return [edition?.caption, edition?.pub_year, edition?.format]
+  return [edition?.caption, publication.formatPublicationDate(edition), edition?.format]
     .map((value) => normalizeText(value))
     .filter(Boolean)
     .join(" · ");
@@ -347,7 +348,7 @@ async function loadSeriesBooks(seriesSlug) {
         return null;
       }
 
-      const editions = Array.isArray(book.editions) ? book.editions : [];
+      const editions = publication.sortEditions(book.editions);
       const matchingEditions = getMatchingSeriesEditions(editions, seriesSlug);
       const selectedEditions = matchingEditions.length ? matchingEditions : editions.slice(0, 1);
 

@@ -9,6 +9,7 @@ description: "Nhập trọn sách từ tin phát hành/ảnh: tra nguồn, lập
 
 - **Sách mới:** một tựa mỗi lượt, đầu vào/nháp tại `data/_raw/`. Tiếp tục nháp đang dở của cùng lượt, không nhập trùng.
 - **Sách đã có:** theo [cập nhật có phạm vi](references/update-existing.md), chỉ đổi sách/trường được yêu cầu.
+- **Ngày phát hành:** nhập `pub_date` theo [quy ước ngày](references/book-intake-workflow.md#ngày-phát-hành); giữ `pub_year` tương thích, không chuyển đổi hàng loạt edition cũ.
 - **Giá bìa:** dưới 1 triệu dùng `k` (`900k`); từ 1 triệu dùng `tr` và phần nghìn `k` (`3tr900k`), tròn triệu ghi `3tr`. Chi tiết trong [workflow](references/book-intake-workflow.md#giá-bìa).
 - **Caption/Format:** ưu tiên keyword và Memo trong [bảng tham chiếu](references/caption-format.md), không dùng `vocab`. Format chưa xác định được thì hỏi người dùng trước khi lưu.
 - **Lưu dữ liệu:** dùng [book-batch-input](../book-batch-input/SKILL.md).

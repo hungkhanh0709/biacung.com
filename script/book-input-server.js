@@ -1,6 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const publication = require('../assets/js/publication-date');
 
 const rootDir = path.resolve(__dirname, '..');
 const dataDir = path.join(rootDir, 'data');
@@ -25,7 +26,9 @@ function readJsonFile(filePath, fallback = null) {
 
 function writeJsonFile(filePath, payload) {
     ensureDirectory(path.dirname(filePath));
-    fs.writeFileSync(filePath, JSON.stringify(payload, null, 2));
+    const temporary = `${filePath}.${process.pid}.tmp`;
+    fs.writeFileSync(temporary, JSON.stringify(payload, null, 2));
+    fs.renameSync(temporary, filePath);
 }
 
 function normalizeText(value) {
@@ -149,34 +152,23 @@ function normalizeBookIndexEntry(entry, fallbackUpdatedAt, existingEntry = null)
         ...(existingEntry && typeof existingEntry === 'object' ? existingEntry : {}),
         ...entry,
         detail: detailPath,
-        search_text: normalizeText(entry.search_text || ''),
+        search_text: normalizeText(entry.search_text ?? existingEntry?.search_text ?? ''),
         updated_at: normalizeText(entry.updated_at || existingEntry?.updated_at || fallbackUpdatedAt)
     };
 }
 
 function mergeBookIndexEntries(existingBookIndex, incomingEntries, fallbackUpdatedAt) {
-    const orderedDetails = [];
-    const mergedByDetail = new Map();
-
-    const upsert = (entry) => {
-        const normalizedEntry = normalizeBookIndexEntry(entry, fallbackUpdatedAt, mergedByDetail.get(normalizeText(entry?.detail)));
-        if (!normalizedEntry) {
-            return;
-        }
-
-        const detailPath = normalizedEntry.detail;
-
-        if (!mergedByDetail.has(detailPath)) {
-            orderedDetails.push(detailPath);
-        }
-
-        mergedByDetail.set(detailPath, normalizedEntry);
-    };
-
-    (Array.isArray(existingBookIndex) ? existingBookIndex : []).forEach(upsert);
-    normalizeArrayPayload(incomingEntries).forEach(upsert);
-
-    return orderedDetails.map((detailPath) => mergedByDetail.get(detailPath));
+    const mergedByDetail = new Map(
+        (Array.isArray(existingBookIndex) ? existingBookIndex : [])
+            .filter((entry) => normalizeText(entry?.detail))
+            .map((entry) => [entry.detail, entry])
+    );
+    normalizeArrayPayload(incomingEntries).forEach((entry) => {
+        const detail = normalizeText(entry?.detail);
+        const normalized = normalizeBookIndexEntry(entry, fallbackUpdatedAt, mergedByDetail.get(detail));
+        if (normalized) mergedByDetail.set(detail, normalized);
+    });
+    return publication.sortBookEntries([...mergedByDetail.values()]);
 }
 
 function mergeDetailPayload(existingPayload, incomingPayload, fallbackIdPath) {
@@ -219,7 +211,7 @@ function mergeDetailPayload(existingPayload, incomingPayload, fallbackIdPath) {
             };
         });
     }
-    return merged;
+    return publication.normalizeBookDetail(merged);
 }
 
 function writeSeriesDetailFiles(seriesPayload, bookId) {
@@ -259,22 +251,48 @@ function writeSeriesDetailFiles(seriesPayload, bookId) {
 
 function saveBookIndexReview(bookIndexReview, updatedAt) {
     const existingBookIndex = readJsonFile(path.join(dataDir, 'book.json'), []);
-    const mergedBookIndex = mergeBookIndexEntries(existingBookIndex, bookIndexReview, updatedAt);
-    writeJsonFile(path.join(dataDir, 'book.json'), mergedBookIndex);
-    return mergedBookIndex;
+    const incoming = normalizeArrayPayload(bookIndexReview).map((entry) => {
+        const detail = normalizeText(entry?.detail);
+        if (!/^data\/book\/[a-z0-9-]+\.json$/.test(detail)) {
+            const error = new Error('Invalid book detail path');
+            error.statusCode = 400;
+            throw error;
+        }
+        const book = readJsonFile(path.join(rootDir, detail));
+        if (!book) {
+            const error = new Error(`Không tìm thấy chi tiết sách: ${detail}`);
+            error.statusCode = 400;
+            throw error;
+        }
+        const summary = publication.withPublicationSummary(entry, book);
+        return { ...summary, last_pub_date: summary.last_pub_date || null };
+    });
+    const mergedBookIndex = mergeBookIndexEntries(existingBookIndex, incoming, updatedAt);
+    // Explicit null clears a stale date during merge; omit it from the persisted index.
+    const result = mergedBookIndex.map((entry) => {
+        if (entry.last_pub_date !== null) return entry;
+        const { last_pub_date, ...rest } = entry;
+        return rest;
+    });
+    writeJsonFile(path.join(dataDir, 'book.json'), result);
+    return result;
 }
 
 function saveBookDetailReview(bookDetailReview, bookId) {
     const normalizedBookId = slugify(bookId || bookDetailReview?.id || '');
-    if (!normalizedBookId) {
-        throw new Error('Missing book id');
-    }
+    if (!normalizedBookId) throw new Error('Missing book id');
 
     const filePath = path.join(bookDir, `${normalizedBookId}.json`);
     const existingBookDetail = readJsonFile(filePath, null);
     const mergedBookDetail = mergeDetailPayload(existingBookDetail, bookDetailReview, normalizedBookId);
     mergedBookDetail.id = normalizedBookId;
     writeJsonFile(filePath, mergedBookDetail);
+    // Detail-only reviews must also refresh an existing index entry immediately.
+    const detail = `data/book/${normalizedBookId}.json`;
+    const existingEntry = readJsonFile(path.join(dataDir, 'book.json'), []).find((entry) => entry.detail === detail);
+    if (existingEntry) {
+        saveBookIndexReview({ ...existingEntry, updated_at: new Date().toISOString().slice(0, 10) });
+    }
     return mergedBookDetail;
 }
 
@@ -378,14 +396,16 @@ function handleSave(req, res) {
 
             saveBookDetailReview(bookDetail, bookId);
             const updatedAt = new Date().toISOString().slice(0, 10);
-            const mergedBookIndex = saveBookIndexReview(bookIndex, updatedAt);
+            const incomingIndex = normalizeArrayPayload(bookIndex);
+            if (!incomingIndex.some((entry) => entry.detail === detailPath)) incomingIndex.push({ detail: detailPath });
+            const mergedBookIndex = saveBookIndexReview(incomingIndex, updatedAt);
             const mergedAuthors = saveAuthorReview(authorPayload, bookId);
             saveSeriesReview(seriesPayload, bookId);
 
             res.writeHead(200, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ ok: true, bookId, detailPath, updatedAt }));
         } catch (error) {
-            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.writeHead(error.statusCode || 500, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ error: error.message }));
         }
     });
@@ -407,7 +427,7 @@ function handleSaveBookIndexReview(req, res) {
             res.writeHead(200, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ ok: true, count: mergedBookIndex.length, updatedAt }));
         } catch (error) {
-            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.writeHead(error.statusCode || 500, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ error: error.message }));
         }
     });
@@ -429,7 +449,7 @@ function handleSaveBookDetailReview(req, res) {
             res.writeHead(200, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ ok: true, bookId: savedBookDetail.id }));
         } catch (error) {
-            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.writeHead(error.statusCode || 500, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ error: error.message }));
         }
     });
@@ -451,7 +471,7 @@ function handleSaveAuthorReview(req, res) {
             res.writeHead(200, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ ok: true, count: mergedAuthors.length }));
         } catch (error) {
-            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.writeHead(error.statusCode || 500, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ error: error.message }));
         }
     });
@@ -473,7 +493,7 @@ function handleSaveSeriesReview(req, res) {
             res.writeHead(200, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ ok: true, count: mergedSeries.length }));
         } catch (error) {
-            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.writeHead(error.statusCode || 500, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ error: error.message }));
         }
     });

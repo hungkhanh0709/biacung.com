@@ -39,7 +39,8 @@ Schema sống: `data/template/book-detail.json`; không sao chép giá trị min
 | --- | --- |
 | title, authors, edition | Phải xác định được trước khi lưu. |
 | title_original | Theo [tra tên nguyên tác](#tra-tên-nguyên-tác); chưa rõ `""`. |
-| pub_year | Năm edition Việt, không lấy năm nguyên tác/ngày bài đăng; chưa rõ `null`. |
+| pub_date | Ngày phát hành/thực hiện đúng edition Việt, lưu `YYYY-MM-DD` hoặc `null` khi chưa rõ. Biết tháng/năm → ngày 01; chỉ biết năm → 01/01. Ghi rõ độ chính xác và ngày được bổ sung trong evidence; không lấy ngày bài đăng, mở đặt trước hay năm nguyên tác. |
+| pub_year | Giữ tương thích: năm của `pub_date` khi có ngày; dữ liệu cũ chưa đối chứng giữ nguyên và không tự thêm `pub_date`. |
 | publisher / issuers | Tách NXB/đơn vị phát hành; logo mơ hồ chưa đủ để gán. |
 | cover_price | Giá bìa đúng edition theo [quy cách giá](#giá-bìa); không lấy giá sale/cọc; chưa rõ `""`. |
 | caption / format | Ưu tiên keyword/Memo trong [bảng tham chiếu](caption-format.md); Format chưa xác định được thì hỏi người dùng. |
@@ -49,7 +50,16 @@ Schema sống: `data/template/book-detail.json`; không sao chép giá trị min
 | Mảng khác / edition.title | Mảng chưa rõ `[]`; bỏ edition.title nếu không override. |
 | thumbnail, gellery_imgs | Local `/assets/img/books/<bookId>/<basename>`; giữ chính tả `gellery_imgs`, không lặp thumbnail trong gallery. |
 
-Ưu tiên tra title_original/pub_year/publisher; thiếu sau tra cứu hợp lý thì dùng default và báo rõ. Các trường optional khác, kể cả vai trò đóng góp, không chặn lưu. Hoàn tất vẫn cần quan hệ, ảnh và UI đạt.
+Ưu tiên tra title_original/pub_date/publisher; thiếu sau tra cứu hợp lý thì dùng default và báo rõ. Các trường optional khác, kể cả vai trò đóng góp, không chặn lưu. Hoàn tất vẫn cần quan hệ, ảnh và UI đạt.
+
+### Ngày phát hành
+
+- Đọc [quy ước và kế hoạch refactor](../../../../docs/publication-dates.md) khi nhập/cập nhật ngày. Dữ liệu mới có `pub_date` (`null` nếu chưa biết); thiếu key là dữ liệu cũ. Không tự bổ sung trường cho edition cũ khi sửa trường khác.
+- Thứ tự key trong edition: đặt `pub_date` ngay sau `pub_year` có sẵn, giữ thứ tự các key khác. Dữ liệu cũ thiếu `pub_date` tiếp tục giữ thiếu.
+- Form nhận `YYYY-MM-DD`, `YYYY-MM`, `YYYY`, `DD/MM/YYYY`, `MM/YYYY`; API chuẩn hóa thành `YYYY-MM-DD`. `pub_year` luôn là số năm tương ứng khi có ngày. Ngày không tồn tại phải sửa, không tự rollover.
+- Đối chiếu đúng edition; không dùng ngày đặt trước/ngày bài đăng làm ngày phát hành. Chỉ có quý thì chưa suy tháng/ngày: tra thêm hoặc giữ `pub_date:null`, ghi năm nếu có và ghi thiếu dữ kiện.
+- Evidence ghi giá trị chuẩn hóa, nguồn, độ chính xác gốc (`day`/`month`/`year`) và phần tự bổ sung; ngày 01 có thể là ngày thực nên không kết luận thiếu chỉ bằng giá trị đó.
+- Edition giảm dần theo ngày hiệu lực; bằng ngày giữ thứ tự. Index do ứng dụng suy từ edition mới nhất: `last_pub_year` vẫn là năm, `last_pub_date` chỉ có khi edition mới nhất có ngày đã lưu. Không sửa ID khi chỉ bổ sung ngày/tháng trong cùng năm. Không chuyển đổi hàng loạt dữ liệu cũ.
 
 ### Giá bìa
 
@@ -169,7 +179,7 @@ Chỉ ghi sau khi quan sát Chrome; thay URL/ID/thời gian bằng giá trị th
 }
 ```
 
-Home lấy 12 sách đầu, sắp năm edition giảm dần rồi ngày cập nhật. Nếu ngoài giới hạn, ghi `home.visible:false`, `home.loaded:true` sau khi quan sát trang chủ đã tải, và `home.position` khớp index hiện tại. Kiểm tìm kiếm trên cùng origin và ghi `search.url` (có truy vấn), `search.found` là các liên kết đã thấy (`{ "href": ".../detail?id=<bookId>" }`). Khi vị trí thực ngoài limit, trang chủ đã tải, tìm kiếm có link đúng sách và detail/ảnh đạt thì finish/cleanup được phép hoàn tất; không sửa ngày/năm hoặc limit để đẩy sách lên. Nếu sách nằm trong limit nhưng không hiện, hoặc chưa kiểm tìm kiếm/detail, giữ nháp. Nếu `/detail` không được phục vụ, dùng `/detail.html` hoặc static-server sẵn có, không sửa server. Chrome chưa dùng được thì có thể lưu bằng API fallback nhưng phải giữ nháp/báo chưa kiểm UI.
+Home lấy 12 sách đầu sau khi sắp ngày phát hành giảm dần: ưu tiên `pub_date`, fallback `pub_year` → 01/01 chỉ để so sánh, chưa rõ xếp cuối. Cùng ngày giữ thứ tự tương đối; `updated_at` không tham gia sắp xếp. Nếu ngoài giới hạn, ghi `home.visible:false`, `home.loaded:true` sau khi quan sát trang chủ đã tải, và `home.position` khớp index hiện tại. Kiểm tìm kiếm trên cùng origin và ghi `search.url` (có truy vấn), `search.found` là các liên kết đã thấy (`{ "href": ".../detail?id=<bookId>" }`). Khi vị trí thực ngoài limit, trang chủ đã tải, tìm kiếm có link đúng sách và detail/ảnh đạt thì finish/cleanup được phép hoàn tất; không sửa ngày/năm hoặc limit để đẩy sách lên. Nếu sách nằm trong limit nhưng không hiện, hoặc chưa kiểm tìm kiếm/detail, giữ nháp. Nếu `/detail` không được phục vụ, dùng `/detail.html` hoặc static-server sẵn có, không sửa server. Chrome chưa dùng được thì có thể lưu bằng API fallback nhưng phải giữ nháp/báo chưa kiểm UI.
 
 ```bash
 node script/book-intake.js finish
