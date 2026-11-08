@@ -14,11 +14,13 @@
 
 | Caption | Editions | Memo |
 | --- | ---: | --- |
+| Bản Chữ A | 1 | Độc bản ký hiệu A của Đông A; không gán thành S100 chỉ vì hộp có logo S100. |
 | S100 | 2 | Thường dùng cho Đông A |
 | S200 | 0 | Thường dùng cho Đông A |
 | S365 | 4 | Thường dùng cho Đông A |
 | S500 | 1 | Thường dùng cho Đông A |
 | S895 | 2 | Thường dùng cho Đông A |
+| S896 | 1 | Bỉ vỏ Đông A: tổng 896 bản, gồm 6 bản tặng và 890 bản NH 001–NH 890 phát hành tới bạn đọc. |
 | S1200 | 0 | Thường dùng cho Đông A |
 | N333 | 1 | Thường dùng cho Nhã Nam |
 | H100 | 0 | Thường dùng cho Đông Tây |

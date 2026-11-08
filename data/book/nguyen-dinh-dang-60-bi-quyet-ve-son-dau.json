@@ -9,10 +9,11 @@
   "series": [],
   "editions": [
     {
-      "id": "nguyen-dinh-dang-60-bi-quyet-ve-son-dau-2026-dong-a-bia-vai-1tr2",
-      "isbn": "",
+      "id": "nguyen-dinh-dang-60-bi-quyet-ve-son-dau-2026-dong-a-bia-vai-1tr200k",
+      "isbn": null,
       "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2026,
+      "pub_date": "2026-03-16",
       "publisher": "NXB Dân Trí",
       "issuers": [
         "Đông A"
@@ -21,11 +22,11 @@
       "illustrators": [],
       "proofreaders": [],
       "format": "Bìa vải",
-      "cover_price": "1tr2",
-      "print_run": null,
+      "cover_price": "1tr200k",
+      "print_run": 500,
       "page_count": 312,
       "copy_numbering": "NDD001-NDD500",
-      "size_cm": "24 x 16 x 1.7",
+      "size_cm": "16 x 24 x 1.7",
       "weight_g": 600,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/9/_/9_5_40.jpg",
       "gellery_imgs": [
@@ -33,7 +34,7 @@
         "https://cdn1.fahasa.com/media/catalog/product/3/_/3_15_38.jpg",
         "https://cdn1.fahasa.com/media/catalog/product/5/_/5_13_57.jpg"
       ],
-      "detail": "Sách được làm theo số lượng độc giả đăng ký trước.\n- Bìa cứng bọc vải, có hộp vỏ sò.",
+      "detail": "- Sách được làm theo số lượng độc giả đăng ký trước.\n- Bìa cứng bọc vải, kèm hộp đựng dạng vỏ sò (clamshell box) bọc vải.\n- In 4 màu trên giấy Couche Matt định lượng 120 gsm.\n- Bản giới hạn thêm 16 trang trắng ở đầu và cuối sách.\n- Dự kiến gửi sách từ ngày 16/03/2026, ưu tiên theo thứ tự thanh toán.",
       "series_ids": []
     },
     {

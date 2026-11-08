@@ -11,13 +11,14 @@
   ],
   "editions": [
     {
-      "id": "quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc-2026-dong-a-bia-buckram-3900k",
+      "id": "quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc-2026-dong-a-bia-buckram-3tr900k",
       "series_ids": [
         "50-nam-fahasa"
       ],
       "isbn": "978-632-635-289-4",
       "caption": "S365",
       "pub_year": 2026,
+      "pub_date": "2026-11-16",
       "publisher": "NXB Văn Học",
       "issuers": [
         "Đông A"
@@ -30,10 +31,10 @@
       "illustrators": [],
       "proofreaders": [],
       "format": "Bìa buckram",
-      "cover_price": "3900k",
+      "cover_price": "3tr900k",
       "print_run": 365,
       "page_count": 1364,
-      "copy_numbering": "CM 001-CM 365",
+      "copy_numbering": "CM001 - CM365",
       "size_cm": "25 x 30",
       "weight_g": 5000,
       "thumbnail": "/assets/img/books/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc/dong-a-s365-fahasa-bia-vai-mockup.webp",

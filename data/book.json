@@ -1,5 +1,12 @@
 [
   {
+    "detail": "data/book/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc.json",
+    "search_text": "quoc su quan trieu nguyen kham dinh viet su thong giam cuong muc nxb van hoc dong a hoa bang pham trong diem tran van giap 50 nam fahasa s365 bia buckram",
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-08",
+    "last_pub_date": "2026-11-16"
+  },
+  {
     "detail": "data/book/do-am-son-thanh-cat-tu-han-y-chi-chinh-phuc-the-gioi.json",
     "search_text": "do am son thanh cat tu han y chi chinh phuc the gioi nxb dan tri dong a tran hoai thu bia mem",
     "last_pub_year": 2026,
@@ -40,12 +47,6 @@
     "search_text": "quan vuong il principe niccolo machiavelli nxb van hoc dong a dang thu niccolo machiavelli il principe quan vuong quan vuong thuat cai tri nxb the gioi nxb van hoc omega plus dong a vu thai ha dang thu bia cung",
     "updated_at": "2026-11-07",
     "last_pub_year": 2026
-  },
-  {
-    "detail": "data/book/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc.json",
-    "search_text": "quoc su quan trieu nguyen kham dinh viet su thong giam cuong muc nxb van hoc dong a hoa bang pham trong diem tran van giap 50 nam fahasa s365 bia buckram",
-    "last_pub_year": 2026,
-    "updated_at": "2026-11-07"
   },
   {
     "detail": "data/book/tadeusz-doega-mostowicz-znachor.json",
@@ -114,10 +115,11 @@
     "last_pub_year": 2026
   },
   {
-    "detail": "data/book/mario-puzo-the-godfather.json",
-    "search_text": "mario puzo the godfather bo gia nxb dan tri dong a nguyen minh art werger bia mem bia cung ao om nxb van hoc ngoc thu lang bia vai ngoc thu lan bia cung nxb hoi nha van 50 nam fahasa s500 an ban gioi han",
-    "updated_at": "2026-10-30",
-    "last_pub_year": 2026
+    "detail": "data/book/homere-odyssee.json",
+    "search_text": "anh hung ca odyssee odyssee homere s100 nxb the gioi omega plus do khanh hoan nxb van hoc dong a hoang huu dan john flaxman s365 bia vai bia da that boxset bia cung",
+    "updated_at": "2026-11-08",
+    "last_pub_year": 2026,
+    "last_pub_date": "2026-08-15"
   },
   {
     "detail": "data/book/masashi-kishimoto-naruto.json",
@@ -126,16 +128,18 @@
     "updated_at": "2026-10-30"
   },
   {
-    "detail": "data/book/nguyen-dinh-chieu-luc-van-tien.json",
-    "search_text": "nguyen dinh chieu luc van tien nxb van hoc dong a nguyen thach giang nguyen cong hoan bia vai bia cung 50 nam fahasa an ban gioi han",
-    "updated_at": "2026-10-30",
-    "last_pub_year": 2026
+    "detail": "data/book/nguyen-du-truyen-kieu.json",
+    "search_text": "nguyen du truyen kieu nxb van hoc dong a nguyen thach giang dang xuan hoa bia vai bia cung 50 nam fahasa an ban gioi han s500",
+    "updated_at": "2026-11-08",
+    "last_pub_year": 2026,
+    "last_pub_date": "2026-07-26"
   },
   {
-    "detail": "data/book/nguyen-du-truyen-kieu.json",
-    "search_text": "nguyen du truyen kieu nxb van hoc dong a nguyen thach giang dang xuan hoa bia vai bia cung nxb dan tri tazano bia mem 50 nam fahasa an ban gioi han",
-    "updated_at": "2026-10-30",
-    "last_pub_year": 2026
+    "detail": "data/book/mario-puzo-the-godfather.json",
+    "search_text": "mario puzo the godfather bo gia nxb dan tri dong a nguyen minh art werger bia mem bia cung ao om nxb van hoc ngoc thu lang bia vai ngoc thu lan bia cung nxb hoi nha van 50 nam fahasa s500 an ban gioi han bo gia 55 ky niem 55 nam bia da that da de bia buckram tri an bia da nhan tao bonded leather",
+    "updated_at": "2026-11-08",
+    "last_pub_year": 2026,
+    "last_pub_date": "2026-07-26"
   },
   {
     "detail": "data/book/nguyen-nhat-anh-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim.json",
@@ -150,10 +154,11 @@
     "updated_at": "2026-10-30"
   },
   {
-    "detail": "data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json",
-    "search_text": "nikolai alekseyevich ostrovsky how the steel was tempered thep da toi the day nxb van hoc chauchaubook dong a thep moi huy van bia vai bia cung tri viet bia mem 50 nam fahasa bia ve tay boi chau chau book an ban gioi han",
-    "updated_at": "2026-10-30",
-    "last_pub_year": 2026
+    "detail": "data/book/nguyen-dinh-chieu-luc-van-tien.json",
+    "search_text": "nguyen dinh chieu luc van tien nxb van hoc dong a nguyen thach giang nguyen cong hoan bia vai bia cung 50 nam fahasa an ban gioi han s500",
+    "updated_at": "2026-11-08",
+    "last_pub_year": 2026,
+    "last_pub_date": "2026-07-01"
   },
   {
     "detail": "data/book/ho-anh-thai-sach-tet-binh-ngo-2026.json",
@@ -307,9 +312,9 @@
   },
   {
     "detail": "data/book/antoine-de-saint-exupery-le-petit-prince.json",
-    "search_text": "hoang tu be le petit prince antoine de saintexupery dong a classics bia vai nxb van hoc dong a vinh lac",
+    "search_text": "hoang tu be le petit prince antoine de saintexupery dong a classics bia vai nxb van hoc dong a vinh lac s100 bia da that nxb dan tri song ngu viet phap v20 s80",
     "last_pub_year": 2026,
-    "updated_at": "2026-09-06"
+    "updated_at": "2026-11-08"
   },
   {
     "detail": "data/book/keigo-higashino-dieu-ky-dieu-cua-tiem-tap-hoa-namiya.json",
@@ -432,10 +437,11 @@
     "updated_at": "2026-08-13"
   },
   {
-    "detail": "data/book/homere-odyssee.json",
-    "search_text": "anh hung ca odyssee odyssee homere s100 nxb the gioi omega plus do khanh hoan nxb van hoc dong a hoang huu dan john flaxman s365 bia vai bia da that boxset bia cung",
-    "updated_at": "2026-07-30",
-    "last_pub_year": 2026
+    "detail": "data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json",
+    "search_text": "nikolai alekseyevich ostrovsky how the steel was tempered thep da toi the day nxb van hoc chauchaubook dong a thep moi huy van bia vai bia cung tri viet bia mem 50 nam fahasa bia ve tay boi chau chau book an ban gioi han s500",
+    "updated_at": "2026-11-08",
+    "last_pub_year": 2026,
+    "last_pub_date": "2026-06-26"
   },
   {
     "detail": "data/book/phong-tu-khai-tung-bach-dan-suong-truc-chiu-han.json",
@@ -608,8 +614,9 @@
   {
     "detail": "data/book/nguyen-dinh-dang-60-bi-quyet-ve-son-dau.json",
     "search_text": "60 bi quyet ve son dau nguyen dinh dang nxb dan tri dong a an ban gioi han bia vai bia mem ao om",
-    "updated_at": "2026-07-04",
-    "last_pub_year": 2026
+    "updated_at": "2026-11-08",
+    "last_pub_year": 2026,
+    "last_pub_date": "2026-03-16"
   },
   {
     "detail": "data/book/charlotte-bronte-jane-eyre.json",
@@ -654,10 +661,11 @@
     "updated_at": "2026-11-05"
   },
   {
-    "detail": "data/book/ho-anh-thai-sach-tet-at-ty-2025.json",
-    "search_text": "ho anh thai tuyen chon sach tet at ty 2025 nxb van hoc dong a sach tet dong a an ban gioi han bia cung",
+    "detail": "data/book/robert-beer-the-encyclopedia-of-tibetan-symbols-and-motifs.json",
+    "search_text": "robert beer the encyclopedia of tibetan symbols and motifs bach khoa toan thu bieu tuong va hoa van mat tang bach khoa toan thu bieu tuong va hoa van mat tang bia vai xanh khong hop bach khoa toan thu bieu tuong va hoa van mat tang bia vai xanh co hop bach khoa toan thu bieu tuong va hoa van mat tang buckram vang ky truc tiep nxb dan tri dong a jigme s500",
     "last_pub_year": 2025,
-    "updated_at": "2026-10-30"
+    "last_pub_date": "2025-08-05",
+    "updated_at": "2026-11-08"
   },
   {
     "detail": "data/book/erich-maria-remarque-drei-kameraden.json",
@@ -818,14 +826,16 @@
   {
     "detail": "data/book/frederic-mistral-nang-mireille.json",
     "search_text": "frederic mistral nang mireille nxb van hoc dong a nguyen thi thuy an frederic montenard tram nam nobel bia buckram an ban gioi han",
-    "updated_at": "2026-10-18",
-    "last_pub_year": 2024
+    "updated_at": "2026-11-08",
+    "last_pub_year": 2025,
+    "last_pub_date": "2025-01-19"
   },
   {
     "detail": "data/book/jose-echegaray-dien-ro-hay-than-thanh.json",
     "search_text": "jose echegaray dien ro hay than thanh nxb van hoc dong a thanh loan tat sy tram nam nobel bia buckram an ban gioi han",
-    "updated_at": "2026-10-18",
-    "last_pub_year": 2024
+    "updated_at": "2026-11-08",
+    "last_pub_year": 2025,
+    "last_pub_date": "2025-01-19"
   },
   {
     "detail": "data/book/theodor-mommsen-the-history-of-rome-vol-3.json",
@@ -834,10 +844,11 @@
     "updated_at": "2026-10-18"
   },
   {
-    "detail": "data/book/wadysaw-stanisaw-reymont-nong-dan.json",
-    "search_text": "wadysaw stanisaw reymont nong dan nxb van hoc dong a nguyen van thai le tri tram nam nobel bia buckram an ban gioi han",
-    "last_pub_year": 2024,
-    "updated_at": "2026-10-18"
+    "detail": "data/book/ho-anh-thai-sach-tet-at-ty-2025.json",
+    "search_text": "ho anh thai tuyen chon sach tet at ty 2025 nxb van hoc dong a sach tet dong a an ban gioi han bia cung",
+    "last_pub_year": 2025,
+    "updated_at": "2026-11-08",
+    "last_pub_date": "2025-01-02"
   },
   {
     "detail": "data/book/jose-mauro-de-vasconcelos-vamos-aquecer-o-sol.json",
@@ -960,10 +971,11 @@
     "updated_at": "2026-10-19"
   },
   {
-    "detail": "data/book/gavriil-troyepolsky-con-bim-trang-tai-den.json",
-    "search_text": "gavriil troyepolsky con bim trang tai den nxb van hoc dong a tuan nguyen tran thu dong a classics bo tui dong a classic hoa van",
-    "last_pub_year": 2023,
-    "updated_at": "2026-10-19"
+    "detail": "data/book/wadysaw-stanisaw-reymont-nong-dan.json",
+    "search_text": "wadysaw stanisaw reymont nong dan nxb van hoc dong a nguyen van thai le tri tram nam nobel bia buckram an ban gioi han",
+    "last_pub_year": 2024,
+    "updated_at": "2026-11-08",
+    "last_pub_date": "2024-12-30"
   },
   {
     "detail": "data/book/johanna-spyri-heidi.json",
@@ -996,10 +1008,11 @@
     "updated_at": "2026-10-19"
   },
   {
-    "detail": "data/book/bjrnstjerne-bjrnson-bi-mat-cua-synnve-chuyen-tinh-chang-arne-cau-trai-vui-ve-cua-bjrnstjerne-bjrnson.json",
-    "search_text": "bjrnstjerne bjrnson bi mat cua synnve chuyen tinh chang arne cau trai vui ve cua bjrnstjerne bjrnson nxb van hoc dong a minh khoa pham ngoc tan tram nam nobel bia buckram an ban gioi han",
-    "last_pub_year": 2023,
-    "updated_at": "2026-10-18"
+    "detail": "data/book/gavriil-troyepolsky-con-bim-trang-tai-den.json",
+    "search_text": "gavriil troyepolsky con bim trang tai den nxb van hoc dong a tuan nguyen tran thu dong a classics bo tui dong a classic hoa van s100 bia da that v20 s80 duc lam",
+    "last_pub_year": 2024,
+    "updated_at": "2026-11-08",
+    "last_pub_date": "2024-08-08"
   },
   {
     "detail": "data/book/william-butler-yeats-tuyen-tap-tho-william-butler-yeats.json",
@@ -1009,9 +1022,9 @@
   },
   {
     "detail": "data/book/tran-trong-kim-viet-nam-su-luoc.json",
-    "search_text": "tran trong kim viet nam su luoc nxb hoi nha van nxb van hoc nha nam dong a s111 bia cung bia da that",
+    "search_text": "tran trong kim viet nam su luoc nxb hoi nha van nxb van hoc nha nam dong a s111 bia cung bia da that ban chu a doc ban a da de maroquin diderot alran",
     "last_pub_year": 2023,
-    "updated_at": "2026-09-19"
+    "updated_at": "2026-11-08"
   },
   {
     "detail": "data/book/dao-duy-anh-viet-nam-van-hoa-su-cuong.json",
@@ -1146,10 +1159,11 @@
     "updated_at": "2026-10-28"
   },
   {
-    "detail": "data/book/nguyen-hong-bi-vo.json",
-    "search_text": "nguyen hong bi vo nxb hoi nha van nxb van hoc nha nam dong a hoang phuong vy viet nam danh tac nha nam van chuong va my thuat an ban gioi han bia cung",
-    "last_pub_year": 2022,
-    "updated_at": "2026-10-28"
+    "detail": "data/book/bjrnstjerne-bjrnson-bi-mat-cua-synnve-chuyen-tinh-chang-arne-cau-trai-vui-ve-cua-bjrnstjerne-bjrnson.json",
+    "search_text": "bjrnstjerne bjrnson bi mat cua synnve chuyen tinh chang arne cau trai vui ve cua bjrnstjerne bjrnson nxb van hoc dong a minh khoa pham ngoc tan tram nam nobel bia buckram an ban gioi han",
+    "last_pub_year": 2023,
+    "updated_at": "2026-11-08",
+    "last_pub_date": "2023-12-29"
   },
   {
     "detail": "data/book/nguyen-tuan-chua-dan.json",
@@ -1804,5 +1818,33 @@
     "search_text": "tong thong k thu tu the fourth k mario puzo nxb van hoc đong a orkid",
     "updated_at": "2026-06-30",
     "last_pub_year": ""
+  },
+  {
+    "detail": "data/book/nguyen-hong-bi-vo.json",
+    "search_text": "nguyen hong bi vo nxb hoi nha van nxb van hoc nha nam dong a hoang phuong vy viet nam danh tac nha nam van chuong va my thuat an ban gioi han bia cung s100 bia da that v20 s80 s896 bia da nhan tao microfiber",
+    "last_pub_year": 2022,
+    "updated_at": "2026-11-08",
+    "last_pub_date": "2022-09-09"
+  },
+  {
+    "detail": "data/book/charles-edouard-hocquard-mot-chien-dich-o-bac-ky.json",
+    "search_text": "charlesedouard hocquard une campagne au tonkin mot chien dich o bac ky dong a dinh khac phach tu sach dong duong s500 Charles-Édouard Hocquard",
+    "last_pub_year": 2020,
+    "last_pub_date": "2020-10-06",
+    "updated_at": "2026-11-08"
+  },
+  {
+    "detail": "data/book/henryk-sienkiewicz-quo-vadis.json",
+    "search_text": "henryk sienkiewicz quo vadis nxb van hoc dong a nguyen huu dung adriano minardi charles jouas s500 nobel van chuong",
+    "last_pub_year": 2020,
+    "last_pub_date": "2020-07-29",
+    "updated_at": "2026-11-08"
+  },
+  {
+    "detail": "data/book/fyodor-dostoevsky-anh-em-nha-karamazov.json",
+    "search_text": "fyodor dostoevsky anh em nha karamazov nxb van hoc dong a pham manh hung s100",
+    "last_pub_year": 2019,
+    "last_pub_date": "2019-07-19",
+    "updated_at": "2026-11-08"
   }
 ]

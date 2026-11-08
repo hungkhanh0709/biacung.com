@@ -11,34 +11,41 @@
   ],
   "editions": [
     {
-      "id": "nguyen-dinh-chieu-luc-van-tien-2026-dong-a-bia-vai-2tr2",
+      "id": "nguyen-dinh-chieu-luc-van-tien-2026-dong-a-bia-vai-2tr200k",
       "series_ids": [
         "50-nam-fahasa"
       ],
       "isbn": null,
-      "caption": "Ấn Bản Giới Hạn",
+      "caption": "S500",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
       "issuers": [
         "Đông A"
       ],
-      "translators": [
-        "Nguyễn Thạch Giang"
-      ],
+      "translators": [],
       "illustrators": [
         "Nguyễn Công Hoan"
       ],
       "proofreaders": [],
       "format": "Bìa vải",
-      "cover_price": "2tr2",
+      "cover_price": "2tr200k",
       "print_run": 500,
       "page_count": 192,
       "copy_numbering": "LVT001-LVT500",
       "size_cm": "30 x 25 x 2.1",
       "weight_g": 2000,
-      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/_/n/_n_b_n_gi_i_h_n_l_c_v_n_ti_n.jpg",
-      "gellery_imgs": [],
-      "detail": "- Ấn phẩm được ấn hành nhân kỷ niệm 50 năm thành lập FAHASA.\n- 500 cuốn giới hạn, bìa vải, đựng trong hộp vỏ sò.\n- Ký hiệu từ LVT 001 đến LVT 500\n- Mạ cạnh sách bằng nhũ vàng.\n- Đóng dấu chìm Limited Edition của Đông A.\n- In bốn màu trên giấy Ford định lượng 150 gsm."
+      "thumbnail": "/assets/img/books/nguyen-dinh-chieu-luc-van-tien/dong-a-2026-s500-cover.jpeg",
+      "gellery_imgs": [
+        "/assets/img/books/nguyen-dinh-chieu-luc-van-tien/dong-a-2026-s500-clamshell-open.jpeg",
+        "/assets/img/books/nguyen-dinh-chieu-luc-van-tien/dong-a-2026-s500-clamshell-half-open.jpeg",
+        "/assets/img/books/nguyen-dinh-chieu-luc-van-tien/dong-a-2026-s500-spine-and-box-detail.jpeg",
+        "/assets/img/books/nguyen-dinh-chieu-luc-van-tien/dong-a-2026-s500-gilt-edges.jpeg",
+        "/assets/img/books/nguyen-dinh-chieu-luc-van-tien/dong-a-2026-s500-edition-details.jpeg",
+        "/assets/img/books/nguyen-dinh-chieu-luc-van-tien/dong-a-2026-s500-interior-illustration-1.jpeg",
+        "/assets/img/books/nguyen-dinh-chieu-luc-van-tien/dong-a-2026-s500-interior-illustration-2.jpeg",
+        "/assets/img/books/nguyen-dinh-chieu-luc-van-tien/dong-a-2026-s500-interior-illustration-3.jpeg"
+      ],
+      "detail": "- Ấn phẩm được ấn hành nhân kỷ niệm 50 năm thành lập FAHASA.\n- 500 cuốn giới hạn, bìa cứng bọc vải, đựng trong hộp vỏ sò.\n- Ký hiệu từ LVT 001 đến LVT 500.\n- Mạ nhũ vàng ba cạnh sách.\n- Đóng dấu chìm Limited Edition của Đông A.\n- In bốn màu trên giấy Ford định lượng 150 gsm, khổ lớn 25 x 30 cm.\n- Khảo đính và chú giải: Phó giáo sư Nguyễn Thạch Giang.\n- Minh họa: họa sĩ Nguyễn Công Hoan."
     },
     {
       "id": "nguyen-dinh-chieu-luc-van-tien-2026-dong-a-bia-cung-690k",
@@ -48,6 +55,7 @@
       "isbn": null,
       "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2026,
+      "pub_date": "2026-07-01",
       "publisher": "NXB Văn Học",
       "issuers": [
         "Đông A"
@@ -66,8 +74,14 @@
       "copy_numbering": null,
       "size_cm": "30 x 25 x 2.1",
       "weight_g": 2000,
-      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5544.jpg",
-      "gellery_imgs": [],
+      "thumbnail": "/assets/img/books/nguyen-dinh-chieu-luc-van-tien/dong-a-2026-pho-thong-cover.jpeg",
+      "gellery_imgs": [
+        "/assets/img/books/nguyen-dinh-chieu-luc-van-tien/dong-a-2026-pho-thong-spine.jpeg",
+        "/assets/img/books/nguyen-dinh-chieu-luc-van-tien/dong-a-2026-pho-thong-cover-detail.jpeg",
+        "/assets/img/books/nguyen-dinh-chieu-luc-van-tien/dong-a-2026-pho-thong-interior-illustration-1.jpeg",
+        "/assets/img/books/nguyen-dinh-chieu-luc-van-tien/dong-a-2026-pho-thong-interior-illustration-2.jpeg",
+        "/assets/img/books/nguyen-dinh-chieu-luc-van-tien/dong-a-2026-pho-thong-interior-illustration-3.jpeg"
+      ],
       "detail": "Trong ấn bản này, những người làm sách mời họa sĩ Nguyễn Công Hoan minh họa cho tác phẩm bằng những bức tranh giàu mỹ cảm. Sự phối hợp đồng điệu giữa họa và thơ, sự sáng tỏ của ý văn nghĩa chữ, sẽ góp phần giúp độc giả thưởng thức trọn vẹn nguồn thi hứng dạt dào mà cụ Đồ Chiểu gửi gắm bên trong tác phẩm.\n\nẤn phẩm được ấn hành nhân kỷ niệm 50 năm thành lập FAHASA. Sách có bìa cứng, bọc bìa áo, khổ lớn 25 x 30 cm. Ruột in bốn màu trên giấy Ford định lượng 150 gsm."
     }
   ]

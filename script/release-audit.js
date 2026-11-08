@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const publication = require("../assets/js/publication-date");
 const { buildSitemapXml, buildSitemapEntries } = require("./generate-sitemap");
 const { buildYearPage, getPublishedYears, isCollectedAwardYear } = require("./generate-award-pages");
 const { resolveRequestPath } = require("./static-server");
@@ -512,7 +513,22 @@ function auditData(rootDir, errors, warnings) {
         warnings.push(`Book is missing editions: data/book/${file}`);
       }
 
+      if (editions.some((edition) => edition && Object.prototype.hasOwnProperty.call(edition, 'pub_date'))) {
+        const entry = bookIndex.find((entry) => entry.detail === `data/book/${file}`);
+        const summary = publication.getPublicationSummary(payload);
+        if (entry && (entry.last_pub_year !== summary.last_pub_year
+          || (entry.last_pub_date || '') !== (summary.last_pub_date || ''))) {
+          errors.push(`Publication summary is stale: data/book/${file}`);
+        }
+      }
       editions.forEach((edition, index) => {
+        if (edition && Object.prototype.hasOwnProperty.call(edition, 'pub_date') && edition.pub_date !== null) {
+          if (!publication.isIsoDate(edition.pub_date)) {
+            errors.push(`Invalid pub_date: data/book/${file}#${index + 1}`);
+          } else if (edition.pub_year !== Number(edition.pub_date.slice(0, 4))) {
+            errors.push(`pub_year does not match pub_date: data/book/${file}#${index + 1}`);
+          }
+        }
         if (edition?.title != null && typeof edition.title !== "string") {
           errors.push(`Edition title must be a string: data/book/${file}#${index + 1}`);
         }

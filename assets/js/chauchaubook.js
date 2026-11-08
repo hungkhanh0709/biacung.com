@@ -1,3 +1,4 @@
+const publication = window.BiaCungPublication;
 const CHAUCHAUBOOK_SERIES_URL = "/data/series/chauchaubook.json";
 const BOOK_FALLBACK_COVER = "/assets/img/core/book-cover.png.avif";
 const PAGE_SIZE = 16;
@@ -216,7 +217,7 @@ async function loadChauchaubookResults() {
       return;
     }
 
-    const editions = Array.isArray(book?.editions) ? book.editions : [];
+    const editions = publication.sortEditions(book?.editions);
     editions.forEach((edition) => {
       if (!belongsToChauchaubookSeries(edition)) {
         return;

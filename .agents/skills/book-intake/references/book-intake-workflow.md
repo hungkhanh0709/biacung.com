@@ -22,11 +22,11 @@ data/_raw/
 ## Trình tự của agent
 
 1. **Tiếp nhận:** xem git status; chạy `init` rồi `sources`. Init giữ nội dung đã có; nếu cùng lượt đang dở thì tiếp tục, không tạo sách trùng. Đọc `image_count`/`registered_image_count`, mở từng `absolute_path` trước khi tra web/hỏi danh tính. Raw bị gitignore: không suy thiếu ảnh từ git status/rg mặc định; cần liệt kê thủ công thì dùng `rg --files --hidden --no-ignore data/_raw`.
-2. **Lập nháp:** đọc `data/template/book-detail.json`, `data/author.json`, `data/series.json` và [Caption/Format](caption-format.md). Trích dữ kiện từ nội dung/ảnh, tách đúng edition; ghi nguồn/vùng chữ và review từng source/hash theo [evidence.json](#evidencejson). Không đọc được ảnh thì ghi unresolved.
+2. **Lập nháp:** đọc `data/template/book-detail.json`, `data/author.json`, `data/series.json` và [Caption/Format](caption-format.md). Trích dữ kiện từ nội dung/ảnh; xác định Book ID sau khi tra tựa gốc. Với sách có tựa gốc tiếng Anh, ID dùng tác giả + tựa gốc đó, không mặc định tựa Việt. Tựa gốc không dùng chữ Latin thì chỉ dùng tên Latin có nguồn, hoặc tựa Việt khi chưa có tên Latin; không tự dịch ngược. Ghi nguồn/vùng chữ và review từng source/hash theo [evidence.json](#evidencejson). Không đọc được ảnh thì ghi unresolved.
 3. **Bổ sung:** theo [Tra tên nguyên tác](#tra-tên-nguyên-tác). Metadata/ảnh edition Việt ưu tiên NXB/đơn vị phát hành Việt. Tối đa hai vòng tìm có mục tiêu cho nhóm thiếu; dừng khi đủ chứng cứ hoặc kết quả lặp. Ghi cả truy vấn không kết quả và mâu thuẫn với xác nhận của người dùng.
-4. **Rà soát:** chạy `check`; đối chiếu schema, nguồn, edition và trùng tác phẩm/alias. Sách đã lưu dở dùng `check --book <id>`. Lỗi schema/review phải sửa; agent rà keyword theo bảng Caption/Format. Format chưa xác định được phải hỏi người dùng và giữ nháp trước khi lưu; hỏi gộp nếu còn mâu thuẫn về danh tính/edition. Phần optional chưa rõ giữ default.
+4. **Rà soát:** chạy `check`; đối chiếu schema, nguồn, edition và trùng tác phẩm/alias. Trước khi lưu, nếu các lựa chọn chỉ khác hộp/phụ kiện và giá, còn ruột, bìa, chữ ký, dải số giống nhau, hỏi người dùng gộp hay tách; không tự tạo edition chỉ vì giá khác nhau, không hỏi lại lựa chọn đã chốt. Khi gộp, giữ `cover_price` là giá cơ bản, ghi đầy đủ tùy chọn có/không hộp và giá trong `detail`, hợp nhất gallery và không cộng trùng print_run. Chất liệu bìa hoặc kiểu chữ ký khác nhau có thể là edition riêng. Sách đã lưu dở dùng `check --book <id>`. Lỗi schema/review phải sửa; agent rà keyword theo bảng Caption/Format. Format chưa xác định được phải hỏi người dùng và giữ nháp trước khi lưu; hỏi gộp nếu còn mâu thuẫn về danh tính/edition. Phần optional chưa rõ giữ default.
 5. **Lưu:** với sách mới có ảnh, hoàn tất preview → xem ảnh → apply ở bước 6 trước khi lưu. Helper ảnh dùng `data/_raw/book.json` khi chưa có sách chính thức, chỉ chuẩn bị asset/nháp/evidence; JSON chính thức vẫn phải lưu qua form/API. Dùng [book-batch-input](../../book-batch-input/SKILL.md) điền form từ nháp đã có thumbnail, xem preview từng field/số edition/ID, rồi Lưu tất cả và đọc lại. Dùng origin server thực tế: `/api/index-state` phải trả JSON, form ở `/book-input.html`. Nếu gọi `populateFormFromBookDetail(detail)`, chỉ xóa card `.is-new-edition` sau khi xác nhận nó rỗng. Không sửa hàm ứng dụng, thêm widget/endpoint hay ràng buộc skill vào form/API.
-6. **Ảnh:** theo [book-image-crop-safe](../../book-image-crop-safe/SKILL.md) và [image-plan.json](#image-planjson). Mỗi nguồn tạo một asset, giữ toàn khung; không tự crop/clone/backup. Một ảnh làm thumbnail, gallery `[]`; gallery dùng nguồn khác. Preview, xem ảnh rồi apply; ảnh reference không cần asset.
+6. **Ảnh:** theo [book-image-crop-safe](../../book-image-crop-safe/SKILL.md) và [image-plan.json](#image-planjson). Mỗi nguồn tạo một asset, giữ toàn khung; không tự crop/clone/backup. So sánh ảnh ứng viên ở kích thước card: thumbnail phải sáng, rõ chữ và đúng bản; ảnh chụp tối/cận cảnh thiên về gallery. Nếu ảnh hiện có đều tối, tra ảnh bìa rõ hơn từ nguồn chính thức; không tự tăng sáng hoặc tạo ảnh thay thế. Một ảnh làm thumbnail, gallery `[]`; gallery dùng nguồn khác. Preview, xem ảnh rồi apply; ảnh reference không cần asset.
 7. **Quan hệ:** giữ metadata/work_ids khác; kiểm tra book index → detail, author.work_ids ↔ book.authors, series index → detail và series.work_ids ↔ edition.series_ids/book.series. Tái dùng tác giả/alias, không tạo trùng vì chú thích vai trò/dấu câu. Đồng bộ nháp với dữ liệu cuối; chạy sort-book và check cuối.
 8. **UI:** reload home/detail cùng origin; kiểm card/link, từng edition, tìm kiếm, ảnh và quan hệ tác giả/series nếu có UI. Ghi quan sát thật vào [verification.json](#verificationjson); API/file chưa thay thế kiểm tra UI.
 9. **Kết thúc:** giải quyết conflicts, kiểm diff, chạy finish rồi cleanup. Chỉ dọn khi dữ liệu/ảnh/UI đạt; giữ `data/_raw/` và `.gitkeep`. Không commit/push/publish nếu chưa được yêu cầu.
@@ -39,17 +39,34 @@ Schema sống: `data/template/book-detail.json`; không sao chép giá trị min
 | --- | --- |
 | title, authors, edition | Phải xác định được trước khi lưu. |
 | title_original | Theo [tra tên nguyên tác](#tra-tên-nguyên-tác); chưa rõ `""`. |
-| pub_year | Năm edition Việt, không lấy năm nguyên tác/ngày bài đăng; chưa rõ `null`. |
+| pub_date | Ngày phát hành/thực hiện đúng edition Việt, lưu `YYYY-MM-DD` hoặc `null` khi chưa rõ. Biết tháng/năm → ngày 01; chỉ biết năm → 01/01. Ghi rõ độ chính xác và ngày được bổ sung trong evidence; không lấy ngày bài đăng, mở đặt trước hay năm nguyên tác. |
+| pub_year | Giữ tương thích: năm của `pub_date` khi có ngày; dữ liệu cũ chưa đối chứng giữ nguyên và không tự thêm `pub_date`. |
 | publisher / issuers | Tách NXB/đơn vị phát hành; logo mơ hồ chưa đủ để gán. |
-| cover_price | Giá bìa đúng edition, `280.000đ` → `280k`; không lấy giá sale/cọc; chưa rõ `""`. |
+| cover_price | Giá bìa đúng edition theo [quy cách giá](#giá-bìa); không lấy giá sale/cọc; chưa rõ `""`. |
 | caption / format | Ưu tiên keyword/Memo trong [bảng tham chiếu](caption-format.md); Format chưa xác định được thì hỏi người dùng. |
 | awards / series | Chưa rõ `[]`; giải theo quy tắc dưới đây. Tái dùng tên/ID series, gán đúng edition. |
 | isbn, print_run, page_count, copy_numbering, weight_g | Chưa rõ `null`; không dùng ISBN chung cho các edition. |
 | size_cm, detail, text optional khác | Chưa rõ `""`; khổ phụ kiện không phải khổ sách. Detail: mỗi ý có nguồn bắt đầu bằng `- `. |
-| Mảng khác / edition.title | Mảng chưa rõ `[]`; bỏ edition.title nếu không override. |
+| Mảng khác / edition.title | Mảng chưa rõ `[]`; chỉ dùng edition.title khi ấn bản có tựa sách thực sự khác. Không ghép chất liệu, màu bìa, chữ ký, hộp hay phụ kiện vào tựa; các thông tin này thuộc format/detail. Không có tựa riêng thì để trống trên form và bỏ key edition.title khi lưu. |
 | thumbnail, gellery_imgs | Local `/assets/img/books/<bookId>/<basename>`; giữ chính tả `gellery_imgs`, không lặp thumbnail trong gallery. |
 
-Ưu tiên tra title_original/pub_year/publisher; thiếu sau tra cứu hợp lý thì dùng default và báo rõ. Các trường optional khác, kể cả vai trò đóng góp, không chặn lưu. Hoàn tất vẫn cần quan hệ, ảnh và UI đạt.
+Ưu tiên tra title_original/pub_date/publisher; thiếu sau tra cứu hợp lý thì dùng default và báo rõ. Các trường optional khác, kể cả vai trò đóng góp, không chặn lưu. Hoàn tất vẫn cần quan hệ, ảnh và UI đạt.
+
+### Ngày phát hành
+
+- Đọc [quy ước và kế hoạch refactor](../../../../docs/publication-dates.md) khi nhập/cập nhật ngày. Dữ liệu mới có `pub_date` (`null` nếu chưa biết); thiếu key là dữ liệu cũ. Không tự bổ sung trường cho edition cũ khi sửa trường khác.
+- Thứ tự key trong edition: đặt `pub_date` ngay sau `pub_year` có sẵn, giữ thứ tự các key khác. Dữ liệu cũ thiếu `pub_date` tiếp tục giữ thiếu.
+- Form nhận `YYYY-MM-DD`, `YYYY-MM`, `YYYY`, `DD/MM/YYYY`, `MM/YYYY`; API chuẩn hóa thành `YYYY-MM-DD`. `pub_year` luôn là số năm tương ứng khi có ngày. Ngày không tồn tại phải sửa, không tự rollover.
+- Đối chiếu đúng edition; không dùng ngày đặt trước/ngày bài đăng làm ngày phát hành. Chỉ có quý thì chưa suy tháng/ngày: tra thêm hoặc giữ `pub_date:null`, ghi năm nếu có và ghi thiếu dữ kiện.
+- Evidence ghi giá trị chuẩn hóa, nguồn, độ chính xác gốc (`day`/`month`/`year`) và phần tự bổ sung; ngày 01 có thể là ngày thực nên không kết luận thiếu chỉ bằng giá trị đó.
+- Khi còn thiếu `pub_date`, giữ nguyên vị trí tuyệt đối của edition thiếu ngày (kể cả null/ngày lỗi); chỉ sắp giảm dần các edition có ngày trong những vị trí đang có ngày. Không dùng `pub_year` hay `updated_at` để đổi vị trí. Một edition vừa được bổ sung ngày không tự nhảy lên đầu. Khi toàn bộ có ngày, sắp giảm dần toàn bộ; bằng ngày giữ thứ tự. Index vẫn tính metadata độc lập với vị trí hiển thị: `last_pub_year` vẫn là năm, `last_pub_date` chỉ có khi edition mới nhất có ngày đã lưu. Không sửa ID khi chỉ bổ sung ngày/tháng trong cùng năm. Không chuyển đổi hàng loạt dữ liệu cũ.
+
+### Giá bìa
+
+- Dưới 1.000.000đ: dùng `k`, ví dụ 900.000đ → `900k`.
+- Từ 1.000.000đ: ghi số triệu nguyên với `tr`, thêm phần nghìn còn lại với `k`, ví dụ 1.200.000đ → `1tr200k`, 3.900.000đ → `3tr900k`, 3.050.000đ → `3tr50k`. Tròn triệu bỏ phần `0k`: 1.000.000đ → `1tr`.
+- Không dùng `3900k`, `3tr9` hay `3.9tr` cho giá vừa nhập/cập nhật. Giữ nguyên giá trị tiền; không làm tròn mất phần lẻ. Đổi giá/cách ghi thì sinh ID theo form và rà tham chiếu cũ.
+- Chỉ áp dụng cho trường giá đang nhập/cập nhật; không chuẩn hóa hàng loạt edition/sách cũ ngoài yêu cầu. Cột Giá trong checklist chép nguyên `cover_price` của đúng edition, giữ cả cách ghi cũ; thiếu giá hoặc chưa xác định đúng edition thì ghi `Thiếu`. Mốc/giá từ danh sách cũ chưa có trong JSON chỉ giữ trong Memo để đối chiếu; bỏ Memo khi đã đủ/đúng. Cột Phát hành chỉ dùng `pub_date` (thiếu thì ghi `Thiếu`), cột Hình ghi `Thiếu` khi gallery rỗng hoặc chưa có đúng edition.
 
 **Giải thưởng:** đối chiếu `data/awards/` và nguồn chính thức. Sách của đúng tác giả có thể gắn `Nobel Văn Chương`; không nói từng sách đoạt Nobel. Giải tác phẩm chỉ gắn đúng tác phẩm; phân biệt `International Booker Prize`/`Booker Prize`. Giữ nhãn cũ, thêm nhãn đã xác minh không trùng; năm ghi trong evidence, không ghép vào keyword. Ghi `evidence.award_claims`: label, year, scope (author/work), recipient, source_url, locator; giải bản dịch ghi ngôn ngữ/dịch giả, không coi edition Việt đoạt giải.
 
@@ -73,6 +90,8 @@ Ghi giá trị, nguồn và vị trí chứng minh vào `evidence.fields.title_o
 ## Cập nhật sách đã có
 
 Theo [update-existing.md](update-existing.md). Chỉ đổi phạm vi yêu cầu, giữ baseline và nháp đang dở; sửa quy trình/candidate trước rồi lưu qua form/API, không vá JSON đầu ra.
+
+Khi bổ sung dữ liệu hoặc ảnh, giữ thông tin đã có và hợp nhất phần mới không trùng. Không tự xóa tên người hoặc làm rỗng mảng vì nguồn mới mô tả vai trò khác; thêm vai trò vào `detail` không thay thế trường có cấu trúc đã lưu. Chỉ sửa/xóa dữ liệu cũ khi người dùng yêu cầu việc đó; rà các phần bị giảm dữ liệu trước mỗi lần lưu theo nhánh cập nhật có phạm vi.
 
 ## Lệnh cho agent
 
@@ -162,7 +181,7 @@ Chỉ ghi sau khi quan sát Chrome; thay URL/ID/thời gian bằng giá trị th
 }
 ```
 
-Home lấy 12 sách đầu, sắp năm edition giảm dần rồi ngày cập nhật. Nếu ngoài giới hạn, ghi `home.visible:false`, `home.loaded:true` sau khi quan sát trang chủ đã tải, và `home.position` khớp index hiện tại. Kiểm tìm kiếm trên cùng origin và ghi `search.url` (có truy vấn), `search.found` là các liên kết đã thấy (`{ "href": ".../detail?id=<bookId>" }`). Khi vị trí thực ngoài limit, trang chủ đã tải, tìm kiếm có link đúng sách và detail/ảnh đạt thì finish/cleanup được phép hoàn tất; không sửa ngày/năm hoặc limit để đẩy sách lên. Nếu sách nằm trong limit nhưng không hiện, hoặc chưa kiểm tìm kiếm/detail, giữ nháp. Nếu `/detail` không được phục vụ, dùng `/detail.html` hoặc static-server sẵn có, không sửa server. Chrome chưa dùng được thì có thể lưu bằng API fallback nhưng phải giữ nháp/báo chưa kiểm UI.
+Home lấy 12 sách đầu; sách thiếu `last_pub_date` giữ nguyên vị trí trong index, chỉ sắp các sách có ngày vào những vị trí vốn có ngày. Không fallback từ `last_pub_year` và không dùng `updated_at` để đổi thứ tự. Cùng ngày giữ thứ tự tương đối. Nếu ngoài giới hạn, ghi `home.visible:false`, `home.loaded:true` sau khi quan sát trang chủ đã tải, và `home.position` khớp index hiện tại. Kiểm tìm kiếm trên cùng origin và ghi `search.url` (có truy vấn), `search.found` là các liên kết đã thấy (`{ "href": ".../detail?id=<bookId>" }`). Khi vị trí thực ngoài limit, trang chủ đã tải, tìm kiếm có link đúng sách và detail/ảnh đạt thì finish/cleanup được phép hoàn tất; không sửa ngày/năm hoặc limit để đẩy sách lên. Nếu sách nằm trong limit nhưng không hiện, hoặc chưa kiểm tìm kiếm/detail, giữ nháp. Nếu `/detail` không được phục vụ, dùng `/detail.html` hoặc static-server sẵn có, không sửa server. Chrome chưa dùng được thì có thể lưu bằng API fallback nhưng phải giữ nháp/báo chưa kiểm UI.
 
 ```bash
 node script/book-intake.js finish

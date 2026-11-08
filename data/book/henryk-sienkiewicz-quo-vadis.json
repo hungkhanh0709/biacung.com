@@ -1,0 +1,50 @@
+{
+  "id": "henryk-sienkiewicz-quo-vadis",
+  "title": "Quo Vadis",
+  "title_original": "Quo vadis",
+  "authors": [
+    "Henryk Sienkiewicz"
+  ],
+  "awards": [
+    "Nobel Văn Chương"
+  ],
+  "series": [],
+  "editions": [
+    {
+      "id": "henryk-sienkiewicz-quo-vadis-2020-dong-a-bia-da-nhan-tao-1tr",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S500",
+      "pub_year": 2020,
+      "pub_date": "2020-07-29",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Hữu Dũng"
+      ],
+      "illustrators": [
+        "Adriano Minardi",
+        "Charles Jouas"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da nhân tạo",
+      "cover_price": "1tr",
+      "print_run": 500,
+      "page_count": null,
+      "copy_numbering": "DA 001-DA 500",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s500-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s500-book-and-slipcase.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s500-angled-cover.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s500-slipcase-and-bookmark.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s500-title-and-copyright.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s500-ex-libris.jpg"
+      ],
+      "detail": "- Ấn bản S500 gồm 500 bản bìa cứng, đánh số nhảy từ DA 001 đến DA 500; mỗi bản là duy nhất.\n- Bìa cứng làm thủ công bằng da Microfiber, có hộp viền da.\n- Ruột in trên giấy GV76-BB định lượng 100 gsm.\n- Đóng dấu đỏ của Đông A.\n- Tặng kèm bookmark thiết kế riêng và dấu sở hữu sách ex libris."
+    }
+  ]
+}

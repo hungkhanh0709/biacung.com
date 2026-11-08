@@ -8,7 +8,12 @@ description: "Nhập trọn sách từ tin phát hành/ảnh: tra nguồn, lập
 Đọc [workflow](references/book-intake-workflow.md) trước khi làm; lệnh chạy từ repo root. Tự hoàn tất phạm vi được yêu cầu, không đòi người dùng điền schema hoặc duyệt từng bước.
 
 - **Sách mới:** một tựa mỗi lượt, đầu vào/nháp tại `data/_raw/`. Tiếp tục nháp đang dở của cùng lượt, không nhập trùng.
-- **Sách đã có:** theo [cập nhật có phạm vi](references/update-existing.md), chỉ đổi sách/trường được yêu cầu.
+- **Book ID:** dùng tên tác giả và tựa gốc đã xác minh khi tạo được slug Latin; sách có tựa gốc tiếng Anh phải dùng tựa đó, không mặc định tựa Việt. Không tự dịch ngược để tạo tên tiếng Anh. Không đổi hàng loạt ID cũ.
+- **Gộp/tách edition:** nếu chỉ khác hộp/phụ kiện/giá còn ruột, bìa, chữ ký và dải số giống nhau, hỏi người dùng gộp hay tách trước khi lưu. Không hỏi lại lựa chọn đã chốt. Gộp thì giữ giá cơ bản trong `cover_price`, các tùy chọn và giá đầy đủ trong `detail`, hợp nhất ảnh không trùng.
+- **Thumbnail:** so sánh các ảnh ở kích thước card, ưu tiên bìa sáng, sắc nét, đọc rõ tựa và đúng phiên bản. Không chọn ảnh tối chỉ vì bố cục đầy đủ; tìm ảnh bìa tốt hơn từ nguồn chính thức nếu cần, không tự tăng sáng/crop.
+- **Sách đã có:** theo [cập nhật có phạm vi](references/update-existing.md), chỉ đổi sách/trường được yêu cầu. Bổ sung thông tin/ảnh phải giữ dữ liệu cũ; không tự xóa tên người, làm rỗng mảng hoặc chuyển vai trò đã lưu khi người dùng chưa yêu cầu sửa/xóa trường đó.
+- **Ngày phát hành:** nhập `pub_date` theo [quy ước ngày](references/book-intake-workflow.md#ngày-phát-hành); giữ `pub_year` tương thích, không chuyển đổi hàng loạt edition cũ.
+- **Giá bìa:** dưới 1 triệu dùng `k` (`900k`); từ 1 triệu dùng `tr` và phần nghìn `k` (`3tr900k`), tròn triệu ghi `3tr`. Chi tiết trong [workflow](references/book-intake-workflow.md#giá-bìa).
 - **Caption/Format:** ưu tiên keyword và Memo trong [bảng tham chiếu](references/caption-format.md), không dùng `vocab`. Format chưa xác định được thì hỏi người dùng trước khi lưu.
 - **Lưu dữ liệu:** dùng [book-batch-input](../book-batch-input/SKILL.md).
 - **Ảnh:** dùng [book-image-crop-safe](../book-image-crop-safe/SKILL.md).

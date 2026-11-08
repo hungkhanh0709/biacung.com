@@ -21,6 +21,7 @@
             "isbn": null,
             "caption": "Edition description, e.g. limited edition / clothbound / two-volume set",
             "pub_year": 2026,
+            "pub_date": "2026-01-01",
             "publisher": "NXB Văn Học",
             "issuers": [
                 "Đông A"
