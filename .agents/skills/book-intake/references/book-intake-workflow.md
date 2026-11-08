@@ -41,7 +41,7 @@ Schema sống: `data/template/book-detail.json`; không sao chép giá trị min
 | title_original | Theo [tra tên nguyên tác](#tra-tên-nguyên-tác); chưa rõ `""`. |
 | pub_year | Năm edition Việt, không lấy năm nguyên tác/ngày bài đăng; chưa rõ `null`. |
 | publisher / issuers | Tách NXB/đơn vị phát hành; logo mơ hồ chưa đủ để gán. |
-| cover_price | Giá bìa đúng edition, `280.000đ` → `280k`; không lấy giá sale/cọc; chưa rõ `""`. |
+| cover_price | Giá bìa đúng edition theo [quy cách giá](#giá-bìa); không lấy giá sale/cọc; chưa rõ `""`. |
 | caption / format | Ưu tiên keyword/Memo trong [bảng tham chiếu](caption-format.md); Format chưa xác định được thì hỏi người dùng. |
 | awards / series | Chưa rõ `[]`; giải theo quy tắc dưới đây. Tái dùng tên/ID series, gán đúng edition. |
 | isbn, print_run, page_count, copy_numbering, weight_g | Chưa rõ `null`; không dùng ISBN chung cho các edition. |
@@ -50,6 +50,13 @@ Schema sống: `data/template/book-detail.json`; không sao chép giá trị min
 | thumbnail, gellery_imgs | Local `/assets/img/books/<bookId>/<basename>`; giữ chính tả `gellery_imgs`, không lặp thumbnail trong gallery. |
 
 Ưu tiên tra title_original/pub_year/publisher; thiếu sau tra cứu hợp lý thì dùng default và báo rõ. Các trường optional khác, kể cả vai trò đóng góp, không chặn lưu. Hoàn tất vẫn cần quan hệ, ảnh và UI đạt.
+
+### Giá bìa
+
+- Dưới 1.000.000đ: dùng `k`, ví dụ 900.000đ → `900k`.
+- Từ 1.000.000đ: ghi số triệu nguyên với `tr`, thêm phần nghìn còn lại với `k`, ví dụ 1.200.000đ → `1tr200k`, 3.900.000đ → `3tr900k`, 3.050.000đ → `3tr50k`. Tròn triệu bỏ phần `0k`: 1.000.000đ → `1tr`.
+- Không dùng `3900k`, `3tr9` hay `3.9tr` cho giá vừa nhập/cập nhật. Giữ nguyên giá trị tiền; không làm tròn mất phần lẻ. Đổi giá/cách ghi thì sinh ID theo form và rà tham chiếu cũ.
+- Chỉ áp dụng cho trường giá đang nhập/cập nhật; không chuẩn hóa hàng loạt edition/sách cũ ngoài yêu cầu. Giá trong checklist tiếp tục ghi đầy đủ bằng đồng; memo chỉ giữ nội dung chưa xác nhận.
 
 **Giải thưởng:** đối chiếu `data/awards/` và nguồn chính thức. Sách của đúng tác giả có thể gắn `Nobel Văn Chương`; không nói từng sách đoạt Nobel. Giải tác phẩm chỉ gắn đúng tác phẩm; phân biệt `International Booker Prize`/`Booker Prize`. Giữ nhãn cũ, thêm nhãn đã xác minh không trùng; năm ghi trong evidence, không ghép vào keyword. Ghi `evidence.award_claims`: label, year, scope (author/work), recipient, source_url, locator; giải bản dịch ghi ngôn ngữ/dịch giả, không coi edition Việt đoạt giải.
 

@@ -73,12 +73,12 @@
       "series_ids": []
     },
     {
-      "id": "mario-puzo-the-godfather-2026-dong-a-bia-vai-2tr4",
+      "id": "mario-puzo-the-godfather-2026-dong-a-bia-vai-2tr400k",
       "isbn": null,
       "series_ids": [
         "50-nam-fahasa"
       ],
-      "caption": "Ấn Bản Giới Hạn",
+      "caption": "S500",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -92,7 +92,7 @@
       ],
       "proofreaders": [],
       "format": "Bìa vải",
-      "cover_price": "2tr4",
+      "cover_price": "2tr400k",
       "print_run": 500,
       "page_count": 320,
       "copy_numbering": "FG001-FG500",
@@ -173,10 +173,91 @@
       "series_ids": []
     },
     {
-      "id": "mario-puzo-the-godfather-2024-dong-a-bia-cung-250",
+      "id": "mario-puzo-the-godfather-2024-dong-a-bia-da-that-3tr500k",
+      "title": "Bố Già – Kỷ Niệm 55 Năm",
+      "series_ids": [],
+      "isbn": null,
+      "caption": "Ấn Bản Giới Hạn",
+      "pub_year": 2024,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Minh"
+      ],
+      "illustrators": [
+        "Art Werger"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "3tr500k",
+      "print_run": 306,
+      "page_count": null,
+      "copy_numbering": "GF55-001–GF55-306",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-goatskin-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-goatskin-spine.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-goatskin-title-page.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-goatskin-interior-illustration.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-shared-spines-comparison.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-shared-editions-comparison.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-shared-clamshell-boxes.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-shared-edges-comparison.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-goatskin-back-cover.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-shared-all-editions.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-goatskin-cover-detail.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-goatskin-ex-libris.jpg"
+      ],
+      "detail": "- Ấn bản giới hạn kỷ niệm 55 năm xuất bản lần đầu The Godfather (1969–2024).\n- Bản dịch mới: Nguyễn Minh; minh họa: Art Werger.\n- Khổ sách 16 x 24 cm; in trên giấy Ford kem Nhật định lượng 104,7 gsm.\n- Đóng dấu chìm logo tia sáng Đông A.\n- Da dê màu đen nhập từ Pháp, ép nhũ hai màu trắng và vàng.\n- Ba gân đơn được siết tay thủ công.\n- Cạnh sách mạ nhũ vàng.\n- Hộp vỏ sò bọc vải màu đỏ, lót nhung đen.\n- 306 cuốn theo số lượng bạn đọc đăng ký, đánh số từ GF55-001 đến GF55-306."
+    },
+    {
+      "id": "mario-puzo-the-godfather-2024-dong-a-bia-buckram-1tr500k",
+      "title": "Bố Già – Kỷ Niệm 55 Năm",
+      "series_ids": [],
+      "isbn": null,
+      "caption": "Ấn Bản Giới Hạn",
+      "pub_year": 2024,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Minh"
+      ],
+      "illustrators": [
+        "Art Werger"
+      ],
+      "proofreaders": [],
+      "format": "Bìa buckram",
+      "cover_price": "1tr500k",
+      "print_run": 276,
+      "page_count": null,
+      "copy_numbering": "BG55-001–BG55-276",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-buckram-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-buckram-box-spine.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-shared-spines-comparison.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-buckram-clamshell-box.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-shared-editions-comparison.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-buckram-back-cover.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-shared-clamshell-boxes.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-shared-edges-comparison.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-buckram-title-page.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-buckram-spine.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2024-55th-shared-all-editions.jpg"
+      ],
+      "detail": "- Ấn bản giới hạn kỷ niệm 55 năm xuất bản lần đầu The Godfather (1969–2024).\n- Bản dịch mới: Nguyễn Minh; minh họa: Art Werger.\n- Khổ sách 16 x 24 cm; in trên giấy Ford kem Nhật định lượng 104,7 gsm.\n- Đóng dấu chìm logo tia sáng Đông A.\n- Bìa Heritage Library Buckram màu đỏ Tangerine nhập từ hãng Ratchford, Anh Quốc.\n- Hộp vỏ sò bọc vải màu đen, lót nhung đen.\n- 276 cuốn theo số lượng bạn đọc đăng ký, đánh số từ BG55-001 đến BG55-276."
+    },
+    {
+      "id": "mario-puzo-the-godfather-2021-dong-a-bia-cung-250",
       "isbn": null,
       "caption": "",
-      "pub_year": 2024,
+      "pub_year": 2021,
       "publisher": "NXB Văn Học",
       "issuers": [
         "Đông A"

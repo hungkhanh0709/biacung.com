@@ -89,7 +89,24 @@ function init(root) {
     const sources = scanSources(root, folder);
     return { draft: RAW, created, sources, next: 'Mở trực tiếp từng absolute_path trong sources.images; ghi image_reviews trước khi lưu. Không dùng rg --files thông thường để kết luận _raw không có ảnh vì bị gitignore.' };
 }
-function validate(root, book, { relations = false, images = false, allowExisting = false } = {}) {
+function isCoverPrice(value) {
+    const thousands = /^(?:0|[1-9]\d*)(?:\.\d+)?k$/.test(value) ? Number(value.slice(0, -1)) : null;
+    if (thousands !== null) return thousands > 0 && thousands < 1000;
+    const millions = /^[1-9]\d*tr(?:(?<remainder>(?:0|[1-9]\d{0,2})(?:\.\d+)?)k)?$/.exec(value);
+    return Boolean(millions && (millions.groups.remainder === undefined
+        || (Number(millions.groups.remainder) > 0 && Number(millions.groups.remainder) < 1000)));
+}
+function updateBaseline(root, value, bookId) {
+    if (!value) return undefined;
+    const file = path.resolve(root, value);
+    if (!file.endsWith('.json') || !fs.existsSync(file) || !within(path.join(root, RAW), file)) {
+        throw new Error('Baseline phải là JSON snapshot trong data/_raw/.');
+    }
+    const baseline = read(file);
+    if (baseline.id !== bookId || !Array.isArray(baseline.editions)) throw new Error('Baseline không khớp sách đang cập nhật.');
+    return baseline;
+}
+function validate(root, book, { relations = false, images = false, allowExisting = false, baseline } = {}) {
     const errors = [], missing = [], warnings = [];
     const bad = (message) => errors.push(message);
     const template = read(path.join(root, 'data/template/book-detail.json'));
@@ -109,6 +126,7 @@ function validate(root, book, { relations = false, images = false, allowExisting
     const imageFiles = new Set();
     for (const [i, edition] of (Array.isArray(book.editions) ? book.editions : []).entries()) {
         const at = `editions[${i}]`;
+        const previous = allowExisting && baseline?.id === book.id ? baseline.editions?.[i] : null;
         if (!edition || typeof edition !== 'object' || Array.isArray(edition)) { bad(`${at} phải là object.`); continue; }
         for (const field of Object.keys(template.editions[0])) {
             if (field !== 'title' && !(field in edition)) bad(`${at}.${field} thiếu key (dùng default khi chưa rõ).`);
@@ -129,7 +147,8 @@ function validate(root, book, { relations = false, images = false, allowExisting
         }
         if (edition.pub_year !== null && (!Number.isInteger(edition.pub_year) || edition.pub_year < 1000 || edition.pub_year > 9999)) bad(`${at}.pub_year phải là năm 4 chữ số.`);
         for (const field of ['isbn', 'copy_numbering']) if (edition[field] !== null && !text(edition[field])) bad(`${at}.${field} phải là string hoặc null.`);
-        if (text(edition.cover_price) && !/^\d+(?:\.\d+)?k$/.test(edition.cover_price)) bad(`${at}.cover_price phải có dạng 280k.`);
+        if (text(edition.cover_price) && !isCoverPrice(edition.cover_price)
+            && previous?.cover_price !== edition.cover_price) bad(`${at}.cover_price phải có dạng 900k, 3tr900k hoặc 3tr.`);
         for (const field of ['pub_year', 'publisher', 'format', 'cover_price', 'thumbnail']) {
             if (edition[field] == null || edition[field] === '') missing.push(`${at}.${field}`);
         }
@@ -141,6 +160,10 @@ function validate(root, book, { relations = false, images = false, allowExisting
             const prefix = `/assets/img/books/${book.id}/`;
             const basename = typeof url === 'string' ? url.slice(prefix.length) : '';
             if (!url.startsWith(prefix) || !/^[a-z0-9]+(?:-[a-z0-9]+)*\.(jpg|jpeg|png|webp|avif)$/.test(basename)) {
+                const unchanged = url === edition.thumbnail
+                    ? previous?.thumbnail === edition.thumbnail
+                    : previous && JSON.stringify(previous.gellery_imgs) === JSON.stringify(edition.gellery_imgs);
+                if (/^https?:\/\//.test(url) && unchanged) continue;
                 bad(`${at}: URL ảnh phải local, tên kebab-case và đúng bookId: ${url}`); continue;
             }
             const file = path.join(root, url.slice(1));
@@ -327,9 +350,10 @@ function finish(root, folder) {
     const stable = (v) => Array.isArray(v) ? v.map(stable) : v && typeof v === 'object'
         ? Object.fromEntries(Object.keys(v).sort().map((k) => [k, stable(v[k])])) : v;
     if (JSON.stringify(stable(book)) !== JSON.stringify(stable(saved))) throw new Error('book.json nháp chưa khớp file đã lưu; đối chiếu form và đồng bộ lại.');
-    const result = validate(root, saved, { relations: true, images: true, allowExisting: true });
-    if (result.errors.length) throw new Error(result.errors.join('\n'));
     const evidence = read(path.join(folder, 'evidence.json'));
+    const baseline = updateBaseline(root, evidence.scope?.baseline, book.id);
+    const result = validate(root, saved, { relations: true, images: true, allowExisting: true, baseline });
+    if (result.errors.length) throw new Error(result.errors.join('\n'));
     if (!evidence.fields || !Array.isArray(evidence.searches) || !Array.isArray(evidence.conflicts) || !Array.isArray(evidence.images)) throw new Error('evidence.json phải có fields/searches/conflicts/images đúng kiểu.');
     if (evidence.conflicts.length) throw new Error('Còn mâu thuẫn chưa giải quyết trong evidence.json.');
     const sourced = [];
@@ -382,7 +406,8 @@ function main(args) {
         const folder = !bookId && draftPath(ROOT, option('--draft'));
         if (bookId && !SLUG.test(bookId)) throw new Error('Book id không hợp lệ.');
         const book = read(folder ? path.join(folder, 'book.json') : path.join(ROOT, `data/book/${bookId}.json`));
-        const result = validate(ROOT, book, { relations: rest.includes('--relations'), images: rest.includes('--images') || rest.includes('--originals'), allowExisting: Boolean(bookId) });
+        const baseline = updateBaseline(ROOT, option('--baseline'), book.id);
+        const result = validate(ROOT, book, { relations: rest.includes('--relations'), images: rest.includes('--images') || rest.includes('--originals'), allowExisting: Boolean(bookId), baseline });
         const rawBookPath = path.join(ROOT, RAW, 'book.json');
         if (folder || (fs.existsSync(rawBookPath) && read(rawBookPath).id === book.id)) {
             const sourceReview = reviewSources(ROOT, folder || draftPath(ROOT), book, { imported: rest.includes('--images') || rest.includes('--originals') });
@@ -396,10 +421,10 @@ function main(args) {
         const folder = draftPath(ROOT, option('--draft'));
         return command === 'finish' ? finish(ROOT, folder) : cleanup(ROOT, folder);
     }
-    throw new Error('Dùng init | sources | vocab | check [--draft data/_raw] / --book <id> [--images --relations] | finish [--draft data/_raw] | cleanup [--draft data/_raw].');
+    throw new Error('Dùng init | sources | vocab | check [--draft data/_raw] / --book <id> [--images --relations] [--baseline data/_raw/updates/.../baseline-book.json] | finish [--draft data/_raw] | cleanup [--draft data/_raw].');
 }
 if (require.main === module) {
     try { console.log(JSON.stringify(main(process.argv.slice(2)), null, 2)); }
     catch (error) { console.error(error.message); process.exitCode = 1; }
 }
-module.exports = { init, emptyBook, vocabulary, validate, finish, cleanup, draftPath, inventory, hash, slug, isSourceImage, scanSources, reviewSources, verifyUi };
+module.exports = { init, emptyBook, vocabulary, validate, finish, cleanup, draftPath, inventory, hash, slug, isSourceImage, scanSources, reviewSources, verifyUi, isCoverPrice };

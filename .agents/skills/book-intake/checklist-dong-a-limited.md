@@ -6,7 +6,7 @@
 - `☐`: chưa tìm thấy hồ sơ tựa sách phù hợp; chờ thông tin bổ sung.
 - Thời gian, mã bản và giá trong dòng chính lấy từ danh sách bạn cung cấp. Giữ nguyên thứ tự và STT; giá được đổi từ `k` sang đồng. Ô Ghi chú để trống khi không còn điểm cần xác nhận.
 
-Có **58 mục có tên sách**: **41 mục đã có hồ sơ tựa**, **17 mục chưa tìm thấy hồ sơ**. Bố già ở STT 1, 42, 45 và 57 liên kết cùng một hồ sơ tác phẩm.
+Có **59 mục có tên sách**: **42 mục đã có hồ sơ tựa**, **17 mục chưa tìm thấy hồ sơ**. Bố già ở STT 1, 42, 45, 46 và 58 liên kết cùng một hồ sơ tác phẩm.
 
 ## Danh sách đối chiếu
 
@@ -56,17 +56,18 @@ Có **58 mục có tên sách**: **41 mục đã có hồ sơ tựa**, **17 mụ
 | 42 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | 01/2024 | S500 | Tặng | Chưa có bản S500 năm 2024. |
 | 43 | ☑ | [Những trận chiến thay đổi lịch sử](../../../data/book/dk-nhung-tran-chien-thay-doi-lich-su.json) | 04/2024 | S365 | 1.800.000đ | Chưa có bản S365. |
 | 44 | ☐ | Nhà văn / Cuộc đời và tác phẩm | 07/2024 | S365 | 1.800.000đ | Chưa có hồ sơ. |
-| 45 | ☑ | [Bố già 55](../../../data/book/mario-puzo-the-godfather.json) | 12/2024 | S276 | 1.500.000đ | Chưa có bản Bố già 55 / S276. |
-| 46 | ☑ | [Kho tàng truyện cổ tích Việt Nam](../../../data/book/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam.json) | 05/2025 | S365 | 3.000.000đ | Chưa có bản S365. |
-| 47 | ☐ | Bách khoa toàn thư biểu tượng và hoa văn Mật Tạng | 08/2025 | S500 | 3.000.000đ | Chưa có hồ sơ. |
-| 48 | ☑ | [Hồ Chí Minh – Tiểu sử bằng hình](../../../data/book/dong-a-ho-chi-minh-tieu-su-bang-hinh.json) | 10/2025 | S500 | 2.000.000đ |  |
-| 49 | ☑ | [60 bí quyết vẽ sơn dầu](../../../data/book/nguyen-dinh-dang-60-bi-quyet-ve-son-dau.json) | 03/2026 | S500 | 1.200.000đ | Cần xác nhận S500 và số lượng in. |
-| 50 | ☑ | [Trần Tiến – Người hát thơ mình](../../../data/book/tran-tien-tran-tien-nguoi-hat-tho-minh-ca-khuc-nhung-cau-chuyen.json) | 20/04/2026 | S365 | 2.500.000đ |  |
-| 51 | ☑ | [Những tầng ký ức](../../../data/book/tran-dai-thang-layers-of-memory.json) | 05/2026 | S365 | 2.600.000đ |  |
-| 52 | ☑ | [Đại Việt sử ký toàn thư](../../../data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json) | 07/2026 | S895 | Chưa cung cấp | Cần xác nhận giá từng bản S895. |
-| 53 | ☑ | [Anh hùng ca Odyssée](../../../data/book/homere-odyssee.json) | 07/2026 | S365 | 2.500.000đ |  |
-| 54 | ☑ | [Truyện Kiều](../../../data/book/nguyen-du-truyen-kieu.json) | 26/07/2026 | S500 | Chưa cung cấp | Cần xác nhận giá (hệ thống: 2.200.000đ). |
-| 55 | ☑ | [Lục Vân Tiên](../../../data/book/nguyen-dinh-chieu-luc-van-tien.json) | 26/07/2026 | S500 | Chưa cung cấp | Cần xác nhận giá (hệ thống: 2.200.000đ). |
-| 56 | ☑ | [Thép đã tôi thế đấy](../../../data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json) | 26/07/2026 | S500 | Chưa cung cấp | Cần xác nhận giá (hệ thống: 2.300.000đ). |
-| 57 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | 26/07/2026 | S500 | Chưa cung cấp | Cần xác nhận giá (hệ thống: 2.400.000đ). |
-| 58 | ☑ | [Khâm định Việt sử thông giám cương mục](../../../data/book/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc.json) | 16/09/2026 | S365 | 3.990.000đ | Cần xác nhận giá: 3.900.000đ hay 3.990.000đ. |
+| 45 | ☑ | [Bố già 55 – Bìa da dê](../../../data/book/mario-puzo-the-godfather.json) | 27/12/2024 | GF55 (306 bản) | 3.500.000đ |  |
+| 46 | ☑ | [Bố già 55 – Bìa buckram](../../../data/book/mario-puzo-the-godfather.json) | 27/12/2024 | S276 / BG55 | 1.500.000đ |  |
+| 47 | ☑ | [Kho tàng truyện cổ tích Việt Nam](../../../data/book/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam.json) | 05/2025 | S365 | 3.000.000đ | Chưa có bản S365. |
+| 48 | ☐ | Bách khoa toàn thư biểu tượng và hoa văn Mật Tạng | 08/2025 | S500 | 3.000.000đ | Chưa có hồ sơ. |
+| 49 | ☑ | [Hồ Chí Minh – Tiểu sử bằng hình](../../../data/book/dong-a-ho-chi-minh-tieu-su-bang-hinh.json) | 10/2025 | S500 | 2.000.000đ |  |
+| 50 | ☑ | [60 bí quyết vẽ sơn dầu](../../../data/book/nguyen-dinh-dang-60-bi-quyet-ve-son-dau.json) | 03/2026 | S500 | 1.200.000đ | Cần xác nhận S500 và số lượng in. |
+| 51 | ☑ | [Trần Tiến – Người hát thơ mình](../../../data/book/tran-tien-tran-tien-nguoi-hat-tho-minh-ca-khuc-nhung-cau-chuyen.json) | 20/04/2026 | S365 | 2.500.000đ |  |
+| 52 | ☑ | [Những tầng ký ức](../../../data/book/tran-dai-thang-layers-of-memory.json) | 05/2026 | S365 | 2.600.000đ |  |
+| 53 | ☑ | [Đại Việt sử ký toàn thư](../../../data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json) | 07/2026 | S895 | Chưa cung cấp | Cần xác nhận giá từng bản S895. |
+| 54 | ☑ | [Anh hùng ca Odyssée](../../../data/book/homere-odyssee.json) | 07/2026 | S365 | 2.500.000đ |  |
+| 55 | ☑ | [Truyện Kiều](../../../data/book/nguyen-du-truyen-kieu.json) | 26/07/2026 | S500 | Chưa cung cấp | Cần xác nhận giá (hệ thống: 2.200.000đ). |
+| 56 | ☑ | [Lục Vân Tiên](../../../data/book/nguyen-dinh-chieu-luc-van-tien.json) | 26/07/2026 | S500 | 2.200.000đ |  |
+| 57 | ☑ | [Thép đã tôi thế đấy](../../../data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json) | 15/07/2026 | S500 | 2.300.000đ |  |
+| 58 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | 26/07/2026 | S500 | 2.400.000đ |  |
+| 59 | ☑ | [Khâm định Việt sử thông giám cương mục](../../../data/book/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc.json) | 16/09/2026 | S365 | 3.900.000đ |  |

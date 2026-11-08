@@ -42,12 +42,12 @@
       "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
     },
     {
-      "id": "nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered-2026-dong-a-bia-vai-2tr3",
+      "id": "nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered-2026-dong-a-bia-vai-2tr300k",
       "series_ids": [
         "50-nam-fahasa"
       ],
       "isbn": null,
-      "caption": "Ấn Bản Giới Hạn",
+      "caption": "S500",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
       "issuers": [
@@ -60,15 +60,22 @@
       "illustrators": [],
       "proofreaders": [],
       "format": "Bìa vải",
-      "cover_price": "2tr3",
+      "cover_price": "2tr300k",
       "print_run": 500,
       "page_count": 284,
       "copy_numbering": "THEP001-THEP500",
       "size_cm": "30 x 25 x 3",
       "weight_g": 2000,
-      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/_/n/_n_b_n_gi_i_h_n_th_p_t_i_th_y.jpg",
-      "gellery_imgs": [],
-      "detail": "- Ấn phẩm lần này được ấn hành nhân kỷ niệm 50 năm thành lập Fahasa.\n- 500 cuốn giới hạn, bìa vải, đựng trong hộp vỏ sò.\n- Ký hiệu từ THEP 001 đến THEP 500.\n- Mạ cạnh sách bằng nhũ vàng.\n- Đóng dấu chìm Limited Edition của Đông A.\n- In bốn màu trên giấy Ford định lượng 150 gsm."
+      "thumbnail": "/assets/img/books/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered/dong-a-2026-s500-cover.jpeg",
+      "gellery_imgs": [
+        "/assets/img/books/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered/dong-a-2026-s500-clamshell-open.jpeg",
+        "/assets/img/books/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered/dong-a-2026-s500-spine-and-gilt-edges.jpeg",
+        "/assets/img/books/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered/dong-a-2026-s500-gilt-edges.jpeg",
+        "/assets/img/books/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered/dong-a-2026-s500-title-page.jpeg",
+        "/assets/img/books/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered/dong-a-2026-s500-interior-illustration.jpeg",
+        "/assets/img/books/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered/dong-a-2026-s500-edition-details.jpeg"
+      ],
+      "detail": "- Ấn phẩm lần này được ấn hành nhân kỷ niệm 50 năm thành lập Fahasa.\n- 500 cuốn giới hạn, bìa vải, đựng trong hộp vỏ sò.\n- Ký hiệu từ THEP 001 đến THEP 500.\n- Mạ cạnh sách bằng nhũ vàng.\n- Đóng dấu chìm Limited Edition của Đông A.\n- In bốn màu trên giấy Ford định lượng 150 gsm.\n- Ngày phát hành: 15/07/2026."
     },
     {
       "id": "nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered-2026-dong-a-bia-cung-890k",

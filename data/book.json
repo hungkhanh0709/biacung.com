@@ -1,5 +1,11 @@
 [
   {
+    "detail": "data/book/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc.json",
+    "search_text": "quoc su quan trieu nguyen kham dinh viet su thong giam cuong muc nxb van hoc dong a hoa bang pham trong diem tran van giap 50 nam fahasa s365 bia buckram",
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-08"
+  },
+  {
     "detail": "data/book/do-am-son-thanh-cat-tu-han-y-chi-chinh-phuc-the-gioi.json",
     "search_text": "do am son thanh cat tu han y chi chinh phuc the gioi nxb dan tri dong a tran hoai thu bia mem",
     "last_pub_year": 2026,
@@ -40,12 +46,6 @@
     "search_text": "quan vuong il principe niccolo machiavelli nxb van hoc dong a dang thu niccolo machiavelli il principe quan vuong quan vuong thuat cai tri nxb the gioi nxb van hoc omega plus dong a vu thai ha dang thu bia cung",
     "updated_at": "2026-11-07",
     "last_pub_year": 2026
-  },
-  {
-    "detail": "data/book/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc.json",
-    "search_text": "quoc su quan trieu nguyen kham dinh viet su thong giam cuong muc nxb van hoc dong a hoa bang pham trong diem tran van giap 50 nam fahasa s365 bia buckram",
-    "last_pub_year": 2026,
-    "updated_at": "2026-11-07"
   },
   {
     "detail": "data/book/tadeusz-doega-mostowicz-znachor.json",
@@ -115,7 +115,7 @@
   },
   {
     "detail": "data/book/mario-puzo-the-godfather.json",
-    "search_text": "mario puzo the godfather bo gia nxb dan tri dong a nguyen minh art werger bia mem bia cung ao om nxb van hoc ngoc thu lang bia vai ngoc thu lan bia cung nxb hoi nha van 50 nam fahasa s500 an ban gioi han",
+    "search_text": "mario puzo the godfather bo gia nxb dan tri dong a nguyen minh art werger bia mem bia cung ao om nxb van hoc ngoc thu lang bia vai ngoc thu lan bia cung nxb hoi nha van 50 nam fahasa s500 an ban gioi han bo gia 55 ky niem 55 nam bia da that da de bia buckram",
     "updated_at": "2026-10-30",
     "last_pub_year": 2026
   },
@@ -127,7 +127,7 @@
   },
   {
     "detail": "data/book/nguyen-dinh-chieu-luc-van-tien.json",
-    "search_text": "nguyen dinh chieu luc van tien nxb van hoc dong a nguyen thach giang nguyen cong hoan bia vai bia cung 50 nam fahasa an ban gioi han",
+    "search_text": "nguyen dinh chieu luc van tien nxb van hoc dong a nguyen thach giang nguyen cong hoan bia vai bia cung 50 nam fahasa an ban gioi han s500",
     "updated_at": "2026-10-30",
     "last_pub_year": 2026
   },
@@ -151,7 +151,7 @@
   },
   {
     "detail": "data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json",
-    "search_text": "nikolai alekseyevich ostrovsky how the steel was tempered thep da toi the day nxb van hoc chauchaubook dong a thep moi huy van bia vai bia cung tri viet bia mem 50 nam fahasa bia ve tay boi chau chau book an ban gioi han",
+    "search_text": "nikolai alekseyevich ostrovsky how the steel was tempered thep da toi the day nxb van hoc chauchaubook dong a thep moi huy van bia vai bia cung tri viet bia mem 50 nam fahasa bia ve tay boi chau chau book an ban gioi han s500",
     "updated_at": "2026-10-30",
     "last_pub_year": 2026
   },
