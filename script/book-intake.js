@@ -289,6 +289,32 @@ function reviewSources(root, folder, book, { imported = false } = {}) {
     }
     return { ...sources, errors, assets: [...assets] };
 }
+function verifyUi(root, book, result, ui) {
+    const localUrl = (value) => { try { const u = new URL(value); return ['127.0.0.1', 'localhost'].includes(u.hostname) && u.protocol === 'http:'; } catch { return false; } };
+    if (!Number.isFinite(Date.parse(ui.checked_at)) || !localUrl(ui.home?.url) || !localUrl(ui.detail?.url)) return false;
+    const homeUrl = new URL(ui.home.url);
+    const detailUrl = new URL(ui.detail.url);
+    if (!['/', '/index.html'].includes(homeUrl.pathname)
+        || !['/detail', '/detail.html'].includes(detailUrl.pathname)
+        || detailUrl.searchParams.get('id') !== book.id || homeUrl.origin !== detailUrl.origin
+        || ui.detail.metadata_matches !== true || ui.detail.images_load !== true) return false;
+    if (ui.home.visible === true) return true;
+    const home = read(path.join(root, 'data/home.json'));
+    const recent = (Array.isArray(home) ? home : home.sections || []).find((s) => s.id === 'recently-archived');
+    if (ui.home.visible !== false || ui.home.loaded !== true || !Number.isInteger(result.homePosition)
+        || ui.home.position !== result.homePosition || !(recent?.limit > 0 && result.homePosition > recent.limit)
+        || !localUrl(ui.search?.url) || !Array.isArray(ui.search.found)) return false;
+    const searchUrl = new URL(ui.search.url);
+    if (searchUrl.origin !== homeUrl.origin || !['/search', '/search.html'].includes(searchUrl.pathname)
+        || !text(searchUrl.searchParams.get('q'))) return false;
+    return ui.search.found.some((entry) => {
+        try {
+            const link = new URL(entry.href);
+            return link.origin === homeUrl.origin && ['/detail', '/detail.html'].includes(link.pathname)
+                && link.searchParams.get('id') === book.id;
+        } catch { return false; }
+    });
+}
 function finish(root, folder) {
     folder = draftPath(root, folder);
     const book = read(path.join(folder, 'book.json'));
@@ -325,14 +351,8 @@ function finish(root, folder) {
         }
     }
     const ui = read(path.join(folder, 'verification.json'));
-    const localUrl = (value) => { try { const u = new URL(value); return ['127.0.0.1', 'localhost'].includes(u.hostname) && u.protocol === 'http:'; } catch { return false; } };
-    if (!Number.isFinite(Date.parse(ui.checked_at)) || !localUrl(ui.home?.url) || !localUrl(ui.detail?.url)
-        || ui.home?.visible !== true || ui.detail?.metadata_matches !== true || ui.detail?.images_load !== true
-        || !['/detail', '/detail.html'].includes(new URL(ui.detail.url).pathname)
-        || new URL(ui.detail.url).searchParams.get('id') !== book.id
-        || !['/', '/index.html'].includes(new URL(ui.home.url).pathname)
-        || new URL(ui.home.url).origin !== new URL(ui.detail.url).origin) {
-        throw new Error('Chưa có xác minh Chrome: home.visible, detail.metadata_matches, detail.images_load và URL local/checked_at. Giữ nháp khi UI chưa xác nhận.');
+    if (!verifyUi(root, book, result, ui)) {
+        throw new Error('Chưa có xác minh Chrome: home (hoặc vị trí ngoài limit kèm tìm kiếm đúng sách), detail/ảnh và URL local/checked_at. Giữ nháp khi UI chưa xác nhận.');
     }
     return { bookId: book.id, verified: true, ...result };
 }
@@ -382,4 +402,4 @@ if (require.main === module) {
     try { console.log(JSON.stringify(main(process.argv.slice(2)), null, 2)); }
     catch (error) { console.error(error.message); process.exitCode = 1; }
 }
-module.exports = { init, emptyBook, vocabulary, validate, finish, cleanup, draftPath, inventory, hash, slug, isSourceImage, scanSources, reviewSources };
+module.exports = { init, emptyBook, vocabulary, validate, finish, cleanup, draftPath, inventory, hash, slug, isSourceImage, scanSources, reviewSources, verifyUi };

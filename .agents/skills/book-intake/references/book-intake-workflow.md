@@ -162,7 +162,7 @@ Chỉ ghi sau khi quan sát Chrome; thay URL/ID/thời gian bằng giá trị th
 }
 ```
 
-Home lấy 12 sách đầu, sắp năm edition giảm dần rồi ngày cập nhật. Nếu ngoài giới hạn, ghi visible:false, báo vị trí và giữ nháp; không sửa năm để đẩy sách lên. Nếu `/detail` không được phục vụ, dùng `/detail.html` hoặc static-server sẵn có, không sửa server. Chrome chưa dùng được thì có thể lưu bằng API fallback nhưng phải giữ nháp/báo chưa kiểm UI.
+Home lấy 12 sách đầu, sắp năm edition giảm dần rồi ngày cập nhật. Nếu ngoài giới hạn, ghi `home.visible:false`, `home.loaded:true` sau khi quan sát trang chủ đã tải, và `home.position` khớp index hiện tại. Kiểm tìm kiếm trên cùng origin và ghi `search.url` (có truy vấn), `search.found` là các liên kết đã thấy (`{ "href": ".../detail?id=<bookId>" }`). Khi vị trí thực ngoài limit, trang chủ đã tải, tìm kiếm có link đúng sách và detail/ảnh đạt thì finish/cleanup được phép hoàn tất; không sửa ngày/năm hoặc limit để đẩy sách lên. Nếu sách nằm trong limit nhưng không hiện, hoặc chưa kiểm tìm kiếm/detail, giữ nháp. Nếu `/detail` không được phục vụ, dùng `/detail.html` hoặc static-server sẵn có, không sửa server. Chrome chưa dùng được thì có thể lưu bằng API fallback nhưng phải giữ nháp/báo chưa kiểm UI.
 
 ```bash
 node script/book-intake.js finish

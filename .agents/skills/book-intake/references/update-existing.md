@@ -29,6 +29,6 @@ POST /api/books/save/book-index-review
 ## Xác minh và kết thúc
 
 1. Đọc lại API/workspace; field sửa khớp candidate, các field/edition/ID/hash ảnh ngoài phạm vi khớp baseline. Index chỉ đổi entry được yêu cầu. Kiểm quan hệ bằng helper và chạy sort-book.
-2. Reload detail/tìm kiếm trên Chrome, kiểm nhãn/link/ảnh. Nobel phải thấy đủ sách đã cập nhật, giải tác phẩm chỉ khớp đúng tác phẩm trong nhóm. Dùng `/detail.html` hoặc static-server nếu cần; không sửa server/năm để qua kiểm tra.
+2. Reload detail/tìm kiếm trên Chrome, kiểm nhãn/link/ảnh. Với sách ngoài limit home, ghi bằng chứng trang chủ đã tải, vị trí thực và kết quả tìm kiếm đúng sách theo `verification.json` trong workflow; không coi việc nằm ngoài limit là lỗi dữ liệu. Nobel phải thấy đủ sách đã cập nhật, giải tác phẩm chỉ khớp đúng tác phẩm trong nhóm. Dùng `/detail.html` hoặc static-server nếu cần; không sửa server/năm để qua kiểm tra.
 3. Nếu raw chứa nháp của sách này, chỉ merge trường được yêu cầu cùng evidence; giữ các thay đổi chưa lưu khác. Trường đó đã đổi độc lập thì đối chiếu/hợp nhất trước; không chép toàn bộ output đè nháp.
 4. Báo thay đổi, nguồn và UI đã kiểm tra. Chỉ dọn `updates/<request-id>` của lượt này sau khi đạt; giữ raw lượt khác. Toàn bộ raw đã hoàn tất thì dọn nội dung, giữ thư mục/`.gitkeep`. Không tạo hồ sơ lâu dài.
