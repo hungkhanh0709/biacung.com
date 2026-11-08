@@ -122,7 +122,7 @@ Trong cùng một nhóm, ưu tiên ảnh toàn cảnh trước ảnh cận cản
 - Đặt `caption` theo nhãn bìa vẽ tay Chauchaubook trong [nguồn chuẩn tập trung](../book-intake/references/caption-format.md#caption).
 - Đặt `detail` chính xác là `Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic.`
 - Không tự suy đoán ISBN, ngày/năm, nhà xuất bản, đơn vị phát hành, dịch giả, giá hoặc thông số khác.
-- Khi được yêu cầu cập nhật thời điểm thực hiện, dùng `pub_date` theo [quy ước ngày](../book-intake/references/book-intake-workflow.md#ngày-phát-hành), không lấy ngày phát hành sách thương mại làm ngày thực hiện bìa vẽ tay. Chỉ xử lý ảnh/metadata thì giữ nguyên `pub_date`/`pub_year`, kể cả edition cũ thiếu key. Lưu thay đổi ngày qua form/API để đồng bộ index; edition giảm dần theo ngày hiệu lực.
+- Khi được yêu cầu cập nhật thời điểm thực hiện, dùng `pub_date` theo [quy ước ngày](../book-intake/references/book-intake-workflow.md#ngày-phát-hành), không lấy ngày phát hành sách thương mại làm ngày thực hiện bìa vẽ tay. Chỉ xử lý ảnh/metadata thì giữ nguyên `pub_date`/`pub_year`, kể cả edition cũ thiếu key. Lưu thay đổi ngày qua form/API để đồng bộ index; sắp edition theo quy tắc giữ nguyên vị trí khi thiếu ngày trong workflow, không fallback từ năm để đổi thứ tự.
 
 ### 7. Kiểm tra đến khi hoàn thành
 

@@ -1,0 +1,46 @@
+{
+  "id": "fyodor-dostoevsky-anh-em-nha-karamazov",
+  "title": "Anh em nhà Karamazov",
+  "title_original": "Братья Карамазовы",
+  "authors": [
+    "Fyodor Dostoevsky"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "fyodor-dostoevsky-anh-em-nha-karamazov-2019-dong-a-bia-da-nhan-tao-1tr200k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S100",
+      "pub_year": 2019,
+      "pub_date": "2019-07-19",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Phạm Mạnh Hùng"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da nhân tạo",
+      "cover_price": "1tr200k",
+      "print_run": 100,
+      "page_count": null,
+      "copy_numbering": "ĐA01–ĐA100",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/fyodor-dostoevsky-anh-em-nha-karamazov/dong-a-s100-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/fyodor-dostoevsky-anh-em-nha-karamazov/dong-a-s100-rebound-book-and-slipcase.jpg",
+        "/assets/img/books/fyodor-dostoevsky-anh-em-nha-karamazov/dong-a-s100-rebound-cover-detail.jpg",
+        "/assets/img/books/fyodor-dostoevsky-anh-em-nha-karamazov/dong-a-s100-rebound-certificate.jpg",
+        "/assets/img/books/fyodor-dostoevsky-anh-em-nha-karamazov/dong-a-s100-rebound-dostoevsky-group.jpg",
+        "/assets/img/books/fyodor-dostoevsky-anh-em-nha-karamazov/dong-a-s100-rebound-gilt-edges.jpg",
+        "/assets/img/books/fyodor-dostoevsky-anh-em-nha-karamazov/dong-a-s100-rebound-spine-detail.jpg"
+      ],
+      "detail": "- Ấn bản đầu tiên của S100 New Collection, phát hành tháng 7/2019; 100 bản đánh số ĐA01–ĐA100, giá phát hành 1.200.000đ/cuốn.\n- Bìa PU làm thủ công bởi nghệ nhân Nguyễn Đức Khuynh và cộng sự; ruột in 2 màu trên giấy 100 gsm, có dấu đỏ xác nhận của Đông A và nghệ nhân.\n- Thông báo bảo dưỡng 15/11/2023: thay bìa bonded leather nhập từ Mỹ miễn phí; da bò 1tr; da dê Pháp 2tr; da dê Anh 5tr. Hộp slipcase: 600k."
+    }
+  ]
+}

@@ -1119,14 +1119,19 @@ function buildBookIndexPayload(formData, existingBookIndex = existingBookIndexEn
     const detailPath = getBookDetailFilePath(bookId);
     const searchText = collectSearchTextTerms(formData).join(' ');
     const updatedAt = new Date().toISOString().slice(0, 10);
-    const mergedBookIndex = Array.isArray(existingBookIndex) ? existingBookIndex.filter((entry) => entry && entry.detail !== detailPath) : [];
-
-    mergedBookIndex.push({
+    const mergedBookIndex = Array.isArray(existingBookIndex) ? existingBookIndex.filter(Boolean).slice() : [];
+    const position = mergedBookIndex.findIndex((entry) => entry.detail === detailPath);
+    const publicationSummary = getPublicationSummaryFromForm(formData);
+    const updatedEntry = {
+        ...(position >= 0 ? mergedBookIndex[position] : {}),
         detail: detailPath,
         search_text: searchText,
-        ...getPublicationSummaryFromForm(formData),
+        ...publicationSummary,
         updated_at: updatedAt
-    });
+    };
+    if (!publicationSummary.last_pub_date) delete updatedEntry.last_pub_date;
+    if (position >= 0) mergedBookIndex[position] = updatedEntry;
+    else mergedBookIndex.push(updatedEntry);
 
     return publication.sortBookEntries(mergedBookIndex);
 }

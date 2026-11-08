@@ -149,7 +149,7 @@ function getMatchingSeriesEditions(editions, seriesSlug) {
 }
 
 function getEditionMeta(edition) {
-  return [edition?.caption, publication.formatPublicationDate(edition), edition?.format]
+  return [edition?.caption, publication.getEditionYear(edition), edition?.format]
     .map((value) => normalizeText(value))
     .filter(Boolean)
     .join(" · ");

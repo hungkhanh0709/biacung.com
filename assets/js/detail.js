@@ -791,7 +791,7 @@ function renderEditions(book) {
     meta.className = "detail-edition-meta";
 
     const metaParts = [
-      publication.formatPublicationDate(edition),
+      formatValue(publication.getEditionYear(edition)),
       normalizeText(edition.cover_price)
     ].filter(Boolean);
 

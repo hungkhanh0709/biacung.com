@@ -11,13 +11,14 @@
   ],
   "editions": [
     {
-      "id": "nguyen-du-truyen-kieu-2026-dong-a-bia-vai-2tr2",
+      "id": "nguyen-du-truyen-kieu-2026-dong-a-bia-vai-2tr200k",
       "series_ids": [
         "50-nam-fahasa"
       ],
       "isbn": null,
-      "caption": "Ấn Bản Giới Hạn",
+      "caption": "S500",
       "pub_year": 2026,
+      "pub_date": "2026-07-26",
       "publisher": "NXB Văn Học",
       "issuers": [
         "Đông A"
@@ -30,15 +31,24 @@
       ],
       "proofreaders": [],
       "format": "Bìa vải",
-      "cover_price": "2tr2",
+      "cover_price": "2tr200k",
       "print_run": 500,
       "page_count": 208,
-      "copy_numbering": "KIEU001-KIEU500",
-      "size_cm": "30 x 25 x 2.2",
+      "copy_numbering": "KIEU 001-KIEU 500",
+      "size_cm": "25 x 30",
       "weight_g": 2000,
-      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/_/n/_n_b_n_gi_i_h_n_truy_n_ki_u.jpg",
-      "gellery_imgs": [],
-      "detail": "- Ấn phẩm được ấn hành nhân kỷ niệm 50 năm thành lập FAHASA.\n- 500 cuốn giới hạn, bìa vải, đựng trong hộp vỏ sò.\n- Ký hiệu từ KIEU 001 đến KIEU 500.\n- Mạ cạnh sách bằng nhũ vàng.\n- Đóng dấu chìm Limited Edition của Đông A.\n- In bốn màu trên giấy Ford định lượng 150 gsm."
+      "thumbnail": "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-cover.jpeg",
+      "gellery_imgs": [
+        "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-cover-and-open-box.jpeg",
+        "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-cloth-detail.jpeg",
+        "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-book-and-box-angle.jpeg",
+        "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-book-and-box-spine.jpeg",
+        "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-box-label.jpeg",
+        "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-spines.jpeg",
+        "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-title-page.jpeg",
+        "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-interior-illustration.jpeg"
+      ],
+      "detail": "- Ấn phẩm được ấn hành nhân kỷ niệm 50 năm thành lập FAHASA.\n- 500 cuốn giới hạn S500, bìa vải, đựng trong hộp vỏ sò.\n- Ký hiệu từ KIEU 001 đến KIEU 500.\n- Mạ cạnh sách bằng nhũ vàng.\n- Đóng dấu chìm Limited Edition của Đông A.\n- In bốn màu trên giấy Ford định lượng 150 gsm.\n- Khảo đính và chú giải: Nguyễn Thạch Giang."
     },
     {
       "id": "nguyen-du-truyen-kieu-2026-dong-a-bia-cung-790k",
@@ -46,53 +56,34 @@
         "50-nam-fahasa"
       ],
       "isbn": null,
-      "caption": "Ấn Bản Giới Hạn",
+      "caption": "",
       "pub_year": 2026,
+      "pub_date": "2026-07-01",
       "publisher": "NXB Văn Học",
       "issuers": [
         "Đông A"
       ],
-      "translators": [
-        "Nguyễn Thạch Giang"
-      ],
+      "translators": [],
       "illustrators": [
         "Đặng Xuân Hòa"
       ],
       "proofreaders": [],
       "format": "Bìa cứng",
       "cover_price": "790k",
-      "print_run": null,
+      "print_run": 1000,
       "page_count": 208,
       "copy_numbering": null,
-      "size_cm": "30 x 25 x 2.2",
+      "size_cm": "25 x 30",
       "weight_g": 2000,
-      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5533.jpg",
-      "gellery_imgs": [],
-      "detail": "- Kỉ niệm 50 năm Fahasa."
-    },
-    {
-      "id": "nguyen-du-truyen-kieu-2026-tazano-bia-mem-80k",
-      "isbn": null,
-      "caption": "",
-      "pub_year": 2026,
-      "publisher": "NXB Dân Trí",
-      "issuers": [
-        "Tazano"
+      "thumbnail": "/assets/img/books/nguyen-du-truyen-kieu/dong-a-pho-thong-cover.jpeg",
+      "gellery_imgs": [
+        "/assets/img/books/nguyen-du-truyen-kieu/dong-a-pho-thong-hoa-tiet-bia.jpeg",
+        "/assets/img/books/nguyen-du-truyen-kieu/dong-a-pho-thong-bia-nghieng.jpeg",
+        "/assets/img/books/nguyen-du-truyen-kieu/dong-a-pho-thong-minh-hoa-doi.jpeg",
+        "/assets/img/books/nguyen-du-truyen-kieu/dong-a-pho-thong-minh-hoa-chan-dung.jpeg",
+        "/assets/img/books/nguyen-du-truyen-kieu/dong-a-pho-thong-van-ban-chu-giai.jpeg"
       ],
-      "translators": [],
-      "illustrators": [],
-      "proofreaders": [],
-      "format": "Bìa mềm",
-      "cover_price": "80k",
-      "print_run": null,
-      "page_count": 192,
-      "copy_numbering": null,
-      "size_cm": "20.5 x 14 x 1",
-      "weight_g": 210,
-      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/9/7/9786326317220.jpg",
-      "gellery_imgs": [],
-      "detail": "",
-      "series_ids": []
+      "detail": "- Bản phổ thông, ấn hành nhân kỷ niệm 50 năm thành lập FAHASA.\n- Mỗi trang chia thành hai phần gồm văn bản chính và phần khảo đính, chú giải của nhà nghiên cứu Nguyễn Thạch Giang, thuận tiện tra cứu từ cổ, điển tích và điển cố ngay khi đọc.\n- Ruột in bốn màu trên giấy Ford định lượng 150 gsm.\n- Gồm 16 tranh minh họa của họa sĩ Đặng Xuân Hòa.\n- Số lượng phát hành: 1.000 bản."
     }
   ]
 }

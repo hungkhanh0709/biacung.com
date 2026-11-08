@@ -7,14 +7,22 @@ Chỉ đổi sách/trường người dùng yêu cầu, qua form/API hiện có.
 1. Xác nhận bookId/tác phẩm và phạm vi. Đọc [Caption/Format](caption-format.md) hoặc [tra tên nguyên tác](book-intake-workflow.md#tra-tên-nguyên-tác) khi sửa các trường đó. Chỉ sửa awards thì giữ edition/ID/ảnh/author/series.
 2. Giữ raw đang dở; tạo `data/_raw/updates/<request-id>/` cho nguồn, snapshot JSON/index, hash và kế hoạch trước/sau. Không chạy init đè lượt khác hoặc gửi cả snapshot index/author lên server.
 3. Candidate sao sâu baseline, chỉ sửa trường được phép. Awards theo [quy tắc dữ liệu](book-intake-workflow.md#quy-tắc-dữ-liệu): tra `data/awards/` và nguồn chính thức, hợp nhất nhãn không trùng, ghi award_claims. Nobel của tác giả được kế thừa; giải tác phẩm không lan sang sách cùng tác giả.
+   - Yêu cầu bổ sung dữ liệu/ảnh không cho phép xóa dữ liệu cũ. Giữ các phần tử đã có trong mảng, nhất là `translators`, `illustrators`, `proofreaders`; hợp nhất thông tin mới không trùng. Không dùng default rỗng cho trường đã có dữ liệu chỉ vì nguồn mới không nhắc lại.
+   - Nguồn mới ghi thêm vai trò khác không tự cho phép chuyển hoặc xóa vai trò đang lưu. Ví dụ ảnh ghi Nguyễn Thạch Giang khảo đính/chú giải: bổ sung vào `detail`, vẫn giữ tên trong `translators` nếu người dùng chưa yêu cầu sửa trường đó. Ghi nhận mâu thuẫn thực tế khi có, không tự giải quyết bằng cách bỏ dữ liệu.
 4. Chuẩn hóa edition: giữ số lượng/thứ tự/dữ kiện ngoài phạm vi; ghi nguồn và baseline chưa đối chứng. Đổi năm/format/giá thì sinh ID theo form, rà tham chiếu cũ. Chất liệu giữ trong detail; giá bìa theo [quy cách giá](book-intake-workflow.md#giá-bìa), ví dụ `3900k` → `3tr900k`, không lấy giá sale. Mâu thuẫn trang/ISBN ưu tiên nguồn đơn vị phát hành.
 5. Nếu cần chuyển thumbnail ngoài về local, tải đúng URL hiện có, xem ảnh/codec và theo skill ảnh một nguồn → một asset. Không xử lý lại ảnh ngoài phạm vi.
 
-Khi thêm edition hoặc đổi ngày/năm, chèn vào vị trí theo ngày phát hành giảm dần (`pub_date`, fallback `pub_year` → 01/01); giữ thứ tự tương đối của các edition cùng ngày và không đổi dữ kiện/ID chỉ để sắp xếp. Đối chiếu preview và mảng edition đã lưu trước khi hoàn tất.
+Khi đổi ngày/năm, giữ vị trí của các edition thiếu `pub_date`; chỉ sắp các edition đã có ngày trong những vị trí đang có ngày, bằng ngày giữ thứ tự. Không fallback từ năm để đổi vị trí; bổ sung ngày cho một edition không tự đưa nó lên đầu. Edition mới đặt ở vị trí người dùng chọn trong nháp/form; không tự xáo trộn các edition cũ chưa có ngày. Không đổi dữ kiện/ID chỉ để sắp xếp. Đối chiếu preview và mảng edition đã lưu trước khi hoàn tất.
 
 ## Lưu qua ứng dụng
 
+### Sửa Book ID theo yêu cầu
+
+Book ID là danh tính dùng chung cho tên file, thư mục ảnh, edition ID và các liên kết. Không tạo thêm hồ sơ trùng để đổi ID. Chuẩn bị candidate, snapshot và bản đồ ID cũ → mới trong `data/_raw/updates/`; xem form preview trước khi thực hiện. Chạy `node script/book-rename.js --from <id-cu> --to <id-moi>` để xem kế hoạch, thêm `--apply` khi đã kiểm tra. Helper chỉ đổi tên file/thư mục ảnh và khóa `detail` của đúng entry index, giữ vị trí và metadata; đây là bước đổi tham chiếu vì API hiện có chỉ upsert, không đổi khóa. Nội dung JSON sách vẫn phải lưu bằng endpoint detail-review hiện có ngay sau đó, gồm ID/edition ID/URL ảnh mới và candidate đã duyệt. Cập nhật author/series qua endpoint review với work_ids đã thay đúng ID, giữ mọi liên kết khác; cập nhật checklist và rà hết tham chiếu cũ bằng `rg`. Không thêm endpoint hoặc đổi logic ứng dụng cho việc nhập dữ liệu. Giữ snapshot ở raw đến khi kiểm tra dữ liệu, quan hệ và UI hoàn tất.
+
 Kiểm tra `GET /api/index-state` và `GET /api/books/<bookId>` cùng origin; tải form, điền trường cần đổi, xem preview so baseline. Nếu form chuẩn hóa ngoài phạm vi, dùng candidate đã kiểm tra với hai endpoint review, thay vì Lưu tất cả:
+
+Trước khi lưu, rà riêng các giá trị/phần tử bị xóa hoặc làm rỗng so baseline. Mỗi thay đổi giảm dữ liệu phải có yêu cầu sửa/xóa tương ứng của người dùng; nếu chưa có thì giữ baseline và chỉ bổ sung. Không coi việc thêm thông tin đó vào `detail` là thay thế cho dữ liệu có cấu trúc đã lưu.
 
 ```text
 POST /api/books/save/book-detail-review

@@ -125,6 +125,7 @@ function validate(root, book, { relations = false, images = false, allowExisting
     const editionIds = new Set();
     if (!Array.isArray(book.editions) || !book.editions.length) bad('Cần ít nhất một edition.');
     const imageFiles = new Set();
+    const expectedEditionOrder = publication.sortEditions(book.editions);
     for (const [i, edition] of (Array.isArray(book.editions) ? book.editions : []).entries()) {
         const at = `editions[${i}]`;
         const previous = allowExisting && baseline?.id === book.id
@@ -152,7 +153,7 @@ function validate(root, book, { relations = false, images = false, allowExisting
         if (publication.isIsoDate(edition.pub_date) && edition.pub_year !== Number(edition.pub_date.slice(0, 4))) bad(`${at}.pub_year phải khớp năm của pub_date.`);
         if (!('pub_date' in edition)) warnings.push(`${at} chưa có pub_date (dữ liệu cũ, chưa chuyển đổi).`);
         else if (edition.pub_date === null) missing.push(`${at}.pub_date`);
-        if (i > 0 && publication.compareEditions(book.editions[i - 1], edition) > 0) warnings.push(`${at}: thứ tự edition chưa giảm dần theo ngày phát hành.`);
+        if (expectedEditionOrder[i] !== edition) warnings.push(`${at}: các vị trí đã có pub_date chưa giảm dần; edition thiếu ngày phải giữ nguyên vị trí.`);
         for (const field of ['isbn', 'copy_numbering']) if (edition[field] !== null && !text(edition[field])) bad(`${at}.${field} phải là string hoặc null.`);
         if (text(edition.cover_price) && !isCoverPrice(edition.cover_price)
             && previous?.cover_price !== edition.cover_price) bad(`${at}.cover_price phải có dạng 900k, 3tr900k hoặc 3tr.`);

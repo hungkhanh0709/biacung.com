@@ -83,7 +83,8 @@
     "name": "Henryk Sienkiewicz",
     "work_ids": [
       "henryk-sienkiewicz-lao-boc-hania-selim-mirza",
-      "henryk-sienkiewicz-w-pustyni-i-w-puszczy"
+      "henryk-sienkiewicz-w-pustyni-i-w-puszczy",
+      "henryk-sienkiewicz-quo-vadis"
     ]
   },
   {
@@ -593,7 +594,8 @@
     "name": "Fyodor Dostoevsky",
     "work_ids": [
       "fyodor-dostoevsky-dem-trang",
-      "fyodor-dostoevsky-toi-ac-va-trung-phat"
+      "fyodor-dostoevsky-toi-ac-va-trung-phat",
+      "fyodor-dostoevsky-anh-em-nha-karamazov"
     ]
   },
   {
@@ -1498,6 +1500,20 @@
     "work_ids": [
       "yukio-mishima-utage-no-ato",
       "yukio-mishima-chieu-hom-lai-dat"
+    ]
+  },
+  {
+    "id": "charles-edouard-hocquard",
+    "name": "Charles-Édouard Hocquard",
+    "work_ids": [
+      "charles-edouard-hocquard-mot-chien-dich-o-bac-ky"
+    ]
+  },
+  {
+    "id": "robert-beer",
+    "name": "Robert Beer",
+    "work_ids": [
+      "robert-beer-the-encyclopedia-of-tibetan-symbols-and-motifs"
     ]
   }
 ]
