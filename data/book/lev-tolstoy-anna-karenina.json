@@ -37,6 +37,39 @@
       "detail": "- Bộ 2 tập, Lê Đức Mẫn dịch trực tiếp từ nguyên bản tiếng Nga.\n- Tập 1: 612 trang; giá bìa 258k.\n- Tập 2: 516 trang; giá bìa 217k.\n- Tổng cộng: 1.128 trang; giá bìa bộ 475k."
     },
     {
+      "id": "lev-tolstoy-anna-karenina-2026-nha-nam-chauchaubook",
+      "series_ids": [
+        "chauchaubook"
+      ],
+      "isbn": null,
+      "caption": "Bìa Vẽ Tay Bởi Châu Châu Book",
+      "pub_year": 2026,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Dương Tường",
+        "Nhị Ca"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Chauchaubook",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/lev-tolstoy-anna-karenina/chauchaubook-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/lev-tolstoy-anna-karenina/chauchaubook-back-cover.jpg",
+        "/assets/img/books/lev-tolstoy-anna-karenina/chauchaubook-cover-angle.jpg",
+        "/assets/img/books/lev-tolstoy-anna-karenina/chauchaubook-spine.jpg"
+      ],
+      "detail": "Tác phẩm bìa sách do Châu Châu Book vẽ tay trên chất liệu canvas bằng màu acrylic."
+    },
+    {
       "id": "lev-tolstoy-anna-karenina-2026-nha-nam-bia-mem-410k",
       "isbn": null,
       "caption": "",
