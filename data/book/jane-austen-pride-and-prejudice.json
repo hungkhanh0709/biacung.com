@@ -1,0 +1,39 @@
+{
+  "id": "jane-austen-pride-and-prejudice",
+  "title": "Kiêu hãnh và định kiến",
+  "title_original": "Pride and Prejudice",
+  "authors": [
+    "Jane Austen"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "jane-austen-pride-and-prejudice-2026-dong-a-bia-mem",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2026,
+      "pub_date": "2026-12-03",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Thanh Loan"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/jane-austen-pride-and-prejudice/dong-a-2026-bia-mem-cover.jpeg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

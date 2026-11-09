@@ -1,7 +1,7 @@
 {
   "id": "johanna-spyri-heidi",
   "title": "Heidi",
-  "title_original": "",
+  "title_original": "Heidi",
   "authors": [
     "Johanna Spyri"
   ],
@@ -12,6 +12,37 @@
     "Đông A Classic (hoa văn)"
   ],
   "editions": [
+    {
+      "id": "johanna-spyri-heidi-2026-nha-nam-bia-cung-355k",
+      "title": "Dịch giả: Huyền Vũ",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Ấn Bản Giới Hạn",
+      "pub_year": 2026,
+      "pub_date": "2026-12-02",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Huyền Vũ"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "355k",
+      "print_run": 200,
+      "page_count": 469,
+      "copy_numbering": null,
+      "size_cm": "15,5 x 20,5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/johanna-spyri-heidi/nha-nam-bia-cung-cover.jpeg",
+      "gellery_imgs": [
+        "/assets/img/books/johanna-spyri-heidi/nha-nam-bia-cung-signed.jpeg",
+        "/assets/img/books/johanna-spyri-heidi/nha-nam-bia-cung-signing.jpeg"
+      ],
+      "detail": "- Bìa cứng giới hạn 200 cuốn\n- Signed Edition trên bìa cùng chữ ký tay trực tiếp từ dịch giả"
+    },
     {
       "id": "johanna-spyri-heidi-2023-dong-a-bia-mem-100k",
       "isbn": "978-604-477-514-2",
