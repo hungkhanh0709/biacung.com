@@ -9,15 +9,14 @@
   "series": [],
   "editions": [
     {
-      "id": "lev-tolstoy-anna-karenina-2026-nxb-phu-nu-viet-nam-bia-mem-475k",
-      "series_ids": [],
+      "id": "lev-tolstoy-anna-karenina-2026-bia-mem-475k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2026,
+      "pub_date": "2026-11-06",
       "publisher": "NXB Phụ Nữ Việt Nam",
-      "issuers": [
-        "NXB Phụ Nữ Việt Nam"
-      ],
+      "issuers": [],
       "translators": [
         "Lê Đức Mẫn"
       ],

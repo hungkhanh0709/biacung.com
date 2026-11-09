@@ -424,7 +424,7 @@
     ]
   },
   {
-    "id": "lev-tolstoy-anna-karenina",
+    "id": "lev-tolstoy",
     "name": "Lev Tolstoy",
     "work_ids": [
       "lev-tolstoy-anna-karenina"
@@ -1514,6 +1514,13 @@
     "name": "Jane Austen",
     "work_ids": [
       "jane-austen-pride-and-prejudice"
+    ]
+  },
+  {
+    "id": "ly-thuan",
+    "name": "Lý Thuẫn",
+    "work_ids": [
+      "ly-thuan-bay-bai-giang-hi-khuc-trung-quoc"
     ]
   }
 ]
