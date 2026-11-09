@@ -1515,5 +1515,12 @@
     "work_ids": [
       "robert-beer-the-encyclopedia-of-tibetan-symbols-and-motifs"
     ]
+  },
+  {
+    "id": "jane-austen",
+    "name": "Jane Austen",
+    "work_ids": [
+      "jane-austen-pride-and-prejudice"
+    ]
   }
 ]

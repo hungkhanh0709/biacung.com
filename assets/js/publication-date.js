@@ -129,8 +129,16 @@
   }
 
   function formatPublicationDate(edition) {
-    const date = normalizePubDate(edition?.pub_date);
-    return date ? date.split("-").reverse().join("/") : String(normalizeYear(edition?.pub_year) ?? "");
+    if (edition?.pub_date) {
+      // Convert pub_date string to date object and format it as "DD/MM/YYYY"
+      const date = new Date(edition.pub_date);
+      const month = String(date.getUTCMonth() + 1).padStart(2, "0"); // Months are zero-based
+      const year = date.getUTCFullYear();
+      return `${month}/${year}`;
+    } else if (edition?.pub_year) {
+      return normalizeYear(edition.pub_year);
+    }
+    return "";
   }
 
   function publicationDateForSchema(edition) {
