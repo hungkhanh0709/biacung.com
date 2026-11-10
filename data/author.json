@@ -1522,5 +1522,12 @@
     "work_ids": [
       "ly-thuan-bay-bai-giang-hi-khuc-trung-quoc"
     ]
+  },
+  {
+    "id": "gustave-flaubert",
+    "name": "Gustave Flaubert",
+    "work_ids": [
+      "gustave-flaubert-madame-bovary"
+    ]
   }
 ]

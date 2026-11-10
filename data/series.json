@@ -32,10 +32,6 @@
     "detail": "data/series/tram-nam-nobel.json"
   },
   {
-    "id": "tu-sach-thanh-nien",
-    "detail": "data/series/tu-sach-thanh-nien.json"
-  },
-  {
     "id": "van-moi-dong-a",
     "detail": "data/series/van-moi-dong-a.json"
   },

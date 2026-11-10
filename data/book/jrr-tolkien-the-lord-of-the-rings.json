@@ -9,6 +9,43 @@
   "series": [],
   "editions": [
     {
+      "id": "jrr-tolkien-the-lord-of-the-rings-2026-nha-nam-bia-mem-ao-om-680k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2026,
+      "pub_date": "2026-11-10",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Đặng Trần Việt",
+        "An Lý",
+        "Tâm Thủy"
+      ],
+      "illustrators": [
+        "Tùng Lâm",
+        "Ngọc Điệp"
+      ],
+      "proofreaders": [],
+      "format": "Bìa mềm áo ôm",
+      "cover_price": "680k",
+      "print_run": null,
+      "page_count": 1524,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "assets/img/books/jrr-tolkien-the-lord-of-the-rings/bia-mem-cover.jpeg",
+      "gellery_imgs": [
+        "assets/img/books/jrr-tolkien-the-lord-of-the-rings/bia-mem-1.jpeg",
+        "assets/img/books/jrr-tolkien-the-lord-of-the-rings/bia-mem-2.jpg",
+        "assets/img/books/jrr-tolkien-the-lord-of-the-rings/bia-mem-3.jpeg",
+        "assets/img/books/jrr-tolkien-the-lord-of-the-rings/bia-mem-4.jpeg"
+      ],
+      "detail": ""
+    },
+    {
       "id": "jrr-tolkien-the-lord-of-the-rings-2026-nha-nam-boxset-bia-cung-2tr8",
       "isbn": null,
       "caption": "N333",
