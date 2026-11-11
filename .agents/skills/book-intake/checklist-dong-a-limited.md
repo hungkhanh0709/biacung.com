@@ -82,10 +82,10 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 61 | ☑ | [Nghệ nhân và Margarita](../../../data/book/mikhail-bulgacov-nghe-nhan-va-margarita.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
 | 62 | ☑ | [Nghệ nhân và Margarita](../../../data/book/mikhail-bulgacov-nghe-nhan-va-margarita.json) | S1200 | Thiếu | Thiếu | Thiếu | Chưa có bản Đông A S1200. Cần đối chiếu nguồn cũ: mốc 01/2022, giá 1.500.000đ. |
 | 63 | ☐ | Nghệ thuật Dessin | S1200 | Thiếu | Thiếu | Thiếu | Cần nhập hồ sơ. Cần đối chiếu nguồn cũ: mốc 12/2022, giá 1.400.000đ. |
-| 64 | ☑ | [Nghìn lẻ một đêm](../../../data/book/antoine-galland-nghin-le-mot-dem.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
+| 64 | ☑ | [Nghìn lẻ một đêm](../../../data/book/antoine-galland-nghin-le-mot-dem.json) | S100 | 15/04/2023 | 12tr |  | Cần bổ sung NXB, ISBN, số trang, khối lượng và dải đánh số. |
 | 65 | ☑ | [Nghìn lẻ một đêm](../../../data/book/antoine-galland-nghin-le-mot-dem.json) | S896 | Thiếu | Thiếu | Thiếu | Chưa có bản S896. Cần xác nhận mã: S895 hay S896. Cần đối chiếu nguồn cũ: mốc 04/2022, giá 2.500.000đ. |
-| 66 | ☑ | [Ngụ ngôn La Fontaine](../../../data/book/la-fontaine-the-fables-of-la-fontaine.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
-| 67 | ☑ | [Ngụ ngôn La Fontaine](../../../data/book/la-fontaine-the-fables-of-la-fontaine.json) | S895 | Thiếu | Thiếu | Thiếu | Chưa có bản S895. Cần đối chiếu nguồn cũ: mốc 01/2023, giá 2.400.000đ. |
+| 66 | ☑ | [Ngụ ngôn La Fontaine](../../../data/book/la-fontaine-the-fables-of-la-fontaine.json) | S100 | 01/08/2023 | 6tr |  |  |
+| 67 | ☑ | [Ngụ ngôn La Fontaine](../../../data/book/la-fontaine-the-fables-of-la-fontaine.json) | S895 | 11/01/2023 | 2tr400k |  |  |
 | 68 | ☑ | [Người kép già](../../../data/book/kim-lan-nguoi-kep-gia.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
 | 69 | ☑ | [Người kép già](../../../data/book/kim-lan-nguoi-kep-gia.json) | S365 | Thiếu | Thiếu | Thiếu | Chưa có bản S365. Cần đối chiếu nguồn cũ: mốc 03/2021, giá 1.500.000đ. |
 | 70 | ☐ | Nhà thờ Đức Bà Paris | S100 | Thiếu | Thiếu | Thiếu | Cần nhập hồ sơ. |

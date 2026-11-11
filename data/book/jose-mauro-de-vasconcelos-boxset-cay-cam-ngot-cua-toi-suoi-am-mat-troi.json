@@ -18,6 +18,7 @@
       "isbn": null,
       "caption": "Ấn Bản Giới Hạn",
       "pub_year": 2026,
+      "pub_date": "2026-06-03",
       "publisher": "NXB Hội Nhà Văn",
       "issuers": [
         "Nhã Nam"
@@ -34,7 +35,7 @@
       "print_run": null,
       "page_count": 620,
       "copy_numbering": null,
-      "size_cm": "20.7x14.2x3.8",
+      "size_cm": "20.7 x 14.2 x 3.8",
       "weight_g": 1100,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/a/7/a7bdaade2f6244c7b6d376ecd83e76a2.jpg",
       "gellery_imgs": [],

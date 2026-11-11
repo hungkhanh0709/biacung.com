@@ -1,0 +1,46 @@
+{
+  "id": "nguyen-dinh-dang-nghe-thuat-dessin",
+  "title": "Nghệ Thuật Dessin",
+  "title_original": "Nghệ thuật dessin",
+  "authors": [
+    "Nguyễn Đình Đăng"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "nguyen-dinh-dang-nghe-thuat-dessin-2022-dong-a-bia-buckram-1tr400k",
+      "isbn": "9786043850277",
+      "series_ids": [],
+      "caption": "S1200",
+      "pub_year": 2022,
+      "pub_date": "2022-11-17",
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa buckram",
+      "cover_price": "1tr400k",
+      "print_run": 1231,
+      "page_count": 760,
+      "copy_numbering": "NDD 0001–NDD 1200",
+      "size_cm": "24.2 x 30",
+      "weight_g": 5700,
+      "thumbnail": "/assets/img/books/nguyen-dinh-dang-nghe-thuat-dessin/dong-a-s1200-bia-chinh.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/nguyen-dinh-dang-nghe-thuat-dessin/dong-a-s1200-bia-va-hop-do.jpg",
+        "/assets/img/books/nguyen-dinh-dang-nghe-thuat-dessin/dong-a-s1200-tem-hop-can.jpg",
+        "/assets/img/books/nguyen-dinh-dang-nghe-thuat-dessin/dong-a-s1200-sach-trong-hop.jpg",
+        "/assets/img/books/nguyen-dinh-dang-nghe-thuat-dessin/dong-a-s1200-gioi-thieu-tac-gia.jpg",
+        "/assets/img/books/nguyen-dinh-dang-nghe-thuat-dessin/dong-a-s1200-gay-sach-tren-hop.jpg",
+        "/assets/img/books/nguyen-dinh-dang-nghe-thuat-dessin/dong-a-s1200-hop-do.jpg",
+        "/assets/img/books/nguyen-dinh-dang-nghe-thuat-dessin/dong-a-s1200-canh-sach-va-hop.jpg",
+        "/assets/img/books/nguyen-dinh-dang-nghe-thuat-dessin/dong-a-s1200-bia-ao-trai.jpg"
+      ],
+      "detail": "- Tổng cộng 1.231 bản bìa cứng bọc vải buckram; trong đó 1.200 bản đánh số từ NDD 0001 đến NDD 1200 phát hành tới bạn đọc.\n- Có bìa áo và hộp đựng.\n- Ruột sách in bốn màu trên giấy Couche Matt định lượng 150 gsm.\n- Khối lượng khoảng 5,7 kg, gồm cả hộp."
+    }
+  ]
+}

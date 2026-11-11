@@ -9,31 +9,146 @@
   "series": [],
   "editions": [
     {
-      "id": "la-fontaine-the-fables-of-la-fontaine-2022-dong-a-bia-cung-1100k",
+      "id": "la-fontaine-the-fables-of-la-fontaine-2023-dong-a-bia-da-that-6tr",
+      "series_ids": [],
       "isbn": null,
-      "caption": "",
-      "pub_year": 2022,
+      "caption": "S100",
+      "pub_year": 2023,
+      "pub_date": "2023-08-01",
       "publisher": "NXB Văn Học",
       "issuers": [
         "Đông A"
       ],
       "translators": [
-        "Nhiều Người Dịch"
+        "Nguyễn Văn Vĩnh",
+        "Tú Mỡ",
+        "Huỳnh Lý",
+        "Nguyễn Đình",
+        "Đinh Khắc Phách",
+        "Đỗ Anh Vũ",
+        "Hoàng Giang",
+        "Phạm Anh Xuân",
+        "Mai Liên",
+        "Đạt Nhân",
+        "Khắc Đỗ",
+        "Lê Phối Thi",
+        "Trần Châu"
+      ],
+      "illustrators": [
+        "Gustave Doré"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "6tr",
+      "print_run": 100,
+      "page_count": 844,
+      "copy_numbering": null,
+      "size_cm": "25 x 30",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-s100-bia-trong-hop.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-s100-gay-sach-va-hop-vai.jpg",
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-s100-cac-mau-da-gay-sach.jpg",
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-s100-hoa-tiet-chuot.jpg",
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-s100-bia-va-gay-nghieng.jpg",
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-s100-hoa-tiet-chim.jpg",
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-s100-hoa-tiet-ve-sau.jpg",
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-s100-bia-da-va-hop-vai.jpg"
+      ],
+      "detail": "- Ấn bản đặc biệt S100 gồm 100 bản: V20 (20 bản) và S80 (80 bản).\n- V20: bìa da dê Pháp Alran Sully, có ba màu Smooth Red (đỏ đậm), Marine (xanh hải quân) hoặc Pacifique (xanh cổ vịt); bìa 4 có logo chữ V. Giá phát hành: 8tr.\n- S80: bìa da bò màu xanh Moss; bìa 4 có logo chữ S. Giá phát hành: 6tr.\n- Họa tiết bìa ép nhũ tràn viền hai màu đen và vàng, lấy cảm hứng từ phong cách bìa thế kỷ XVII với một họa tiết của Le Gascon.\n- Gáy có 5 bộ gân siết thủ công; băng chỉ đầu, cổ áo (endband) bằng da thật; mũ lưỡi trai (head cap) ôm sát cổ áo. Khung tên và hoa văn gáy dập lồng, ép nhũ hai màu; bồi gáy 4 lớp bằng vải và giấy.\n- Ruột 844 trang, khổ 25 x 30 cm, in hai màu trên giấy mỹ thuật Festival #101 Ivory 120 gsm bằng công nghệ mực vi sinh.\n- Bụng sách mạ thủ công nhũ vàng cả 3 cạnh.\n- Bốn tờ gác đầu và cuối là thủy ấn làm thủ công từng tờ, mỗi tờ là duy nhất.\n- Hộp sách bọc vải bên ngoài, bên trong lót nhung đen.\n- Kèm giấy chứng nhận đóng dấu đỏ của Đông A và Ex libris (dấu sở hữu sách)."
+    },
+    {
+      "id": "la-fontaine-the-fables-of-la-fontaine-2023-dong-a-bia-da-nhan-tao-2tr400k",
+      "series_ids": [],
+      "isbn": null,
+      "caption": "S895",
+      "pub_year": 2023,
+      "pub_date": "2023-01-11",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Văn Vĩnh",
+        "Tú Mỡ",
+        "Huỳnh Lý",
+        "Nguyễn Đình",
+        "Đinh Khắc Phách",
+        "Đỗ Anh Vũ",
+        "Hoàng Giang",
+        "Phạm Anh Xuân",
+        "Mai Liên",
+        "Đạt Nhân",
+        "Khắc Đỗ",
+        "Lê Phối Thi",
+        "Trần Châu"
+      ],
+      "illustrators": [
+        "Gustave Doré"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da nhân tạo",
+      "cover_price": "2tr400k",
+      "print_run": 895,
+      "page_count": 828,
+      "copy_numbering": "DA 001–DA 895",
+      "size_cm": "25 x 30",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-s895-bia-ngoai-troi.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-s895-bia-tren-hop.jpg",
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-s895-bia-gay-va-canh-ma.jpg",
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-s895-hoa-van-bia.jpg",
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-s895-trang-ten-sach.jpg",
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-s895-to-gac-thuy-an.jpg",
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-s895-gay-sach.jpg"
+      ],
+      "detail": "- Ấn bản giới hạn gồm 895 bản đánh số từ DA 001 đến DA 895, mỗi bản phát hành là duy nhất. Lần phát hành đầu gồm 250 cuốn.\n- Bìa bọc da microfiber màu xanh navy; hoa văn dập chìm. Tên sách và một số họa tiết ép nhũ hai màu xanh và vàng.\n- Đợt 1 dùng nhũ xanh oliu; đợt 2 dùng nhũ xanh ngọc.\n- Ruột sách 828 trang, khổ 25 x 30 cm, in hai màu trên giấy GV76-BB định lượng 100 gsm.\n- Cạnh sách mạ nhũ vàng đồng; có dấu đỏ của Đông A và Ex-Libris (dấu sở hữu sách).\n- Kèm hộp carton có hoa văn thủy ấn."
+    },
+    {
+      "id": "la-fontaine-the-fables-of-la-fontaine-2022-dong-a-bia-cung-1tr100k",
+      "isbn": "9786043238259",
+      "caption": "",
+      "pub_year": 2022,
+      "pub_date": "2022-01-01",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Văn Vĩnh",
+        "Tú Mỡ",
+        "Huỳnh Lý",
+        "Nguyễn Đình",
+        "Đinh Khắc Phách",
+        "Đỗ Anh Vũ",
+        "Hoàng Giang",
+        "Phạm Anh Xuân",
+        "Mai Liên",
+        "Đạt Nhân",
+        "Khắc Đỗ",
+        "Lê Phối Thi",
+        "Trần Châu"
       ],
       "illustrators": [
         "Gustave Doré"
       ],
       "proofreaders": [],
       "format": "Bìa cứng",
-      "cover_price": "1100k",
+      "cover_price": "1tr100k",
       "print_run": null,
       "page_count": 828,
       "copy_numbering": null,
-      "size_cm": "30.5 x 26.5 x 6.2",
-      "weight_g": 3660,
-      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/l/a/la-fontaine---bia-ao---bia-1.jpg",
-      "gellery_imgs": [],
-      "detail": ""
+      "size_cm": "25 x 30",
+      "weight_g": 3900,
+      "thumbnail": "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-bia-cung-bia-ao-chup.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-bia-cung-bia-ngoai-troi.jpg",
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-bia-cung-bia-trong-chup.jpg",
+        "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-bia-cung-su-tu-va-chuot.jpg"
+      ],
+      "detail": "- In hai màu.",
+      "series_ids": []
     }
   ]
 }
