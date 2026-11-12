@@ -9,6 +9,7 @@ Chỉ đổi sách/trường người dùng yêu cầu, qua form/API hiện có.
 3. Candidate sao sâu baseline, chỉ sửa trường được phép. Awards theo [quy tắc dữ liệu](book-intake-workflow.md#quy-tắc-dữ-liệu): tra `data/awards/` và nguồn chính thức, hợp nhất nhãn không trùng, ghi award_claims. Nobel của tác giả được kế thừa; giải tác phẩm không lan sang sách cùng tác giả.
    - Yêu cầu bổ sung dữ liệu/ảnh không cho phép xóa dữ liệu cũ. Giữ các phần tử đã có trong mảng, nhất là `translators`, `illustrators`, `proofreaders`; hợp nhất thông tin mới không trùng. Không dùng default rỗng cho trường đã có dữ liệu chỉ vì nguồn mới không nhắc lại.
    - Nguồn mới ghi thêm vai trò khác không tự cho phép chuyển hoặc xóa vai trò đang lưu. Ví dụ ảnh ghi Nguyễn Thạch Giang khảo đính/chú giải: bổ sung vào `detail`, vẫn giữ tên trong `translators` nếu người dùng chưa yêu cầu sửa trường đó. Ghi nhận mâu thuẫn thực tế khi có, không tự giải quyết bằng cách bỏ dữ liệu.
+   - Khi bổ sung edition thiếu thông tin, chủ động đề xuất nguồn theo [tham khảo edition tương đồng](book-intake-workflow.md#tham-khảo-edition-tương-đồng); chỉ sao chép các trường được người dùng xác nhận. Ngụ ngôn La Fontaine S100 đã được chốt dùng NXB và họa sĩ của bản phổ thông; danh sách 13 dịch giả của S895 được người dùng yêu cầu đồng bộ cho cả S100 và bản phổ thông, thay nhãn chung `Nhiều Người Dịch`. ISBN, khối lượng và dải số S100 chưa có thì giữ trống, bỏ khỏi Memo checklist theo yêu cầu người dùng.
 4. Chuẩn hóa edition: giữ số lượng/thứ tự/dữ kiện ngoài phạm vi; ghi nguồn và baseline chưa đối chứng. Đổi năm/format/giá thì sinh ID theo form, rà tham chiếu cũ. Chất liệu giữ trong detail; giá bìa theo [quy cách giá](book-intake-workflow.md#giá-bìa), ví dụ `3900k` → `3tr900k`, không lấy giá sale. Mâu thuẫn trang/ISBN ưu tiên nguồn đơn vị phát hành.
 5. Nếu cần chuyển thumbnail ngoài về local, tải đúng URL hiện có, xem ảnh/codec và theo skill ảnh một nguồn → một asset. Không xử lý lại ảnh ngoài phạm vi.
 
@@ -33,6 +34,7 @@ POST /api/books/save/book-index-review
 ```
 
 - Giữ metadata/search_text cũ, bổ sung keyword mới không trùng theo cách form chuẩn hóa; đồng bộ caption/format/awards cuối. `updated_at` là ngày sửa dữ liệu cho sitemap, không dùng để sort. API tự suy `last_pub_date`/`last_pub_year` từ edition mới nhất, kể cả khi xóa/sửa ngày. Chỉ thêm `pub_date` cho edition đã đối chứng trong phạm vi; giữ edition cũ thiếu key nếu chưa tra.
+- Giữ nguyên các cụm từ trong `search_text` cũ; chỉ nối keyword/cụm mới còn thiếu. Không tách toàn chuỗi rồi loại trùng từng từ, vì sẽ làm mất các cụm tìm kiếm như tựa sách/tên tác giả. Đối chiếu với baseline và kiểm tìm bằng tựa đầy đủ sau khi lưu.
 - Chỉ sửa awards thì không POST author/series. Trước mỗi lần ghi, đọc lại so baseline để tránh đè thay đổi mới.
 - Hai endpoint không phải transaction: lỗi thì đọc lại, xác định phần đã lưu và chỉ chạy phần còn thiếu. Sai payload/quy tắc thì sửa nháp/hướng dẫn rồi lưu lại, không vá output.
 

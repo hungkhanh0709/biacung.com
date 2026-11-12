@@ -9,10 +9,49 @@
   "series": [],
   "editions": [
     {
-      "id": "dao-duy-anh-viet-nam-van-hoa-su-cuong-2023-dong-a-bia-cung-390k",
+      "id": "dao-duy-anh-viet-nam-van-hoa-su-cuong-2023-dong-a-bia-da-that-5tr",
+      "series_ids": [],
       "isbn": null,
-      "caption": "",
+      "caption": "S100",
       "pub_year": 2023,
+      "pub_date": "2023-06-26",
+      "publisher": "NXB Đại Học Sư Phạm",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "5tr",
+      "print_run": 100,
+      "page_count": 368,
+      "copy_numbering": null,
+      "size_cm": "18.5 x 26.5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/dao-duy-anh-viet-nam-van-hoa-su-cuong/s100-v20-do-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/dao-duy-anh-viet-nam-van-hoa-su-cuong/s100-to-gac-thuy-an.jpg",
+        "/assets/img/books/dao-duy-anh-viet-nam-van-hoa-su-cuong/s100-v20-do-bia-nghieng.jpg",
+        "/assets/img/books/dao-duy-anh-viet-nam-van-hoa-su-cuong/s100-ex-libris.jpg",
+        "/assets/img/books/dao-duy-anh-viet-nam-van-hoa-su-cuong/s100-v20-xanh-cover.jpg",
+        "/assets/img/books/dao-duy-anh-viet-nam-van-hoa-su-cuong/s100-hop-thuy-an.jpg",
+        "/assets/img/books/dao-duy-anh-viet-nam-van-hoa-su-cuong/s100-s80-tag-da-cover.jpg",
+        "/assets/img/books/dao-duy-anh-viet-nam-van-hoa-su-cuong/s100-ma-vang-dau-sach.jpg",
+        "/assets/img/books/dao-duy-anh-viet-nam-van-hoa-su-cuong/s100-s80-tag-dong-cover.jpg",
+        "/assets/img/books/dao-duy-anh-viet-nam-van-hoa-su-cuong/s100-v20-do-toan-cuon.jpg",
+        "/assets/img/books/dao-duy-anh-viet-nam-van-hoa-su-cuong/s100-hai-hop-thuy-an.jpg",
+        "/assets/img/books/dao-duy-anh-viet-nam-van-hoa-su-cuong/s100-ba-gay-sach.jpg"
+      ],
+      "detail": "- Ấn bản đặc biệt S100 thứ ba phát hành năm 2023, gồm 20 bản V20 và 80 bản S80; tổng cộng 100 bản dành cho bạn đọc đã đăng ký loạt S100 năm 2023.\n- V20: bìa bọc da dê Pháp của hãng Alran Sully, màu xanh Sapin hoặc đỏ Espelette; bìa 1 gắn tag da hình đôi chim phượng; bìa 1 và bìa 4 có tổng 8 tag đồng; bìa 4 có logo chữ V. Giá phát hành 8tr500k.\n- S80: bìa bọc da bò màu xanh Turquoise; bìa 1 gắn tag da hình đôi chim phượng; bìa 4 có logo chữ S. Bản chỉ có tag da giá 5tr; bản có tag da và tổng 8 tag đồng trên bìa 1, bìa 4 giá 7tr, tùy lựa chọn bạn đọc.\n- Cả hai phiên bản có khung hoa văn và họa tiết ép nhũ vàng, đen; lõi bìa kết cấu 3 lớp; các cạnh bìa mài tay vát cạnh.\n- Gáy có 5 bộ gân siết thủ công; băng chỉ đầu/cổ áo (endband) làm bằng da thật; mũ lưỡi trai (head cap) ôm sát cổ áo; khung tên và hoa văn dập lồng, ép nhũ 2 màu; bồi gáy 4 lớp bằng vải và giấy.\n- Ruột in trên giấy mỹ thuật Conqeror Laid Cream 120 gsm, in 2 màu bằng công nghệ mực vi sinh; mạ nhũ vàng 3 cạnh sách.\n- Hai tờ gác đầu và cuối làm thủy ấn thủ công từng tờ, mỗi tờ là duy nhất.\n- Hộp sách bọc giấy in thủy ấn, viền da cùng loại với bìa.\n- Kèm giấy chứng nhận đóng dấu đỏ của Đông A và Ex libris (dấu sở hữu sách)."
+    },
+    {
+      "id": "dao-duy-anh-viet-nam-van-hoa-su-cuong-2022-dong-a-bia-cung-390k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2022,
+      "pub_date": "2022-07-28",
       "publisher": "NXB Đại Học Sư Phạm",
       "issuers": [
         "Đông A"

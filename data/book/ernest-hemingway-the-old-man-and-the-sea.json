@@ -33,7 +33,47 @@
       "weight_g": 150,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8935235241121_2.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
+    },
+    {
+      "id": "ernest-hemingway-the-old-man-and-the-sea-2022-dong-a-bia-da-that",
+      "series_ids": [],
+      "isbn": null,
+      "caption": "S100",
+      "pub_year": 2022,
+      "pub_date": "2022-12-02",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Lê Huy Bắc"
+      ],
+      "illustrators": [
+        "Lê Trí"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 100,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/ernest-hemingway-the-old-man-and-the-sea/s100-s80-ocean-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/ernest-hemingway-the-old-man-and-the-sea/s100-hop-thuy-an.jpg",
+        "/assets/img/books/ernest-hemingway-the-old-man-and-the-sea/s100-bon-gay-trong-hop.jpg",
+        "/assets/img/books/ernest-hemingway-the-old-man-and-the-sea/s100-hai-bia-doc.jpg",
+        "/assets/img/books/ernest-hemingway-the-old-man-and-the-sea/s100-v20-bia-trai-phang.jpg",
+        "/assets/img/books/ernest-hemingway-the-old-man-and-the-sea/s100-to-gac-thuy-an.jpg",
+        "/assets/img/books/ernest-hemingway-the-old-man-and-the-sea/s100-bia-va-gay-chi-tiet.jpg",
+        "/assets/img/books/ernest-hemingway-the-old-man-and-the-sea/s100-hai-bia-ngang.jpg",
+        "/assets/img/books/ernest-hemingway-the-old-man-and-the-sea/s100-ruot-sach-mo.jpg",
+        "/assets/img/books/ernest-hemingway-the-old-man-and-the-sea/s100-minh-hoa-ca-chet.jpg"
+      ],
+      "detail": "- Ấn bản đặc biệt S100 gồm V20 và S80, phát hành tới bạn đọc đăng ký thành công loạt S100 năm 2021–2022.\n- Cả hai bản đều bọc da bò: bản V20 màu xám Bottom, bản S80 màu xanh Ocean.\n- V20: khung hoa văn và họa tiết ép nhũ vàng, đen, đỏ; bìa sau có logo chữ V. S80: khung hoa văn và họa tiết ép nhũ vàng, đen, xanh ngọc; bìa sau có logo chữ S.\n- Lần đầu Đông A ép họa tiết ở bìa trước, bìa sau và gáy tràn qua 4 mặt cạnh sách, với ý tưởng vươn ra biển lớn.\n- Gáy có 6 bộ gân 3, tổng cộng 18 gân, siết thủ công và cố định 24 giờ.\n- Băng chỉ đầu/cổ áo (endband) làm bằng da thật; head cap ôm sát cổ áo. Khung tên và hoa văn gáy dập lồng, ép nhũ 3 màu; bồi gáy 4 lớp vải và giấy.\n- Ruột in bằng công nghệ mực vi sinh trên giấy mỹ thuật Contrast Cream 224 gsm; mạ nhũ vàng cả 3 cạnh sách.\n- Hai tờ gác đầu và cuối làm thủy ấn thủ công từng tờ, mỗi tờ là duy nhất.\n- Hộp carton hoa văn thủy ấn; kèm giấy chứng nhận đóng dấu đỏ Đông A và Ex libris (dấu sở hữu sách)."
     }
   ]
 }
