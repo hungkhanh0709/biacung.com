@@ -435,7 +435,8 @@
     "id": "vuong-hong-sen",
     "name": "Vương Hồng Sển",
     "work_ids": [
-      "vuong-hong-sen-tap-but-nam-canh-ngo-qua-tan-mui-1990-1991"
+      "vuong-hong-sen-tap-but-nam-canh-ngo-qua-tan-mui-1990-1991",
+      "vuong-hong-sen-hieu-co-dac-san"
     ]
   },
   {
@@ -596,7 +597,8 @@
     "work_ids": [
       "fyodor-dostoevsky-dem-trang",
       "fyodor-dostoevsky-toi-ac-va-trung-phat",
-      "fyodor-dostoevsky-anh-em-nha-karamazov"
+      "fyodor-dostoevsky-anh-em-nha-karamazov",
+      "fyodor-dostoevsky-chang-ngoc"
     ]
   },
   {
@@ -1059,7 +1061,8 @@
     "id": "jared-diamond",
     "name": "Jared Diamond",
     "work_ids": [
-      "jared-diamond-guns-germs-and-steel"
+      "jared-diamond-guns-germs-and-steel",
+      "jared-diamond-upheaval-turning-points-for-nations-in-crisis"
     ]
   },
   {
@@ -1529,6 +1532,27 @@
     "name": "Gustave Flaubert",
     "work_ids": [
       "gustave-flaubert-madame-bovary"
+    ]
+  },
+  {
+    "id": "giosue-carducci",
+    "name": "Giosuè Carducci",
+    "work_ids": [
+      "giosue-carducci-tung-ca-man-da"
+    ]
+  },
+  {
+    "id": "grazia-deledda",
+    "name": "Grazia Deledda",
+    "work_ids": [
+      "grazia-deledda-canne-al-vento"
+    ]
+  },
+  {
+    "id": "f-scott-fitzgerald",
+    "name": "F. Scott Fitzgerald",
+    "work_ids": [
+      "f-scott-fitzgerald-the-great-gatsby"
     ]
   }
 ]

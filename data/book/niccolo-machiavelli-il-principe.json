@@ -6,12 +6,18 @@
     "Niccolò Machiavelli"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Dấu Ấn 10 Năm Omega+",
+    "50 Năm Fahasa"
+  ],
   "editions": [
     {
       "id": "niccolo-machiavelli-il-principe-2026-omega-plus-bia-cung-168k",
       "title": "Quân Vương - Thuật Cai Trị",
-      "series_ids": [],
+      "series_ids": [
+        "dau-an-10-nam-omega",
+        "50-nam-fahasa"
+      ],
       "isbn": null,
       "caption": "",
       "pub_year": 2026,

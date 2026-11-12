@@ -9,6 +9,57 @@
   "series": [],
   "editions": [
     {
+      "id": "fyodor-dostoevsky-toi-ac-va-trung-phat-2022-dong-a-bia-da-that",
+      "title": "Tội ác và hình phạt",
+      "series_ids": [],
+      "isbn": null,
+      "caption": "S100",
+      "pub_year": 2022,
+      "pub_date": "2022-04-07",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Cao Xuân Hạo"
+      ],
+      "illustrators": [
+        "Fritz Eichenberg"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 100,
+      "page_count": 648,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-v20-do-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-bon-bia-sau.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-s80-nero-nam-nghieng.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-s80-nero-dung.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-v20-dive-nam-nghieng.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-bon-gay-trong-hop.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-ma-canh.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-s80-navy-gay-va-hop.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-v20-do-nam-nghieng.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-v20-dive-dung.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-v20-hai-bia.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-bon-bia-truoc.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-ruot-sach-phan-mot.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-s80-hai-bia.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-gay-va-endband.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-v20-tag-da.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-s80-nero-gay-va-hop.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-v20-dive-gay-va-hop.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-s80-navy-dung.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-s80-navy-nam-nghieng.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/s100-v20-do-gay-va-hop.jpg"
+      ],
+      "detail": "- 100 bản đặc biệt gồm 20 bản V20 và 80 bản S80, đều bọc da bò nhập khẩu từ Italy.\n- V20: màu đỏ Santa Claus hoặc xanh Dive; bìa 1 khảm tag da, họa tiết ép nhũ 3 màu; bìa 4 có logo chữ V.\n- S80: màu đen Nero hoặc xanh Navy; khung hoa văn dập lồng, ép nhũ 3 màu; bìa 4 có logo chữ S.\n- Cả hai bản có lõi bìa 3 lớp carton chống cong vênh; cạnh bìa mài tay vát cạnh.\n- Lần đầu Đông A thực hiện kỹ thuật gân chéo cho ấn bản đặc biệt: hai đường gân ngang ở phía trên và dưới, ba gân chéo ở giữa phối hợp khung tên, tên tác giả và hoa văn; cả 5 đường gân siết thủ công, cố định 24 giờ.\n- Băng chỉ đầu/cổ áo (endband) làm bằng da thật; mũ lưỡi trai (head cap) ôm sát cổ áo; khung tên và hoa văn gáy dập lồng, ép nhũ 3 màu; bồi gáy 4 lớp vải và giấy.\n- Ruột in 2 màu bằng công nghệ mực vi sinh trên giấy mỹ thuật Dali Blanco 110 gsm; mạ nhũ vàng 3 cạnh sách.\n- Hai tờ gác đầu và cuối làm thủy ấn thủ công từng tờ, mỗi tờ là duy nhất.\n- Hộp carton hoa văn thủy ấn; kèm giấy chứng nhận đóng dấu đỏ của Đông A và Ex libris (dấu sở hữu sách)."
+    },
+    {
       "id": "fyodor-dostoevsky-toi-ac-va-trung-phat-2026-huy-hoang-bia-cung-380k",
       "isbn": null,
       "series_ids": [],

@@ -1,0 +1,39 @@
+{
+  "id": "vuong-hong-sen-hieu-co-dac-san",
+  "title": "Hiếu cổ đặc san",
+  "title_original": "Hiếu cổ đặc san",
+  "authors": [
+    "Vương Hồng Sển"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "vuong-hong-sen-hieu-co-dac-san-2026-boxset-bia-cung-1tr900k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2026,
+      "pub_date": "2026-09-04",
+      "publisher": "NXB Trẻ",
+      "issuers": [],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Boxset, bìa cứng",
+      "cover_price": "1tr900k",
+      "print_run": 1000,
+      "page_count": 2536,
+      "copy_numbering": null,
+      "size_cm": "14 x 20",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/vuong-hong-sen-hieu-co-dac-san/nxb-tre-boxset-bia-cung-cover.jpeg",
+      "gellery_imgs": [
+        "/assets/img/books/vuong-hong-sen-hieu-co-dac-san/nxb-tre-hop-chi-tiet.jpeg",
+        "/assets/img/books/vuong-hong-sen-hieu-co-dac-san/nxb-tre-ruot-sach.jpeg",
+        "/assets/img/books/vuong-hong-sen-hieu-co-dac-san/nxb-tre-tron-bo-sau-cuon.jpeg"
+      ],
+      "detail": "- Hộp sáu cuốn:\n - Phong lưu cũ mới\n - Thú xem truyện Tàu\n - Thú chơi cổ ngoạn\n - Khảo về đồ sứ cổ Trung Hoa\n - Cảnh Đức trấn đào lục\n - Cuốn sổ tay của người chơi cổ ngoạn."
+    }
+  ]
+}

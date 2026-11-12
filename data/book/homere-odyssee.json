@@ -11,6 +11,39 @@
   ],
   "editions": [
     {
+      "id": "homere-odyssee-2026-dong-a-bia-da-that",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S100",
+      "pub_year": 2026,
+      "pub_date": "2026-12-01",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Hoàng Hữu Đản"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 100,
+      "page_count": 576,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-1.jpeg",
+      "gellery_imgs": [
+        "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-2.jpeg",
+        "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-3.jpeg",
+        "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-4.jpeg",
+        "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-5.jpeg",
+        "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-6.jpeg"
+      ],
+      "detail": ""
+    },
+    {
       "id": "homere-odyssee-2026-omega-plus-boxset-bia-cung-589k",
       "title": "Boxset Odyssêy - Iliad",
       "isbn": null,
@@ -47,38 +80,6 @@
         "/assets/img/books/homere-odyssee/omega-plus-boxset-spines.jpg"
       ],
       "detail": "- Có hộp đựng 2 cuốn.\n- Bìa sách được thiết kế mới phong cách typo và in ép nhũ họa tiết chữ O và I.",
-      "series_ids": []
-    },
-    {
-      "id": "homere-odyssee-2026-dong-a-bia-da-that",
-      "isbn": null,
-      "caption": "S100",
-      "pub_year": 2026,
-      "publisher": "NXB Văn Học",
-      "issuers": [
-        "Đông A"
-      ],
-      "translators": [
-        "Hoàng Hữu Đản"
-      ],
-      "illustrators": [],
-      "proofreaders": [],
-      "format": "Bìa da thật",
-      "cover_price": "",
-      "print_run": 100,
-      "page_count": 576,
-      "copy_numbering": null,
-      "size_cm": "",
-      "weight_g": null,
-      "thumbnail": "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-1.jpeg",
-      "gellery_imgs": [
-        "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-2.jpeg",
-        "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-3.jpeg",
-        "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-4.jpeg",
-        "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-5.jpeg",
-        "/assets/img/books/homere-odyssee/homere-odyssee-2026-dong-a-s100-6.jpeg"
-      ],
-      "detail": "",
       "series_ids": []
     },
     {
