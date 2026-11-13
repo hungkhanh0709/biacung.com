@@ -9,6 +9,33 @@
   "series": [],
   "editions": [
     {
+      "id": "fyodor-dostoevsky-toi-ac-va-trung-phat-2026-huy-hoang-bia-cung-380k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2026,
+      "pub_date": "2026-11-03",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Huy Hoàng"
+      ],
+      "translators": [
+        "Nhật Phi"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "380k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/huy-hoang-bia-cung-cover.jpg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
       "id": "fyodor-dostoevsky-toi-ac-va-trung-phat-2022-dong-a-bia-da-that",
       "title": "Tội ác và hình phạt",
       "series_ids": [],
@@ -60,31 +87,41 @@
       "detail": "- 100 bản đặc biệt gồm 20 bản V20 và 80 bản S80, đều bọc da bò nhập khẩu từ Italy.\n- V20: màu đỏ Santa Claus hoặc xanh Dive; bìa 1 khảm tag da, họa tiết ép nhũ 3 màu; bìa 4 có logo chữ V.\n- S80: màu đen Nero hoặc xanh Navy; khung hoa văn dập lồng, ép nhũ 3 màu; bìa 4 có logo chữ S.\n- Cả hai bản có lõi bìa 3 lớp carton chống cong vênh; cạnh bìa mài tay vát cạnh.\n- Lần đầu Đông A thực hiện kỹ thuật gân chéo cho ấn bản đặc biệt: hai đường gân ngang ở phía trên và dưới, ba gân chéo ở giữa phối hợp khung tên, tên tác giả và hoa văn; cả 5 đường gân siết thủ công, cố định 24 giờ.\n- Băng chỉ đầu/cổ áo (endband) làm bằng da thật; mũ lưỡi trai (head cap) ôm sát cổ áo; khung tên và hoa văn gáy dập lồng, ép nhũ 3 màu; bồi gáy 4 lớp vải và giấy.\n- Ruột in 2 màu bằng công nghệ mực vi sinh trên giấy mỹ thuật Dali Blanco 110 gsm; mạ nhũ vàng 3 cạnh sách.\n- Hai tờ gác đầu và cuối làm thủy ấn thủ công từng tờ, mỗi tờ là duy nhất.\n- Hộp carton hoa văn thủy ấn; kèm giấy chứng nhận đóng dấu đỏ của Đông A và Ex libris (dấu sở hữu sách)."
     },
     {
-      "id": "fyodor-dostoevsky-toi-ac-va-trung-phat-2026-huy-hoang-bia-cung-380k",
-      "isbn": null,
+      "id": "fyodor-dostoevsky-toi-ac-va-trung-phat-2021-dong-a-bia-da-nhan-tao-2tr500k",
+      "title": "Tội ác và hình phạt",
       "series_ids": [],
-      "caption": "",
-      "pub_year": 2026,
-      "pub_date": "2026-11-03",
+      "isbn": null,
+      "caption": "S500",
+      "pub_year": 2021,
+      "pub_date": "2021-12-01",
       "publisher": "NXB Văn Học",
       "issuers": [
-        "Huy Hoàng"
+        "Đông A"
       ],
       "translators": [
-        "Nhật Phi"
+        "Cao Xuân Hạo"
       ],
-      "illustrators": [],
+      "illustrators": [
+        "Fritz Eichenberg"
+      ],
       "proofreaders": [],
-      "format": "Bìa cứng",
-      "cover_price": "380k",
-      "print_run": null,
-      "page_count": null,
-      "copy_numbering": null,
-      "size_cm": "",
+      "format": "Bìa da nhân tạo",
+      "cover_price": "2tr500k",
+      "print_run": 500,
+      "page_count": 648,
+      "copy_numbering": "TA 001–TA 500",
+      "size_cm": "16 x 24",
       "weight_g": null,
-      "thumbnail": "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/huy-hoang-bia-cung-cover.jpg",
-      "gellery_imgs": [],
-      "detail": ""
+      "thumbnail": "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/dong-a-s500-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/dong-a-s500-gilt-edge.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/dong-a-s500-limitation-page.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/dong-a-s500-back-cover.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/dong-a-s500-illustrated-pages.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/dong-a-s500-cover-with-box.jpg",
+        "/assets/img/books/fyodor-dostoevsky-toi-ac-va-trung-phat/dong-a-s500-spine-detail.jpg"
+      ],
+      "detail": "- 500 bản giới hạn S500, đánh số từ TA 001 đến TA 500.\n- Bìa bọc da PU cao cấp.\n- Bìa trước: khung tên sách và hoa văn hình thánh giá dập lồng hai màu nhũ đen và vàng; xung quanh bìa dập hoa văn chìm.\n- Gáy có gân, dập chìm hoa văn; bảng tên sách ép nhũ vàng đồng.\n- Ruột sách 648 trang, khổ 16 x 24 cm, in hai màu bằng công nghệ mực vi sinh trên giấy GV76-BB 100 gsm.\n- Bụng sách mạ vàng; có dấu đỏ của Đông A.\n- Hộp đứng dạng rút, viền da microfiber; bên ngoài và lòng hộp có hoa văn hoa cương giống màu tờ gác sách."
     }
   ]
 }
