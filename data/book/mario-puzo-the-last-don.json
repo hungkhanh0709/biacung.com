@@ -9,6 +9,64 @@
   "series": [],
   "editions": [
     {
+      "id": "mario-puzo-the-last-don-2024-dong-a-bia-da-nhan-tao-800k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S500",
+      "pub_year": 2024,
+      "pub_date": "2024-01-23",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Trịnh Huy Ninh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da nhân tạo",
+      "cover_price": "800k",
+      "print_run": 500,
+      "page_count": 668,
+      "copy_numbering": "DA 001 - DA 500",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/mario-puzo-the-last-don/dong-a-s500-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/mario-puzo-the-last-don/dong-a-s500-ex-libris.jpg",
+        "/assets/img/books/mario-puzo-the-last-don/dong-a-s500-spine.jpg",
+        "/assets/img/books/mario-puzo-the-last-don/dong-a-s500-full-binding.jpg",
+        "/assets/img/books/mario-puzo-the-last-don/dong-a-s500-interior.jpg"
+      ],
+      "detail": "- 500 bản S500 giới hạn, đánh số từ DA 001 đến DA 500; mỗi bản phát hành là duy nhất.\n- Bìa bọc da nhân tạo bonded leather màu xanh rêu đậm, nhập trực tiếp từ nhà sản xuất tại Mỹ; vật liệu có gốc da thật, các sợi da được bảo vệ bằng lớp sơn phủ gốc nước và ép vân nổi.\n- Hai mặt bìa ép nhũ vàng với họa tiết đồng nhất.\n- Ruột sách 668 trang, khổ 16 x 24 cm, in trên giấy GI76-BB 70 gsm.\n- Cạnh sách mạ nhũ vàng, đóng dấu đỏ Đông A; có Ex libris (dấu sở hữu sách).\n- Hộp carton in hình và thông tin bìa 1, bìa 4 của cuốn sách."
+    },
+    {
+      "id": "mario-puzo-the-last-don-2023-dong-a-bia-mem-230k",
+      "isbn": "978-604-394-965-0",
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2023,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Trịnh Huy Ninh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "230k",
+      "print_run": null,
+      "page_count": 668,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 600,
+      "thumbnail": "/assets/img/books/mario-puzo-the-last-don/dong-a-2023-paperback-cover.webp",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
       "id": "mario-puzo-the-last-don-2016-dong-a-bia-mem-150k",
       "isbn": null,
       "caption": "",
@@ -29,7 +87,8 @@
       "weight_g": 792,
       "thumbnail": "https://product.hstatic.net/1000328521/product/ong_trum_da_8abd3af4715e4bb78291b8f1d2c23a83_master.jpg",
       "gellery_imgs": [],
-      "detail": ""
+      "detail": "",
+      "series_ids": []
     }
   ]
 }

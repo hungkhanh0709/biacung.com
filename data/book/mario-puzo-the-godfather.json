@@ -109,7 +109,9 @@
       "weight_g": 2000,
       "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5193.jpg",
       "gellery_imgs": [
-        "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5161.jpg"
+        "https://cdn1.fahasa.com/media/catalog/product/0/w/0w5a5161.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2026-990k-dust-jacket-front.jpeg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2026-990k-inner-hardcover.jpeg"
       ],
       "detail": "Ấn bản cao cấp lần này được thực hiện với khổ lớn 25 x 30 cm, bìa cứng kèm bìa áo, ruột in bốn màu trên giấy Ford 150 gsm và bổ sung 15 minh họa của họa sĩ Art Werger. Tác phẩm sử dụng bản dịch nổi tiếng của Ngọc Thứ Lang, vốn đã gắn bó với nhiều thế hệ độc giả Việt Nam.\n- Kỉ niệm 50 năm Fahasa.",
       "series_ids": [
@@ -315,6 +317,42 @@
       "series_ids": []
     },
     {
+      "id": "mario-puzo-the-godfather-2021-dong-a-bia-da-that",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bản Chữ A",
+      "pub_year": 2021,
+      "pub_date": "2021-07-18",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Ngọc Thứ Lang"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 1,
+      "page_count": null,
+      "copy_numbering": "A",
+      "size_cm": "18.5 x 26.5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/mario-puzo-the-godfather/dong-a-ban-chu-a-2021-myq-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-ban-chu-a-2021-myq-v-logo-detail.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-ban-chu-a-2021-myq-rose-foil-detail.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-ban-chu-a-2021-myq-anniversary-back-cover-detail.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-ban-chu-a-2021-myq-spine-and-back-cover.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-ban-chu-a-2021-myq-front-cover-workbench.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-ban-chu-a-2021-myq-book-in-slipcase.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-ban-chu-a-2021-myq-gilt-edge-detail.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-ban-chu-a-2021-myq-marbled-endpapers.jpg"
+      ],
+      "detail": "- Bản Chữ A độc bản, kỷ niệm 50 năm xuất bản lần đầu tác phẩm The Godfather.\n- Đông A thực hiện ấn bản từ tháng 1 đến tháng 7 năm 2021.\n- Bìa bọc da dê MyQ màu đỏ tươi; họa tiết trên bìa 1, gáy và bìa 4 được mạ hai màu đen và nhũ vàng.\n- Bìa 4 dập chìm tên sách, tên tác giả, logo bản V, logo kỷ niệm 50 năm xuất bản lần đầu và logo Đông A.\n- Ruột sách khổ 18,5 x 26,5 cm, in trên giấy Ford kem 80 gsm, cùng loại giấy với 500 bản bìa cứng Bố Già kỷ niệm 50 năm xuất bản lần đầu.\n- Khâu ruột và làm bìa cứng thủ công theo lối cổ điển châu Âu Passé-carton.\n- Hai tờ gác đầu và cuối in thủy ấn thủ công; mỗi tờ là duy nhất.\n- Bụng sách được mạ thủ công do Thư viện Huệ Quang thực hiện.\n- Có dấu đỏ của Đông A, dấu sở hữu sách Ex libris và giấy chứng nhận độc bản."
+    },
+    {
       "id": "mario-puzo-the-godfather-2021-dong-a-bia-cung-250",
       "isbn": null,
       "caption": "",
@@ -371,6 +409,35 @@
         "/assets/img/books/mario-puzo-the-godfather/dong-a-2019-s500-gilt-edges-detail.jpg"
       ],
       "detail": "- Bản giới hạn bìa cứng, số lượng 500 bản.\n- Hộp và bìa áo in trên giấy đen mỹ thuật.\n- Ép cạnh vàng.\n- Đóng dấu Đông A, đánh số từ ĐA 001 đến ĐA 500; mỗi bản là duy nhất.\n- Minh họa của 12 họa sĩ đương đại Việt Nam.\n- In tên bạn đọc đăng ký đặt sách vào cuối sách.\n- Chỉ phát hành cho 500 bạn đọc đăng ký trước, không qua các kênh phân phối khác."
+    },
+    {
+      "id": "mario-puzo-the-godfather-2019-dong-a-bia-da-nhan-tao-1tr500k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S100",
+      "pub_year": 2019,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Ngọc Thứ Lang"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da nhân tạo",
+      "cover_price": "1tr500k",
+      "print_run": 100,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/mario-puzo-the-godfather/dong-a-2019-s100-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2019-s100-cover-detail.jpg",
+        "/assets/img/books/mario-puzo-the-godfather/dong-a-2019-s100-book-and-gilt-edges.jpg"
+      ],
+      "detail": "- Bản S100 giới hạn 100 cuốn, phát hành năm 2019; mỗi cuốn được đánh số riêng.\n- Bản dịch của Ngọc Thứ Lang (Nguyễn Ngọc Tú).\n- Bìa da nhân tạo, gia công thủ công và ép nhũ vàng; kèm hộp đựng.\n- Bìa trước trang trí khung hoa văn dập chìm, tên The Godfather/Bố Già, hai khẩu súng bắt chéo và hoa hồng; gáy có gân nổi."
     }
   ]
 }

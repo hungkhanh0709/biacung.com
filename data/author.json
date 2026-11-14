@@ -1588,5 +1588,19 @@
     "work_ids": [
       "pierre-dieulefils-indo-chine-pittoresque-monumentale"
     ]
+  },
+  {
+    "id": "carol-gino",
+    "name": "Carol Gino",
+    "work_ids": [
+      "mario-puzo-the-family"
+    ]
+  },
+  {
+    "id": "margaret-mitchell",
+    "name": "Margaret Mitchell",
+    "work_ids": [
+      "margaret-mitchell-gone-with-the-wind"
+    ]
   }
 ]

@@ -15,6 +15,7 @@
 | Caption | Editions | Memo |
 | --- | ---: | --- |
 | Bản Chữ A | 1 | Độc bản ký hiệu A của Đông A; không gán thành S100 chỉ vì hộp có logo S100. |
+| Bản Chữ Ô | 1 | Độc bản ký hiệu Ô của Đông A; phân biệt với Bản Chữ A, không gán thành S100 chỉ vì hộp có logo S100. |
 | S100 | 2 | Thường dùng cho Đông A |
 | S200 | 0 | Thường dùng cho Đông A |
 | S365 | 4 | Thường dùng cho Đông A |

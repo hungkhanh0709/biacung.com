@@ -66,7 +66,7 @@ NXB, dịch giả, họa sĩ, hiệu đính có thể đề xuất theo căn c�
 
 Dưới 1 triệu dùng k (`900k`); từ 1 triệu dùng tr + phần nghìn k (`1tr200k`, `3tr900k`, `3tr50k`); tròn triệu `3tr`. Không dùng `3900k`, `3tr9`, `3.9tr` cho giá đang nhập/sửa. Không làm tròn mất giá trị. Đổi giá/năm/format làm đổi ID thì theo preview form và rà tham chiếu liên quan; không chuẩn hóa hàng loạt edition cũ.
 
-Checklist: Phát hành chỉ từ pub_date; Giá chép nguyên cover_price (kể cả cách ghi cũ); thiếu thì `Thiếu`. Hình `Thiếu` khi gallery rỗng/edition chưa có, không tự tạo gallery. Memo chỉ giữ dữ kiện còn thiếu; bỏ trạng thái chưa nhập sau khi lưu.
+Checklist: Phát hành chỉ từ pub_date; Giá chép nguyên cover_price (kể cả cách ghi cũ); thiếu thì `Thiếu`. Hình `Thiếu` khi gallery rỗng/edition chưa có, không tự tạo gallery. Memo chỉ giữ việc còn cần xác nhận/thu thập có căn cứ; bỏ trạng thái chưa nhập sau khi lưu. Với bản limited, giá, ISBN, khối lượng và kích thước không tìm thấy thì giữ default; không tự tạo Memo hoặc kéo dài tra cứu chỉ để lấp các trường này. Chỉ nhắc trong Memo khi có nguồn mâu thuẫn hoặc người dùng yêu cầu theo dõi cụ thể.
 
 ## Tra tên nguyên tác
 

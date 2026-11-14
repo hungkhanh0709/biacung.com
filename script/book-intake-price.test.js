@@ -28,8 +28,10 @@ test('scoped updates preserve legacy fields only when they match the baseline', 
         thumbnail: '/assets/img/books/test-book/cover.jpg'
     });
     baseline.editions.push({ ...structuredClone(baseline.editions[0]), id: 'test-book-regular-1900k', cover_price: '1900k', thumbnail: 'https://example.com/regular.jpg' });
+    baseline.editions[1].gellery_imgs = ['https://example.com/existing-gallery.jpg'];
     const candidate = structuredClone(baseline);
     Object.assign(candidate.editions[0], { id: 'test-book-limited-3tr900k', cover_price: '3tr900k' });
+    candidate.editions[1].gellery_imgs.push('/assets/img/books/test-book/new-gallery.jpg');
     const check = (book, previous = baseline) => validate(root, book, { allowExisting: true, baseline: previous }).errors;
     assert.deepEqual(check(candidate), []);
     assert.ok(validate(root, candidate, { allowExisting: true }).errors.length);
@@ -39,5 +41,21 @@ test('scoped updates preserve legacy fields only when they match the baseline', 
     const badImage = structuredClone(candidate);
     badImage.editions[1].thumbnail = 'https://example.com/different.jpg';
     assert.ok(check(badImage).some((e) => e.includes('URL ảnh')));
+    const badGallery = structuredClone(candidate);
+    badGallery.editions[1].gellery_imgs.push('https://example.com/new-remote-gallery.jpg');
+    assert.ok(check(badGallery).some((e) => e.includes('URL ảnh')));
+    const wrongEdition = structuredClone(candidate);
+    wrongEdition.editions[0].gellery_imgs.push('https://example.com/existing-gallery.jpg');
+    assert.ok(check(wrongEdition).some((e) => e.includes('URL ảnh')));
+    const reordered = structuredClone(candidate);
+    const renamed = reordered.editions[1];
+    renamed.id = 'test-book-regular-2027-1900k';
+    renamed.pub_year = 2027;
+    reordered.editions.reverse();
+    assert.ok(check(reordered).some((e) => e.includes('URL ảnh')));
+    const editionIdMap = { 'test-book-regular-1900k': renamed.id };
+    assert.deepEqual(validate(root, reordered, { allowExisting: true, baseline, editionIdMap }).errors, []);
+    renamed.gellery_imgs.push('https://example.com/not-in-baseline.jpg');
+    assert.ok(validate(root, reordered, { allowExisting: true, baseline, editionIdMap }).errors.some((e) => e.includes('URL ảnh')));
     assert.ok(check(candidate, { ...baseline, id: 'other-book' }).length);
 });
