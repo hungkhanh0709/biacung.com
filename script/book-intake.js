@@ -161,14 +161,14 @@ function validate(root, book, { relations = false, images = false, allowExisting
         if (images && !text(edition.thumbnail)) bad(`${at}.thumbnail còn thiếu.`);
         if (new Set(urls).size !== urls.length) bad(`${at}: thumbnail/gallery lặp ảnh.`);
         for (const url of urls) {
-            const prefix = `/assets/img/books/${book.id}/`;
-            const basename = typeof url === 'string' ? url.slice(prefix.length) : '';
-            if (!url.startsWith(prefix) || !/^[a-z0-9]+(?:-[a-z0-9]+)*\.(jpg|jpeg|png|webp|avif)$/.test(basename)) {
+            // A photo of several works may be shared without copying the asset.
+            const localImage = /^\/assets\/img\/books\/[a-z0-9]+(?:-[a-z0-9]+)*\/[a-z0-9]+(?:-[a-z0-9]+)*\.(jpg|jpeg|png|webp|avif)$/.test(url);
+            if (!localImage) {
                 const unchanged = url === edition.thumbnail
                     ? previous?.thumbnail === edition.thumbnail
                     : previous && JSON.stringify(previous.gellery_imgs) === JSON.stringify(edition.gellery_imgs);
                 if (/^https?:\/\//.test(url) && unchanged) continue;
-                bad(`${at}: URL ảnh phải local, tên kebab-case và đúng bookId: ${url}`); continue;
+                bad(`${at}: URL ảnh phải local trong assets/img/books, tên kebab-case: ${url}`); continue;
             }
             const file = path.join(root, url.slice(1));
             imageFiles.add(file);
@@ -296,7 +296,7 @@ function reviewSources(root, folder, book, { imported = false } = {}) {
         if (outputs.size > 1) errors.push(`${at}: một ảnh nguồn chỉ được có một file website, không tạo biến thể.`);
         const validMappings = matching.filter((mapping) => {
             const file = typeof mapping.asset === 'string' && path.resolve(root, mapping.asset);
-            const imageDir = path.join(root, `assets/img/books/${book.id}`);
+            const imageDir = path.join(root, 'assets/img/books');
             const valid = file && fs.existsSync(file) && within(imageDir, file)
                 && mapping.asset_sha256 === hash(file);
             if (valid) assets.add(path.relative(root, file));

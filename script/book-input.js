@@ -154,6 +154,18 @@ function toTitleCase(value) {
         .join('');
 }
 
+function authorIdentityName(value) {
+    return normalizeText(value).replace(/\s*\((?:tuyển chọn|biên soạn|chủ biên|sưu tầm)\)\s*$/iu, '').trim();
+}
+
+function normalizeAuthorDisplayName(value) {
+    const normalized = normalizeText(value);
+    const role = normalized.match(/\s*\((tuyển chọn|biên soạn|chủ biên|sưu tầm)\)\s*$/iu);
+    return role
+        ? `${toTitleCase(authorIdentityName(normalized))} (${role[1].toLocaleLowerCase('vi')})`
+        : toTitleCase(normalized);
+}
+
 function normalizeBookTitle(value) {
     return normalizeText(value)
         .replace(/^sách\s*[:\-]?\s+/i, '')
@@ -302,7 +314,7 @@ function sanitizeFormValues(root = form) {
         }
 
         if (field.name === 'authors') {
-            const normalizedNames = normalizeCommaSeparatedValue(field.value);
+            const normalizedNames = parseCommaSeparatedLines(field.value).map(normalizeAuthorDisplayName).join(', ');
             if (normalizedNames !== field.value) {
                 field.value = normalizedNames;
             }
@@ -433,7 +445,7 @@ function getBookSlugFromFormData(formData) {
     const title = normalizeBookTitle(formData.get('title') || '');
     const titleOriginal = (formData.get('titleOriginal') || '').trim();
     const authors = parseCommaSeparatedLines(formData.get('authors') || '');
-    const authorName = authors[0] || '';
+    const authorName = authorIdentityName(authors[0] || '');
     const preferredTitle = slugify(titleOriginal) ? titleOriginal : title;
     const baseText = `${authorName} ${preferredTitle}`.trim();
     return slugify(baseText);
@@ -454,7 +466,7 @@ function getPrimaryAuthorName(formData) {
 }
 
 function getAuthorSlugFromFormData(formData) {
-    return slugify(getPrimaryAuthorName(formData));
+    return slugify(authorIdentityName(getPrimaryAuthorName(formData)));
 }
 
 function findAuthorEntryBySlug(authorSlug) {
@@ -1019,7 +1031,7 @@ function buildBookDetailPayload(formData) {
         id: bookId,
         title: normalizeBookTitle(formData.get('title') || ''),
         title_original: formData.get('titleOriginal') || '',
-        authors: parseCommaSeparatedLines(formData.get('authors') || '').map(toTitleCase),
+        authors: parseCommaSeparatedLines(formData.get('authors') || '').map(normalizeAuthorDisplayName),
         awards: parseLines(formData.get('awards') || ''),
         series: parseLines(formData.get('series') || ''),
         editions: sortEditionsByPublicationDate(editions)
@@ -1158,20 +1170,20 @@ function buildAuthorPayload(formData, existingAuthors = existingAuthorEntries) {
     const mergedAuthors = Array.isArray(existingAuthors) ? existingAuthors.map((entry) => ({ ...entry })) : [];
 
     authors.forEach((name) => {
-        const authorId = slugify(name);
-        const existingAuthor = mergedAuthors.find((entry) => slugify(entry.name || '') === authorId || entry.id === authorId);
+        const authorId = slugify(authorIdentityName(name));
+        const existingAuthor = mergedAuthors.find((entry) => slugify(authorIdentityName(entry.name || '')) === authorId || entry.id === authorId);
         if (existingAuthor) {
             existingAuthor.work_ids = existingAuthor.work_ids || [];
             if (!existingAuthor.work_ids.includes(bookId)) {
                 existingAuthor.work_ids.push(bookId);
             }
-            existingAuthor.name = existingAuthor.name || name;
+            existingAuthor.name = existingAuthor.name || authorIdentityName(name);
             return;
         }
 
         mergedAuthors.push({
             id: authorId,
-            name,
+            name: authorIdentityName(name),
             work_ids: [bookId]
         });
     });
@@ -1192,14 +1204,14 @@ function buildAuthorReviewPayload(formData, existingAuthors = existingAuthorEntr
     }
 
     const reviewAuthors = authors.map((name) => {
-        const authorId = slugify(name);
+        const authorId = slugify(authorIdentityName(name));
         const existingAuthor = Array.isArray(existingAuthors)
-            ? existingAuthors.find((entry) => slugify(entry.name || '') === authorId || entry.id === authorId)
+            ? existingAuthors.find((entry) => slugify(authorIdentityName(entry.name || '')) === authorId || entry.id === authorId)
             : null;
         const payload = existingAuthor ? { ...existingAuthor } : { id: authorId, name, work_ids: [] };
 
         payload.id = payload.id || authorId;
-        payload.name = name;
+        payload.name = authorIdentityName(name);
         payload.work_ids = Array.isArray(payload.work_ids) ? payload.work_ids.filter(Boolean) : [];
         if (bookId && !payload.work_ids.includes(bookId)) {
             payload.work_ids.push(bookId);

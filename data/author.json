@@ -101,7 +101,9 @@
       "ho-anh-thai-sach-tet-nham-dan-2022",
       "ho-anh-thai-sach-tet-quy-mao-2023",
       "ho-anh-thai-sach-tet-giap-thin-2024",
-      "ho-anh-thai-sach-tet-at-ty-2025"
+      "ho-anh-thai-sach-tet-at-ty-2025",
+      "nhieu-tac-gia-van-moi-5-nam-dau-the-ky",
+      "nhieu-tac-gia-van-moi-5-nam-2011-2015"
     ]
   },
   {
@@ -315,7 +317,8 @@
     "work_ids": [
       "victor-hugo-quatrevingt-treize",
       "victor-hugo-nhung-nguoi-khon-kho",
-      "victor-hugo-les-miserables"
+      "victor-hugo-les-miserables",
+      "victor-hugo-notre-dame-de-paris"
     ]
   },
   {
@@ -632,7 +635,9 @@
       "van-moi-10-nam-2015-2025-dong-a",
       "nhieu-tac-gia-dai-viet-su-ky-toan-thu",
       "nhieu-tac-gia-bach-khoa-tri-thuc-bang-hinh",
-      "nhieu-tac-gia-boxset-bo-sach-dau-an-10-nam-omega"
+      "nhieu-tac-gia-boxset-bo-sach-dau-an-10-nam-omega",
+      "nhieu-tac-gia-van-moi-5-nam-dau-the-ky",
+      "nhieu-tac-gia-van-moi-5-nam-2011-2015"
     ]
   },
   {
@@ -1561,6 +1566,27 @@
     "name": "Adam Zamoyski",
     "work_ids": [
       "adam-zamoyski-napoleon-a-life"
+    ]
+  },
+  {
+    "id": "francis-garnier",
+    "name": "Francis Garnier",
+    "work_ids": [
+      "francis-garnier-voyage-dexploration-en-indo-chine"
+    ]
+  },
+  {
+    "id": "dante-alighieri",
+    "name": "Dante Alighieri",
+    "work_ids": [
+      "dante-alighieri-la-divina-commedia"
+    ]
+  },
+  {
+    "id": "pierre-dieulefils",
+    "name": "Pierre Dieulefils",
+    "work_ids": [
+      "pierre-dieulefils-indo-chine-pittoresque-monumentale"
     ]
   }
 ]

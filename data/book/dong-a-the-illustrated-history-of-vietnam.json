@@ -1,6 +1,6 @@
 {
   "id": "dong-a-the-illustrated-history-of-vietnam",
-  "title": "Sách Lịch Sử Việt Nam Bằng Hình",
+  "title": "Lịch Sử Việt Nam Bằng Hình",
   "title_original": "The Illustrated History of Vietnam",
   "authors": [
     "Đông A"
@@ -8,6 +8,31 @@
   "awards": [],
   "series": [],
   "editions": [
+    {
+      "id": "dong-a-the-illustrated-history-of-vietnam-2025-dong-a-bia-da-that",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bản Chữ A",
+      "pub_year": 2025,
+      "pub_date": "2025-01-19",
+      "publisher": "NXB Đại Học Sư Phạm",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 1,
+      "page_count": null,
+      "copy_numbering": "A",
+      "size_cm": "25 x 30",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/dong-a-the-illustrated-history-of-vietnam/dong-a-ban-chu-a-italian-calfskin-cover-with-box.jpg",
+      "gellery_imgs": [],
+      "detail": "- Cuốn sách do Đông A lên ý tưởng và thực hiện trong vòng 17 năm.\n- Bản ký hiệu chữ A, hình thức tiêu chuẩn V.\n- Năm ấn hành: 2024; năm hoàn thiện: 2025.\n- Ruột sách in trên giấy Ford kem Nhật Bản định lượng 104,7 gsm.\n- Bìa bọc da bê Italy.\n- Góc dưới bìa 1 là đầu đao hình rồng thời Lê Trung hưng, thế kỷ XVIII; góc trên là hình đám mây; chính giữa là tem giấy mỹ thuật mạ tên sách bằng vàng thật.\n- Thực hiện theo phong cách đương đại (Contemporary Style), trang trí Doublures bằng da bê.\n- In, vẽ và ép hai màu nhũ; ba cạnh sách mạ nhũ vàng.\n- Hộp sách vỏ sò bọc buckram màu gold của Ratchford, Anh quốc; bên trong lót nhung.\n- So với bản S100: khác loại da bọc bìa."
+    },
     {
       "id": "dong-a-the-illustrated-history-of-vietnam-2025-dong-a-bia-cung-ao-om-65usd",
       "isbn": "978-632-601-812-7",

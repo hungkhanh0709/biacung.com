@@ -5,9 +5,36 @@
   "authors": [
     "Nguyễn Đình Đăng"
   ],
-  "awards": [],
+  "awards": [
+    "Giải Sách Quốc gia"
+  ],
   "series": [],
   "editions": [
+    {
+      "id": "nguyen-dinh-dang-nghe-thuat-dessin-2025-dong-a-bia-da-that",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bản Chữ A",
+      "pub_year": 2025,
+      "pub_date": "2025-01-18",
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 1,
+      "page_count": null,
+      "copy_numbering": "A",
+      "size_cm": "25 x 30",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/nguyen-dinh-dang-nghe-thuat-dessin/dong-a-ban-chu-a-mottled-leather-cover-with-box.jpg",
+      "gellery_imgs": [],
+      "detail": "- Bản chữ A.\n- Cuốn sách tổng hợp và hệ thống hóa các kiến thức về nghệ thuật và chất liệu vẽ dessin của Nguyễn Đình Đăng.\n- Tác phẩm đoạt giải B Giải thưởng Sách Quốc gia năm 2023.\n- Ruột sách in trên giấy Couche Matt 150 gsm.\n- Lõi bìa gồm hai lớp bằng carton và hợp kim nhôm, bọc da bò loang của Mỹ.\n- Tem sách được làm bằng kỹ thuật ghép da onlay.\n- Hộp sách bọc vải."
+    },
     {
       "id": "nguyen-dinh-dang-nghe-thuat-dessin-2022-dong-a-bia-buckram-1tr400k",
       "isbn": "9786043850277",

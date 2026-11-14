@@ -176,15 +176,15 @@
   },
   {
     "detail": "data/book/nguyen-du-truyen-kieu.json",
-    "search_text": "nguyen du truyen kieu nxb van hoc dong a nguyen thach giang dang xuan hoa 50 nam fahasa s500",
+    "search_text": "nguyen du truyen kieu nxb van hoc dong a nguyen thach giang dang xuan hoa 50 nam fahasa s500 ban chu a",
     "updated_at": "2026-11-14",
     "last_pub_year": 2026,
     "last_pub_date": "2026-07-26"
   },
   {
     "detail": "data/book/mario-puzo-the-godfather.json",
-    "search_text": "mario puzo the godfather bo gia nxb dan tri dong a nguyen minh art werger bia mem bia cung ao om nxb van hoc ngoc thu lang bia vai ngoc thu lan bia cung nxb hoi nha van 50 nam fahasa s500 an ban gioi han bo gia 55 ky niem 55 nam bia da that da de bia buckram tri an bia da nhan tao bonded leather",
-    "updated_at": "2026-11-08",
+    "search_text": "mario puzo the godfather bo gia bo gia ky niem 55 nam nxb van hoc nxb dan tri nxb hoi nha van dong a ngoc thu lang nguyen minh ngoc thu lan art werger 50 nam fahasa s500 an ban gioi han ban chu a",
+    "updated_at": "2026-11-14",
     "last_pub_year": 2026,
     "last_pub_date": "2026-07-26"
   },
@@ -534,9 +534,9 @@
   },
   {
     "detail": "data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json",
-    "search_text": "dai viet su ky toan thu nhieu tac gia nxb van hoc dong a ngo duc tho hoang van lau s895 bia da that bia buckram boxset bia cung",
+    "search_text": "nhieu tac gia dai viet su ky toan thu nxb van hoc dong a ngo duc tho hoang van lau s895 ban chu a",
     "last_pub_year": 2026,
-    "updated_at": "2026-07-11"
+    "updated_at": "2026-11-14"
   },
   {
     "detail": "data/book/franz-kafka-tuyen-tap-tac-pham-frank-kafka.json",
@@ -719,6 +719,13 @@
     "last_pub_year": 2026
   },
   {
+    "detail": "data/book/van-moi-10-nam-2015-2025-dong-a.json",
+    "search_text": "nhieu tac gia ho anh thai tuyen chon van moi 10 nam 2015 2025 nxb hoi nha van dong a bui tien tuan dang hong quan dang xuan hoa do hoang tuong dong a hoang phuong vy kim duan ngo xuan khoi van moi dong a s100",
+    "updated_at": "2026-11-14",
+    "last_pub_year": 2025,
+    "last_pub_date": "2025-11-05"
+  },
+  {
     "detail": "data/book/robert-beer-the-encyclopedia-of-tibetan-symbols-and-motifs.json",
     "search_text": "robert beer the encyclopedia of tibetan symbols and motifs bach khoa toan thu bieu tuong va hoa van mat tang bach khoa toan thu bieu tuong va hoa van mat tang bia vai xanh khong hop bach khoa toan thu bieu tuong va hoa van mat tang bia vai xanh co hop bach khoa toan thu bieu tuong va hoa van mat tang buckram vang ky truc tiep nxb dan tri dong a jigme s500",
     "last_pub_year": 2025,
@@ -740,6 +747,55 @@
     "last_pub_date": "2025-01-19"
   },
   {
+    "detail": "data/book/gavriil-troyepolsky-con-bim-trang-tai-den.json",
+    "search_text": "gavriil troyepolsky con bim trang tai den nxb van hoc dong a tran thu tuan nguyen tuan nguyen tran thu duc lam dong a classics bo tui dong a classic hoa van ban chu a s100",
+    "last_pub_year": 2025,
+    "updated_at": "2026-11-14",
+    "last_pub_date": "2025-01-19"
+  },
+  {
+    "detail": "data/book/francis-garnier-voyage-dexploration-en-indo-chine.json",
+    "search_text": "francis garnier voyage dexploration en indochine hanh trinh tham hiem dong duong nxb dai hoc su pham dong a nguyen minh louis delaporte tu sach dong duong ban chu a",
+    "last_pub_year": 2025,
+    "last_pub_date": "2025-01-19",
+    "updated_at": "2026-11-14"
+  },
+  {
+    "detail": "data/book/victor-hugo-notre-dame-de-paris.json",
+    "search_text": "victor hugo notredame de paris nha tho duc ba paris nxb van hoc dong a mai vu minh khoa ban chu a",
+    "last_pub_year": 2025,
+    "last_pub_date": "2025-01-19",
+    "updated_at": "2026-11-14"
+  },
+  {
+    "detail": "data/book/dante-alighieri-la-divina-commedia.json",
+    "search_text": "dante alighieri la divina commedia than khuc nxb van hoc dong a nguyen van hoan gustave dore ban chu a",
+    "last_pub_year": 2025,
+    "last_pub_date": "2025-01-19",
+    "updated_at": "2026-11-14"
+  },
+  {
+    "detail": "data/book/dong-a-the-illustrated-history-of-vietnam.json",
+    "search_text": "dong a the illustrated history of vietnam lich su viet nam bang hinh nxb dai hoc su pham ban chu a",
+    "updated_at": "2026-11-14",
+    "last_pub_year": 2025,
+    "last_pub_date": "2025-01-19"
+  },
+  {
+    "detail": "data/book/nhieu-tac-gia-van-moi-5-nam-dau-the-ky.json",
+    "search_text": "nhieu tac gia ho anh thai tuyen chon van moi 5 nam dau the ky dong a van moi dong a",
+    "last_pub_year": 2025,
+    "last_pub_date": "2025-01-19",
+    "updated_at": "2026-11-14"
+  },
+  {
+    "detail": "data/book/nhieu-tac-gia-van-moi-5-nam-2011-2015.json",
+    "search_text": "nhieu tac gia ho anh thai tuyen chon van moi 5 nam 20112015 dong a van moi dong a",
+    "last_pub_year": 2025,
+    "last_pub_date": "2025-01-19",
+    "updated_at": "2026-11-14"
+  },
+  {
     "detail": "data/book/thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong.json",
     "search_text": "thach lam gio dau mua ha noi bam sau pho phuong nxb van hoc dong a dao hai phong van chuong va my thuat ban chu a",
     "last_pub_year": 2025,
@@ -756,6 +812,34 @@
   {
     "detail": "data/book/dao-duy-anh-viet-nam-van-hoa-su-cuong.json",
     "search_text": "dao duy anh viet nam van hoa su cuong nxb dai hoc su pham dong a ban chu a s100 s500",
+    "last_pub_year": 2025,
+    "updated_at": "2026-11-14",
+    "last_pub_date": "2025-01-18"
+  },
+  {
+    "detail": "data/book/la-fontaine-the-fables-of-la-fontaine.json",
+    "search_text": "la fontaine the fables of la fontaine ngu ngon la fontaine nxb van hoc dong a nguyen van vinh tu mo huynh ly nguyen dinh dinh khac phach do anh vu hoang giang pham anh xuan mai lien dat nhan khac do le phoi thi tran chau gustave dore ban chu a s100 s895",
+    "last_pub_year": 2025,
+    "updated_at": "2026-11-14",
+    "last_pub_date": "2025-01-18"
+  },
+  {
+    "detail": "data/book/antoine-galland-nghin-le-mot-dem.json",
+    "search_text": "antoine galland nghin le mot dem nxb van hoc dong a phan quang dong a classic hoa van ban chu a s100",
+    "last_pub_year": 2025,
+    "updated_at": "2026-11-14",
+    "last_pub_date": "2025-01-18"
+  },
+  {
+    "detail": "data/book/nguyen-dinh-dang-nghe-thuat-dessin.json",
+    "search_text": "nguyen dinh dang nghe thuat dessin nxb dan tri dong a ban chu a s1200 giai sach quoc gia",
+    "last_pub_year": 2025,
+    "last_pub_date": "2025-01-18",
+    "updated_at": "2026-11-14"
+  },
+  {
+    "detail": "data/book/vu-trong-phung-so-do.json",
+    "search_text": "vu trong phung so do nxb van hoc nxb hoi nha van dong a nha nam thanh phong van chuong va my thuat viet nam danh tac nha nam ban chu a an ban gioi han",
     "last_pub_year": 2025,
     "updated_at": "2026-11-14",
     "last_pub_date": "2025-01-18"
@@ -882,18 +966,6 @@
     "last_pub_year": 2025
   },
   {
-    "detail": "data/book/van-moi-10-nam-2015-2025-dong-a.json",
-    "search_text": "van moi 10 nam 2015 2025 nhieu tac gia ho anh thai van moi dong a nxb hoi nha van dong a",
-    "updated_at": "2026-07-04",
-    "last_pub_year": 2025
-  },
-  {
-    "detail": "data/book/dong-a-the-illustrated-history-of-vietnam.json",
-    "search_text": "sach lich su viet nam bang hinh the illustrated history of vietnam dong a nxb dai hoc su pham",
-    "updated_at": "2026-07-03",
-    "last_pub_year": 2025
-  },
-  {
     "detail": "data/book/percival-everett-james.json",
     "search_text": "james percival everett pulitzer nxb vintage penguin books bia mem",
     "updated_at": "2026-07-02",
@@ -907,23 +979,10 @@
     "last_pub_date": "2024-12-30"
   },
   {
-    "detail": "data/book/gavriil-troyepolsky-con-bim-trang-tai-den.json",
-    "search_text": "gavriil troyepolsky con bim trang tai den nxb van hoc dong a tuan nguyen tran thu dong a classics bo tui dong a classic hoa van s100 bia da that v20 s80 duc lam",
-    "last_pub_year": 2024,
-    "updated_at": "2026-11-08",
-    "last_pub_date": "2024-08-08"
-  },
-  {
     "detail": "data/book/ho-anh-thai-sach-tet-giap-thin-2024.json",
     "search_text": "ho anh thai tuyen chon sach tet giap thin 2024 nxb van hoc dong a sach tet dong a an ban gioi han bia cung",
     "last_pub_year": 2024,
     "updated_at": "2026-10-30"
-  },
-  {
-    "detail": "data/book/antoine-galland-nghin-le-mot-dem.json",
-    "search_text": "antoine galland nghin le mot dem nxb van hoc dong a phan quang dong a classic hoa van bia mem bia cung ao om s100 bia da that v20 s80",
-    "last_pub_year": 2024,
-    "updated_at": "2026-11-11"
   },
   {
     "detail": "data/book/henryk-sienkiewicz-w-pustyni-i-w-puszczy.json",
@@ -986,13 +1045,6 @@
     "last_pub_year": 2023,
     "updated_at": "2026-11-13",
     "last_pub_date": "2023-12-16"
-  },
-  {
-    "detail": "data/book/la-fontaine-the-fables-of-la-fontaine.json",
-    "search_text": "ngu ngon la fontaine the fables of la fontaine la fontaine nxb van hoc dong a nhieu nguoi dich gustave dore s100 bia da that v20 s80 s895 bia da nhan tao microfiber nguyen van vinh tu mo huynh ly nguyen dinh dinh khac phach do anh vu hoang giang pham anh xuan mai lien dat nhan khac do le phoi thi tran chau",
-    "last_pub_year": 2023,
-    "updated_at": "2026-11-11",
-    "last_pub_date": "2023-08-01"
   },
   {
     "detail": "data/book/ernest-hemingway-the-old-man-and-the-sea.json",
@@ -1130,12 +1182,6 @@
     "last_pub_year": 2023
   },
   {
-    "detail": "data/book/vu-trong-phung-so-do.json",
-    "search_text": "vu trong phung so do nxb van hoc nxb hoi nha van dong a nha nam thanh phong van chuong va my thuat viet nam danh tac nha nam an ban gioi han bia cung",
-    "last_pub_year": 2023,
-    "updated_at": "2026-10-28"
-  },
-  {
     "detail": "data/book/anna-sewell-black-beauty.json",
     "search_text": "anna sewell black beauty ngua o yeu dau nxb van hoc dong a thanh van dong a classics bo tui dong a classic hoa van",
     "last_pub_year": 2023,
@@ -1242,13 +1288,6 @@
     "search_text": "đat mau sicily the sicilian mario puzo nxb van hoc đong a đang thu an ban gioi han bia da nhan tao bia mem",
     "updated_at": "2026-07-02",
     "last_pub_year": 2023
-  },
-  {
-    "detail": "data/book/nguyen-dinh-dang-nghe-thuat-dessin.json",
-    "search_text": "nguyen dinh dang nghe thuat dessin nxb dan tri dong a s1200",
-    "last_pub_year": 2022,
-    "last_pub_date": "2022-11-17",
-    "updated_at": "2026-11-11"
   },
   {
     "detail": "data/book/jacinto-benavente-tuyen-tap-kich-jacinto-benavente.json",
@@ -1454,6 +1493,13 @@
     "search_text": "fools die mario puzo nxb van hoc đong a nguyen minh dai thi chet",
     "updated_at": "2026-06-30",
     "last_pub_year": 2022
+  },
+  {
+    "detail": "data/book/pierre-dieulefils-indo-chine-pittoresque-monumentale.json",
+    "search_text": "pierre dieulefils indochine pittoresque monumentale dong duong xinh dep va ky vi nxb dan tri dong a luu dinh tuan tu sach dong duong s365 ban chu a",
+    "last_pub_year": 2021,
+    "last_pub_date": "2021-03-31",
+    "updated_at": "2026-11-14"
   },
   {
     "detail": "data/book/ho-anh-thai-sach-tet-tan-suu-2021.json",
