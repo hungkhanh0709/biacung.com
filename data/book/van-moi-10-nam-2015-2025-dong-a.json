@@ -4,13 +4,57 @@
   "title_original": "",
   "authors": [
     "Nhiều Tác Giả",
-    "Hồ Anh Thái"
+    "Hồ Anh Thái (tuyển chọn)"
   ],
   "awards": [],
   "series": [
     "Văn Mới Đông A"
   ],
   "editions": [
+    {
+      "id": "van-moi-10-nam-2015-2025-dong-a-2025-dong-a-bia-cung-ao-om-3tr",
+      "isbn": null,
+      "series_ids": [
+        "van-moi-dong-a"
+      ],
+      "caption": "S100",
+      "pub_year": 2025,
+      "pub_date": "2025-11-05",
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Bùi Tiến Tuấn",
+        "Đặng Hồng Quân",
+        "Đặng Xuân Hòa",
+        "Đỗ Hoàng Tường",
+        "Đông A",
+        "Hoàng Phượng Vỹ",
+        "Kim Duẩn",
+        "Ngô Xuân Khôi"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "3tr",
+      "print_run": 100,
+      "page_count": null,
+      "copy_numbering": "01–100",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/van-moi-10-nam-2015-2025-dong-a/dong-a-s100-dust-jacket-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/van-moi-10-nam-2015-2025-dong-a/dong-a-s100-jacket-and-red-hardcover.jpg",
+        "/assets/img/books/van-moi-10-nam-2015-2025-dong-a/dong-a-s100-red-cover-logo-detail.jpg",
+        "/assets/img/books/van-moi-10-nam-2015-2025-dong-a/dong-a-s100-author-signatures-kieu-bich-huong-le-anh-hoai.jpg",
+        "/assets/img/books/van-moi-10-nam-2015-2025-dong-a/dong-a-s100-author-signatures-bao-ninh-hien-trang-ho-anh-thai.jpg",
+        "/assets/img/books/van-moi-10-nam-2015-2025-dong-a/dong-a-s100-illustrator-signatures.jpg",
+        "/assets/img/books/van-moi-10-nam-2015-2025-dong-a/dong-a-s100-numbering-and-illustrator-credits.jpg",
+        "/assets/img/books/van-moi-10-nam-2015-2025-dong-a/dong-a-s100-signing-session.jpg"
+      ],
+      "detail": "- Hợp tuyển văn xuôi của các tác giả mới và tác giả đang được mến mộ, do Hồ Anh Thái tuyển chọn.\n- Ấn bản S100 gồm 100 bản bìa cứng đặc biệt, đánh số từ 01 đến 100.\n- Bìa cứng có áo; bìa trong màu đỏ, có logo Văn Mới và nhãn 100.\n- Ruột sách in trên giấy mỹ thuật Conqueror.\n- Có chữ ký trực tiếp của các tác giả và họa sĩ trong tuyển tập."
+    },
     {
       "id": "van-moi-10-nam-2015-2025-dong-a-2025-dong-a-bia-mem-290k",
       "isbn": "978-632-618-828-8",

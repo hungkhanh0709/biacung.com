@@ -11,6 +11,33 @@
   ],
   "editions": [
     {
+      "id": "antoine-galland-nghin-le-mot-dem-2025-dong-a-bia-da-that",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bản Chữ A",
+      "pub_year": 2025,
+      "pub_date": "2025-01-18",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Phan Quang"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 1,
+      "page_count": null,
+      "copy_numbering": "A",
+      "size_cm": "18.5 x 26.5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/antoine-galland-nghin-le-mot-dem/dong-a-ban-chu-a-dark-moss-two-volumes.jpg",
+      "gellery_imgs": [],
+      "detail": "- Bản chữ A, bộ hai tập.\n- Pho sách tập hợp những câu chuyện dân gian kỳ ảo có xuất xứ Ả Rập của Antoine Galland, với bản dịch của Phan Quang.\n- Ruột sách in trên giấy Dali Bianco Cream 110 gsm.\n- Bìa bọc da bò màu xanh rêu đậm.\n- Chính giữa bìa 1 của mỗi tập gắn tag đồng.\n- Hộp sách bằng carton, viền da, in hoa văn thủy ấn."
+    },
+    {
       "id": "antoine-galland-nghin-le-mot-dem-2024-dong-a-bia-mem-100k",
       "isbn": "978-604-477-821-1",
       "series_ids": [
@@ -45,7 +72,7 @@
       "caption": "S100",
       "pub_year": 2023,
       "pub_date": "2023-04-15",
-      "publisher": "",
+      "publisher": "NXB Văn Học",
       "issuers": [
         "Đông A"
       ],

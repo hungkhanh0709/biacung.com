@@ -9,6 +9,47 @@
   "series": [],
   "editions": [
     {
+      "id": "la-fontaine-the-fables-of-la-fontaine-2025-dong-a-bia-da-that",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bản Chữ A",
+      "pub_year": 2025,
+      "pub_date": "2025-01-18",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Văn Vĩnh",
+        "Tú Mỡ",
+        "Huỳnh Lý",
+        "Nguyễn Đình",
+        "Đinh Khắc Phách",
+        "Đỗ Anh Vũ",
+        "Hoàng Giang",
+        "Phạm Anh Xuân",
+        "Mai Liên",
+        "Đạt Nhân",
+        "Khắc Đỗ",
+        "Lê Phối Thi",
+        "Trần Châu"
+      ],
+      "illustrators": [
+        "Gustave Doré"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 1,
+      "page_count": 844,
+      "copy_numbering": "A",
+      "size_cm": "25 x 30",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/la-fontaine-the-fables-of-la-fontaine/dong-a-ban-chu-a-pacifique-cover.jpg",
+      "gellery_imgs": [],
+      "detail": "- Bản chữ A.\n- Toàn tập 240 ngụ ngôn La Fontaine, với bản dịch của nhiều thế hệ dịch giả và gần 600 minh họa khắc gỗ của Gustave Doré.\n- Ruột sách in trên giấy Festival #101 Ivory 120 gsm.\n- Theo giới thiệu ấn bản, chỉ bản ký hiệu chữ A của tựa sách này sử dụng da dê màu xanh Pacifique của Alran, Pháp.\n- Bìa dập nhũ.\n- Hộp sách bọc vải bên ngoài, bên trong lót nhung đen."
+    },
+    {
       "id": "la-fontaine-the-fables-of-la-fontaine-2023-dong-a-bia-da-that-6tr",
       "series_ids": [],
       "isbn": null,

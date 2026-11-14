@@ -37,11 +37,11 @@
       "copy_numbering": "KIEU 001-KIEU 500",
       "size_cm": "25 x 30",
       "weight_g": 2000,
-      "thumbnail": "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-cover.jpeg",
+      "thumbnail": "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-book-and-box-angle.jpeg",
       "gellery_imgs": [
         "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-cover-and-open-box.jpeg",
+        "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-cover.jpeg",
         "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-cloth-detail.jpeg",
-        "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-book-and-box-angle.jpeg",
         "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-book-and-box-spine.jpeg",
         "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-box-label.jpeg",
         "/assets/img/books/nguyen-du-truyen-kieu/dong-a-s500-spines.jpeg",
@@ -84,6 +84,31 @@
         "/assets/img/books/nguyen-du-truyen-kieu/dong-a-pho-thong-van-ban-chu-giai.jpeg"
       ],
       "detail": "- Bản phổ thông, ấn hành nhân kỷ niệm 50 năm thành lập FAHASA.\n- Mỗi trang chia thành hai phần gồm văn bản chính và phần khảo đính, chú giải của nhà nghiên cứu Nguyễn Thạch Giang, thuận tiện tra cứu từ cổ, điển tích và điển cố ngay khi đọc.\n- Ruột in bốn màu trên giấy Ford định lượng 150 gsm.\n- Gồm 16 tranh minh họa của họa sĩ Đặng Xuân Hòa.\n- Số lượng phát hành: 1.000 bản."
+    },
+    {
+      "id": "nguyen-du-truyen-kieu-2025-dong-a-bia-cung",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bản Chữ A",
+      "pub_year": 2025,
+      "pub_date": "2025-01-19",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "",
+      "print_run": 1,
+      "page_count": null,
+      "copy_numbering": "A",
+      "size_cm": "15.2 x 21",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/nguyen-du-truyen-kieu/dong-a-ban-chu-a-hanoia-gold-leaf-cover-with-box.jpg",
+      "gellery_imgs": [],
+      "detail": "- Bản ký hiệu chữ A, hình thức tiêu chuẩn V; ấn bản đặc biệt Truyện Kiều của Nguyễn Du do Đông A thực hiện.\n- Năm ấn hành: 2024; năm hoàn thiện: 2025.\n- Ruột sách in trên giấy dó truyền thống Bắc Ninh, Việt Nam.\n- Bìa sơn mài, bề mặt dán vàng lá do Hanoia thực hiện.\n- Ở giữa bìa 1 là hình cây đàn tỳ bà; bên phải từ trên xuống là tên tác phẩm, tác giả, thông tin minh họa và logo NXB Văn học, Đông A.\n- Ruột sách in bằng kỹ thuật Letterpress (in lún); minh họa hai màu.\n- Minh họa được chọn và tách thành hai màu từ cuốn Kim Vân Kiều tân truyện hội bản, bản Nôm của Hoàng gia triều Nguyễn lưu ở Thư viện London, Vương quốc Anh.\n- Sách khâu theo lối Coptic và để gáy trần.\n- Hộp sách vỏ sò bọc vải màu vàng đồng, bên trong lót nhung màu be.\n- So với bản S100: bìa dán vàng lá."
     }
   ]
 }

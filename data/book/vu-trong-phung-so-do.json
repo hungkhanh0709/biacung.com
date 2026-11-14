@@ -12,6 +12,35 @@
   ],
   "editions": [
     {
+      "id": "vu-trong-phung-so-do-2025-dong-a-bia-da-that",
+      "isbn": null,
+      "series_ids": [
+        "van-chuong-va-my-thuat"
+      ],
+      "caption": "Bản Chữ A",
+      "pub_year": 2025,
+      "pub_date": "2025-01-18",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Thành Phong"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 1,
+      "page_count": null,
+      "copy_numbering": "A",
+      "size_cm": "20 x 30",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/vu-trong-phung-so-do/dong-a-ban-chu-a-denim-exposed-spine-with-box.jpg",
+      "gellery_imgs": [],
+      "detail": "- Bản chữ A.\n- Hoạt kê tiểu thuyết của Vũ Trọng Phụng, in lại theo bản in lần đầu năm 1938 của nhà xuất bản Lê Cường, bổ sung minh họa của Thành Phong.\n- Ruột sách in trên giấy dó Việt Nam.\n- Bìa bọc da bò màu xanh Denim.\n- Sách để trần gáy, khâu tay.\n- Hộp sách bằng carton, tạo gáy da có siết năm gân."
+    },
+    {
       "id": "vu-trong-phung-so-do-2023-nha-nam-bia-cung-240k",
       "isbn": null,
       "series_ids": [

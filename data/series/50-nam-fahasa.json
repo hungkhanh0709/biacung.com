@@ -4,6 +4,9 @@
   "description": "Phiên Bản Độc Quyền 50 Năm Fahasa",
   "thumbnail": "/assets/img/series/50-nam-fahasa.jpeg",
   "work_ids": [
+    "quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc",
+    "jared-diamond-upheaval-turning-points-for-nations-in-crisis",
+    "niccolo-machiavelli-il-principe",
     "masashi-kishimoto-naruto",
     "nhieu-tac-gia-boxset-bo-sach-dau-an-10-nam-omega",
     "mario-puzo-the-godfather",
@@ -14,9 +17,6 @@
     "nguyen-nhat-anh-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim",
     "hoang-nam-tien-sach-thu-cho-em",
     "jose-mauro-de-vasconcelos-boxset-cay-cam-ngot-cua-toi-suoi-am-mat-troi",
-    "lucy-maud-montgomery-anne-of-green-gables",
-    "quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc",
-    "niccolo-machiavelli-il-principe",
-    "jared-diamond-upheaval-turning-points-for-nations-in-crisis"
+    "lucy-maud-montgomery-anne-of-green-gables"
   ]
 }
