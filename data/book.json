@@ -14,6 +14,13 @@
     "updated_at": "2026-11-12"
   },
   {
+    "detail": "data/book/do-am-son-thanh-cat-tu-han-y-chi-chinh-phuc-the-gioi.json",
+    "search_text": "do am son thanh cat tu han y chi chinh phuc the gioi nxb dan tri dong a tran hoai thu",
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-14",
+    "last_pub_date": "2026-12-18"
+  },
+  {
     "detail": "data/book/gustave-flaubert-madame-bovary.json",
     "search_text": "gustave flaubert madame bovary ba bovary nxb van hoc dong a mai vu minh kho",
     "last_pub_year": 2026,
@@ -56,13 +63,6 @@
     "last_pub_date": "2026-11-20"
   },
   {
-    "detail": "data/book/do-am-son-thanh-cat-tu-han-y-chi-chinh-phuc-the-gioi.json",
-    "search_text": "do am son thanh cat tu han y chi chinh phuc the gioi nxb dan tri dong a tran hoai thu",
-    "last_pub_year": 2026,
-    "updated_at": "2026-11-11",
-    "last_pub_date": "2026-11-18"
-  },
-  {
     "detail": "data/book/tadeusz-doega-mostowicz-znachor.json",
     "search_text": "tadeusz doegamostowicz znachor thay lang nxb dan tri dong a nguyen huu dung",
     "last_pub_year": 2026,
@@ -78,9 +78,9 @@
   },
   {
     "detail": "data/book/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc.json",
-    "search_text": "quoc su quan trieu nguyen kham dinh viet su thong giam cuong muc nxb van hoc dong a hoa bang pham trong diem tran van giap 50 nam fahasa s365 bia buckram",
+    "search_text": "quoc su quan trieu nguyen kham dinh viet su thong giam cuong muc nxb van hoc dong a hoa bang pham trong diem tran van giap 50 nam fahasa s365",
     "last_pub_year": 2026,
-    "updated_at": "2026-11-08",
+    "updated_at": "2026-11-14",
     "last_pub_date": "2026-11-16"
   },
   {
@@ -176,8 +176,8 @@
   },
   {
     "detail": "data/book/nguyen-du-truyen-kieu.json",
-    "search_text": "nguyen du truyen kieu nxb van hoc dong a nguyen thach giang dang xuan hoa bia vai bia cung 50 nam fahasa an ban gioi han s500",
-    "updated_at": "2026-11-08",
+    "search_text": "nguyen du truyen kieu nxb van hoc dong a nguyen thach giang dang xuan hoa 50 nam fahasa s500",
+    "updated_at": "2026-11-14",
     "last_pub_year": 2026,
     "last_pub_date": "2026-07-26"
   },
