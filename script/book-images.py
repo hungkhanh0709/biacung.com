@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Import one website asset per source image; preserve composition, resize only when useful."""
+"""Prepare one website asset per source; preserve composition and reduce bytes when useful."""
 import argparse
 import hashlib
 import json
@@ -45,11 +45,9 @@ def context(root, draft, plan_name):
     plan = load(plan_file)
     if not SLUG.fullmatch(plan.get("book_id", "")):
         raise ValueError("book_id không hợp lệ.")
-    book_file = root / f"data/book/{plan['book_id']}.json"
-    # New books need their assets ready before the first form/API save.
-    # Work only on the draft until that save creates the official detail.
-    if not book_file.exists():
-        book_file = child(folder, "book.json")
+    # The draft includes newly added editions even for an existing work.
+    # Only the Chrome form may save official book metadata.
+    book_file = child(folder, "book.json")
     book = load(book_file)
     if book.get("id") != plan["book_id"]:
         raise ValueError("ID file sách không khớp.")
@@ -100,22 +98,18 @@ def preview(root, draft="data/_raw", plan_name="image-plan.json"):
             unchanged = image.size == original_size and raw.getexif().get(274, 1) == 1
             codec = FORMATS[Path(entry["name"]).suffix]
             quality = None
-            action = "kept"
-            if unchanged:
+            options = {"icc_profile": raw.info["icc_profile"]} if raw.info.get("icc_profile") else {}
+            if codec in {"JPEG", "WEBP", "AVIF"}:
+                options["quality"] = quality = 85
+            if codec == "JPEG":
+                options.update(optimize=True, progressive=True)
+            elif codec == "PNG":
+                options["optimize"] = True
+            image.save(target, format=codec, **options)
+            action = "compressed" if unchanged else "resized" if image.size != original_size else "oriented"
+            if target.stat().st_size >= source.stat().st_size and raw.getexif().get(274, 1) == 1:
                 shutil.copyfile(source, target)
-            else:
-                options = {"icc_profile": raw.info["icc_profile"]} if raw.info.get("icc_profile") else {}
-                if codec in {"JPEG", "WEBP", "AVIF"}:
-                    options["quality"] = quality = 85
-                if codec == "JPEG":
-                    options.update(optimize=True, progressive=True)
-                elif codec == "PNG":
-                    options["optimize"] = True
-                image.save(target, format=codec, **options)
-                action = "resized" if image.size != original_size else "oriented"
-                if target.stat().st_size >= source.stat().st_size and raw.getexif().get(274, 1) == 1:
-                    shutil.copyfile(source, target)
-                    quality, action = None, "kept-smaller-source"
+                quality, action = None, "kept-smaller-source"
             with Image.open(target) as result:
                 final_size = ImageOps.exif_transpose(result).size
             report["images"].append({**entry, "source_sha256": digest(source), "preview_sha256": digest(target),
@@ -178,8 +172,6 @@ def apply(root, draft="data/_raw", plan_name="image-plan.json"):
         edition = editions[edition_id]
         edition["gellery_imgs"] = [url for url in edition.get("gellery_imgs", []) if url != edition.get("thumbnail")]
     write(book_file, book)
-    if book_file != folder / "book.json":
-        write(folder / "book.json", book)
     evidence["images"] = [m for m in evidence.get("images", []) if m["source"] not in {e["source"] for e in mappings}] + mappings
     write(evidence_file, evidence)
     return {"book_id": book["id"], "imported": mappings}

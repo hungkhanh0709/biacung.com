@@ -11,6 +11,35 @@
   ],
   "editions": [
     {
+      "id": "nam-cao-doi-lua-xung-doi-nua-dem-cuoi-2025-dong-a-bia-da-that",
+      "isbn": null,
+      "series_ids": [
+        "van-chuong-va-my-thuat"
+      ],
+      "caption": "Bản Chữ A",
+      "pub_year": 2025,
+      "pub_date": "2025-01-18",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Đặng Xuân Hòa"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 1,
+      "page_count": null,
+      "copy_numbering": "A",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/nam-cao-doi-lua-xung-doi-nua-dem-cuoi/dong-a-ban-chu-a-espelette-cover.jpg",
+      "gellery_imgs": [],
+      "detail": "- Bản chữ A.\n- Hợp tuyển ba tập truyện ngắn Đôi lứa xứng đôi, Nửa đêm và Cười của Nam Cao, có các truyện Đôi lứa xứng đôi, Đời thừa; minh họa của Đặng Xuân Hòa.\n- Ruột sách in trên giấy Tintoretto Gesso 200 gsm.\n- Chỉ duy nhất ấn bản ký hiệu chữ A của tựa sách này sử dụng da dê màu đỏ gạch Espelette của Alran, Pháp.\n- Bìa 1 gắn ba tag đồng.\n- Hộp sách bọc giấy in thủy ấn, viền da cùng loại với bìa sách."
+    },
+    {
       "id": "nam-cao-doi-lua-xung-doi-nua-dem-cuoi-2022-dong-a-bia-cung-360k",
       "isbn": "978-604-372-608-4",
       "series_ids": [

@@ -10,16 +10,16 @@ const { sortBookIndex } = require('./sort-book');
 const { emptyBook, validate } = require('./book-intake');
 const { createPublicationFixture } = require('./test-helpers/publication-fixture');
 
-test('calendar input fills missing components and accepts Vietnamese dates', () => {
+test('calendar input fills only a missing day and accepts Vietnamese dates', () => {
     for (const [input, expected] of [
-        ['2026', '2026-01-01'], ['2026-07', '2026-07-01'], ['07/2026', '2026-07-01'],
+        ['2026-07', '2026-07-01'], ['07/2026', '2026-07-01'],
         ['8/11/2026', '2026-11-08'], ['2026-11-08', '2026-11-08'], [' 2026-1-2 ', '2026-01-02'],
-        ['2000-02-29', '2000-02-29'], ['2024-02-29', '2024-02-29'], [1980, '1980-01-01']
+        ['2000-02-29', '2000-02-29'], ['2024-02-29', '2024-02-29']
     ]) assert.equal(publication.normalizePubDate(input), expected, String(input));
 });
 
 test('invalid dates do not roll over, truncate, or depend on timezones', () => {
-    for (const input of [null, '', '0', '999', '10000', '2026-00', '2026-13', '2026-02-29',
+    for (const input of [null, '', '2026', 1980, '0', '999', '10000', '2026-00', '2026-13', '2026-02-29',
         '1900-02-29', '2026-04-31', '2026-01-00', '2026-01-32', '2026-01-01T00:00:00Z',
         'Quý IV/2019', '2026-11-08 extra', '2026-1-2-3', '31/04/2026']) {
         assert.equal(publication.normalizePubDate(input), null, String(input));
@@ -28,7 +28,7 @@ test('invalid dates do not roll over, truncate, or depend on timezones', () => {
     assert.equal(publication.isIsoDate('2026-01-02'), true);
 });
 
-test('editions sort only dated positions, keeping legacy and unknown entries anchored', () => {
+test('editions sort by year then date, with stable ties and no input mutation', () => {
     const editions = [
         { id: 'unknown', pub_year: null }, { id: 'legacy', pub_year: 2026 },
         { id: 'july-a', pub_date: '2026-07-01', pub_year: 1900 },
@@ -37,7 +37,7 @@ test('editions sort only dated positions, keeping legacy and unknown entries anc
     ];
     const before = structuredClone(editions);
     assert.deepEqual(publication.sortEditions(editions).map((e) => e.id),
-        ['unknown', 'legacy', 'november', 'july-a', 'july-b', 'missing', 'old']);
+        ['november', 'july-a', 'july-b', 'legacy', 'old', 'unknown', 'missing']);
     assert.deepEqual(editions, before);
 });
 
@@ -52,17 +52,17 @@ test('index summary follows the latest effective edition, including newer legacy
         { editions: [{ pub_date: null, pub_year: null }] }), { detail: 'a', last_pub_year: '' });
 });
 
-test('index order preserves all legacy positions even after one book gets a date', () => {
+test('index sorts legacy years and dated books without using updated_at', () => {
     const entries = [
         { id: 'old', last_pub_year: 2025, updated_at: '2099-01-01' },
         { id: 'tie-a', last_pub_year: 2026, updated_at: '2000-01-01' },
         { id: 'november', last_pub_date: '2026-11-08', last_pub_year: 2026 },
         { id: 'tie-b', last_pub_year: 2026, updated_at: '2099-01-01' }
     ];
-    assert.deepEqual(publication.sortBookEntries(entries).map((e) => e.id), ['old', 'tie-a', 'november', 'tie-b']);
+    assert.deepEqual(publication.sortBookEntries(entries).map((e) => e.id), ['november', 'tie-a', 'tie-b', 'old']);
 });
 
-test('dated entries swap only dated slots; null, invalid and absent dates stay anchored', () => {
+test('mixed dates sort consistently and idempotently in editions and index', () => {
     const entries = [
         { id: 'legacy', pub_year: 2027 },
         { id: 'july', pub_date: '2026-07-18' },
@@ -71,10 +71,9 @@ test('dated entries swap only dated slots; null, invalid and absent dates stay a
         { id: 'invalid', pub_date: '2026-02-29' },
         { id: 'november-b', pub_date: '2026-11-16' }
     ];
-    const expected = ['legacy', 'november-a', 'null', 'november-b', 'invalid', 'july'];
+    const expected = ['legacy', 'november-a', 'november-b', 'july', 'null', 'invalid'];
     const sorted = publication.sortEditions(entries);
     assert.deepEqual(sorted.map(e => e.id), expected);
-    for (const position of [0, 2, 4]) assert.equal(sorted[position], entries[position]);
     assert.deepEqual(publication.sortEditions(sorted), sorted);
     const index = entries.map(({ pub_date, pub_year, ...entry }) => ({
         ...entry, last_pub_date: pub_date, last_pub_year: pub_year, updated_at: '2099-01-01'
@@ -82,9 +81,9 @@ test('dated entries swap only dated slots; null, invalid and absent dates stay a
     assert.deepEqual(publication.sortBookEntries(index).map(e => e.id), expected);
 });
 
-test('all legacy entries keep their order, and a fully dated list sorts descending', () => {
+test('legacy years and fully dated lists both sort descending', () => {
     const legacy = [{ id: 'old', pub_year: 2020 }, { id: 'unknown' }, { id: 'new', pub_year: 2026 }];
-    assert.deepEqual(publication.sortEditions(legacy), legacy);
+    assert.deepEqual(publication.sortEditions(legacy).map(e => e.id), ['new', 'old', 'unknown']);
     const dated = [
         { id: 'july', pub_date: '2026-07-18' },
         { id: 'november-a', pub_date: '2026-11-16' },
@@ -101,12 +100,54 @@ test('normalization preserves legacy absence and IDs, while syncing year from ne
         { id: 'legacy', pub_year: 2025 }, { id: 'dated', pub_date: '11/2026', pub_year: 1900 },
         { id: 'unknown', pub_date: null, pub_year: null }
     ] });
-    assert.equal(normalized.editions[1].id, 'dated');
-    assert.equal(normalized.editions[1].pub_year, 2026);
-    assert.equal(normalized.editions[1].pub_date, '2026-11-01');
-    assert.equal('pub_date' in normalized.editions[0], false);
+    assert.equal(normalized.editions[0].id, 'dated');
+    assert.equal(normalized.editions[0].pub_year, 2026);
+    assert.equal(normalized.editions[0].pub_date, '2026-11-01');
+    assert.equal('pub_date' in normalized.editions[1], false);
     assert.equal(normalized.editions[2].pub_date, null);
     assert.throws(() => publication.normalizeEdition({ pub_date: '2026-02-29' }), /không hợp lệ/);
+});
+
+test('publication precision preserves year only, month/year and exact dates', () => {
+    for (const edition of [{ pub_year: 2022 }, { pub_year: 2022, pub_date: null }, { pub_date: '2022' }]) {
+        assert.deepEqual(publication.normalizeEdition(edition), { pub_year: 2022 });
+    }
+    for (const input of ['2022-07', '07/2022']) {
+        assert.deepEqual(publication.normalizeEdition({ pub_year: 1900, pub_date: input }),
+            { pub_year: 2022, pub_date: '2022-07-01' });
+    }
+    for (const input of ['2022-07-19', '19/07/2022', '2022-01-01']) {
+        const normalized = publication.normalizeEdition({ pub_date: input });
+        assert.equal(normalized.pub_year, 2022);
+        assert.equal(normalized.pub_date, publication.normalizePubDate(input));
+    }
+    assert.equal(publication.getEditionDate({ pub_year: 2022 }), '');
+    assert.equal(publication.getEditionYear({ pub_year: 2022 }), 2022);
+    assert.deepEqual(publication.getPublicationSummary({ editions: [{ pub_year: 2022 }] }), { last_pub_year: 2022 });
+});
+
+test('form preview omits pub_date for year-only input and preserves month/day precision', () => {
+    const card = { dataset: { legacyPubDate: 'false' } };
+    const page = vm.createContext({
+        window: { BiaCungPublication: publication },
+        document: { getElementById: (id) => id === 'editions-container'
+            ? { querySelector: () => card } : null }
+    });
+    const source = fs.readFileSync(path.join(__dirname, 'book-input.js'), 'utf8');
+    // Load the real form functions without attaching events or starting network lookups.
+    vm.runInContext(source.slice(0, source.indexOf("\nform.addEventListener('input'")), page);
+    for (const [year, rawDate, expectedDate] of [
+        ['2022', '', undefined], ['', '2022', undefined],
+        ['', '07/2022', '2022-07-01'], ['', '2022-07', '2022-07-01'],
+        ['', '19/07/2022', '2022-07-19'], ['', '2022-01-01', '2022-01-01']
+    ]) {
+        const formData = new Map([['edition-pub-year-0', year], ['edition-pub-date-0', rawDate]]);
+        const preview = page.buildEditionFromFormData(formData, 0, 'test-book');
+        assert.equal(preview.pub_year, 2022);
+        assert.equal(preview.pub_date, expectedDate);
+        assert.equal('pub_date' in preview, expectedDate !== undefined);
+        assert.equal(preview.id, 'test-book-2022');
+    }
 });
 
 test('publication display and structured data retain legacy precision', () => {
@@ -147,7 +188,7 @@ test('detail UI uses Phát hành for dates, years and Chauchaubook editions', ()
 test('parser extracts release dates rather than post dates, preorder dates or original years', () => {
     for (const [raw, expected] of [
         ['Phát hành: 08/11/2026', '2026-11-08'], ['Phát hành: 07/2026', '2026-07-01'],
-        ['Phát hành: 2026', '2026-01-01'], ['Sách phát hành tháng 07/2026.', '2026-07-01'],
+        ['Sách phát hành tháng 07/2026.', '2026-07-01'],
         ['Sách phát hành ngày 08/11/2026.', '2026-11-08']
     ]) assert.equal(parseEditionText(raw).pub_date, expected, raw);
     for (const raw of ['Ngày đăng: 08/11/2026', 'Mở đặt trước ngày 08/11/2026', 'Nguyên tác xuất bản năm 1900',
@@ -158,18 +199,28 @@ test('parser extracts release dates rather than post dates, preorder dates or or
     assert.deepEqual(datedIssuer.issuers, ['Đông A']);
     const issuerLabel = parseEditionText('Phát hành: Đông A\nNăm XB: 2026');
     assert.deepEqual(issuerLabel.issuers, ['Đông A']);
-    assert.equal(issuerLabel.pub_date, '2026-01-01');
+    assert.equal(issuerLabel.pub_year, 2026);
+    assert.equal('pub_date' in issuerLabel, false);
 });
 
 test('parser continues accepting legacy publication labels in source text', () => {
     for (const [raw, expected] of [
         ['Ngày phát hành: 08/11/2026', '2026-11-08'],
         ['Tháng xuất bản: 07/2026', '2026-07-01'],
-        ['Năm XB: 2026', '2026-01-01'],
         ['Ngày thực hiện: 08/11/2026', '2026-11-08'],
-        ['Năm thực hiện: 2026', '2026-01-01']
     ]) assert.equal(parseEditionText(raw).pub_date, expected, raw);
     assert.equal(parseEditionText('Ngày phát hành: 31/02/2026').pub_date, null);
+});
+
+test('parser routes year-only publication labels to pub_year without pub_date', () => {
+    for (const label of ['Phát hành', 'Năm XB', 'Năm xuất bản', 'Năm phát hành', 'Năm thực hiện']) {
+        const parsed = parseEditionText(label + ': 2022');
+        assert.equal(parsed.pub_year, 2022, label);
+        assert.equal('pub_date' in parsed, false, label);
+    }
+    const parsed = parseEditionText('Sách phát hành năm 2022.');
+    assert.equal(parsed.pub_year, 2022);
+    assert.equal('pub_date' in parsed, false);
 });
 
 test('sort command refreshes only index and is idempotent with mixed schemas', (t) => {
@@ -179,24 +230,24 @@ test('sort command refreshes only index and is idempotent with mixed schemas', (
     fixture.write('data/book/test-a.json', book);
     const original = fs.readFileSync(path.join(fixture.root, 'data/book/test-a.json'), 'utf8');
     const index = sortBookIndex(fixture.root);
-    assert.equal(index[1].detail, 'data/book/test-a.json');
-    assert.equal(index[1].last_pub_date, '2026-11-08');
-    assert.equal('last_pub_date' in index[0], false);
+    assert.equal(index[0].detail, 'data/book/test-a.json');
+    assert.equal(index[0].last_pub_date, '2026-11-08');
+    assert.equal('last_pub_date' in index[1], false);
     assert.deepEqual(sortBookIndex(fixture.root), index);
     assert.equal(fs.readFileSync(path.join(fixture.root, 'data/book/test-a.json'), 'utf8'), original);
 });
 
-test('sort command restores snapshot order without restoring outdated metadata', (t) => {
+test('sort command keeps publication order and current metadata when given an old snapshot', (t) => {
     const fixture = createPublicationFixture(); t.after(fixture.cleanup);
     const book = fixture.read('data/book/test-a.json');
     book.editions[1].pub_date = '2026-07-18';
     fixture.write('data/book/test-a.json', book);
-    const previousOrder = fixture.read('data/book.json').reverse().map(entry => ({
+    const previousOrder = fixture.read('data/book.json').map(entry => ({
         ...entry, search_text: 'outdated snapshot', last_pub_year: 1900
     }));
     fixture.write('previous-index.json', previousOrder);
     const sorted = sortBookIndex(fixture.root, { orderFrom: 'previous-index.json' });
-    assert.deepEqual(sorted.map(e => e.detail), previousOrder.map(e => e.detail));
+    assert.deepEqual(sorted.map(e => e.detail), ['data/book/test-a.json', 'data/book/test-b.json']);
     assert.equal(sorted[0].last_pub_date, '2026-07-18');
     assert.equal(sorted[0].last_pub_year, 2026);
     assert.equal(sorted[0].search_text, 'sach kiem thu test author');
@@ -211,17 +262,19 @@ test('intake schema supports legacy and new editions, rejects inconsistent or im
     const fixture = createPublicationFixture(); t.after(fixture.cleanup);
     assert.equal(emptyBook(fixture.root).editions[0].pub_date, null);
     const book = fixture.read('data/book/test-a.json');
+    book.editions = publication.sortEditions(book.editions);
     assert.deepEqual(validate(fixture.root, book, { allowExisting: true }).errors, []);
-    assert.ok(validate(fixture.root, book).errors.some((e) => e.includes('pub_date thiếu key')));
-    book.editions[1].pub_date = '2025-11-08';
+    // Year-only data is valid for new intake too; the existing-work warning is separate.
+    assert.ok(!validate(fixture.root, book).errors.some((e) => e.includes('pub_date thiếu key')));
+    book.editions[0].pub_date = '2025-11-08';
     assert.ok(validate(fixture.root, book, { allowExisting: true }).errors.some((e) => e.includes('phải khớp')));
-    book.editions[1].pub_date = '2026-02-29';
+    book.editions[0].pub_date = '2026-02-29';
     assert.ok(validate(fixture.root, book, { allowExisting: true }).errors.some((e) => e.includes('ngày YYYY-MM-DD')));
-    book.editions[1].pub_date = '2026-11-08';
+    book.editions[0].pub_date = '2026-11-08';
     fixture.write('data/book/test-a.json', book);
     sortBookIndex(fixture.root);
     assert.deepEqual(validate(fixture.root, book, { allowExisting: true, relations: true }).errors, []);
-    const index = fixture.read('data/book.json'); index[1].last_pub_date = '2026-01-01';
+    const index = fixture.read('data/book.json'); index[0].last_pub_date = '2026-01-01';
     fixture.write('data/book.json', index);
     assert.ok(validate(fixture.root, book, { allowExisting: true, relations: true }).errors.some((e) => e.includes('last_pub_date')));
 });
@@ -246,17 +299,17 @@ test('save APIs normalize dates, refresh index, reject invalid dates and preserv
     });
     assert.equal(legacyResult.status, 200);
     assert.ok(fixture.read('data/book/test-a.json').editions.every((e) => !('pub_date' in e)));
-    assert.deepEqual(fixture.read('data/book/test-a.json').editions.map(e => e.pub_year), [2024, 2026]);
+    assert.deepEqual(fixture.read('data/book/test-a.json').editions.map(e => e.pub_year), [2026, 2024]);
     assert.deepEqual(fixture.read('data/author.json'), [{ id: 'test-author', name: 'Test Author', work_ids: ['test-a', 'test-b'] }]);
     assert.deepEqual(fixture.read('data/series.json'), []);
     const partiallyDated = structuredClone(book);
     partiallyDated.editions[1].pub_date = '2026-11-08';
     const partialResult = await post('/api/books/save/book-detail-review', { bookDetail: partiallyDated });
     assert.equal(partialResult.status, 200);
-    assert.deepEqual(fixture.read('data/book/test-a.json').editions[0], book.editions[0]);
-    assert.equal(fixture.read('data/book/test-a.json').editions[1].pub_date, '2026-11-08');
-    assert.deepEqual(fixture.read('data/book.json').map(e => e.detail), ['data/book/test-b.json', 'data/book/test-a.json']);
-    assert.equal(fixture.read('data/book.json')[1].last_pub_date, '2026-11-08');
+    assert.deepEqual(fixture.read('data/book/test-a.json').editions[1], book.editions[0]);
+    assert.equal(fixture.read('data/book/test-a.json').editions[0].pub_date, '2026-11-08');
+    assert.deepEqual(fixture.read('data/book.json').map(e => e.detail), ['data/book/test-a.json', 'data/book/test-b.json']);
+    assert.equal(fixture.read('data/book.json')[0].last_pub_date, '2026-11-08');
     book.editions[0].pub_date = '07/2026';
     book.editions[1].pub_date = '2026-11-08';
     let result = await post('/api/books/save', {
@@ -267,35 +320,56 @@ test('save APIs normalize dates, refresh index, reject invalid dates and preserv
     assert.deepEqual(saved.editions.map((e) => e.pub_date), ['2026-11-08', '2026-07-01']);
     assert.deepEqual(saved.editions.map((e) => e.pub_year), [2026, 2026]);
     let index = fixture.read('data/book.json');
-    assert.equal(index[1].last_pub_date, '2026-11-08');
-    assert.equal(index[1].last_pub_year, 2026);
-    assert.deepEqual(index[0], unrelatedEntry);
+    assert.equal(index[0].last_pub_date, '2026-11-08');
+    assert.equal(index[0].last_pub_year, 2026);
+    assert.deepEqual(index[1], unrelatedEntry);
 
     saved.editions[0].pub_date = '2026-03';
     result = await post('/api/books/save/book-detail-review', { bookId: book.id, bookDetail: saved });
     assert.equal(result.status, 200);
     saved = fixture.read('data/book/test-a.json');
     assert.equal(saved.editions[0].pub_date, '2026-07-01');
-    index = fixture.read('data/book.json'); assert.equal(index[1].last_pub_date, '2026-07-01');
+    index = fixture.read('data/book.json'); assert.equal(index[0].last_pub_date, '2026-07-01');
 
     result = await post('/api/books/save/book-index-review', { bookIndexReview: {
         detail: 'data/book/test-a.json', last_pub_date: '2099-01-01', last_pub_year: 2099
     } });
     assert.equal(result.status, 200);
-    assert.equal(fixture.read('data/book.json')[1].last_pub_date, '2026-07-01');
-    assert.equal(fixture.read('data/book.json')[1].search_text, 'test author');
+    assert.equal(fixture.read('data/book.json')[0].last_pub_date, '2026-07-01');
+    assert.equal(fixture.read('data/book.json')[0].search_text, 'test author');
 
     const mixed = structuredClone(saved);
     mixed.editions.push({ ...saved.editions[0], id: 'test-a-2027', pub_date: null, pub_year: 2027 });
     result = await post('/api/books/save/book-detail-review', { bookDetail: mixed });
     assert.equal(result.status, 200);
-    const mixedIndex = fixture.read('data/book.json')[1];
+    const mixedIndex = fixture.read('data/book.json')[0];
     assert.equal(mixedIndex.last_pub_year, 2027);
     assert.equal('last_pub_date' in mixedIndex, false);
-    assert.equal(fixture.read('data/book/test-a.json').editions[2].id, 'test-a-2027');
+    assert.equal(fixture.read('data/book/test-a.json').editions[0].id, 'test-a-2027');
     result = await post('/api/books/save/book-detail-review', { bookDetail: saved });
     assert.equal(result.status, 200);
-    assert.equal(fixture.read('data/book.json')[1].last_pub_date, '2026-07-01');
+    assert.equal(fixture.read('data/book.json')[0].last_pub_date, '2026-07-01');
+
+    for (const endpoint of ['/api/books/save', '/api/books/save/book-detail-review']) {
+        for (const [input, expected] of [
+            [{ pub_year: 2022, pub_date: null }, { pub_year: 2022 }],
+            [{ pub_date: '2022', pub_year: null }, { pub_year: 2022 }],
+            [{ pub_date: '07/2022', pub_year: null }, { pub_year: 2022, pub_date: '2022-07-01' }],
+            [{ pub_date: '19/07/2022', pub_year: null }, { pub_year: 2022, pub_date: '2022-07-19' }]
+        ]) {
+            const candidate = { ...saved, editions: [{ ...saved.editions[0], ...input }] };
+            result = await post(endpoint, { bookDetail: candidate });
+            assert.equal(result.status, 200);
+            const edition = fixture.read('data/book/test-a.json').editions[0];
+            assert.equal(edition.pub_year, expected.pub_year);
+            assert.equal(edition.pub_date, expected.pub_date);
+            assert.equal('pub_date' in edition, 'pub_date' in expected);
+            const entry = fixture.read('data/book.json').find(e => e.detail === 'data/book/test-a.json');
+            assert.equal(entry.last_pub_year, 2022);
+            assert.equal(entry.last_pub_date, expected.pub_date);
+        }
+    }
+    await post('/api/books/save/book-detail-review', { bookDetail: saved });
 
     const baseline = fs.readFileSync(path.join(fixture.root, 'data/book/test-a.json'), 'utf8');
     const baselineIndex = fs.readFileSync(path.join(fixture.root, 'data/book.json'), 'utf8');

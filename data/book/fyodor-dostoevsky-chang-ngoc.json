@@ -9,6 +9,36 @@
   "series": [],
   "editions": [
     {
+      "id": "fyodor-dostoevsky-chang-ngoc-2023-dong-a-bia-da-that",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bản Chữ A",
+      "pub_year": 2023,
+      "pub_date": "2023-01-08",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Võ Minh Phú",
+        "Phạm Xuân Thảo"
+      ],
+      "illustrators": [
+        "Fritz Eichenberg"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 1,
+      "page_count": null,
+      "copy_numbering": "A",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/fyodor-dostoevsky-chang-ngoc/dong-a-ban-chu-a-v20-reference-cover.jpg",
+      "gellery_imgs": [],
+      "detail": "- Bản ký hiệu chữ A, kỷ niệm 200 năm ngày sinh Fyodor Mikhailovich Dostoevsky.\n- Bản dịch từ nguyên bản tiếng Nga của Võ Minh Phú và Phạm Xuân Thảo.\n- Ruột sách in trên giấy Leathack #91 Macaroni 120 gsm.\n- Bìa bọc da bò Italy màu xanh Avocado.\n- Gáy gân chéo.\n- Hộp sách bằng carton, hoa văn thủy ấn.\n- So với bản V: giống 100%.\n- Ảnh minh họa là bản V20 có cùng quy cách."
+    },
+    {
       "id": "fyodor-dostoevsky-chang-ngoc-2022-dong-a-bia-da-that",
       "isbn": null,
       "series_ids": [],

@@ -12,6 +12,35 @@
   ],
   "editions": [
     {
+      "id": "nguyen-hong-bi-vo-2023-dong-a-bia-da-that",
+      "isbn": null,
+      "series_ids": [
+        "van-chuong-va-my-thuat"
+      ],
+      "caption": "Bản Chữ A",
+      "pub_year": 2023,
+      "pub_date": "2023-01-08",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Hoàng Phượng Vỹ"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 1,
+      "page_count": null,
+      "copy_numbering": "A",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/nguyen-hong-bi-vo/dong-a-ban-chu-a-cover-with-box.jpg",
+      "gellery_imgs": [],
+      "detail": "- Độc bản ký hiệu chữ A.\n- Phóng sự tiểu thuyết của Nguyên Hồng, minh họa Hoàng Phượng Vỹ.\n- Ruột dùng giấy Tintoretto Gessco định lượng 200 gsm.\n- Bìa bọc da bò Italy màu đỏ gạch Masai; bìa 1 gắn tag đồng.\n- Hộp bằng carton, trang trí hoa văn thủy ấn.\n- Quy cách giống 100% bản V."
+    },
+    {
       "id": "nguyen-hong-bi-vo-2022-nha-nam-bia-cung-230k",
       "isbn": null,
       "series_ids": [

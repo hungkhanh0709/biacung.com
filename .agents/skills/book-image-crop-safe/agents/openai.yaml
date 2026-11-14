@@ -1,4 +1,4 @@
 interface:
   display_name: "Book Image Optimize"
   short_description: "Đặt tên và tối ưu ảnh, một nguồn một file"
-  default_prompt: "Dùng $book-image-crop-safe để đặt tên và tối ưu ảnh của một bookId; giữ bố cục, chỉ resize khi cần, không tạo clone hoặc biến thể."
+  default_prompt: "Dùng $book-image-crop-safe để đặt tên và tối ưu ảnh của một bookId; chỉ dùng tập ảnh được cung cấp, giảm dung lượng bằng resize/nén nhẹ khi có lợi, giữ chất lượng/bố cục, không tự tải thêm ảnh hoặc tạo clone/biến thể."

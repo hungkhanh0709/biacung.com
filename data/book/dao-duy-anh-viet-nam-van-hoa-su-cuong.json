@@ -9,6 +9,31 @@
   "series": [],
   "editions": [
     {
+      "id": "dao-duy-anh-viet-nam-van-hoa-su-cuong-2025-dong-a-bia-da-that",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bản Chữ A",
+      "pub_year": 2025,
+      "pub_date": "2025-01-18",
+      "publisher": "NXB Đại Học Sư Phạm",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 1,
+      "page_count": 368,
+      "copy_numbering": "A",
+      "size_cm": "18.5 x 26.5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/dao-duy-anh-viet-nam-van-hoa-su-cuong/dong-a-ban-chu-a-prairie-cover-with-box.jpg",
+      "gellery_imgs": [],
+      "detail": "- Bản chữ A.\n- Một trong những công trình chuyên khảo tổng quát sớm nhất về lịch sử văn hóa Việt Nam của học giả Đào Duy Anh.\n- Ruột sách in trên giấy Conqueror Laid Cream 120 gsm.\n- Chỉ duy nhất ấn bản ký hiệu chữ A của tựa sách này sử dụng da dê màu xanh Prairie của Harmatan, Vương quốc Anh.\n- Tổng cộng tám tag đồng trên bìa 1 và bìa 4; một tag da trên bìa 1.\n- Hộp sách bọc giấy in thủy ấn, viền da cùng loại với bìa sách."
+    },
+    {
       "id": "dao-duy-anh-viet-nam-van-hoa-su-cuong-2023-dong-a-bia-da-that-5tr",
       "series_ids": [],
       "isbn": null,

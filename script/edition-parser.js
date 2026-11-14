@@ -294,17 +294,20 @@
 
         // Issuers / Suppliers
         const issuerLabel = easyLabel(['Nhà Cung Cấp', 'Nhà cung cấp', 'Cty phát hành', 'Công ty', 'Sách do', 'Phát hành bởi', 'Phát hành']);
-        result.issuers = extractIssuersFromText(publication.normalizePubDate(issuerLabel) ? raw : (issuerLabel || raw));
+        result.issuers = extractIssuersFromText(publication.normalizePubDate(issuerLabel) || publication.normalizeYear(issuerLabel) ? raw : (issuerLabel || raw));
 
         // Year
         const yearLabel = easyLabel(['Năm XB', 'Năm xuất bản', 'Năm phát hành']);
         const yearPhrase = raw.match(/(?:năm\s+(?:xuất bản|xb|phát hành)|phát hành năm)\s*[:：-]?\s*((?:19|20)\d{2})/i);
         result.pub_year = parseYear(yearLabel || yearPhrase?.[1] || '');
         const dateLabel = easyLabel(['Ngày phát hành', 'Ngày xuất bản', 'Tháng phát hành', 'Tháng xuất bản', 'Ngày thực hiện', 'Năm thực hiện']);
-        const shortDateLabel = publication.normalizePubDate(easyLabel(['Phát hành']));
+        const shortDateLabel = easyLabel(['Phát hành']);
         const datePhrase = raw.match(/(?:phát hành|xuất bản|thực hiện)\s+(?:vào\s+)?(?:ngày|tháng)\s+(\d{1,2}\/\d{1,2}\/[1-9]\d{3}|\d{1,2}\/[1-9]\d{3}|[1-9]\d{3}-\d{1,2}(?:-\d{1,2})?)(?![\d/])/i);
-        result.pub_date = publication.normalizePubDate(dateLabel || datePhrase?.[1] || shortDateLabel || yearLabel || result.pub_year);
+        const dateInput = dateLabel || datePhrase?.[1] || shortDateLabel || yearLabel || result.pub_year;
+        result.pub_date = publication.normalizePubDate(dateInput);
         if (result.pub_date) result.pub_year = Number(result.pub_date.slice(0, 4));
+        else result.pub_year = publication.normalizeYear(dateInput) || result.pub_year;
+        if (result.pub_year && !result.pub_date) delete result.pub_date;
 
         // Language
         const lang = easyLabel(['Ngôn Ngữ', 'Ngôn ngữ', 'Language']);

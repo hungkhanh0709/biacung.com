@@ -11,6 +11,35 @@
   ],
   "editions": [
     {
+      "id": "thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong-2025-dong-a-bia-da-that",
+      "isbn": null,
+      "series_ids": [
+        "van-chuong-va-my-thuat"
+      ],
+      "caption": "Bản Chữ A",
+      "pub_year": 2025,
+      "pub_date": "2025-01-18",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Đào Hải Phong"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 1,
+      "page_count": null,
+      "copy_numbering": "A",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong/dong-a-ban-chu-a-curri-cover.jpg",
+      "gellery_imgs": [],
+      "detail": "- Bản chữ A.\n- Hợp tuyển tập truyện ngắn Gió đầu mùa và tập tùy bút Hà-nội băm sáu phố phường của Thạch Lam, minh họa của Đào Hải Phong.\n- Ruột sách in trên giấy Tintoretto Gesso 200 gsm.\n- Chỉ duy nhất ấn bản ký hiệu chữ A của tựa sách này sử dụng da dê màu vàng nghệ Curri của Alran, Pháp.\n- Bìa 1 gắn hai tag đồng.\n- Hộp sách bọc giấy in thủy ấn, viền da cùng loại với bìa sách."
+    },
+    {
       "id": "thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong-2022-dong-a-bia-mem-160k",
       "isbn": "978-604-372-352-6",
       "series_ids": [
