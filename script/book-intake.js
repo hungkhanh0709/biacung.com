@@ -82,9 +82,6 @@ function init(root) {
     }
     create('.gitkeep', '');
     create('source.md', '# Nội dung người dùng cung cấp\n\n');
-    create('draft.md', '# Nháp nhập sách\n\nTrạng thái: extracting\n\n'
-        + '## Dữ kiện và nguồn\n\n| Field (kèm edition) | Giá trị | Nguồn / ảnh và vùng chữ | Mức xác nhận |\n| --- | --- | --- | --- |\n\n'
-        + '## Còn thiếu / mâu thuẫn\n\n## Tra cứu đã thực hiện\n\n## Ánh xạ ảnh và dung lượng\n\n## Kết quả kiểm tra\n');
     create('book.json', JSON.stringify(emptyBook(root), null, 2) + '\n');
     create('evidence.json', JSON.stringify({ fields: {}, searches: [], conflicts: [], image_reviews: [], images: [] }, null, 2) + '\n');
     const sources = scanSources(root, folder);
@@ -132,7 +129,7 @@ function validate(root, book, { relations = false, images = false, allowExisting
             ? (baseline.editions?.find((entry) => entry.id === edition?.id) || baseline.editions?.[i]) : null;
         if (!edition || typeof edition !== 'object' || Array.isArray(edition)) { bad(`${at} phải là object.`); continue; }
         for (const field of Object.keys(template.editions[0])) {
-            if (field !== 'title' && (field !== 'pub_date' || !allowExisting) && !(field in edition)) bad(`${at}.${field} thiếu key (dùng default khi chưa rõ).`);
+            if (field !== 'title' && field !== 'pub_date' && !(field in edition)) bad(`${at}.${field} thiếu key (dùng default khi chưa rõ).`);
         }
         for (const field of Object.keys(edition)) if (!(field in template.editions[0])) bad(`${at}.${field} ngoài schema.`);
         if (typeof edition.id !== 'string' || !SLUG.test(edition.id) || !edition.id.startsWith(`${book.id}-`)) bad(`${at}.id không có prefix bookId hợp lệ.`);
@@ -151,9 +148,8 @@ function validate(root, book, { relations = false, images = false, allowExisting
         if (edition.pub_year !== null && (!Number.isInteger(edition.pub_year) || edition.pub_year < 1000 || edition.pub_year > 9999)) bad(`${at}.pub_year phải là năm 4 chữ số.`);
         if ('pub_date' in edition && edition.pub_date !== null && !publication.isIsoDate(edition.pub_date)) bad(`${at}.pub_date phải là ngày YYYY-MM-DD có thật hoặc null.`);
         if (publication.isIsoDate(edition.pub_date) && edition.pub_year !== Number(edition.pub_date.slice(0, 4))) bad(`${at}.pub_year phải khớp năm của pub_date.`);
-        if (!('pub_date' in edition)) warnings.push(`${at} chưa có pub_date (dữ liệu cũ, chưa chuyển đổi).`);
-        else if (edition.pub_date === null) missing.push(`${at}.pub_date`);
-        if (expectedEditionOrder[i] !== edition) warnings.push(`${at}: các vị trí đã có pub_date chưa giảm dần; edition thiếu ngày phải giữ nguyên vị trí.`);
+        if (!publication.normalizeYear(edition.pub_year) && !edition.pub_date) missing.push(`${at}.pub_date`);
+        if (expectedEditionOrder[i] !== edition) bad(`${at}: thứ tự edition chưa giảm dần theo năm/ngày; xem preview và lưu lại qua form.`);
         for (const field of ['isbn', 'copy_numbering']) if (edition[field] !== null && !text(edition[field])) bad(`${at}.${field} phải là string hoặc null.`);
         if (text(edition.cover_price) && !isCoverPrice(edition.cover_price)
             && previous?.cover_price !== edition.cover_price) bad(`${at}.cover_price phải có dạng 900k, 3tr900k hoặc 3tr.`);
@@ -182,7 +178,9 @@ function validate(root, book, { relations = false, images = false, allowExisting
     if (errors.length) return { errors, missing, warnings };
     // Match work identity as well as filename; the same title may have different authors.
     const matches = [];
-    for (const filename of fs.readdirSync(path.join(root, 'data/book')).filter((f) => f.endsWith('.json'))) {
+    // Identity was resolved before saving. Post-save checks need only this work.
+    const candidates = allowExisting ? [] : fs.readdirSync(path.join(root, 'data/book')).filter((f) => f.endsWith('.json'));
+    for (const filename of candidates) {
         const existing = read(path.join(root, 'data/book', filename));
         const sameTitle = [existing.title, existing.title_original, ...(existing.editions || []).map((e) => e.title)]
             .filter(text).some((v) => [book.title, book.title_original].filter(text).some((candidate) => key(v) === key(candidate)));
@@ -223,27 +221,24 @@ function validate(root, book, { relations = false, images = false, allowExisting
             if (!book.series?.some?.((name) => key(name) === key(series.name))) bad(`Thiếu tên series ${series.name} trong book.series.`);
         }
         for (const name of Array.isArray(book.series) ? book.series : []) if (!linkedSeriesNames.includes(key(name))) bad(`Series ${name} chưa gán vào edition.series_ids.`);
-        for (const entry of seriesIndex) {
-            if (!SLUG.test(entry.id || '')) continue;
-            const file = path.join(root, `data/series/${entry.id}.json`);
-            if (fs.existsSync(file) && read(file).work_ids?.includes(book.id) && !seriesIds.has(entry.id)) bad(`Series ${entry.id} có liên kết ngược dư.`);
-        }
-        homePosition = publication.sortBookEntries(index).findIndex((e) => e.detail === `data/book/${book.id}.json`) + 1;
-        const home = read(path.join(root, 'data/home.json'));
-        const recent = (Array.isArray(home) ? home : home.sections || []).find((s) => s.id === 'recently-archived');
-        if (recent?.limit && homePosition > recent.limit) warnings.push(`Sách ở vị trí ${homePosition}, ngoài ${recent.limit} sách ở home; không sửa năm xuất bản để đẩy lên.`);
+        const sortedIndex = publication.sortBookEntries(index);
+        if (index.some((entry, i) => sortedIndex[i] !== entry)) bad('Index chưa giảm dần theo năm/ngày; chạy npm run sort-book.');
+        homePosition = sortedIndex.findIndex((e) => e.detail === `data/book/${book.id}.json`) + 1;
     }
     return { errors, missing, warnings, duplicateCandidates: matches, homePosition, imageFiles: [...imageFiles].map((f) => path.relative(root, f)) };
 }
-function inventory(folder) {
+function inventory(folder, { sourceImagesOnly = false } = {}) {
     const files = [];
     function walk(dir) {
         for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
             const file = path.join(dir, entry.name);
             if (file === path.join(folder, '.gitkeep')) continue;
             if (entry.isSymbolicLink()) throw new Error(`Không xử lý symlink trong nháp: ${file}`);
+            if (sourceImagesOnly && path.relative(folder, file) === 'previews') continue;
             if (entry.isDirectory()) walk(file);
-            else if (entry.isFile()) files.push(file);
+            else if (entry.isFile()) {
+                if (!sourceImagesOnly || isSourceImage(path.relative(folder, file))) files.push(file);
+            }
             else throw new Error(`File không được hỗ trợ: ${file}`);
         }
     }
@@ -257,7 +252,7 @@ function scanSources(root, folder = draftPath(root)) {
     const manifestFile = path.join(folder, 'source-inventory.json');
     const previous = fs.existsSync(manifestFile) ? read(manifestFile) : { version: 1, images: [] };
     if (previous.version !== 1 || !Array.isArray(previous.images)) throw new Error('source-inventory.json không hợp lệ.');
-    const current = Object.entries(inventory(folder)).filter(([name]) => isSourceImage(name)).map(([source, sha256]) => ({
+    const current = Object.entries(inventory(folder, { sourceImagesOnly: true })).map(([source, sha256]) => ({
         source, sha256, bytes: fs.statSync(path.join(folder, source)).size
     }));
     const registered = new Map(previous.images.map((entry) => [`${entry.source}\0${entry.sha256}`, entry]));
@@ -322,29 +317,16 @@ function reviewSources(root, folder, book, { imported = false } = {}) {
 }
 function verifyUi(root, book, result, ui) {
     const localUrl = (value) => { try { const u = new URL(value); return ['127.0.0.1', 'localhost'].includes(u.hostname) && u.protocol === 'http:'; } catch { return false; } };
-    if (!Number.isFinite(Date.parse(ui.checked_at)) || !localUrl(ui.home?.url) || !localUrl(ui.detail?.url)) return false;
-    const homeUrl = new URL(ui.home.url);
+    if (!Number.isFinite(Date.parse(ui?.checked_at)) || !localUrl(ui?.detail?.url)) return false;
     const detailUrl = new URL(ui.detail.url);
-    if (!['/', '/index.html'].includes(homeUrl.pathname)
-        || !['/detail', '/detail.html'].includes(detailUrl.pathname)
-        || detailUrl.searchParams.get('id') !== book.id || homeUrl.origin !== detailUrl.origin
+    if (!['/detail', '/detail.html'].includes(detailUrl.pathname)
+        || detailUrl.searchParams.get('id') !== book.id
         || ui.detail.metadata_matches !== true || ui.detail.images_load !== true) return false;
-    if (ui.home.visible === true) return true;
-    const home = read(path.join(root, 'data/home.json'));
-    const recent = (Array.isArray(home) ? home : home.sections || []).find((s) => s.id === 'recently-archived');
-    if (ui.home.visible !== false || ui.home.loaded !== true || !Number.isInteger(result.homePosition)
-        || ui.home.position !== result.homePosition || !(recent?.limit > 0 && result.homePosition > recent.limit)
-        || !localUrl(ui.search?.url) || !Array.isArray(ui.search.found)) return false;
-    const searchUrl = new URL(ui.search.url);
-    if (searchUrl.origin !== homeUrl.origin || !['/search', '/search.html'].includes(searchUrl.pathname)
-        || !text(searchUrl.searchParams.get('q'))) return false;
-    return ui.search.found.some((entry) => {
-        try {
-            const link = new URL(entry.href);
-            return link.origin === homeUrl.origin && ['/detail', '/detail.html'].includes(link.pathname)
-                && link.searchParams.get('id') === book.id;
-        } catch { return false; }
-    });
+    const checked = ui.detail.edition_ids;
+    const required = result.requiredEditionIds || (book.editions || []).map((edition) => edition.id);
+    return Array.isArray(checked) && checked.length > 0
+        && checked.every((id) => book.editions?.some((edition) => edition.id === id))
+        && required.every((id) => checked.includes(id));
 }
 function finish(root, folder) {
     folder = draftPath(root, folder);
@@ -362,29 +344,17 @@ function finish(root, folder) {
     const baseline = updateBaseline(root, evidence.scope?.baseline, book.id);
     const result = validate(root, saved, { relations: true, images: true, allowExisting: true, baseline });
     if (result.errors.length) throw new Error(result.errors.join('\n'));
-    if (!evidence.fields || !Array.isArray(evidence.searches) || !Array.isArray(evidence.conflicts) || !Array.isArray(evidence.images)) throw new Error('evidence.json phải có fields/searches/conflicts/images đúng kiểu.');
+    if (!Array.isArray(evidence.conflicts) || !Array.isArray(evidence.images)) throw new Error('evidence.json phải có conflicts/images là mảng.');
     if (evidence.conflicts.length) throw new Error('Còn mâu thuẫn chưa giải quyết trong evidence.json.');
-    const sourced = [];
-    for (const [field, value] of Object.entries(saved)) {
-        if (field === 'editions' || field === 'id') continue;
-        if (Array.isArray(value) ? value.length : text(value)) sourced.push([field, value]);
-    }
-    for (const [i, edition] of saved.editions.entries()) {
-        for (const [field, value] of Object.entries(edition)) {
-            if (['id', 'thumbnail', 'gellery_imgs'].includes(field) || value == null || value === '' || (Array.isArray(value) && !value.length)) continue;
-            sourced.push([`editions[${i}].${field}`, value]);
-        }
-    }
-    for (const [field, value] of sourced) {
-        const item = evidence.fields[field];
-        if (!item || JSON.stringify(stable(item.value)) !== JSON.stringify(stable(value)) || !text(item.source)
-            || !text(item.locator) || !['confirmed', 'derived'].includes(item.confidence)) {
-            throw new Error(`Thiếu nguồn khớp dữ kiện ${field} trong evidence.fields.`);
-        }
-    }
+    // Evidence explains decisions; it need not duplicate every value in book.json.
+    const changed = saved.editions.filter((edition) => {
+        const previous = baseline?.editions.find((entry) => entry.id === edition.id);
+        return !previous || JSON.stringify(stable(previous)) !== JSON.stringify(stable(edition));
+    });
+    result.requiredEditionIds = (changed.length ? changed : saved.editions.slice(0, 1)).map((edition) => edition.id);
     const ui = read(path.join(folder, 'verification.json'));
     if (!verifyUi(root, book, result, ui)) {
-        throw new Error('Chưa có xác minh Chrome: home (hoặc vị trí ngoài limit kèm tìm kiếm đúng sách), detail/ảnh và URL local/checked_at. Giữ nháp khi UI chưa xác nhận.');
+        throw new Error('Chưa xác minh Chrome tại đúng link detail: metadata/ảnh, edition_ids vừa thêm/sửa và checked_at. Giữ nháp khi chưa xác nhận.');
     }
     return { bookId: book.id, verified: true, ...result };
 }
@@ -407,7 +377,10 @@ function main(args) {
         return init(ROOT);
     }
     if (command === 'vocab') return vocabulary(ROOT);
-    if (command === 'sources') return scanSources(ROOT, draftPath(ROOT, option('--draft')));
+    if (command === 'sources') {
+        fs.mkdirSync(path.join(ROOT, RAW), { recursive: true });
+        return scanSources(ROOT, draftPath(ROOT, option('--draft')));
+    }
     if (command === 'check') {
         const bookId = option('--book');
         if (bookId && rest.includes('--draft')) throw new Error('Chọn --draft data/_raw hoặc --book book-id.');

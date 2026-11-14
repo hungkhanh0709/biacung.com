@@ -11,30 +11,33 @@
   "series": [],
   "editions": [
     {
-      "id": "ernest-hemingway-the-old-man-and-the-sea-2026-nha-nam-bia-mem-62k",
+      "id": "ernest-hemingway-the-old-man-and-the-sea-2023-dong-a-bia-da-that",
       "isbn": null,
-      "caption": "",
-      "pub_year": 2026,
+      "series_ids": [],
+      "caption": "Bản Chữ A",
+      "pub_year": 2023,
+      "pub_date": "2023-01-08",
       "publisher": "NXB Văn Học",
       "issuers": [
-        "Nhã Nam"
+        "Đông A"
       ],
       "translators": [
-        "Hiền Trang"
+        "Lê Huy Bắc"
       ],
-      "illustrators": [],
+      "illustrators": [
+        "Lê Trí"
+      ],
       "proofreaders": [],
-      "format": "Bìa mềm",
-      "cover_price": "62k",
-      "print_run": null,
-      "page_count": 136,
-      "copy_numbering": null,
-      "size_cm": "20.5 x 14 x 0.6",
-      "weight_g": 150,
-      "thumbnail": "https://cdn1.fahasa.com/media/catalog/product/8/9/8935235241121_2.jpg",
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 1,
+      "page_count": null,
+      "copy_numbering": "A",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/ernest-hemingway-the-old-man-and-the-sea/dong-a-ban-chu-a-dive-cover-with-box.jpg",
       "gellery_imgs": [],
-      "detail": "",
-      "series_ids": []
+      "detail": "- Bản ký hiệu chữ A.\n- Ruột sách in trên giấy Contrast Cream 224 gsm.\n- Bìa bọc da dê Pháp màu xanh Dive.\n- Họa tiết ép tràn bìa trước, gáy và bìa sau.\n- Hộp sách bằng carton, hoa văn thủy ấn.\n- So với bản V: khác loại da và màu nhũ."
     },
     {
       "id": "ernest-hemingway-the-old-man-and-the-sea-2022-dong-a-bia-da-that",

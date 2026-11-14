@@ -1555,5 +1555,12 @@
     "work_ids": [
       "f-scott-fitzgerald-the-great-gatsby"
     ]
+  },
+  {
+    "id": "adam-zamoyski",
+    "name": "Adam Zamoyski",
+    "work_ids": [
+      "adam-zamoyski-napoleon-a-life"
+    ]
   }
 ]

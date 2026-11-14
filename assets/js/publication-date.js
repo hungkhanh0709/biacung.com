@@ -13,7 +13,7 @@
   // Accept unambiguous ISO or Vietnamese input; persist only a complete ISO date.
   function normalizePubDate(value) {
     const text = String(value ?? "").trim();
-    let parts = /^([1-9]\d{3})(?:-(\d{1,2})(?:-(\d{1,2}))?)?$/.exec(text);
+    let parts = /^([1-9]\d{3})-(\d{1,2})(?:-(\d{1,2}))?$/.exec(text);
     let year, month, day;
     if (parts) {
       year = Number(parts[1]); month = Number(parts[2] ?? 1); day = Number(parts[3] ?? 1);
@@ -34,13 +34,12 @@
   }
 
   function getEditionDate(edition) {
-    return normalizePubDate(edition?.pub_date)
-      || (normalizeYear(edition?.pub_year) ? `${normalizeYear(edition.pub_year)}-01-01` : "");
+    return normalizePubDate(edition?.pub_date) || "";
   }
 
   function getEditionYear(edition) {
     const date = getEditionDate(edition);
-    return date ? Number(date.slice(0, 4)) : null;
+    return date ? Number(date.slice(0, 4)) : normalizeYear(edition?.pub_year);
   }
 
   function descending(left, right) {
@@ -48,32 +47,34 @@
   }
 
   function compareEditions(left, right) {
-    const leftDate = normalizePubDate(left?.pub_date);
-    const rightDate = normalizePubDate(right?.pub_date);
-    return leftDate && rightDate ? descending(leftDate, rightDate) : 0;
-  }
-
-  function sortDatedPositions(items, getDate, compare) {
-    const entries = Array.isArray(items) ? items : [];
-    const dated = entries.filter((entry) => getDate(entry)).sort(compare);
-    let next = 0;
-    // Undated entries are anchors. Sorting the whole array with ties for missing
-    // dates is not transitive and does not guarantee their original positions.
-    return entries.map((entry) => getDate(entry) ? dated[next++] : entry);
+    return descending(getEditionYear(left) || 0, getEditionYear(right) || 0)
+      || descending(normalizePubDate(left?.pub_date) || "", normalizePubDate(right?.pub_date) || "");
   }
 
   function sortEditions(editions) {
-    return sortDatedPositions(editions, (entry) => normalizePubDate(entry?.pub_date), compareEditions);
+    // A total order avoids inconsistent comparisons when dates are missing.
+    // Within one year, known dates precede unknown dates; equal keys stay stable.
+    return Array.isArray(editions) ? [...editions].sort(compareEditions) : [];
   }
 
   function normalizeEdition(edition) {
     const result = { ...edition };
     if (Object.prototype.hasOwnProperty.call(result, "pub_date")) {
+      const yearOnly = normalizeYear(result.pub_date);
+      if (yearOnly) {
+        result.pub_year = yearOnly;
+        delete result.pub_date;
+        return result;
+      }
       const date = normalizePubDate(result.pub_date);
       if (result.pub_date != null && String(result.pub_date).trim() && !date) {
         const error = new Error(`Ngày phát hành không hợp lệ: ${result.pub_date}. Dùng YYYY-MM-DD, YYYY-MM, YYYY, DD/MM/YYYY hoặc MM/YYYY.`);
         error.statusCode = 400;
         throw error;
+      }
+      if (!date && normalizeYear(result.pub_year)) {
+        delete result.pub_date;
+        return result;
       }
       result.pub_date = date;
       if (date) result.pub_year = Number(date.slice(0, 4));
@@ -94,19 +95,13 @@
   }
 
   function getPublicationSummary(book) {
-    let date = "";
-    let recordedDate = null;
+    let latest = null;
     for (const edition of Array.isArray(book?.editions) ? book.editions : []) {
-      const candidate = getEditionDate(edition);
-      if (candidate > date) {
-        date = candidate;
-        recordedDate = normalizePubDate(edition?.pub_date);
-      } else if (candidate === date && normalizePubDate(edition?.pub_date)) {
-        recordedDate = normalizePubDate(edition.pub_date);
-      }
+      if (!latest || compareEditions(edition, latest) < 0) latest = edition;
     }
+    const recordedDate = getEditionDate(latest);
     return {
-      last_pub_year: date ? Number(date.slice(0, 4)) : "",
+      last_pub_year: getEditionYear(latest) || "",
       ...(recordedDate ? { last_pub_date: recordedDate } : {})
     };
   }
@@ -119,13 +114,14 @@
   }
 
   function compareBookEntries(left, right) {
-    const leftDate = normalizePubDate(left?.last_pub_date);
-    const rightDate = normalizePubDate(right?.last_pub_date);
-    return leftDate && rightDate ? descending(leftDate, rightDate) : 0;
+    return compareEditions(
+      { pub_year: left?.last_pub_year, pub_date: left?.last_pub_date },
+      { pub_year: right?.last_pub_year, pub_date: right?.last_pub_date }
+    );
   }
 
   function sortBookEntries(entries) {
-    return sortDatedPositions(entries, (entry) => normalizePubDate(entry?.last_pub_date), compareBookEntries);
+    return Array.isArray(entries) ? [...entries].sort(compareBookEntries) : [];
   }
 
   function formatPublicationDate(edition) {

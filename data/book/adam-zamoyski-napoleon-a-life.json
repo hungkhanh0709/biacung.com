@@ -1,0 +1,107 @@
+{
+  "id": "adam-zamoyski-napoleon-a-life",
+  "title": "Napoléon Bonaparte",
+  "title_original": "Napoleon: A Life",
+  "authors": [
+    "Adam Zamoyski"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "adam-zamoyski-napoleon-a-life-2023-dong-a-bia-da-that",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bản Chữ A",
+      "pub_year": 2023,
+      "pub_date": "2023-01-08",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Quí Hiển"
+      ],
+      "illustrators": [
+        "Horace Vernet"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 1,
+      "page_count": null,
+      "copy_numbering": "A",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/adam-zamoyski-napoleon-a-life/dong-a-ban-chu-a-santa-claus-cover-with-box.jpg",
+      "gellery_imgs": [],
+      "detail": "- Bản ký hiệu chữ A.\n- Tiểu sử hoàng đế Napoléon Đệ nhất của Adam Zamoyski, bản dịch của Nguyễn Quí Hiển; sách có chữ ký dịch giả.\n- Ruột sách in trên giấy Conqueror High White Laid 120 gsm.\n- Bìa bọc da bò Italy màu đỏ Santa Claus.\n- Có đai sách; bìa trước gắn tag sơn mài.\n- Nghệ sĩ Martin Frost vẽ bụng sách chéo bằng kỹ thuật Vanishing Fore Edge Painting (vẽ ẩn họa trên cạnh trước của sách); cạnh sách mạ vàng 23K.\n- Hộp sách nằm ngang, bọc da microfiber màu da bò.\n- So với bản V: khác về mạ và vẽ cạnh sách."
+    },
+    {
+      "id": "adam-zamoyski-napoleon-a-life-2021-dong-a-bia-da-nhan-tao-2tr100k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S500",
+      "pub_year": 2021,
+      "pub_date": "2021-09-15",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Quí Hiển"
+      ],
+      "illustrators": [
+        "Horace Vernet"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da nhân tạo",
+      "cover_price": "2tr100k",
+      "print_run": 500,
+      "page_count": null,
+      "copy_numbering": "NP 001–NP 500",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/adam-zamoyski-napoleon-a-life/dong-a-s500-navy-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/adam-zamoyski-napoleon-a-life/dong-a-s500-santa-claus-cover.jpg",
+        "/assets/img/books/adam-zamoyski-napoleon-a-life/dong-a-s500-smoke-cover-detail.jpg",
+        "/assets/img/books/adam-zamoyski-napoleon-a-life/dong-a-s500-three-color-spines.jpg",
+        "/assets/img/books/adam-zamoyski-napoleon-a-life/dong-a-s500-smoke-gilt-edges.jpg",
+        "/assets/img/books/adam-zamoyski-napoleon-a-life/dong-a-s500-back-covers-and-open-pages.jpg"
+      ],
+      "detail": "- 500 bản giới hạn S500, đánh số nhảy từ NP 001 đến NP 500; mỗi bản phát hành là duy nhất.\n- Bìa bọc da PU, hoa văn dập chìm; tên sách và một số họa tiết ép nhũ.\n- Có ba màu bìa: xám Smoke, xanh Navy và đỏ Santa Claus.\n- Ruột sách khổ 16 x 24 cm, in trên giấy Ford kem 100 gsm bằng công nghệ mực vi sinh.\n- Bụng sách nhũ vàng.\n- Đóng dấu đỏ của Đông A."
+    },
+    {
+      "id": "adam-zamoyski-napoleon-a-life-2021-dong-a-bia-cung-ao-om-590k",
+      "isbn": "978-604-323-410-7",
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2021,
+      "pub_date": "2021-05-05",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Quí Hiển"
+      ],
+      "illustrators": [
+        "Horace Vernet"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "590k",
+      "print_run": null,
+      "page_count": 916,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/adam-zamoyski-napoleon-a-life/dong-a-bia-cung-ao-om-cover.webp",
+      "gellery_imgs": [
+        "/assets/img/books/adam-zamoyski-napoleon-a-life/dong-a-bia-cung-ao-om-cover-notes.jpg"
+      ],
+      "detail": "- Bìa cứng, có áo.\n- Minh họa của Horace Vernet.\n- Bản dịch của Nguyễn Quí Hiển."
+    }
+  ]
+}

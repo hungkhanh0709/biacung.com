@@ -581,12 +581,12 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
             <input type="hidden" name="edition-isbn-${index}" />
             <label class="field-full-row">
                 Ngày phát hành / thực hiện
-                <input name="edition-pub-date-${index}" placeholder="2026-11-08, 2026-11 hoặc 2026" />
-                <span class="field-helper">Nhận cả DD/MM/YYYY, MM/YYYY. Thiếu ngày dùng 01; thiếu tháng dùng 01/01. Để trống khi chưa biết; dữ liệu cũ giữ năm bên dưới.</span>
+                <input name="edition-pub-date-${index}" placeholder="2026-11-08 hoặc 2026-11" />
+                <span class="field-helper">Nhận cả DD/MM/YYYY, MM/YYYY. Biết tháng/năm thì lấy ngày 01 của tháng; chỉ biết năm thì để trống ngày và nhập năm bên dưới.</span>
             </label>
             <div class="field-row-3 field-full-row">
                 <label>
-                    Năm xuất bản (tương thích dữ liệu cũ)
+                    Năm phát hành / thực hiện
                     <input name="edition-pub-year-${index}" placeholder="2026" />
                 </label>
                 <label>
@@ -947,8 +947,10 @@ function buildEditionFromFormData(formData, index, bookId) {
     const pubYear = normalizeText(formData.get(`edition-pub-year-${index}`));
     const card = editionsContainer.querySelector(`[data-edition-index="${index}"]`);
     const rawDate = normalizeText(formData.get(`edition-pub-date-${index}`));
-    const date = publication.normalizePubDate(rawDate || (card?.dataset.existingEdition !== 'true' ? pubYear : ''));
-    const includeDate = Boolean(rawDate) || card?.dataset.legacyPubDate !== 'true';
+    const date = publication.normalizePubDate(rawDate);
+    const yearOnly = publication.normalizeYear(rawDate);
+    const year = date ? Number(date.slice(0, 4)) : (yearOnly || (pubYear ? Number(pubYear) : null));
+    const includeDate = !yearOnly && (Boolean(rawDate) || (!year && card?.dataset.legacyPubDate !== 'true'));
     const publisher = normalizePublisher(formData.get(`edition-publisher-${index}`));
     const issuers = parseLines(formData.get(`edition-issuers-${index}`) || '').map(normalizeIssuerValue);
     const translators = parseCommaSeparatedLines(formData.get(`edition-translators-${index}`) || '').map(toTitleCase);
@@ -969,7 +971,7 @@ function buildEditionFromFormData(formData, index, bookId) {
         isbn: isbn || null,
         series_ids: [...new Set(seriesIds)],
         caption: caption || '',
-        pub_year: date ? Number(date.slice(0, 4)) : (pubYear ? Number(pubYear) : null),
+        pub_year: year,
         ...(includeDate ? { pub_date: date || rawDate || null } : {}),
         publisher: publisher || '',
         issuers,
@@ -1422,14 +1424,16 @@ async function renderOutputs() {
     updateSlugPreview();
     form.querySelectorAll('[name^="edition-pub-date-"]').forEach((field) => {
         const raw = normalizeText(field.value);
-        field.setCustomValidity(raw && !publication.normalizePubDate(raw) ? 'Ngày phát hành không hợp lệ. Dùng YYYY-MM-DD, YYYY-MM, YYYY, DD/MM/YYYY hoặc MM/YYYY.' : '');
+        field.setCustomValidity(raw && !publication.normalizePubDate(raw) && !publication.normalizeYear(raw) ? 'Ngày phát hành không hợp lệ. Dùng YYYY-MM-DD, YYYY-MM, DD/MM/YYYY hoặc MM/YYYY; chỉ biết năm thì nhập năm.' : '');
     });
     form.querySelectorAll('[name^="edition-pub-year-"]').forEach((field) => {
-        const raw = normalizeText(field.value);
         const index = field.name.replace('edition-pub-year-', '');
-        const date = publication.normalizePubDate(form.querySelector(`[name="edition-pub-date-${index}"]`)?.value);
-        if (date) field.value = date.slice(0, 4);
-        field.setCustomValidity(!date && raw && !publication.normalizeYear(raw) ? 'Năm xuất bản phải có 4 chữ số.' : '');
+        const rawDate = form.querySelector(`[name="edition-pub-date-${index}"]`)?.value;
+        const date = publication.normalizePubDate(rawDate);
+        const year = date ? Number(date.slice(0, 4)) : publication.normalizeYear(rawDate);
+        if (year) field.value = String(year);
+        const raw = normalizeText(field.value);
+        field.setCustomValidity(raw && !publication.normalizeYear(raw) ? 'Năm xuất bản phải có 4 chữ số.' : '');
     });
 
     const formData = new FormData(form);
