@@ -9,11 +9,11 @@
 - **Hình:** ghi `Thiếu` khi `gellery_imgs` rỗng hoặc chưa có đúng edition để đối chiếu; có gallery thì để trống. Thumbnail không thay cho gallery. Đây chỉ là trạng thái theo dõi, không phải yêu cầu tự tải thêm ảnh hoặc tạo gallery; một ảnh đầu vào được phép chỉ có thumbnail.
 - **Memo:** chỉ giữ việc cần xác nhận/thu thập có căn cứ; mốc thời gian và giá cũ chưa có trong đúng edition được giữ làm dữ kiện cần đối chiếu. Với bản limited, không tìm thấy giá, ISBN, khối lượng hoặc kích thước là bình thường: để trống trường tương ứng trong hồ sơ, không tự ghi Memo nhắc bổ sung các trường này. Chỉ ghi khi có nguồn mâu thuẫn hoặc người dùng yêu cầu theo dõi cụ thể. Dữ kiện đã đủ/đúng thì bỏ Memo, không ghi lịch sử xử lý hoặc trạng thái kỹ thuật.
 
-Có **153 dòng theo dõi**, tương ứng **84 tựa/tập sách** sau khi gộp các ấn bản cùng tựa: **142 dòng đã có hồ sơ tựa**, **11 dòng chưa tìm thấy hồ sơ**. Tập I và Tập II của Lịch sử La Mã được tính riêng; mục Tập I còn cần xác nhận.
+Có **153 dòng theo dõi**, tương ứng **84 tựa/tập sách** sau khi gộp các ấn bản cùng tựa: **144 dòng đã có hồ sơ tựa**, **9 dòng chưa tìm thấy hồ sơ**. Tập I và Tập II của Lịch sử La Mã được tính riêng; mục Tập I còn cần xác nhận.
 
 Các dòng Bố già liên kết cùng một hồ sơ tác phẩm; mỗi dòng đối chiếu edition riêng. Dòng Đại Việt sử ký toàn thư – S895 có hai edition (bìa da thật và bìa buckram).
 
-Danh sách bản chữ A hiện gồm **31 tựa đã có 32 edition Chữ A** (4 edition phát hành năm 2021, 12 edition phát hành năm 2023, 16 edition phát hành năm 2025); Bố già có hai edition Chữ A riêng năm 2021 và 2025. Đã nhập đủ các tựa Chữ A trong checklist. Hai tựa Văn mới được theo dõi riêng đúng ký hiệu **bản số 41** và **bản số 13**, không tính vào số bản Chữ A. Người dùng xác nhận “Tuyển truyện Thạch Lam” là “Gió đầu mùa & Hà Nội băm sáu phố phường”, “Tuyển truyện Nam Cao” là “Đôi lứa xứng đôi / Nửa đêm / Cười”; các dòng liên kết cùng hồ sơ tương ứng.
+Danh sách bản chữ A hiện gồm **32 tựa đã có 33 edition Chữ A** (4 edition phát hành năm 2021, 12 edition phát hành năm 2023, 16 edition phát hành năm 2025, 1 edition phát hành năm 2026); Bố già có hai edition Chữ A riêng năm 2021 và 2025. Đã nhập đủ các tựa Chữ A trong checklist. Hai tựa Văn mới được theo dõi riêng đúng ký hiệu **bản số 41** và **bản số 13**, không tính vào số bản Chữ A. Người dùng xác nhận “Tuyển truyện Thạch Lam” là “Gió đầu mùa & Hà Nội băm sáu phố phường”, “Tuyển truyện Nam Cao” là “Đôi lứa xứng đôi / Nửa đêm / Cười”; các dòng liên kết cùng hồ sơ tương ứng.
 
 ## Danh sách đối chiếu
 
@@ -24,51 +24,52 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 1 | ☑ | [60 bí quyết vẽ sơn dầu](../../../data/book/nguyen-dinh-dang-60-bi-quyet-ve-son-dau.json) | S500 | 16/03/2026 | 1tr200k |  |  |
 | 2 | ☑ | [Anh em nhà Karamazov](../../../data/book/fyodor-dostoevsky-anh-em-nha-karamazov.json) | S100 | 01/07/2019 | 1tr200k |  |  |
 | 3 | ☑ | [Anh hùng ca Odyssée](../../../data/book/homere-odyssee.json) | S365 | 15/08/2026 | 2tr500k |  |  |
-| 4 | ☑ | [Bách khoa toàn thư biểu tượng và hoa văn Mật Tạng](../../../data/book/robert-beer-the-encyclopedia-of-tibetan-symbols-and-motifs.json) | S500 | 05/08/2025 | Vải xanh: 1tr200k; Buckram vàng ký trực tiếp: 3tr900k |  |  |
-| 5 | ☑ | [Bí mật của Synnøve / Chuyện tình chàng Arne / Cậu trai vui vẻ](../../../data/book/bjrnstjerne-bjrnson-bi-mat-cua-synnve-chuyen-tinh-chang-arne-cau-trai-vui-ve-cua-bjrnstjerne-bjrnson.json) | S1200 | 29/12/2023 | 1tr |  |  |
-| 6 | ☑ | [Bỉ vỏ](../../../data/book/nguyen-hong-bi-vo.json) | Bản Chữ A | 08/01/2023 | Thiếu | Thiếu |  |
-| 7 | ☑ | [Bỉ vỏ](../../../data/book/nguyen-hong-bi-vo.json) | S100 | 09/09/2022 | Thiếu |  |  |
-| 8 | ☑ | [Bỉ vỏ](../../../data/book/nguyen-hong-bi-vo.json) | S896 | 25/08/2022 | 1tr500k |  |  |
-| 9 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
-| 10 | ☑ | [Bố già (bản Chữ A da MyQ đỏ)](../../../data/book/mario-puzo-the-godfather.json) | Bản Chữ A | 18/07/2021 | Thiếu |  |  |
-| 11 | ☑ | [Bố già 55 – Bìa da dê](../../../data/book/mario-puzo-the-godfather.json) | GF55 (306 bản) | 27/12/2024 | 3tr500k |  |  |
-| 12 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | S100 | Thiếu | 1tr500k |  |  |
-| 13 | ☑ | [Bố già 55 – Bìa buckram](../../../data/book/mario-puzo-the-godfather.json) | S276 / BG55 | 27/12/2024 | 1tr500k |  |  |
-| 14 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | S500 | 30/12/2019 | 500k |  |  |
-| 15 | ☑ | [Bố già (bản tri ân)](../../../data/book/mario-puzo-the-godfather.json) | S500 | 11/01/2024 | Thiếu | Thiếu |  |
-| 16 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | S500 | 26/07/2026 | 2tr400k |  |  |
-| 17 | ☑ | [Cha con Giáo hoàng](../../../data/book/mario-puzo-the-family.json) | S500 | 25/01/2024 | 800k |  |  |
-| 18 | ☑ | [Chàng ngốc](../../../data/book/fyodor-dostoevsky-chang-ngoc.json) | Bản Chữ A | 08/01/2023 | Thiếu | Thiếu |  |
-| 19 | ☑ | [Chàng ngốc](../../../data/book/fyodor-dostoevsky-chang-ngoc.json) | S100 | 05/11/2022 | Thiếu |  |  |
-| 20 | ☑ | [Chàng ngốc](../../../data/book/fyodor-dostoevsky-chang-ngoc.json) | S1200 | 30/07/2022 | 1tr |  |  |
-| 21 | ☑ | [Con Bim trắng tai đen](../../../data/book/gavriil-troyepolsky-con-bim-trang-tai-den.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
-| 22 | ☑ | [Con Bim trắng tai đen](../../../data/book/gavriil-troyepolsky-con-bim-trang-tai-den.json) | S100 | 08/08/2024 | 3tr900k |  |  |
-| 23 | ☑ | [Con Bim trắng tai đen](../../../data/book/gavriil-troyepolsky-con-bim-trang-tai-den.json) | S500 | Thiếu | Thiếu | Thiếu | Chưa có bản S500. Cần đối chiếu nguồn cũ: mốc 07/2023, giá 1.500.000đ. |
-| 24 | ☑ | [Cuốn theo chiều gió](../../../data/book/margaret-mitchell-gone-with-the-wind.json) | Bản Chữ A | 20/09/2021 | Thiếu |  |  |
-| 25 | ☑ | [Cuốn theo chiều gió](../../../data/book/margaret-mitchell-gone-with-the-wind.json) | Bản Chữ Ô | 20/09/2021 | Thiếu |  |  |
+| 4 | ☑ | [Bách khoa toàn thư biểu tượng và hoa văn Mật Tạng](../../../data/book/robert-beer-the-encyclopedia-of-tibetan-symbols-and-motifs.json) | Bản Chữ A | 25/01/2026 | Thiếu |  |  |
+| 5 | ☑ | [Bách khoa toàn thư biểu tượng và hoa văn Mật Tạng](../../../data/book/robert-beer-the-encyclopedia-of-tibetan-symbols-and-motifs.json) | S500 | 05/08/2025 | Vải xanh: 1tr200k; Buckram vàng ký trực tiếp: 3tr900k |  |  |
+| 6 | ☑ | [Bí mật của Synnøve / Chuyện tình chàng Arne / Cậu trai vui vẻ](../../../data/book/bjrnstjerne-bjrnson-bi-mat-cua-synnve-chuyen-tinh-chang-arne-cau-trai-vui-ve-cua-bjrnstjerne-bjrnson.json) | S1200 | 29/12/2023 | 1tr |  |  |
+| 7 | ☑ | [Bỉ vỏ](../../../data/book/nguyen-hong-bi-vo.json) | Bản Chữ A | 08/01/2023 | Thiếu | Thiếu |  |
+| 8 | ☑ | [Bỉ vỏ](../../../data/book/nguyen-hong-bi-vo.json) | S100 | 09/09/2022 | Thiếu |  |  |
+| 9 | ☑ | [Bỉ vỏ](../../../data/book/nguyen-hong-bi-vo.json) | S896 | 25/08/2022 | 1tr500k |  |  |
+| 10 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
+| 11 | ☑ | [Bố già (bản Chữ A da MyQ đỏ)](../../../data/book/mario-puzo-the-godfather.json) | Bản Chữ A | 18/07/2021 | Thiếu |  |  |
+| 12 | ☑ | [Bố già 55 – Bìa da dê](../../../data/book/mario-puzo-the-godfather.json) | GF55 (306 bản) | 27/12/2024 | 3tr500k |  |  |
+| 13 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | S100 | Thiếu | 1tr500k |  |  |
+| 14 | ☑ | [Bố già 55 – Bìa buckram](../../../data/book/mario-puzo-the-godfather.json) | S276 / BG55 | 27/12/2024 | 1tr500k |  |  |
+| 15 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | S500 | 30/12/2019 | 500k |  |  |
+| 16 | ☑ | [Bố già (bản tri ân)](../../../data/book/mario-puzo-the-godfather.json) | S500 | 11/01/2024 | Thiếu | Thiếu |  |
+| 17 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | S500 | 26/07/2026 | 2tr400k |  |  |
+| 18 | ☑ | [Cha con Giáo hoàng](../../../data/book/mario-puzo-the-family.json) | S500 | 25/01/2024 | 800k |  |  |
+| 19 | ☑ | [Chàng ngốc](../../../data/book/fyodor-dostoevsky-chang-ngoc.json) | Bản Chữ A | 08/01/2023 | Thiếu | Thiếu |  |
+| 20 | ☑ | [Chàng ngốc](../../../data/book/fyodor-dostoevsky-chang-ngoc.json) | S100 | 05/11/2022 | Thiếu |  |  |
+| 21 | ☑ | [Chàng ngốc](../../../data/book/fyodor-dostoevsky-chang-ngoc.json) | S1200 | 30/07/2022 | 1tr |  |  |
+| 22 | ☑ | [Con Bim trắng tai đen](../../../data/book/gavriil-troyepolsky-con-bim-trang-tai-den.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
+| 23 | ☑ | [Con Bim trắng tai đen](../../../data/book/gavriil-troyepolsky-con-bim-trang-tai-den.json) | S100 | 08/08/2024 | 3tr900k |  |  |
+| 24 | ☑ | [Con Bim trắng tai đen](../../../data/book/gavriil-troyepolsky-con-bim-trang-tai-den.json) | S500 | 11/07/2023 | 1tr500k |  |  |
+| 25 | ☑ | [Cuốn theo chiều gió](../../../data/book/margaret-mitchell-gone-with-the-wind.json) | Bản Chữ A | 20/09/2021 | Thiếu |  |  |
+| 26 | ☑ | [Cuốn theo chiều gió](../../../data/book/margaret-mitchell-gone-with-the-wind.json) | Bản Chữ Ô | 20/09/2021 | Thiếu |  |  |
 | 27 | ☑ | [Cuốn theo chiều gió](../../../data/book/margaret-mitchell-gone-with-the-wind.json) | S365 | 26/07/2021 | 2tr |  |  |
-| 28 | ☑ | [Dại thì chết](../../../data/book/mario-puzo-fools-die.json) | S500 | Thiếu | Thiếu | Thiếu | Chưa có bản S500. Cần đối chiếu nguồn cũ: mốc 02/2023, giá 800.000đ. |
+| 28 | ☑ | [Dại thì chết](../../../data/book/mario-puzo-fools-die.json) | S500 | 20/02/2023 | 800k |  |  |
 | 29 | ☑ | [Đại Việt sử ký toàn thư](../../../data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json) | Bản Chữ A | 18/01/2025 | Thiếu | Thiếu |  |
 | 30 | ☑ | [Đại Việt sử ký toàn thư](../../../data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100; cần xác nhận năm phát hành. |
-| 31 | ☑ | [Đại Việt sử ký toàn thư](../../../data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json) | S895 | Thiếu | Bìa da thật: 6tr; Bìa buckram: 5tr |  | Cần đối chiếu nguồn cũ: mốc 07/2026. |
-| 32 | ☑ | [Đảo mộng mơ](../../../data/book/nguyen-nhat-anh-dao-mong-mo.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
-| 33 | ☑ | [Đất máu Sicily](../../../data/book/mario-puzo-the-sicilian.json) | S500 | Thiếu | 800k |  | Cần đối chiếu năm 2023 trong JSON với năm 2024 trong danh sách cũ. Cần đối chiếu nguồn cũ: mốc 01/2024. |
-| 34 | ☐ | Đất tiền đất bạc | S500 | Thiếu | Thiếu | Thiếu | Cần nhập hồ sơ. Cần đối chiếu nguồn cũ: mốc 11/2022, giá 700.000đ. |
-| 35 | ☐ | Đấu trường u ám | S500 | Thiếu | Thiếu | Thiếu | Cần nhập hồ sơ. Cần đối chiếu nguồn cũ: mốc 03/2023, giá 700.000đ. |
-| 36 | ☑ | [Đôi lứa xứng đôi / Nửa đêm / Cười](../../../data/book/nam-cao-doi-lua-xung-doi-nua-dem-cuoi.json) | Bản Chữ A | 18/01/2025 | Thiếu | Thiếu | Thiếu số trang. |
-| 37 | ☑ | [Đôi lứa xứng đôi / Nửa đêm / Cười](../../../data/book/nam-cao-doi-lua-xung-doi-nua-dem-cuoi.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
-| 38 | ☑ | [Đôi lứa xứng đôi / Nửa đêm / Cười](../../../data/book/nam-cao-doi-lua-xung-doi-nua-dem-cuoi.json) | S500 | Thiếu | Thiếu | Thiếu | Chưa có bản S500. Cần đối chiếu nguồn cũ: mốc 05/2023, giá 1.200.000đ. |
-| 39 | ☑ | [Đông Dương xinh đẹp và kỳ vĩ](../../../data/book/pierre-dieulefils-indo-chine-pittoresque-monumentale.json) | Bản Chữ A | 24/01/2021 | Thiếu |  | Thiếu số trang. |
-| 40 | ☑ | [Đông Dương xinh đẹp và kỳ vĩ](../../../data/book/pierre-dieulefils-indo-chine-pittoresque-monumentale.json) | Phổ thông | Thiếu | Thiếu | Thiếu | Chưa có bản phổ thông. |
-| 41 | ☑ | [Đông Dương xinh đẹp và kỳ vĩ](../../../data/book/pierre-dieulefils-indo-chine-pittoresque-monumentale.json) | S365 | 31/03/2021 | 3tr |  | Thiếu số trang. |
+| 31 | ☑ | [Đại Việt sử ký toàn thư](../../../data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json) | S895 | 22/07/2026 | Bìa da thật: 6tr; Bìa buckram: 5tr |  |  |
+| 32 | ☑ | [Đảo mộng mơ](../../../data/book/nguyen-nhat-anh-dao-mong-mo.json) | S100 | 08/04/2021 | 1tr900k |  |  |
+| 33 | ☑ | [Đất máu Sicily](../../../data/book/mario-puzo-the-sicilian.json) | S500 | 23/01/2024 | 800k |  |  |
+| 34 | ☑ | [Đất tiền đất bạc](../../../data/book/mario-puzo-the-fortunate-pilgrim.json) | S500 | 08/11/2022 | 700k |  |  |
+| 35 | ☑ | [Đấu trường u ám](../../../data/book/mario-puzo-the-dark-arena.json) | S500 | 31/03/2023 | 700k |  |  |
+| 36 | ☑ | [Đôi lứa xứng đôi / Nửa đêm / Cười](../../../data/book/nam-cao-doi-lua-xung-doi-nua-dem-cuoi.json) | Bản Chữ A | 18/01/2025 | Thiếu | Thiếu |  |
+| 37 | ☑ | [Đôi lứa xứng đôi / Nửa đêm / Cười](../../../data/book/nam-cao-doi-lua-xung-doi-nua-dem-cuoi.json) | S100 | 05/11/2023 | 3tr800k |  |  |
+| 38 | ☑ | [Đôi lứa xứng đôi / Nửa đêm / Cười](../../../data/book/nam-cao-doi-lua-xung-doi-nua-dem-cuoi.json) | S500 | 04/05/2023 | 1tr200k |  |  |
+| 39 | ☑ | [Đông Dương xinh đẹp và kỳ vĩ](../../../data/book/pierre-dieulefils-indo-chine-pittoresque-monumentale.json) | Bản Chữ A | 24/01/2021 | Thiếu |  |  |
+| 40 | ☑ | [Đông Dương xinh đẹp và kỳ vĩ](../../../data/book/pierre-dieulefils-indo-chine-pittoresque-monumentale.json) | Phổ thông | 31/07/2020 | 680k |  |  |
+| 41 | ☑ | [Đông Dương xinh đẹp và kỳ vĩ](../../../data/book/pierre-dieulefils-indo-chine-pittoresque-monumentale.json) | S365 | 31/03/2021 | 3tr |  |  |
 | 42 | ☑ | [Gatsby vĩ đại](../../../data/book/f-scott-fitzgerald-the-great-gatsby.json) | Bản Chữ A | 08/01/2023 | Thiếu | Thiếu |  |
-| 43 | ☑ | [Gatsby vĩ đại](../../../data/book/f-scott-fitzgerald-the-great-gatsby.json) | S100 | 10/10/2022 | Thiếu |  | Cần bổ sung số trang và dải đánh số. |
+| 43 | ☑ | [Gatsby vĩ đại](../../../data/book/f-scott-fitzgerald-the-great-gatsby.json) | S100 | 10/10/2022 | Thiếu |  |  |
 | 44 | ☑ | [Gatsby vĩ đại](../../../data/book/f-scott-fitzgerald-the-great-gatsby.json) | S500 | 30/08/2022 | 1tr200k |  |  |
-| 45 | ☑ | [Gió đầu mùa & Hà Nội băm sáu phố phường](../../../data/book/thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong.json) | Bản Chữ A | 18/01/2025 | Thiếu | Thiếu | Thiếu số trang. |
-| 46 | ☑ | [Gió đầu mùa & Hà Nội băm sáu phố phường](../../../data/book/thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
+| 45 | ☑ | [Gió đầu mùa & Hà Nội băm sáu phố phường](../../../data/book/thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong.json) | Bản Chữ A | 18/01/2025 | Thiếu | Thiếu |  |
+| 46 | ☑ | [Gió đầu mùa & Hà Nội băm sáu phố phường](../../../data/book/thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong.json) | S100 | 12/10/2023 | 3tr800k |  |  |
 | 47 | ☑ | [Gió đầu mùa & Hà Nội băm sáu phố phường](../../../data/book/thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong.json) | S500 | Thiếu | Thiếu | Thiếu | Chưa có bản S500. Cần đối chiếu nguồn cũ: mốc 06/2023, giá 1.200.000đ. |
 | 48 | ☐ | Hán Sở diễn nghĩa | S100 | Thiếu | Thiếu | Thiếu | Cần nhập hồ sơ. |
-| 49 | ☑ | [Hành Trình Thám Hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu | Thiếu số trang. |
+| 49 | ☑ | [Hành Trình Thám Hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
 | 50 | ☑ | [Hành trình thám hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | Phổ thông | Thiếu | Thiếu | Thiếu | Chưa có bản phổ thông. |
 | 51 | ☑ | [Hành trình thám hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
 | 52 | ☑ | [Hành trình thám hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | S365 | Thiếu | Thiếu | Thiếu | Chưa có bản S365. Cần đối chiếu nguồn cũ: mốc 08/2023, giá 1.500.000đ. |
@@ -83,7 +84,7 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 61 | ☑ | [Kiêu hãnh và định kiến](../../../data/book/jane-austen-pride-and-prejudice.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
 | 62 | ☑ | [Lịch sử La Mã](../../../data/book/theodor-mommsen-the-history-of-rome-vol-1.json) | Chưa cung cấp | Thiếu | 1200k |  | Cần xác nhận dòng này là Tập I và bổ sung mã bản. |
 | 63 | ☑ | [Lịch sử La Mã – Tập II](../../../data/book/theodor-mommsen-the-history-of-rome-vol-3.json) | Chưa cung cấp | Thiếu | 1200k |  | Cần xác nhận mã bản của edition Tập II (Quyển III) hiện có. |
-| 64 | ☑ | [Lịch sử Việt Nam bằng hình](../../../data/book/dong-a-the-illustrated-history-of-vietnam.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu | Thiếu số trang. |
+| 64 | ☑ | [Lịch sử Việt Nam bằng hình](../../../data/book/dong-a-the-illustrated-history-of-vietnam.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
 | 65 | ☑ | [Luật im lặng](../../../data/book/mario-puzo-omerta.json) | S500 | 09/01/2024 | 700k |  |  |
 | 66 | ☑ | [Lục Vân Tiên](../../../data/book/nguyen-dinh-chieu-luc-van-tien.json) | S500 | Thiếu | 2tr200k |  | Cần đối chiếu nguồn cũ: mốc 26/07/2026. |
 | 67 | ☑ | [Mahabharata / Sử thi Ấn Độ](../../../data/book/dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do.json) | S365 | Thiếu | Thiếu | Thiếu | Chưa có bản S365; hồ sơ hiện có bản phổ thông Đông A 2021. Cần đối chiếu nguồn cũ: mốc 06/2022, giá 3.500.000đ. |
@@ -107,7 +108,7 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 85 | ☑ | [Ngụ ngôn La Fontaine](../../../data/book/la-fontaine-the-fables-of-la-fontaine.json) | S895 | 11/01/2023 | 2tr400k |  |  |
 | 86 | ☑ | [Người kép già](../../../data/book/kim-lan-nguoi-kep-gia.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
 | 87 | ☑ | [Người kép già](../../../data/book/kim-lan-nguoi-kep-gia.json) | S365 | Thiếu | Thiếu | Thiếu | Chưa có bản S365. Cần đối chiếu nguồn cũ: mốc 03/2021, giá 1.500.000đ. |
-| 88 | ☑ | [Nhà Thờ Đức Bà Paris](../../../data/book/victor-hugo-notre-dame-de-paris.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu | Thiếu số trang. |
+| 88 | ☑ | [Nhà Thờ Đức Bà Paris](../../../data/book/victor-hugo-notre-dame-de-paris.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
 | 89 | ☑ | [Nhà thờ Đức Bà Paris](../../../data/book/victor-hugo-notre-dame-de-paris.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
 | 90 | ☑ | [Nhà thờ Đức Bà Paris](../../../data/book/victor-hugo-notre-dame-de-paris.json) | S500 | Thiếu | Thiếu | Thiếu | Chưa có bản S500. Cần đối chiếu nguồn cũ: mốc 10/2022, giá 1.800.000đ. |
 | 91 | ☐ | Nhà văn / Cuộc đời và tác phẩm | S365 | Thiếu | Thiếu | Thiếu | Cần nhập hồ sơ. Cần đối chiếu nguồn cũ: mốc 07/2024, giá 1.800.000đ. |
@@ -136,7 +137,7 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 114 | ☑ | [Số đỏ – Bản tri ân](../../../data/book/vu-trong-phung-so-do.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100; cần xác nhận bản tri ân và bản S100 có cùng đợt phát hành. |
 | 115 | ☑ | [Số đỏ](../../../data/book/vu-trong-phung-so-do.json) | S500 | Thiếu | Thiếu | Thiếu | Chưa có bản S500. Cần đối chiếu nguồn cũ: mốc 11/2020, giá 800.000đ. |
 | 116 | ☐ | Thái Bình Thiên Quốc | S365 | Thiếu | Thiếu | Thiếu | Cần nhập hồ sơ “Thái Bình Thiên Quốc diễn nghĩa”. Cần đối chiếu nguồn cũ: mốc 09/2023, giá 1.500.000đ. |
-| 117 | ☑ | [Thần khúc](../../../data/book/dante-alighieri-la-divina-commedia.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu | Thiếu số trang. |
+| 117 | ☑ | [Thần khúc](../../../data/book/dante-alighieri-la-divina-commedia.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
 | 118 | ☑ | [Thần khúc](../../../data/book/dante-alighieri-la-divina-commedia.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
 | 119 | ☑ | [Thần khúc](../../../data/book/dante-alighieri-la-divina-commedia.json) | S1200 | Thiếu | Thiếu | Thiếu | Chưa có bản S1200. Cần đối chiếu nguồn cũ: mốc 06/2022, giá 2.600.000đ. |
 | 120 | ☑ | [Thép đã tôi thế đấy](../../../data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json) | S500 | Thiếu | 2tr300k |  | Cần đối chiếu nguồn cũ: mốc 15/07/2026. |
@@ -165,7 +166,7 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 143 | ☑ | [Tuyển tập thơ William Butler Yeats](../../../data/book/william-butler-yeats-tuyen-tap-tho-william-butler-yeats.json) | Trăm năm Nobel | 16/12/2023 | 1tr |  |  |
 | 144 | ☑ | [Văn mới 5 năm 2011-2015](../../../data/book/nhieu-tac-gia-van-moi-5-nam-2011-2015.json) | Bản số 13 | 19/01/2025 | Thiếu | Thiếu | Thiếu NXB, số trang và số lượng in. |
 | 145 | ☑ | [Văn mới 5 năm đầu thế kỷ](../../../data/book/nhieu-tac-gia-van-moi-5-nam-dau-the-ky.json) | Bản số 41 | 19/01/2025 | Thiếu | Thiếu | Thiếu NXB, số trang và số lượng in. |
-| 146 | ☑ | [Văn mới 10 năm 2015 - 2025](../../../data/book/van-moi-10-nam-2015-2025-dong-a.json) | S100 | 05/11/2025 | 3tr |  | Thiếu số trang. |
+| 146 | ☑ | [Văn mới 10 năm 2015 - 2025](../../../data/book/van-moi-10-nam-2015-2025-dong-a.json) | S100 | 05/11/2025 | 3tr |  |  |
 | 147 | ☑ | [Việt Nam sử lược (bản chữ A)](../../../data/book/tran-trong-kim-viet-nam-su-luoc.json) | Bản Chữ A | 22/08/2021 | Thiếu |  |  |
 | 148 | ☑ | [Việt Nam sử lược](../../../data/book/tran-trong-kim-viet-nam-su-luoc.json) | S100 | 28/05/2021 | Thiếu |  |  |
 | 149 | ☑ | [Việt Nam sử lược](../../../data/book/tran-trong-kim-viet-nam-su-luoc.json) | S500 | 01/02/2021 | 900k |  |  |
