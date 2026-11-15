@@ -59,6 +59,62 @@
       "gellery_imgs": [],
       "detail": "- Tái Bản Lần Thứ 38.",
       "series_ids": []
+    },
+    {
+      "id": "nguyen-nhat-anh-dao-mong-mo-2021-dong-a-bia-da-nhan-tao-1tr900k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S100",
+      "pub_year": 2021,
+      "pub_date": "2021-04-08",
+      "publisher": "NXB Trẻ",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Đỗ Hoàng Tường"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da nhân tạo",
+      "cover_price": "1tr900k",
+      "print_run": 106,
+      "page_count": 220,
+      "copy_numbering": "ĐA_001–ĐA_100",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/nguyen-nhat-anh-dao-mong-mo/dong-a-s100-cover.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/nguyen-nhat-anh-dao-mong-mo/dong-a-s100-spine-and-gilt-edges.jpg"
+      ],
+      "detail": "- Tổng cộng 106 bản: 5 bản ký hiệu Đ, Ô, N, G, A phục vụ lưu trữ và đấu giá; một bản NGUYEN NHAT ANH dành tặng tác giả; 100 bản đánh số ĐA_001 đến ĐA_100 dành cho người sưu tầm và chơi sách. Mỗi bản phát hành là duy nhất.\n- Bìa da nhân tạo đóng thủ công; tên sách, tên tác giả và hoa văn trên bìa 1, bìa 4 và gáy ép nhũ nhiều màu. Gân gáy nổi, siết thủ công từng bìa.\n- Ruột in trên giấy Ford kem April Fine 190 gsm.\n- Cổ áo (băng chỉ đầu) làm bằng da thật màu xanh; ba cạnh sách mạ nhũ vàng.\n- Hai tờ gác đầu và cuối làm thủ công bằng kỹ thuật giấy hoa cương (paper marbling), do “bác sĩ giấy” Bùi Tiến Phúc và nghệ nhân Đài Loan Trần Bội Tuyền thực hiện; mỗi tờ là duy nhất.\n- Hộp bồi carton Phần Lan, ép kim logo 10 năm Đảo Mộng Mơ.\n- Có chữ ký trực tiếp của Nguyễn Nhật Ánh và dấu đỏ Đông A."
+    },
+    {
+      "id": "nguyen-nhat-anh-dao-mong-mo-2021-dong-a-bia-cung-ao-om-200k",
+      "isbn": "978-604-1-17474-0",
+      "series_ids": [],
+      "caption": "Ấn Bản Kỷ Niệm 10 Năm Xuất Bản Lần Đầu",
+      "pub_year": 2021,
+      "pub_date": "2021-04-08",
+      "publisher": "NXB Trẻ",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Đỗ Hoàng Tường"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "200k",
+      "print_run": null,
+      "page_count": 220,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/nguyen-nhat-anh-dao-mong-mo/dong-a-10th-anniversary-hardcover-and-gifts.webp",
+      "gellery_imgs": [],
+      "detail": "- Ấn bản kỷ niệm 10 năm xuất bản lần đầu Đảo mộng mơ; bìa cứng có áo, ép nhũ và kèm đai sách (obi).\n- Sách dày 220 trang, khổ 16 x 24 cm; ruột in màu toàn bộ trên giấy Ford IK 140 gsm.\n- Khôi phục nguyên vẹn 8 minh họa màu của Đỗ Hoàng Tường từ bản in đầu tiên; mỗi minh họa in tràn hai trang sách.\n- Tặng kèm một bookmark và bốn postcard đồng bộ, in màu trên giấy chất lượng cao."
     }
   ]
 }

@@ -16,7 +16,9 @@
       "mario-puzo-omerta",
       "mario-puzo-the-sicilian",
       "mario-puzo-the-family",
-      "mario-puzo-the-last-don"
+      "mario-puzo-the-last-don",
+      "mario-puzo-the-fortunate-pilgrim",
+      "mario-puzo-the-dark-arena"
     ]
   },
   {
@@ -1587,6 +1589,20 @@
     "name": "Pierre Dieulefils",
     "work_ids": [
       "pierre-dieulefils-indo-chine-pittoresque-monumentale"
+    ]
+  },
+  {
+    "id": "carol-gino",
+    "name": "Carol Gino",
+    "work_ids": [
+      "mario-puzo-the-family"
+    ]
+  },
+  {
+    "id": "margaret-mitchell",
+    "name": "Margaret Mitchell",
+    "work_ids": [
+      "margaret-mitchell-gone-with-the-wind"
     ]
   }
 ]

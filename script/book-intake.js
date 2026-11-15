@@ -104,7 +104,7 @@ function updateBaseline(root, value, bookId) {
     if (baseline.id !== bookId || !Array.isArray(baseline.editions)) throw new Error('Baseline không khớp sách đang cập nhật.');
     return baseline;
 }
-function validate(root, book, { relations = false, images = false, allowExisting = false, baseline } = {}) {
+function validate(root, book, { relations = false, images = false, allowExisting = false, baseline, editionIdMap = {} } = {}) {
     const errors = [], missing = [], warnings = [];
     const bad = (message) => errors.push(message);
     const template = read(path.join(root, 'data/template/book-detail.json'));
@@ -125,8 +125,11 @@ function validate(root, book, { relations = false, images = false, allowExisting
     const expectedEditionOrder = publication.sortEditions(book.editions);
     for (const [i, edition] of (Array.isArray(book.editions) ? book.editions : []).entries()) {
         const at = `editions[${i}]`;
+        const originalId = Object.entries(editionIdMap).find(([, updatedId]) => updatedId === edition?.id)?.[0];
         const previous = allowExisting && baseline?.id === book.id
-            ? (baseline.editions?.find((entry) => entry.id === edition?.id) || baseline.editions?.[i]) : null;
+            ? (baseline.editions?.find((entry) => entry.id === edition?.id)
+                || baseline.editions?.find((entry) => entry.id === originalId)
+                || baseline.editions?.[i]) : null;
         if (!edition || typeof edition !== 'object' || Array.isArray(edition)) { bad(`${at} phải là object.`); continue; }
         for (const field of Object.keys(template.editions[0])) {
             if (field !== 'title' && field !== 'pub_date' && !(field in edition)) bad(`${at}.${field} thiếu key (dùng default khi chưa rõ).`);
@@ -166,7 +169,7 @@ function validate(root, book, { relations = false, images = false, allowExisting
             if (!localImage) {
                 const unchanged = url === edition.thumbnail
                     ? previous?.thumbnail === edition.thumbnail
-                    : previous && JSON.stringify(previous.gellery_imgs) === JSON.stringify(edition.gellery_imgs);
+                    : Array.isArray(previous?.gellery_imgs) && previous.gellery_imgs.includes(url);
                 if (/^https?:\/\//.test(url) && unchanged) continue;
                 bad(`${at}: URL ảnh phải local trong assets/img/books, tên kebab-case: ${url}`); continue;
             }
@@ -342,7 +345,8 @@ function finish(root, folder) {
     if (JSON.stringify(stable(book)) !== JSON.stringify(stable(saved))) throw new Error('book.json nháp chưa khớp file đã lưu; đối chiếu form và đồng bộ lại.');
     const evidence = read(path.join(folder, 'evidence.json'));
     const baseline = updateBaseline(root, evidence.scope?.baseline, book.id);
-    const result = validate(root, saved, { relations: true, images: true, allowExisting: true, baseline });
+    const result = validate(root, saved, { relations: true, images: true, allowExisting: true, baseline,
+        editionIdMap: evidence.scope?.edition_id_map || {} });
     if (result.errors.length) throw new Error(result.errors.join('\n'));
     if (!Array.isArray(evidence.conflicts) || !Array.isArray(evidence.images)) throw new Error('evidence.json phải có conflicts/images là mảng.');
     if (evidence.conflicts.length) throw new Error('Còn mâu thuẫn chưa giải quyết trong evidence.json.');

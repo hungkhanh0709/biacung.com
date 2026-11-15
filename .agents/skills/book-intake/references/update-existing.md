@@ -7,6 +7,7 @@ Chỉ đổi sách/trường người dùng yêu cầu, bằng Chrome MCP qua fo
 1. Xác nhận bookId/tác phẩm và phạm vi. Đọc [Caption/Format](caption-format.md) hoặc [tra tên nguyên tác](book-intake-workflow.md#tra-tên-nguyên-tác) khi sửa các trường đó. Chỉ sửa awards thì giữ edition/ID/ảnh/author/series.
 2. Dùng `data/_raw/` cho một tựa, tiếp tục nháp cùng lượt. Giữ `baseline-book.json` và candidate `book.json`, ghi `evidence.scope.baseline: "data/_raw/baseline-book.json"`. Không tạo thư mục phiên hay chụp lại toàn bộ kho; không gửi snapshot index/author lên server. Raw của tựa khác đang dở thì giữ nguyên.
 3. Candidate sao sâu baseline, chỉ sửa trường được phép. Awards theo [quy tắc dữ liệu](book-intake-workflow.md#quy-tắc-dữ-liệu): tra `data/awards/` và nguồn chính thức, hợp nhất nhãn không trùng, ghi award_claims. Nobel của tác giả được kế thừa; giải tác phẩm không lan sang sách cùng tác giả.
+   - Khi bổ sung gallery, URL ảnh ngoài đã có trong baseline được giữ theo từng URL, kể cả khi mảng được nối thêm ảnh local. Kiểm tra cuối chỉ chấp nhận URL ngoài đã tồn tại ở cùng trường của đúng edition; không yêu cầu tải lại hoặc xóa ảnh cũ để vượt kiểm tra.
    - Yêu cầu bổ sung dữ liệu/ảnh không cho phép xóa dữ liệu cũ. Giữ các phần tử đã có trong mảng, nhất là `translators`, `illustrators`, `proofreaders`; hợp nhất thông tin mới không trùng. Không dùng default rỗng cho trường đã có dữ liệu chỉ vì nguồn mới không nhắc lại.
    - Nguồn mới ghi thêm vai trò khác không tự cho phép chuyển hoặc xóa vai trò đang lưu. Ví dụ ảnh ghi Nguyễn Thạch Giang khảo đính/chú giải: bổ sung vào `detail`, vẫn giữ tên trong `translators` nếu người dùng chưa yêu cầu sửa trường đó. Ghi nhận mâu thuẫn thực tế khi có, không tự giải quyết bằng cách bỏ dữ liệu.
    - Khi bổ sung edition thiếu thông tin, chủ động đề xuất nguồn theo [tham khảo edition tương đồng](book-intake-workflow.md#tham-khảo-edition-tương-đồng); chỉ sao chép các trường được người dùng xác nhận. Ngụ ngôn La Fontaine S100 đã được chốt dùng NXB và họa sĩ của bản phổ thông; danh sách 13 dịch giả của S895 được người dùng yêu cầu đồng bộ cho cả S100 và bản phổ thông, thay nhãn chung `Nhiều Người Dịch`. ISBN, khối lượng và dải số S100 chưa có thì giữ trống, bỏ khỏi Memo checklist theo yêu cầu người dùng.
@@ -16,6 +17,8 @@ Chỉ đổi sách/trường người dùng yêu cầu, bằng Chrome MCP qua fo
 Form tự sort edition theo năm giảm dần, cùng năm theo ngày giảm dần; trong cùng năm bản có ngày đứng trước bản thiếu ngày, cùng khóa giữ thứ tự. Thiếu cả năm/ngày đứng cuối. Không đổi dữ kiện/ID để sort, không bổ sung ngày giả cho edition cũ. Đối chiếu thứ tự trong preview và output một lần.
 
 Lựa chọn đã chốt cho Nghìn lẻ một đêm S100 năm 2023: gộp V20/S80 dù khác màu/logo bìa; 100 bộ, giá cơ bản 12tr, V20 13tr và S80 12tr. Caption giữ S100, thông tin biến thể ở detail; không hỏi/tách lại.
+
+Khi năm/giá/format làm đổi edition ID, ghi `evidence.scope.edition_id_map` dạng `{ "id-cu": "id-moi" }`. Bước kiểm tra cuối dùng ánh xạ này để đối chiếu đúng edition trong baseline sau khi form sắp xếp lại; không lấy vị trí mảng để xác nhận các URL ảnh cũ của edition đã đổi ID.
 
 ## Lưu qua ứng dụng
 
