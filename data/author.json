@@ -1604,5 +1604,12 @@
     "work_ids": [
       "margaret-mitchell-gone-with-the-wind"
     ]
+  },
+  {
+    "id": "aldous-huxley",
+    "name": "Aldous Huxley",
+    "work_ids": [
+      "aldous-huxley-brave-new-world"
+    ]
   }
 ]
