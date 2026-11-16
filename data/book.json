@@ -1,5 +1,12 @@
 [
   {
+    "detail": "data/book/aldous-huxley-brave-new-world.json",
+    "search_text": "aldous huxley brave new world the gioi moi huy hoang nxb ha noi nha nam do duc lap an ban gioi han",
+    "last_pub_year": 2026,
+    "last_pub_date": "2026-12-21",
+    "updated_at": "2026-11-16"
+  },
+  {
     "detail": "data/book/giosue-carducci-tung-ca-man-da.json",
     "search_text": "giosue carducci tung ca man da nxb van hoc dong a lam nguyen tram nam nobel nobel van chuong",
     "last_pub_year": 2026,
@@ -66,8 +73,8 @@
     "detail": "data/book/tadeusz-doega-mostowicz-znachor.json",
     "search_text": "tadeusz doegamostowicz znachor thay lang nxb dan tri dong a nguyen huu dung",
     "last_pub_year": 2026,
-    "updated_at": "2026-11-11",
-    "last_pub_date": "2026-11-18"
+    "updated_at": "2026-11-16",
+    "last_pub_date": "2026-11-16"
   },
   {
     "detail": "data/book/homere-odyssee.json",
@@ -243,6 +250,27 @@
     "updated_at": "2026-11-11",
     "last_pub_year": 2026,
     "last_pub_date": "2026-05-23"
+  },
+  {
+    "detail": "data/book/tran-dai-thang-layers-of-memory.json",
+    "search_text": "tran dai thang layers of memory nhung tang ky uc nxb dan tri dong a jesse peterson s365",
+    "updated_at": "2026-11-15",
+    "last_pub_year": 2026,
+    "last_pub_date": "2026-05-16"
+  },
+  {
+    "detail": "data/book/tran-tien-tran-tien-nguoi-hat-tho-minh-ca-khuc-nhung-cau-chuyen.json",
+    "search_text": "tran tien ho anh thai bien soan tran tien nguoi hat tho minh ca khuc nhung cau chuyen nxb hoi nha van dong a s365",
+    "updated_at": "2026-11-15",
+    "last_pub_year": 2026,
+    "last_pub_date": "2026-04-20"
+  },
+  {
+    "detail": "data/book/nguyen-dinh-dang-ky-thuat-ve-son-dau.json",
+    "search_text": "nguyen dinh dang ky thuat ve son dau nxb dan tri dong a",
+    "updated_at": "2026-11-15",
+    "last_pub_year": 2026,
+    "last_pub_date": "2026-03-26"
   },
   {
     "detail": "data/book/nguyen-dinh-dang-60-bi-quyet-ve-son-dau.json",
@@ -703,12 +731,6 @@
     "last_pub_year": 2026
   },
   {
-    "detail": "data/book/tran-dai-thang-layers-of-memory.json",
-    "search_text": "nhung tang ky uc layers of memory tran đai thang nxb dan tri đong a jesse peterson s365 bia vai",
-    "updated_at": "2026-07-03",
-    "last_pub_year": 2026
-  },
-  {
     "detail": "data/book/tran-dai-thang-toi-ke-tat-ca-deu-tu-sach.json",
     "search_text": "toi ke tat ca deu tu sach tran dai thang nxb dan tri dong a bia mem",
     "updated_at": "2026-07-03",
@@ -721,17 +743,18 @@
     "updated_at": "2026-07-01"
   },
   {
-    "detail": "data/book/tran-tien-tran-tien-nguoi-hat-tho-minh-ca-khuc-nhung-cau-chuyen.json",
-    "search_text": "tran tien nguoi hat tho minh ca khuc nhung cau chuyen tran tien nxb hoi nha van dong a s365 bia cung bia vai",
-    "updated_at": "2026-04-20",
-    "last_pub_year": 2026
-  },
-  {
     "detail": "data/book/van-moi-10-nam-2015-2025-dong-a.json",
     "search_text": "nhieu tac gia ho anh thai tuyen chon van moi 10 nam 2015 2025 nxb hoi nha van dong a bui tien tuan dang hong quan dang xuan hoa do hoang tuong dong a hoang phuong vy kim duan ngo xuan khoi van moi dong a s100",
     "updated_at": "2026-11-14",
     "last_pub_year": 2025,
     "last_pub_date": "2025-11-05"
+  },
+  {
+    "detail": "data/book/dong-a-ho-chi-minh-tieu-su-bang-hinh.json",
+    "search_text": "dong a bien soan ho chi minh tieu su bang hinh nxb dai hoc su pham dong a an ban gioi han",
+    "updated_at": "2026-11-15",
+    "last_pub_year": 2025,
+    "last_pub_date": "2025-10-15"
   },
   {
     "detail": "data/book/frederic-mistral-nang-mireille.json",
@@ -958,12 +981,6 @@
     "detail": "data/book/son-tung-bup-sen-xanh.json",
     "search_text": "bup sen xanh son tung nxb kim dong bia cung",
     "updated_at": "2026-07-07",
-    "last_pub_year": 2025
-  },
-  {
-    "detail": "data/book/dong-a-ho-chi-minh-tieu-su-bang-hinh.json",
-    "search_text": "ho chi minh tieu su bang hinh dong a bien soan nxb dai hoc su pham dong a an ban gioi han bia vai bia cung ao om",
-    "updated_at": "2026-07-04",
     "last_pub_year": 2025
   },
   {
@@ -2013,12 +2030,6 @@
     "detail": "data/book/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam.json",
     "search_text": "kho tang truyen co tich viet nam nguyen dong chi nxb hoi nha van dong a",
     "updated_at": "2026-07-04",
-    "last_pub_year": ""
-  },
-  {
-    "detail": "data/book/nguyen-dinh-dang-ky-thuat-ve-son-dau.json",
-    "search_text": "ky thuat ve son dau nguyen đinh đang nxb dan tri đong a bia mem",
-    "updated_at": "2026-07-03",
     "last_pub_year": ""
   },
   {
