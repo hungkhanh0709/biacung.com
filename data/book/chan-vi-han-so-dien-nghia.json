@@ -1,0 +1,46 @@
+{
+  "id": "chan-vi-han-so-dien-nghia",
+  "title": "Hán Sở Diễn Nghĩa",
+  "title_original": "西漢演義",
+  "authors": [
+    "Chân Vĩ"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "chan-vi-han-so-dien-nghia-2019-dong-a-bia-cung-1tr",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S100",
+      "pub_year": 2019,
+      "pub_date": "2019-09-01",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Châu Hải Đường"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "1tr",
+      "print_run": 100,
+      "page_count": null,
+      "copy_numbering": "ĐA - 01 đến ĐA - 100",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/chan-vi-han-so-dien-nghia/dong-a-s100-bia-truoc.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/chan-vi-han-so-dien-nghia/dong-a-s100-trang-minh-hoa.jpg",
+        "/assets/img/books/chan-vi-han-so-dien-nghia/dong-a-s100-gay-va-cac-ban.jpg",
+        "/assets/img/books/chan-vi-han-so-dien-nghia/dong-a-s100-chi-tiet-bia.jpg",
+        "/assets/img/books/chan-vi-han-so-dien-nghia/dong-a-s100-bia-va-ban-do.jpg",
+        "/assets/img/books/chan-vi-han-so-dien-nghia/dong-a-s100-giay-lot.jpg",
+        "/assets/img/books/chan-vi-han-so-dien-nghia/dong-a-s100-trang-danh-so.jpg"
+      ],
+      "detail": "- Bản dịch đầy đủ 101 hồi.\n- Bìa cứng thủ công do nghệ nhân Nguyễn Đức Khuynh và cộng sự thực hiện.\n- Ruột in trên giấy Ford kem Nhật 80 gsm.\n- Đóng dấu đỏ Đông A, có triện son và chữ ký của dịch giả Châu Hải Đường và nghệ nhân đóng sách.\n- Kèm bản đồ Hán Sở phân tranh."
+    }
+  ]
+}

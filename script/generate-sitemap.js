@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const { getPublishedYears } = require("./generate-award-pages");
+const { updatedAtForSchema } = require("../assets/js/publication-date");
 
 const SITE_URL = "https://biacung.com";
 
@@ -109,7 +110,7 @@ function buildSitemapXml(rootDir) {
     lines.push("  <url>");
     lines.push(`    <loc>${escapeXml(entry.loc)}</loc>`);
     if (entry.lastmod) {
-      lines.push(`    <lastmod>${escapeXml(entry.lastmod)}</lastmod>`);
+      lines.push(`    <lastmod>${escapeXml(updatedAtForSchema(entry.lastmod))}</lastmod>`);
     }
     lines.push("  </url>");
   });

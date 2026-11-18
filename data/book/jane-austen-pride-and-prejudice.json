@@ -13,8 +13,9 @@
       "isbn": null,
       "series_ids": [],
       "caption": "",
-      "pub_year": 2026,
-      "pub_date": "2026-12-03",
+      "is_upcoming": true,
+      "pub_year": null,
+      "pub_date": null,
       "publisher": "NXB Văn Học",
       "issuers": [
         "Đông A"

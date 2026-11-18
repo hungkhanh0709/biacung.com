@@ -23,7 +23,7 @@ description: "Nhập trọn sách từ tin phát hành/ảnh: tra nguồn, lập
 
 Bắt đầu bằng `node script/book-intake.js sources` và xem `git status --short`. `sources` tự tạo raw nếu chưa có; chỉ chạy `init` nếu cần tạo nháp. Raw bị gitignore: mở từng ảnh được liệt kê và ghi review trước khi tra web hoặc hỏi danh tính sách. Không lặp sources/check ở từng skill con.
 
-Chỉ tra cứu dữ kiện còn thiếu; dừng khi có nguồn đủ rõ. Không thử nhiều keyword để kiểm chức năng search. Form tự sort edition và index khi lưu: năm giảm dần, cùng năm ngày giảm dần; trong cùng năm bản có ngày đứng trước bản thiếu ngày, cùng khóa giữ thứ tự. Không dùng `updated_at` để sort. Chỉ chạy `sort-book` nếu index thực tế chưa đúng.
+Chỉ tra cứu dữ kiện còn thiếu; dừng khi có nguồn đủ rõ. Không thử nhiều keyword để kiểm chức năng search. Form tự sort edition và index khi lưu theo [quy ước ngày](references/book-intake-workflow.md#ngày-phát-hành): sắp phát hành đứng đầu; index nhóm này dùng `updated_at` mới nhất. Các bản đã phát hành dùng năm/ngày giảm dần, không dùng `updated_at`. Chỉ chạy `sort-book` nếu index thực tế chưa đúng.
 
 Khi sửa lỗi quy trình, sửa hướng dẫn/nháp trước rồi lưu lại qua form `book-input` bằng Chrome MCP; không vá JSON đầu ra hoặc đổi logic ứng dụng. Không commit/push/deploy khi chưa được yêu cầu.
 

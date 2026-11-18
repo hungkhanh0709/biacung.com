@@ -115,6 +115,12 @@ function createCard(result) {
   heading.className = "book-title";
   heading.textContent = result.title || "Không có tiêu đề";
   content.appendChild(heading);
+  if (result.isUpcoming) {
+    const badge = document.createElement("span");
+    badge.className = "publication-badge";
+    badge.textContent = "Sắp phát hành";
+    content.appendChild(badge);
+  }
 
   if (result.subtitle) {
     const subtitleNode = document.createElement("p");
@@ -229,7 +235,8 @@ async function loadChauchaubookResults() {
         subtitle: Array.isArray(book.authors) ? book.authors.join(", ") : "",
         meta: normalizeText(edition.caption) || "Phiên bản Chauchaubook",
         image: pickEditionShowcaseImage(edition),
-        href: buildDetailUrl(book.id, edition.id)
+        href: buildDetailUrl(book.id, edition.id),
+        isUpcoming: publication.isUpcoming(edition)
       });
     });
   });

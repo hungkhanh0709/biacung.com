@@ -46,7 +46,14 @@
     return left === right ? 0 : left > right ? -1 : 1;
   }
 
+  function isUpcoming(value) {
+    return value?.is_upcoming === true;
+  }
+
   function compareEditions(left, right) {
+    if (isUpcoming(left) || isUpcoming(right)) {
+      return descending(Number(isUpcoming(left)), Number(isUpcoming(right)));
+    }
     return descending(getEditionYear(left) || 0, getEditionYear(right) || 0)
       || descending(normalizePubDate(left?.pub_date) || "", normalizePubDate(right?.pub_date) || "");
   }
@@ -57,8 +64,9 @@
     return Array.isArray(editions) ? [...editions].sort(compareEditions) : [];
   }
 
-  function normalizeEdition(edition) {
+  function normalizeEditionFields(edition) {
     const result = { ...edition };
+    if (result.is_upcoming === false) delete result.is_upcoming;
     if (Object.prototype.hasOwnProperty.call(result, "pub_date")) {
       const yearOnly = normalizeYear(result.pub_date);
       if (yearOnly) {
@@ -88,6 +96,17 @@
     return result;
   }
 
+  function normalizeEdition(edition) {
+    const result = normalizeEditionFields(edition);
+    // Merging retains old key order; place the status before the final year,
+    // including when normalization derives that year from pub_date.
+    if (!isUpcoming(result) || !Object.prototype.hasOwnProperty.call(result, "pub_year")) return result;
+    return Object.fromEntries(Object.entries(result)
+      .filter(([key]) => key !== "is_upcoming")
+      .flatMap(([key, value]) => key === "pub_year"
+        ? [["is_upcoming", true], [key, value]] : [[key, value]]));
+  }
+
   function normalizeBookDetail(book) {
     return Array.isArray(book?.editions)
       ? { ...book, editions: sortEditions(book.editions.map(normalizeEdition)) }
@@ -101,6 +120,7 @@
     }
     const recordedDate = getEditionDate(latest);
     return {
+      ...(isUpcoming(latest) ? { is_upcoming: true } : {}),
       last_pub_year: getEditionYear(latest) || "",
       ...(recordedDate ? { last_pub_date: recordedDate } : {})
     };
@@ -110,14 +130,46 @@
     const summary = getPublicationSummary(book);
     const result = { ...entry, ...summary };
     if (!summary.last_pub_date) delete result.last_pub_date;
+    if (!summary.is_upcoming) delete result.is_upcoming;
     return result;
   }
 
   function compareBookEntries(left, right) {
+    if (isUpcoming(left) || isUpcoming(right)) {
+      return descending(Number(isUpcoming(left)), Number(isUpcoming(right)))
+        || descending(getUpdatedTime(left) ?? 0, getUpdatedTime(right) ?? 0);
+    }
     return compareEditions(
       { pub_year: left?.last_pub_year, pub_date: left?.last_pub_date },
       { pub_year: right?.last_pub_year, pub_date: right?.last_pub_date }
     );
+  }
+
+  function getUpdatedTime(entry) {
+    let value = String(entry?.updated_at ?? "").trim();
+    const minute = /^(\d{4}-\d{2}-\d{2})[ T](\d{2}):(\d{2})$/.exec(value);
+    if (minute) {
+      if (Number(minute[2]) > 23 || Number(minute[3]) > 59) return null;
+      value = `${minute[1]}T${minute[2]}:${minute[3]}:00Z`;
+    }
+    if (!/^\d{4}-\d{2}-\d{2}(?:T.*(?:Z|[+-]\d{2}:\d{2}))?$/.test(value)
+        || !isIsoDate(value.slice(0, 10))) return null;
+    const time = Date.parse(value);
+    return Number.isFinite(time) ? time : null;
+  }
+
+  function formatUpdatedAt(value = new Date()) {
+    if (isIsoDate(value)) return value;
+    const time = value instanceof Date ? value.getTime() : getUpdatedTime({ updated_at: value });
+    return time != null && Number.isFinite(time)
+      ? new Date(time).toISOString().slice(0, 16).replace("T", " ")
+      : String(value ?? "").trim();
+  }
+
+  function updatedAtForSchema(value) {
+    const formatted = formatUpdatedAt(value);
+    return /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}$/.test(formatted)
+      ? `${formatted.replace(" ", "T")}:00Z` : formatted;
   }
 
   function sortBookEntries(entries) {
@@ -125,10 +177,10 @@
   }
 
   function formatPublicationDate(edition) {
+    if (isUpcoming(edition)) return "Sắp phát hành";
     if (edition?.pub_date) {
-      // Convert pub_date string to date object and format it as "DD/MM/YYYY"
       const date = new Date(edition.pub_date);
-      const month = String(date.getUTCMonth() + 1).padStart(2, "0"); // Months are zero-based
+      const month = String(date.getUTCMonth() + 1).padStart(2, "0");
       const year = date.getUTCFullYear();
       return `${month}/${year}`;
     } else if (edition?.pub_year) {
@@ -138,13 +190,14 @@
   }
 
   function publicationDateForSchema(edition) {
+    if (isUpcoming(edition)) return "";
     return normalizePubDate(edition?.pub_date) || String(normalizeYear(edition?.pub_year) ?? "");
   }
 
   return {
-    normalizeYear, normalizePubDate, isIsoDate, getEditionDate, getEditionYear,
+    normalizeYear, normalizePubDate, isIsoDate, getEditionDate, getEditionYear, isUpcoming,
     compareEditions, sortEditions, normalizeEdition, normalizeBookDetail,
     getPublicationSummary, withPublicationSummary, compareBookEntries, sortBookEntries,
-    formatPublicationDate, publicationDateForSchema
+    formatPublicationDate, publicationDateForSchema, formatUpdatedAt, updatedAtForSchema
   };
 });

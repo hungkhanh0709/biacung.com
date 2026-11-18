@@ -203,8 +203,10 @@
         const raw = String(text || '');
         const lines = extractLines(raw);
         const joined = lines.join('\n');
+        const isUpcoming = /^(?:(?:trạng thái|phát hành|ngày phát hành)\s*[:：-]\s*)?(?:sách\s+)?sắp phát hành[.!]?$/imu.test(joined);
 
         const result = {
+            ...(isUpcoming ? { is_upcoming: true } : {}),
             title: null,
             sku: null,
             isbn: null,

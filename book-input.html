@@ -86,6 +86,30 @@
             grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
         }
 
+        .publication-status-field {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .publication-status-field .checkbox-field {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .checkbox-field input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin: 0;
+            padding: 0;
+            accent-color: #6f4fc8;
+            flex-shrink: 0;
+        }
+
         @media (max-width: 900px) {
 
             .field-row-3,
@@ -462,6 +486,11 @@
         <details class="card">
             <summary>Xem trước JSON và lưu riêng từng file</summary>
             <div class="output-panel">
+                <label>
+                    Thời điểm cập nhật (UTC)
+                    <input type="datetime-local" id="updated-at" name="updatedAt" form="book-form" step="60" />
+                    <span class="field-helper">Để trống để dùng thời điểm hiện tại; có thể chỉnh để sắp thứ tự sách sắp phát hành.</span>
+                </label>
                 <div class="output-actions">
                     <button type="button" id="download-book-index" class="primary">Lưu book.json</button>
                     <button type="button" id="download-book-detail" class="secondary">Lưu detail.json</button>
@@ -483,9 +512,9 @@
         </details>
     </main>
 
-    <script src="./assets/js/publication-date.js?v=20261108-3"></script>
-    <script src="./script/edition-parser.js?v=20261108-2"></script>
-    <script src="./script/book-input.js?v=20261108-3"></script>
+    <script src="./assets/js/publication-date.js?v=20261118-4"></script>
+    <script src="./script/edition-parser.js?v=20261118-4"></script>
+    <script src="./script/book-input.js?v=20261118-4"></script>
 </body>
 
 </html>

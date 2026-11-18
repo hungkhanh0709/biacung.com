@@ -194,7 +194,8 @@
       "dk-lich-su-the-gioi-lich-su-the-gioi-chan-dung-nhan-loai-theo-dong-su-kien",
       "dk-lich-su-quan-su-bach-khoa-thu-cac-loai-vu-khi-dinh-hinh-the-gioi",
       "dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do",
-      "dk-nhung-tran-chien-thay-doi-lich-su"
+      "dk-nhung-tran-chien-thay-doi-lich-su",
+      "dk-writers-their-lives-and-works"
     ]
   },
   {
@@ -246,7 +247,9 @@
       "john-steinbeck-travels-with-charley-in-search-of-america",
       "john-steinbeck-tortilla-flat",
       "john-steinbeck-east-of-eden",
-      "john-steinbeck-of-mice-and-men"
+      "john-steinbeck-of-mice-and-men",
+      "john-steinbeck-the-red-pony",
+      "john-steinbeck-the-grapes-of-wrath"
     ]
   },
   {
@@ -1610,6 +1613,13 @@
     "name": "Aldous Huxley",
     "work_ids": [
       "aldous-huxley-brave-new-world"
+    ]
+  },
+  {
+    "id": "chan-vi",
+    "name": "Chân Vĩ",
+    "work_ids": [
+      "chan-vi-han-so-dien-nghia"
     ]
   }
 ]

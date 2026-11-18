@@ -99,7 +99,7 @@ async function loadRecentBooks(bookIndex, limit) {
   return books;
 }
 
-function createCard({ title, subtitle, description, image, href, meta }) {
+function createCard({ title, subtitle, description, image, href, meta, isUpcoming }) {
   const article = document.createElement("article");
   article.className = "book-card";
 
@@ -129,6 +129,12 @@ function createCard({ title, subtitle, description, image, href, meta }) {
   heading.textContent = title || "Không có tiêu đề";
 
   content.appendChild(heading);
+  if (isUpcoming) {
+    const badge = document.createElement("span");
+    badge.className = "publication-ribbon";
+    badge.textContent = "Sắp phát hành";
+    media.appendChild(badge);
+  }
 
   if (subtitle) {
     const author = document.createElement("p");
@@ -243,6 +249,7 @@ async function renderRecentSection(sectionConfig, sectionElement) {
       // description: normalizeText(firstEdition.caption || ""),
       image: safeUrl(firstEdition.thumbnail || book.thumbnail) || BOOK_DETAIL_FALLBACK,
       href: buildDetailUrl(book.id),
+      isUpcoming: publication.isUpcoming(firstEdition),
       meta
     });
 

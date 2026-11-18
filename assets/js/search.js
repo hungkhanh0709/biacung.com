@@ -148,7 +148,8 @@ function getMatchingEditions(book, needles) {
       edition?.pub_year,
       edition?.pub_date,
       edition?.cover_price,
-      edition?.isbn
+      edition?.isbn,
+      publication.isUpcoming(edition) ? "Sắp phát hành" : ""
     ];
 
     return fields.some((value) => matchesAnyNeedle(value, needles));
@@ -202,7 +203,7 @@ function setLoadMoreState() {
   loadMoreButton.textContent = "Xem thêm";
 }
 
-function createCard({ title, subtitle, description, image, href, meta }) {
+function createCard({ title, subtitle, description, image, href, meta, isUpcoming }) {
   const article = document.createElement("article");
   article.className = "book-card";
 
@@ -232,6 +233,12 @@ function createCard({ title, subtitle, description, image, href, meta }) {
   heading.className = "book-title";
   heading.textContent = title || "Không có tiêu đề";
   content.appendChild(heading);
+  if (isUpcoming) {
+    const badge = document.createElement("span");
+    badge.className = "publication-ribbon";
+    badge.textContent = "Sắp phát hành";
+    media.appendChild(badge);
+  }
 
   if (subtitle) {
     const subtitleNode = document.createElement("p");
@@ -335,7 +342,9 @@ async function loadBookMatches(searchNeedles) {
   const matchedEntries = Array.isArray(bookIndex)
     ? publication.sortBookEntries(bookIndex)
       .map((entry) => {
-        const searchableText = normalizeSearchText(entry?.search_text);
+        const searchableText = normalizeSearchText([
+          entry?.search_text, publication.isUpcoming(entry) ? "Sắp phát hành" : ""
+        ].join(" "));
         if (needles.length && !needles.some((needle) => searchableText.includes(needle))) {
           return null;
         }
@@ -373,6 +382,7 @@ async function loadBookMatches(searchNeedles) {
         subtitle: Array.isArray(book.authors) ? book.authors.join(", ") : "",
         image: selectedEdition.thumbnail || book.thumbnail,
         href: buildDetailUrl("book", book.id, selectedEdition.id),
+        isUpcoming: publication.isUpcoming(selectedEdition),
         meta: visibleEditionCount ? `(${visibleEditionCount} phiên bản)` : ""
       };
     })
