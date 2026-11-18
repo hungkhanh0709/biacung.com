@@ -14,7 +14,7 @@ function createPublicationFixture() {
     const template = JSON.parse(fs.readFileSync(path.join(repo, 'data/template/book-detail.json')));
     const edition = (bookId, year) => ({
         ...template.editions[0], id: `${bookId}-${year}`, series_ids: [], pub_year: year,
-        title: undefined, pub_date: undefined, caption: 'Bìa Cứng', format: 'Bìa Cứng', cover_price: '900k',
+        title: undefined, pub_date: undefined, is_upcoming: undefined, caption: 'Bìa Cứng', format: 'Bìa Cứng', cover_price: '900k',
         translators: [], illustrators: [], proofreaders: [], detail: '', size_cm: '',
         thumbnail: `/assets/img/books/${bookId}/cover.jpg`, gellery_imgs: []
     });

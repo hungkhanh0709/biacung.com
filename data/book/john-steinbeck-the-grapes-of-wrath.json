@@ -1,0 +1,38 @@
+{
+  "id": "john-steinbeck-the-grapes-of-wrath",
+  "title": "Chùm Nho Thịnh Nộ",
+  "title_original": "The Grapes of Wrath",
+  "authors": [
+    "John Steinbeck"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "john-steinbeck-the-grapes-of-wrath-2026-tao-dan-bia-mem",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Tao Đàn"
+      ],
+      "translators": [
+        "Phạm Văn"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": 508,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/john-steinbeck-the-grapes-of-wrath/tao-dan-bia-mem-anh-bia.jpeg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

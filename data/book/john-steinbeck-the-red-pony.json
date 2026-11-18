@@ -1,0 +1,40 @@
+{
+  "id": "john-steinbeck-the-red-pony",
+  "title": "Chú Ngựa Đỏ",
+  "title_original": "The Red Pony",
+  "authors": [
+    "John Steinbeck"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "john-steinbeck-the-red-pony-2026-tao-dan-bia-mem-90k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2026,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Tao Đàn"
+      ],
+      "translators": [
+        "Phạm Văn"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "90k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "13 x 20,5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/john-steinbeck-the-red-pony/tao-dan-bia-mem-mockup.webp",
+      "gellery_imgs": [
+        "/assets/img/books/john-steinbeck-the-red-pony/tao-dan-bia-mem-anh-bia.jpeg"
+      ],
+      "detail": ""
+    }
+  ]
+}

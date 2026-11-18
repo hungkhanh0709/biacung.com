@@ -567,6 +567,7 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
     card.dataset.editionIndex = String(index);
     card.dataset.legacyPubDate = String(Boolean(editionData.id) && !Object.prototype.hasOwnProperty.call(editionData, 'pub_date'));
     card.dataset.existingEdition = String(Boolean(editionData.id));
+    card.dataset.wasUpcoming = String(publication.isUpcoming(editionData));
     card.innerHTML = `
         <div class="edition-card-heading">
             <strong>${options.isNewEdition ? 'Phiên bản mới' : 'Phiên bản đã lưu'}</strong>
@@ -591,16 +592,25 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
                 </label>
             </div>
             <input type="hidden" name="edition-isbn-${index}" />
-            <label class="field-full-row">
-                Ngày phát hành / thực hiện
-                <input name="edition-pub-date-${index}" placeholder="2026-11-08 hoặc 2026-11" />
-                <span class="field-helper">Nhận cả DD/MM/YYYY, MM/YYYY. Biết tháng/năm thì lấy ngày 01 của tháng; chỉ biết năm thì để trống ngày và nhập năm bên dưới.</span>
-            </label>
-            <div class="field-row-3 field-full-row">
+            <div class="field-row-3 publication-fields field-full-row">
+                <div class="publication-status-field">
+                    <label class="checkbox-field">
+                        <input type="checkbox" name="edition-publication-status-${index}" value="upcoming" />
+                        Sắp phát hành
+                    </label>
+                    <span class="field-helper">Chưa có lịch: để trống ngày/năm.</span>
+                </div>
+                <label>
+                    Ngày phát hành / thực hiện
+                    <input name="edition-pub-date-${index}" placeholder="DD/MM/YYYY hoặc MM/YYYY" />
+                    <span class="field-helper">Chỉ biết năm: nhập ô bên cạnh.</span>
+                </label>
                 <label>
                     Năm phát hành / thực hiện
                     <input name="edition-pub-year-${index}" placeholder="2026" />
                 </label>
+            </div>
+            <div class="field-row-3 field-full-row">
                 <label>
                     NXB
                     <input name="edition-publisher-${index}" placeholder="NXB Văn Học" />
@@ -609,13 +619,12 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
                     Cty phát hành
                     <input name="edition-issuers-${index}" placeholder="Đông A" />
                 </label>
+                <label>
+                    Series IDs
+                    <textarea class="field-inline" name="edition-series-ids-${index}" rows="1" placeholder="dong-a-classics-bia-vai"></textarea>
+                    <span class="field-helper">Mỗi ID một dòng; không có thì để trống.</span>
+                </label>
             </div>
-
-            <label class="field-full-row">
-                Series IDs
-                <textarea class="field-inline" name="edition-series-ids-${index}" rows="2" placeholder="dong-a-classics-bia-vai"></textarea>
-                <span class="field-helper">Mỗi ID một dòng. Để trống nếu phiên bản không thuộc series.</span>
-            </label>
 
             <div class="field-row-3 field-full-row">
                 <label>
@@ -693,6 +702,11 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
             return;
         }
 
+        if (target.type === 'checkbox') {
+            target.checked = value === 'upcoming' || value === true;
+            return;
+        }
+
         if (Array.isArray(value)) {
             target.value = value.join('\n');
             return;
@@ -727,6 +741,7 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
         setFieldValue(`edition-caption-${index}`, editionData.caption || '');
         setFieldValue(`edition-isbn-${index}`, editionData.isbn || '');
         setFieldValue(`edition-series-ids-${index}`, editionData.series_ids || []);
+        setFieldValue(`edition-publication-status-${index}`, publication.isUpcoming(editionData) ? 'upcoming' : '');
         setFieldValue(`edition-pub-date-${index}`, editionData.pub_date ?? '');
         setFieldValue(`edition-pub-year-${index}`, publication.getEditionYear(editionData) ?? '');
         setFieldValue(`edition-publisher-${index}`, editionData.publisher || '');
@@ -753,6 +768,10 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
         const value = (name) => card.querySelector(`[name="edition-${name}-${index}"]`)?.value || '';
         card.dataset.originalGeneratedId = buildEditionId(getBookSlugFromFormData(new FormData(form)), {
             pub_year: publication.getEditionYear(editionData),
+            issuers: parseLines(value('issuers')).map(normalizeIssuerValue),
+            format: normalizeFormatValue(value('format')), cover_price: normalizeText(value('cover-price'))
+        });
+        card.dataset.originalGeneratedIdWithoutYear = buildEditionId(getBookSlugFromFormData(new FormData(form)), {
             issuers: parseLines(value('issuers')).map(normalizeIssuerValue),
             format: normalizeFormatValue(value('format')), cover_price: normalizeText(value('cover-price'))
         });
@@ -802,6 +821,7 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
                     const normalizedPublisher = normalizeText(parsed.publisher || '').replace(/^NXB\s*/i, '');
 
                     setParsedFieldValue(`edition-isbn-${index}`, parsed.isbn || parsed.sku || '');
+                    if (parsed.is_upcoming) setFieldValue(`edition-publication-status-${index}`, 'upcoming');
                     setParsedFieldValue(`edition-pub-date-${index}`, parsed.pub_date ?? '');
                     setParsedFieldValue(`edition-pub-year-${index}`, parsed.pub_year ?? '');
                     setParsedFieldValue(`edition-publisher-${index}`, normalizedPublisher || '');
@@ -958,6 +978,7 @@ function buildEditionFromFormData(formData, index, bookId) {
     const caption = toTitleCase(formData.get(`edition-caption-${index}`));
     const pubYear = normalizeText(formData.get(`edition-pub-year-${index}`));
     const card = editionsContainer.querySelector(`[data-edition-index="${index}"]`);
+    const isUpcoming = formData.get(`edition-publication-status-${index}`) === 'upcoming';
     const rawDate = normalizeText(formData.get(`edition-pub-date-${index}`));
     const date = publication.normalizePubDate(rawDate);
     const yearOnly = publication.normalizeYear(rawDate);
@@ -983,6 +1004,7 @@ function buildEditionFromFormData(formData, index, bookId) {
         isbn: isbn || null,
         series_ids: [...new Set(seriesIds)],
         caption: caption || '',
+        ...(isUpcoming || card?.dataset.wasUpcoming === 'true' ? { is_upcoming: isUpcoming } : {}),
         pub_year: year,
         ...(includeDate ? { pub_date: date || rawDate || null } : {}),
         publisher: publisher || '',
@@ -1003,8 +1025,12 @@ function buildEditionFromFormData(formData, index, bookId) {
     };
 
     const generatedId = buildEditionId(bookId, editionObject);
+    const statusTransition = isUpcoming || card?.dataset.wasUpcoming === 'true';
+    const sameIdentityWithoutYear = card?.dataset.originalGeneratedIdWithoutYear
+        === buildEditionId(bookId, { ...editionObject, pub_year: null, pub_date: null });
     return {
-        id: card?.dataset.originalEditionId && card.dataset.originalGeneratedId === generatedId
+        id: card?.dataset.originalEditionId && (card.dataset.originalGeneratedId === generatedId
+            || (statusTransition && sameIdentityWithoutYear))
             ? card.dataset.originalEditionId : generatedId,
         ...editionObject
     };
@@ -1132,7 +1158,7 @@ function buildBookIndexPayload(formData, existingBookIndex = existingBookIndexEn
     const bookId = getBookSlugFromFormData(formData);
     const detailPath = getBookDetailFilePath(bookId);
     const searchText = collectSearchTextTerms(formData).join(' ');
-    const updatedAt = new Date().toISOString().slice(0, 10);
+    const updatedAt = publication.formatUpdatedAt(formData.get('updatedAt') || new Date());
     const mergedBookIndex = Array.isArray(existingBookIndex) ? existingBookIndex.filter(Boolean).slice() : [];
     const position = mergedBookIndex.findIndex((entry) => entry.detail === detailPath);
     const publicationSummary = getPublicationSummaryFromForm(formData);
@@ -1144,6 +1170,7 @@ function buildBookIndexPayload(formData, existingBookIndex = existingBookIndexEn
         updated_at: updatedAt
     };
     if (!publicationSummary.last_pub_date) delete updatedEntry.last_pub_date;
+    if (!publicationSummary.is_upcoming) delete updatedEntry.is_upcoming;
     if (position >= 0) mergedBookIndex[position] = updatedEntry;
     else mergedBookIndex.push(updatedEntry);
 
@@ -1154,7 +1181,7 @@ function buildBookIndexReviewPayload(formData) {
     const bookId = getBookSlugFromFormData(formData);
     const detailPath = getBookDetailFilePath(bookId);
     const searchText = collectSearchTextTerms(formData).join(' ');
-    const updatedAt = new Date().toISOString().slice(0, 10);
+    const updatedAt = publication.formatUpdatedAt(formData.get('updatedAt') || new Date());
 
     return {
         detail: detailPath,
@@ -1521,6 +1548,8 @@ function populateFormFromBookDetail(detail) {
         const authorsField = form.querySelector('[name="authors"]');
         const awardsField = form.querySelector('[name="awards"]');
         const seriesField = form.querySelector('[name="series"]');
+        const updatedAtField = document.getElementById('updated-at');
+        if (updatedAtField) updatedAtField.value = '';
 
         if (titleField) {
             titleField.value = normalizeBookTitle(detail.title || '');
@@ -1843,6 +1872,7 @@ form.addEventListener('submit', async (event) => {
 });
 
 loadBookButton?.addEventListener('click', loadBookFromCurrentSlug);
+document.getElementById('updated-at')?.addEventListener('input', () => renderOutputs());
 
 addEditionButton.addEventListener('click', () => {
     addEdition();

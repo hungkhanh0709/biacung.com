@@ -57,10 +57,14 @@ NXB, dịch giả, họa sĩ, hiệu đính có thể đề xuất theo căn c�
 
 ### Ngày phát hành
 
+- Khi người dùng xác nhận ngày đầy đủ là ngày phát hành của edition, giữ chính xác ngày đó; không tự giảm xuống tháng chỉ vì nguồn khác chỉ ghi tháng hoặc ngày xuất hiện ở đầu tin.
+
+- Edition đã công bố nhưng chưa phát hành: chọn **Sắp phát hành** trong form (`is_upcoming: true`); chưa có lịch thì để `pub_year`/`pub_date` null, không đặt ngày tương lai giả. Chỉ thiếu ngày/năm không có nghĩa là sắp phát hành. Khi đã phát hành, bỏ trạng thái này và nhập ngày/năm có nguồn; giữ ID hiện có nếu chỉ đổi trạng thái/ngày chưa biết.
+- Thứ tự field trong JSON: khi có `is_upcoming`, đặt ngay trước `pub_year`; form và cơ chế lưu tự giữ thứ tự này khi gộp edition đã có.
 - Chỉ biết năm: lưu `pub_year`, bỏ key `pub_date`, không suy ngày 01/01. Biết tháng/năm: lưu cả hai, `pub_date` là ngày 01 của tháng. Đủ ngày/tháng/năm: lưu cả hai, giữ đúng ngày. Hoàn toàn chưa rõ thì năm/ngày `null`; chỉ có quý và năm thì lưu năm, bỏ ngày.
 - Form nhận YYYY-MM-DD, YYYY-MM, DD/MM/YYYY, MM/YYYY; nếu nhập riêng YYYY thì đưa vào pub_year và không tạo pub_date. Ghi độ chính xác tháng khi bổ sung ngày 01. Ngày lỗi phải sửa. Không suy lại độ chính xác từ ngày 01/01 đã lưu hoặc chuyển đổi hàng loạt dữ liệu cũ. Khi có pub_date, đặt sau pub_year; bổ sung ngày/tháng cùng năm không đổi ID.
-- **Sort edition:** pub_year giảm dần (có pub_date hợp lệ thì năm lấy từ ngày); cùng năm sort pub_date giảm dần. Trong cùng năm bản có ngày đứng trước bản thiếu ngày, cùng khóa giữ thứ tự. Thiếu cả năm/ngày đứng cuối. Không tự điền ngày để sort.
-- **Sort book index:** cùng quy tắc với last_pub_year/last_pub_date của edition mới nhất; không dùng updated_at. Form/server dùng chung helper, tự sort trước khi lưu. `npm run sort-book` chỉ sửa index khi cần, không ghi lại detail cũ.
+- **Sort edition:** bản `is_upcoming: true` đứng đầu, các bản sắp phát hành giữ thứ tự tương đối. Các bản còn lại: pub_year giảm dần (có pub_date hợp lệ thì năm lấy từ ngày); cùng năm sort pub_date giảm dần. Trong cùng năm bản có ngày đứng trước bản thiếu ngày, cùng khóa giữ thứ tự. Thiếu cả năm/ngày đứng cuối. Không tự điền ngày để sort.
+- **Sort book index:** tựa có edition sắp phát hành đứng đầu, trong nhóm này `updated_at` mới hơn đứng trước. Các tựa còn lại dùng last_pub_year/last_pub_date như trên, không dùng updated_at. Form/server dùng chung helper, tự sort trước khi lưu. `updated_at` mới lưu `YYYY-MM-DD HH:mm` theo UTC; dữ liệu cũ chỉ ghi ngày hoặc ISO có múi giờ vẫn đọc được. Cùng phút giữ thứ tự ổn định. Khi người dùng yêu cầu thứ tự cụ thể, nhập thời điểm giảm dần ở **Thời điểm cập nhật (UTC)** trong phần xem trước rồi bấm **Lưu book.json**, không sửa detail/ảnh/author/series. `npm run sort-book` chỉ sửa index khi cần, không ghi lại detail cũ.
 
 ### Giá bìa
 

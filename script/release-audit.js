@@ -513,15 +513,19 @@ function auditData(rootDir, errors, warnings) {
         warnings.push(`Book is missing editions: data/book/${file}`);
       }
 
-      if (editions.some((edition) => edition && Object.prototype.hasOwnProperty.call(edition, 'pub_date'))) {
+      if (editions.some((edition) => edition && ('pub_date' in edition || 'is_upcoming' in edition))) {
         const entry = bookIndex.find((entry) => entry.detail === `data/book/${file}`);
         const summary = publication.getPublicationSummary(payload);
         if (entry && (entry.last_pub_year !== summary.last_pub_year
-          || (entry.last_pub_date || '') !== (summary.last_pub_date || ''))) {
+          || (entry.last_pub_date || '') !== (summary.last_pub_date || '')
+          || publication.isUpcoming(entry) !== publication.isUpcoming(summary))) {
           errors.push(`Publication summary is stale: data/book/${file}`);
         }
       }
       editions.forEach((edition, index) => {
+        if (edition && 'is_upcoming' in edition && typeof edition.is_upcoming !== 'boolean') {
+          errors.push(`Invalid is_upcoming: data/book/${file}#${index + 1}`);
+        }
         if (edition && Object.prototype.hasOwnProperty.call(edition, 'pub_date') && edition.pub_date !== null) {
           if (!publication.isIsoDate(edition.pub_date)) {
             errors.push(`Invalid pub_date: data/book/${file}#${index + 1}`);

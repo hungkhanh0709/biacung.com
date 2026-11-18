@@ -150,12 +150,14 @@ test('form preview omits pub_date for year-only input and preserves month/day pr
     }
 });
 
-test('publication display and structured data retain legacy precision', () => {
-    assert.equal(publication.formatPublicationDate({ pub_date: '2026-11-08' }), '08/11/2026');
-    assert.equal(publication.formatPublicationDate({ pub_year: 2026 }), '2026');
+test('publication display keeps month/year and original year type while schema keeps the exact date', () => {
+    assert.equal(publication.formatPublicationDate({ pub_date: '2026-11-08' }), '11/2026');
+    assert.equal(publication.formatPublicationDate({ pub_year: 2026 }), 2026);
     assert.equal(publication.publicationDateForSchema({ pub_date: '2026-11-08', pub_year: 2025 }), '2026-11-08');
     assert.equal(publication.publicationDateForSchema({ pub_year: 2026 }), '2026');
     assert.equal(publication.formatPublicationDate({ pub_year: null }), '');
+    assert.equal(publication.formatPublicationDate({ is_upcoming: true }), 'Sắp phát hành');
+    assert.equal(publication.formatPublicationDate({ is_upcoming: true, pub_date: '2026-11-08' }), 'Sắp phát hành');
 });
 
 test('detail UI uses Phát hành for dates, years and Chauchaubook editions', () => {
@@ -173,7 +175,7 @@ test('detail UI uses Phát hành for dates, years and Chauchaubook editions', ()
     vm.runInContext(fs.readFileSync(path.join(__dirname, '../assets/js/detail.js'), 'utf8'), page);
     for (const format of ['Bìa cứng', 'Chauchaubook']) {
         for (const [date, expected] of [
-            [{ pub_year: 2026, pub_date: '2026-11-16' }, 'Phát hành: 16/11/2026'],
+            [{ pub_year: 2026, pub_date: '2026-11-16' }, 'Phát hành: 11/2026'],
             [{ pub_year: 2026 }, 'Phát hành: 2026'],
             [{ pub_year: 2026, pub_date: null }, 'Phát hành: 2026']
         ]) {

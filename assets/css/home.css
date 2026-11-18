@@ -1,5 +1,43 @@
 /* Home page styles. Depends on tokens.css. */
 
+.publication-badge {
+  display: inline-block;
+  align-self: flex-start;
+  inline-size: fit-content;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.publication-badge[hidden] {
+  display: none;
+}
+
+.publication-ribbon {
+  position: absolute;
+  z-index: 2;
+  top: 1.5rem;
+  left: -2.5rem;
+  inline-size: 10rem;
+  padding-block: 0.35rem;
+  transform: rotate(-45deg);
+  background: linear-gradient(180deg, #ed4845, #c9232b);
+  box-shadow: 0 2px 5px rgb(85 12 17 / 25%);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -961,6 +999,14 @@ input:focus-visible {
     block-size: 11rem;
     border-radius: var(--radius-md);
     box-shadow: 0 0.85rem 1.6rem rgb(38 34 54 / 9%);
+  }
+
+  .publication-ribbon {
+    top: 1.1rem;
+    left: -2.6rem;
+    inline-size: 9rem;
+    padding-block: 0.25rem;
+    font-size: 0.57rem;
   }
 
   .book-card a:hover .book-media {

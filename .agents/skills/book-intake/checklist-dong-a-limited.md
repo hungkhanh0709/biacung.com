@@ -67,10 +67,10 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 44 | ☑ | [Gatsby vĩ đại](../../../data/book/f-scott-fitzgerald-the-great-gatsby.json) | S500 | 30/08/2022 | 1tr200k |  |  |
 | 45 | ☑ | [Gió đầu mùa & Hà Nội băm sáu phố phường](../../../data/book/thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong.json) | Bản Chữ A | 18/01/2025 | Thiếu | Thiếu |  |
 | 46 | ☑ | [Gió đầu mùa & Hà Nội băm sáu phố phường](../../../data/book/thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong.json) | S100 | 12/10/2023 | 3tr800k |  |  |
-| 47 | ☑ | [Gió đầu mùa & Hà Nội băm sáu phố phường](../../../data/book/thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong.json) | S500 | Thiếu | Thiếu | Thiếu | Chưa có bản S500. Cần đối chiếu nguồn cũ: mốc 06/2023, giá 1.200.000đ. |
-| 48 | ☐ | Hán Sở diễn nghĩa | S100 | Thiếu | Thiếu | Thiếu | Cần nhập hồ sơ. |
+| 47 | ☑ | [Gió đầu mùa & Hà Nội băm sáu phố phường](../../../data/book/thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong.json) | S500 | 02/06/2023 | 1tr200k |  |  |
+| 48 | ☑ | [Hán Sở diễn nghĩa](../../../data/book/chan-vi-han-so-dien-nghia.json) | S100 | 01/09/2019 | 1tr | Đủ |  |
 | 49 | ☑ | [Hành Trình Thám Hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
-| 50 | ☑ | [Hành trình thám hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | Phổ thông | Thiếu | Thiếu | Thiếu | Chưa có bản phổ thông. |
+| 50 | ☑ | [Hành trình thám hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | Phổ thông | 20/04/2023 | 790k | Đủ |  |
 | 51 | ☑ | [Hành trình thám hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
 | 52 | ☑ | [Hành trình thám hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | S365 | Thiếu | Thiếu | Thiếu | Chưa có bản S365. Cần đối chiếu nguồn cũ: mốc 08/2023, giá 1.500.000đ. |
 | 53 | ☐ | Hạt bụi người bay ngược | Chưa cung cấp | Thiếu | Thiếu | Thiếu | Cần nhập hồ sơ. Cần xác nhận mã bản. |
@@ -109,9 +109,9 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 86 | ☑ | [Người kép già](../../../data/book/kim-lan-nguoi-kep-gia.json) | S101 | Thiếu | Thiếu | Thiếu | Chưa có bản S101. |
 | 87 | ☑ | [Người kép già](../../../data/book/kim-lan-nguoi-kep-gia.json) | S365 | Thiếu | Thiếu | Thiếu | Chưa có bản S365. Cần đối chiếu nguồn cũ: mốc 03/2021, giá 1.500.000đ. |
 | 88 | ☑ | [Nhà Thờ Đức Bà Paris](../../../data/book/victor-hugo-notre-dame-de-paris.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
-| 89 | ☑ | [Nhà thờ Đức Bà Paris](../../../data/book/victor-hugo-notre-dame-de-paris.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
-| 90 | ☑ | [Nhà thờ Đức Bà Paris](../../../data/book/victor-hugo-notre-dame-de-paris.json) | S500 | Thiếu | Thiếu | Thiếu | Chưa có bản S500. Cần đối chiếu nguồn cũ: mốc 10/2022, giá 1.800.000đ. |
-| 91 | ☐ | Nhà văn / Cuộc đời và tác phẩm | S365 | Thiếu | Thiếu | Thiếu | Cần nhập hồ sơ. Cần đối chiếu nguồn cũ: mốc 07/2024, giá 1.800.000đ. |
+| 89 | ☑ | [Nhà thờ Đức Bà Paris](../../../data/book/victor-hugo-notre-dame-de-paris.json) | S100 | 26/05/2024 | 8tr500k | Đủ |  |
+| 90 | ☑ | [Nhà thờ Đức Bà Paris](../../../data/book/victor-hugo-notre-dame-de-paris.json) | S500 | 15/10/2022 | 1tr800k | Đủ |  |
+| 91 | ☑ | [Nhà văn: Cuộc đời và tác phẩm](../../../data/book/dk-writers-their-lives-and-works.json) | S365 | 01/07/2024 | 1tr800k | Đủ |  |
 | 92 | ☑ | [Những cuốn sách thay đổi lịch sử](../../../data/book/michael-collins-remarkable-books.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
 | 93 | ☐ | Những ngôi sao Eger | S100 | Thiếu | Thiếu | Thiếu | Cần nhập hồ sơ. |
 | 94 | ☑ | [Những tầng ký ức](../../../data/book/tran-dai-thang-layers-of-memory.json) | S365 | Thiếu | 2tr6 |  |  |
@@ -139,13 +139,13 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 116 | ☐ | Thái Bình Thiên Quốc | S365 | Thiếu | Thiếu | Thiếu | Cần nhập hồ sơ “Thái Bình Thiên Quốc diễn nghĩa”. Cần đối chiếu nguồn cũ: mốc 09/2023, giá 1.500.000đ. |
 | 117 | ☑ | [Thần khúc](../../../data/book/dante-alighieri-la-divina-commedia.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
 | 118 | ☑ | [Thần khúc](../../../data/book/dante-alighieri-la-divina-commedia.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
-| 119 | ☑ | [Thần khúc](../../../data/book/dante-alighieri-la-divina-commedia.json) | S1200 | Thiếu | Thiếu | Thiếu | Chưa có bản S1200. Cần đối chiếu nguồn cũ: mốc 06/2022, giá 2.600.000đ. |
+| 119 | ☑ | [Thần khúc](../../../data/book/dante-alighieri-la-divina-commedia.json) | S1200 | 21/06/2022; 02/02/2023 | 2tr600k | Đủ | Bìa buckram và microfiber. |
 | 120 | ☑ | [Thép đã tôi thế đấy](../../../data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json) | S500 | Thiếu | 2tr300k |  | Cần đối chiếu nguồn cũ: mốc 15/07/2026. |
 | 121 | ☑ | [Thi khúc & Thi phẩm](../../../data/book/sully-prudhomme-thi-khuc-thi-pham.json) | S1200 | Thiếu | 1tr1 |  | Cần đối chiếu print_run 1223 với dải số SP0001–SP1200. |
 | 122 | ☐ | Thiên hoàng Minh Trị | S100 | Thiếu | Thiếu | Thiếu | Cần nhập hồ sơ. |
 | 123 | ☑ | [Thống khổ & phiêu linh](../../../data/book/irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo.json) | S365 | Thiếu | Thiếu | Thiếu | Chưa có bản S365. Cần đối chiếu nguồn cũ: mốc 10/2023, giá 1.500.000đ. |
 | 124 | ☑ | [Thương nhớ mười hai](../../../data/book/vu-bang-thuong-nho-muoi-hai.json) | Bản Chữ A | 08/01/2023 | Thiếu | Thiếu |  |
-| 125 | ☑ | [Thương nhớ mười hai](../../../data/book/vu-bang-thuong-nho-muoi-hai.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
+| 125 | ☑ | [Thương nhớ mười hai](../../../data/book/vu-bang-thuong-nho-muoi-hai.json) | S100 | 28/06/2022 | Thiếu | Đủ | Ảnh V20; chưa có giá. |
 | 126 | ☑ | [Thương nhớ mười hai](../../../data/book/vu-bang-thuong-nho-muoi-hai.json) | S896 | Thiếu | Thiếu | Thiếu | Chưa có bản S896. Cần xác nhận mã: S890 hay S896. Cần đối chiếu nguồn cũ: mốc 04/2022, giá 1.500.000đ. |
 | 127 | ☑ | [Tội ác của Sylvestre Bonnard & Đảo chim cánh cụt](../../../data/book/anatole-france-toi-ac-cua-sylvestre-bonnard-dao-chim-canh-cut.json) | S1200 | Thiếu | Thiếu | Thiếu | Cần xác nhận bản buckram giới hạn hiện có trong JSON có phải S1200; chưa đủ căn cứ ghép edition. |
 | 128 | ☑ | [Tội ác và hình phạt](../../../data/book/fyodor-dostoevsky-toi-ac-va-trung-phat.json) | Bản Chữ A | 08/01/2023 | Thiếu | Thiếu |  |
@@ -155,7 +155,7 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 132 | ☑ | [Trần Tiến – Người hát thơ mình](../../../data/book/tran-tien-tran-tien-nguoi-hat-tho-minh-ca-khuc-nhung-cau-chuyen.json) | S365 | Thiếu | 2500k |  |  |
 | 133 | ☑ | [Truyện cổ Grimm](../../../data/book/jacob-ludwig-karl-grimm-kinder-und-hausmarchen.json) | Bản Chữ A | 08/01/2023 | Thiếu | Thiếu |  |
 | 134 | ☑ | [Truyện cổ Grimm](../../../data/book/jacob-ludwig-karl-grimm-kinder-und-hausmarchen.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
-| 135 | ☑ | [Truyện cổ Grimm](../../../data/book/jacob-ludwig-karl-grimm-kinder-und-hausmarchen.json) | S500 | Thiếu | Thiếu | Thiếu | Chưa có bản S500. Cần đối chiếu nguồn cũ: mốc 06/2021, giá 2.200.000đ. |
+| 135 | ☑ | [Truyện cổ Grimm](../../../data/book/jacob-ludwig-karl-grimm-kinder-und-hausmarchen.json) | S500 | Thiếu | 2tr200k | Đủ |  |
 | 136 | ☑ | [Truyện Kiều](../../../data/book/nguyen-du-truyen-kieu.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
 | 137 | ☑ | [Truyện Kiều](../../../data/book/nguyen-du-truyen-kieu.json) | S100 | 25/03/2025 | 11tr |  |  |
 | 138 | ☑ | [Truyện Kiều](../../../data/book/nguyen-du-truyen-kieu.json) | S500 | 26/07/2026 | 2tr200k |  |  |

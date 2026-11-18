@@ -153,7 +153,7 @@ function normalizeBookIndexEntry(entry, fallbackUpdatedAt, existingEntry = null)
         ...entry,
         detail: detailPath,
         search_text: normalizeText(entry.search_text ?? existingEntry?.search_text ?? ''),
-        updated_at: normalizeText(entry.updated_at || existingEntry?.updated_at || fallbackUpdatedAt)
+        updated_at: publication.formatUpdatedAt(entry.updated_at || existingEntry?.updated_at || fallbackUpdatedAt)
     };
 }
 
@@ -265,14 +265,15 @@ function saveBookIndexReview(bookIndexReview, updatedAt) {
             throw error;
         }
         const summary = publication.withPublicationSummary(entry, book);
-        return { ...summary, last_pub_date: summary.last_pub_date || null };
+        return { ...summary, last_pub_date: summary.last_pub_date || null, is_upcoming: summary.is_upcoming || null };
     });
     const mergedBookIndex = mergeBookIndexEntries(existingBookIndex, incoming, updatedAt);
-    // Explicit null clears a stale date during merge; omit it from the persisted index.
+    // Explicit null clears stale derived fields during merge.
     const result = mergedBookIndex.map((entry) => {
-        if (entry.last_pub_date !== null) return entry;
-        const { last_pub_date, ...rest } = entry;
-        return rest;
+        const result = { ...entry };
+        if (result.last_pub_date === null) delete result.last_pub_date;
+        if (result.is_upcoming === null) delete result.is_upcoming;
+        return result;
     });
     writeJsonFile(path.join(dataDir, 'book.json'), result);
     return result;
@@ -291,7 +292,7 @@ function saveBookDetailReview(bookDetailReview, bookId) {
     const detail = `data/book/${normalizedBookId}.json`;
     const existingEntry = readJsonFile(path.join(dataDir, 'book.json'), []).find((entry) => entry.detail === detail);
     if (existingEntry) {
-        saveBookIndexReview({ ...existingEntry, updated_at: new Date().toISOString().slice(0, 10) });
+        saveBookIndexReview({ ...existingEntry, updated_at: publication.formatUpdatedAt() });
     }
     return mergedBookDetail;
 }
@@ -395,7 +396,7 @@ function handleSave(req, res) {
             ensureDirectory(seriesDir);
 
             saveBookDetailReview(bookDetail, bookId);
-            const updatedAt = new Date().toISOString().slice(0, 10);
+            const updatedAt = publication.formatUpdatedAt();
             const incomingIndex = normalizeArrayPayload(bookIndex);
             if (!incomingIndex.some((entry) => entry.detail === detailPath)) incomingIndex.push({ detail: detailPath });
             const mergedBookIndex = saveBookIndexReview(incomingIndex, updatedAt);
@@ -421,7 +422,7 @@ function handleSaveBookIndexReview(req, res) {
         try {
             const payload = JSON.parse(body || '{}');
             const review = payload.bookIndexReview || payload.bookIndex || payload.review || payload || {};
-            const updatedAt = normalizeText(review.updated_at || new Date().toISOString().slice(0, 10));
+            const updatedAt = normalizeText(review.updated_at || publication.formatUpdatedAt());
             const mergedBookIndex = saveBookIndexReview(review, updatedAt);
 
             res.writeHead(200, { 'Content-Type': 'application/json' });

@@ -208,7 +208,7 @@ function setLoadMoreState() {
   loadMoreButton.textContent = "Xem thêm";
 }
 
-function createCard({ title, subtitle, description, image, href, meta }) {
+function createCard({ title, subtitle, description, image, href, meta, isUpcoming }) {
   const article = document.createElement("article");
   article.className = "book-card";
 
@@ -238,6 +238,12 @@ function createCard({ title, subtitle, description, image, href, meta }) {
   heading.className = "book-title";
   heading.textContent = title || "Không có tiêu đề";
   content.appendChild(heading);
+  if (isUpcoming) {
+    const badge = document.createElement("span");
+    badge.className = "publication-badge";
+    badge.textContent = "Sắp phát hành";
+    content.appendChild(badge);
+  }
 
   if (subtitle) {
     const subtitleNode = document.createElement("p");
@@ -358,6 +364,7 @@ async function loadSeriesBooks(seriesSlug) {
         description: "",
         image: edition.thumbnail || book.thumbnail,
         href: buildBookDetailUrl(book.id, edition.id),
+        isUpcoming: publication.isUpcoming(edition),
         meta: matchingEditions.length
           ? getEditionMeta(edition)
           : (editions.length ? `(${editions.length} phiên bản)` : "")

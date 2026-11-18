@@ -19,6 +19,7 @@ const editionsGridNode = document.querySelector("[data-editions-grid]");
 const focusCardNode = document.querySelector("[data-detail-focus-card]");
 const editionKickerNode = document.querySelector("[data-edition-kicker]");
 const editionTitleNode = document.querySelector("[data-edition-title]");
+const editionStatusNode = document.querySelector("[data-edition-status]");
 const editionCoverNode = document.querySelector("[data-edition-cover]");
 const editionGalleryNode = document.querySelector("[data-edition-gallery]");
 const focusCopyNode = document.querySelector("[data-detail-focus-copy]");
@@ -799,6 +800,12 @@ function renderEditions(book) {
 
     media.appendChild(image);
     content.append(title, subtitle);
+    if (publication.isUpcoming(edition)) {
+      const badge = document.createElement("span");
+      badge.className = "publication-badge";
+      badge.textContent = "Sắp phát hành";
+      content.appendChild(badge);
+    }
     if (meta.textContent) {
       content.appendChild(meta);
     }
@@ -840,6 +847,7 @@ function renderActiveEdition() {
   const editionTitle = getEditionTitle(currentBook, edition);
   const editionCaption = getEditionCaption(currentBook, edition);
   editionTitleNode.textContent = editionTitle;
+  if (editionStatusNode) editionStatusNode.hidden = !publication.isUpcoming(edition);
   if (editionKickerNode) {
     editionKickerNode.textContent = editionCaption
       ? `Phiên bản đang xem · ${editionCaption}`

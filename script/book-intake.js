@@ -61,7 +61,7 @@ function emptyBook(root) {
     function blank(object) {
         return Object.fromEntries(Object.keys(object).filter((field) => field !== 'title' || object === template).map((field) => {
             if (field === 'editions') return [field, [blank(template.editions[0])]];
-            return [field, arrayFields.has(field) ? [] : nullFields.has(field) ? null : ''];
+            return [field, field === 'is_upcoming' ? false : arrayFields.has(field) ? [] : nullFields.has(field) ? null : ''];
         }));
     }
     return blank(template);
@@ -132,7 +132,7 @@ function validate(root, book, { relations = false, images = false, allowExisting
                 || baseline.editions?.[i]) : null;
         if (!edition || typeof edition !== 'object' || Array.isArray(edition)) { bad(`${at} phải là object.`); continue; }
         for (const field of Object.keys(template.editions[0])) {
-            if (field !== 'title' && field !== 'pub_date' && !(field in edition)) bad(`${at}.${field} thiếu key (dùng default khi chưa rõ).`);
+            if (!['title', 'pub_date', 'is_upcoming'].includes(field) && !(field in edition)) bad(`${at}.${field} thiếu key (dùng default khi chưa rõ).`);
         }
         for (const field of Object.keys(edition)) if (!(field in template.editions[0])) bad(`${at}.${field} ngoài schema.`);
         if (typeof edition.id !== 'string' || !SLUG.test(edition.id) || !edition.id.startsWith(`${book.id}-`)) bad(`${at}.id không có prefix bookId hợp lệ.`);
@@ -145,6 +145,7 @@ function validate(root, book, { relations = false, images = false, allowExisting
             if (typeof edition[field] !== 'string') bad(`${at}.${field} phải là string.`);
         }
         if ('title' in edition && !text(edition.title)) bad(`${at}.title override phải có nội dung hoặc bỏ key.`);
+        if ('is_upcoming' in edition && typeof edition.is_upcoming !== 'boolean') bad(`${at}.is_upcoming phải là boolean.`);
         for (const field of ['pub_year', 'print_run', 'page_count', 'weight_g']) {
             if (edition[field] !== null && (!Number.isFinite(edition[field]) || edition[field] <= 0)) bad(`${at}.${field} phải là số dương hoặc null.`);
         }
@@ -199,7 +200,8 @@ function validate(root, book, { relations = false, images = false, allowExisting
         if (entries.length !== 1) bad('book.json phải có đúng một liên kết tới sách.');
         const summary = publication.getPublicationSummary(book);
         if (entries.length === 1 && (entries[0].last_pub_year !== summary.last_pub_year
-            || (entries[0].last_pub_date || '') !== (summary.last_pub_date || ''))) bad('last_pub_date/last_pub_year chưa khớp; chạy npm run sort-book.');
+            || (entries[0].last_pub_date || '') !== (summary.last_pub_date || '')
+            || publication.isUpcoming(entries[0]) !== publication.isUpcoming(summary))) bad('is_upcoming/last_pub_date/last_pub_year chưa khớp; chạy npm run sort-book.');
         if (entries.length === 1 && !text(entries[0].search_text)) bad('Index thiếu search_text.');
         const authors = read(path.join(root, 'data/author.json'));
         const linkedAuthors = authors.filter((a) => a.work_ids?.includes(book.id));
