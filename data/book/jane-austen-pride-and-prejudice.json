@@ -35,6 +35,35 @@
       "thumbnail": "/assets/img/books/jane-austen-pride-and-prejudice/dong-a-2026-bia-mem-cover.jpeg",
       "gellery_imgs": [],
       "detail": ""
+    },
+    {
+      "id": "jane-austen-pride-and-prejudice-dong-a-bia-cung",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S100",
+      "pub_year": null,
+      "pub_date": null,
+      "publisher": "",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Thanh Loan"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "",
+      "print_run": 100,
+      "page_count": 359,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/jane-austen-pride-and-prejudice/dong-a-s100-bia-truoc.jpeg",
+      "gellery_imgs": [
+        "/assets/img/books/jane-austen-pride-and-prejudice/dong-a-s100-bia-sau-va-gay.jpeg"
+      ],
+      "detail": "- Bìa cứng màu nâu cam, trang trí hoa văn dập chìm; tên sách và họa tiết trên bìa ép nhũ vàng.\n- Gáy sách có các gân nổi và hoa văn trang trí."
     }
   ]
 }

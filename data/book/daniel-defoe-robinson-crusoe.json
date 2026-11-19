@@ -1,0 +1,39 @@
+{
+  "id": "daniel-defoe-robinson-crusoe",
+  "title": "Robinson Crusoe",
+  "title_original": "Robinson Crusoe",
+  "authors": [
+    "Daniel Defoe"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "daniel-defoe-robinson-crusoe-dong-a-bia-da-nhan-tao",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S100",
+      "pub_year": null,
+      "pub_date": null,
+      "publisher": "",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da nhân tạo",
+      "cover_price": "",
+      "print_run": 100,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/daniel-defoe-robinson-crusoe/dong-a-s100-bia-truoc.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/daniel-defoe-robinson-crusoe/dong-a-s100-gay-sach.jpg"
+      ],
+      "detail": "- Bìa bọc PU màu xanh đậm, hoa văn dập chìm; tên sách và họa tiết trên bìa ép nhũ vàng.\n- Gáy sách có gân nổi và hoa văn trang trí."
+    }
+  ]
+}
