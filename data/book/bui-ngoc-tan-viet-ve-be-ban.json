@@ -1,0 +1,41 @@
+{
+  "id": "bui-ngoc-tan-viet-ve-be-ban",
+  "title": "Viết về bè bạn",
+  "title_original": "",
+  "authors": [
+    "Bùi Ngọc Tấn"
+  ],
+  "awards": [],
+  "series": [
+    "Văn Mới Đông A"
+  ],
+  "editions": [
+    {
+      "id": "bui-ngoc-tan-viet-ve-be-ban-dong-a-bia-cung",
+      "isbn": null,
+      "series_ids": [
+        "van-moi-dong-a"
+      ],
+      "caption": "S100",
+      "pub_year": null,
+      "pub_date": null,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "",
+      "print_run": 100,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/bui-ngoc-tan-viet-ve-be-ban/dong-a-s100-bia-truoc.jpg",
+      "gellery_imgs": [],
+      "detail": "- Sách bìa cứng, bìa in chân dung tác giả.\n- Gồm hai phần Rừng xưa xanh lá và Một thời để mất."
+    }
+  ]
+}

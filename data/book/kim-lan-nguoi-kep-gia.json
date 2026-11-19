@@ -11,6 +11,41 @@
   ],
   "editions": [
     {
+      "id": "kim-lan-nguoi-kep-gia-2021-dong-a-bia-cung-999k",
+      "isbn": null,
+      "series_ids": [
+        "van-chuong-va-my-thuat"
+      ],
+      "caption": "S100",
+      "pub_year": 2021,
+      "pub_date": "2021-03-23",
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Thành Chương"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "999k",
+      "print_run": 101,
+      "page_count": 340,
+      "copy_numbering": "KL_1920 - KL_2020",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/kim-lan-nguoi-kep-gia/dong-a-s101-sach-va-hop.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/kim-lan-nguoi-kep-gia/dong-a-s101-bia-sach.jpg",
+        "/assets/img/books/kim-lan-nguoi-kep-gia/dong-a-s101-sach-hop-tranh.jpg",
+        "/assets/img/books/kim-lan-nguoi-kep-gia/dong-a-s101-sach-trong-hop.jpg",
+        "/assets/img/books/kim-lan-nguoi-kep-gia/dong-a-s101-hop-son-mai.jpg",
+        "/assets/img/books/kim-lan-nguoi-kep-gia/dong-a-s101-tranh-tang.jpg"
+      ],
+      "detail": "- 101 bản kỷ niệm 100 năm ngày sinh nhà văn Kim Lân (1920–2020), đánh số từ KL_1920 đến KL_2020; mỗi bản phát hành là duy nhất.\n- Gồm 18 tác phẩm của Kim Lân cùng minh họa của họa sĩ Thành Chương.\n- Hộp sơn mài, nắp hộp in tranh minh họa “Người kép già”.\n- Tặng kèm tranh in sơn mài “Anh chàng hiệp sĩ gỗ” của Thành Chương, khổ 18 x 26 cm.\n- Ruột sách in trên giấy Ford định lượng 150 gsm.\n- Có triện son của Đông A."
+    },
+    {
       "id": "kim-lan-nguoi-kep-gia-2021-dong-a-bia-cung-360k",
       "isbn": "978-604-319-410-4",
       "series_ids": [

@@ -11,6 +11,39 @@
   ],
   "editions": [
     {
+      "id": "irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo-2023-dong-a-bia-da-nhan-tao-1tr500k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S365",
+      "pub_year": 2023,
+      "pub_date": "2023-10-29",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Minh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da nhân tạo",
+      "cover_price": "1tr500k",
+      "print_run": 365,
+      "page_count": 980,
+      "copy_numbering": "TKPL 001 - TKPL 365",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo/dong-a-s365-bia-truoc.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo/dong-a-s365-chi-tiet-gay.jpg",
+        "/assets/img/books/irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo/dong-a-s365-gay-va-hop.jpg",
+        "/assets/img/books/irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo/dong-a-s365-ex-libris.jpg",
+        "/assets/img/books/irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo/dong-a-s365-to-gac.jpg",
+        "/assets/img/books/irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo/dong-a-s365-canh-va-hop.jpg"
+      ],
+      "detail": "- 365 bản giới hạn, đánh số từ TKPL 001 đến TKPL 365; mỗi bản phát hành là duy nhất.\n- Bìa bọc da nhân tạo (bonded leather) nhập khẩu từ Mỹ, có gốc da thật, sợi da được bảo vệ bằng lớp sơn phủ gốc nước và ép vân nổi.\n- Ruột sách in bằng công nghệ mực vi sinh trên giấy GI76-BB định lượng 100 gsm.\n- Mạ cạnh sách bằng nhũ vàng, đóng dấu đỏ của Đông A, có Ex-Libris (dấu sở hữu sách).\n- Hộp đựng bằng carton, hoa văn trang trí in thủy ấn."
+    },
+    {
       "id": "irving-stone-the-agony-and-the-ecstasy-a-biographical-novel-of-michelangelo-2023-dong-a-bia-cung-500k",
       "series_ids": [
         "dong-a-classic"

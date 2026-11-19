@@ -11,6 +11,50 @@
   "series": [],
   "editions": [
     {
+      "id": "henryk-sienkiewicz-quo-vadis-2023-dong-a-bia-da-that-6tr500k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S100",
+      "pub_year": 2023,
+      "pub_date": "2023-02-20",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Hữu Dũng"
+      ],
+      "illustrators": [
+        "Charles Jouas",
+        "Abraham Janssens"
+      ],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "6tr500k",
+      "print_run": 100,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s100-v-bia-do.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s100-to-gac-hong.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s100-v-bia-nau.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s100-bia-xanh-navy.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s100-bia-sau-v-va-s.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s100-gay-xanh-navy.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s100-canh-va-dai.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s100-s-bia-nau.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s100-trang-ban-quyen-nero.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s100-gay-bon-mau.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s100-bon-gay.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s100-to-gac-hoa-van.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s100-v-bia-nau-va-hop.jpg",
+        "/assets/img/books/henryk-sienkiewicz-quo-vadis/dong-a-s100-v-bia-do-va-hop.jpg"
+      ],
+      "detail": "- S100 gồm bản V giá 8 triệu đồng và bản S giá 6,5 triệu đồng; số lượng mỗi loại không giới hạn trong phạm vi sách có.\n- Cả hai bản bọc da bò Italy, mỗi loại có bốn màu: xanh Navy, nâu Lion, nâu Canyon và đỏ Lotus.\n- Bản V có tag đồng chân dung Nero ở giữa bìa trước, bốn tag đồng xung quanh và tag đồng bốn góc bìa sau; bìa sau có logo V. Bản S có tag da chân dung Nero và tám tag da quanh hai bìa; bìa sau có logo S.\n- Các mảng họa tiết khảm da hoặc ép kim trên nền da cùng loại tùy bản và màu; riêng V xanh Navy, S xanh Navy và S đỏ Lotus có họa tiết ép kim lọt lòng khung viền 3D.\n- Bìa bồi nổi 3D ba lớp carton và ván MDF, mặt trong và ngoài lớp MDF trên cùng được giũa tay.\n- Gáy có sáu cặp gân đôi siết tay, cố định 24 giờ; cổ áo bằng các sợi da thật ghép xen kẽ hai màu; mũ lưỡi trai ôm sát cổ áo. Khung tên và hoa văn gáy ép nhũ vàng, bồi gáy bốn lớp vải và giấy.\n- Ruột sách đục lỗ, khâu passé-carton, in trên giấy mỹ thuật Conqueror Hight WhiteLaid 120 gsm bằng công nghệ mực vi sinh.\n- Ba cạnh sách mạ nhũ vàng; có hai tờ gác thủy ấn làm thủ công.\n- Hộp nằm ngang bọc da microfiber màu da bò, lót nhung, gắn hai tag đồng.\n- Có giấy chứng nhận, Ex libris và chữ ký trực tiếp của dịch giả Nguyễn Hữu Dũng.\n- Có sáu minh họa màu của Charles Jouas trích từ bản Quo Vadis của NXB F. Juven và tranh hoàng đế Nero của Abraham Janssens vẽ năm 1618.\n- Bản V có đai bằng da cùng loại bìa và hai khóa đồng."
+    },
+    {
       "id": "henryk-sienkiewicz-quo-vadis-2023-dong-a-bia-da-that",
       "isbn": null,
       "series_ids": [],
@@ -25,8 +69,8 @@
         "Nguyễn Hữu Dũng"
       ],
       "illustrators": [
-        "Adriano Minardi",
-        "Charles Jouas"
+        "Charles Jouas",
+        "Abraham Janssens"
       ],
       "proofreaders": [],
       "format": "Bìa da thật",
@@ -55,8 +99,8 @@
         "Nguyễn Hữu Dũng"
       ],
       "illustrators": [
-        "Adriano Minardi",
-        "Charles Jouas"
+        "Charles Jouas",
+        "Abraham Janssens"
       ],
       "proofreaders": [],
       "format": "Bìa da nhân tạo",
