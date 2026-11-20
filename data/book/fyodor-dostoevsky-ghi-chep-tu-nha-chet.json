@@ -1,0 +1,169 @@
+{
+  "id": "fyodor-dostoevsky-ghi-chep-tu-nha-chet",
+  "title": "Ghi chép từ Nhà chết",
+  "title_original": "Записки из мертвого дома",
+  "authors": [
+    "Fyodor Dostoevsky"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "fyodor-dostoevsky-ghi-chep-tu-nha-chet-dong-tay-bia-da-that",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Ấn Bản Giới Hạn",
+      "is_upcoming": true,
+      "pub_year": null,
+      "pub_date": null,
+      "publisher": "",
+      "issuers": [
+        "Đông Tây"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa da thật",
+      "cover_price": "",
+      "print_run": 24,
+      "page_count": null,
+      "copy_numbering": "01–24",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "",
+      "gellery_imgs": [],
+      "detail": "- Da nhập khẩu từ Italia, thực hiện thủ công bởi nghệ nhân.\n- Ruột in trên giấy HC 100 gsm; mạ nhũ cạnh sách.\n- Đóng triện logo Đông Tây, đánh số 01–24.\n- Giới hạn, không tái bản."
+    },
+    {
+      "id": "fyodor-dostoevsky-ghi-chep-tu-nha-chet-dong-tay-bia-cung",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Ấn Bản Giới Hạn",
+      "is_upcoming": true,
+      "pub_year": null,
+      "pub_date": null,
+      "publisher": "",
+      "issuers": [
+        "Đông Tây"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "",
+      "print_run": 76,
+      "page_count": null,
+      "copy_numbering": "01–76",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "",
+      "gellery_imgs": [],
+      "detail": "- Bìa giấy mỹ thuật.\n- Ruột in trên giấy HC 100 gsm.\n- Đóng triện logo Đông Tây, đánh số 01–76.\n- Giới hạn, không tái bản."
+    },
+    {
+      "id": "fyodor-dostoevsky-ghi-chep-tu-nha-chet-dong-tay-bia-cung-ao-om",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "H365",
+      "is_upcoming": true,
+      "pub_year": null,
+      "pub_date": null,
+      "publisher": "",
+      "issuers": [
+        "Đông Tây"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "",
+      "print_run": 365,
+      "page_count": null,
+      "copy_numbering": "001–365",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "",
+      "gellery_imgs": [],
+      "detail": "- Bìa cứng có áo bọc; đóng triện H365, đánh số 001–365.\n- Giới hạn, không tái bản."
+    },
+    {
+      "id": "fyodor-dostoevsky-ghi-chep-tu-nha-chet-dong-tay-bia-mem",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "is_upcoming": true,
+      "pub_year": null,
+      "pub_date": null,
+      "publisher": "",
+      "issuers": [
+        "Đông Tây"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "fyodor-dostoevsky-ghi-chep-tu-nha-chet-2026-nha-nam-bia-cung-250k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2026,
+      "pub_date": "2026-07-22",
+      "publisher": "NXB Hà Nội",
+      "issuers": [
+        "Nhã Nam"
+      ],
+      "translators": [
+        "Lê Đức Mẫn"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "250k",
+      "print_run": null,
+      "page_count": 316,
+      "copy_numbering": null,
+      "size_cm": "17 x 25",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/fyodor-dostoevsky-ghi-chep-tu-nha-chet/nha-nam-bia-cung-cover.jpeg",
+      "gellery_imgs": [],
+      "detail": ""
+    },
+    {
+      "id": "fyodor-dostoevsky-ghi-chep-tu-nha-chet-2026-bia-mem-229k",
+      "title": "Địa ngục trần gian",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2026,
+      "pub_date": "2026-04-01",
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [],
+      "translators": [
+        "Đào Quốc Minh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "229k",
+      "print_run": null,
+      "page_count": 412,
+      "copy_numbering": null,
+      "size_cm": "15 x 22",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/fyodor-dostoevsky-ghi-chep-tu-nha-chet/hoi-nha-van-dia-nguc-tran-gian-cover.jpeg",
+      "gellery_imgs": [],
+      "detail": ""
+    }
+  ]
+}

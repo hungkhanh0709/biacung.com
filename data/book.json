@@ -1,5 +1,12 @@
 [
   {
+    "detail": "data/book/fyodor-dostoevsky-ghi-chep-tu-nha-chet.json",
+    "search_text": "fyodor dostoevsky ghi chep tu nha chet dia nguc tran gian nxb ha noi nxb hoi nha van dong tay nha nam le duc man dao quoc minh an ban gioi han h365",
+    "is_upcoming": true,
+    "last_pub_year": "",
+    "updated_at": "2026-11-20 13:52"
+  },
+  {
     "detail": "data/book/jane-austen-pride-and-prejudice.json",
     "search_text": "jane austen pride and prejudice kieu hanh va dinh kien nxb van hoc dong a thanh loan s100",
     "last_pub_year": "",
