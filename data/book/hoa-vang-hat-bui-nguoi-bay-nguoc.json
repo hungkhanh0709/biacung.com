@@ -1,0 +1,46 @@
+{
+  "id": "hoa-vang-hat-bui-nguoi-bay-nguoc",
+  "title": "Hạt bụi người bay ngược",
+  "title_original": "",
+  "authors": [
+    "Hòa Vang"
+  ],
+  "awards": [],
+  "series": [
+    "Văn Mới Đông A"
+  ],
+  "editions": [
+    {
+      "id": "hoa-vang-hat-bui-nguoi-bay-nguoc-dong-a-bia-cung",
+      "isbn": null,
+      "series_ids": [
+        "van-moi-dong-a"
+      ],
+      "caption": "S100",
+      "pub_year": null,
+      "pub_date": null,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa cứng",
+      "cover_price": "",
+      "print_run": 100,
+      "page_count": null,
+      "copy_numbering": "1 đến 100",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/hoa-vang-hat-bui-nguoi-bay-nguoc/dong-a-s100-bia-truoc.webp",
+      "gellery_imgs": [
+        "/assets/img/books/hoa-vang-hat-bui-nguoi-bay-nguoc/dong-a-s100-bia-truoc-va-sau.jpg",
+        "/assets/img/books/hoa-vang-hat-bui-nguoi-bay-nguoc/dong-a-s100-trang-chu-ky-va-so.jpg",
+        "/assets/img/books/hoa-vang-hat-bui-nguoi-bay-nguoc/dong-a-s100-chi-tiet-so.jpg",
+        "/assets/img/books/hoa-vang-hat-bui-nguoi-bay-nguoc/dong-a-s100-sach-va-day-danh-dau.jpg"
+      ],
+      "detail": "- Sách bìa cứng, bìa in hình tác giả và biểu trưng bản đặc biệt 100."
+    }
+  ]
+}

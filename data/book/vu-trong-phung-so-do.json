@@ -69,6 +69,36 @@
       "detail": "- Ấn bản bìa cứng giới hạn 555 bản, đánh số từ 001-555.\n- Đóng triện Nhã Nam Thư Xã, thiết kế riêng cho bộ sách Việt Nam Danh Tác.\n- Sách có bìa áo (jacket). Bìa áo in giấy couché matt cán mờ định lượng 150gsm; tên sách, tên tác giả và tên bộ sách được phủ bóng.\n- Khổ sách 14,5 x 20,5 cm; ruột in trên giấy tốt định lượng 100gsm."
     },
     {
+      "id": "vu-trong-phung-so-do-2020-dong-a-bia-vai",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "Bản Tri Ân",
+      "pub_year": 2020,
+      "pub_date": "2020-11-11",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa vải",
+      "cover_price": "",
+      "print_run": 100,
+      "page_count": null,
+      "copy_numbering": "SĐ 001 - SĐ 100",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/vu-trong-phung-so-do/dong-a-tri-an-bia-truoc.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/vu-trong-phung-so-do/dong-a-tri-an-chi-tiet-bia.jpg",
+        "/assets/img/books/vu-trong-phung-so-do/dong-a-tri-an-hop-sach.jpg",
+        "/assets/img/books/vu-trong-phung-so-do/dong-a-tri-an-gay-trong-hop.jpg",
+        "/assets/img/books/vu-trong-phung-so-do/dong-a-tri-an-chi-tiet-gay.jpg"
+      ],
+      "detail": "- Ấn bản tri ân tặng bạn đọc đồng ý đổi S100 Thiên hoàng Minh Trị.\n- 100 bản, đánh số từ SĐ 001 đến SĐ 100; số sách tương ứng với số của bản Thiên hoàng Minh Trị đã đặt.\n- Bìa bọc vải đỏ, hoa văn và tên sách dập chìm.\n- Ruột in trên giấy Ford định lượng 150 gsm, in lại theo bản in lần đầu của nhà in Lê Cường năm 1938."
+    },
+    {
       "id": "vu-trong-phung-so-do-2020-dong-a-bia-cung-320k",
       "isbn": "978-604-9952-51-7",
       "series_ids": [

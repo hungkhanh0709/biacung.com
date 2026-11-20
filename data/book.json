@@ -57,9 +57,9 @@
   },
   {
     "detail": "data/book/johanna-spyri-heidi.json",
-    "search_text": "johanna spyri heidi dich gia huyen vu nxb van hoc nha nam dong a huyen vu thanh van elena selivanova dong a classic dong a classics bo tui dong a classic hoa van an ban gioi han",
+    "search_text": "johanna spyri heidi nxb van hoc nha nam dong a huyen vu thanh van elena selivanova dong a classic dong a classics bo tui dong a classic hoa van an ban gioi han",
     "last_pub_year": 2026,
-    "updated_at": "2026-11-18",
+    "updated_at": "2026-11-19 16:45",
     "last_pub_date": "2026-11-18"
   },
   {
@@ -196,6 +196,20 @@
     "last_pub_date": "2026-07-26"
   },
   {
+    "detail": "data/book/nguyen-dinh-chieu-luc-van-tien.json",
+    "search_text": "nguyen dinh chieu luc van tien nxb van hoc dong a nguyen thach giang nguyen cong hoan bia vai bia cung 50 nam fahasa an ban gioi han s500",
+    "updated_at": "2026-11-20 12:42",
+    "last_pub_year": 2026,
+    "last_pub_date": "2026-07-26"
+  },
+  {
+    "detail": "data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json",
+    "search_text": "nikolai alekseyevich ostrovsky how the steel was tempered thep da toi the day nxb van hoc chauchaubook dong a thep moi huy van bia vai bia cung tri viet bia mem 50 nam fahasa bia ve tay boi chau chau book an ban gioi han s500",
+    "updated_at": "2026-11-20 12:52",
+    "last_pub_year": 2026,
+    "last_pub_date": "2026-07-26"
+  },
+  {
     "detail": "data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json",
     "search_text": "nhieu tac gia dai viet su ky toan thu nxb van hoc dong a ngo duc tho hoang van lau s895 ban chu a",
     "last_pub_year": 2026,
@@ -208,20 +222,6 @@
     "updated_at": "2026-11-10",
     "last_pub_year": 2026,
     "last_pub_date": "2026-07-16"
-  },
-  {
-    "detail": "data/book/nguyen-dinh-chieu-luc-van-tien.json",
-    "search_text": "nguyen dinh chieu luc van tien nxb van hoc dong a nguyen thach giang nguyen cong hoan bia vai bia cung 50 nam fahasa an ban gioi han s500",
-    "updated_at": "2026-11-08",
-    "last_pub_year": 2026,
-    "last_pub_date": "2026-07-01"
-  },
-  {
-    "detail": "data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json",
-    "search_text": "nikolai alekseyevich ostrovsky how the steel was tempered thep da toi the day nxb van hoc chauchaubook dong a thep moi huy van bia vai bia cung tri viet bia mem 50 nam fahasa bia ve tay boi chau chau book an ban gioi han s500",
-    "updated_at": "2026-11-08",
-    "last_pub_year": 2026,
-    "last_pub_date": "2026-06-26"
   },
   {
     "detail": "data/book/jk-rowling-harry-potter.json",
@@ -798,10 +798,10 @@
   },
   {
     "detail": "data/book/francis-garnier-voyage-dexploration-en-indo-chine.json",
-    "search_text": "francis garnier voyage dexploration en indochine hanh trinh tham hiem dong duong nxb dai hoc su pham dong a nguyen minh louis delaporte tu sach dong duong ban chu a",
+    "search_text": "francis garnier voyage dexploration en indochine hanh trinh tham hiem dong duong nxb dai hoc su pham dong a nguyen minh louis delaporte tu sach dong duong ban chu a s100",
     "last_pub_year": 2025,
     "last_pub_date": "2025-01-19",
-    "updated_at": "2026-11-18"
+    "updated_at": "2026-11-20 12:25"
   },
   {
     "detail": "data/book/victor-hugo-notre-dame-de-paris.json",
@@ -812,24 +812,24 @@
   },
   {
     "detail": "data/book/dante-alighieri-la-divina-commedia.json",
-    "search_text": "dante alighieri la divina commedia than khuc nxb van hoc dong a nguyen van hoan gustave dore ban chu a s1200",
+    "search_text": "dante alighieri la divina commedia than khuc nxb van hoc dong a nguyen van hoan gustave dore ban chu a s100 s1200",
     "last_pub_year": 2025,
     "last_pub_date": "2025-01-19",
-    "updated_at": "2026-11-18 16:41"
+    "updated_at": "2026-11-20 12:14"
   },
   {
     "detail": "data/book/nhieu-tac-gia-van-moi-5-nam-dau-the-ky.json",
     "search_text": "nhieu tac gia ho anh thai tuyen chon van moi 5 nam dau the ky nxb hoi nha van dong a vu huyen nguyen ngoc thuan le phuong van moi dong a s100",
     "last_pub_year": 2025,
     "last_pub_date": "2025-01-19",
-    "updated_at": "2026-11-19 15:48"
+    "updated_at": "2026-11-20 12:55"
   },
   {
     "detail": "data/book/nhieu-tac-gia-van-moi-5-nam-2011-2015.json",
     "search_text": "nhieu tac gia ho anh thai tuyen chon van moi 5 nam 20112015 dong a van moi dong a",
     "last_pub_year": 2025,
     "last_pub_date": "2025-01-19",
-    "updated_at": "2026-11-14"
+    "updated_at": "2026-11-20 12:56"
   },
   {
     "detail": "data/book/thach-lam-gio-dau-mua-ha-noi-bam-sau-pho-phuong.json",
@@ -875,9 +875,9 @@
   },
   {
     "detail": "data/book/vu-trong-phung-so-do.json",
-    "search_text": "vu trong phung so do nxb van hoc nxb hoi nha van dong a nha nam thanh phong van chuong va my thuat viet nam danh tac nha nam ban chu a an ban gioi han",
+    "search_text": "vu trong phung so do nxb van hoc nxb hoi nha van dong a nha nam thanh phong van chuong va my thuat viet nam danh tac nha nam ban chu a an ban gioi han ban tri an",
     "last_pub_year": 2025,
-    "updated_at": "2026-11-14",
+    "updated_at": "2026-11-20 12:16",
     "last_pub_date": "2025-01-18"
   },
   {
@@ -1016,6 +1016,13 @@
     "updated_at": "2026-11-18 16:47"
   },
   {
+    "detail": "data/book/theodor-mommsen-the-history-of-rome-vol-3.json",
+    "search_text": "theodor mommsen the history of rome vol 3 lich su la ma tap ii quyen iii nxb van hoc dong a nguyen qui hien tram nam nobel bia buckram an ban gioi han",
+    "last_pub_year": 2024,
+    "updated_at": "2026-11-20 12:39",
+    "last_pub_date": "2024-05-28"
+  },
+  {
     "detail": "data/book/mario-puzo-the-family.json",
     "search_text": "mario puzo carol gino the family cha con giao hoang nxb van hoc dong a phan quang dinh s500",
     "updated_at": "2026-11-14",
@@ -1066,12 +1073,6 @@
     "search_text": "kenneth grahame the wind in the willows gio dua trong lieu nxb van hoc dong a nguyen thi cam linh dong a classic hoa van",
     "last_pub_year": 2024,
     "updated_at": "2026-10-19"
-  },
-  {
-    "detail": "data/book/theodor-mommsen-the-history-of-rome-vol-3.json",
-    "search_text": "theodor mommsen the history of rome vol 3 lich su la ma tap ii quyen iii nxb van hoc dong a nguyen qui hien tram nam nobel bia buckram an ban gioi han",
-    "last_pub_year": 2024,
-    "updated_at": "2026-10-18"
   },
   {
     "detail": "data/book/jose-mauro-de-vasconcelos-vamos-aquecer-o-sol.json",
@@ -1359,6 +1360,13 @@
     "last_pub_year": 2023
   },
   {
+    "detail": "data/book/theodor-mommsen-the-history-of-rome-vol-1.json",
+    "search_text": "theodor mommsen the history of rome vol 1 lich su la ma tap i quyen i ii nxb van hoc dong a nguyen qui hien tram nam nobel bia buckram an ban gioi han",
+    "last_pub_year": 2022,
+    "updated_at": "2026-11-20 12:36",
+    "last_pub_date": "2022-11-15"
+  },
+  {
     "detail": "data/book/mario-puzo-the-fortunate-pilgrim.json",
     "search_text": "mario puzo the fortunate pilgrim dat tien dat bac nxb van hoc dong a ngoc thu lang s500",
     "last_pub_year": 2022,
@@ -1491,12 +1499,6 @@
     "search_text": "nguyen trong thuat qua dua do nxb van hoc dong a ta huy long van chuong va my thuat",
     "last_pub_year": 2022,
     "updated_at": "2026-10-20"
-  },
-  {
-    "detail": "data/book/theodor-mommsen-the-history-of-rome-vol-1.json",
-    "search_text": "theodor mommsen the history of rome vol 1 lich su la ma tap i quyen i ii nxb van hoc dong a nguyen qui hien tram nam nobel bia buckram an ban gioi han",
-    "last_pub_year": 2022,
-    "updated_at": "2026-10-18"
   },
   {
     "detail": "data/book/bernard-werber-boxset-kien.json",
@@ -2084,5 +2086,11 @@
     "search_text": "bui ngoc tan viet ve be ban nxb hoi nha van dong a van moi dong a s100",
     "last_pub_year": "",
     "updated_at": "2026-11-19 16:15"
+  },
+  {
+    "detail": "data/book/hoa-vang-hat-bui-nguoi-bay-nguoc.json",
+    "search_text": "hoa vang hat bui nguoi bay nguoc nxb hoi nha van dong a van moi dong a s100",
+    "last_pub_year": "",
+    "updated_at": "2026-11-20 12:04"
   }
 ]

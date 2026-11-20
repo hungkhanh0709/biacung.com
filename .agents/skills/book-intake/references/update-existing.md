@@ -16,6 +16,10 @@ Chỉ đổi sách/trường người dùng yêu cầu, bằng Chrome MCP qua fo
 
 Form tự sort edition theo năm giảm dần, cùng năm theo ngày giảm dần; trong cùng năm bản có ngày đứng trước bản thiếu ngày, cùng khóa giữ thứ tự. Thiếu cả năm/ngày đứng cuối. Không đổi dữ kiện/ID để sort, không bổ sung ngày giả cho edition cũ. Đối chiếu thứ tự trong preview và output một lần.
 
+Khi rà checklist Đông A, người dùng đã chốt không cần thu thập `copy_numbering` còn thiếu cho các bản S100. Giữ `null` nếu chưa biết, không đưa vào danh sách thiếu/Memo; giữ nguyên dải số đã có, chỉ bổ sung khi có thông tin trực tiếp, không suy dải số từ mã S100.
+
+`Ấn Bản Giới Hạn` là loại phiên bản hợp lệ, không phải trạng thái chưa xác định mã bản. Khi đã xác nhận đúng edition này, dùng Caption đó trong cột Mã bản của checklist; không yêu cầu mã S hay số lượng in chỉ để hoàn tất hồ sơ, không tự ghi Memo thu thập hai thông tin này. `print_run` chưa rõ giữ `null`. Hai tập Lịch sử La Mã bìa buckram đã được người dùng xác nhận theo loại phiên bản này.
+
 Lựa chọn đã chốt cho Nghìn lẻ một đêm S100 năm 2023: gộp V20/S80 dù khác màu/logo bìa; 100 bộ, giá cơ bản 12tr, V20 13tr và S80 12tr. Caption giữ S100, thông tin biến thể ở detail; không hỏi/tách lại.
 
 Khi năm/giá/format làm đổi edition ID, ghi `evidence.scope.edition_id_map` dạng `{ "id-cu": "id-moi" }`. Bước kiểm tra cuối dùng ánh xạ này để đối chiếu đúng edition trong baseline sau khi form sắp xếp lại; không lấy vị trí mảng để xác nhận các URL ảnh cũ của edition đã đổi ID.
@@ -41,6 +45,7 @@ Dùng Chrome MCP điền form, xem preview rồi bấm **Lưu tất cả** hoặ
 ## Xác minh và kết thúc
 
 1. Đọc lại đúng output sách và entry index; phần sửa khớp candidate, dữ liệu/ảnh ngoài phạm vi khớp baseline (trừ thứ tự sort). Form đã sort, không chạy sort-book/check riêng nếu output đúng. cleanup tự kiểm quan hệ liên quan và dùng evidence.scope.baseline để giữ giá/URL cũ không sửa; không chuẩn hóa edition khác để vượt kiểm tra.
+   - Cập nhật metadata không bắt bổ sung thumbnail vốn đã rỗng trong baseline của đúng edition. Giữ trạng thái thiếu ảnh/Memo; helper cho phép thumbnail rỗng không đổi khi khớp edition ID (hoặc ánh xạ ID), vẫn chặn xóa thumbnail đã có và edition mới thiếu thumbnail.
 2. Mở trực tiếp `/detail?id=<bookId>` bằng Chrome MCP, chọn edition vừa thêm/sửa, kiểm metadata/ảnh; ghi verification.json theo workflow. Không kiểm home/search hay trang tác giả/series. Khi sửa awards ở cấp sách, xác nhận nhãn trên detail đúng sách.
 3. Nếu raw chứa nháp của sách này, chỉ merge trường được yêu cầu cùng evidence; giữ các thay đổi chưa lưu khác. Trường đó đã đổi độc lập thì đối chiếu/hợp nhất trước; không chép toàn bộ output đè nháp.
 4. Chạy cleanup một lần (đã gồm finish), không check → finish → cleanup. Báo thay đổi, link detail, dữ kiện thiếu và trạng thái dọn; giữ thư mục raw/.gitkeep. Không tạo hồ sơ lâu dài.

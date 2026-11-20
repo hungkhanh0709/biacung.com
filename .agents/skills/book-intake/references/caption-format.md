@@ -16,6 +16,7 @@
 | --- | ---: | --- |
 | Bản Chữ A | 1 | Độc bản ký hiệu A của Đông A; không gán thành S100 chỉ vì hộp có logo S100. |
 | Bản Chữ Ô | 1 | Độc bản ký hiệu Ô của Đông A; phân biệt với Bản Chữ A, không gán thành S100 chỉ vì hộp có logo S100. |
+| Bản Tri Ân | 0 | Số đỏ Đông A tặng bạn đọc đổi S100 Thiên hoàng Minh Trị; phân biệt với S100 giấy dó. |
 | S100 | 2 | Thường dùng cho Đông A |
 | S200 | 0 | Thường dùng cho Đông A |
 | S365 | 4 | Thường dùng cho Đông A |
@@ -29,7 +30,7 @@
 | H365 | 6 | Thường dùng cho Đông Tây |
 | H666 | 4 | Thường dùng cho Đông Tây |
 | H999 | 1 | Thường dùng cho Đông Tây |
-| Ấn Bản Giới Hạn | 109 | Dùng cho các bản bìa cứng có `print_run` <= 500 |
+| Ấn Bản Giới Hạn | 109 | Loại phiên bản hợp lệ khi nguồn hoặc người dùng xác nhận là bản giới hạn. Không bắt buộc có mã S hoặc biết số lượng in; `print_run` chưa rõ thì giữ `null`, không suy số lượng từ Caption. |
 | Bìa Vẽ Tay Bởi Châu Châu Book | 14 | Chỉ dùng cho Chauchaubook |
 
 ## Format

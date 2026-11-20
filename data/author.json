@@ -1642,5 +1642,12 @@
     "work_ids": [
       "bui-ngoc-tan-viet-ve-be-ban"
     ]
+  },
+  {
+    "id": "hoa-vang",
+    "name": "Hòa Vang",
+    "work_ids": [
+      "hoa-vang-hat-bui-nguoi-bay-nguoc"
+    ]
   }
 ]

@@ -162,7 +162,10 @@ function validate(root, book, { relations = false, images = false, allowExisting
         }
         if (!edition.issuers?.length) missing.push(`${at}.issuers`);
         const urls = [edition.thumbnail, ...(Array.isArray(edition.gellery_imgs) ? edition.gellery_imgs : [])].filter(text);
-        if (images && !text(edition.thumbnail)) bad(`${at}.thumbnail còn thiếu.`);
+        const unchangedMissingThumbnail = previous
+            && (previous.id === edition.id || previous.id === originalId)
+            && previous.thumbnail === edition.thumbnail;
+        if (images && !text(edition.thumbnail) && !unchangedMissingThumbnail) bad(`${at}.thumbnail còn thiếu.`);
         if (new Set(urls).size !== urls.length) bad(`${at}: thumbnail/gallery lặp ảnh.`);
         for (const url of urls) {
             // A photo of several works may be shared without copying the asset.
