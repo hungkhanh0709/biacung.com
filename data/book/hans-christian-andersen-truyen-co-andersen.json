@@ -1,0 +1,51 @@
+{
+  "id": "hans-christian-andersen-truyen-co-andersen",
+  "title": "Truyện cổ Andersen",
+  "title_original": "",
+  "authors": [
+    "Hans Christian Andersen"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "hans-christian-andersen-truyen-co-andersen-dong-a-bia-cung-ao-om-1tr250k",
+      "isbn": "978-632-635-523-9",
+      "series_ids": [],
+      "caption": "",
+      "is_upcoming": true,
+      "pub_year": null,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Lê Thị Oanh",
+        "Nấm Hương",
+        "Thanh Loan",
+        "Giang Ân"
+      ],
+      "illustrators": [
+        "Vilhelm Pedersen",
+        "Hans Tegner",
+        "H. J. Hord",
+        "A. Havers",
+        "J. Hendel",
+        "E. A. Lemann",
+        "G. Mühlberg",
+        "T. H. Robinson"
+      ],
+      "proofreaders": [],
+      "format": "Bìa cứng áo ôm",
+      "cover_price": "1tr250k",
+      "print_run": null,
+      "page_count": 1460,
+      "copy_numbering": null,
+      "size_cm": "18,5 x 26,5",
+      "weight_g": 1500,
+      "thumbnail": "/assets/img/books/hans-christian-andersen-truyen-co-andersen/dong-a-bia-cung-ao-om-cover.webp",
+      "gellery_imgs": [],
+      "detail": "- Ấn bản đầy đủ gồm 168 truyện, với hơn 500 minh họa.\n- In 2 màu, có bìa áo.\n- Tặng kèm 1 postcard kích thước 14,8 x 20,5 cm, in trên giấy Ivory 350 gsm.\n- Minh họa còn có sự tham gia của một số họa sĩ khác."
+    }
+  ]
+}

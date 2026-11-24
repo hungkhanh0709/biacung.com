@@ -2,6 +2,9 @@ const publication = window.BiaCungPublication;
 const BOOK_FALLBACK_COVER = "assets/img/core/book-cover.png.avif";
 const MAX_BOOK_ID_LENGTH = 120;
 const SAFE_BOOK_ID = /^[a-z0-9-]+$/;
+const LEGACY_EDITION_IDS = new Map([
+  ["gustave-flaubert-madame-bovary-2026-dong-a-bia-mem", "gustave-flaubert-madame-bovary-dong-a-bia-mem-180k"]
+]);
 
 const params = new URLSearchParams(window.location.search);
 const bookId = sanitizeSlugParam(params.get("id"));
@@ -934,6 +937,18 @@ function updateSeoMetadata(book, edition) {
   const keywords = collectBookTags(book).slice(0, 24).join(", ");
   const editions = Array.isArray(book.editions) ? book.editions : [];
 
+  // The static HTML cannot identify the book from the query string. Add these
+  // only once the requested edition is known, so crawlers do not see /detail.
+  if (!document.querySelector('link[rel="canonical"]')) {
+    const canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    document.head.appendChild(canonical);
+  }
+  if (!document.querySelector('meta[property="og:url"]')) {
+    const ogUrl = document.createElement("meta");
+    ogUrl.setAttribute("property", "og:url");
+    document.head.appendChild(ogUrl);
+  }
   seo.setCanonical(pagePath);
   seo.setMetaByName("description", description);
   seo.setMetaByProperty("og:url", pageUrl);
@@ -1030,9 +1045,13 @@ function renderBook(book) {
   book = { ...book, editions: publication.sortEditions(book.editions) };
   currentBook = book;
   const editions = Array.isArray(book?.editions) ? book.editions : [];
-  const requestedIndex = requestedEditionId
+  let requestedIndex = requestedEditionId
     ? editions.findIndex((edition) => sanitizeEditionId(edition?.id) === requestedEditionId)
     : -1;
+  if (requestedIndex < 0 && LEGACY_EDITION_IDS.has(requestedEditionId)) {
+    const currentEditionId = LEGACY_EDITION_IDS.get(requestedEditionId);
+    requestedIndex = editions.findIndex((edition) => edition?.id === currentEditionId);
+  }
   activeEditionIndex = requestedIndex >= 0 ? requestedIndex : 0;
   activeImageIndex = 0;
 

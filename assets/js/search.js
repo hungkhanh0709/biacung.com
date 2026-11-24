@@ -123,14 +123,23 @@ function buildDetailUrl(type, slug, editionId = "") {
   return `/detail?${query.toString()}`;
 }
 
-function matchesAnyNeedle(value, needles) {
-  const searchableText = normalizeSearchText(value);
-  return searchableText && needles.some((needle) => searchableText.includes(needle));
+function createSearchMatcher(needles) {
+  const editionCode = /^\p{L}+\p{N}+$/u;
+  const patterns = needles.map((needle) => {
+    const words = needle.split(" ");
+    const start = editionCode.test(words[0]) ? "(?:^| )" : "";
+    const end = editionCode.test(words[words.length - 1]) ? "(?: |$)" : "";
+    return new RegExp(`${start}${needle}${end}`, "u");
+  });
+  return (value) => {
+    const searchableText = normalizeSearchText(value);
+    return patterns.some((pattern) => pattern.test(searchableText));
+  };
 }
 
-function getMatchingEditions(book, needles) {
+function getMatchingEditions(book, matchesQuery) {
   const editions = publication.sortEditions(book?.editions);
-  if (!needles.length) {
+  if (!matchesQuery) {
     return [];
   }
 
@@ -152,7 +161,7 @@ function getMatchingEditions(book, needles) {
       publication.isUpcoming(edition) ? "Sắp phát hành" : ""
     ];
 
-    return fields.some((value) => matchesAnyNeedle(value, needles));
+    return fields.some(matchesQuery);
   });
 }
 
@@ -295,6 +304,7 @@ function renderLoadingSkeletons(count = SEARCH_PAGE_SIZE) {
 }
 
 async function loadSeriesMatches(normalizedKeyword) {
+  const matchesQuery = normalizedKeyword ? createSearchMatcher([normalizedKeyword]) : null;
   const homeConfig = await fetchJson(HOME_DATA_URL);
   const seriesConfig = Array.isArray(homeConfig)
     ? homeConfig.find((entry) => entry && entry.id === "series-focus")
@@ -315,10 +325,8 @@ async function loadSeriesMatches(normalizedKeyword) {
   return seriesEntries
     .filter(Boolean)
     .map((series) => {
-      const text = normalizeSearchText(
-        [series.name, series.id, series.description, ...(Array.isArray(series.work_ids) ? series.work_ids : [])].join(" ")
-      );
-      if (normalizedKeyword && !text.includes(normalizedKeyword)) {
+      const text = [series.name, series.id, series.description, ...(Array.isArray(series.work_ids) ? series.work_ids : [])].join(" ");
+      if (matchesQuery && !matchesQuery(text)) {
         return null;
       }
 
@@ -339,13 +347,14 @@ async function loadSeriesMatches(normalizedKeyword) {
 async function loadBookMatches(searchNeedles) {
   const bookIndex = await fetchJson(BOOK_INDEX_URL);
   const needles = Array.isArray(searchNeedles) ? searchNeedles.filter(Boolean) : [];
+  const matchesQuery = needles.length ? createSearchMatcher(needles) : null;
   const matchedEntries = Array.isArray(bookIndex)
     ? publication.sortBookEntries(bookIndex)
       .map((entry) => {
-        const searchableText = normalizeSearchText([
+        const searchableText = [
           entry?.search_text, publication.isUpcoming(entry) ? "Sắp phát hành" : ""
-        ].join(" "));
-        if (needles.length && !needles.some((needle) => searchableText.includes(needle))) {
+        ].join(" ");
+        if (matchesQuery && !matchesQuery(searchableText)) {
           return null;
         }
 
@@ -372,7 +381,7 @@ async function loadBookMatches(searchNeedles) {
 
       const editions = publication.sortEditions(book.editions);
       const firstEdition = editions[0] || {};
-      const matchingEditions = getMatchingEditions(book, needles);
+      const matchingEditions = getMatchingEditions(book, matchesQuery);
       const selectedEdition = matchingEditions[0] || firstEdition;
       const visibleEditionCount = matchingEditions.length || editions.length;
 
