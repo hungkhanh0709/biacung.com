@@ -1106,7 +1106,8 @@
     "id": "kawabata-yasunari",
     "name": "Kawabata Yasunari",
     "work_ids": [
-      "kawabata-yasunari-co-do"
+      "kawabata-yasunari-co-do",
+      "kawabata-yasunari-truyen-ngan-trong-long-ban-tay"
     ]
   },
   {
@@ -1649,6 +1650,13 @@
     "name": "Hòa Vang",
     "work_ids": [
       "hoa-vang-hat-bui-nguoi-bay-nguoc"
+    ]
+  },
+  {
+    "id": "hans-christian-andersen",
+    "name": "Hans Christian Andersen",
+    "work_ids": [
+      "hans-christian-andersen-truyen-co-andersen"
     ]
   }
 ]

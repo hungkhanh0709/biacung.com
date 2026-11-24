@@ -1,5 +1,19 @@
 [
   {
+    "detail": "data/book/kawabata-yasunari-truyen-ngan-trong-long-ban-tay.json",
+    "search_text": "kawabata yasunari truyen ngan trong long ban tay nxb van hoc nha nam uyen thiem an ban gioi han nobel van chuong",
+    "is_upcoming": true,
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-24 17:30"
+  },
+  {
+    "detail": "data/book/hans-christian-andersen-truyen-co-andersen.json",
+    "search_text": "hans christian andersen truyen co andersen nxb van hoc dong a le thi oanh nam huong thanh loan giang an vilhelm pedersen hans tegner h j hord a havers j hendel e a lemann g muhlberg t h robinson",
+    "is_upcoming": true,
+    "last_pub_year": "",
+    "updated_at": "2026-11-24 17:18"
+  },
+  {
     "detail": "data/book/fyodor-dostoevsky-ghi-chep-tu-nha-chet.json",
     "search_text": "fyodor dostoevsky ghi chep tu nha chet dia nguc tran gian nxb ha noi nxb hoi nha van dong tay nha nam le duc man dao quoc minh an ban gioi han h365",
     "is_upcoming": true,
@@ -42,17 +56,17 @@
     "is_upcoming": true
   },
   {
-    "detail": "data/book/gustave-flaubert-madame-bovary.json",
-    "search_text": "gustave flaubert madame bovary ba bovary nxb van hoc dong a mai vu minh kho",
-    "last_pub_year": "",
-    "updated_at": "2026-11-18 16:05",
-    "is_upcoming": true
-  },
-  {
     "detail": "data/book/kim-dung-thien-long-bat-bo.json",
     "search_text": "kim dung thien long bat bo nxb dan tri dong a nguyen duy chinh dinh diep",
     "last_pub_year": "",
     "updated_at": "2026-11-18 16:03",
+    "is_upcoming": true
+  },
+  {
+    "detail": "data/book/gustave-flaubert-madame-bovary.json",
+    "search_text": "gustave flaubert madame bovary ba bovary nxb van hoc dong a mai vu minh khoa",
+    "last_pub_year": "",
+    "updated_at": "2026-11-17 17:24",
     "is_upcoming": true
   },
   {
