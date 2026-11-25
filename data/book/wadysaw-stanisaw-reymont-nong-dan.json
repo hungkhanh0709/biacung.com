@@ -30,7 +30,9 @@
         "Lê Trí"
       ],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": [
+        "Bìa buckram"
+      ],
       "cover_price": "2tr",
       "print_run": 599,
       "page_count": 1720,

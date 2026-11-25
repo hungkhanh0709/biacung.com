@@ -28,7 +28,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": [
+        "Bìa buckram"
+      ],
       "cover_price": "1200k",
       "print_run": null,
       "page_count": 734,

@@ -30,7 +30,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": [
+        "Bìa buckram"
+      ],
       "cover_price": "3tr900k",
       "print_run": 365,
       "page_count": 1364,
@@ -70,7 +72,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng áo ôm",
+      "format": [
+        "Bìa cứng áo ôm"
+      ],
       "cover_price": "1900k",
       "print_run": null,
       "page_count": 1332,

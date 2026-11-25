@@ -24,7 +24,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa da PU"
+      ],
       "cover_price": "1tr200k",
       "print_run": 100,
       "page_count": null,

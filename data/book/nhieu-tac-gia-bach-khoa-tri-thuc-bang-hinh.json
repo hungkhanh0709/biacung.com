@@ -11,6 +11,7 @@
     {
       "id": "nhieu-tac-gia-bach-khoa-tri-thuc-bang-hinh-2015-dong-a-bia-cung-599k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2015,
       "publisher": "NXB Dân Trí",
@@ -20,7 +21,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "599k",
       "print_run": null,
       "page_count": 800,

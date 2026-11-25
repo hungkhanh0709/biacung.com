@@ -24,7 +24,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò"
+      ],
       "cover_price": "6tr",
       "print_run": 895,
       "page_count": null,
@@ -57,7 +59,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": [
+        "Bìa buckram"
+      ],
       "cover_price": "5tr",
       "print_run": 895,
       "page_count": null,
@@ -90,7 +94,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Pháp"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -116,7 +122,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Boxset, bìa cứng",
+      "format": [
+        "Boxset, bìa cứng"
+      ],
       "cover_price": "2510k",
       "print_run": null,
       "page_count": 1768,

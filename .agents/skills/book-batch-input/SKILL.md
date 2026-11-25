@@ -33,6 +33,8 @@ Khi book-intake điều phối, tái dùng sources và image_reviews đã làm; 
 
 Ưu tiên keyword và Memo trong [bảng Caption/Format](../book-intake/references/caption-format.md), không dùng `vocab`. Khi nhập/sửa format, chưa xác định được thì hỏi người dùng, giữ nháp trước khi lưu. Keyword mới được người dùng chốt cập nhật tại bảng; không thêm whitelist vào form/API hoặc chuẩn hóa hàng loạt.
 
+Format nhập các nhãn cách nhau bằng `;`, preview/lưu thành mảng chuỗi; chưa rõ `[]`. Import chuỗi cũ vẫn được hỗ trợ. Sửa Format giữ ID edition hiện có; edition mới vẫn được form tạo ID.
+
 ## Lưu và xác minh
 
 8. Khi đủ danh tính tựa đề, tác giả, edition và dữ liệu không còn mâu thuẫn quan trọng, bấm **Lưu tất cả**, trừ khi người dùng chỉ muốn nháp. Trong book-intake, title_original/pub_date/publisher chưa tìm được sau tra cứu giữ default và ghi rõ, không bịa. Với title_original, theo [quy trình tra tên nguyên tác](../book-intake/references/book-intake-workflow.md#tra-tên-nguyên-tác); thiếu tên gốc hoặc Goodreads bị chặn không tự chặn lưu khi danh tính sách/edition đã rõ. Cập nhật có phạm vi dùng các nút lưu riêng trong form theo nhánh update-existing. Nếu cơ chế lưu lỗi, đọc lại dữ liệu đã lưu, sửa workflow/nháp và điền lại qua Chrome MCP rồi bấm nút lưu của form; không gọi API ghi hay vá file JSON đầu ra. Nếu form không lưu đúng được hoặc Chrome MCP không dùng được, giữ nháp và báo người dùng.

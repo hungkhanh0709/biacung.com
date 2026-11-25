@@ -23,7 +23,9 @@
         "Phạm Ngọc Tân"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "1200k",
       "print_run": null,
       "page_count": "Tập 1: 1096 trang; tập 2: 920 trang",

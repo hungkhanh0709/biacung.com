@@ -30,7 +30,9 @@
         "Art Werger"
       ],
       "proofreaders": [],
-      "format": "Bìa vải",
+      "format": [
+        "Bìa vải"
+      ],
       "cover_price": "2tr400k",
       "print_run": 500,
       "page_count": 320,
@@ -68,7 +70,9 @@
         "Art Werger"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng áo ôm",
+      "format": [
+        "Bìa cứng áo ôm"
+      ],
       "cover_price": "599k",
       "print_run": null,
       "page_count": 560,
@@ -100,7 +104,9 @@
         "Art Werger"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "990k",
       "print_run": 1000,
       "page_count": 320,
@@ -134,7 +140,9 @@
         "Art Werger"
       ],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "250k",
       "print_run": null,
       "page_count": 652,
@@ -167,7 +175,9 @@
         "Art Werger"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Anh"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -197,7 +207,9 @@
         "Art Werger"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Pháp"
+      ],
       "cover_price": "3tr500k",
       "print_run": 306,
       "page_count": null,
@@ -239,7 +251,9 @@
         "Art Werger"
       ],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": [
+        "Bìa buckram"
+      ],
       "cover_price": "1tr500k",
       "print_run": 276,
       "page_count": null,
@@ -277,7 +291,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa bonded leather"
+      ],
       "cover_price": "",
       "print_run": null,
       "page_count": 652,
@@ -304,7 +320,9 @@
         "Art Werger"
       ],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "200",
       "print_run": null,
       "page_count": 652,
@@ -332,7 +350,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -366,7 +386,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "250",
       "print_run": null,
       "page_count": 536,
@@ -394,7 +416,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa vải",
+      "format": [
+        "Bìa vải"
+      ],
       "cover_price": "500k",
       "print_run": 500,
       "page_count": null,
@@ -425,7 +449,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa da nhân tạo"
+      ],
       "cover_price": "1tr500k",
       "print_run": 100,
       "page_count": null,

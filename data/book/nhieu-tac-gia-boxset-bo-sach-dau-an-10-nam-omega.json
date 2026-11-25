@@ -29,7 +29,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Boxset",
+      "format": [
+        "Boxset"
+      ],
       "cover_price": "4tr",
       "print_run": 200,
       "page_count": 5280,

@@ -13,6 +13,7 @@
     {
       "id": "norman-maclean-a-river-runs-through-it-2012-bia-mem-72k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2012,
       "publisher": "NXB Trẻ",
@@ -22,7 +23,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "72k",
       "print_run": null,
       "page_count": 200,

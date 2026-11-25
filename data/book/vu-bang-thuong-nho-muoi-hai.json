@@ -29,7 +29,9 @@
         "Duy Hưng"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò Ý"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -58,7 +60,9 @@
         "Duy Hưng"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò"
+      ],
       "cover_price": "",
       "print_run": 100,
       "page_count": null,
@@ -92,7 +96,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "240k",
       "print_run": 555,
       "page_count": 344,
@@ -122,7 +128,9 @@
         "Duy Hưng"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "350k",
       "print_run": null,
       "page_count": 300,

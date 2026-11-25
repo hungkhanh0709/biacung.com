@@ -21,7 +21,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa vải",
+      "format": [
+        "Bìa vải"
+      ],
       "cover_price": "1tr200k",
       "print_run": 500,
       "page_count": 312,
@@ -49,7 +51,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm áo ôm",
+      "format": [
+        "Bìa mềm áo ôm"
+      ],
       "cover_price": "320k",
       "print_run": null,
       "page_count": 312,

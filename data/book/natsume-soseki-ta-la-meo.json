@@ -11,6 +11,7 @@
     {
       "id": "natsume-soseki-ta-la-meo-2026-tao-dan-bia-mem-380k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Phụ Nữ",
@@ -22,7 +23,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "380k",
       "print_run": null,
       "page_count": 500,

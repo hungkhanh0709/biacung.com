@@ -13,6 +13,7 @@
     {
       "id": "john-steinbeck-of-mice-and-men-2024-tao-dan-bia-mem-90k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2024,
       "publisher": "NXB Hội Nhà Văn",
@@ -24,7 +25,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "90k",
       "print_run": null,
       "page_count": 180,

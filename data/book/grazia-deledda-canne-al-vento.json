@@ -33,7 +33,9 @@
         "Lan Bảo"
       ],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": [
+        "Bìa buckram"
+      ],
       "cover_price": "",
       "print_run": null,
       "page_count": null,

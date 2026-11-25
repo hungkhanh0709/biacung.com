@@ -28,7 +28,10 @@
         "John Flaxman"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Pháp",
+        "Bìa da bò Ý"
+      ],
       "cover_price": "",
       "print_run": 100,
       "page_count": 576,
@@ -73,7 +76,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Boxset, bìa cứng",
+      "format": [
+        "Boxset, bìa cứng"
+      ],
       "cover_price": "589k",
       "print_run": null,
       "page_count": null,
@@ -113,7 +118,9 @@
         "John Flaxman"
       ],
       "proofreaders": [],
-      "format": "Bìa vải",
+      "format": [
+        "Bìa vải"
+      ],
       "cover_price": "2tr500k",
       "print_run": 365,
       "page_count": 576,

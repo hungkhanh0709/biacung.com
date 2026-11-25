@@ -31,7 +31,9 @@
         "Julian-Damazy"
       ],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": [
+        "Bìa buckram"
+      ],
       "cover_price": "1tr1",
       "print_run": 1223,
       "page_count": 392,

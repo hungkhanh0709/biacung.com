@@ -13,6 +13,7 @@
     {
       "id": "selma-lagerlof-the-wonderful-adventures-of-nils-and-further-adventures-of-nils-holgersson-2023-bia-mem-180k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2023,
       "publisher": "NXB Trẻ",
@@ -22,7 +23,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "180k",
       "print_run": null,
       "page_count": 548,

@@ -129,7 +129,7 @@ test('publication precision preserves year only, month/year and exact dates', ()
 test('form preview omits pub_date for year-only input and preserves month/day precision', () => {
     const card = { dataset: { legacyPubDate: 'false' } };
     const page = vm.createContext({
-        window: { BiaCungPublication: publication },
+        window: { BiaCungPublication: publication, BiaCungBookFormat: require('../assets/js/book-format') },
         document: { getElementById: (id) => id === 'editions-container'
             ? { querySelector: () => card } : null }
     });
@@ -166,6 +166,7 @@ test('detail UI uses Phát hành for dates, years and Chauchaubook editions', ()
         document: { querySelector: () => null },
         window: {
             BiaCungPublication: publication,
+            BiaCungBookFormat: require('../assets/js/book-format'),
             location: { search: '' },
             matchMedia: () => ({ matches: false }),
             addEventListener() {}
@@ -305,14 +306,17 @@ test('save APIs normalize dates, refresh index, reject invalid dates and preserv
     assert.deepEqual(fixture.read('data/author.json'), [{ id: 'test-author', name: 'Test Author', work_ids: ['test-a', 'test-b'] }]);
     assert.deepEqual(fixture.read('data/series.json'), []);
     const partiallyDated = structuredClone(book);
+    partiallyDated.editions[1].format = ['Bìa da bò Ý', 'Bìa da microfiber'];
     partiallyDated.editions[1].pub_date = '2026-11-08';
     const partialResult = await post('/api/books/save/book-detail-review', { bookDetail: partiallyDated });
     assert.equal(partialResult.status, 200);
     assert.deepEqual(fixture.read('data/book/test-a.json').editions[1], book.editions[0]);
     assert.equal(fixture.read('data/book/test-a.json').editions[0].pub_date, '2026-11-08');
+    assert.deepEqual(fixture.read('data/book/test-a.json').editions[0].format, ['Bìa da bò Ý', 'Bìa da microfiber']);
     assert.deepEqual(fixture.read('data/book.json').map(e => e.detail), ['data/book/test-a.json', 'data/book/test-b.json']);
     assert.equal(fixture.read('data/book.json')[0].last_pub_date, '2026-11-08');
     book.editions[0].pub_date = '07/2026';
+    book.editions[0].format = ['Bìa da PU'];
     book.editions[1].pub_date = '2026-11-08';
     let result = await post('/api/books/save', {
         bookDetail: book, bookIndex: { detail: 'data/book/test-a.json', search_text: 'test author', last_pub_year: 1900, last_pub_date: '1900-01-01' }
@@ -321,6 +325,7 @@ test('save APIs normalize dates, refresh index, reject invalid dates and preserv
     let saved = fixture.read('data/book/test-a.json');
     assert.deepEqual(saved.editions.map((e) => e.pub_date), ['2026-11-08', '2026-07-01']);
     assert.deepEqual(saved.editions.map((e) => e.pub_year), [2026, 2026]);
+    assert.deepEqual(saved.editions[1].format, ['Bìa da PU']);
     let index = fixture.read('data/book.json');
     assert.equal(index[0].last_pub_date, '2026-11-08');
     assert.equal(index[0].last_pub_year, 2026);

@@ -13,6 +13,7 @@
     {
       "id": "ian-stewart-in-pursuit-of-the-unknown-17-equations-that-changed-the-world-2019-bia-mem-250k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2019,
       "publisher": "NXB Trẻ",
@@ -23,7 +24,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "250k",
       "print_run": null,
       "page_count": 524,

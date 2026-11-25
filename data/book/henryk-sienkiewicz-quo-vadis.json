@@ -29,7 +29,9 @@
         "Abraham Janssens"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò Ý"
+      ],
       "cover_price": "6tr500k",
       "print_run": 100,
       "page_count": null,
@@ -73,7 +75,9 @@
         "Abraham Janssens"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Pháp"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -103,7 +107,9 @@
         "Abraham Janssens"
       ],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa da microfiber"
+      ],
       "cover_price": "1tr",
       "print_run": 500,
       "page_count": null,

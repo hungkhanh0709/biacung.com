@@ -11,6 +11,7 @@
     {
       "id": "michael-collins-remarkable-books-2020-dong-a-bia-cung-390k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2020,
       "publisher": "NXB Dân Trí",
@@ -22,7 +23,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "390k",
       "print_run": null,
       "page_count": 256,

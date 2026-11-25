@@ -24,7 +24,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò Vachetta"
+      ],
       "cover_price": "5tr9",
       "print_run": 111,
       "page_count": 822,

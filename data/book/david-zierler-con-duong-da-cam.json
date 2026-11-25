@@ -11,6 +11,7 @@
     {
       "id": "david-zierler-con-duong-da-cam-2012-bia-mem-95k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2012,
       "publisher": "NXB Trẻ",
@@ -20,7 +21,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "95k",
       "print_run": null,
       "page_count": 325,

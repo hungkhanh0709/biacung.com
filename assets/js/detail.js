@@ -1,4 +1,5 @@
 const publication = window.BiaCungPublication;
+const bookFormat = window.BiaCungBookFormat;
 const BOOK_FALLBACK_COVER = "assets/img/core/book-cover.png.avif";
 const MAX_BOOK_ID_LENGTH = 120;
 const SAFE_BOOK_ID = /^[a-z0-9-]+$/;
@@ -415,20 +416,19 @@ function formatValue(value, suffix = "") {
 }
 
 function isChauchaubookEdition(edition) {
-  return normalizeText(edition?.format).toLowerCase() === "chauchaubook";
+  return bookFormat.has(edition?.format, "Chauchaubook");
 }
 
 function buildEditionSummaryLines(edition) {
   const lines = [];
-  const isArtwork = isChauchaubookEdition(edition);
 
   const publicationText = publication.formatPublicationDate(edition);
   if (publicationText) {
     lines.push(`Phát hành: ${publicationText}`);
   }
 
-  if (normalizeText(edition.format) && !isArtwork) {
-    lines.push(`Hình thức: ${normalizeText(edition.format)}`);
+  if (bookFormat.list(edition.format).length) {
+    lines.push(`Hình thức: ${bookFormat.text(edition.format)}`);
   }
 
   if (normalizeText(edition.cover_price)) {
@@ -543,7 +543,7 @@ function renderContributorsPanel(node, title, groups) {
   node.append(label, value);
 }
 
-function renderInfoCard(node, title, lines) {
+function renderInfoCard(node, title, lines, formats = []) {
   if (!node) {
     return;
   }
@@ -568,7 +568,15 @@ function renderInfoCard(node, title, lines) {
   const list = document.createElement("ul");
   lines.forEach((line) => {
     const item = document.createElement("li");
-    item.textContent = line;
+    if (line.startsWith("Hình thức:") && formats.length) {
+      item.append("Hình thức: ");
+      const pills = document.createElement("span");
+      pills.className = "detail-meta-value is-pill-list";
+      formats.forEach((format) => pills.appendChild(createPill(format)));
+      item.appendChild(pills);
+    } else {
+      item.textContent = line;
+    }
     list.appendChild(item);
   });
 
@@ -878,14 +886,14 @@ function renderActiveEdition() {
   renderEditionGallery(edition);
   renderEditionMeta(currentBook, edition);
   const summaryTitle = isChauchaubookEdition(edition) ? "Thông tin tác phẩm" : "Thông tin phát hành";
-  renderInfoCard(editionSummaryNode, summaryTitle, buildEditionSummaryLines(edition));
+  renderInfoCard(editionSummaryNode, summaryTitle, buildEditionSummaryLines(edition), bookFormat.list(edition.format));
   renderDescription(edition);
   syncFocusCopyLayout();
   updateSeoMetadata(currentBook, edition);
 }
 
 function getSchemaBookFormat(edition) {
-  const value = `${normalizeText(edition?.format)} ${normalizeText(edition?.caption)}`;
+  const value = `${bookFormat.text(edition?.format)} ${normalizeText(edition?.caption)}`;
   if (/bìa cứng|hardcover/i.test(value)) {
     return "https://schema.org/Hardcover";
   }
@@ -928,7 +936,7 @@ function updateSeoMetadata(book, edition) {
     220
   );
   const editionName =
-    getEditionCaption(book, edition) || normalizeText(edition.format) || "Phiên bản sưu tầm";
+    getEditionCaption(book, edition) || bookFormat.text(edition.format) || "Phiên bản sưu tầm";
   const translators = dedupeStrings(edition.translators);
   const illustrators = dedupeStrings(edition.illustrators);
   const proofreaders = dedupeStrings(edition.proofreaders);
@@ -1025,7 +1033,7 @@ function updateSeoMetadata(book, edition) {
           url: seo.toAbsoluteUrl(getEditionPagePath(book, bookEdition)),
           image: seo.toAbsoluteUrl(normalizeUrl(bookEdition.thumbnail)) || undefined,
           isbn: getValidIsbn13(bookEdition.isbn),
-          bookEdition: getEditionCaption(book, bookEdition) || normalizeText(bookEdition.format) || undefined,
+          bookEdition: getEditionCaption(book, bookEdition) || bookFormat.text(bookEdition.format) || undefined,
           bookFormat: getSchemaBookFormat(bookEdition),
           datePublished: publication.publicationDateForSchema(bookEdition) || undefined,
           inLanguage: "vi",

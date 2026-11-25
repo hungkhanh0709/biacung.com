@@ -13,6 +13,7 @@
     {
       "id": "michael-j-sandel-what-money-cant-buy-the-moral-limits-of-markets-2019-bia-mem-125k",
       "isbn": "978-604-1-14356-2",
+      "series_ids": [],
       "caption": "",
       "pub_year": 2019,
       "publisher": "NXB Trẻ",
@@ -22,7 +23,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "125k",
       "print_run": null,
       "page_count": 340,

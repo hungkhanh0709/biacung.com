@@ -26,7 +26,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Boxset, bìa cứng",
+      "format": [
+        "Boxset, bìa cứng"
+      ],
       "cover_price": "4tr150k",
       "print_run": 2000,
       "page_count": 1400,

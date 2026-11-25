@@ -28,7 +28,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "355k",
       "print_run": 200,
       "page_count": 469,
@@ -59,7 +61,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "100k",
       "print_run": null,
       "page_count": 324,
@@ -89,7 +93,9 @@
         "Elena Selivanova"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "280k",
       "print_run": null,
       "page_count": 304,
@@ -117,7 +123,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "50k",
       "print_run": null,
       "page_count": null,

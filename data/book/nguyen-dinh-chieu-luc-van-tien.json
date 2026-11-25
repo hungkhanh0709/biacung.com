@@ -28,7 +28,9 @@
         "Nguyễn Công Hoan"
       ],
       "proofreaders": [],
-      "format": "Bìa vải",
+      "format": [
+        "Bìa vải"
+      ],
       "cover_price": "2tr200k",
       "print_run": 500,
       "page_count": 192,
@@ -68,7 +70,9 @@
         "Nguyễn Công Hoan"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "690k",
       "print_run": null,
       "page_count": 192,

@@ -25,7 +25,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Chauchaubook",
+      "format": [
+        "Chauchaubook"
+      ],
       "cover_price": "",
       "print_run": null,
       "page_count": 300,

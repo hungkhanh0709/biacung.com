@@ -36,7 +36,7 @@
             "proofreaders": [
                 "Proofreader Name"
             ],
-            "format": "hardcover / paperback / leatherbound / Chauchaubook / ...",
+            "format": ["Bìa cứng"],
             "cover_price": "xxk",
             "print_run": null,
             "page_count": null,

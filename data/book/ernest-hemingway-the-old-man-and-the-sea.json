@@ -28,7 +28,9 @@
         "Lê Trí"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Pháp"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -57,7 +59,9 @@
         "Lê Trí"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò"
+      ],
       "cover_price": "",
       "print_run": 100,
       "page_count": null,
@@ -96,7 +100,9 @@
         "Lê Trí"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng áo ôm",
+      "format": [
+        "Bìa cứng áo ôm"
+      ],
       "cover_price": "200k",
       "print_run": null,
       "page_count": 156,

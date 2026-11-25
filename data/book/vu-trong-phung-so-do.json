@@ -29,7 +29,9 @@
         "Thành Phong"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -55,7 +57,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "240k",
       "print_run": 555,
       "page_count": 300,
@@ -82,7 +86,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa vải",
+      "format": [
+        "Bìa vải"
+      ],
       "cover_price": "",
       "print_run": 100,
       "page_count": null,
@@ -115,7 +121,9 @@
         "Thành Phong"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "320k",
       "print_run": null,
       "page_count": 280,

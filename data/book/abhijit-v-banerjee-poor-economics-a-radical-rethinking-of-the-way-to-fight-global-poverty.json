@@ -14,6 +14,7 @@
     {
       "id": "abhijit-v-banerjee-poor-economics-a-radical-rethinking-of-the-way-to-fight-global-poverty-2015-bia-mem-145k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2015,
       "publisher": "NXB Trẻ",
@@ -23,7 +24,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "145k",
       "print_run": null,
       "page_count": 444,

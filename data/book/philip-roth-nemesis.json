@@ -13,6 +13,7 @@
     {
       "id": "philip-roth-nemesis-2013-bia-mem-90k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2013,
       "publisher": "NXB Trẻ",
@@ -20,7 +21,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "90k",
       "print_run": null,
       "page_count": 250,

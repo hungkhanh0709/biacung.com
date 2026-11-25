@@ -36,7 +36,7 @@ Schema sống: `data/template/book-detail.json`; không chép giá trị minh h�
 | pub_date / pub_year | Theo [ngày phát hành](#ngày-phát-hành); đúng edition Việt, không lấy năm nguyên tác/ngày đăng/mở đặt trước. |
 | publisher / issuers | Tách NXB/đơn vị phát hành; logo mơ hồ chưa đủ để gán. |
 | cover_price | Giá bìa đúng edition theo [giá bìa](#giá-bìa); chưa rõ `""`, không lấy giá sale/cọc. |
-| caption / format | Theo keyword/Memo [bảng tham chiếu](caption-format.md), không dùng vocab. Format chưa rõ thì hỏi trước khi lưu. |
+| caption / format | Theo keyword/Memo [bảng tham chiếu](caption-format.md). Format là mảng chuỗi (chưa rõ `[]`), nhập các nhãn cách nhau bằng `;`; reader chấp nhận chuỗi cũ. Sửa Format giữ ID edition cũ. Không dùng vocab. Format chưa rõ thì hỏi trước khi lưu. |
 | awards / series | Chưa rõ `[]`; giữ nhãn đã có. Tái dùng tên/ID series, gán đúng edition. |
 | isbn, print_run, page_count, copy_numbering, weight_g | Chưa rõ `null`; ISBN riêng từng edition. |
 | size_cm, detail, text optional | Chưa rõ `""`; khổ phụ kiện không phải khổ sách. Detail là danh sách phẳng, mỗi dòng không rỗng bắt đầu `- `; không heading/đoạn mở đầu/kết riêng. |
@@ -68,7 +68,7 @@ NXB, dịch giả, họa sĩ, hiệu đính có thể đề xuất theo căn c�
 
 ### Giá bìa
 
-Dưới 1 triệu dùng k (`900k`); từ 1 triệu dùng tr + phần nghìn k (`1tr200k`, `3tr900k`, `3tr50k`); tròn triệu `3tr`. Không dùng `3900k`, `3tr9`, `3.9tr` cho giá đang nhập/sửa. Không làm tròn mất giá trị. Đổi giá/năm/format làm đổi ID thì theo preview form và rà tham chiếu liên quan; không chuẩn hóa hàng loạt edition cũ.
+Dưới 1 triệu dùng k (`900k`); từ 1 triệu dùng tr + phần nghìn k (`1tr200k`, `3tr900k`, `3tr50k`); tròn triệu `3tr`. Không dùng `3900k`, `3tr9`, `3.9tr` cho giá đang nhập/sửa. Không làm tròn mất giá trị. Đổi giá/năm làm đổi ID thì theo preview form và rà tham chiếu liên quan; sửa Format giữ ID cũ. Không chuẩn hóa hàng loạt edition cũ.
 
 Checklist: Phát hành chỉ từ pub_date; Giá chép nguyên cover_price (kể cả cách ghi cũ); thiếu thì `Thiếu`. Hình `Thiếu` khi gallery rỗng/edition chưa có, không tự tạo gallery. Memo chỉ giữ việc còn cần xác nhận/thu thập có căn cứ; bỏ trạng thái chưa nhập sau khi lưu. Với bản limited, giá, ISBN, khối lượng và kích thước không tìm thấy thì giữ default; không tự tạo Memo hoặc kéo dài tra cứu chỉ để lấp các trường này. Chỉ nhắc trong Memo khi có nguồn mâu thuẫn hoặc người dùng yêu cầu theo dõi cụ thể.
 

@@ -33,7 +33,9 @@
         "Émile Bayard"
       ],
       "proofreaders": [],
-      "format": "Boxset, bìa mềm",
+      "format": [
+        "Boxset, bìa mềm"
+      ],
       "cover_price": "660k",
       "print_run": null,
       "page_count": 1620,

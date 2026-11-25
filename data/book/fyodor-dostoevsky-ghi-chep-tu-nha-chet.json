@@ -23,7 +23,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da thật"
+      ],
       "cover_price": "",
       "print_run": 24,
       "page_count": null,
@@ -49,7 +51,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa giấy mỹ thuật"
+      ],
       "cover_price": "",
       "print_run": 76,
       "page_count": null,
@@ -75,7 +79,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng áo ôm",
+      "format": [
+        "Bìa cứng áo ôm"
+      ],
       "cover_price": "",
       "print_run": 365,
       "page_count": null,
@@ -101,7 +107,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "",
       "print_run": null,
       "page_count": null,
@@ -128,7 +136,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "250k",
       "print_run": null,
       "page_count": 316,
@@ -154,7 +164,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "229k",
       "print_run": null,
       "page_count": 412,

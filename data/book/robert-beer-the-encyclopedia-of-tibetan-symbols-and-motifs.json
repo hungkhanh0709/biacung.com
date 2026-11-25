@@ -26,7 +26,10 @@
         "Robert Beer"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Anh",
+        "Bìa sơn mài"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -60,7 +63,9 @@
         "Robert Beer"
       ],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": [
+        "Bìa buckram"
+      ],
       "cover_price": "3tr900k",
       "print_run": 100,
       "page_count": 512,
@@ -95,7 +100,9 @@
         "Robert Beer"
       ],
       "proofreaders": [],
-      "format": "Bìa vải",
+      "format": [
+        "Bìa vải"
+      ],
       "cover_price": "1tr200k",
       "print_run": 400,
       "page_count": 512,

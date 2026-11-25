@@ -29,7 +29,9 @@
         "Đông Phong"
       ],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": [
+        "Bìa buckram"
+      ],
       "cover_price": "600k",
       "print_run": null,
       "page_count": 172,

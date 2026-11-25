@@ -30,7 +30,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa vải",
+      "format": [
+        "Bìa vải"
+      ],
       "cover_price": "2tr300k",
       "print_run": 500,
       "page_count": 284,
@@ -67,7 +69,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "890k",
       "print_run": null,
       "page_count": 284,
@@ -91,7 +95,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Chauchaubook",
+      "format": [
+        "Chauchaubook"
+      ],
       "cover_price": "",
       "print_run": null,
       "page_count": null,
@@ -120,7 +126,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "178k",
       "print_run": null,
       "page_count": 590,
@@ -147,7 +155,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "190k",
       "print_run": null,
       "page_count": 532,

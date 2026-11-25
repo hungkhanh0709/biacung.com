@@ -13,6 +13,7 @@
     {
       "id": "jmg-le-clezio-mondo-et-autres-histoires-2016-bia-mem-143k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2016,
       "publisher": "NXB Trẻ",
@@ -24,7 +25,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "143k",
       "print_run": null,
       "page_count": 352,

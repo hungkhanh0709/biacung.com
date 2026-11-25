@@ -30,7 +30,9 @@
         "Đặng Xuân Hòa"
       ],
       "proofreaders": [],
-      "format": "Bìa vải",
+      "format": [
+        "Bìa vải"
+      ],
       "cover_price": "2tr200k",
       "print_run": 500,
       "page_count": 208,
@@ -68,7 +70,9 @@
         "Đặng Xuân Hòa"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "790k",
       "print_run": 1000,
       "page_count": 208,
@@ -99,7 +103,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa sơn mài"
+      ],
       "cover_price": "11tr",
       "print_run": 100,
       "page_count": 504,
@@ -134,7 +140,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa sơn mài"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,

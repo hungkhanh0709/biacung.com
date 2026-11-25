@@ -30,7 +30,9 @@
         "Frédéric Montenard"
       ],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": [
+        "Bìa buckram"
+      ],
       "cover_price": "800k",
       "print_run": null,
       "page_count": 264,

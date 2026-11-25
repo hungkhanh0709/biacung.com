@@ -1,6 +1,8 @@
 (function () {
     const publication = typeof module === 'object' && module.exports
         ? require('../assets/js/publication-date') : globalThis.BiaCungPublication;
+    const bookFormat = typeof module === 'object' && module.exports
+        ? require('../assets/js/book-format') : globalThis.BiaCungBookFormat;
     // Lightweight free-text edition parser.
     // Exposes window.parseEditionText(text) -> parsed object
 
@@ -223,7 +225,7 @@
             size_cm: null,
             page_count: null,
             print_run: null,
-            format: null,
+            format: [],
             cover_price: null,
             detail: null
         };
@@ -350,7 +352,7 @@
         }
 
         // Post-process: normalize format display (capitalize words) and keep issuers concise
-        if (result.format) {
+        if (typeof result.format === 'string' && result.format) {
             // Normalize format: keep 'Bìa' prefix when present (e.g., 'Bìa: Bìa mềm' -> 'Bìa mềm')
             const hadBia = /^bìa[:\s-]*/i.test(result.format);
             let fmt = result.format.replace(/^bìa[:\s-]*/i, '').trim();
@@ -358,6 +360,7 @@
             result.format = hadBia ? `Bìa ${fmt}` : fmt;
         }
 
+        result.format = bookFormat.fromInput(result.format);
         return result;
     }
 
