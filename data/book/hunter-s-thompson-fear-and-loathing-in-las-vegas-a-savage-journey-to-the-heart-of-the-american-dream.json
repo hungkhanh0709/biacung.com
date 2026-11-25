@@ -13,6 +13,7 @@
     {
       "id": "hunter-s-thompson-fear-and-loathing-in-las-vegas-a-savage-journey-to-the-heart-of-the-american-dream-2014-bia-mem-120k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2014,
       "publisher": "NXB Trẻ",
@@ -22,7 +23,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "120k",
       "print_run": null,
       "page_count": 364,

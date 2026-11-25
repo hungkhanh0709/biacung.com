@@ -30,7 +30,9 @@
         "Frank C. Papé"
       ],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": [
+        "Bìa buckram"
+      ],
       "cover_price": "1tr5",
       "print_run": null,
       "page_count": 724,

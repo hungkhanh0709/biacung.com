@@ -26,7 +26,9 @@
         "Gustave Doré"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Anh"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -55,7 +57,10 @@
         "Gustave Doré"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Pháp",
+        "Bìa da bò"
+      ],
       "cover_price": "11tr",
       "print_run": 100,
       "page_count": 780,
@@ -84,7 +89,9 @@
         "Gustave Doré"
       ],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa da microfiber"
+      ],
       "cover_price": "2tr600k",
       "print_run": null,
       "page_count": 780,
@@ -121,7 +128,9 @@
         "Gustave Doré"
       ],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": [
+        "Bìa buckram"
+      ],
       "cover_price": "2tr600k",
       "print_run": 1211,
       "page_count": 780,

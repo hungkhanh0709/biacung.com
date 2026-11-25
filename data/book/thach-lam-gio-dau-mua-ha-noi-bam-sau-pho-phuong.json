@@ -28,7 +28,9 @@
         "Đào Hải Phong"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Pháp"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -57,7 +59,10 @@
         "Đào Hải Phong"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Pháp",
+        "Bìa da bò"
+      ],
       "cover_price": "3tr800k",
       "print_run": 105,
       "page_count": 252,
@@ -93,7 +98,9 @@
         "Đào Hải Phong"
       ],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa da microfiber"
+      ],
       "cover_price": "1tr200k",
       "print_run": 500,
       "page_count": 252,
@@ -127,7 +134,9 @@
         "Đào Hải Phong"
       ],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "160k",
       "print_run": null,
       "page_count": 252,

@@ -30,7 +30,9 @@
         "Phạm Ngọc Tân"
       ],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": [
+        "Bìa buckram"
+      ],
       "cover_price": "1tr",
       "print_run": 1200,
       "page_count": 468,

@@ -24,7 +24,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "380k",
       "print_run": null,
       "page_count": null,
@@ -54,7 +56,9 @@
         "Fritz Eichenberg"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò Ý"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": 648,
@@ -84,7 +88,9 @@
         "Fritz Eichenberg"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò Ý"
+      ],
       "cover_price": "",
       "print_run": 100,
       "page_count": 648,
@@ -135,7 +141,9 @@
         "Fritz Eichenberg"
       ],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa da PU"
+      ],
       "cover_price": "2tr500k",
       "print_run": 500,
       "page_count": 648,

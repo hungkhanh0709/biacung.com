@@ -29,7 +29,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa vải",
+      "format": [
+        "Bìa vải"
+      ],
       "cover_price": "330k",
       "print_run": null,
       "page_count": 352,
@@ -62,7 +64,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "110k",
       "print_run": null,
       "page_count": 356,
@@ -91,7 +95,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "65k",
       "print_run": null,
       "page_count": null,

@@ -23,7 +23,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng áo ôm",
+      "format": [
+        "Bìa cứng áo ôm"
+      ],
       "cover_price": "720k",
       "print_run": null,
       "page_count": 512,

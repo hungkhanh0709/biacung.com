@@ -22,7 +22,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng áo ôm",
+      "format": [
+        "Bìa cứng áo ôm"
+      ],
       "cover_price": "389k",
       "print_run": 365,
       "page_count": 648,
@@ -50,7 +52,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Pháp"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -77,7 +81,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò Ý"
+      ],
       "cover_price": "",
       "print_run": 100,
       "page_count": null,
@@ -110,7 +116,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa bonded leather"
+      ],
       "cover_price": "1tr500k",
       "print_run": 1200,
       "page_count": null,

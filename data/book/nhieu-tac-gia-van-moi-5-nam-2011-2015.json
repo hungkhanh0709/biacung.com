@@ -27,7 +27,10 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Anh",
+        "Bìa giấy thủy ấn"
+      ],
       "cover_price": "",
       "print_run": null,
       "page_count": null,

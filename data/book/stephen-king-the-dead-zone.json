@@ -11,6 +11,7 @@
     {
       "id": "stephen-king-the-dead-zone-2026-1980-books-bia-mem-359k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Hà Nội",
@@ -22,7 +23,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "359k",
       "print_run": null,
       "page_count": 640,

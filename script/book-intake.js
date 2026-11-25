@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const publication = require('../assets/js/publication-date');
+const bookFormat = require('../assets/js/book-format');
 
 const ROOT = path.resolve(__dirname, '..');
 const RAW = 'data/_raw';
@@ -42,7 +43,9 @@ function vocabulary(root) {
         if (!name.endsWith('.json')) continue;
         for (const edition of read(path.join(root, 'data/book', name)).editions || []) {
             for (const field of ['caption', 'format']) {
-                if (text(edition[field])) counts[field].set(edition[field], (counts[field].get(edition[field]) || 0) + 1);
+                for (const value of field === 'format' ? bookFormat.list(edition[field]) : [edition[field]]) {
+                    if (text(value)) counts[field].set(value, (counts[field].get(value) || 0) + 1);
+                }
             }
         }
     }
@@ -56,7 +59,7 @@ function vocabulary(root) {
 }
 function emptyBook(root) {
     const template = read(path.join(root, 'data/template/book-detail.json'));
-    const arrayFields = new Set(['authors', 'awards', 'series', 'series_ids', 'issuers', 'translators', 'illustrators', 'proofreaders', 'gellery_imgs']);
+    const arrayFields = new Set(['authors', 'awards', 'series', 'series_ids', 'issuers', 'translators', 'illustrators', 'proofreaders', 'gellery_imgs', 'format']);
     const nullFields = new Set(['isbn', 'pub_date', 'pub_year', 'print_run', 'page_count', 'copy_numbering', 'weight_g']);
     function blank(object) {
         return Object.fromEntries(Object.keys(object).filter((field) => field !== 'title' || object === template).map((field) => {
@@ -141,9 +144,11 @@ function validate(root, book, { relations = false, images = false, allowExisting
         for (const field of ['series_ids', 'issuers', 'translators', 'illustrators', 'proofreaders', 'gellery_imgs']) {
             if (!Array.isArray(edition[field]) || !edition[field].every(text)) bad(`${at}.${field} phải là mảng string.`);
         }
-        for (const field of ['caption', 'publisher', 'format', 'cover_price', 'size_cm', 'thumbnail', 'detail']) {
+        for (const field of ['caption', 'publisher', 'cover_price', 'size_cm', 'thumbnail', 'detail']) {
             if (typeof edition[field] !== 'string') bad(`${at}.${field} phải là string.`);
         }
+        if (!bookFormat.valid(edition.format)) bad(`${at}.format phải là string hoặc mảng string.`);
+        if (!bookFormat.list(edition.format).length) missing.push(`${at}.format`);
         if ('title' in edition && !text(edition.title)) bad(`${at}.title override phải có nội dung hoặc bỏ key.`);
         if ('is_upcoming' in edition && typeof edition.is_upcoming !== 'boolean') bad(`${at}.is_upcoming phải là boolean.`);
         for (const field of ['pub_year', 'print_run', 'page_count', 'weight_g']) {
@@ -157,7 +162,7 @@ function validate(root, book, { relations = false, images = false, allowExisting
         for (const field of ['isbn', 'copy_numbering']) if (edition[field] !== null && !text(edition[field])) bad(`${at}.${field} phải là string hoặc null.`);
         if (text(edition.cover_price) && !isCoverPrice(edition.cover_price)
             && previous?.cover_price !== edition.cover_price) bad(`${at}.cover_price phải có dạng 900k, 3tr900k hoặc 3tr.`);
-        for (const field of ['pub_year', 'publisher', 'format', 'cover_price', 'thumbnail']) {
+        for (const field of ['pub_year', 'publisher', 'cover_price', 'thumbnail']) {
             if (edition[field] == null || edition[field] === '') missing.push(`${at}.${field}`);
         }
         if (!edition.issuers?.length) missing.push(`${at}.issuers`);

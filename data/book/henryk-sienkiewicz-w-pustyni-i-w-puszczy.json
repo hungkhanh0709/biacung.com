@@ -31,7 +31,9 @@
         "Đức Lâm"
       ],
       "proofreaders": [],
-      "format": "Bìa vải",
+      "format": [
+        "Bìa vải"
+      ],
       "cover_price": "420k",
       "print_run": null,
       "page_count": 580,
@@ -68,7 +70,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "89k",
       "print_run": null,
       "page_count": null,
@@ -100,7 +104,9 @@
         "Đức Lâm"
       ],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "120k",
       "print_run": null,
       "page_count": 504,

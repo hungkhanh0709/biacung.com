@@ -30,7 +30,9 @@
         "Louis Delaporte"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Anh"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -59,7 +61,10 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê",
+        "Bìa da bò"
+      ],
       "cover_price": "7tr500k",
       "print_run": 100,
       "page_count": 848,
@@ -90,7 +95,9 @@
         "Louis Delaporte"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng áo ôm",
+      "format": [
+        "Bìa cứng áo ôm"
+      ],
       "cover_price": "790k",
       "print_run": null,
       "page_count": 848,

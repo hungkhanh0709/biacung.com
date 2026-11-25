@@ -24,7 +24,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa bonded leather"
+      ],
       "cover_price": "700k",
       "print_run": 500,
       "page_count": 372,

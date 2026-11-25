@@ -1,4 +1,5 @@
 const publication = window.BiaCungPublication;
+const bookFormat = window.BiaCungBookFormat;
 const SERIES_INDEX_URL = "data/series.json";
 const BOOK_FALLBACK_COVER = "assets/img/core/book-cover.png.avif";
 const SEARCH_PAGE_SIZE = 16;
@@ -149,7 +150,7 @@ function getMatchingSeriesEditions(editions, seriesSlug) {
 }
 
 function getEditionMeta(edition) {
-  return [edition?.caption, publication.getEditionYear(edition), edition?.format]
+  return [edition?.caption, publication.getEditionYear(edition), bookFormat.text(edition?.format)]
     .map((value) => normalizeText(value))
     .filter(Boolean)
     .join(" · ");

@@ -1,4 +1,5 @@
 const publication = window.BiaCungPublication;
+const bookFormat = window.BiaCungBookFormat;
 const HOME_DATA_URL = "data/home.json";
 const BOOK_INDEX_URL = "data/book.json";
 const BOOK_FALLBACK_COVER = "assets/img/core/book-cover.png.avif";
@@ -153,7 +154,7 @@ function getMatchingEditions(book, matchesQuery) {
       ...(Array.isArray(edition?.translators) ? edition.translators : []),
       ...(Array.isArray(edition?.illustrators) ? edition.illustrators : []),
       ...(Array.isArray(edition?.proofreaders) ? edition.proofreaders : []),
-      edition?.format,
+      ...bookFormat.list(edition?.format),
       edition?.pub_year,
       edition?.pub_date,
       edition?.cover_price,
@@ -382,6 +383,10 @@ async function loadBookMatches(searchNeedles) {
       const editions = publication.sortEditions(book.editions);
       const firstEdition = editions[0] || {};
       const matchingEditions = getMatchingEditions(book, matchesQuery);
+      const sharedFields = [book.title, book.title_original, ...(book.authors || []), ...(book.awards || []), ...(book.series || [])];
+      if (matchesQuery && !matchingEditions.length && !sharedFields.some(matchesQuery)) {
+        return null;
+      }
       const selectedEdition = matchingEditions[0] || firstEdition;
       const visibleEditionCount = matchingEditions.length || editions.length;
 

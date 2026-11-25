@@ -1,4 +1,5 @@
 const publication = window.BiaCungPublication;
+const bookFormat = window.BiaCungBookFormat;
 const form = document.getElementById('book-form');
 const editionsContainer = document.getElementById('editions-container');
 const addEditionButton = document.getElementById('add-edition');
@@ -179,13 +180,7 @@ function titlesMatch(left, right) {
 }
 
 function normalizeFormatValue(value) {
-    const normalized = normalizeText(value);
-    if (!normalized) {
-        return '';
-    }
-
-    const lowercased = normalized.toLowerCase();
-    return lowercased.charAt(0).toUpperCase() + lowercased.slice(1);
+    return bookFormat.fromInput(value).join('; ');
 }
 
 function normalizeSizeValue(value) {
@@ -644,7 +639,7 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
             <div class="field-row-3 field-full-row">
                 <label>
                     Định dạng
-                    <input name="edition-format-${index}" placeholder="hardcover / paperback" />
+                    <input name="edition-format-${index}" placeholder="Bìa da bò Ý; Bìa da microfiber" />
                 </label>
                 <label>
                     Giá bìa
@@ -771,10 +766,13 @@ function createEditionCard(index = editionCounter, editionData = {}, options = {
             issuers: parseLines(value('issuers')).map(normalizeIssuerValue),
             format: normalizeFormatValue(value('format')), cover_price: normalizeText(value('cover-price'))
         });
-        card.dataset.originalGeneratedIdWithoutYear = buildEditionId(getBookSlugFromFormData(new FormData(form)), {
+        const identity = {
+            pub_year: publication.getEditionYear(editionData),
             issuers: parseLines(value('issuers')).map(normalizeIssuerValue),
-            format: normalizeFormatValue(value('format')), cover_price: normalizeText(value('cover-price'))
-        });
+            format: [], cover_price: normalizeText(value('cover-price'))
+        };
+        card.dataset.originalGeneratedIdWithoutFormat = buildEditionId(getBookSlugFromFormData(new FormData(form)), identity);
+        card.dataset.originalGeneratedIdWithoutYearOrFormat = buildEditionId(getBookSlugFromFormData(new FormData(form)), { ...identity, pub_year: null });
     }
 
     // Auto-fill button behavior: use parseEditionText (from edition-parser.js) if available
@@ -964,7 +962,8 @@ function buildEditionId(bookId, edition) {
     const year = String(publication.getEditionYear(edition) ?? '');
     const issuers = Array.isArray(edition.issuers) ? edition.issuers.join(' ') : (edition.issuers || '');
     const price = edition.cover_price || edition.price || '';
-    const parts = [bookId, year, issuers, edition.format, price]
+    const format = bookFormat.list(edition.format).sort((a, b) => a.localeCompare(b, 'vi')).join(' ');
+    const parts = [bookId, year, issuers, format, price]
         .filter(Boolean)
         .join(' ');
     return slugify(parts);
@@ -989,7 +988,7 @@ function buildEditionFromFormData(formData, index, bookId) {
     const translators = parseCommaSeparatedLines(formData.get(`edition-translators-${index}`) || '').map(toTitleCase);
     const illustrators = parseCommaSeparatedLines(formData.get(`edition-illustrators-${index}`) || '').map(toTitleCase);
     const proofreaders = parseCommaSeparatedLines(formData.get(`edition-proofreaders-${index}`) || '').map(toTitleCase);
-    const format = normalizeFormatValue(formData.get(`edition-format-${index}`));
+    const format = bookFormat.fromInput(formData.get(`edition-format-${index}`));
     const coverPrice = normalizeText(formData.get(`edition-cover-price-${index}`));
     const printRun = normalizeText(formData.get(`edition-print-run-${index}`));
     const pageCount = normalizeText(formData.get(`edition-page-count-${index}`));
@@ -1012,7 +1011,7 @@ function buildEditionFromFormData(formData, index, bookId) {
         translators,
         illustrators,
         proofreaders,
-        format: format || '',
+        format,
         cover_price: coverPrice || '',
         print_run: printRun ? Number(printRun) : null,
         page_count: pageCount ? Number(pageCount) : null,
@@ -1026,10 +1025,12 @@ function buildEditionFromFormData(formData, index, bookId) {
 
     const generatedId = buildEditionId(bookId, editionObject);
     const statusTransition = isUpcoming || card?.dataset.wasUpcoming === 'true';
-    const sameIdentityWithoutYear = card?.dataset.originalGeneratedIdWithoutYear
-        === buildEditionId(bookId, { ...editionObject, pub_year: null, pub_date: null });
+    const sameIdentityWithoutFormat = card?.dataset.originalGeneratedIdWithoutFormat
+        === buildEditionId(bookId, { ...editionObject, format: [] });
+    const sameIdentityWithoutYear = card?.dataset.originalGeneratedIdWithoutYearOrFormat
+        === buildEditionId(bookId, { ...editionObject, format: [], pub_year: null, pub_date: null });
     return {
-        id: card?.dataset.originalEditionId && (card.dataset.originalGeneratedId === generatedId
+        id: card?.dataset.originalEditionId && (card.dataset.originalGeneratedId === generatedId || sameIdentityWithoutFormat
             || (statusTransition && sameIdentityWithoutYear))
             ? card.dataset.originalEditionId : generatedId,
         ...editionObject
@@ -1129,6 +1130,7 @@ function collectSearchTextTerms(formData) {
     addEditionFieldValues('edition-proofreaders-');
     parseLines(formData.get('series') || '').forEach((entry) => addValues(entry));
     addEditionFieldValues('edition-caption-');
+    addEditionFieldValues('edition-format-', (value) => bookFormat.fromInput(value));
     parseLines(formData.get('awards') || '').forEach((entry) => addValues(entry));
 
     return terms;

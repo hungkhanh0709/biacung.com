@@ -30,7 +30,9 @@
         "Émile Bayard"
       ],
       "proofreaders": [],
-      "format": "Bìa vải",
+      "format": [
+        "Bìa vải"
+      ],
       "cover_price": "320k",
       "print_run": null,
       "page_count": 336,
@@ -65,7 +67,9 @@
         "Émile Bayard"
       ],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "100k",
       "print_run": null,
       "page_count": 316,

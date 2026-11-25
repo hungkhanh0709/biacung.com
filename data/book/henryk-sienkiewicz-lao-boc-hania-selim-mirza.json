@@ -29,7 +29,9 @@
         "Triệu Yến Vy"
       ],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": [
+        "Bìa buckram"
+      ],
       "cover_price": "900k",
       "print_run": null,
       "page_count": 316,

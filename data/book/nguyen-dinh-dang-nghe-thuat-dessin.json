@@ -24,7 +24,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò Mỹ"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -49,7 +51,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa buckram",
+      "format": [
+        "Bìa buckram"
+      ],
       "cover_price": "1tr400k",
       "print_run": 1231,
       "page_count": 760,

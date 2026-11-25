@@ -29,7 +29,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Chauchaubook",
+      "format": [
+        "Chauchaubook"
+      ],
       "cover_price": "",
       "print_run": null,
       "page_count": 616,
@@ -65,7 +67,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "180k",
       "print_run": null,
       "page_count": 764,
@@ -93,7 +97,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "115k",
       "print_run": null,
       "page_count": null,

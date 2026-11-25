@@ -22,7 +22,9 @@
         "Đỗ Hoàng Tường"
       ],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "75k",
       "print_run": null,
       "page_count": 256,
@@ -48,7 +50,9 @@
         "Đỗ Hoàng Tường"
       ],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "75k",
       "print_run": null,
       "page_count": 256,
@@ -76,7 +80,9 @@
         "Đỗ Hoàng Tường"
       ],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa da nhân tạo"
+      ],
       "cover_price": "1tr900k",
       "print_run": 106,
       "page_count": 220,
@@ -105,7 +111,9 @@
         "Đỗ Hoàng Tường"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng áo ôm",
+      "format": [
+        "Bìa cứng áo ôm"
+      ],
       "cover_price": "200k",
       "print_run": null,
       "page_count": 220,

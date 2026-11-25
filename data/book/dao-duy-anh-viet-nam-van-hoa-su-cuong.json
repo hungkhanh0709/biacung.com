@@ -22,7 +22,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Anh"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": 368,
@@ -47,7 +49,10 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Pháp",
+        "Bìa da bò"
+      ],
       "cover_price": "5tr",
       "print_run": 100,
       "page_count": 368,
@@ -84,7 +89,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa da microfiber"
+      ],
       "cover_price": "1tr500k",
       "print_run": 500,
       "page_count": 368,
@@ -121,7 +128,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "390k",
       "print_run": null,
       "page_count": 368,

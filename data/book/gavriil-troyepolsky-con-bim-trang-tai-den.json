@@ -30,7 +30,9 @@
         "Đức Lâm"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Anh"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": 360,
@@ -60,7 +62,10 @@
         "Đức Lâm"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Pháp",
+        "Bìa da bò"
+      ],
       "cover_price": "3tr900k",
       "print_run": 100,
       "page_count": 360,
@@ -101,7 +106,9 @@
         "Đức Lâm"
       ],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa da microfiber"
+      ],
       "cover_price": "1tr500k",
       "print_run": 500,
       "page_count": 360,
@@ -138,7 +145,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "100k",
       "print_run": null,
       "page_count": 320,
@@ -167,7 +176,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "48k",
       "print_run": null,
       "page_count": null,

@@ -29,7 +29,9 @@
         "Ngọc Điệp"
       ],
       "proofreaders": [],
-      "format": "Bìa mềm áo ôm",
+      "format": [
+        "Bìa mềm áo ôm"
+      ],
       "cover_price": "680k",
       "print_run": null,
       "page_count": 1524,
@@ -64,7 +66,9 @@
         "Ngọc Điệp"
       ],
       "proofreaders": [],
-      "format": "Boxset, bìa cứng",
+      "format": [
+        "Boxset, bìa cứng"
+      ],
       "cover_price": "2tr8",
       "print_run": 333,
       "page_count": null,

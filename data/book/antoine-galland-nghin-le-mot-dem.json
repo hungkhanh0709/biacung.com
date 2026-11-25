@@ -26,7 +26,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -54,7 +56,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "100k",
       "print_run": null,
       "page_count": 348,
@@ -81,7 +85,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò"
+      ],
       "cover_price": "12tr",
       "print_run": 100,
       "page_count": null,
@@ -116,7 +122,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng áo ôm",
+      "format": [
+        "Bìa cứng áo ôm"
+      ],
       "cover_price": "990k",
       "print_run": null,
       "page_count": 1364,

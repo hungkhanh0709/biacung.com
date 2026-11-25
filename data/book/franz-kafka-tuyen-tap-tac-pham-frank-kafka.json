@@ -11,6 +11,7 @@
     {
       "id": "franz-kafka-tuyen-tap-tac-pham-frank-kafka-2026-dong-tay-bia-vai-2tr5",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
@@ -20,7 +21,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa vải",
+      "format": [
+        "Bìa vải"
+      ],
       "cover_price": "2tr5",
       "print_run": 108,
       "page_count": 808,

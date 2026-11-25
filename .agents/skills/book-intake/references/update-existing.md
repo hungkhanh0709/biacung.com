@@ -11,7 +11,7 @@ Chỉ đổi sách/trường người dùng yêu cầu, bằng Chrome MCP qua fo
    - Yêu cầu bổ sung dữ liệu/ảnh không cho phép xóa dữ liệu cũ. Giữ các phần tử đã có trong mảng, nhất là `translators`, `illustrators`, `proofreaders`; hợp nhất thông tin mới không trùng. Không dùng default rỗng cho trường đã có dữ liệu chỉ vì nguồn mới không nhắc lại.
    - Nguồn mới ghi thêm vai trò khác không tự cho phép chuyển hoặc xóa vai trò đang lưu. Ví dụ ảnh ghi Nguyễn Thạch Giang khảo đính/chú giải: bổ sung vào `detail`, vẫn giữ tên trong `translators` nếu người dùng chưa yêu cầu sửa trường đó. Ghi nhận mâu thuẫn thực tế khi có, không tự giải quyết bằng cách bỏ dữ liệu.
    - Khi bổ sung edition thiếu thông tin, chủ động đề xuất nguồn theo [tham khảo edition tương đồng](book-intake-workflow.md#tham-khảo-edition-tương-đồng); chỉ sao chép các trường được người dùng xác nhận. Ngụ ngôn La Fontaine S100 đã được chốt dùng NXB và họa sĩ của bản phổ thông; danh sách 13 dịch giả của S895 được người dùng yêu cầu đồng bộ cho cả S100 và bản phổ thông, thay nhãn chung `Nhiều Người Dịch`. ISBN, khối lượng và dải số S100 chưa có thì giữ trống, bỏ khỏi Memo checklist theo yêu cầu người dùng.
-4. Giữ số lượng/dữ kiện ngoài phạm vi; thêm edition theo yêu cầu và sort theo năm/ngày. Đổi năm/format/giá thì sinh ID theo form, rà tham chiếu liên quan. Chất liệu giữ trong detail; giá theo [quy cách giá](book-intake-workflow.md#giá-bìa), không lấy giá sale. Mâu thuẫn trang/ISBN ưu tiên nguồn đơn vị phát hành.
+4. Giữ số lượng/dữ kiện ngoài phạm vi; thêm edition theo yêu cầu và sort theo năm/ngày. Format là mảng nhãn theo [bảng chuẩn](caption-format.md), nhập các nhãn cách nhau bằng `;`; đổi hoặc làm rõ Format giữ ID cũ. Vật liệu từng biến thể giữ trong detail. Đổi năm/giá thì theo ID của form và rà tham chiếu liên quan. Giá theo [quy cách giá](book-intake-workflow.md#giá-bìa), không lấy giá sale. Mâu thuẫn trang/ISBN ưu tiên nguồn đơn vị phát hành.
 5. Nếu cần chuyển thumbnail ngoài về local, tải đúng URL hiện có, xem ảnh/codec và theo skill ảnh một nguồn → một asset. Không xử lý lại ảnh ngoài phạm vi.
 
 Form tự sort edition theo năm giảm dần, cùng năm theo ngày giảm dần; trong cùng năm bản có ngày đứng trước bản thiếu ngày, cùng khóa giữ thứ tự. Thiếu cả năm/ngày đứng cuối. Không đổi dữ kiện/ID để sort, không bổ sung ngày giả cho edition cũ. Đối chiếu thứ tự trong preview và output một lần.
@@ -22,7 +22,7 @@ Khi rà checklist Đông A, người dùng đã chốt không cần thu thập `
 
 Lựa chọn đã chốt cho Nghìn lẻ một đêm S100 năm 2023: gộp V20/S80 dù khác màu/logo bìa; 100 bộ, giá cơ bản 12tr, V20 13tr và S80 12tr. Caption giữ S100, thông tin biến thể ở detail; không hỏi/tách lại.
 
-Khi năm/giá/format làm đổi edition ID, ghi `evidence.scope.edition_id_map` dạng `{ "id-cu": "id-moi" }`. Bước kiểm tra cuối dùng ánh xạ này để đối chiếu đúng edition trong baseline sau khi form sắp xếp lại; không lấy vị trí mảng để xác nhận các URL ảnh cũ của edition đã đổi ID.
+Khi năm/giá làm đổi edition ID, ghi `evidence.scope.edition_id_map` dạng `{ "id-cu": "id-moi" }`. Bước kiểm tra cuối dùng ánh xạ này để đối chiếu đúng edition trong baseline sau khi form sắp xếp lại; không lấy vị trí mảng để xác nhận các URL ảnh cũ của edition đã đổi ID.
 
 ## Lưu qua ứng dụng
 

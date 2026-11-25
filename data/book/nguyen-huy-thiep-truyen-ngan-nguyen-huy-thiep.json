@@ -24,7 +24,9 @@
         "Nhiều Họa Sĩ"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da dê Pháp"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": 586,
@@ -51,7 +53,9 @@
         "Nhiều Họa Sĩ"
       ],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa da microfiber"
+      ],
       "cover_price": "4tr500k",
       "print_run": 80,
       "page_count": 586,
@@ -86,7 +90,9 @@
         "Nhiều Họa Sĩ"
       ],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa da PU"
+      ],
       "cover_price": "900k",
       "print_run": 500,
       "page_count": 569,
@@ -118,7 +124,9 @@
         "Nhiều Họa Sĩ"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng áo ôm",
+      "format": [
+        "Bìa cứng áo ôm"
+      ],
       "cover_price": "450k",
       "print_run": null,
       "page_count": 569,

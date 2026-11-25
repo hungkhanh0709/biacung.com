@@ -23,7 +23,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Boxset, bìa cứng",
+      "format": [
+        "Boxset, bìa cứng"
+      ],
       "cover_price": "1490k",
       "print_run": null,
       "page_count": null,

@@ -13,6 +13,7 @@
     {
       "id": "samuel-butler-the-way-of-all-flesh-bia-mem-175k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": null,
       "publisher": "NXB Trẻ",
@@ -22,7 +23,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "175k",
       "print_run": null,
       "page_count": 610,

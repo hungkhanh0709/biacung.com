@@ -8,7 +8,7 @@
 - Format chưa rõ hoặc cần keyword mới thì hỏi người dùng; keyword đã chốt bổ sung tại đây.
 - Không dùng `vocab` để chọn keyword; không thêm whitelist vào form/API.
 
-Thống kê ngày 25/11/2026 từ `data/book/*.json`: **339 tựa / 523 phiên bản**, 261 Caption trống, không có Format trống. `Editions` là số phiên bản đang lưu từng nhãn.
+Thống kê sau refactor ngày 26/11/2026 từ `data/book/*.json`: **339 tựa / 523 phiên bản**, 261 Caption trống, không có Format trống. `Editions` là số phiên bản đang lưu từng nhãn.
 
 ## Caption
 
@@ -40,46 +40,48 @@ Thống kê ngày 25/11/2026 từ `data/book/*.json`: **339 tựa / 523 phiên b
 
 ## Format
 
-Cấu trúc đích của `format` là mảng chuỗi, gồm hình thức bìa và vật liệu. Nhãn vật liệu có tiền tố `Bìa`, thống nhất với nhãn hình thức. Form/search hiện chưa hỗ trợ mảng; khi triển khai cần đọc tương thích chuỗi cũ và lưu qua form.
+`format` là mảng chuỗi, gồm hình thức bìa và vật liệu. Nhãn vật liệu có tiền tố `Bìa`, thống nhất với nhãn hình thức. Form nhập các nhãn cách nhau bằng `;` và lưu mảng; dữ liệu chuỗi cũ vẫn đọc được. Sửa Format giữ ID edition hiện có.
 
 - Chọn nhãn vật liệu cụ thể nhất theo nguồn; dùng `Bìa da thật` / `Bìa da nhân tạo` khi chưa rõ loại da.
 - Edition nhiều vật liệu dùng các nhãn không trùng; vật liệu từng bản, phụ kiện và quy cách phụ ghi trong `detail`.
+- Với bộ có sách chính và quyển chú giải kèm theo, Format theo bìa sách chính; bìa quyển chú giải ghi trong `detail`.
 - Italy/Italia → `Ý`; Anh quốc/Vương quốc Anh → `Anh`. Chỉ thêm xuất xứ khi nguồn ghi rõ.
 - Microfiber/Microfiter → `Bìa da microfiber`; Heritage Library Buckram → `Bìa buckram`.
 - Sách đã thay bìa: ghi rõ vật liệu gốc và sau bảo dưỡng theo phạm vi được xác nhận.
 
-**Đang lưu** là số phiên bản hiện lưu từng nhãn. **Từ mô tả** là số phiên bản nhận diện vật liệu từ `detail`; “—” là chưa thống kê, edition nhiều vật liệu có thể xuất hiện ở nhiều dòng.
+**Editions** là số phiên bản có nhãn; edition nhiều vật liệu có thể xuất hiện ở nhiều dòng.
 
-| Format | Đang lưu | Từ mô tả | Memo |
-| --- | ---: | ---: | --- |
-| Bìa cứng | 166 | — | — |
-| Bìa mềm | 153 | — | — |
-| Bìa cứng áo ôm | 30 | — | — |
-| Bìa mềm áo ôm | 3 | — | — |
-| Boxset | 2 | — | — |
-| Boxset, bìa cứng | 8 | — | — |
-| Boxset, bìa mềm | 2 | — | — |
-| Bìa vải | 22 | 18 | Chưa rõ loại vải. |
-| Bìa buckram | 20 | 18 | Gồm Heritage Library Buckram. |
-| Chauchaubook | 14 | — | — |
-| Bìa da thật | 62 | — | Dùng khi chưa rõ loại da. |
-| Bìa da bò | 0 | 23 | Chưa rõ xuất xứ hoặc dòng da. |
-| Bìa da bò Ý | 0 | 15 | — |
-| Bìa da bò Mỹ | 0 | 1 | — |
-| Bìa da bò Vachetta | 0 | 1 | — |
-| Bìa da dê | 0 | 2 | Chưa rõ xuất xứ. |
-| Bìa da dê Pháp | 0 | 21 | — |
-| Bìa da dê Anh | 0 | 9 | — |
-| Bìa da bê Ý | 0 | 1 | — |
-| Bìa da nhân tạo | 41 | — | Dùng khi chưa rõ loại da. |
-| Bìa da PU | 0 | 12 | Gồm 9 edition Đông A và 3 Nhã Nam |
-| Bìa da microfiber | 0 | 16 | Gồm 16 edition Đông A |
-| Bìa bonded leather | 0 | 12 | — |
-| Bìa giấy mỹ thuật | 0 | 1 | — |
-| Bìa giấy Kraft | 0 | 1 | — |
-| Bìa giấy thủy ấn | 0 | 2 | Kết hợp với da ở bìa nửa da. |
-| Bìa giấy phủ vân da | 0 | 1 | Vinyl faux leather paper. |
-| Bìa sơn mài | 0 | 3 | — |
+| Format | Editions | Memo |
+| --- | ---: | --- |
+| Bìa cứng | 159 | — |
+| Bìa mềm | 153 | — |
+| Bìa cứng áo ôm | 30 | — |
+| Bìa mềm áo ôm | 3 | — |
+| Boxset | 2 | — |
+| Boxset, bìa cứng | 8 | — |
+| Boxset, bìa mềm | 2 | — |
+| Bìa vải | 22 | Chưa rõ loại vải. |
+| Bìa buckram | 20 | Gồm Heritage Library Buckram. |
+| Chauchaubook | 14 | — |
+| Bìa da thật | 1 | Dùng khi chưa rõ loại da. |
+| Bìa da bò | 22 | Chưa rõ xuất xứ hoặc dòng da. |
+| Bìa da bò Ý | 15 | — |
+| Bìa da bò Mỹ | 1 | — |
+| Bìa da bò Vachetta | 1 | — |
+| Bìa da dê | 2 | Chưa rõ xuất xứ. |
+| Bìa da dê Pháp | 21 | — |
+| Bìa da dê Anh | 9 | — |
+| Bìa da bê Ý | 1 | — |
+| Bìa da nhân tạo | 4 | Dùng khi chưa rõ loại da. |
+| Bìa da PU | 12 | Gồm 9 edition Đông A và 3 Nhã Nam |
+| Bìa da microfiber | 16 | Gồm 16 edition Đông A |
+| Bìa bonded leather | 12 | — |
+| Bìa Si BN-Baladek Masanti | 2 | — |
+| Bìa giấy mỹ thuật | 1 | — |
+| Bìa giấy Kraft | 0 | — |
+| Bìa giấy thủy ấn | 2 | Kết hợp với da ở bìa nửa da. |
+| Bìa giấy phủ vân da | 1 | Vinyl faux leather paper. |
+| Bìa sơn mài | 3 | — |
 
 Ví dụ Grimm S100:
 
@@ -93,7 +95,6 @@ Ví dụ Grimm S100:
 
 ### Cần bổ sung dữ liệu
 
-- **Đại Việt Sử Ký Toàn Thư S895:** tách thông tin vật liệu trong mô tả dùng chung của hai edition da bò và buckram.
 - **Ghi chép từ Nhà chết bản da:** cần xác định loại da nhập từ Ý.
 - **Bố Già S100, Đảo Mộng Mơ S100:** cần xác định loại da nhân tạo.
 - **Nghìn Lẻ Một Đêm, Người Kép Già, Số Đỏ bản PU:** cần bổ sung hoặc xác định đúng edition.

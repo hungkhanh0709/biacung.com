@@ -29,7 +29,9 @@
         "Hoàng Phượng Vỹ"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò Ý"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -55,7 +57,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "230k",
       "print_run": 555,
       "page_count": 300,
@@ -85,7 +89,9 @@
         "Hoàng Phượng Vỹ"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "320k",
       "print_run": null,
       "page_count": 256,
@@ -116,7 +122,9 @@
         "Hoàng Phượng Vỹ"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò"
+      ],
       "cover_price": "",
       "print_run": 100,
       "page_count": null,
@@ -159,7 +167,9 @@
         "Hoàng Phượng Vỹ"
       ],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa da microfiber"
+      ],
       "cover_price": "1tr500k",
       "print_run": 896,
       "page_count": 256,
