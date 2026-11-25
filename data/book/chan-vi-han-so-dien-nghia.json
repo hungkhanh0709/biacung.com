@@ -25,7 +25,10 @@
       "illustrators": [],
       "proofreaders": [],
       "format": [
-        "Bìa da nhân tạo"
+        "Bìa da PU",
+        "Bìa buckram",
+        "Bìa da bò Ý",
+        "Bìa da dê Pháp"
       ],
       "cover_price": "1tr",
       "print_run": 100,
@@ -33,8 +36,9 @@
       "copy_numbering": "ĐA - 01 đến ĐA - 100",
       "size_cm": "",
       "weight_g": null,
-      "thumbnail": "/assets/img/books/chan-vi-han-so-dien-nghia/dong-a-s100-bia-truoc.jpg",
+      "thumbnail": "/assets/img/books/chan-vi-han-so-dien-nghia/dong-a-s100-bia-nguyen-ban.jpg",
       "gellery_imgs": [
+        "/assets/img/books/chan-vi-han-so-dien-nghia/dong-a-s100-bia-truoc.jpg",
         "/assets/img/books/chan-vi-han-so-dien-nghia/dong-a-s100-trang-minh-hoa.jpg",
         "/assets/img/books/chan-vi-han-so-dien-nghia/dong-a-s100-gay-va-cac-ban.jpg",
         "/assets/img/books/chan-vi-han-so-dien-nghia/dong-a-s100-chi-tiet-bia.jpg",
@@ -42,7 +46,7 @@
         "/assets/img/books/chan-vi-han-so-dien-nghia/dong-a-s100-giay-lot.jpg",
         "/assets/img/books/chan-vi-han-so-dien-nghia/dong-a-s100-trang-danh-so.jpg"
       ],
-      "detail": "- Bản dịch đầy đủ 101 hồi.\n- Bìa cứng thủ công do nghệ nhân Nguyễn Đức Khuynh và cộng sự thực hiện.\n- Ruột in trên giấy Ford kem Nhật 80 gsm.\n- Đóng dấu đỏ Đông A, có triện son và chữ ký của dịch giả Châu Hải Đường và nghệ nhân đóng sách.\n- Kèm bản đồ Hán Sở phân tranh."
+      "detail": "- Bản dịch đầy đủ 101 hồi.\n- Bìa cứng thủ công do nghệ nhân Nguyễn Đức Khuynh và cộng sự thực hiện.\n- Ruột in trên giấy Ford kem Nhật 80 gsm.\n- Đóng dấu đỏ Đông A, có triện son và chữ ký của dịch giả Châu Hải Đường và nghệ nhân đóng sách.\n- Kèm bản đồ Hán Sở phân tranh.\n- 07/2025 Đông A thông báo bảo dưỡng, dự kiến trả sách 05/2026.\n- Các lựa chọn bảo dưỡng: thay bìa PU bằng buckram miễn phí; thay bằng da bò Ý 1tr/cuốn hoặc da dê Pháp 3tr/cuốn. \n- Tùy chọn bổ sung hộp vỏ sò bọc vải: 500k/hộp."
     }
   ]
 }

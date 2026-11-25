@@ -23,7 +23,10 @@
       "illustrators": [],
       "proofreaders": [],
       "format": [
-        "Bìa da PU"
+        "Bìa da PU",
+        "Bìa buckram",
+        "Bìa da bò Ý",
+        "Bìa da dê Pháp"
       ],
       "cover_price": "",
       "print_run": 100,
@@ -31,11 +34,12 @@
       "copy_numbering": null,
       "size_cm": "",
       "weight_g": null,
-      "thumbnail": "/assets/img/books/daniel-defoe-robinson-crusoe/dong-a-s100-bia-truoc.jpg",
+      "thumbnail": "/assets/img/books/daniel-defoe-robinson-crusoe/dong-a-s100-bia-nguyen-ban.jpg",
       "gellery_imgs": [
+        "/assets/img/books/daniel-defoe-robinson-crusoe/dong-a-s100-bia-truoc.jpg",
         "/assets/img/books/daniel-defoe-robinson-crusoe/dong-a-s100-gay-sach.jpg"
       ],
-      "detail": "- Bìa bọc PU màu xanh đậm, hoa văn dập chìm; tên sách và họa tiết trên bìa ép nhũ vàng.\n- Gáy sách có gân nổi và hoa văn trang trí."
+      "detail": "- Bìa bọc PU màu xanh đậm, hoa văn dập chìm; tên sách và họa tiết trên bìa ép nhũ vàng.\n- Gáy sách có gân nổi và hoa văn trang trí.\n- 07/2025 Đông A thông báo bảo dưỡng, dự kiến trả sách 05/2026.\n- Các lựa chọn bảo dưỡng: thay bìa PU bằng buckram miễn phí; thay bằng da bò Ý 1tr/cuốn hoặc da dê Pháp 3tr/cuốn.\n- Tùy chọn bổ sung hộp vỏ sò bọc vải: 500k/hộp."
     }
   ]
 }

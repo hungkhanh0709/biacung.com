@@ -47,7 +47,8 @@ Thống kê sau refactor ngày 26/11/2026 từ `data/book/*.json`: **339 tựa /
 - Với bộ có sách chính và quyển chú giải kèm theo, Format theo bìa sách chính; bìa quyển chú giải ghi trong `detail`.
 - Italy/Italia → `Ý`; Anh quốc/Vương quốc Anh → `Anh`. Chỉ thêm xuất xứ khi nguồn ghi rõ.
 - Microfiber/Microfiter → `Bìa da microfiber`; Heritage Library Buckram → `Bìa buckram`.
-- Sách đã thay bìa: ghi rõ vật liệu gốc và sau bảo dưỡng theo phạm vi được xác nhận.
+- Sách có lựa chọn thay bìa khi bảo dưỡng: ghi vật liệu gốc và các vật liệu được xác nhận vào Format; nêu rõ lựa chọn, chi phí và thời gian dự kiến trong `detail`, không coi việc thay bìa là đã hoàn tất.
+- Khi bổ sung thông báo bảo dưỡng vào `detail`, đối chiếu và cập nhật `format` của cùng edition theo cả vật liệu gốc lẫn các lựa chọn thay bìa đã có căn cứ.
 
 **Editions** là số phiên bản có nhãn; edition nhiều vật liệu có thể xuất hiện ở nhiều dòng.
 
@@ -61,21 +62,21 @@ Thống kê sau refactor ngày 26/11/2026 từ `data/book/*.json`: **339 tựa /
 | Boxset, bìa cứng | 8 | — |
 | Boxset, bìa mềm | 2 | — |
 | Bìa vải | 22 | Chưa rõ loại vải. |
-| Bìa buckram | 20 | Gồm Heritage Library Buckram. |
+| Bìa buckram | 24 | Gồm Heritage Library Buckram. |
 | Chauchaubook | 14 | — |
 | Bìa da thật | 1 | Dùng khi chưa rõ loại da. |
-| Bìa da bò | 22 | Chưa rõ xuất xứ hoặc dòng da. |
-| Bìa da bò Ý | 15 | — |
+| Bìa da bò | 23 | Chưa rõ xuất xứ hoặc dòng da. |
+| Bìa da bò Ý | 19 | — |
 | Bìa da bò Mỹ | 1 | — |
 | Bìa da bò Vachetta | 1 | — |
 | Bìa da dê | 2 | Chưa rõ xuất xứ. |
-| Bìa da dê Pháp | 21 | — |
-| Bìa da dê Anh | 9 | — |
+| Bìa da dê Pháp | 26 | — |
+| Bìa da dê Anh | 10 | — |
 | Bìa da bê Ý | 1 | — |
-| Bìa da nhân tạo | 4 | Dùng khi chưa rõ loại da. |
-| Bìa da PU | 12 | Gồm 9 edition Đông A và 3 Nhã Nam |
+| Bìa da nhân tạo | 2 | Dùng khi chưa rõ loại da. |
+| Bìa da PU | 14 | Gồm 11 edition Đông A và 3 Nhã Nam |
 | Bìa da microfiber | 16 | Gồm 16 edition Đông A |
-| Bìa bonded leather | 12 | — |
+| Bìa bonded leather | 13 | — |
 | Bìa Si BN-Baladek Masanti | 2 | — |
 | Bìa giấy mỹ thuật | 1 | — |
 | Bìa giấy Kraft | 0 | — |
@@ -96,6 +97,6 @@ Ví dụ Grimm S100:
 ### Cần bổ sung dữ liệu
 
 - **Ghi chép từ Nhà chết bản da:** cần xác định loại da nhập từ Ý.
-- **Bố Già S100, Đảo Mộng Mơ S100:** cần xác định loại da nhân tạo.
+- **Đảo Mộng Mơ S100:** cần xác định loại da nhân tạo.
 - **Nghìn Lẻ Một Đêm, Người Kép Già, Số Đỏ bản PU:** cần bổ sung hoặc xác định đúng edition.
 

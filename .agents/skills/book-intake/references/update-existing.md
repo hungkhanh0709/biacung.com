@@ -37,6 +37,7 @@ Trước khi lưu, rà riêng các giá trị/phần tử bị xóa hoặc làm 
 Dùng Chrome MCP điền form, xem preview rồi bấm **Lưu tất cả** hoặc các nút **Lưu detail.json**, **Lưu book.json**, **Lưu author.json**, **Lưu series.json** đúng phạm vi. Các request do nút lưu của ứng dụng phát sinh là một phần của form; agent không tự tạo request ghi.
 
 - Giữ metadata/search_text cũ, bổ sung keyword mới không trùng theo cách form chuẩn hóa; đồng bộ caption/format/awards cuối. `updated_at` là thời điểm sửa dữ liệu cho sitemap, chỉ dùng sort trong nhóm sắp phát hành. API tự suy `is_upcoming`/`last_pub_date`/`last_pub_year` từ edition, kể cả khi xóa/sửa ngày hoặc bỏ trạng thái sắp phát hành. Chỉ thêm `pub_date` cho edition đã đối chứng trong phạm vi; giữ edition cũ thiếu key nếu chưa tra.
+- Khi sửa `format`, kiểm tra preview và output `book.json` chứa đầy đủ keyword Format mới trong `search_text`. Nếu nút Lưu detail.json chưa đồng bộ index, lưu thêm book.json bằng nút form sau khi đối chiếu và giữ các cụm tìm kiếm cũ; kiểm tra lại index sau lưu.
 - Giữ cụm từ trong search_text cũ; chỉ nối keyword/cụm còn thiếu, không loại trùng từng từ làm mất tựa/tên tác giả. Đối chiếu field với baseline; không bắt kiểm UI search khi chỉ nhập dữ liệu.
 - Chỉ sửa awards thì không lưu lại author/series. Trước mỗi lần ghi, đọc lại so baseline để tránh đè thay đổi mới.
 - Các nút lưu riêng có thể chỉ hoàn tất một phần: lỗi thì đọc lại, xác định phần đã lưu và chỉ thao tác lại phần còn thiếu qua form. Sai dữ liệu/quy tắc thì sửa nháp/hướng dẫn rồi điền và lưu lại bằng Chrome MCP, không vá output.
