@@ -33,7 +33,9 @@
       "proofreaders": [
         "Nguyễn Thừa Hỷ"
       ],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "445k",
       "print_run": null,
       "page_count": 656,

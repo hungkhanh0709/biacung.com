@@ -11,6 +11,7 @@
     {
       "id": "nguyen-nhat-anh-chuyen-tinh-thi-tran-2026-nxb-tre-bia-cung-285k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Trẻ",
@@ -18,7 +19,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "256k",
       "print_run": 20000,
       "page_count": 360,
@@ -32,6 +35,7 @@
     {
       "id": "nguyen-nhat-anh-chuyen-tinh-thi-tran-2026-nxb-tre-bia-mem-150k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Trẻ",
@@ -39,7 +43,9 @@
       "translators": [],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "150k",
       "print_run": 80000,
       "page_count": 360,

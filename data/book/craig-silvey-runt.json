@@ -11,6 +11,7 @@
     {
       "id": "craig-silvey-runt-2026-dong-a-bia-mem-150k",
       "isbn": "978-632-624-910-1",
+      "series_ids": [],
       "caption": "",
       "pub_year": 2026,
       "publisher": "NXB Văn Học",
@@ -24,7 +25,9 @@
         "Sara Acton"
       ],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "150k",
       "print_run": null,
       "page_count": 336,

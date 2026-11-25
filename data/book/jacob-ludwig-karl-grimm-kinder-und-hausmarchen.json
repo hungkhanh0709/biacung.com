@@ -28,7 +28,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "180k",
       "print_run": null,
       "page_count": 648,
@@ -60,7 +62,9 @@
         "Robert Leinweber"
       ],
       "proofreaders": [],
-      "format": "Bìa da thật",
+      "format": [
+        "Bìa da bò Ý"
+      ],
       "cover_price": "",
       "print_run": 1,
       "page_count": null,
@@ -86,7 +90,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa da PU"
+      ],
       "cover_price": "2tr3",
       "print_run": 300,
       "page_count": 888,
@@ -122,7 +128,10 @@
         "Robert Leinweber"
       ],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa da bò Ý",
+        "Bìa da microfiber"
+      ],
       "cover_price": "",
       "print_run": 100,
       "page_count": null,
@@ -164,7 +173,9 @@
         "Robert Leinweber"
       ],
       "proofreaders": [],
-      "format": "Bìa da nhân tạo",
+      "format": [
+        "Bìa da PU"
+      ],
       "cover_price": "2tr200k",
       "print_run": 500,
       "page_count": null,

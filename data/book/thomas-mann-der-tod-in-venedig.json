@@ -11,6 +11,7 @@
     {
       "id": "thomas-mann-der-tod-in-venedig-2018-bia-mem-73k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2018,
       "publisher": "NXB Trẻ",
@@ -20,7 +21,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "73k",
       "print_run": null,
       "page_count": 152,

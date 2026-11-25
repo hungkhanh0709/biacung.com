@@ -11,6 +11,7 @@
     {
       "id": "dk-lich-su-the-gioi-lich-su-the-gioi-chan-dung-nhan-loai-theo-dong-su-kien-2017-dong-a-bia-cung-590k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2017,
       "publisher": "NXB Dân Trí",
@@ -22,7 +23,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "590k",
       "print_run": null,
       "page_count": 516,

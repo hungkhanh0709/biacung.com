@@ -11,6 +11,7 @@
     {
       "id": "dk-lich-su-quan-su-bach-khoa-thu-cac-loai-vu-khi-dinh-hinh-the-gioi-2019-dong-a-bia-cung-550k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2019,
       "publisher": "NXB Dân Trí",
@@ -22,7 +23,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "550k",
       "print_run": null,
       "page_count": 448,

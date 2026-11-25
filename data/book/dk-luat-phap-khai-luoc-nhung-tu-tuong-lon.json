@@ -27,7 +27,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "450k",
       "print_run": null,
       "page_count": 336,

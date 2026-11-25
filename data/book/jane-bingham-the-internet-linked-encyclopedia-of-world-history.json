@@ -13,6 +13,7 @@
     {
       "id": "jane-bingham-the-internet-linked-encyclopedia-of-world-history-2022-dong-a-bia-cung-550k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2022,
       "publisher": "NXB Dân Trí",
@@ -24,7 +25,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "550k",
       "print_run": null,
       "page_count": 416,

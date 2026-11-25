@@ -13,6 +13,7 @@
     {
       "id": "rohinton-mistry-a-fine-balance-2014-bia-mem-315k",
       "isbn": null,
+      "series_ids": [],
       "caption": "",
       "pub_year": 2014,
       "publisher": "NXB Trẻ",
@@ -22,7 +23,9 @@
       ],
       "illustrators": [],
       "proofreaders": [],
-      "format": "Bìa mềm",
+      "format": [
+        "Bìa mềm"
+      ],
       "cover_price": "315k",
       "print_run": null,
       "page_count": 1056,

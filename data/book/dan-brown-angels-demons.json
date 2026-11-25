@@ -26,7 +26,9 @@
         "An An"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "960k",
       "print_run": 500,
       "page_count": 728,

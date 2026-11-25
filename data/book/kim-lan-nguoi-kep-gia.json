@@ -28,7 +28,9 @@
         "Thành Chương"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "999k",
       "print_run": 101,
       "page_count": 340,
@@ -62,7 +64,9 @@
         "Thành Chương"
       ],
       "proofreaders": [],
-      "format": "Bìa cứng",
+      "format": [
+        "Bìa cứng"
+      ],
       "cover_price": "360k",
       "print_run": null,
       "page_count": 340,
