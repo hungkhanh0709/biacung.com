@@ -1,0 +1,39 @@
+{
+  "id": "fukuzawa-yukichi-gakumon-no-susume",
+  "title": "Khuyến học",
+  "title_original": "学問のすすめ",
+  "authors": [
+    "Fukuzawa Yukichi"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "fukuzawa-yukichi-gakumon-no-susume-dong-a-bia-mem-89k",
+      "isbn": "978-632-00-5911-9",
+      "series_ids": [],
+      "caption": "",
+      "pub_year": null,
+      "pub_date": null,
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Ca Lâu La"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": "Bìa mềm",
+      "cover_price": "89k",
+      "print_run": null,
+      "page_count": 200,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 400,
+      "thumbnail": "/assets/img/books/fukuzawa-yukichi-gakumon-no-susume/dong-a-bia-mem-cover.webp",
+      "gellery_imgs": [],
+      "detail": "- Sử dụng toàn bộ minh hoạ thuộc dòng tranh ukiyo-e nổi tiếng của Nhật Bản. Bộ tranh vừa giúp minh hoạ cho nội dung sách, vừa đặc tả không khí canh tân xã hội Nhật Bản thời Minh Trị."
+    }
+  ]
+}

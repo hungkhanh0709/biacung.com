@@ -168,7 +168,7 @@ function normalizeAuthorDisplayName(value) {
 
 function normalizeBookTitle(value) {
     return normalizeText(value)
-        .replace(/^sách\s*[:\-]?\s+/i, '')
+        .replace(/^sách\s*[:\-]\s*/i, '')
         .trim();
 }
 

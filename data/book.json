@@ -1,5 +1,12 @@
 [
   {
+    "detail": "data/book/ho-anh-thai-sach-tet-dinh-mui-2027.json",
+    "search_text": "ho anh thai tuyen chon sach tet dinh mui 2027 nxb dan tri dong a",
+    "last_pub_year": "",
+    "updated_at": "2026-11-25 12:22",
+    "is_upcoming": true
+  },
+  {
     "detail": "data/book/kawabata-yasunari-truyen-ngan-trong-long-ban-tay.json",
     "search_text": "kawabata yasunari truyen ngan trong long ban tay nxb van hoc nha nam uyen thiem an ban gioi han nobel van chuong",
     "is_upcoming": true,
@@ -2113,5 +2120,11 @@
     "search_text": "hoa vang hat bui nguoi bay nguoc nxb hoi nha van dong a van moi dong a s100",
     "last_pub_year": "",
     "updated_at": "2026-11-20 12:04"
+  },
+  {
+    "detail": "data/book/fukuzawa-yukichi-gakumon-no-susume.json",
+    "search_text": "fukuzawa yukichi khuyen hoc nxb dan tri dong a ca lau la",
+    "last_pub_year": "",
+    "updated_at": "2026-11-24 18:02"
   }
 ]

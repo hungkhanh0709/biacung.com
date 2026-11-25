@@ -36,7 +36,7 @@ Schema sống: `data/template/book-detail.json`; không chép giá trị minh h�
 | pub_date / pub_year | Theo [ngày phát hành](#ngày-phát-hành); đúng edition Việt, không lấy năm nguyên tác/ngày đăng/mở đặt trước. |
 | publisher / issuers | Tách NXB/đơn vị phát hành; logo mơ hồ chưa đủ để gán. |
 | cover_price | Giá bìa đúng edition theo [giá bìa](#giá-bìa); chưa rõ `""`, không lấy giá sale/cọc. |
-| caption / format | Theo keyword/Memo [bảng tham chiếu](caption-format.md), không dùng vocab. Format chưa rõ thì hỏi trước khi lưu. |
+| caption / format | Theo keyword/Memo [bảng tham chiếu](caption-format.md), gồm Format cụ thể theo vật liệu và quy ước mảng. Đối chiếu tình trạng hỗ trợ form trước khi lưu kiểu mới; không thêm cover_materials. Không dùng vocab. Format chưa rõ thì hỏi trước khi lưu. |
 | awards / series | Chưa rõ `[]`; giữ nhãn đã có. Tái dùng tên/ID series, gán đúng edition. |
 | isbn, print_run, page_count, copy_numbering, weight_g | Chưa rõ `null`; ISBN riêng từng edition. |
 | size_cm, detail, text optional | Chưa rõ `""`; khổ phụ kiện không phải khổ sách. Detail là danh sách phẳng, mỗi dòng không rỗng bắt đầu `- `; không heading/đoạn mở đầu/kết riêng. |

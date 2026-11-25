@@ -11,14 +11,14 @@
     "name": "Mario Puzo",
     "work_ids": [
       "mario-puzo-the-godfather",
-      "mario-puzo-fools-die",
-      "mario-puzo-the-fourth-k",
       "mario-puzo-omerta",
       "mario-puzo-the-sicilian",
       "mario-puzo-the-family",
       "mario-puzo-the-last-don",
+      "mario-puzo-fools-die",
+      "mario-puzo-the-dark-arena",
       "mario-puzo-the-fortunate-pilgrim",
-      "mario-puzo-the-dark-arena"
+      "mario-puzo-the-fourth-k"
     ]
   },
   {
@@ -94,18 +94,19 @@
     "id": "ho-anh-thai",
     "name": "Hồ Anh Thái",
     "work_ids": [
+      "ho-anh-thai-sach-tet-dinh-mui-2027",
       "tran-tien-tran-tien-nguoi-hat-tho-minh-ca-khuc-nhung-cau-chuyen",
       "ho-anh-thai-sach-tet-binh-ngo-2026",
       "van-moi-10-nam-2015-2025-dong-a",
-      "ho-anh-thai-sach-tet-ky-hoi-2019",
-      "ho-anh-thai-sach-tet-canh-ty-2020",
-      "ho-anh-thai-sach-tet-tan-suu-2021",
-      "ho-anh-thai-sach-tet-nham-dan-2022",
-      "ho-anh-thai-sach-tet-quy-mao-2023",
-      "ho-anh-thai-sach-tet-giap-thin-2024",
       "ho-anh-thai-sach-tet-at-ty-2025",
       "nhieu-tac-gia-van-moi-5-nam-dau-the-ky",
-      "nhieu-tac-gia-van-moi-5-nam-2011-2015"
+      "nhieu-tac-gia-van-moi-5-nam-2011-2015",
+      "ho-anh-thai-sach-tet-giap-thin-2024",
+      "ho-anh-thai-sach-tet-quy-mao-2023",
+      "ho-anh-thai-sach-tet-nham-dan-2022",
+      "ho-anh-thai-sach-tet-tan-suu-2021",
+      "ho-anh-thai-sach-tet-canh-ty-2020",
+      "ho-anh-thai-sach-tet-ky-hoi-2019"
     ]
   },
   {
@@ -128,9 +129,9 @@
     "id": "hector-malot",
     "name": "Hector Malot",
     "work_ids": [
+      "hector-malot-sans-famille",
       "hector-malot-en-famille",
-      "hector-malot-romain-kalbris",
-      "hector-malot-sans-famille"
+      "hector-malot-romain-kalbris"
     ]
   },
   {
@@ -173,15 +174,21 @@
     "id": "dk",
     "name": "DK",
     "work_ids": [
+      "dk-writers-their-lives-and-works",
       "dk-kinh-doanh-khai-luoc-nhung-tu-tuong-lon",
       "dk-kinh-te-hoc-khai-luoc-nhung-tu-tuong-lon",
-      "dk-ton-giao-khai-luoc-nhung-tu-tuong-lon",
-      "dk-toan-hoc-khai-luoc-nhung-tu-tuong-lon",
       "dk-chinh-tri-khai-luoc-nhung-tu-tuong-lon",
-      "dk-tam-li-hoc-khai-luoc-nhung-tu-tuong-lon",
-      "dk-nghe-thuat-khai-luoc-nhung-tu-tuong-lon",
       "dk-khoa-hoc-khai-luoc-nhung-tu-tuong-lon",
       "dk-van-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-nhung-tran-chien-thay-doi-lich-su",
+      "dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do",
+      "dk-ton-giao-khai-luoc-nhung-tu-tuong-lon",
+      "dk-triet-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-lich-su-quan-su-bach-khoa-thu-cac-loai-vu-khi-dinh-hinh-the-gioi",
+      "dk-lich-su-the-gioi-lich-su-the-gioi-chan-dung-nhan-loai-theo-dong-su-kien",
+      "dk-toan-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-tam-li-hoc-khai-luoc-nhung-tu-tuong-lon",
+      "dk-nghe-thuat-khai-luoc-nhung-tu-tuong-lon",
       "dk-nu-quyen-khai-luoc-nhung-tu-tuong-lon",
       "dk-xa-hoi-hoc-khai-luoc-nhung-tu-tuong-lon",
       "dk-luat-phap-khai-luoc-nhung-tu-tuong-lon",
@@ -189,13 +196,7 @@
       "dk-sinh-thai-hoc-khai-luoc-nhung-tu-tuong-lon",
       "dk-sinh-hoc-khai-luoc-nhung-tu-tuong-lon",
       "dk-thien-van-hoc-khai-luoc-nhung-tu-tuong-lon",
-      "dk-the-chien-ii-khai-luoc-nhung-tu-tuong-lon",
-      "dk-triet-hoc-khai-luoc-nhung-tu-tuong-lon",
-      "dk-lich-su-the-gioi-lich-su-the-gioi-chan-dung-nhan-loai-theo-dong-su-kien",
-      "dk-lich-su-quan-su-bach-khoa-thu-cac-loai-vu-khi-dinh-hinh-the-gioi",
-      "dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do",
-      "dk-nhung-tran-chien-thay-doi-lich-su",
-      "dk-writers-their-lives-and-works"
+      "dk-the-chien-ii-khai-luoc-nhung-tu-tuong-lon"
     ]
   },
   {
@@ -244,20 +245,20 @@
     "id": "john-steinbeck",
     "name": "John Steinbeck",
     "work_ids": [
-      "john-steinbeck-travels-with-charley-in-search-of-america",
-      "john-steinbeck-tortilla-flat",
+      "john-steinbeck-the-red-pony",
+      "john-steinbeck-the-grapes-of-wrath",
       "john-steinbeck-east-of-eden",
       "john-steinbeck-of-mice-and-men",
-      "john-steinbeck-the-red-pony",
-      "john-steinbeck-the-grapes-of-wrath"
+      "john-steinbeck-travels-with-charley-in-search-of-america",
+      "john-steinbeck-tortilla-flat"
     ]
   },
   {
     "id": "thomas-mann",
     "name": "Thomas Mann",
     "work_ids": [
-      "thomas-mann-der-tod-in-venedig",
-      "thomas-mann-der-zauberberg"
+      "thomas-mann-der-zauberberg",
+      "thomas-mann-der-tod-in-venedig"
     ]
   },
   {
@@ -320,10 +321,10 @@
     "id": "victor-hugo",
     "name": "Victor Hugo",
     "work_ids": [
-      "victor-hugo-quatrevingt-treize",
-      "victor-hugo-nhung-nguoi-khon-kho",
+      "victor-hugo-notre-dame-de-paris",
       "victor-hugo-les-miserables",
-      "victor-hugo-notre-dame-de-paris"
+      "victor-hugo-quatrevingt-treize",
+      "victor-hugo-nhung-nguoi-khon-kho"
     ]
   },
   {
@@ -344,8 +345,8 @@
     "id": "abhijit-v-banerjee",
     "name": "Abhijit V. Banerjee",
     "work_ids": [
-      "abhijit-v-banerjee-poor-economics-a-radical-rethinking-of-the-way-to-fight-global-poverty",
-      "michael-j-sandel-justice-whats-the-right-thing-to-do"
+      "michael-j-sandel-justice-whats-the-right-thing-to-do",
+      "abhijit-v-banerjee-poor-economics-a-radical-rethinking-of-the-way-to-fight-global-poverty"
     ]
   },
   {
@@ -367,8 +368,8 @@
     "name": "Nguyễn Nhật Ánh",
     "work_ids": [
       "nguyen-nhat-anh-chuyen-tinh-thi-tran",
-      "nguyen-nhat-anh-sach-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim",
-      "nguyen-nhat-anh-dao-mong-mo"
+      "nguyen-nhat-anh-dao-mong-mo",
+      "nguyen-nhat-anh-sach-boxset-nguyen-nhat-anh-da-chuyen-the-thanh-phim"
     ]
   },
   {
@@ -546,8 +547,8 @@
     "name": "Vũ Bằng",
     "work_ids": [
       "vu-bang-mieng-ngon-ha-noi",
-      "vu-bang-40-nam-noi-lao",
       "vu-bang-thuong-nho-muoi-hai",
+      "vu-bang-40-nam-noi-lao",
       "vu-bang-phu-dung-oi-vinh-biet"
     ]
   },
@@ -605,9 +606,9 @@
     "work_ids": [
       "fyodor-dostoevsky-dem-trang",
       "fyodor-dostoevsky-toi-ac-va-trung-phat",
-      "fyodor-dostoevsky-anh-em-nha-karamazov",
+      "fyodor-dostoevsky-ghi-chep-tu-nha-chet",
       "fyodor-dostoevsky-chang-ngoc",
-      "fyodor-dostoevsky-ghi-chep-tu-nha-chet"
+      "fyodor-dostoevsky-anh-em-nha-karamazov"
     ]
   },
   {
@@ -622,8 +623,8 @@
     "id": "marai-sandor",
     "name": "Márai Sándor",
     "work_ids": [
-      "marai-sandor-loi-co-cay",
-      "marai-sandor-a-gyertyak-csonkig-egnek"
+      "marai-sandor-a-gyertyak-csonkig-egnek",
+      "marai-sandor-loi-co-cay"
     ]
   },
   {
@@ -638,12 +639,12 @@
     "name": "Nhiều Tác Giả",
     "work_ids": [
       "nhieu-tac-gia-doan-tu-huyen-mot-nghe-nhan",
-      "van-moi-10-nam-2015-2025-dong-a",
       "nhieu-tac-gia-dai-viet-su-ky-toan-thu",
-      "nhieu-tac-gia-bach-khoa-tri-thuc-bang-hinh",
       "nhieu-tac-gia-boxset-bo-sach-dau-an-10-nam-omega",
+      "van-moi-10-nam-2015-2025-dong-a",
       "nhieu-tac-gia-van-moi-5-nam-dau-the-ky",
-      "nhieu-tac-gia-van-moi-5-nam-2011-2015"
+      "nhieu-tac-gia-van-moi-5-nam-2011-2015",
+      "nhieu-tac-gia-bach-khoa-tri-thuc-bang-hinh"
     ]
   },
   {
@@ -714,15 +715,15 @@
     "name": "Erich Maria Remarque",
     "work_ids": [
       "erich-maria-remarque-im-westen-nichts-neues",
-      "erich-maria-remarque-der-weg-zuruck",
       "erich-maria-remarque-drei-kameraden",
       "erich-maria-remarque-liebe-deinen-nachsten",
+      "erich-maria-remarque-schatten-im-paradies",
+      "erich-maria-remarque-der-weg-zuruck",
       "erich-maria-remarque-arc-de-triomphe",
       "erich-maria-remarque-der-funke-leben",
       "erich-maria-remarque-zeit-zu-leben-und-zeit-zu-sterben",
       "erich-maria-remarque-der-schwarze-obelisk",
-      "erich-maria-remarque-die-nacht-von-lissabon",
-      "erich-maria-remarque-schatten-im-paradies"
+      "erich-maria-remarque-die-nacht-von-lissabon"
     ]
   },
   {
@@ -785,8 +786,8 @@
     "id": "dao-duy-anh",
     "name": "Đào Duy Anh",
     "work_ids": [
-      "dao-duy-anh-viet-nam-van-hoa-su-cuong",
-      "dao-duy-anh-dat-nuoc-viet-nam-qua-cac-doi"
+      "dao-duy-anh-dat-nuoc-viet-nam-qua-cac-doi",
+      "dao-duy-anh-viet-nam-van-hoa-su-cuong"
     ]
   },
   {
@@ -944,16 +945,16 @@
     "id": "e-nesbit",
     "name": "E. Nesbit",
     "work_ids": [
-      "e-nesbit-the-enchanted-castle",
-      "e-nesbit-the-railway-children"
+      "e-nesbit-the-railway-children",
+      "e-nesbit-the-enchanted-castle"
     ]
   },
   {
     "id": "jack-london",
     "name": "Jack London",
     "work_ids": [
-      "jack-london-white-fang",
-      "jack-london-the-call-of-the-wild"
+      "jack-london-the-call-of-the-wild",
+      "jack-london-white-fang"
     ]
   },
   {
@@ -1088,8 +1089,8 @@
     "name": "Khái Hưng",
     "work_ids": [
       "khai-hung-doi-mua-gio",
-      "khai-hung-tieu-son-trang-si",
       "khai-hung-ganh-hang-hoa",
+      "khai-hung-tieu-son-trang-si",
       "khai-hung-hon-buom-mo-tien"
     ]
   },
@@ -1188,8 +1189,8 @@
     "id": "ho-dzenh",
     "name": "Hồ Dzếnh",
     "work_ids": [
-      "ho-dzenh-que-ngoai",
-      "ho-dzenh-chan-troi-cu"
+      "ho-dzenh-chan-troi-cu",
+      "ho-dzenh-que-ngoai"
     ]
   },
   {
@@ -1238,8 +1239,8 @@
     "id": "vu-trong-phung",
     "name": "Vũ Trọng Phụng",
     "work_ids": [
-      "vu-trong-phung-giong-to",
-      "vu-trong-phung-so-do"
+      "vu-trong-phung-so-do",
+      "vu-trong-phung-giong-to"
     ]
   },
   {
@@ -1253,9 +1254,9 @@
     "id": "ngo-tat-to",
     "name": "Ngô Tất Tố",
     "work_ids": [
+      "ngo-tat-to-viec-lang",
       "ngo-tat-to-leu-chong",
-      "ngo-tat-to-tat-den",
-      "ngo-tat-to-viec-lang"
+      "ngo-tat-to-tat-den"
     ]
   },
   {
@@ -1277,8 +1278,8 @@
     "id": "nam-cao",
     "name": "Nam Cao",
     "work_ids": [
-      "nam-cao-song-mon",
-      "nam-cao-doi-lua-xung-doi-nua-dem-cuoi"
+      "nam-cao-doi-lua-xung-doi-nua-dem-cuoi",
+      "nam-cao-song-mon"
     ]
   },
   {
@@ -1364,8 +1365,8 @@
     "id": "theodor-mommsen",
     "name": "Theodor Mommsen",
     "work_ids": [
-      "theodor-mommsen-the-history-of-rome-vol-1",
-      "theodor-mommsen-the-history-of-rome-vol-3"
+      "theodor-mommsen-the-history-of-rome-vol-3",
+      "theodor-mommsen-the-history-of-rome-vol-1"
     ]
   },
   {
@@ -1657,6 +1658,13 @@
     "name": "Hans Christian Andersen",
     "work_ids": [
       "hans-christian-andersen-truyen-co-andersen"
+    ]
+  },
+  {
+    "id": "fukuzawa-yukichi",
+    "name": "Fukuzawa Yukichi",
+    "work_ids": [
+      "fukuzawa-yukichi-gakumon-no-susume"
     ]
   }
 ]
