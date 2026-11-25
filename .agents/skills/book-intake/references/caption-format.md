@@ -40,83 +40,58 @@ Thống kê ngày 25/11/2026 từ `data/book/*.json`: **339 tựa / 523 phiên b
 
 ## Format
 
-### Giá trị đang lưu
+Cấu trúc đích của `format` là mảng chuỗi, gồm hình thức bìa và vật liệu. Nhãn vật liệu có tiền tố `Bìa`, thống nhất với nhãn hình thức. Form/search hiện chưa hỗ trợ mảng; khi triển khai cần đọc tương thích chuỗi cũ và lưu qua form.
 
-Nhãn cũ để đối chiếu khi chuyển sang Format chuẩn.
+- Chọn nhãn vật liệu cụ thể nhất theo nguồn; dùng `Bìa da thật` / `Bìa da nhân tạo` khi chưa rõ loại da.
+- Edition nhiều vật liệu dùng các nhãn không trùng; vật liệu từng bản, phụ kiện và quy cách phụ ghi trong `detail`.
+- Italy/Italia → `Ý`; Anh quốc/Vương quốc Anh → `Anh`. Chỉ thêm xuất xứ khi nguồn ghi rõ.
+- Microfiber/Microfiter → `Bìa da microfiber`; Heritage Library Buckram → `Bìa buckram`.
+- Sách đã thay bìa: ghi rõ vật liệu gốc và sau bảo dưỡng theo phạm vi được xác nhận.
 
-| Format | Editions |
-| --- | ---: |
-| Bìa cứng | 166 |
-| Bìa mềm | 153 |
-| Bìa vải | 22 |
-| Bìa buckram | 20 |
-| Bìa cứng áo ôm | 30 |
-| Boxset | 2 |
-| Boxset, bìa cứng | 8 |
-| Boxset, bìa mềm | 2 |
-| Bìa da thật | 62 |
-| Bìa mềm áo ôm | 3 |
-| Bìa da nhân tạo | 41 |
-| Chauchaubook | 14 |
+**Đang lưu** là số phiên bản hiện lưu từng nhãn. **Từ mô tả** là số phiên bản nhận diện vật liệu từ `detail`; “—” là chưa thống kê, edition nhiều vật liệu có thể xuất hiện ở nhiều dòng.
 
-### Format cụ thể theo vật liệu
+| Format | Đang lưu | Từ mô tả | Memo |
+| --- | ---: | ---: | --- |
+| Bìa cứng | 166 | — | — |
+| Bìa mềm | 153 | — | — |
+| Bìa cứng áo ôm | 30 | — | — |
+| Bìa mềm áo ôm | 3 | — | — |
+| Boxset | 2 | — | — |
+| Boxset, bìa cứng | 8 | — | — |
+| Boxset, bìa mềm | 2 | — | — |
+| Bìa vải | 22 | 18 | Chưa rõ loại vải. |
+| Bìa buckram | 20 | 18 | Gồm Heritage Library Buckram. |
+| Chauchaubook | 14 | — | — |
+| Bìa da thật | 62 | — | Dùng khi chưa rõ loại da. |
+| Bìa da bò | 0 | 23 | Chưa rõ xuất xứ hoặc dòng da. |
+| Bìa da bò Ý | 0 | 15 | — |
+| Bìa da bò Mỹ | 0 | 1 | — |
+| Bìa da bò Vachetta | 0 | 1 | — |
+| Bìa da dê | 0 | 2 | Chưa rõ xuất xứ. |
+| Bìa da dê Pháp | 0 | 21 | — |
+| Bìa da dê Anh | 0 | 9 | — |
+| Bìa da bê Ý | 0 | 1 | — |
+| Bìa da nhân tạo | 41 | — | Dùng khi chưa rõ loại da. |
+| Bìa da PU | 0 | 12 | Gồm 9 edition Đông A và 3 Nhã Nam |
+| Bìa da microfiber | 0 | 16 | Gồm 16 edition Đông A |
+| Bìa bonded leather | 0 | 12 | — |
+| Bìa giấy mỹ thuật | 0 | 1 | — |
+| Bìa giấy Kraft | 0 | 1 | — |
+| Bìa giấy thủy ấn | 0 | 2 | Kết hợp với da ở bìa nửa da. |
+| Bìa giấy phủ vân da | 0 | 1 | Vinyl faux leather paper. |
+| Bìa sơn mài | 0 | 3 | — |
 
-`format` lưu hình thức bìa và vật liệu. Nhãn vật liệu dùng tên ngắn như `Da PU`, `Microfiber`, `Buckram`; nhãn hình thức giữ `Bìa cứng`, `Bìa mềm`, `Bìa cứng áo ôm`.
-
-**Cấu trúc đích:** mảng chuỗi, kể cả chỉ có một nhãn. Form/search hiện chưa hỗ trợ kiểu mảng; khi triển khai cần đọc tương thích chuỗi cũ và lưu qua form.
-
-```json
-{
-  "caption": "S500",
-  "format": ["Da PU"]
-}
-```
-
-Edition gộp nhiều biến thể dùng mảng nhãn không trùng; vật liệu của từng bản ghi trong `detail`. Ví dụ Grimm S100:
+Ví dụ Grimm S100:
 
 ```json
 {
   "caption": "S100",
-  "format": ["Da bò Ý", "Microfiber"],
+  "format": ["Bìa da bò Ý", "Bìa da microfiber"],
   "detail": "- V20: bìa bọc da bò Ý.\n- S80: bìa bọc da microfiber."
 }
 ```
 
-**Cách chuẩn hóa:**
-
-- Chọn nhãn cụ thể nhất theo nguồn; dùng `Da thật` / `Da nhân tạo` khi chưa rõ loại da. Mỗi vật liệu chỉ dùng một nhãn.
-- Chỉ ghi vật liệu bề mặt bìa; phụ kiện, màu, hãng và kỹ thuật ghi trong `detail`.
-- Chuẩn hóa xuất xứ: Italy/Italia → `Ý`; Anh quốc/Vương quốc Anh → `Anh`. Chỉ thêm xuất xứ khi nguồn ghi rõ.
-- Microfiber/Microfiter → `Microfiber`; Heritage Library Buckram → `Buckram`.
-- Với sách đã thay bìa, ghi rõ vật liệu gốc và vật liệu sau bảo dưỡng theo phạm vi được xác nhận.
-
-`Mô tả` là số phiên bản nhận diện được vật liệu từ `detail`; edition nhiều vật liệu có thể được tính ở nhiều dòng.
-
-Cột **Phiên bản Đông A** đã thống kê cho `Da PU` và `Microfiber`.
-
-| Format chuẩn | Mô tả | Memo | Phiên bản Đông A |
-| --- | ---: | --- | --- |
-| Da PU | 12 | Gồm 9 edition Đông A và 3 Nhã Nam | - S100 Anh em nhà Karamazov (bìa gốc PU; có thông báo bảo dưỡng 2023)<br>- S1200 Chàng ngốc (CN 366–CN 815; giá 1tr500k)<br>- S365 Cuốn theo chiều gió<br>- S500 Napoléon Bonaparte<br>- S100 Robinson Crusoe<br>- S500 Tội ác và hình phạt<br>- S500 Truyện Cổ Grimm<br>- S500 Truyện ngắn Nguyễn Huy Thiệp<br>- S500 Việt Nam Sử Lược |
-| Microfiber | 16 | Gồm 16 edition Đông A | - S896 Bỉ vỏ<br>- S1200 Chàng ngốc (CN 001–CN 365; giá 2tr)<br>- S500 Con Bim Trắng Tai Đen<br>- S500 Đôi Lứa Xứng Đôi - Nửa Đêm - Cười<br>- S365 Đông Dương Xinh Đẹp Và Kỳ Vĩ<br>- S500 Gatsby vĩ đại<br>- S500 Gió Đầu Mùa & Hà Nội Băm Sáu Phố Phường<br>- S500 Hoàng Tử Bé<br>- S500 Một chiến dịch ở Bắc Kỳ<br>- S895 Ngụ Ngôn La Fontaine<br>- S500 Nhà Thờ Đức Bà Paris<br>- S500 Quo Vadis<br>- S1200 Thần Khúc (đợt 2)<br>- S100 Truyện Cổ Grimm (chỉ S80 trong S100)<br>- S100 Truyện ngắn Nguyễn Huy Thiệp (bản S80 thuộc S100)<br>- S500 Việt Nam Văn Hoá Sử Cương |
-| Bonded leather | 12 | — | Chưa thống kê |
-| Da bò | 23 | Chưa rõ xuất xứ hoặc dòng da. | Chưa thống kê |
-| Da bò Ý | 15 | — | Chưa thống kê |
-| Da bò Mỹ | 1 | — | Chưa thống kê |
-| Da bò Vachetta | 1 | — | Chưa thống kê |
-| Da dê | 2 | Chưa rõ xuất xứ. | Chưa thống kê |
-| Da dê Pháp | 21 | — | Chưa thống kê |
-| Da dê Anh | 9 | — | Chưa thống kê |
-| Da bê Ý | 1 | — | Chưa thống kê |
-| Vải | 18 | Chưa rõ loại vải. | Chưa thống kê |
-| Buckram | 18 | Gồm Heritage Library Buckram. | Chưa thống kê |
-| Canvas | 14 | Bìa vẽ tay Châu Châu Book. | Chưa thống kê |
-| Giấy mỹ thuật | 1 | — | Chưa thống kê |
-| Giấy Kraft | 1 | — | Chưa thống kê |
-| Giấy thủy ấn | 2 | Kết hợp với da ở bìa nửa da. | Chưa thống kê |
-| Giấy phủ vân da | 1 | Vinyl faux leather paper. | Chưa thống kê |
-| Sơn mài | 3 | — | Chưa thống kê |
-
-#### Cần bổ sung dữ liệu
+### Cần bổ sung dữ liệu
 
 - **Đại Việt Sử Ký Toàn Thư S895:** tách thông tin vật liệu trong mô tả dùng chung của hai edition da bò và buckram.
 - **Ghi chép từ Nhà chết bản da:** cần xác định loại da nhập từ Ý.
