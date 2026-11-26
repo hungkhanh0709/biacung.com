@@ -39,12 +39,12 @@
       "detail": ""
     },
     {
-      "id": "jane-austen-pride-and-prejudice-dong-a-bia-cung",
+      "id": "jane-austen-pride-and-prejudice-2019-dong-a-bia-da-pu-900k",
       "isbn": null,
       "series_ids": [],
       "caption": "S100",
-      "pub_year": null,
-      "pub_date": null,
+      "pub_year": 2019,
+      "pub_date": "2019-06-01",
       "publisher": "",
       "issuers": [
         "Đông A"
@@ -55,9 +55,9 @@
       "illustrators": [],
       "proofreaders": [],
       "format": [
-        "Bìa da nhân tạo"
+        "Bìa da PU"
       ],
-      "cover_price": "",
+      "cover_price": "900k",
       "print_run": 100,
       "page_count": 359,
       "copy_numbering": null,

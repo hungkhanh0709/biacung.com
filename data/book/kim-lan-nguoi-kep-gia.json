@@ -48,6 +48,42 @@
       "detail": "- 101 bản kỷ niệm 100 năm ngày sinh nhà văn Kim Lân (1920–2020), đánh số từ KL_1920 đến KL_2020; mỗi bản phát hành là duy nhất.\n- Gồm 18 tác phẩm của Kim Lân cùng minh họa của họa sĩ Thành Chương.\n- Hộp sơn mài, nắp hộp in tranh minh họa “Người kép già”.\n- Tặng kèm tranh in sơn mài “Anh chàng hiệp sĩ gỗ” của Thành Chương, khổ 18 x 26 cm.\n- Ruột sách in trên giấy Ford định lượng 150 gsm.\n- Có triện son của Đông A."
     },
     {
+      "id": "kim-lan-nguoi-kep-gia-2021-dong-a-bia-da-pu-1tr500k",
+      "isbn": null,
+      "series_ids": [
+        "van-chuong-va-my-thuat"
+      ],
+      "caption": "S365",
+      "pub_year": 2021,
+      "pub_date": "2021-03-01",
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Thành Chương"
+      ],
+      "proofreaders": [],
+      "format": [
+        "Bìa da PU"
+      ],
+      "cover_price": "1tr500k",
+      "print_run": 370,
+      "page_count": 340,
+      "copy_numbering": "DA 001–DA 365",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/kim-lan-nguoi-kep-gia/dong-a-s365-bia-va-gay.webp",
+      "gellery_imgs": [
+        "/assets/img/books/kim-lan-nguoi-kep-gia/dong-a-s365-sach-va-hop.webp",
+        "/assets/img/books/kim-lan-nguoi-kep-gia/dong-a-s365-bia-truoc.webp",
+        "/assets/img/books/kim-lan-nguoi-kep-gia/dong-a-s365-gay-ep-nhu.webp",
+        "/assets/img/books/kim-lan-nguoi-kep-gia/dong-a-s365-ruot-sach-doi-chim-thanh.webp"
+      ],
+      "detail": "- Tuyển tập 18 tác phẩm của Kim Lân với minh họa của Thành Chương, thực hiện nhân kỷ niệm 100 năm ngày sinh nhà văn (1920–2020).\n- In giới hạn 370 bản. Phát hành 365 bản đánh số nhảy từ DA 001 đến DA 365 và giữ riêng 5 bản ký hiệu Đ, Ô, N, G, A.\n- Bìa bọc da PU, hoa văn dập chìm quanh bìa.\n- Tên sách trên bìa trước và họa tiết trên gáy được ép nhũ.\n- Khổ 16 × 24 cm, ruột in trên giấy Ford 150 gsm bằng công nghệ mực vi sinh.\n- Bụng sách mạ nhũ vàng.\n- Có dấu đỏ của Đông A và dấu sở hữu sách (ex libris).\n- Hộp đứng bồi giấy cán màng hoa văn hoa cương, viền bằng da PU cùng loại với bìa."
+    },
+    {
       "id": "kim-lan-nguoi-kep-gia-2021-dong-a-bia-cung-360k",
       "isbn": "978-604-319-410-4",
       "series_ids": [

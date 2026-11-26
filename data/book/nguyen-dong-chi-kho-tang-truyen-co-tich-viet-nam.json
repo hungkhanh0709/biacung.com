@@ -9,6 +9,44 @@
   "series": [],
   "editions": [
     {
+      "id": "nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam-2025-dong-a-s365-bia-bonded-leather-3tr",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S365",
+      "pub_year": 2025,
+      "pub_date": "2025-06-02",
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Phạm Ngọc Tuấn",
+        "Phạm Ngọc Tân"
+      ],
+      "proofreaders": [],
+      "format": [
+        "Bìa bonded leather"
+      ],
+      "cover_price": "3tr",
+      "print_run": 365,
+      "page_count": 2016,
+      "copy_numbering": "CT 001–CT 365",
+      "size_cm": "18,5 x 26,5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s365-hai-tap-bia-truoc.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s365-trang-ten-sach.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s365-gay-sach-va-hop.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s365-bia-sau.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s365-ex-libris.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s365-canh-ma-vang.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s365-sach-trong-hop.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s365-to-gac.jpg"
+      ],
+      "detail": "- Bộ 2 tập, phát hành giới hạn 365 bản, đánh số riêng từ CT 001 đến CT 365.\n- Bìa màu đỏ đậm (nâu đỏ), bọc da nhân tạo bonded leather nhập trực tiếp từ nhà sản xuất tại Mỹ.\n- Khổ 18,5 × 26,5 cm. Tập 1 dày 1.096 trang, tập 2 dày 920 trang.\n- Ruột in trên giấy GV676-BB định lượng 70 gsm.\n- Cạnh sách mạ nhũ vàng, có dấu chìm của Đông A.\n- Bộ 2 tập không hộp giá 2.400.000 đồng.\n- Bộ 2 tập có hộp giá 3.000.000 đồng. Hộp vỏ sò bọc vải, lót nỉ nhung."
+    },
+    {
       "id": "nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam-dong-a-bia-cung-1200k",
       "isbn": null,
       "caption": "",
@@ -28,13 +66,13 @@
       ],
       "cover_price": "1200k",
       "print_run": null,
-      "page_count": "Tập 1: 1096 trang; tập 2: 920 trang",
+      "page_count": 2016,
       "copy_numbering": null,
       "size_cm": "18,5 x 26,5",
       "weight_g": null,
       "thumbnail": "https://product.hstatic.net/1000328521/product/combo_da_dcb656182de247d6b911dc1436e9df57_master.jpg",
       "gellery_imgs": [],
-      "detail": "Lần in thứ 11 có những điểm đáng chú ý như sau:\n- Nội dung được chỉnh lý kỹ lưỡng bởi Giáo sư Nguyễn Huệ Chi, con trai của tác giả Nguyễn Đổng Chi, so với những lần in trước đây. \n- Chuyển phần tên riêng nước ngoài bằng tên nguyên gốc, với các ngôn ngữ không dùng chữ Latinh thì thay bằng chuyển tự Latin.\n- Bổ sung minh họa của hai họa sĩ Phạm Ngọc Tuấn và Phạm Ngọc Tân.\n- In 2 tập bìa cứng, có bìa áo, khổ 18,5 cm x 26,5 cm.\n- Hiệu chỉnh đầy đủ theo bản gốc, bao gồm phần khảo dị.",
+      "detail": "Lần in thứ 11 có những điểm đáng chú ý như sau:\n- Nội dung được chỉnh lý kỹ lưỡng bởi Giáo sư Nguyễn Huệ Chi, con trai của tác giả Nguyễn Đổng Chi, so với những lần in trước đây. \n- Chuyển phần tên riêng nước ngoài bằng tên nguyên gốc, với các ngôn ngữ không dùng chữ Latinh thì thay bằng chuyển tự Latin.\n- Bổ sung minh họa của hai họa sĩ Phạm Ngọc Tuấn và Phạm Ngọc Tân.\n- In 2 tập bìa cứng, có bìa áo, khổ 18,5 cm x 26,5 cm.\n- Hiệu chỉnh đầy đủ theo bản gốc, bao gồm phần khảo dị.\n- Tập 1: 1096 trang; tập 2: 920 trang.",
       "series_ids": []
     }
   ]

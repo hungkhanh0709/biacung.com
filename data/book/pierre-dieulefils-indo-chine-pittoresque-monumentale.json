@@ -6,16 +6,12 @@
     "Pierre Dieulefils"
   ],
   "awards": [],
-  "series": [
-    "Tủ Sách Đông Dương"
-  ],
+  "series": [],
   "editions": [
     {
       "id": "pierre-dieulefils-indo-chine-pittoresque-monumentale-2021-dong-a-bia-da-nhan-tao-3tr",
       "isbn": null,
-      "series_ids": [
-        "tu-sach-dong-duong"
-      ],
+      "series_ids": [],
       "caption": "S365",
       "pub_year": 2021,
       "pub_date": "2021-02-24",
@@ -50,9 +46,7 @@
     {
       "id": "pierre-dieulefils-indo-chine-pittoresque-monumentale-2021-dong-a-bia-da-that",
       "isbn": null,
-      "series_ids": [
-        "tu-sach-dong-duong"
-      ],
+      "series_ids": [],
       "caption": "Bản Chữ A",
       "pub_year": 2021,
       "pub_date": "2021-01-24",
@@ -90,9 +84,7 @@
     {
       "id": "pierre-dieulefils-indo-chine-pittoresque-monumentale-2020-dong-a-bia-cung-ao-om-680k",
       "isbn": "978-604-88-9989-9",
-      "series_ids": [
-        "tu-sach-dong-duong"
-      ],
+      "series_ids": [],
       "caption": "",
       "pub_year": 2020,
       "pub_date": "2020-07-31",

@@ -6,16 +6,12 @@
     "Francis Garnier"
   ],
   "awards": [],
-  "series": [
-    "Tủ sách Đông Dương"
-  ],
+  "series": [],
   "editions": [
     {
       "id": "francis-garnier-voyage-dexploration-en-indo-chine-2025-dong-a-bia-da-that",
       "isbn": null,
-      "series_ids": [
-        "tu-sach-dong-duong"
-      ],
+      "series_ids": [],
       "caption": "Bản Chữ A",
       "pub_year": 2025,
       "pub_date": "2025-01-19",
@@ -46,9 +42,7 @@
     {
       "id": "francis-garnier-voyage-dexploration-en-indo-chine-2024-dong-a-bia-da-that-7tr500k",
       "isbn": null,
-      "series_ids": [
-        "tu-sach-dong-duong"
-      ],
+      "series_ids": [],
       "caption": "S100",
       "pub_year": 2024,
       "pub_date": "2024-11-21",
@@ -76,11 +70,45 @@
       "detail": "- Báo cáo của Đoàn thám hiểm sông Mekong 1866 - 1868, gồm 22 chương, 309 hình khắc và phụ bản ảnh; Nguyễn Minh chuyển ngữ và chú giải.\n- Ấn bản S100 gồm V20 và S80, phát hành cho 100 bạn đọc đăng ký loạt S100 năm 2024.\n- Bìa đóng thủ công, trang trí ghép da inlay.\n- V20: bìa bọc da dê Alran màu ghi xanh Acier và ghi vàng Etoupe, ép nhũ hai màu; bìa sau có logo V. Giá phát hành: 11.000.000 đồng.\n- S80: bìa bọc da bò màu nâu Praline, ép nhũ ba màu; bìa sau có logo S. Giá phát hành: 7.500.000 đồng.\n- Gáy có ba gân đơn siết tay thủ công, cổ áo bằng da và lưỡi trai ôm sát cổ áo.\n- Sách dày 848 trang, khổ 16 x 24 cm; ruột in trên giấy mỹ thuật Contrast Ivory (CTI) 100 gsm bằng công nghệ mực vi sinh.\n- Ba cạnh sách mạ thủ công nhũ vàng.\n- Hộp vỏ sò bọc vải màu nâu đỏ, lót nhung nâu vàng.\n- Có giấy chứng nhận đóng dấu đỏ Đông A và Ex libris (dấu sở hữu sách)."
     },
     {
+      "id": "francis-garnier-voyage-dexploration-en-indo-chine-2023-dong-a-bia-bonded-leather-1tr500k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S365",
+      "pub_year": 2023,
+      "pub_date": "2023-08-12",
+      "publisher": "NXB Đại Học Sư Phạm",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Minh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": [
+        "Bìa bonded leather"
+      ],
+      "cover_price": "1tr500k",
+      "print_run": 365,
+      "page_count": 864,
+      "copy_numbering": "THDD 001–THDD 365",
+      "size_cm": "18.5 x 26.5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/francis-garnier-voyage-dexploration-en-indo-chine/dong-a-s365-bia-xanh-va-hop.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/francis-garnier-voyage-dexploration-en-indo-chine/dong-a-s365-bia-xanh-hoa-van-chan-dung.jpg",
+        "/assets/img/books/francis-garnier-voyage-dexploration-en-indo-chine/dong-a-s365-bia-xanh-chi-tiet.jpg",
+        "/assets/img/books/francis-garnier-voyage-dexploration-en-indo-chine/dong-a-s365-bia-nau-va-hop.jpg",
+        "/assets/img/books/francis-garnier-voyage-dexploration-en-indo-chine/dong-a-s365-trang-ten-sach.jpg",
+        "/assets/img/books/francis-garnier-voyage-dexploration-en-indo-chine/dong-a-s365-bia-nau-chi-tiet.jpg",
+        "/assets/img/books/francis-garnier-voyage-dexploration-en-indo-chine/dong-a-s365-gay-hai-mau.jpg"
+      ],
+      "detail": "- 365 bản giới hạn, đánh số THDD 001–THDD 365.\n- Bìa bonded leather nhập khẩu từ Mỹ; hoa văn dập chìm.\n- Bìa nâu THDD 001–THDD 100, ép nhũ cam và vàng; bìa xanh THDD 101–THDD 365, ép nhũ vàng và xanh.\n- Ruột in hai màu bằng mực vi sinh trên giấy GIDT 76, định lượng 70 gsm.\n- Mạ nhũ vàng cạnh sách, đóng dấu đỏ Đông A, có Ex-Libris.\n- Hộp carton trang trí hoa văn thủy ấn.\n- Tặng bản đồ toàn cảnh Đông Dương theo khảo sát của đoàn thám hiểm Pháp, do Francis Garnier lập, phát hành năm 1873; kích thước 40 x 63 cm."
+    },
+    {
       "id": "francis-garnier-voyage-dexploration-en-indo-chine-2023-dong-a-bia-cung-ao-om-790k",
       "isbn": "978-604-54-8422-7",
-      "series_ids": [
-        "tu-sach-dong-duong"
-      ],
+      "series_ids": [],
       "caption": "",
       "pub_year": 2023,
       "pub_date": "2023-04-20",

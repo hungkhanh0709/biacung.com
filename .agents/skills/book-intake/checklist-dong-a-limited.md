@@ -39,7 +39,7 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 10 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
 | 11 | ☑ | [Bố già (bản Chữ A da MyQ đỏ)](../../../data/book/mario-puzo-the-godfather.json) | Bản Chữ A | 18/07/2021 | Thiếu |  |  |
 | 12 | ☑ | [Bố già 55 – Bìa da dê](../../../data/book/mario-puzo-the-godfather.json) | GF55 (306 bản) | 27/12/2024 | 3tr500k |  |  |
-| 13 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | S100 | Thiếu | 1tr500k |  |  |
+| 13 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | S100 | 01/12/2019 | 1tr500k |  |  |
 | 14 | ☑ | [Bố già 55 – Bìa buckram](../../../data/book/mario-puzo-the-godfather.json) | S276 / BG55 | 27/12/2024 | 1tr500k |  |  |
 | 15 | ☑ | [Bố già](../../../data/book/mario-puzo-the-godfather.json) | S500 | 30/12/2019 | 500k |  |  |
 | 16 | ☑ | [Bố già (bản tri ân)](../../../data/book/mario-puzo-the-godfather.json) | S500 | 11/01/2024 | Thiếu | Thiếu |  |
@@ -56,7 +56,7 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 27 | ☑ | [Cuốn theo chiều gió](../../../data/book/margaret-mitchell-gone-with-the-wind.json) | S365 | 26/07/2021 | 2tr |  |  |
 | 28 | ☑ | [Dại thì chết](../../../data/book/mario-puzo-fools-die.json) | S500 | 20/02/2023 | 800k |  |  |
 | 29 | ☑ | [Đại Việt sử ký toàn thư](../../../data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json) | Bản Chữ A | 18/01/2025 | Thiếu | Thiếu |  |
-| 30 | ☑ | [Đại Việt sử ký toàn thư](../../../data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
+| 30 | ☑ | [Đại Việt sử ký toàn thư](../../../data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json) | S100 | 23/01/2024 | Thiếu |  |  |
 | 31 | ☑ | [Đại Việt sử ký toàn thư](../../../data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json) | S895 | 22/07/2026 | Bìa da thật: 6tr; Bìa buckram: 5tr |  |  |
 | 32 | ☑ | [Đảo mộng mơ](../../../data/book/nguyen-nhat-anh-dao-mong-mo.json) | S100 | 08/04/2021 | 1tr900k |  |  |
 | 33 | ☑ | [Đất máu Sicily](../../../data/book/mario-puzo-the-sicilian.json) | S500 | 23/01/2024 | 800k |  |  |
@@ -78,22 +78,22 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 49 | ☑ | [Hành Trình Thám Hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
 | 50 | ☑ | [Hành trình thám hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | Phổ thông | 20/04/2023 | 790k |  |  |
 | 51 | ☑ | [Hành trình thám hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | S100 | 21/11/2024 | 7tr500k | Thiếu | Chưa có thumbnail và gallery. |
-| 52 | ☑ | [Hành trình thám hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | S365 | Thiếu | Thiếu | Thiếu | Chưa có bản S365. Cần đối chiếu nguồn cũ: mốc 08/2023, giá 1.500.000đ. |
+| 52 | ☑ | [Hành trình thám hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | S365 | 12/08/2023 | 1tr500k |  |  |
 | 53 | ☑ | [Hạt bụi người bay ngược](../../../data/book/hoa-vang-hat-bui-nguoi-bay-nguoc.json) | S100 | Thiếu | Thiếu |  |  |
 | 54 | ☑ | [Hoàng tử bé](../../../data/book/antoine-de-saint-exupery-le-petit-prince.json) | Bản Chữ A | 18/01/2025 | Thiếu | Thiếu |  |
 | 55 | ☑ | [Hoàng tử bé](../../../data/book/antoine-de-saint-exupery-le-petit-prince.json) | S100 | 03/03/2023 | 4tr200k |  |  |
 | 56 | ☑ | [Hoàng tử bé](../../../data/book/antoine-de-saint-exupery-le-petit-prince.json) | S500 | 25/10/2022 | 1tr200k |  |  |
 | 57 | ☑ | [Hồ Chí Minh – Tiểu sử bằng hình](../../../data/book/dong-a-ho-chi-minh-tieu-su-bang-hinh.json) | S500 | 15/10/2025 | 2tr |  |  |
-| 58 | ☑ | [Khát vọng sống](../../../data/book/irving-stone-lust-for-life.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
+| 58 | ☑ | [Khát vọng sống](../../../data/book/irving-stone-lust-for-life.json) | S100 | 06/03/2020 | 1tr200k |  |  |
 | 59 | ☑ | [Khâm định Việt sử thông giám cương mục](../../../data/book/quoc-su-quan-trieu-nguyen-kham-dinh-viet-su-thong-giam-cuong-muc.json) | S365 | 18/11/2026 | 3tr900k |  |  |
-| 60 | ☑ | [Kho tàng truyện cổ tích Việt Nam](../../../data/book/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam.json) | S365 | Thiếu | Thiếu | Thiếu | Chưa có bản S365. Cần đối chiếu nguồn cũ: mốc 05/2025, giá 3.000.000đ. |
-| 61 | ☑ | [Kiêu hãnh và định kiến](../../../data/book/jane-austen-pride-and-prejudice.json) | S100 | Thiếu | Thiếu |  |  |
+| 60 | ☑ | [Kho tàng truyện cổ tích Việt Nam](../../../data/book/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam.json) | S365 | 02/06/2025 | 3tr |  |  |
+| 61 | ☑ | [Kiêu hãnh và định kiến](../../../data/book/jane-austen-pride-and-prejudice.json) | S100 | 01/06/2019 | 900k |  |  |
 | 62 | ☑ | [Lịch sử La Mã - Tập I (Quyển I – II)](../../../data/book/theodor-mommsen-the-history-of-rome-vol-1.json) | Ấn Bản Giới Hạn | 15/11/2022 | 1200k |  |  |
 | 63 | ☑ | [Lịch sử La Mã - Tập II (Quyển III)](../../../data/book/theodor-mommsen-the-history-of-rome-vol-3.json) | Ấn Bản Giới Hạn | 28/05/2024 | 1200k |  |  |
 | 64 | ☑ | [Lịch sử Việt Nam bằng hình](../../../data/book/dong-a-the-illustrated-history-of-vietnam.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
 | 65 | ☑ | [Luật im lặng](../../../data/book/mario-puzo-omerta.json) | S500 | 09/01/2024 | 700k |  |  |
 | 66 | ☑ | [Lục Vân Tiên](../../../data/book/nguyen-dinh-chieu-luc-van-tien.json) | S500 | 26/07/2026 | 2tr200k |  |  |
-| 67 | ☑ | [Mahabharata / Sử thi Ấn Độ](../../../data/book/dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do.json) | S365 | Thiếu | Thiếu | Thiếu | Chưa có bản S365; hồ sơ hiện có bản phổ thông Đông A 2021. Cần đối chiếu nguồn cũ: mốc 06/2022, giá 3.500.000đ. |
+| 67 | ☑ | [Mahabharata / Sử thi Ấn Độ](../../../data/book/dk-mahabharata-bang-hinh-thien-su-thi-vi-dai-nhat-cua-an-do.json) | S365 | 08/06/2022 | 3tr500k |  |  |
 | 68 | ☑ | [Một chiến dịch ở Bắc Kỳ](../../../data/book/charles-edouard-hocquard-mot-chien-dich-o-bac-ky.json) | Bản Chữ A | 08/01/2023 | Thiếu | Thiếu |  |
 | 69 | ☑ | [Một chiến dịch ở Bắc Kỳ](../../../data/book/charles-edouard-hocquard-mot-chien-dich-o-bac-ky.json) | Bìa cứng áo ôm (phổ thông + cao cấp) | 18/05/2020 | 320k |  |  |
 | 70 | ☑ | [Một chiến dịch ở Bắc Kỳ](../../../data/book/charles-edouard-hocquard-mot-chien-dich-o-bac-ky.json) | S100 | 17/12/2022 | 8tr |  |  |
@@ -108,18 +108,18 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 79 | ☑ | [Nghệ thuật Dessin](../../../data/book/nguyen-dinh-dang-nghe-thuat-dessin.json) | S1200 | 17/11/2022 | 1tr400k |  |  |
 | 80 | ☑ | [Nghìn lẻ một đêm](../../../data/book/antoine-galland-nghin-le-mot-dem.json) | Bản Chữ A | 18/01/2025 | Thiếu | Thiếu |  |
 | 81 | ☑ | [Nghìn lẻ một đêm](../../../data/book/antoine-galland-nghin-le-mot-dem.json) | S100 | 15/04/2023 | 12tr |  |  |
-| 82 | ☑ | [Nghìn lẻ một đêm](../../../data/book/antoine-galland-nghin-le-mot-dem.json) | S896 | Thiếu | Thiếu | Thiếu | Chưa có bản S896. Cần xác nhận mã: S895 hay S896. Cần đối chiếu nguồn cũ: mốc 04/2022, giá 2.500.000đ. |
+| 82 | ☑ | [Nghìn lẻ một đêm](../../../data/book/antoine-galland-nghin-le-mot-dem.json) | S895 | 02/04/2022 | 2tr500k |  |  |
 | 83 | ☑ | [Ngụ ngôn La Fontaine](../../../data/book/la-fontaine-the-fables-of-la-fontaine.json) | Bản Chữ A | 18/01/2025 | Thiếu | Thiếu |  |
 | 84 | ☑ | [Ngụ ngôn La Fontaine](../../../data/book/la-fontaine-the-fables-of-la-fontaine.json) | S100 | 01/08/2023 | 6tr |  |  |
 | 85 | ☑ | [Ngụ ngôn La Fontaine](../../../data/book/la-fontaine-the-fables-of-la-fontaine.json) | S895 | 11/01/2023 | 2tr400k |  |  |
 | 86 | ☑ | [Người kép già](../../../data/book/kim-lan-nguoi-kep-gia.json) | S100 (101 bản) | 23/03/2021 | 999k |  |  |
-| 87 | ☑ | [Người kép già](../../../data/book/kim-lan-nguoi-kep-gia.json) | S365 | Thiếu | Thiếu | Thiếu | Chưa có bản S365. Cần đối chiếu nguồn cũ: mốc 03/2021, giá 1.500.000đ. |
+| 87 | ☑ | [Người kép già](../../../data/book/kim-lan-nguoi-kep-gia.json) | S365 | 01/03/2021 | 1tr500k |  |  |
 | 88 | ☑ | [Nhà Thờ Đức Bà Paris](../../../data/book/victor-hugo-notre-dame-de-paris.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
 | 89 | ☑ | [Nhà thờ Đức Bà Paris](../../../data/book/victor-hugo-notre-dame-de-paris.json) | S100 | 26/05/2024 | 8tr500k |  |  |
 | 90 | ☑ | [Nhà thờ Đức Bà Paris](../../../data/book/victor-hugo-notre-dame-de-paris.json) | S500 | 15/10/2022 | 1tr800k |  |  |
 | 91 | ☑ | [Nhà văn: Cuộc đời và tác phẩm](../../../data/book/dk-writers-their-lives-and-works.json) | S365 | 01/07/2024 | 1tr800k |  |  |
-| 92 | ☑ | [Những cuốn sách thay đổi lịch sử](../../../data/book/michael-collins-remarkable-books.json) | S100 | Thiếu | Thiếu | Thiếu | Chưa có bản S100. |
-| 93 | ☐ | Những ngôi sao Eger | S100 | Thiếu | Thiếu | Thiếu | Cần nhập hồ sơ. |
+| 92 | ☑ | [Những cuốn sách thay đổi lịch sử](../../../data/book/michael-collins-remarkable-books.json) | S100 | 01/05/2020 | 2tr |  |  |
+| 93 | ☑ | [Những ngôi sao Eger](../../../data/book/gardonyi-geza-egri-csillagok.json) | S100 | 01/08/2019 | 1tr |  |  |
 | 94 | ☑ | [Những tầng ký ức](../../../data/book/tran-dai-thang-layers-of-memory.json) | S365 | 16/05/2026 | 2tr6 |  |  |
 | 95 | ☑ | [Những trận chiến thay đổi lịch sử](../../../data/book/dk-nhung-tran-chien-thay-doi-lich-su.json) | S365 | Thiếu | Thiếu | Thiếu | Chưa có bản S365. Cần đối chiếu nguồn cũ: mốc 04/2024, giá 1.800.000đ. |
 | 96 | ☑ | [Ông già và biển cả](../../../data/book/ernest-hemingway-the-old-man-and-the-sea.json) | Bản Chữ A | 08/01/2023 | Thiếu | Thiếu |  |
@@ -131,7 +131,7 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 102 | ☑ | [Quo Vadis](../../../data/book/henryk-sienkiewicz-quo-vadis.json) | Bản Chữ A | 08/01/2023 | Thiếu | Thiếu |  |
 | 103 | ☑ | [Quo Vadis](../../../data/book/henryk-sienkiewicz-quo-vadis.json) | S100 | 20/02/2023 | 6tr500k |  |  |
 | 104 | ☑ | [Quo Vadis](../../../data/book/henryk-sienkiewicz-quo-vadis.json) | S500 | 29/07/2020 | 1tr |  |  |
-| 105 | ☑ | [Robinson Crusoe](../../../data/book/daniel-defoe-robinson-crusoe.json) | S100 | Thiếu | Thiếu |  |  |
+| 105 | ☑ | [Robinson Crusoe](../../../data/book/daniel-defoe-robinson-crusoe.json) | S100 | 01/01/2020 | 1tr200k |  |  |
 | 106 | ☑ | [Sách Tết Canh Tý 2020](../../../data/book/ho-anh-thai-sach-tet-canh-ty-2020.json) | S100 | Thiếu | 888k |  |  |
 | 107 | ☑ | [Sách Tết Giáp Thìn 2024](../../../data/book/ho-anh-thai-sach-tet-giap-thin-2024.json) | S500 | Thiếu | 1200k |  |  |
 | 108 | ☑ | [Sách Tết Kỷ Hợi 2019](../../../data/book/ho-anh-thai-sach-tet-ky-hoi-2019.json) | S100 | Thiếu | 1200k |  |  |

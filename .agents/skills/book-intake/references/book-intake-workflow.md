@@ -45,7 +45,9 @@ Schema sống: `data/template/book-detail.json`; không chép giá trị minh h�
 
 Thiếu optional sau tra cứu có mục tiêu thì dùng default và báo ngắn; không nghiên cứu để lấp mọi ô. Thêm thông tin/ảnh phải hợp nhất dữ liệu cũ; không xóa tên người, chuyển vai trò hoặc làm rỗng mảng do nguồn mới không nhắc lại.
 
-**Gộp/tách:** chỉ khác hộp/phụ kiện/giá còn ruột, bìa, chữ ký, dải số giống nhau thì hỏi gộp/tách một lần; không hỏi lại lựa chọn đã chốt. Gộp: giá cơ bản ở cover_price, đủ tùy chọn/giá ở detail, hợp nhất ảnh không trùng và không cộng trùng print_run. Bộ nhiều tập chỉ gộp theo yêu cầu; cộng giá/trang khi đủ dữ kiện, giữ số từng tập ở detail, không ghép ISBN/phép tính vào giá/ID.
+Khi dịch hoặc trích lọc vào `detail`, viết trực tiếp quy cách ấn bản bằng tiếng Việt, không dẫn lời về ảnh minh họa hoặc tự diễn giải. Nếu nguồn ghép từng mẫu bìa với một loại hộp trong ví dụ, giữ đúng mối liên hệ đó và không suy thành danh sách lựa chọn đầy đủ của từng bản.
+
+**Gộp/tách:** chỉ khác hộp/phụ kiện/giá còn ruột, bìa, chữ ký, dải số giống nhau thì hỏi gộp/tách một lần; không hỏi lại lựa chọn đã chốt. Gộp: giá cơ bản ở cover_price, đủ tùy chọn/giá ở detail, hợp nhất ảnh không trùng và không cộng trùng print_run; nếu người dùng chỉ định giá mặc định khác thì dùng giá đó. Bộ nhiều tập chỉ gộp theo yêu cầu; cộng giá/trang khi đủ dữ kiện, giữ số từng tập ở detail, không ghép ISBN/phép tính vào giá/ID. Với dữ liệu cũ ghi số trang từng tập dưới dạng chữ trong `page_count`, chỉ chuyển sang tổng số trang và bổ sung số từng tập vào `detail` khi người dùng cho phép cập nhật bản cũ.
 
 **Giải thưởng:** chỉ tra khi nguồn/yêu cầu có giải cần gắn; không nghiên cứu giải cho mọi lượt. Nobel có thể kế thừa từ đúng tác giả; giải tác phẩm chỉ gắn đúng tác phẩm. Phân biệt International Booker/Booker và giải bản dịch; không coi edition Việt tự đoạt giải. Ghi nguồn/scope của nhãn mới trong evidence.
 

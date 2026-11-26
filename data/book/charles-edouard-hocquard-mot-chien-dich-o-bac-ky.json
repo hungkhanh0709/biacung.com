@@ -6,16 +6,12 @@
     "Charles-Édouard Hocquard"
   ],
   "awards": [],
-  "series": [
-    "Tủ sách Đông Dương"
-  ],
+  "series": [],
   "editions": [
     {
       "id": "charles-edouard-hocquard-mot-chien-dich-o-bac-ky-2023-dong-a-bia-da-that",
       "isbn": null,
-      "series_ids": [
-        "tu-sach-dong-duong"
-      ],
+      "series_ids": [],
       "caption": "Bản Chữ A",
       "pub_year": 2023,
       "pub_date": "2023-01-08",
@@ -44,9 +40,7 @@
     {
       "id": "charles-edouard-hocquard-mot-chien-dich-o-bac-ky-2022-dong-a-bia-da-that-8tr",
       "isbn": null,
-      "series_ids": [
-        "tu-sach-dong-duong"
-      ],
+      "series_ids": [],
       "caption": "S100",
       "pub_year": 2022,
       "pub_date": "2022-12-17",
@@ -84,9 +78,7 @@
     {
       "id": "charles-edouard-hocquard-mot-chien-dich-o-bac-ky-2020-dong-a-bia-da-nhan-tao-1tr200k",
       "isbn": null,
-      "series_ids": [
-        "tu-sach-dong-duong"
-      ],
+      "series_ids": [],
       "caption": "S500",
       "pub_year": 2020,
       "pub_date": "2020-10-06",
@@ -120,9 +112,7 @@
     {
       "id": "charles-edouard-hocquard-mot-chien-dich-o-bac-ky-2020-dong-a-bia-cung-ao-om-320k",
       "isbn": null,
-      "series_ids": [
-        "tu-sach-dong-duong"
-      ],
+      "series_ids": [],
       "caption": "",
       "pub_year": 2020,
       "pub_date": "2020-05-18",
