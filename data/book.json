@@ -1,5 +1,12 @@
 [
   {
+    "detail": "data/book/fyodor-dostoevsky-ghi-chep-tu-nha-chet.json",
+    "search_text": "fyodor dostoevsky ghi chep tu nha chet dia nguc tran gian nxb ha noi nxb hoi nha van dong tay nha nam doan tu huyen pham xuan nguyen le duc man dao quoc minh an ban gioi han h365 bia da that bia giay my thuat bia cung ao om bia mem bia cung",
+    "is_upcoming": true,
+    "last_pub_year": "",
+    "updated_at": "2026-11-26 11:26"
+  },
+  {
     "detail": "data/book/ho-anh-thai-sach-tet-dinh-mui-2027.json",
     "search_text": "ho anh thai tuyen chon sach tet dinh mui 2027 nxb dan tri dong a bia mem",
     "last_pub_year": "",
@@ -19,13 +26,6 @@
     "is_upcoming": true,
     "last_pub_year": "",
     "updated_at": "2026-11-24 17:18"
-  },
-  {
-    "detail": "data/book/fyodor-dostoevsky-ghi-chep-tu-nha-chet.json",
-    "search_text": "fyodor dostoevsky ghi chep tu nha chet dia nguc tran gian nxb ha noi nxb hoi nha van dong tay nha nam le duc man dao quoc minh an ban gioi han h365 bia da that bia cung bia cung ao om bia mem bia giay my thuat",
-    "is_upcoming": true,
-    "last_pub_year": "",
-    "updated_at": "2026-11-20 13:52"
   },
   {
     "detail": "data/book/jane-austen-pride-and-prejudice.json",
@@ -605,19 +605,19 @@
   {
     "detail": "data/book/franz-kafka-tuyen-tap-tac-pham-frank-kafka.json",
     "search_text": "tuyen tap tac pham frank kafka franz kafka nxb van hoc dong tay bia vai",
-    "updated_at": "2026-07-10",
+    "updated_at": "2026-11-26 12:48",
     "last_pub_year": 2026
   },
   {
     "detail": "data/book/fyodor-dostoevsky-dem-trang.json",
     "search_text": "dem trang fyodor dostoevsky nxb ha noi dong tay doan tu huyen h999 bia cung",
-    "updated_at": "2026-07-10",
+    "updated_at": "2026-11-26 12:48",
     "last_pub_year": 2026
   },
   {
     "detail": "data/book/marai-sandor-a-gyertyak-csonkig-egnek.json",
     "search_text": "nhung ngon nen chay tan a gyertyak csonkig egnek marai sandor nxb ha noi dong tay giap van chung h365 bia cung ao om",
-    "updated_at": "2026-07-10",
+    "updated_at": "2026-11-26 12:48",
     "last_pub_year": 2026
   },
   {
@@ -629,13 +629,13 @@
   {
     "detail": "data/book/mikhail-prishvin-giot-rung.json",
     "search_text": "giot rung mikhail prishvin nxb van hoc dong tay doan tu huyen h666 bia cung ao om",
-    "updated_at": "2026-07-10",
+    "updated_at": "2026-11-26 12:50",
     "last_pub_year": 2026
   },
   {
     "detail": "data/book/nhieu-tac-gia-doan-tu-huyen-mot-nghe-nhan.json",
     "search_text": "doan tu huyen mot nghe nhan nhieu tac gia nxb lao dong dong tay h365 bia cung ao om",
-    "updated_at": "2026-07-10",
+    "updated_at": "2026-11-26 12:48",
     "last_pub_year": 2026
   },
   {
@@ -984,25 +984,25 @@
   {
     "detail": "data/book/dino-buzzati-dino-buzzati-tuyen-tap-tac-pham.json",
     "search_text": "dino buzzati tuyen tap tac pham dino buzzati nxb van hoc dong tay h365 bia cung",
-    "updated_at": "2026-07-10",
+    "updated_at": "2026-11-26 12:46",
     "last_pub_year": 2025
   },
   {
     "detail": "data/book/marai-sandor-loi-co-cay.json",
     "search_text": "loi co cay marai sandor nxb lao dong dong tay nguyen hong nhung h666 bia cung",
-    "updated_at": "2026-07-10",
+    "updated_at": "2026-11-26 12:48",
     "last_pub_year": 2025
   },
   {
     "detail": "data/book/mikhail-bulgakov-nhung-qua-trung-dinh-menh.json",
     "search_text": "nhung qua trung dinh menh mikhail bulgakov nxb ha noi dong tay doan tu huyen h666 bia cung",
-    "updated_at": "2026-07-10",
+    "updated_at": "2026-11-26 12:47",
     "last_pub_year": 2025
   },
   {
     "detail": "data/book/mikhail-bulgakov-trai-tim-cho.json",
     "search_text": "trai tim cho mikhail bulgakov nxb lao dong dong tay doan tu huyen h666 bia cung",
-    "updated_at": "2026-07-10",
+    "updated_at": "2026-11-26 12:44",
     "last_pub_year": 2025
   },
   {

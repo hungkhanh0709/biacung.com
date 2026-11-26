@@ -81,9 +81,10 @@ test('form indexes each material phrase and intake accepts arrays without a keyw
     assert.deepEqual(require('./edition-parser').parseEditionText('Hình thức: Bìa da PU').format, ['Bìa da PU']);
 });
 
-test('search matches broad/narrow material queries per label and selects the correct editions through the index', async () => {
+test('search lists each matching edition for material and work queries', async () => {
     const editions = [
-        { id: 'italy', pub_year: 2024, format: ['Bìa da bò Ý', 'Bìa da microfiber'] },
+        { id: 'italy', title: 'Sách kiểm thử bản đặc biệt', caption: 'S100', issuers: ['Đông A'], pub_year: 2024,
+            pub_date: '2024-05-11', format: ['Bìa da bò Ý', 'Bìa da microfiber'] },
         { id: 'usa', pub_year: 2023, format: ['Bìa da bò Mỹ'] },
         { id: 'generic', pub_year: 2022, format: 'Bìa da bò' },
         { id: 'goat', pub_year: 2021, format: ['Bìa da dê'] }
@@ -99,19 +100,20 @@ test('search matches broad/narrow material queries per label and selects the cor
     vm.runInContext(fs.readFileSync(path.join(__dirname, '../assets/js/search.js'), 'utf8'), page);
     for (const [query, ids] of [
         ['Bìa da bò', ['italy', 'usa', 'generic']], ['bia da bo', ['italy', 'usa', 'generic']],
-        ['Bìa da bò Ý', ['italy']], ['BÌA DA BÒ MỸ', ['usa']],
-        ['Bìa da microfiber', ['italy']], ['Ý Bìa da microfiber', []]
+        ['Da bò Y', ['italy']], ['BÌA DA BÒ MỸ', ['usa']],
+        ['Bìa da microfiber', ['italy']], ['Ý Bìa da microfiber', []],
+        ['Test Author', ['italy', 'usa', 'generic', 'goat']], ['Sách kiểm thử', ['italy', 'usa', 'generic', 'goat']]
     ]) {
         const matches = page.createSearchMatcher(page.getSearchNeedles(query));
         assert.deepEqual(Array.from(page.getMatchingEditions(book, matches), e => e.id), ids, query);
         const cards = await page.loadBookMatches(page.getSearchNeedles(query));
-        assert.equal(cards.length, ids.length ? 1 : 0, query);
-        if (ids.length) {
-            assert.ok(cards[0].href.endsWith(`edition=${ids[0]}`));
-            assert.equal(cards[0].meta, `(${ids.length} phiên bản)`);
-        }
+        assert.deepEqual(Array.from(cards, ({ href }) => href), ids.map(id => `/detail?id=test-book&edition=${id}`), query);
     }
-    assert.equal((await page.loadBookMatches(page.getSearchNeedles('Test Author')))[0].meta, '(4 phiên bản)');
+    const [italy] = await page.loadBookMatches(page.getSearchNeedles('Da bò Y'));
+    assert.equal(italy.meta, 'S100 · Bìa da bò Ý · Bìa da microfiber · Đông A · 05/2024');
+    const defaults = await page.loadBookMatches(page.getSearchNeedles(''));
+    assert.equal(defaults.length, 1);
+    assert.equal(defaults[0].meta, '(4 phiên bản)');
 });
 
 test('form-generated arrays and index phrases survive save and reload through both save routes', async (t) => {

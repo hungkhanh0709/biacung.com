@@ -139,15 +139,15 @@ function createSearchMatcher(needles) {
 }
 
 function getMatchingEditions(book, matchesQuery) {
-  const editions = publication.sortEditions(book?.editions);
-  if (!matchesQuery) {
-    return [];
+  const editions = publication.sortEditions(book.editions);
+  const sharedFields = [book.title, book.title_original, ...(book.authors || []), ...(book.awards || []), ...(book.series || [])];
+  if (sharedFields.some(matchesQuery)) {
+    return editions;
   }
 
   return editions.filter((edition) => {
-    const effectiveTitle = normalizeText(edition?.title || book?.title);
     const fields = [
-      effectiveTitle,
+      edition?.title,
       edition?.caption,
       edition?.publisher,
       ...(Array.isArray(edition?.issuers) ? edition.issuers : []),
@@ -164,6 +164,15 @@ function getMatchingEditions(book, matchesQuery) {
 
     return fields.some(matchesQuery);
   });
+}
+
+function getEditionMeta(edition) {
+  const issuers = Array.isArray(edition.issuers) ? edition.issuers.join(", ") : "";
+  const date = publication.isUpcoming(edition) ? "" : publication.formatPublicationDate(edition);
+  return [edition.caption, bookFormat.text(edition.format), issuers || edition.publisher, date]
+    .map(normalizeText)
+    .filter(Boolean)
+    .join(" · ");
 }
 
 async function fetchJson(url) {
@@ -213,7 +222,7 @@ function setLoadMoreState() {
   loadMoreButton.textContent = "Xem thêm";
 }
 
-function createCard({ title, subtitle, description, image, href, meta, isUpcoming }) {
+function createCard({ title, subtitle, image, href, meta, is_upcoming: isUpcoming }) {
   const article = document.createElement("article");
   article.className = "book-card";
 
@@ -350,18 +359,12 @@ async function loadBookMatches(searchNeedles) {
   const needles = Array.isArray(searchNeedles) ? searchNeedles.filter(Boolean) : [];
   const matchesQuery = needles.length ? createSearchMatcher(needles) : null;
   const matchedEntries = Array.isArray(bookIndex)
-    ? publication.sortBookEntries(bookIndex)
-      .map((entry) => {
-        const searchableText = [
-          entry?.search_text, publication.isUpcoming(entry) ? "Sắp phát hành" : ""
-        ].join(" ");
-        if (matchesQuery && !matchesQuery(searchableText)) {
-          return null;
-        }
-
-        return entry;
-      })
-      .filter(Boolean)
+    ? bookIndex.filter((entry) => {
+      const searchableText = [
+        entry?.search_text, publication.isUpcoming(entry) ? "Sắp phát hành" : ""
+      ].join(" ");
+      return !matchesQuery || matchesQuery(searchableText);
+    })
     : [];
 
   if (!matchedEntries.length) {
@@ -372,37 +375,35 @@ async function loadBookMatches(searchNeedles) {
     matchedEntries.map(async (entry) => {
       const detailPath = normalizeText(entry?.detail);
       if (!detailPath || !isSafeDetailPath(detailPath, SAFE_BOOK_DETAIL_PATH)) {
-        return null;
+        return [];
       }
 
       const book = await fetchOptionalJson(detailPath);
       if (!book) {
-        return null;
+        return [];
       }
 
-      const editions = publication.sortEditions(book.editions);
-      const firstEdition = editions[0] || {};
-      const matchingEditions = getMatchingEditions(book, matchesQuery);
-      const sharedFields = [book.title, book.title_original, ...(book.authors || []), ...(book.awards || []), ...(book.series || [])];
-      if (matchesQuery && !matchingEditions.length && !sharedFields.some(matchesQuery)) {
-        return null;
-      }
-      const selectedEdition = matchingEditions[0] || firstEdition;
-      const visibleEditionCount = matchingEditions.length || editions.length;
+      const editions = Array.isArray(book.editions) ? book.editions : [];
+      const selectedEditions = matchesQuery
+        ? getMatchingEditions(book, matchesQuery)
+        : [publication.sortEditions(editions)[0] || {}];
+      const subtitle = Array.isArray(book.authors) ? book.authors.join(", ") : "";
+      const editionCount = editions.length ? `(${editions.length} phiên bản)` : "";
 
-      return {
+      return selectedEditions.map((edition) => ({
         type: "book",
-        title: normalizeText(selectedEdition.title || book.title || book.title_original || book.id),
-        subtitle: Array.isArray(book.authors) ? book.authors.join(", ") : "",
-        image: selectedEdition.thumbnail || book.thumbnail,
-        href: buildDetailUrl("book", book.id, selectedEdition.id),
-        isUpcoming: publication.isUpcoming(selectedEdition),
-        meta: visibleEditionCount ? `(${visibleEditionCount} phiên bản)` : ""
-      };
+        title: normalizeText(edition.title || book.title || book.title_original || book.id),
+        subtitle,
+        image: edition.thumbnail || book.thumbnail,
+        href: buildDetailUrl("book", book.id, edition.id),
+        meta: matchesQuery ? getEditionMeta(edition) : editionCount,
+        updated_at: entry.updated_at,
+        ...publication.getPublicationSummary({ editions: [edition] })
+      }));
     })
   );
 
-  return books.filter(Boolean);
+  return publication.sortBookEntries(books.flat());
 }
 
 async function renderResults() {

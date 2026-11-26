@@ -109,7 +109,8 @@ function auditStaticPages(rootDir, errors) {
     },
     {
       file: "search.html",
-      checks: ['meta name="robots" content="noindex,follow"']
+      checks: ['meta name="robots" content="noindex,follow"'],
+      forbidden: ['property="og:url"', 'rel="canonical"']
     },
     {
       file: "award/index.html",
@@ -144,6 +145,9 @@ function auditStaticPages(rootDir, errors) {
     const content = readFileSafe(path.join(rootDir, rule.file));
     rule.checks.forEach((snippet) => {
       pushIfMissing(errors, content.includes(snippet), `${rule.file} is missing required snippet: ${snippet}`);
+    });
+    rule.forbidden?.forEach((snippet) => {
+      pushIfMissing(errors, !content.includes(snippet), `${rule.file} declares a static URL that overrides search queries: ${snippet}`);
     });
   });
 
