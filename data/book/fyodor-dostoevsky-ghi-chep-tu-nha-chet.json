@@ -20,7 +20,10 @@
       "issuers": [
         "Đông Tây"
       ],
-      "translators": [],
+      "translators": [
+        "Đoàn Tử Huyến",
+        "Phạm Xuân Nguyên"
+      ],
       "illustrators": [],
       "proofreaders": [],
       "format": [
@@ -32,7 +35,7 @@
       "copy_numbering": "01–24",
       "size_cm": "",
       "weight_g": null,
-      "thumbnail": "",
+      "thumbnail": "/assets/img/books/fyodor-dostoevsky-ghi-chep-tu-nha-chet/dong-tay-bia-da-that.jpeg",
       "gellery_imgs": [],
       "detail": "- Da nhập khẩu từ Italia, thực hiện thủ công bởi nghệ nhân.\n- Ruột in trên giấy HC 100 gsm; mạ nhũ cạnh sách.\n- Đóng triện logo Đông Tây, đánh số 01–24.\n- Giới hạn, không tái bản."
     },
@@ -48,7 +51,10 @@
       "issuers": [
         "Đông Tây"
       ],
-      "translators": [],
+      "translators": [
+        "Đoàn Tử Huyến",
+        "Phạm Xuân Nguyên"
+      ],
       "illustrators": [],
       "proofreaders": [],
       "format": [
@@ -60,7 +66,7 @@
       "copy_numbering": "01–76",
       "size_cm": "",
       "weight_g": null,
-      "thumbnail": "",
+      "thumbnail": "/assets/img/books/fyodor-dostoevsky-ghi-chep-tu-nha-chet/dong-tay-bia-giay-my-thuat.jpeg",
       "gellery_imgs": [],
       "detail": "- Bìa giấy mỹ thuật.\n- Ruột in trên giấy HC 100 gsm.\n- Đóng triện logo Đông Tây, đánh số 01–76.\n- Giới hạn, không tái bản."
     },
@@ -76,7 +82,10 @@
       "issuers": [
         "Đông Tây"
       ],
-      "translators": [],
+      "translators": [
+        "Đoàn Tử Huyến",
+        "Phạm Xuân Nguyên"
+      ],
       "illustrators": [],
       "proofreaders": [],
       "format": [
@@ -88,9 +97,9 @@
       "copy_numbering": "001–365",
       "size_cm": "",
       "weight_g": null,
-      "thumbnail": "",
+      "thumbnail": "/assets/img/books/fyodor-dostoevsky-ghi-chep-tu-nha-chet/dong-tay-h365.jpeg",
       "gellery_imgs": [],
-      "detail": "- Bìa cứng có áo bọc; đóng triện H365, đánh số 001–365.\n- Giới hạn, không tái bản."
+      "detail": "- Bìa cứng có áo bọc, tờ gác thiết kế riêng; đóng triện H365, đánh số 001–365.\n- Giới hạn, không tái bản."
     },
     {
       "id": "fyodor-dostoevsky-ghi-chep-tu-nha-chet-dong-tay-bia-mem",
@@ -104,7 +113,10 @@
       "issuers": [
         "Đông Tây"
       ],
-      "translators": [],
+      "translators": [
+        "Đoàn Tử Huyến",
+        "Phạm Xuân Nguyên"
+      ],
       "illustrators": [],
       "proofreaders": [],
       "format": [
@@ -116,7 +128,7 @@
       "copy_numbering": null,
       "size_cm": "",
       "weight_g": null,
-      "thumbnail": "",
+      "thumbnail": "/assets/img/books/fyodor-dostoevsky-ghi-chep-tu-nha-chet/dong-tay-bia-mem.jpeg",
       "gellery_imgs": [],
       "detail": ""
     },

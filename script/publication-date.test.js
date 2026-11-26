@@ -62,6 +62,49 @@ test('index sorts legacy years and dated books without using updated_at', () => 
     assert.deepEqual(publication.sortBookEntries(entries).map((e) => e.id), ['november', 'tie-a', 'tie-b', 'old']);
 });
 
+test('search orders matching editions across books, including upcoming and year-only editions', async () => {
+    const books = new Map();
+    const index = [
+        ['mixed', [{ id: 'other', is_upcoming: true }, { id: 'match', pub_year: 2026 },
+            { id: 'dated', pub_date: '2026-08-05' }], '2026-11-26'],
+        ['unknown', [{ id: 'match' }], '2026-11-25'],
+        ['july', [{ id: 'match', pub_date: '2026-07-22' }], '2026-11-24'],
+        ['november', [{ id: 'match', pub_date: '2026-11-08', pub_year: 2025 }], '2026-11-18'],
+        ['upcoming-old', [{ id: 'match', is_upcoming: true }], '2026-11-17'],
+        ['upcoming-new', [{ id: 'match', is_upcoming: true }], '2026-11-20']
+    ].map(([id, editions, updated_at]) => {
+        const detail = `data/book/${id}.json`;
+        const book = { id, title: id, editions: editions.map((edition) => ({
+            ...edition, issuers: [edition.id === 'other' ? 'Đông A' : 'Nhã Nam']
+        })) };
+        books.set(detail, book);
+        return publication.withPublicationSummary({ detail, search_text: 'nha nam', updated_at }, book);
+    });
+    const page = vm.createContext({
+        URLSearchParams,
+        window: {
+            BiaCungPublication: publication,
+            BiaCungBookFormat: require('../assets/js/book-format'),
+            location: { search: '' }
+        },
+        document: { querySelector: () => null },
+        fetch: async (url) => ({ ok: true, json: async () => url === 'data/book.json' ? index : books.get(url) })
+    });
+    vm.runInContext(fs.readFileSync(path.join(__dirname, '../assets/js/search.js'), 'utf8'), page);
+
+    const matches = await page.loadBookMatches(page.getSearchNeedles('Nhã Nam'));
+    assert.deepEqual(Array.from(matches, ({ href }) => href), [
+        '/detail?id=upcoming-new&edition=match', '/detail?id=upcoming-old&edition=match',
+        '/detail?id=november&edition=match', '/detail?id=mixed&edition=dated', '/detail?id=july&edition=match',
+        '/detail?id=mixed&edition=match', '/detail?id=unknown&edition=match'
+    ]);
+
+    const all = await page.loadBookMatches(page.getSearchNeedles(''));
+    assert.deepEqual(Array.from(all, ({ title }) => title),
+        ['mixed', 'upcoming-new', 'upcoming-old', 'november', 'july', 'unknown']);
+    assert.equal(all[0].href, '/detail?id=mixed&edition=other');
+});
+
 test('mixed dates sort consistently and idempotently in editions and index', () => {
     const entries = [
         { id: 'legacy', pub_year: 2027 },
