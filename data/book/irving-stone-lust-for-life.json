@@ -11,6 +11,38 @@
   ],
   "editions": [
     {
+      "id": "irving-stone-lust-for-life-2020-dong-a-bia-da-nhan-tao-1tr200k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S100",
+      "pub_year": 2020,
+      "pub_date": "2020-03-06",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Vũ Đình Bình"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": [
+        "Bìa da nhân tạo"
+      ],
+      "cover_price": "1tr200k",
+      "print_run": null,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/irving-stone-lust-for-life/dong-a-s100-bia-truoc.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/irving-stone-lust-for-life/dong-a-s100-canh-sach-ma-vang.jpg",
+        "/assets/img/books/irving-stone-lust-for-life/dong-a-s100-gay-va-tranh.jpg"
+      ],
+      "detail": ""
+    },
+    {
       "id": "irving-stone-lust-for-life-2020-dong-a-bia-mem-195k",
       "series_ids": [
         "dong-a-classic"

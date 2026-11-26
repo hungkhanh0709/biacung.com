@@ -9,6 +9,39 @@
   "series": [],
   "editions": [
     {
+      "id": "michael-collins-remarkable-books-2020-dong-a-bia-da-pu-2tr",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S100",
+      "pub_year": 2020,
+      "pub_date": "2020-05-01",
+      "publisher": "NXB Dân Trí",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Lê Ngọc Tân"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": [
+        "Bìa da PU"
+      ],
+      "cover_price": "2tr",
+      "print_run": 105,
+      "page_count": 256,
+      "copy_numbering": "ĐA - 01–ĐA - 100",
+      "size_cm": "25 x 30",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/michael-collins-remarkable-books/dong-a-s100-bia-va-gay.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/michael-collins-remarkable-books/dong-a-s100-bia-truoc-va-hop.webp",
+        "/assets/img/books/michael-collins-remarkable-books/dong-a-s100-canh-sach-va-hop.webp",
+        "/assets/img/books/michael-collins-remarkable-books/dong-a-s100-day-gay-sach-va-hop.webp"
+      ],
+      "detail": "- In giới hạn 105 bản, gồm 100 bản đánh số từ ĐA - 01 đến ĐA - 100 và 5 bản ký hiệu Đ, Ô, N, G, A.\n- Khổ 25 × 30 cm.\n- Bìa cứng bọc da PU, đóng thủ công, kèm hộp.\n- Ruột in bốn màu trên giấy Ford kem 180 gsm.\n- Có dấu đỏ của Đông A và chữ ký dịch giả Lê Ngọc Tân."
+    },
+    {
       "id": "michael-collins-remarkable-books-2020-dong-a-bia-cung-390k",
       "isbn": null,
       "series_ids": [],

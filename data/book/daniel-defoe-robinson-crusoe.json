@@ -9,12 +9,12 @@
   "series": [],
   "editions": [
     {
-      "id": "daniel-defoe-robinson-crusoe-dong-a-bia-da-nhan-tao",
+      "id": "daniel-defoe-robinson-crusoe-2020-dong-a-bia-buckram-bia-da-bo-y-bia-da-de-phap-bia-da-pu-1tr200k",
       "isbn": null,
       "series_ids": [],
       "caption": "S100",
-      "pub_year": null,
-      "pub_date": null,
+      "pub_year": 2020,
+      "pub_date": "2020-01-01",
       "publisher": "",
       "issuers": [
         "Đông A"
@@ -28,7 +28,7 @@
         "Bìa da bò Ý",
         "Bìa da dê Pháp"
       ],
-      "cover_price": "",
+      "cover_price": "1tr200k",
       "print_run": 100,
       "page_count": null,
       "copy_numbering": null,

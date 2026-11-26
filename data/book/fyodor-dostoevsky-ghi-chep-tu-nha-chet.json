@@ -71,14 +71,14 @@
       "detail": "- Bìa giấy mỹ thuật.\n- Ruột in trên giấy HC 100 gsm.\n- Đóng triện logo Đông Tây, đánh số 01–76.\n- Giới hạn, không tái bản."
     },
     {
-      "id": "fyodor-dostoevsky-ghi-chep-tu-nha-chet-dong-tay-bia-cung-ao-om",
+      "id": "fyodor-dostoevsky-ghi-chep-tu-nha-chet-2026-dong-tay-bia-cung-ao-om-250k",
       "isbn": null,
       "series_ids": [],
       "caption": "H365",
       "is_upcoming": true,
-      "pub_year": null,
-      "pub_date": null,
-      "publisher": "",
+      "pub_year": 2026,
+      "pub_date": "2026-12-01",
+      "publisher": "NXB Văn Học",
       "issuers": [
         "Đông Tây"
       ],
@@ -91,15 +91,15 @@
       "format": [
         "Bìa cứng áo ôm"
       ],
-      "cover_price": "",
+      "cover_price": "250k",
       "print_run": 365,
-      "page_count": null,
+      "page_count": 384,
       "copy_numbering": "001–365",
-      "size_cm": "",
+      "size_cm": "16 x 24",
       "weight_g": null,
-      "thumbnail": "/assets/img/books/fyodor-dostoevsky-ghi-chep-tu-nha-chet/dong-tay-h365.jpeg",
+      "thumbnail": "/assets/img/books/fyodor-dostoevsky-ghi-chep-tu-nha-chet/dong-tay-h365-bia-cung-ao-boc.jpeg",
       "gellery_imgs": [],
-      "detail": "- Bìa cứng có áo bọc, tờ gác thiết kế riêng; đóng triện H365, đánh số 001–365.\n- Giới hạn, không tái bản."
+      "detail": "- Bìa cứng có áo bọc, tờ gác thiết kế riêng; đóng triện H365, đánh số 001–365.\n- Ruột in trên giấy BB70/76; kèm bookmark.\n- Giới hạn, không tái bản."
     },
     {
       "id": "fyodor-dostoevsky-ghi-chep-tu-nha-chet-dong-tay-bia-mem",
