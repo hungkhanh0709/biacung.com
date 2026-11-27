@@ -43,6 +43,42 @@
       "detail": "- Bản chữ A.\n- Hoạt kê tiểu thuyết của Vũ Trọng Phụng, in lại theo bản in lần đầu năm 1938 của nhà xuất bản Lê Cường, bổ sung minh họa của Thành Phong.\n- Ruột sách in trên giấy dó Việt Nam.\n- Bìa bọc da bò màu xanh Denim.\n- Sách để trần gáy, khâu tay.\n- Hộp sách bằng carton, tạo gáy da có siết năm gân."
     },
     {
+      "id": "vu-trong-phung-so-do-2023-dong-a-bia-da-bo-y-bia-da-de-phap-bia-da-microfiber-6tr500k",
+      "isbn": null,
+      "series_ids": [
+        "van-chuong-va-my-thuat"
+      ],
+      "caption": "S100",
+      "pub_year": 2023,
+      "pub_date": "2023-01-31",
+      "publisher": "",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Thành Phong"
+      ],
+      "proofreaders": [],
+      "format": [
+        "Bìa da bò Ý",
+        "Bìa da dê Pháp",
+        "Bìa da microfiber"
+      ],
+      "cover_price": "6tr500k",
+      "print_run": 100,
+      "page_count": null,
+      "copy_numbering": null,
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/vu-trong-phung-so-do/dong-a-s100-2023-bia-vang-va-gay.jpeg",
+      "gellery_imgs": [
+        "/assets/img/books/vu-trong-phung-so-do/dong-a-s100-2023-v20-gay-tran.jpeg",
+        "/assets/img/books/vu-trong-phung-so-do/dong-a-s100-2023-ruot-giay-do.jpeg"
+      ],
+      "detail": "- S100 gồm V20 và S80. Cả hai in trên giấy dó và khâu rết theo lối Passé-carton cổ điển châu Âu. Đây là ấn bản đặc biệt đầu tiên Đông A in trên giấy dó.\n- Cả hai bản có bìa bồi nổi 3D bằng bốn lớp carton và ván MDF, đai sách hai khóa đồng, giấy chứng nhận và ex libris (dấu sở hữu sách).\n- V20: ruột khổ 19,5 × 30,5 cm. Bìa bọc da dê Pháp màu vàng hoặc da bò Ý màu vàng hay đỏ, gắn 14 chi tiết sơn mài. Khung và họa tiết ép nhũ vàng và đen.\n- V20: giữ phách giấy ở ba cạnh, để gáy trần. Băng chỉ đầu và cổ áo (endband) khâu tay. Đây là cuốn đầu tiên Đông A làm gáy trần để thấy kết cấu đóng sách.\n- V20: tờ gác ghép da. Hộp đứng hình cuốn sách, gáy bọc da theo màu bìa, lót nhung.\n- S80: ruột khổ 16 × 24 cm. Bìa bọc da microfiber màu vàng, gắn 10 chi tiết sơn mài. Khung và họa tiết ép nhũ vàng.\n- S80: năm gân đơn ở gáy siết tay và cố định 24 giờ. Băng chỉ đầu và cổ áo bằng da thật, mũ lưỡi trai (head cap) ôm sát cổ áo. Khung tên và hoa văn gáy dập lồng, ép nhũ vàng. Gáy bồi bốn lớp bằng vải và giấy.\n- S80: tờ gác đầu và cuối làm thủy ấn thủ công từng tờ, mỗi tờ có hoa văn riêng. Hộp carton in thủy ấn, viền da microfiber.\n- Giá phát hành V20 da dê 15.000.000 ₫, V20 da bò 13.000.000 ₫, S80 6.500.000 ₫."
+    },
+    {
       "id": "vu-trong-phung-so-do-2023-nha-nam-bia-cung-240k",
       "isbn": null,
       "series_ids": [
@@ -71,6 +107,44 @@
         "/assets/img/books/vu-trong-phung-so-do/nha-nam-viet-nam-danh-tac-group-covers.jpg"
       ],
       "detail": "- Ấn bản bìa cứng giới hạn 555 bản, đánh số từ 001-555.\n- Đóng triện Nhã Nam Thư Xã, thiết kế riêng cho bộ sách Việt Nam Danh Tác.\n- Sách có bìa áo (jacket). Bìa áo in giấy couché matt cán mờ định lượng 150gsm; tên sách, tên tác giả và tên bộ sách được phủ bóng.\n- Khổ sách 14,5 x 20,5 cm; ruột in trên giấy tốt định lượng 100gsm."
+    },
+    {
+      "id": "vu-trong-phung-so-do-2020-dong-a-bia-da-microfiber-800k",
+      "isbn": null,
+      "series_ids": [
+        "van-chuong-va-my-thuat"
+      ],
+      "caption": "S500",
+      "pub_year": 2020,
+      "pub_date": "2020-11-17",
+      "publisher": "",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Thành Phong"
+      ],
+      "proofreaders": [],
+      "format": [
+        "Bìa da microfiber",
+        "Bìa bonded leather",
+        "Bìa buckram",
+        "Bìa da bò"
+      ],
+      "cover_price": "800k",
+      "print_run": 500,
+      "page_count": null,
+      "copy_numbering": "DA 001 - DA 500",
+      "size_cm": "",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/vu-trong-phung-so-do/dong-a-s500-bia-truoc.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/vu-trong-phung-so-do/dong-a-s500-chi-tiet-bia-va-gay.jpg",
+        "/assets/img/books/vu-trong-phung-so-do/dong-a-s500-canh-sach-va-hop.jpg",
+        "/assets/img/books/vu-trong-phung-so-do/dong-a-s500-mat-hop.jpg"
+      ],
+      "detail": "- Giới hạn 500 bản, đánh số nhảy từ DA 001 đến DA 500. Mỗi cuốn có một số riêng.\n- Bìa cứng bọc da microfiber màu đỏ, làm thủ công, kèm hộp viền da.\n- Ruột in trên giấy Ford định lượng 150 gsm, theo bản Lê Cường năm 1938. Minh họa của Thành Phong.\n- Có dấu đỏ của Đông A.\n- 08/2024 Đông A thông báo bảo dưỡng.\n- Các lựa chọn bảo dưỡng: thay bìa bằng bonded leather hoặc buckram miễn phí, hoặc bìa da bò với chi phí 1tr/cuốn."
     },
     {
       "id": "vu-trong-phung-so-do-2020-dong-a-bia-vai",

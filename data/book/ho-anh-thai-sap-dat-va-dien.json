@@ -1,0 +1,38 @@
+{
+  "id": "ho-anh-thai-sap-dat-va-dien",
+  "title": "Sắp đặt và diễn",
+  "title_original": "",
+  "authors": [
+    "Hồ Anh Thái"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "ho-anh-thai-sap-dat-va-dien-2005-dong-a-bia-cung",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S100",
+      "pub_year": 2005,
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": [
+        "Bìa mềm"
+      ],
+      "cover_price": "",
+      "print_run": null,
+      "page_count": 419,
+      "copy_numbering": null,
+      "size_cm": "13,5 x 20,5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/ho-anh-thai-sap-dat-va-dien/dong-a-s100-bia-truoc.webp",
+      "gellery_imgs": [],
+      "detail": "- Tập truyện ngắn gồm 25 truyện, chia theo các giai đoạn sáng tác của Hồ Anh Thái."
+    }
+  ]
+}

@@ -106,7 +106,8 @@
       "ho-anh-thai-sach-tet-nham-dan-2022",
       "ho-anh-thai-sach-tet-tan-suu-2021",
       "ho-anh-thai-sach-tet-canh-ty-2020",
-      "ho-anh-thai-sach-tet-ky-hoi-2019"
+      "ho-anh-thai-sach-tet-ky-hoi-2019",
+      "ho-anh-thai-sap-dat-va-dien"
     ]
   },
   {
@@ -1672,6 +1673,13 @@
     "name": "Gárdonyi Géza",
     "work_ids": [
       "gardonyi-geza-egri-csillagok"
+    ]
+  },
+  {
+    "id": "donald-keene",
+    "name": "Donald Keene",
+    "work_ids": [
+      "donald-keene-emperor-of-japan-meiji-and-his-world-1852-1912"
     ]
   }
 ]

@@ -66,5 +66,9 @@
   {
     "id": "van-chuong-va-my-thuat",
     "detail": "data/series/van-chuong-va-my-thuat.json"
+  },
+  {
+    "id": "sach-decor-dong-a",
+    "detail": "data/series/sach-decor-dong-a.json"
   }
 ]

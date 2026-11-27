@@ -1,12 +1,5 @@
 [
   {
-    "detail": "data/book/jane-austen-pride-and-prejudice.json",
-    "search_text": "jane austen pride and prejudice kieu hanh va dinh kien nxb van hoc dong a thanh loan s100 bia mem bia da pu",
-    "last_pub_year": "",
-    "updated_at": "2026-11-26 17:13",
-    "is_upcoming": true
-  },
-  {
     "detail": "data/book/fyodor-dostoevsky-ghi-chep-tu-nha-chet.json",
     "search_text": "fyodor dostoevsky ghi chep tu nha chet dia nguc tran gian nxb van hoc nxb ha noi nxb hoi nha van dong tay nha nam doan tu huyen pham xuan nguyen le duc man dao quoc minh an ban gioi han h365 bia da that bia giay my thuat bia cung ao om bia mem bia cung",
     "is_upcoming": true,
@@ -75,6 +68,13 @@
     "last_pub_year": "",
     "updated_at": "2026-11-17 17:24",
     "is_upcoming": true
+  },
+  {
+    "detail": "data/book/jane-austen-pride-and-prejudice.json",
+    "search_text": "jane austen pride and prejudice kieu hanh va dinh kien nxb van hoc dong a thanh loan sach decor dong a s100 bia mem bia giay phu van da bia cung ao om bia da pu",
+    "last_pub_year": 2026,
+    "updated_at": "2026-11-27 14:43",
+    "last_pub_date": "2026-11-27"
   },
   {
     "detail": "data/book/rabindranath-tagore-muoi-tap-tho.json",
@@ -241,7 +241,7 @@
     "detail": "data/book/nhieu-tac-gia-dai-viet-su-ky-toan-thu.json",
     "search_text": "nhieu tac gia dai viet su ky toan thu nxb van hoc dong a ngo duc tho hoang van lau s895 ban chu a s100 bia da bo bia buckram bia da de phap bia da bo y boxset bia cung",
     "last_pub_year": 2026,
-    "updated_at": "2026-11-26 15:26",
+    "updated_at": "2026-11-27 16:54",
     "last_pub_date": "2026-07-22"
   },
   {
@@ -836,7 +836,7 @@
     "search_text": "francis garnier voyage dexploration en indochine hanh trinh tham hiem dong duong nxb dai hoc su pham dong a nguyen minh louis delaporte ban chu a s100 s365 bia da de anh bia da de bia da bo bia bonded leather bia cung ao om",
     "last_pub_year": 2025,
     "last_pub_date": "2025-01-19",
-    "updated_at": "2026-11-26 15:02"
+    "updated_at": "2026-11-27 16:58"
   },
   {
     "detail": "data/book/victor-hugo-notre-dame-de-paris.json",
@@ -850,7 +850,7 @@
     "search_text": "dante alighieri la divina commedia than khuc nxb van hoc dong a nguyen van hoan gustave dore ban chu a s100 s1200 bia da de anh bia da de phap bia da bo bia da microfiber bia buckram",
     "last_pub_year": 2025,
     "last_pub_date": "2025-01-19",
-    "updated_at": "2026-11-20 12:14"
+    "updated_at": "2026-11-27 16:49"
   },
   {
     "detail": "data/book/nhieu-tac-gia-van-moi-5-nam-dau-the-ky.json",
@@ -910,9 +910,9 @@
   },
   {
     "detail": "data/book/vu-trong-phung-so-do.json",
-    "search_text": "vu trong phung so do nxb van hoc nxb hoi nha van dong a nha nam thanh phong van chuong va my thuat viet nam danh tac nha nam ban chu a an ban gioi han ban tri an bia da bo bia cung bia vai",
+    "search_text": "vu trong phung so do nxb van hoc nxb hoi nha van dong a nha nam thanh phong van chuong va my thuat viet nam danh tac nha nam ban chu a s100 an ban gioi han s500 ban tri an bia da bo bia da bo y bia da de phap bia da microfiber bia cung bia bonded leather bia buckram bia vai",
     "last_pub_year": 2025,
-    "updated_at": "2026-11-20 12:16",
+    "updated_at": "2026-11-27 16:44",
     "last_pub_date": "2025-01-18"
   },
   {
@@ -1058,6 +1058,13 @@
     "last_pub_date": "2024-05-28"
   },
   {
+    "detail": "data/book/dk-nhung-tran-chien-thay-doi-lich-su.json",
+    "search_text": "dk battles that changed history nhung tran chien thay doi lich su nxb dan tri dong a nguyen minh s365 bia bonded leather bia cung",
+    "last_pub_year": 2024,
+    "updated_at": "2026-11-27 17:03",
+    "last_pub_date": "2024-05-02"
+  },
+  {
     "detail": "data/book/mario-puzo-the-family.json",
     "search_text": "mario puzo carol gino the family cha con giao hoang nxb van hoc dong a phan quang dinh s500 bia bonded leather bia mem",
     "updated_at": "2026-11-14",
@@ -1134,6 +1141,36 @@
     "last_pub_year": 2024
   },
   {
+    "detail": "data/book/irving-stone-lust-for-life.json",
+    "search_text": "irving stone lust for life khat vong song nxb van hoc dong a vu dinh binh dong a classic sach decor dong a s100 bia giay phu van da bia da nhan tao bia mem",
+    "last_pub_year": 2024,
+    "updated_at": "2026-11-27 14:42"
+  },
+  {
+    "detail": "data/book/daniel-defoe-robinson-crusoe.json",
+    "search_text": "daniel defoe robinson crusoe nxb van hoc dong a nguyen minh sach decor dong a s100 bia giay phu van da bia da pu bia buckram bia da bo y bia da de phap",
+    "last_pub_year": 2024,
+    "updated_at": "2026-11-27 14:43"
+  },
+  {
+    "detail": "data/book/gardonyi-geza-egri-csillagok.json",
+    "search_text": "gardonyi geza egri csillagok nhung ngoi sao eger nxb van hoc dong a le xuan giang pham ngoc tan sach decor dong a s100 bia giay phu van da bia da pu",
+    "last_pub_year": 2024,
+    "updated_at": "2026-11-27 14:43"
+  },
+  {
+    "detail": "data/book/donald-keene-emperor-of-japan-meiji-and-his-world-1852-1912.json",
+    "search_text": "donald keene emperor of japan meiji and his world 18521912 thien hoang minh tri nxb van hoc dong a ca lau la sach decor dong a bia giay phu van da",
+    "last_pub_year": 2024,
+    "updated_at": "2026-11-27 14:44"
+  },
+  {
+    "detail": "data/book/fyodor-dostoevsky-anh-em-nha-karamazov.json",
+    "search_text": "fyodor dostoevsky anh em nha karamazov nxb van hoc dong a pham manh hung sach decor dong a s100 bia giay phu van da bia da pu bia bonded leather bia da bo bia da de phap bia da de anh",
+    "last_pub_year": 2024,
+    "updated_at": "2026-11-27 14:44"
+  },
+  {
     "detail": "data/book/bjrnstjerne-bjrnson-bi-mat-cua-synnve-chuyen-tinh-chang-arne-cau-trai-vui-ve-cua-bjrnstjerne-bjrnson.json",
     "search_text": "bjrnstjerne bjrnson bi mat cua synnve chuyen tinh chang arne cau trai vui ve cua bjrnstjerne bjrnson nxb van hoc dong a minh khoa pham ngoc tan tram nam nobel bia buckram an ban gioi han",
     "last_pub_year": 2023,
@@ -1184,8 +1221,8 @@
   },
   {
     "detail": "data/book/ernest-hemingway-the-old-man-and-the-sea.json",
-    "search_text": "ernest hemingway the old man and the sea ong gia va bien ca nxb van hoc dong a le huy bac le tri ban chu a s100 nobel van chuong bia da de phap bia da bo bia cung ao om",
-    "updated_at": "2026-11-14",
+    "search_text": "ernest hemingway the old man and the sea ong gia va bien ca nxb van hoc dong a le huy bac le tri ban chu a s100 s500 bia da de phap bia da bo bia da microfiber bia cung ao om nobel van chuong",
+    "updated_at": "2026-11-27 17:08",
     "last_pub_year": 2023,
     "last_pub_date": "2023-01-08"
   },
@@ -1579,12 +1616,6 @@
     "updated_at": "2026-09-20"
   },
   {
-    "detail": "data/book/dk-nhung-tran-chien-thay-doi-lich-su.json",
-    "search_text": "nhung tran chien thay doi lich su dk nxb dan tri dong a nguyen minh bia cung",
-    "last_pub_year": 2022,
-    "updated_at": "2026-07-12"
-  },
-  {
     "detail": "data/book/jane-bingham-the-internet-linked-encyclopedia-of-world-history.json",
     "search_text": "bach khoa lich su the gioi the internetlinked encyclopedia of world history jane bingham fiona chandler sam taplin nxb dan tri dong a le thi oanh bia cung",
     "last_pub_year": 2022,
@@ -1745,20 +1776,6 @@
     "last_pub_date": "2020-05-01"
   },
   {
-    "detail": "data/book/irving-stone-lust-for-life.json",
-    "search_text": "irving stone lust for life khat vong song nxb van hoc dong a vu dinh binh dong a classic s100 bia da nhan tao bia mem",
-    "last_pub_year": 2020,
-    "updated_at": "2026-11-26 17:12",
-    "last_pub_date": "2020-03-06"
-  },
-  {
-    "detail": "data/book/daniel-defoe-robinson-crusoe.json",
-    "search_text": "daniel defoe robinson crusoe dong a s100 bia da pu bia buckram bia da bo y bia da de phap",
-    "last_pub_year": 2020,
-    "updated_at": "2026-11-26 17:14",
-    "last_pub_date": "2020-01-01"
-  },
-  {
     "detail": "data/book/ho-anh-thai-sach-tet-canh-ty-2020.json",
     "search_text": "ho anh thai tuyen chon sach tet canh ty 2020 nxb van hoc dong a sach tet dong a an ban gioi han bia cung bia mem",
     "last_pub_year": 2020,
@@ -1788,20 +1805,6 @@
     "last_pub_year": 2019,
     "last_pub_date": "2019-09-01",
     "updated_at": "2026-11-25 18:17"
-  },
-  {
-    "detail": "data/book/gardonyi-geza-egri-csillagok.json",
-    "search_text": "gardonyi geza egri csillagok nhung ngoi sao eger nxb van hoc dong a le xuan giang pham ngoc tan s100 bia da pu",
-    "last_pub_year": 2019,
-    "last_pub_date": "2019-08-01",
-    "updated_at": "2026-11-26 16:59"
-  },
-  {
-    "detail": "data/book/fyodor-dostoevsky-anh-em-nha-karamazov.json",
-    "search_text": "fyodor dostoevsky anh em nha karamazov nxb van hoc dong a pham manh hung s100 bia da pu bia bonded leather bia da bo bia da de phap bia da de anh",
-    "last_pub_year": 2019,
-    "last_pub_date": "2019-07-19",
-    "updated_at": "2026-11-25 18:18"
   },
   {
     "detail": "data/book/ho-anh-thai-sach-tet-ky-hoi-2019.json",
@@ -2036,6 +2039,12 @@
     "search_text": "rene leys nguoi tinh tre trong tu cam thanh rene leys victor segalen nxb tre que son bia mem",
     "updated_at": "2026-07-04",
     "last_pub_year": 2011
+  },
+  {
+    "detail": "data/book/ho-anh-thai-sap-dat-va-dien.json",
+    "search_text": "ho anh thai sap dat va dien nxb hoi nha van dong a s100 bia mem",
+    "last_pub_year": 2005,
+    "updated_at": "2026-11-27 16:29"
   },
   {
     "detail": "data/book/neil-shubin-your-inner-fish-a-journey-into-the-35-billion-year-history-of-the-human-body.json",

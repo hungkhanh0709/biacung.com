@@ -1,13 +1,48 @@
 {
   "id": "dk-nhung-tran-chien-thay-doi-lich-su",
   "title": "Những Trận Chiến Thay Đổi Lịch Sử",
-  "title_original": "",
+  "title_original": "Battles That Changed History",
   "authors": [
     "Dk"
   ],
   "awards": [],
   "series": [],
   "editions": [
+    {
+      "id": "dk-nhung-tran-chien-thay-doi-lich-su-2024-dong-a-bia-bonded-leather-1tr800k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S365",
+      "pub_year": 2024,
+      "pub_date": "2024-05-02",
+      "publisher": "",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Minh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": [
+        "Bìa bonded leather"
+      ],
+      "cover_price": "1tr800k",
+      "print_run": 365,
+      "page_count": 256,
+      "copy_numbering": "TC 001 - TC 365",
+      "size_cm": "25,2 x 30,1",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/dk-nhung-tran-chien-thay-doi-lich-su/dong-a-s365-hai-mau-bia.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/dk-nhung-tran-chien-thay-doi-lich-su/dong-a-s365-hai-gay-sach.jpg",
+        "/assets/img/books/dk-nhung-tran-chien-thay-doi-lich-su/dong-a-s365-canh-ma-nhu-bia-xanh.jpg",
+        "/assets/img/books/dk-nhung-tran-chien-thay-doi-lich-su/dong-a-s365-chi-tiet-bia-xanh.jpg",
+        "/assets/img/books/dk-nhung-tran-chien-thay-doi-lich-su/dong-a-s365-chi-tiet-bia-nau.jpg",
+        "/assets/img/books/dk-nhung-tran-chien-thay-doi-lich-su/dong-a-s365-trang-ruot.jpg"
+      ],
+      "detail": "- Giới hạn 365 bản, đánh số từ TC 001 đến TC 365, mỗi cuốn mang một số riêng.\n- Bìa bọc bonded leather nhập trực tiếp từ nhà sản xuất tại Mỹ, có hai màu xanh và nâu. Sợi da được phủ sơn gốc nước, bề mặt ép vân nổi.\n- Ruột in trên giấy Ford kem April Fine 180 gsm bằng công nghệ mực vi sinh.\n- Cạnh sách mạ nhũ vàng. Có dấu đỏ Đông A và ex libris (dấu sở hữu sách).\n- Sách kèm hộp carton."
+    },
     {
       "id": "dk-nhung-tran-chien-thay-doi-lich-su-2022-dong-a-bia-cung-500k",
       "isbn": null,

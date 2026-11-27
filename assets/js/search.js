@@ -140,8 +140,15 @@ function createSearchMatcher(needles) {
 
 function getMatchingEditions(book, matchesQuery) {
   const editions = publication.sortEditions(book.editions);
-  const sharedFields = [book.title, book.title_original, ...(book.authors || []), ...(book.awards || []), ...(book.series || [])];
+  const sharedFields = [book.title, book.title_original, ...(book.authors || []), ...(book.awards || [])];
   if (sharedFields.some(matchesQuery)) {
+    return editions;
+  }
+
+  const matchingSeries = (Array.isArray(book.series) ? book.series : []).filter(matchesQuery);
+  const seriesNames = new Set(matchingSeries.map(normalizeSearchText));
+  const hasEditionSeries = editions.some((edition) => Array.isArray(edition?.series_ids) && edition.series_ids.length);
+  if (matchingSeries.length && !hasEditionSeries) {
     return editions;
   }
 
@@ -162,7 +169,10 @@ function getMatchingEditions(book, matchesQuery) {
       publication.isUpcoming(edition) ? "Sắp phát hành" : ""
     ];
 
-    return fields.some(matchesQuery);
+    const seriesIds = Array.isArray(edition?.series_ids) ? edition.series_ids : [];
+    return fields.some(matchesQuery) || seriesIds.some((id) =>
+      matchesQuery(id) || seriesNames.has(normalizeSearchText(id))
+    );
   });
 }
 
