@@ -6,8 +6,43 @@
     "Daniel Defoe"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Sách Decor Đông A"
+  ],
   "editions": [
+    {
+      "id": "daniel-defoe-robinson-crusoe-2024-dong-a-bia-giay-phu-van-da-260k",
+      "isbn": null,
+      "series_ids": [
+        "sach-decor-dong-a"
+      ],
+      "caption": "",
+      "pub_year": 2024,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Nguyễn Minh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": [
+        "Bìa giấy phủ vân da"
+      ],
+      "cover_price": "260k",
+      "print_run": null,
+      "page_count": 700,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 1500,
+      "thumbnail": "/assets/img/books/daniel-defoe-robinson-crusoe/dong-a-decor-2024-bia-truoc.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/irving-stone-lust-for-life/dong-a-decor-2024-ca-bo-doc.jpg",
+        "/assets/img/books/irving-stone-lust-for-life/dong-a-decor-2024-ca-bo-ngang.jpg"
+      ],
+      "detail": "- Bìa cứng màu đen, bọc giấy phủ vân da, thiết kế cổ điển đồng bộ trong dòng Sách Decor Đông A.\n- Dùng ruột sách của ấn bản phổ thông bìa mềm đã phát hành.\n- Đông A giới thiệu dòng sách decor ngày 19/06/2024."
+    },
     {
       "id": "daniel-defoe-robinson-crusoe-2020-dong-a-bia-buckram-bia-da-bo-y-bia-da-de-phap-bia-da-pu-1tr200k",
       "isbn": null,

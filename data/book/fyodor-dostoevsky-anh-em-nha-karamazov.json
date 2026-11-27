@@ -6,8 +6,43 @@
     "Fyodor Dostoevsky"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Sách Decor Đông A"
+  ],
   "editions": [
+    {
+      "id": "fyodor-dostoevsky-anh-em-nha-karamazov-2024-dong-a-bia-giay-phu-van-da-350k",
+      "isbn": null,
+      "series_ids": [
+        "sach-decor-dong-a"
+      ],
+      "caption": "",
+      "pub_year": 2024,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Phạm Mạnh Hùng"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": [
+        "Bìa giấy phủ vân da"
+      ],
+      "cover_price": "350k",
+      "print_run": null,
+      "page_count": 992,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 1700,
+      "thumbnail": "/assets/img/books/fyodor-dostoevsky-anh-em-nha-karamazov/dong-a-decor-2024-bia-truoc.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/irving-stone-lust-for-life/dong-a-decor-2024-ca-bo-doc.jpg",
+        "/assets/img/books/irving-stone-lust-for-life/dong-a-decor-2024-ca-bo-ngang.jpg"
+      ],
+      "detail": "- Bìa cứng màu xanh đậm, bọc giấy phủ vân da, thiết kế cổ điển đồng bộ trong dòng Sách Decor Đông A.\n- Dùng ruột sách của ấn bản phổ thông bìa mềm đã phát hành.\n- Đông A giới thiệu dòng sách decor ngày 19/06/2024."
+    },
     {
       "id": "fyodor-dostoevsky-anh-em-nha-karamazov-2019-dong-a-bia-da-nhan-tao-1tr200k",
       "isbn": null,

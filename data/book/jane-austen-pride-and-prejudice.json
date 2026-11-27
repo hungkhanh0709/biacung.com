@@ -6,16 +6,17 @@
     "Jane Austen"
   ],
   "awards": [],
-  "series": [],
+  "series": [
+    "Sách Decor Đông A"
+  ],
   "editions": [
     {
-      "id": "jane-austen-pride-and-prejudice-2026-dong-a-bia-mem",
-      "isbn": null,
+      "id": "jane-austen-pride-and-prejudice-2026-dong-a-bia-mem-150k",
+      "isbn": "978-604-9853-57-9",
       "series_ids": [],
       "caption": "",
-      "is_upcoming": true,
-      "pub_year": null,
-      "pub_date": null,
+      "pub_year": 2026,
+      "pub_date": "2026-11-27",
       "publisher": "NXB Văn Học",
       "issuers": [
         "Đông A"
@@ -28,15 +29,79 @@
       "format": [
         "Bìa mềm"
       ],
-      "cover_price": "",
+      "cover_price": "150k",
       "print_run": null,
-      "page_count": null,
+      "page_count": 360,
       "copy_numbering": null,
-      "size_cm": "",
-      "weight_g": null,
+      "size_cm": "16 x 24",
+      "weight_g": 500,
       "thumbnail": "/assets/img/books/jane-austen-pride-and-prejudice/dong-a-2026-bia-mem-cover.jpeg",
       "gellery_imgs": [],
       "detail": ""
+    },
+    {
+      "id": "jane-austen-pride-and-prejudice-2024-dong-a-bia-giay-phu-van-da-200k",
+      "isbn": null,
+      "series_ids": [
+        "sach-decor-dong-a"
+      ],
+      "caption": "",
+      "pub_year": 2024,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Thanh Loan"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": [
+        "Bìa giấy phủ vân da"
+      ],
+      "cover_price": "200k",
+      "print_run": null,
+      "page_count": 360,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": 1500,
+      "thumbnail": "/assets/img/books/jane-austen-pride-and-prejudice/dong-a-decor-2024-bia-truoc.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/irving-stone-lust-for-life/dong-a-decor-2024-ca-bo-doc.jpg",
+        "/assets/img/books/irving-stone-lust-for-life/dong-a-decor-2024-ca-bo-ngang.jpg"
+      ],
+      "detail": "- Bìa cứng màu vàng, bọc giấy phủ vân da, thiết kế cổ điển đồng bộ trong dòng Sách Decor Đông A.\n- Dùng ruột sách của ấn bản phổ thông bìa mềm đã phát hành.\n- Đông A giới thiệu dòng sách decor ngày 19/06/2024."
+    },
+    {
+      "id": "jane-austen-pride-and-prejudice-2019-dong-a-bia-cung-200k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "",
+      "pub_year": 2019,
+      "pub_date": "2019-06-12",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Thanh Loan"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": [
+        "Bìa cứng áo ôm"
+      ],
+      "cover_price": "200k",
+      "print_run": null,
+      "page_count": 359,
+      "copy_numbering": null,
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/jane-austen-pride-and-prejudice/dong-a-2019-bia-cung-metalize-cover.webp",
+      "gellery_imgs": [
+        "/assets/img/books/jane-austen-pride-and-prejudice/dong-a-2019-bia-cung-metalize-anh-thuc-te.jpg"
+      ],
+      "detail": "- Bìa cứng, áo ôm metalize màu vàng ánh kim."
     },
     {
       "id": "jane-austen-pride-and-prejudice-2019-dong-a-bia-da-pu-900k",

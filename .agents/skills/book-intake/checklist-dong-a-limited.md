@@ -77,7 +77,7 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 48 | ☑ | [Hán Sở diễn nghĩa](../../../data/book/chan-vi-han-so-dien-nghia.json) | S100 | 01/09/2019 | 1tr |  |  |
 | 49 | ☑ | [Hành Trình Thám Hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
 | 50 | ☑ | [Hành trình thám hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | Phổ thông | 20/04/2023 | 790k |  |  |
-| 51 | ☑ | [Hành trình thám hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | S100 | 21/11/2024 | 7tr500k | Thiếu | Chưa có thumbnail và gallery. |
+| 51 | ☑ | [Hành trình thám hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | S100 | 21/11/2024 | 7tr500k |  |  |
 | 52 | ☑ | [Hành trình thám hiểm Đông Dương](../../../data/book/francis-garnier-voyage-dexploration-en-indo-chine.json) | S365 | 12/08/2023 | 1tr500k |  |  |
 | 53 | ☑ | [Hạt bụi người bay ngược](../../../data/book/hoa-vang-hat-bui-nguoi-bay-nguoc.json) | S100 | Thiếu | Thiếu |  |  |
 | 54 | ☑ | [Hoàng tử bé](../../../data/book/antoine-de-saint-exupery-le-petit-prince.json) | Bản Chữ A | 18/01/2025 | Thiếu | Thiếu |  |
@@ -121,11 +121,11 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 92 | ☑ | [Những cuốn sách thay đổi lịch sử](../../../data/book/michael-collins-remarkable-books.json) | S100 | 01/05/2020 | 2tr |  |  |
 | 93 | ☑ | [Những ngôi sao Eger](../../../data/book/gardonyi-geza-egri-csillagok.json) | S100 | 01/08/2019 | 1tr |  |  |
 | 94 | ☑ | [Những tầng ký ức](../../../data/book/tran-dai-thang-layers-of-memory.json) | S365 | 16/05/2026 | 2tr6 |  |  |
-| 95 | ☑ | [Những trận chiến thay đổi lịch sử](../../../data/book/dk-nhung-tran-chien-thay-doi-lich-su.json) | S365 | Thiếu | Thiếu | Thiếu | Chưa có bản S365. Cần đối chiếu nguồn cũ: mốc 04/2024, giá 1.800.000đ. |
+| 95 | ☑ | [Những trận chiến thay đổi lịch sử](../../../data/book/dk-nhung-tran-chien-thay-doi-lich-su.json) | S365 | 02/05/2024 | 1tr800k |  |  |
 | 96 | ☑ | [Ông già và biển cả](../../../data/book/ernest-hemingway-the-old-man-and-the-sea.json) | Bản Chữ A | 08/01/2023 | Thiếu | Thiếu |  |
 | 97 | ☑ | [Ông già và biển cả](../../../data/book/ernest-hemingway-the-old-man-and-the-sea.json) | Bìa cứng áo ôm (phổ thông) | 25/07/2022 | 200k |  |  |
 | 98 | ☑ | [Ông già và biển cả](../../../data/book/ernest-hemingway-the-old-man-and-the-sea.json) | S100 | 02/12/2022 | Thiếu |  |  |
-| 99 | ☑ | [Ông già và biển cả](../../../data/book/ernest-hemingway-the-old-man-and-the-sea.json) | S500 | Thiếu | Thiếu | Thiếu | Chưa có bản Đông A S500. Cần đối chiếu nguồn cũ: mốc 09/2022, giá 1.200.000đ. |
+| 99 | ☑ | [Ông già và biển cả](../../../data/book/ernest-hemingway-the-old-man-and-the-sea.json) | S500 | 29/09/2022 | 1tr200k |  |  |
 | 100 | ☑ | [Ông trùm cuối cùng](../../../data/book/mario-puzo-the-last-don.json) | S500 | 23/01/2024 | 800k |  |  |
 | 101 | ☑ | [Quả dưa đỏ](../../../data/book/nguyen-trong-thuat-qua-dua-do.json) | S365 | Thiếu | Thiếu | Thiếu | Chưa có bản S365. Cần đối chiếu nguồn cũ: mốc 06/2023, giá 1.200.000đ. |
 | 102 | ☑ | [Quo Vadis](../../../data/book/henryk-sienkiewicz-quo-vadis.json) | Bản Chữ A | 08/01/2023 | Thiếu | Thiếu |  |
@@ -138,14 +138,14 @@ Sắp theo tên sách (A–Z tiếng Việt), rồi mã edition tăng dần tron
 | 109 | ☑ | [Sách Tết Nhâm Dần 2022](../../../data/book/ho-anh-thai-sach-tet-nham-dan-2022.json) | S500 | Thiếu | 1100k |  |  |
 | 110 | ☑ | [Sách Tết Quý Mão 2023](../../../data/book/ho-anh-thai-sach-tet-quy-mao-2023.json) | S500 | Thiếu | 1200k |  |  |
 | 111 | ☑ | [Sách Tết Tân Sửu 2021](../../../data/book/ho-anh-thai-sach-tet-tan-suu-2021.json) | S365 | Thiếu | 999k |  |  |
-| 112 | ☐ | Sắp đặt và Diễn | Chưa cung cấp | Thiếu | Thiếu | Thiếu | Cần nhập hồ sơ. |
+| 112 | ☑ | [Sắp đặt và diễn](../../../data/book/ho-anh-thai-sap-dat-va-dien.json) | S100 | Thiếu | Thiếu | Thiếu |  |
 | 113 | ☑ | [Số đỏ](../../../data/book/vu-trong-phung-so-do.json) | Bản Chữ A | 18/01/2025 | Thiếu | Thiếu |  |
 | 114 | ☑ | [Số đỏ – Bản tri ân](../../../data/book/vu-trong-phung-so-do.json) | Bản Tri Ân | 11/11/2020 | Thiếu |  |  |
-| 114a | ☑ | [Số đỏ](../../../data/book/vu-trong-phung-so-do.json) | S100 | Thiếu | Thiếu | Thiếu | Bản S100 ruột giấy dó khác bản tri ân; chưa nhập. |
-| 115 | ☑ | [Số đỏ](../../../data/book/vu-trong-phung-so-do.json) | S500 | Thiếu | Thiếu | Thiếu | Chưa có bản S500. Cần đối chiếu nguồn cũ: mốc 11/2020, giá 800.000đ. |
+| 114a | ☑ | [Số đỏ](../../../data/book/vu-trong-phung-so-do.json) | S100 | 31/01/2023 | 6tr500k |  |  |
+| 115 | ☑ | [Số đỏ](../../../data/book/vu-trong-phung-so-do.json) | S500 | 17/11/2020 | 800k |  |  |
 | 116 | ☑ | [Thái Bình Thiên Quốc](../../../data/book/hoang-tieu-phoi-hong-xiu-quan-yan-yi.json) | S365 | 22/09/2023 | 1tr500k |  |  |
 | 117 | ☑ | [Thần khúc](../../../data/book/dante-alighieri-la-divina-commedia.json) | Bản Chữ A | 19/01/2025 | Thiếu | Thiếu |  |
-| 118 | ☑ | [Thần khúc](../../../data/book/dante-alighieri-la-divina-commedia.json) | S100 | 06/12/2024 | 11tr | Thiếu | Chưa có thumbnail và gallery. |
+| 118 | ☑ | [Thần khúc](../../../data/book/dante-alighieri-la-divina-commedia.json) | S100 | 06/12/2024 | 11tr |  |  |
 | 119 | ☑ | [Thần khúc](../../../data/book/dante-alighieri-la-divina-commedia.json) | S1200 | 21/06/2022; 02/02/2023 | 2tr600k |  |  |
 | 120 | ☑ | [Thép đã tôi thế đấy](../../../data/book/nikolai-alekseyevich-ostrovsky-how-the-steel-was-tempered.json) | S500 | 26/07/2026 | 2tr300k |  |  |
 | 121 | ☑ | [Thi khúc & Thi phẩm](../../../data/book/sully-prudhomme-thi-khuc-thi-pham.json) | S1200 | Thiếu | 1tr1 |  |  |
