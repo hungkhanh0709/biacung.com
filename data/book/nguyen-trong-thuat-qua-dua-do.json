@@ -11,6 +11,39 @@
   ],
   "editions": [
     {
+      "id": "nguyen-trong-thuat-qua-dua-do-2023-dong-a-bia-da-microfiber-1tr200k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S365",
+      "pub_year": 2023,
+      "pub_date": "2023-06-20",
+      "publisher": "",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Tạ Huy Long"
+      ],
+      "proofreaders": [],
+      "format": [
+        "Bìa da microfiber"
+      ],
+      "cover_price": "1tr200k",
+      "print_run": 365,
+      "page_count": 320,
+      "copy_numbering": "NTT 001 – NTT 365",
+      "size_cm": "16 x 24",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/nguyen-trong-thuat-qua-dua-do/dong-a-2023-s365-bia-truoc-va-hop.webp",
+      "gellery_imgs": [
+        "/assets/img/books/nguyen-trong-thuat-qua-dua-do/dong-a-2023-s365-bia-sau-va-hop.webp",
+        "/assets/img/books/nguyen-trong-thuat-qua-dua-do/dong-a-2023-s365-gay-sach-va-hop.webp",
+        "/assets/img/books/nguyen-trong-thuat-qua-dua-do/dong-a-2023-s365-toan-bo-bia.webp"
+      ],
+      "detail": "- Bìa bọc da microfiber, hoa văn dập chìm. Tên sách và một số họa tiết ép nhũ đen và vàng.\n- Ruột in trên giấy Ford 150 gsm.\n- Cạnh sách mạ nhũ vàng, có dấu đỏ Đông A và Ex Libris.\n- Hộp carton trang trí hoa văn in thủy ấn.\n- Có 12 minh họa màu nước của Tạ Huy Long."
+    },
+    {
       "id": "nguyen-trong-thuat-qua-dua-do-2022-dong-a-bia-cung-390k",
       "isbn": "978-604-372-355-7",
       "series_ids": [

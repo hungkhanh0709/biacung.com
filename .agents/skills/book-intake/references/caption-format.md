@@ -4,24 +4,25 @@
 
 - Dùng keyword đúng cách viết trong bảng và áp dụng Memo theo nguồn của edition.
 - Caption theo ký hiệu ấn bản; đơn vị phát hành trong Memo là gợi ý.
+- Ghi mốc kỷ niệm xuất bản trong `detail`.
 - Format ưu tiên vật liệu cụ thể. Quy cách phụ ghi trong `detail`.
 - Format chưa rõ hoặc cần keyword mới thì hỏi người dùng; keyword đã chốt bổ sung tại đây.
 - Không dùng `vocab` để chọn keyword; không thêm whitelist vào form/API.
 
-Thống kê sau refactor ngày 26/11/2026 từ `data/book/*.json`: **339 tựa / 523 phiên bản**, 261 Caption trống, không có Format trống. `Editions` là số phiên bản đang lưu từng nhãn.
+Thống kê từ `data/book/*.json` ngày 28/11/2026 ghi nhận **342 tựa / 545 phiên bản**, 269 Caption trống và không có Format trống. `Editions` là số phiên bản đang lưu từng nhãn.
 
 ## Caption
 
 | Caption | Editions | Memo |
 | --- | ---: | --- |
 | Bản Chữ A | 33 | Độc bản ký hiệu A của Đông A. |
-| Bản Chữ Ô | 1 | Độc bản ký hiệu Ô của Đông A. |
+| Bản Chữ Ô | 2 | Độc bản ký hiệu Ô của Đông A. |
 | Bản Tri Ân | 1 | Số đỏ Đông A tặng bạn đọc đổi S100 Thiên hoàng Minh Trị. |
-| S100 | 37 | Thường dùng cho Đông A |
+| S100 | 43 | Thường dùng cho Đông A |
 | S200 | 0 | Thường dùng cho Đông A |
-| S365 | 9 | Thường dùng cho Đông A |
-| S500 | 29 | Thường dùng cho Đông A |
-| S895 | 3 | Thường dùng cho Đông A |
+| S365 | 14 | Thường dùng cho Đông A |
+| S500 | 31 | Thường dùng cho Đông A |
+| S895 | 4 | Thường dùng cho Đông A |
 | S896 | 1 | Bỉ vỏ Đông A: 6 bản tặng và 890 bản phát hành. |
 | S1200 | 5 | Thường dùng cho Đông A |
 | S111 | 2 | — |
@@ -34,7 +35,7 @@ Thống kê sau refactor ngày 26/11/2026 từ `data/book/*.json`: **339 tựa /
 | H365 | 7 | Thường dùng cho Đông Tây |
 | H666 | 4 | Thường dùng cho Đông Tây |
 | H999 | 1 | Thường dùng cho Đông Tây |
-| Ấn Bản Kỷ Niệm 10 Năm Xuất Bản Lần Đầu | 1 | — |
+| Z555 | 0 | `Z` nghĩa là Zalo Group. |
 | Ấn Bản Giới Hạn | 110 | Bản giới hạn được nguồn hoặc người dùng xác nhận, có thể không có mã S. Số lượng in chưa rõ: `print_run: null`. |
 | Bìa Vẽ Tay Bởi Châu Châu Book | 14 | Chỉ dùng cho Chauchaubook |
 
@@ -55,33 +56,33 @@ Thống kê sau refactor ngày 26/11/2026 từ `data/book/*.json`: **339 tựa /
 | Format | Editions | Memo |
 | --- | ---: | --- |
 | Bìa cứng | 159 | — |
-| Bìa mềm | 153 | — |
-| Bìa cứng áo ôm | 30 | — |
+| Bìa mềm | 154 | — |
+| Bìa cứng áo ôm | 31 | — |
 | Bìa mềm áo ôm | 3 | — |
 | Boxset | 2 | — |
 | Boxset, bìa cứng | 8 | — |
 | Boxset, bìa mềm | 2 | — |
 | Bìa vải | 22 | Chưa rõ loại vải. |
-| Bìa buckram | 24 | Gồm Heritage Library Buckram. |
+| Bìa buckram | 25 | Gồm Heritage Library Buckram. |
 | Chauchaubook | 14 | — |
 | Bìa da thật | 1 | Dùng khi chưa rõ loại da. |
-| Bìa da bò | 23 | Chưa rõ xuất xứ hoặc dòng da. |
-| Bìa da bò Ý | 19 | — |
+| Bìa da bò | 24 | Chưa rõ xuất xứ hoặc dòng da. |
+| Bìa da bò Ý | 22 | — |
 | Bìa da bò Mỹ | 1 | — |
 | Bìa da bò Vachetta | 1 | — |
 | Bìa da dê | 2 | Chưa rõ xuất xứ. |
-| Bìa da dê Pháp | 26 | — |
+| Bìa da dê Pháp | 28 | — |
 | Bìa da dê Anh | 10 | — |
 | Bìa da bê Ý | 1 | — |
 | Bìa da nhân tạo | 2 | Dùng khi chưa rõ loại da. |
-| Bìa da PU | 14 | Gồm 11 edition Đông A và 3 Nhã Nam |
-| Bìa da microfiber | 16 | Gồm 16 edition Đông A |
-| Bìa bonded leather | 13 | — |
+| Bìa da PU | 19 | Gồm 16 edition Đông A và 3 Nhã Nam |
+| Bìa da microfiber | 20 | Gồm 20 edition Đông A |
+| Bìa bonded leather | 17 | — |
 | Bìa Si BN-Baladek Masanti | 2 | — |
 | Bìa giấy mỹ thuật | 1 | — |
 | Bìa giấy Kraft | 0 | — |
 | Bìa giấy thủy ấn | 2 | Kết hợp với da ở bìa nửa da. |
-| Bìa giấy phủ vân da | 1 | Vinyl faux leather paper. |
+| Bìa giấy phủ vân da | 7 | Vinyl faux leather paper. |
 | Bìa sơn mài | 3 | — |
 
 Ví dụ Grimm S100:

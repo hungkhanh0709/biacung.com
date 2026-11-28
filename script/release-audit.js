@@ -396,12 +396,23 @@ function auditData(rootDir, errors, warnings) {
   );
 
   const booker2026 = bookerData?.laureates_by_year?.["2026"];
+  const booker2026Laureates = Array.isArray(booker2026?.laureates) ? booker2026.laureates : [];
+  const booker2026Winner = booker2026Laureates[0];
   const booker2025 = bookerData?.laureates_by_year?.["2025"];
   const bookerWinner = Array.isArray(booker2025?.laureates) ? booker2025.laureates[0] : null;
   pushIfMissing(errors, Boolean(bookerData), "Invalid JSON: data/awards/booker_prize.json");
-  pushIfMissing(errors, booker2026?.status === "pending", "Booker Prize 2026 must be marked as pending");
-  pushIfMissing(errors, booker2026?.announcement_date === "2026-11-09", "Booker Prize 2026 announcement date is missing or incorrect");
-  pushIfMissing(errors, normalizeText(booker2026?.schedule_source_url).startsWith("https://thebookerprizes.com/"), "Booker Prize 2026 is missing its official schedule URL");
+  pushIfMissing(errors, booker2026?.announced_on === "2026-11-09", "Booker Prize 2026 announcement date is missing or incorrect");
+  pushIfMissing(errors, normalizeText(booker2026?.source_url).startsWith("https://thebookerprizes.com/"), "Booker Prize 2026 is missing its official source URL");
+  pushIfMissing(errors, isCollectedAwardYear(booker2026) && booker2026Laureates.length === 1, "Booker Prize 2026 must contain exactly one announced winner");
+  pushIfMissing(errors, booker2026Winner?.name === "M. John Harrison", "Booker Prize 2026 winner is incorrect");
+  pushIfMissing(errors, booker2026Winner?.work?.title === "The End of Everything", "Booker Prize 2026 winning work is incorrect");
+  pushIfMissing(errors, Boolean(normalizeText(booker2026Winner?.citation_vi)), "Booker Prize 2026 is missing the Vietnamese citation");
+  pushIfMissing(
+    errors,
+    Boolean(normalizeText(booker2026Winner?.work?.cover?.src))
+      && fs.existsSync(path.join(rootDir, normalizeText(booker2026Winner.work.cover.src))),
+    "Booker Prize 2026 cover is missing"
+  );
   pushIfMissing(errors, booker2025?.announced_on === "2025-11-10", "Booker Prize 2025 announcement date is missing or incorrect");
   pushIfMissing(errors, bookerWinner?.name === "David Szalay", "Booker Prize 2025 winner is incorrect");
   pushIfMissing(errors, bookerWinner?.work?.title === "Flesh", "Booker Prize 2025 winning work is incorrect");
@@ -414,12 +425,21 @@ function auditData(rootDir, errors, warnings) {
   );
 
   const goncourt2026 = goncourtData?.laureates_by_year?.["2026"];
+  const goncourt2026Laureates = Array.isArray(goncourt2026?.laureates) ? goncourt2026.laureates : [];
+  const goncourt2026Winner = goncourt2026Laureates[0];
   pushIfMissing(errors, Boolean(goncourtData), "Invalid JSON: data/awards/goncourt.json");
   pushIfMissing(errors, /^\d{4}-\d{2}-\d{2}$/.test(normalizeText(goncourtData?.updated_at)), "Prix Goncourt data is missing updated_at");
-  pushIfMissing(errors, goncourt2026?.status === "pending", "Prix Goncourt 2026 must be marked as pending");
-  pushIfMissing(errors, goncourt2026?.announcement_date === "2026-11-03", "Prix Goncourt 2026 announcement date is missing or incorrect");
-  pushIfMissing(errors, normalizeText(goncourt2026?.schedule_source_url).startsWith("https://www.academiegoncourt.com/"), "Prix Goncourt 2026 is missing its official schedule URL");
-  pushIfMissing(errors, Array.isArray(goncourt2026?.laureates) && goncourt2026.laureates.length === 0, "Pending Prix Goncourt 2026 must have an empty laureates list");
+  pushIfMissing(errors, goncourt2026?.announced_on === "2026-11-03", "Prix Goncourt 2026 announcement date is missing or incorrect");
+  pushIfMissing(errors, normalizeText(goncourt2026?.source_url).startsWith("https://www.academiegoncourt.com/"), "Prix Goncourt 2026 is missing its official source URL");
+  pushIfMissing(errors, isCollectedAwardYear(goncourt2026) && goncourt2026Laureates.length === 1, "Prix Goncourt 2026 must contain exactly one announced winner");
+  pushIfMissing(errors, goncourt2026Winner?.name === "Philippe Jaenada", "Prix Goncourt 2026 winner is incorrect");
+  pushIfMissing(errors, goncourt2026Winner?.work?.title === "L’Inconnue du quai de Javel", "Prix Goncourt 2026 winning work is incorrect");
+  pushIfMissing(
+    errors,
+    Boolean(normalizeText(goncourt2026Winner?.work?.cover?.src))
+      && fs.existsSync(path.join(rootDir, normalizeText(goncourt2026Winner.work.cover.src))),
+    "Prix Goncourt 2026 cover is missing"
+  );
 
   const goodreads2026 = goodreadsData?.laureates_by_year?.["2026"];
   const goodreads2025 = goodreadsData?.laureates_by_year?.["2025"];
@@ -436,8 +456,8 @@ function auditData(rootDir, errors, warnings) {
   pushIfMissing(errors, goodreads2026?.status === "pending", "Goodreads Choice Awards 2026 must be marked as pending");
   pushIfMissing(errors, goodreads2026?.eligibility_start === "2025-11-12", "Goodreads Choice Awards 2026 eligibility start date is missing or incorrect");
   pushIfMissing(errors, goodreads2026?.eligibility_end === "2026-11-10", "Goodreads Choice Awards 2026 eligibility end date is missing or incorrect");
-  pushIfMissing(errors, normalizeText(goodreads2026?.schedule_source_url) === "https://www.goodreads.com/choiceawards/2025/rules", "Goodreads Choice Awards 2026 is missing its official schedule source URL");
-  pushIfMissing(errors, !normalizeText(goodreads2026?.announcement_date), "Goodreads Choice Awards 2026 must not contain an unconfirmed announcement date");
+  pushIfMissing(errors, normalizeText(goodreads2026?.schedule_source_url) === "https://www.goodreads.com/choiceawards/2026/rules", "Goodreads Choice Awards 2026 is missing its official schedule source URL");
+  pushIfMissing(errors, goodreads2026?.announcement_date === "2026-12-03", "Goodreads Choice Awards 2026 announcement date is missing or incorrect");
   pushIfMissing(errors, Array.isArray(goodreads2026?.laureates) && goodreads2026.laureates.length === 0, "Goodreads Choice Awards 2026 must have an empty laureates list before results are announced");
   pushIfMissing(errors, goodreads2025?.announced_on === "2025-12-04", "Goodreads Choice Awards 2025 announcement date is missing or incorrect");
   pushIfMissing(errors, normalizeText(goodreads2025?.source_url).startsWith("https://www.goodreads.com/choiceawards/"), "Goodreads Choice Awards 2025 is missing its official source URL");

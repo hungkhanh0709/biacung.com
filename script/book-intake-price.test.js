@@ -58,4 +58,13 @@ test('scoped updates preserve legacy fields only when they match the baseline', 
     renamed.gellery_imgs.push('https://example.com/not-in-baseline.jpg');
     assert.ok(validate(root, reordered, { allowExisting: true, baseline, editionIdMap }).errors.some((e) => e.includes('URL ảnh')));
     assert.ok(check(candidate, { ...baseline, id: 'other-book' }).length);
+
+    const legacyDuplicate = structuredClone(baseline);
+    legacyDuplicate.editions[1].gellery_imgs.push(legacyDuplicate.editions[1].thumbnail);
+    assert.deepEqual(check(legacyDuplicate, legacyDuplicate), []);
+    assert.ok(check(legacyDuplicate).some((e) => e.includes('thumbnail/gallery lặp ảnh')));
+
+    const changedGallery = structuredClone(legacyDuplicate);
+    changedGallery.editions[1].gellery_imgs.push('/assets/img/books/test-book/new-gallery.jpg');
+    assert.ok(check(changedGallery, legacyDuplicate).some((e) => e.includes('thumbnail/gallery lặp ảnh')));
 });

@@ -283,18 +283,18 @@ function renderReaderChoiceWinner(laureate, internalBookIds) {
 }
 
 function renderPendingAward(year) {
-  const hasEligibilityWindow = normalizeText(year.eligibility_start) && normalizeText(year.eligibility_end);
   const announced = formatAnnouncementDate(year.announcement_date);
+  const showsEligibilityWindow = !announced && normalizeText(year.eligibility_start) && normalizeText(year.eligibility_end);
   const article = createElement("article", "award-pending");
-  if (hasEligibilityWindow) article.classList.add("award-pending--eligibility");
+  if (showsEligibilityWindow) article.classList.add("award-pending--eligibility");
   article.append(createElement(
     "p",
     "award-pending-label",
-    hasEligibilityWindow ? "Đang chờ lịch bình chọn" : "Chưa công bố"
+    showsEligibilityWindow ? "Đang chờ lịch bình chọn" : "Chưa công bố"
   ));
 
   const heading = createElement("h3", "award-pending-title");
-  if (hasEligibilityWindow) {
+  if (showsEligibilityWindow) {
     const eligibilityStart = formatAnnouncementDate(year.eligibility_start);
     const eligibilityEnd = formatAnnouncementDate(year.eligibility_end);
     heading.append("Sách đủ điều kiện từ ");
@@ -351,7 +351,7 @@ function renderAwardGroup(dataset, payload, yearKey, internalBookIds) {
   header.append(name);
 
   const announced = formatAnnouncementDate(isPending ? year.announcement_date : year.announced_on);
-  const detailText = hasEligibilityWindow
+  const detailText = isPending && !announced && hasEligibilityWindow
     ? "Lịch bình chọn đang cập nhật"
     : isPending
     ? (announced ? `Dự kiến ${announced}` : "Đang chờ lịch công bố")

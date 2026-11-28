@@ -1681,5 +1681,12 @@
     "work_ids": [
       "donald-keene-emperor-of-japan-meiji-and-his-world-1852-1912"
     ]
+  },
+  {
+    "id": "mathias-enard",
+    "name": "Mathias Énard",
+    "work_ids": [
+      "mathias-enard-zone"
+    ]
   }
 ]

@@ -171,7 +171,12 @@ function validate(root, book, { relations = false, images = false, allowExisting
             && (previous.id === edition.id || previous.id === originalId)
             && previous.thumbnail === edition.thumbnail;
         if (images && !text(edition.thumbnail) && !unchangedMissingThumbnail) bad(`${at}.thumbnail còn thiếu.`);
-        if (new Set(urls).size !== urls.length) bad(`${at}: thumbnail/gallery lặp ảnh.`);
+        if (new Set(urls).size !== urls.length) {
+            const unchangedImages = previous && (previous.id === edition.id || previous.id === originalId)
+                && previous.thumbnail === edition.thumbnail
+                && JSON.stringify(previous.gellery_imgs) === JSON.stringify(edition.gellery_imgs);
+            if (!unchangedImages) bad(`${at}: thumbnail/gallery lặp ảnh.`);
+        }
         for (const url of urls) {
             // A photo of several works may be shared without copying the asset.
             const localImage = /^\/assets\/img\/books\/[a-z0-9]+(?:-[a-z0-9]+)*\/[a-z0-9]+(?:-[a-z0-9]+)*\.(jpg|jpeg|png|webp|avif)$/.test(url);

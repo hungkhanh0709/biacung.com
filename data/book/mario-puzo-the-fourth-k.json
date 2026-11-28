@@ -9,11 +9,44 @@
   "series": [],
   "editions": [
     {
+      "id": "mario-puzo-the-fourth-k-2023-dong-a-bia-bonded-leather-800k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S500",
+      "pub_year": 2023,
+      "pub_date": "2023-04-18",
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [
+        "Orkid"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": [
+        "Bìa bonded leather"
+      ],
+      "cover_price": "800k",
+      "print_run": 500,
+      "page_count": 598,
+      "copy_numbering": "DA 001 – DA 500",
+      "size_cm": "16 x 24",
+      "weight_g": 800,
+      "thumbnail": "/assets/img/books/mario-puzo-the-fourth-k/dong-a-2023-s500-bia-truoc-va-hop.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/mario-puzo-the-fourth-k/dong-a-2023-s500-ex-libris.jpg",
+        "/assets/img/books/mario-puzo-the-fourth-k/dong-a-2023-s500-bia-va-canh-ma-vang.jpg",
+        "/assets/img/books/mario-puzo-the-fourth-k/dong-a-2023-s500-hoa-van-gay.jpg"
+      ],
+      "detail": "- Bìa bọc bonded leather màu xanh rêu đậm nhập từ Mỹ. Chất liệu có gốc da thật, phủ sơn gốc nước và ép vân nổi.\n- Hai mặt bìa ép nhũ vàng cùng họa tiết.\n- Ruột in trên giấy Ford kem GHS 100 gsm.\n- Cạnh sách mạ nhũ vàng, có dấu đỏ Đông A và Ex Libris.\n- Hộp carton in hình và thông tin ở bìa trước và bìa sau."
+    },
+    {
       "id": "mario-puzo-the-fourth-k-dong-a-bia-mem-200",
       "isbn": null,
       "caption": "",
       "pub_year": null,
-      "publisher": "NXB Văn học",
+      "publisher": "NXB Văn Học",
       "issuers": [
         "Đông A"
       ],

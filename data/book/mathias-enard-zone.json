@@ -1,0 +1,46 @@
+{
+  "id": "mathias-enard-zone",
+  "title": "Vùng",
+  "title_original": "Zone",
+  "authors": [
+    "Mathias Énard"
+  ],
+  "awards": [],
+  "series": [],
+  "editions": [
+    {
+      "id": "mathias-enard-zone-znz-bia-mem-315k",
+      "isbn": "978-632-63-9343-9",
+      "series_ids": [],
+      "caption": "",
+      "is_upcoming": true,
+      "pub_year": null,
+      "pub_date": null,
+      "publisher": "NXB Văn Học",
+      "issuers": [
+        "ZNZ"
+      ],
+      "translators": [
+        "Phùng Hồng Minh"
+      ],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": [
+        "Bìa mềm"
+      ],
+      "cover_price": "315k",
+      "print_run": null,
+      "page_count": 536,
+      "copy_numbering": null,
+      "size_cm": "14 x 20,5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/mathias-enard-zone/znz-bia-truoc.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/mathias-enard-zone/znz-bia-sau-va-gay.jpg",
+        "/assets/img/books/mathias-enard-zone/znz-trang-ten-va-minh-hoa.jpg",
+        "/assets/img/books/mathias-enard-zone/znz-bia-va-gay.jpg"
+      ],
+      "detail": "- Tiểu thuyết do ZNZ phát hành.\n- Trên chuyến tàu đêm từ Milan đến Rome, cựu điệp viên người Pháp Francis Mirković mang theo một va li tài liệu mật định bán cho Vatican để bắt đầu cuộc sống mới. Dọc đường, ký ức về chiến tranh, thảm sát, tình yêu và phản bội đan xen trong dòng ý thức của anh, từ Balkan đến Trung Đông.\n- Phần chính của tiểu thuyết được viết thành một câu văn dài 528 trang, lần theo lịch sử bạo lực quanh Địa Trung Hải."
+    }
+  ]
+}

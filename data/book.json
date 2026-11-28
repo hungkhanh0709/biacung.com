@@ -1,5 +1,12 @@
 [
   {
+    "detail": "data/book/mathias-enard-zone.json",
+    "search_text": "mathias enard zone vung nxb van hoc znz phung hong minh bia mem",
+    "is_upcoming": true,
+    "last_pub_year": "",
+    "updated_at": "2026-11-28 04:03"
+  },
+  {
     "detail": "data/book/fyodor-dostoevsky-ghi-chep-tu-nha-chet.json",
     "search_text": "fyodor dostoevsky ghi chep tu nha chet dia nguc tran gian nxb van hoc nxb ha noi nxb hoi nha van dong tay nha nam doan tu huyen pham xuan nguyen le duc man dao quoc minh an ban gioi han h365 bia da that bia giay my thuat bia cung ao om bia mem bia cung",
     "is_upcoming": true,
@@ -73,7 +80,7 @@
     "detail": "data/book/jane-austen-pride-and-prejudice.json",
     "search_text": "jane austen pride and prejudice kieu hanh va dinh kien nxb van hoc dong a thanh loan sach decor dong a s100 bia mem bia giay phu van da bia cung ao om bia da pu",
     "last_pub_year": 2026,
-    "updated_at": "2026-11-27 14:43",
+    "updated_at": "2026-11-28 05:03",
     "last_pub_date": "2026-11-27"
   },
   {
@@ -712,8 +719,8 @@
   },
   {
     "detail": "data/book/nguyen-nhat-anh-dao-mong-mo.json",
-    "search_text": "nguyen nhat anh dao mong mo nxb tre dong a do hoang tuong s100 an ban ky niem 10 nam xuat ban lan dau bia mem bia da nhan tao bia cung ao om",
-    "updated_at": "2026-11-15",
+    "search_text": "nguyen nhat anh dao mong mo nxb tre dong a do hoang tuong s100 bia mem bia da nhan tao bia cung ao om",
+    "updated_at": "2026-11-27 17:21",
     "last_pub_year": 2026
   },
   {
@@ -781,6 +788,13 @@
     "search_text": "john steinbeck the grapes of wrath chum nho thinh no nxb van hoc tao dan pham van bia mem",
     "last_pub_year": 2026,
     "updated_at": "2026-11-18"
+  },
+  {
+    "detail": "data/book/george-bernard-shaw-pygmalion.json",
+    "search_text": "george bernard shaw pygmalion nxb van hoc dong a tran tien cao dang dong phong tram nam nobel bia buckram an ban gioi han",
+    "updated_at": "2026-11-28 05:48",
+    "last_pub_year": 2025,
+    "last_pub_date": "2025-12-31"
   },
   {
     "detail": "data/book/van-moi-10-nam-2015-2025-dong-a.json",
@@ -971,12 +985,6 @@
     "last_pub_year": 2025
   },
   {
-    "detail": "data/book/george-bernard-shaw-pygmalion.json",
-    "search_text": "george bernard shaw pygmalion nxb van hoc dong a tran tien cao dang dong phong tram nam nobel bia buckram an ban gioi han",
-    "updated_at": "2026-10-18",
-    "last_pub_year": 2025
-  },
-  {
     "detail": "data/book/henryk-sienkiewicz-lao-boc-hania-selim-mirza.json",
     "search_text": "henryk sienkiewicz lao boc hania selim mirza nxb van hoc dong a nguyen huu dung trieu yen vy tram nam nobel bia buckram an ban gioi han",
     "updated_at": "2026-10-18",
@@ -1160,9 +1168,9 @@
   },
   {
     "detail": "data/book/donald-keene-emperor-of-japan-meiji-and-his-world-1852-1912.json",
-    "search_text": "donald keene emperor of japan meiji and his world 18521912 thien hoang minh tri nxb van hoc dong a ca lau la sach decor dong a bia giay phu van da",
+    "search_text": "donald keene emperor of japan meiji and his world 18521912 thien hoang minh tri nxb van hoc nxb dan tri dong a ca lau la sach decor dong a s100 bia giay phu van da bia da pu",
     "last_pub_year": 2024,
-    "updated_at": "2026-11-27 14:44"
+    "updated_at": "2026-11-28 04:56"
   },
   {
     "detail": "data/book/fyodor-dostoevsky-anh-em-nha-karamazov.json",
@@ -1199,6 +1207,20 @@
     "updated_at": "2026-11-19 14:45"
   },
   {
+    "detail": "data/book/nguyen-trong-thuat-qua-dua-do.json",
+    "search_text": "nguyen trong thuat qua dua do nxb van hoc dong a ta huy long van chuong va my thuat s365 bia da microfiber bia cung",
+    "last_pub_year": 2023,
+    "updated_at": "2026-11-28 04:44",
+    "last_pub_date": "2023-06-20"
+  },
+  {
+    "detail": "data/book/mario-puzo-the-fourth-k.json",
+    "search_text": "mario puzo the fourth k tong thong k thu tu nxb van hoc dong a orkid s500 bia bonded leather bia mem",
+    "updated_at": "2026-11-28 05:17",
+    "last_pub_year": 2023,
+    "last_pub_date": "2023-04-18"
+  },
+  {
     "detail": "data/book/mario-puzo-the-dark-arena.json",
     "search_text": "mario puzo the dark arena dau truong u am nxb van hoc dong a thanh hoa s500 bia bonded leather",
     "last_pub_year": 2023,
@@ -1228,9 +1250,9 @@
   },
   {
     "detail": "data/book/vu-bang-thuong-nho-muoi-hai.json",
-    "search_text": "vu bang thuong nho muoi hai nxb van hoc nxb hoi nha van dong a nha nam duy hung van chuong va my thuat viet nam danh tac nha nam ban chu a s100 an ban gioi han bia da bo y bia cung",
+    "search_text": "vu bang thuong nho muoi hai nxb van hoc nxb hoi nha van dong a nha nam duy hung van chuong va my thuat viet nam danh tac nha nam ban chu a s100 s896 an ban gioi han bia da bo y bia da bo bia da microfiber bia cung",
     "last_pub_year": 2023,
-    "updated_at": "2026-11-18 16:52",
+    "updated_at": "2026-11-28 05:09",
     "last_pub_date": "2023-01-08"
   },
   {
@@ -1574,12 +1596,6 @@
     "updated_at": "2026-10-28"
   },
   {
-    "detail": "data/book/nguyen-trong-thuat-qua-dua-do.json",
-    "search_text": "nguyen trong thuat qua dua do nxb van hoc dong a ta huy long van chuong va my thuat bia cung",
-    "last_pub_year": 2022,
-    "updated_at": "2026-10-20"
-  },
-  {
     "detail": "data/book/bernard-werber-boxset-kien.json",
     "search_text": "bernard werber boxset kien nxb hoi nha van nha nam an ban gioi han bia cung",
     "last_pub_year": 2022,
@@ -1640,6 +1656,20 @@
     "last_pub_year": 2022
   },
   {
+    "detail": "data/book/anatole-france-toi-ac-cua-sylvestre-bonnard-dao-chim-canh-cut.json",
+    "search_text": "anatole france le crime de sylvestre bonnard lile des pingouins toi ac cua sylvestre bonnard dao chim canh cut nxb van hoc dong a tran chau paul destez frank c pape tram nam nobel bia buckram an ban gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-11-28 05:43",
+    "last_pub_date": "2021-12-01"
+  },
+  {
+    "detail": "data/book/sully-prudhomme-thi-khuc-thi-pham.json",
+    "search_text": "sully prudhomme thi khuc thi pham nxb van hoc dong a tran chau dat nhan khac do juliandamazy tram nam nobel bia buckram an ban gioi han",
+    "last_pub_year": 2021,
+    "updated_at": "2026-11-28 05:46",
+    "last_pub_date": "2021-11-15"
+  },
+  {
     "detail": "data/book/margaret-mitchell-gone-with-the-wind.json",
     "search_text": "margaret mitchell gone with the wind cuon theo chieu gio nxb hoi nha van nxb van hoc dong a vu kim thu ban chu o ban chu a s365 bia cung ao om bia da bo y bia da pu",
     "last_pub_year": 2021,
@@ -1671,18 +1701,6 @@
     "search_text": "harriet beecher stowe uncle toms cabin tup leu bac tom nxb van hoc dong a do duc hieu dong a classics bo tui dong a classic hoa van bia mem",
     "last_pub_year": 2021,
     "updated_at": "2026-10-19"
-  },
-  {
-    "detail": "data/book/anatole-france-toi-ac-cua-sylvestre-bonnard-dao-chim-canh-cut.json",
-    "search_text": "anatole france le crime de sylvestre bonnard lile des pingouins toi ac cua sylvestre bonnard dao chim canh cut nxb van hoc dong a tran chau paul destez frank c pape tram nam nobel bia buckram an ban gioi han",
-    "last_pub_year": 2021,
-    "updated_at": "2026-10-18"
-  },
-  {
-    "detail": "data/book/sully-prudhomme-thi-khuc-thi-pham.json",
-    "search_text": "sully prudhomme thi khuc thi pham nxb van hoc dong a tran chau dat nhan khac do juliandamazy tram nam nobel bia buckram an ban gioi han",
-    "last_pub_year": 2021,
-    "updated_at": "2026-10-18"
   },
   {
     "detail": "data/book/e-h-gombrich-a-little-history-of-the-world.json",
@@ -2122,12 +2140,6 @@
     "detail": "data/book/dk-y-hoc-khai-luoc-nhung-tu-tuong-lon.json",
     "search_text": "y hoc khai luoc nhung tu tuong lon dk nxb dan tri dong a kim oanh huong ly bia cung",
     "updated_at": "2026-07-04",
-    "last_pub_year": ""
-  },
-  {
-    "detail": "data/book/mario-puzo-the-fourth-k.json",
-    "search_text": "tong thong k thu tu the fourth k mario puzo nxb van hoc đong a orkid bia mem",
-    "updated_at": "2026-06-30",
     "last_pub_year": ""
   },
   {
