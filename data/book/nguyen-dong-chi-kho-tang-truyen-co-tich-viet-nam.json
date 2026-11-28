@@ -9,6 +9,49 @@
   "series": [],
   "editions": [
     {
+      "id": "nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam-2025-dong-a-bia-da-bo-y-13tr",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S100",
+      "pub_year": 2025,
+      "pub_date": "2025-08-08",
+      "publisher": "NXB Hội Nhà Văn",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [
+        "Phạm Ngọc Tuấn",
+        "Phạm Ngọc Tân"
+      ],
+      "proofreaders": [],
+      "format": [
+        "Bìa da bò Ý",
+        "Bìa da dê Pháp"
+      ],
+      "cover_price": "13tr",
+      "print_run": 112,
+      "page_count": 2016,
+      "copy_numbering": "ĐA 001–ĐA 100 (V20 và S80)",
+      "size_cm": "18,5 x 26,5",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s100-s-hai-bo-gay-sach.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s100-v-hai-bo-gay-sach.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s100-v-bo-sach-bia-hong.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s100-v-gay-sach-xanh-ngoc.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s100-v-chi-tiet-bia-tre.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s100-v-bia-hoa-tiet-trau.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s100-trang-tua-va-chan-dung.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s100-s-sach-trong-hop.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s100-s-chung-nhan-va-ex-libris.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s100-s-trang-danh-so.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s100-s-to-gac-va-canh-ma-vang.jpg",
+        "/assets/img/books/nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam/s100-s-minh-hoa-chim-quoc.jpg"
+      ],
+      "detail": "- Bản V20 bọc da dê Alran (Pháp), hai màu xanh ngọc Perse và hồng Colorado. Giá phát hành 18.000.000 đồng/bộ.\n- Bản S80 bọc da bò Ý, hai màu hồng và xanh ngọc sẫm. Giá phát hành 13.000.000 đồng/bộ.\n- Bộ 2 quyển thuộc ấn bản S100. Trong 112 bộ, 100 bộ đánh số từ ĐA 001 đến ĐA 100, gồm 20 bộ V và 80 bộ S. 12 bộ còn lại gồm 6 bộ lưu chiểu, 5 bộ ký hiệu chữ và 1 bộ dành cho tác giả.\n- Bìa trước và bìa sau quyển 1 lấy hình tượng Sự tích trầu, cau và vôi. Quyển 2 dùng hình cách điệu Cây tre trăm đốt. Hai gáy ghép thành hình đàn cò và khóm tre, với logo Đông A ở chân gáy quyển 1.\n- Bìa trước, gáy và bìa sau ép nhũ ba màu. Gáy có hai gân.\n- Quyển 1 dày 1.096 trang, quyển 2 dày 920 trang. Ruột in trên giấy mỹ thuật Contrast M.A. Ivory (Marfil) 100 gsm, khổ 18,5 × 26,5 cm.\n- Quyển 1 có 22 tờ minh họa, quyển 2 có 19 tờ. Minh họa in bốn màu trên giấy couché 64 gsm và dán thủ công vào sách.\n- Ba cạnh sách mạ nhũ vàng thủ công. Sách đóng dấu chìm Limited Edition của Đông A.\n- Kèm hộp vỏ sò bọc vải lót nhung, giấy chứng nhận có chữ ký của Đông A và Ex libris.\n- Dải số bản V20: ĐA 001–ĐA 010, 012, 030, 038, 053, 066, 068, 079, 086, 088, 099. Bản S80 nhận các số còn lại."
+    },
+    {
       "id": "nguyen-dong-chi-kho-tang-truyen-co-tich-viet-nam-2025-dong-a-s365-bia-bonded-leather-3tr",
       "isbn": null,
       "series_ids": [],
