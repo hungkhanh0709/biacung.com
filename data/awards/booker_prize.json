@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-10-13",
+    "updated_at": "2026-11-28",
     "award_info": {
         "id": "uk_booker_prize",
         "name": "Giải Booker",
@@ -12,11 +12,33 @@
     },
     "laureates_by_year": {
         "2026": {
-            "status": "pending",
-            "announcement_date": "2026-11-09",
-            "schedule_source_url": "https://thebookerprizes.com/booker-prize/enter-the-booker-prize",
-            "status_note": "Danh sách rút gọn đã được công bố; tác phẩm thắng giải sẽ được xướng tên vào ngày 09/11/2026.",
-            "laureates": []
+            "announced_on": "2026-11-09",
+            "source_url": "https://thebookerprizes.com/booker-prize",
+            "laureates": [
+                {
+                    "name": "M. John Harrison",
+                    "country": "United Kingdom",
+                    "country_vi": "Vương quốc Anh",
+                    "profile_url": "https://thebookerprizes.com/the-booker-library/authors/m-john-harrison",
+                    "work": {
+                        "id": "m-john-harrison-the-end-of-everything",
+                        "title": "The End of Everything",
+                        "work_url": "https://thebookerprizes.com/the-booker-library/books/the-end-of-everything",
+                        "publisher": "Serpent’s Tail",
+                        "published_year": 2026,
+                        "cover": {
+                            "src": "assets/img/awards/2026-the-end-of-everything.jpg",
+                            "alt": "Bìa tiểu thuyết The End of Everything của M. John Harrison",
+                            "source_url": "https://serpentstail.com/work/the-end-of-everything/",
+                            "note": "Bìa ấn bản bìa cứng do Serpent’s Tail cung cấp, ISBN 9781800812949."
+                        }
+                    },
+                    "citation": "This is the politics of now seen through the lens of the future.",
+                    "citation_vi": "Đó là chính trị của hiện tại được nhìn qua lăng kính tương lai.",
+                    "citation_source_url": "https://thebookerprizes.com/media-centre/press-releases/the-end-of-everything-by-m-john-harrison-wins-the-booker-prize-2026",
+                    "prize_amount": "£50,000"
+                }
+            ]
         },
         "2025": {
             "announced_on": "2025-11-10",

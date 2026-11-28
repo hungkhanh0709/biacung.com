@@ -9,6 +9,45 @@
   "series": [],
   "editions": [
     {
+      "id": "dong-a-ho-chi-minh-tieu-su-bang-hinh-2025-dong-a-bia-da-bo-y-bia-da-de-phap-7tr500k",
+      "isbn": null,
+      "series_ids": [],
+      "caption": "S100",
+      "pub_year": 2025,
+      "pub_date": "2025-12-01",
+      "publisher": "NXB Đại Học Sư Phạm",
+      "issuers": [
+        "Đông A"
+      ],
+      "translators": [],
+      "illustrators": [],
+      "proofreaders": [],
+      "format": [
+        "Bìa da bò Ý",
+        "Bìa da dê Pháp"
+      ],
+      "cover_price": "7tr500k",
+      "print_run": 100,
+      "page_count": 324,
+      "copy_numbering": null,
+      "size_cm": "25 x 30",
+      "weight_g": null,
+      "thumbnail": "/assets/img/books/dong-a-ho-chi-minh-tieu-su-bang-hinh/s100-bia-vang-va-do.jpg",
+      "gellery_imgs": [
+        "/assets/img/books/dong-a-ho-chi-minh-tieu-su-bang-hinh/s100-hai-mau-bia-truoc.jpg",
+        "/assets/img/books/dong-a-ho-chi-minh-tieu-su-bang-hinh/s100-bia-vang-va-hop.jpg",
+        "/assets/img/books/dong-a-ho-chi-minh-tieu-su-bang-hinh/s100-bia-do-va-hop.jpg",
+        "/assets/img/books/dong-a-ho-chi-minh-tieu-su-bang-hinh/s100-bia-sau-lang-bac.jpg",
+        "/assets/img/books/dong-a-ho-chi-minh-tieu-su-bang-hinh/s100-sach-vang-trong-hop.jpg",
+        "/assets/img/books/dong-a-ho-chi-minh-tieu-su-bang-hinh/s100-nhan-ten-tren-hop.jpg",
+        "/assets/img/books/dong-a-ho-chi-minh-tieu-su-bang-hinh/s100-canh-sach-ma-vang.jpg",
+        "/assets/img/books/dong-a-ho-chi-minh-tieu-su-bang-hinh/s100-to-gac-va-logo-dong-a.jpg",
+        "/assets/img/books/dong-a-ho-chi-minh-tieu-su-bang-hinh/s100-loi-noi-dau-va-chan-dung.jpg",
+        "/assets/img/books/dong-a-ho-chi-minh-tieu-su-bang-hinh/s100-giay-chung-nhan.jpg"
+      ],
+      "detail": "- Ấn bản S100 gồm V20 và S80, mỗi loại có hai màu bìa.\n- V20 giá 9.500.000 đồng. Bìa da dê Alran (Pháp) màu nâu vàng Gold kèm hộp vỏ sò bọc vải vàng, lót nhung nâu. Bìa đỏ Piment kèm hộp vỏ sò bọc vải đỏ, lót nhung đỏ rượu vang.\n- S80 giá 7.500.000 đồng. Bìa da bò Ý màu đỏ Scarlet kèm hộp vỏ sò bọc vải đỏ, lót nhung đỏ rượu vang. Bìa vàng Marigold kèm hộp vỏ sò bọc vải vàng, lót nhung nâu.\n- Bìa đóng theo phong cách Cosway Binding. Chính giữa bìa trước là chân dung Chủ tịch Hồ Chí Minh. Bìa sau có tiểu họa sơn mài hình lăng Bác trong khung ovan.\n- Ruột sách dày 324 trang, khổ 25 × 30 cm, in trên giấy Ford kem Vạn Điểm 165 gsm.\n- Kèm giấy chứng nhận có chữ ký của Đông A và Ex libris (dấu sở hữu sách)."
+    },
+    {
       "id": "dong-a-ho-chi-minh-tieu-su-bang-hinh-2025-bia-vai-2tr",
       "isbn": null,
       "series_ids": [],

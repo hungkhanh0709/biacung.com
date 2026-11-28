@@ -36,7 +36,9 @@
       "size_cm": "16 x 24",
       "weight_g": 500,
       "thumbnail": "/assets/img/books/jane-austen-pride-and-prejudice/dong-a-2026-bia-mem-cover.jpeg",
-      "gellery_imgs": [],
+      "gellery_imgs": [
+        "/assets/img/books/jane-austen-pride-and-prejudice/dong-a-2026-bia-mem-anh-thuc-te.jpeg"
+      ],
       "detail": ""
     },
     {
